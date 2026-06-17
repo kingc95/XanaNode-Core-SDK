@@ -1,0 +1,15 @@
+{
+  "id": "example-substrate",
+  "name": "Example Substrate",
+  "version": "0.1.0",
+  "namespace": "example",
+  "schema_version": "xananode-core@0.5.0",
+  "repository": {
+    "type": "git",
+    "url": "local",
+    "default_branch": "main"
+  },
+  "imports": ["xananode:core"],
+  "extensions": [],
+  "maintainers": [{ "name": "Example Author" }]
+}

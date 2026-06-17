@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/substrate-node.schema.json",
+  "title": "Substrate Node",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["id", "title", "type", "importance", "summary", "relationships"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*/[^\\s#]+$"
+    },
+    "title": { "type": "string" },
+    "type": {
+      "type": "string",
+      "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+    },
+    "status": { "type": "string" },
+    "importance": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "summary": { "type": "string" },
+    "created_by": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "source_url": { "type": "string", "format": "uri" },
+    "rights_status": { "type": "string" },
+    "confidence": { "type": "string" },
+    "protocol_id": { "type": "string" },
+    "content_id": { "type": "string" },
+    "version_id": { "type": "string" },
+    "source_content_id": { "type": "string" },
+    "source_version_id": { "type": "string" },
+    "signature": { "type": "string" },
+    "source_node": { "type": "string" },
+    "fragment_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._-]+$"
+    },
+    "tumbler": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*/[^\\s#@]+(@[^\\s#]+)?(#fragment/[A-Za-z0-9._-]+(@[^\\s#]+)?)?$"
+    },
+    "selector": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "semantic-anchor",
+            "TextQuoteSelector",
+            "TextPositionSelector",
+            "FragmentSelector",
+            "CssSelector",
+            "XPathSelector",
+            "RangeSelector"
+          ]
+        },
+        "value": { "type": "string" },
+        "exact": { "type": "string" },
+        "prefix": { "type": "string" },
+        "suffix": { "type": "string" },
+        "start": { "type": "integer" },
+        "end": { "type": "integer" }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "type", "direction"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": {
+            "type": "string",
+            "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+          },
+          "source": { "type": "string" },
+          "target": { "type": "string" },
+          "direction": {
+            "type": "string",
+            "enum": ["incoming", "outgoing"]
+          },
+          "external": { "type": "boolean" },
+          "target_substrate": { "type": "string" }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": { "const": "fragment" }
+        },
+        "required": ["type"]
+      },
+      "then": {
+        "required": [
+          "source_node",
+          "source_version_id",
+          "source_content_id",
+          "fragment_id",
+          "tumbler",
+          "selector",
+          "content_id",
+          "version_id"
+        ]
+      }
+    }
+  ]
+}

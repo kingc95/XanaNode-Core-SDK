@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/ro-crate-metadata.schema.json",
+  "title": "XanaNode RO-Crate Companion Metadata",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["@context", "@graph"],
+  "properties": {
+    "@context": {},
+    "@graph": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  }
+}

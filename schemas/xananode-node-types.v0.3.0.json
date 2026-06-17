@@ -1,0 +1,727 @@
+{
+  "version": "0.3.0",
+  "node_types": [
+    {
+      "type": "person",
+      "label": "Person",
+      "color": {
+        "bg": "#8bd3ff",
+        "fg": "#071827",
+        "outline": "#d8f1ff"
+      },
+      "purpose": "A human actor who created, influenced, witnessed, argued, documented, or participated in something.",
+      "allowed_subtypes": [
+        "writer",
+        "researcher",
+        "engineer",
+        "critic",
+        "artist",
+        "founder",
+        "scientist",
+        "programmer"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "roles",
+        "primary_media",
+        "people",
+        "concepts",
+        "sources",
+        "projects",
+        "events"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:person",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "concept",
+      "label": "Concept",
+      "color": {
+        "bg": "#91f2a6",
+        "fg": "#062010",
+        "outline": "#dcffe4"
+      },
+      "purpose": "An idea, pattern, theory, failure mode, or explanatory structure. A concept is built from claims.",
+      "allowed_subtypes": [
+        "theory",
+        "principle",
+        "failure_mode",
+        "method",
+        "pattern",
+        "distinction",
+        "frame"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "claims",
+        "concepts",
+        "sources",
+        "people",
+        "projects"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:concept",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "claim",
+      "label": "Claim",
+      "color": {
+        "bg": "#ff6b6b",
+        "fg": "#1a0000",
+        "outline": "#ffe0e0"
+      },
+      "purpose": "A specific assertion that can be supported, disputed, revised, deprecated, or rejected.",
+      "allowed_subtypes": [
+        "definition",
+        "historical",
+        "causal",
+        "interpretive",
+        "predictive",
+        "normative",
+        "comparative"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "status",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "confidence",
+        "claim_type",
+        "evidence",
+        "counterevidence",
+        "concepts",
+        "sources"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:claim",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "source",
+      "label": "Source",
+      "color": {
+        "bg": "#ff9f7a",
+        "fg": "#2a1208",
+        "outline": "#ffe4d9"
+      },
+      "purpose": "A reference work, transcript, paper, book, talk, article, dataset, or primary evidence item.",
+      "allowed_subtypes": [
+        "book",
+        "paper",
+        "article",
+        "transcript",
+        "talk",
+        "interview",
+        "dataset",
+        "website",
+        "documentation"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "author",
+        "year",
+        "source_url",
+        "archive_url",
+        "license",
+        "rights_status"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:source",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "essay",
+      "label": "Essay",
+      "color": {
+        "bg": "#f59ec3",
+        "fg": "#1f1020",
+        "outline": "#ffe3f0"
+      },
+      "purpose": "A human-authored argument that connects claims, sources, observations, and concepts.",
+      "allowed_subtypes": [
+        "argument",
+        "explainer",
+        "critique",
+        "manifesto",
+        "analysis",
+        "reflection"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "claims",
+        "concepts",
+        "people",
+        "sources",
+        "observations"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:essay",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "observation",
+      "label": "Observation",
+      "color": {
+        "bg": "#ef476f",
+        "fg": "#2a0610",
+        "outline": "#ffd7e0"
+      },
+      "purpose": "A real-world case, symptom, example, incident, failure, or pattern being analyzed.",
+      "allowed_subtypes": [
+        "case_study",
+        "failure",
+        "news_event",
+        "symptom",
+        "anomaly",
+        "example"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "observed_date",
+        "source_url",
+        "concepts",
+        "claims",
+        "sources"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:observation",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "media",
+      "label": "Media",
+      "color": {
+        "bg": "#55d6be",
+        "fg": "#04201a",
+        "outline": "#dcfff8"
+      },
+      "purpose": "An image, video, audio clip, screenshot, diagram, document, or other media item with provenance.",
+      "allowed_subtypes": [
+        "image",
+        "video",
+        "audio",
+        "document",
+        "screenshot",
+        "diagram",
+        "clip",
+        "scan"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "media_type",
+        "importance",
+        "summary",
+        "file",
+        "alt",
+        "rights_status",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "caption",
+        "creator",
+        "created_date",
+        "source_name",
+        "source_url",
+        "license",
+        "license_url",
+        "depicts"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:media",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "event",
+      "label": "Event",
+      "color": {
+        "bg": "#f59e0b",
+        "fg": "#1a0a00",
+        "outline": "#fff3e0"
+      },
+      "purpose": "Something that happened at a time and optionally at a place.",
+      "allowed_subtypes": [
+        "conference",
+        "talk",
+        "publication_event",
+        "meeting",
+        "release",
+        "incident",
+        "historical_event"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "date",
+        "start_date",
+        "end_date",
+        "place",
+        "people",
+        "organizations",
+        "sources"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:event",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "place",
+      "label": "Place",
+      "color": {
+        "bg": "#84cc16",
+        "fg": "#0a1a00",
+        "outline": "#e8ffe0"
+      },
+      "purpose": "A physical or virtual location where people, projects, organizations, or events exist or occurred.",
+      "allowed_subtypes": [
+        "city",
+        "building",
+        "lab",
+        "institution_site",
+        "online_space",
+        "country",
+        "region"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "location",
+        "geo",
+        "organizations",
+        "events",
+        "projects"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:place",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "organization",
+      "label": "Organization",
+      "color": {
+        "bg": "#f0abfc",
+        "fg": "#1e1028",
+        "outline": "#fde8ff"
+      },
+      "purpose": "A company, institution, agency, lab, school, collective, standards body, nonprofit, or group.",
+      "allowed_subtypes": [
+        "company",
+        "university",
+        "lab",
+        "agency",
+        "nonprofit",
+        "standards_body",
+        "publisher"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "website",
+        "founded",
+        "people",
+        "projects",
+        "technologies"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:organization",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "project",
+      "label": "Project",
+      "color": {
+        "bg": "#ffd166",
+        "fg": "#1d1500",
+        "outline": "#fff0c2"
+      },
+      "purpose": "A built, proposed, fictional, abandoned, or active system with a purpose and lineage.",
+      "allowed_subtypes": [
+        "software",
+        "research_project",
+        "fictional_system",
+        "prototype",
+        "standard",
+        "platform"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "status",
+        "people",
+        "organizations",
+        "technologies",
+        "sources"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:project",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "technology",
+      "label": "Technology",
+      "color": {
+        "bg": "#06b6d4",
+        "fg": "#04131a",
+        "outline": "#d9fbff"
+      },
+      "purpose": "A tool, protocol, model, platform, architecture, method, or technical system.",
+      "allowed_subtypes": [
+        "protocol",
+        "language",
+        "model",
+        "platform",
+        "architecture",
+        "tool",
+        "format",
+        "algorithm"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "projects",
+        "organizations",
+        "sources",
+        "concepts"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:technology",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "publication",
+      "label": "Publication",
+      "color": {
+        "bg": "#a78bfa",
+        "fg": "#140f22",
+        "outline": "#ede3ff"
+      },
+      "purpose": "A released intellectual or creative work such as a book, article, paper, film, episode, or talk.",
+      "allowed_subtypes": [
+        "book",
+        "paper",
+        "article",
+        "film",
+        "episode",
+        "talk",
+        "podcast",
+        "webpage"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "author",
+        "publisher",
+        "year",
+        "source_url",
+        "license",
+        "rights_status"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:publication",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "community",
+      "label": "Community",
+      "color": {
+        "bg": "#fb923c",
+        "fg": "#201006",
+        "outline": "#ffe7d6"
+      },
+      "purpose": "A group organized around an identity, platform, shared work, practice, interest, or tradition.",
+      "allowed_subtypes": [
+        "forum",
+        "professional",
+        "open_source",
+        "fan",
+        "research",
+        "local",
+        "online"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "website",
+        "people",
+        "projects",
+        "events"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:community",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "relationship",
+      "label": "Relationship",
+      "color": {
+        "bg": "#ec4899",
+        "fg": "#240812",
+        "outline": "#ffd8ea"
+      },
+      "purpose": "A first-class edge treated as a node because the relationship itself has history, evidence, dispute, or explanation.",
+      "allowed_subtypes": [
+        "friendship",
+        "influence",
+        "collaboration",
+        "citation",
+        "dispute",
+        "lineage",
+        "dependency"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "source_node",
+        "target_node",
+        "relationship_type",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "evidence",
+        "confidence",
+        "status",
+        "asserted_by",
+        "reviewed_by"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:relationship",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "revision",
+      "label": "Revision",
+      "color": {
+        "bg": "#94a3b8",
+        "fg": "#0f172a",
+        "outline": "#dde5f2"
+      },
+      "purpose": "An immutable historical version of another node.",
+      "allowed_subtypes": [
+        "node_revision",
+        "claim_revision",
+        "relationship_revision",
+        "media_revision"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "revises",
+        "revision_id",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "created_by",
+        "created_date",
+        "supersedes",
+        "superseded_by",
+        "change_summary"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:revision",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "trail",
+      "label": "Trail",
+      "color": {
+        "bg": "#fb8500",
+        "fg": "#241100",
+        "outline": "#ffe3be"
+      },
+      "purpose": "A curated route through the graph.",
+      "allowed_subtypes": [
+        "introductory",
+        "historical",
+        "argument",
+        "evidence_path",
+        "teaching_path",
+        "dispute_path"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "nodes",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "concepts",
+        "people",
+        "sources",
+        "claims"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:trail",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "schema",
+      "label": "Schema",
+      "color": {
+        "bg": "#e2e8f0",
+        "fg": "#111827",
+        "outline": "#ffffff"
+      },
+      "purpose": "A rule, ontology, validation document, or governance definition used by XanaNode itself.",
+      "allowed_subtypes": [
+        "node_type_schema",
+        "relationship_type_schema",
+        "validation_rule",
+        "governance_rule",
+        "style_rule"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "version",
+        "status",
+        "source_url"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:schema",
+      "core": true,
+      "extends": null
+    },
+    {
+      "namespace": "xananode",
+      "id": "xananode:fragment",
+      "type": "fragment",
+      "label": "Fragment",
+      "color": {
+        "bg": "#38bdf8",
+        "fg": "#03131f",
+        "outline": "#d8f4ff"
+      },
+      "purpose": "A stable, addressable portion of another node, source, media object, or publication used for deep linking, quotation, citation, transclusion, and revision-aware reference.",
+      "allowed_subtypes": [
+        "section",
+        "paragraph",
+        "sentence",
+        "quote",
+        "code_block",
+        "data_range",
+        "media_segment",
+        "image_region"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "source_node",
+        "fragment_id",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "tumbler",
+        "source_revision",
+        "content_hash",
+        "selector",
+        "start_offset",
+        "end_offset",
+        "byte_range",
+        "line_range",
+        "time_range",
+        "rights_status"
+      ]
+    }
+  ]
+}

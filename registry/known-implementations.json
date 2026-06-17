@@ -1,0 +1,25 @@
+{
+  "implementations": [
+    {
+      "name": "XanaNode Hugo Theme",
+      "type": "static-site-reference-implementation",
+      "status": "active",
+      "url": "https://github.com/kingc95/xananode-hugo",
+      "repository": "kingc95/xananode-hugo",
+      "protocol_role": "reference-renderer",
+      "description": "Static-site renderer and graph viewer for XanaNode-compatible substrates.",
+      "consumes": [
+        "substrate manifests",
+        "node files",
+        "relationship files",
+        "schema registries"
+      ],
+      "related_protocol_artifacts": [
+        "../schemas/substrate-manifest.schema.json",
+        "../schemas/substrate-node.schema.json",
+        "../schemas/substrate-relationships.schema.json",
+        "../examples/minimal-substrate/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+node_modules/
+tmp-example-public/
+dist/
+public/
+.env

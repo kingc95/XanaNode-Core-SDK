@@ -1,0 +1,45 @@
+{
+  "name": "@xananode/core",
+  "version": "0.1.0",
+  "description": "Reference Core SDK for reading, validating, building, and exporting XanaNode substrates independent of any renderer.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./cli": "./src/cli.js"
+  },
+  "bin": {
+    "xananode": "./bin/xananode.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "schemas",
+    "registry",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "validate:example": "node ./bin/xananode.js validate ./templates/basic",
+    "build:example": "node ./bin/xananode.js build ./templates/basic --out ./tmp-example-public"
+  },
+  "keywords": [
+    "xananode",
+    "knowledge-graph",
+    "substrate",
+    "provenance",
+    "static-site",
+    "semantic-web"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "fast-glob": "^3.3.3",
+    "js-yaml": "^4.1.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {}
+}

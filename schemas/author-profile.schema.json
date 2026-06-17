@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/author-profile.schema.json",
+  "title": "Author Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "orcid": { "type": "string" },
+    "github": { "type": "string" },
+    "website": { "type": "string", "format": "uri" },
+    "public_key": { "type": "string" },
+    "default_rights": { "type": "string" },
+    "default_license": { "type": "string" },
+    "default_role": { "type": "string" }
+  }
+}
