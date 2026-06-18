@@ -1,0 +1,4 @@
+[submodule "vendor/xananode-protocol"]
+	path = vendor/xananode-protocol
+	url = https://github.com/kingc95/xananode.git
+	branch = main
