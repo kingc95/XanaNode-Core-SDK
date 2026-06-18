@@ -19,19 +19,38 @@ It exists to keep protocol behavior out of any one presentation layer. Hugo, Stu
 
 ## Why this exists
 
-The Hugo implementation already contains a lot of protocol-adjacent behavior in its build script. This SDK extracts that concept into a reusable layer:
+The Hugo implementation originally contained a lot of protocol-adjacent behavior in its build script. This SDK extracts that behavior into a reusable layer:
 
 ```text
 XanaNode Protocol
-        ↓
+        |
 XanaNode Core SDK
-        ↓
+        |
 Hugo theme / Studio / CLI / Hub / AI tools / third-party renderers
 ```
 
 Hugo should be a renderer and preview surface, not the only place where protocol behavior lives.
 
-## Install locally
+## Local development
+
+Clone with submodules so the bundled protocol schemas are present:
+
+```bash
+git clone --recurse-submodules https://github.com/kingc95/XanaNode-Core-SDK.git
+cd XanaNode-Core-SDK
+npm install
+npm test
+```
+
+If the repository was already cloned without submodules:
+
+```bash
+npm run protocol:init
+npm install
+npm test
+```
+
+## Install locally for CLI testing
 
 ```bash
 npm install
@@ -90,15 +109,16 @@ validation.json
 nodes/*.json
 ```
 
-## Suggested next extraction from XanaNode-Hugo
+## Renderer integration status
 
-This package is intentionally a first-pass core. The next step should be to refactor `XanaNode-Hugo-main/tools/prepare-xananode.mjs` so it calls this SDK instead of reimplementing protocol behavior internally.
+This package is the protocol implementation layer used by downstream XanaNode packages. `XanaNode-Hugo` includes this SDK as a submodule and validates generated protocol artifacts through Core, while still keeping Hugo-specific output such as templates, `/index.json`, preview bridge files, and static-site UI assets in the theme.
 
 Recommended split:
 
 - Core SDK owns parsing, validation, graph creation, fragments, transclusion reference detection, suggestions, and artifact writing.
 - Hugo owns templates, layouts, shortcodes, CSS, graph UI, and static-site rendering.
-- Studio owns editing UX, author profiles, Git workflows, media import, and relationship selection.
+- Workspace owns substrate folders, authors, Git workflows, media import, imports, build orchestration, and health checks.
+- Studio owns editing UX, preview orchestration, relationship selection, and desktop workflow.
 
 ## Design notes
 
@@ -106,11 +126,11 @@ Recommended split:
 
 XanaNode Core does not try to replace Git. Studio can later wrap Git in friendlier language:
 
-- commit → save snapshot
-- branch → draft path
-- merge → bring changes together
-- pull request → propose changes
-- diff → what changed
+- commit -> save snapshot
+- branch -> draft path
+- merge -> bring changes together
+- pull request -> propose changes
+- diff -> what changed
 
 ### Static-first, server-optional
 
