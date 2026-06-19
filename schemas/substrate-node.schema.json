@@ -15,6 +15,20 @@
       "type": "string",
       "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
     },
+    "subtype": {
+      "type": "string",
+      "description": "A narrower kind within the primary node type, such as git_repository, official_site, documentation, support_page, screenshot, logo, or web_snapshot.",
+      "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+    },
+    "subtypes": {
+      "type": "array",
+      "description": "Additional narrower kinds within the primary node type. Use when one node needs more than one subtype without changing its primary type.",
+      "items": {
+        "type": "string",
+        "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+      },
+      "uniqueItems": true
+    },
     "facets": {
       "type": "array",
       "description": "Secondary node roles used when one knowledge object participates in multiple modeling categories without duplicating its identity.",
@@ -36,6 +50,34 @@
     "updated_at": { "type": "string", "format": "date-time" },
     "source_url": { "type": "string", "format": "uri" },
     "rights_status": { "type": "string" },
+    "asset_path": {
+      "type": "string",
+      "description": "Portable relative path to a local asset file inside the substrate or pack, usually used by media nodes."
+    },
+    "asset_role": {
+      "type": "string",
+      "description": "The role this asset plays for the node, such as primary_media, source_snapshot, thumbnail, transcript, attachment, or archival_copy."
+    },
+    "media_type": { "type": "string" },
+    "mime_type": { "type": "string" },
+    "alt": { "type": "string" },
+    "caption": { "type": "string" },
+    "source_snapshot": {
+      "type": "object",
+      "description": "Metadata for a captured representation of an external source page.",
+      "additionalProperties": false,
+      "properties": {
+        "captured_at": { "type": "string", "format": "date-time" },
+        "source_url": { "type": "string", "format": "uri" },
+        "method": {
+          "type": "string",
+          "enum": ["opengraph", "screenshot", "readability", "manual", "archive"]
+        },
+        "content_id": { "type": "string" },
+        "rights_status": { "type": "string" },
+        "tool": { "type": "string" }
+      }
+    },
     "confidence": { "type": "string" },
     "protocol_id": { "type": "string" },
     "content_id": { "type": "string" },

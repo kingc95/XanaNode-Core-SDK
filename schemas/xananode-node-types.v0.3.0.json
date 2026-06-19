@@ -135,7 +135,13 @@
         "interview",
         "dataset",
         "website",
-        "documentation"
+        "official_site",
+        "documentation",
+        "git_repository",
+        "social_profile",
+        "support_page",
+        "web_snapshot",
+        "archive"
       ],
       "required_frontmatter": [
         "title",
@@ -246,7 +252,11 @@
         "screenshot",
         "diagram",
         "clip",
-        "scan"
+        "scan",
+        "logo",
+        "thumbnail",
+        "web_snapshot",
+        "source_snapshot"
       ],
       "required_frontmatter": [
         "title",
@@ -254,12 +264,15 @@
         "media_type",
         "importance",
         "summary",
-        "file",
         "alt",
         "rights_status",
         "relationships"
       ],
       "recommended_frontmatter": [
+        "file",
+        "asset_path",
+        "asset_role",
+        "mime_type",
         "caption",
         "creator",
         "created_date",
