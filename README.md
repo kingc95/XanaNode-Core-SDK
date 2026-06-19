@@ -12,10 +12,13 @@ It exists to keep protocol behavior out of any one presentation layer. Hugo, Stu
 - Builds typed relationship records.
 - Generates block fragments and authored fragment records.
 - Detects `xana://...` references and Hugo-style `{{< xana ref="..." >}}` shortcodes.
-- Builds review suggestions for possible links and transclusions.
+- Builds review suggestions for possible links, transclusions, incoming relationships, merge candidates, and new imported nodes.
+- Loads mounted, imported, and merged substrate packs from protocol artifact directories.
+- Analyzes incoming substrate packs against an existing substrate before merge/import.
+- Builds portable canonical substrate packs from one or more authored substrate roots.
 - Validates generated artifacts against bundled XanaNode schemas.
 - Writes canonical protocol artifacts independent of Hugo.
-- Provides a CLI for `init`, `validate`, `build`, and `inspect`.
+- Provides a CLI for `init`, `validate`, `build`, `build-pack`, and `inspect`.
 
 ## Why this exists
 
@@ -63,20 +66,47 @@ Then:
 xananode init ./my-substrate --name "My Substrate" --namespace my
 xananode validate ./my-substrate
 xananode build ./my-substrate --out ./my-substrate/public
+xananode build-pack ./my-substrate --out ./packs/my-substrate-pack
 ```
 
 ## Programmatic usage
 
 ```js
-import { buildSubstrate, writeSubstrateArtifacts } from "@xananode/core";
+import {
+  analyzeSubstrateIntake,
+  buildSubstrate,
+  loadSubstratePack,
+  writeSubstrateArtifacts
+} from "@xananode/core";
 
 const substrate = await buildSubstrate("./my-substrate");
 console.log(substrate.protocolNodes.length);
 console.log(substrate.relationships.length);
 console.log(substrate.validation);
 
+const intake = analyzeSubstrateIntake(substrate, {
+  nodes: incomingProtocolNodes,
+  relationships: incomingRelationships
+});
+console.log(intake.merge_candidates);
+console.log(intake.relationship_imports);
+
+const mountedPack = loadSubstratePack("./packs/lineage", {
+  pack: { id: "lineage", mode: "mounted" }
+});
+console.log(mountedPack.nodes.length);
+console.log(mountedPack.relationships.length);
+
 await writeSubstrateArtifacts("./my-substrate", "./public");
 ```
+
+Pack composition modes are protocol terms:
+
+- `mounted`: available for rendering, traversal, and analysis without local ownership.
+- `imported`: copied into generated local artifacts with pack provenance.
+- `merged`: reconciled with local identity, conflicts, and review policy.
+
+`absorbed` is accepted as a legacy alias for `imported`.
 
 ## CLI
 
@@ -109,15 +139,24 @@ validation.json
 nodes/*.json
 ```
 
+### Build a substrate pack
+
+```bash
+xananode build-pack ./example --out ./packs/xananode-canonical
+```
+
+This writes a portable pack directory containing `substrate.json`, `relationships.json`, `nodes/*.json`, and `pack-report.json`. Downstream renderers can mount that pack without owning its content.
+
 ## Renderer integration status
 
 This package is the protocol implementation layer used by downstream XanaNode packages. `XanaNode-Hugo` includes this SDK as a submodule and validates generated protocol artifacts through Core, while still keeping Hugo-specific output such as templates, `/index.json`, preview bridge files, and static-site UI assets in the theme.
 
 Recommended split:
 
-- Core SDK owns parsing, validation, graph creation, fragments, transclusion reference detection, suggestions, and artifact writing.
-- Hugo owns templates, layouts, shortcodes, CSS, graph UI, and static-site rendering.
-- Workspace owns substrate folders, authors, Git workflows, media import, imports, build orchestration, and health checks.
+- Core SDK owns parsing, validation, graph creation, fragments, transclusion reference detection, intake analysis, suggestions, and artifact writing.
+- Core SDK owns pack loading, mounted/imported/merged pack semantics, dependency resolution, merge candidates, relationship intake, and transclusion/link suggestions.
+- Hugo owns templates, layouts, shortcodes, CSS, graph UI, static-site rendering, and asking Core to resolve configured packs at build time.
+- Workspace owns substrate folders, authors, Git workflows, media import, pack enable/disable controls, import/merge review, build orchestration, and health checks.
 - Studio owns editing UX, preview orchestration, relationship selection, and desktop workflow.
 
 ## Design notes

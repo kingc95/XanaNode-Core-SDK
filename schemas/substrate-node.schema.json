@@ -15,6 +15,15 @@
       "type": "string",
       "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
     },
+    "facets": {
+      "type": "array",
+      "description": "Secondary node roles used when one knowledge object participates in multiple modeling categories without duplicating its identity.",
+      "items": {
+        "type": "string",
+        "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+      },
+      "uniqueItems": true
+    },
     "status": { "type": "string" },
     "importance": {
       "type": "integer",

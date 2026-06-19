@@ -62,21 +62,28 @@ export function buildFragments(markdown, data = {}, context = {}) {
 
 export function parseXanaRef(ref) {
   const value = String(ref || "").trim().replace(/^xana:\/\//, "");
-  const match = value.match(/^([^@/#]+(?:\/[^@/#]+)?)(?:@([^/#]+))?(?:\/([0-9]{4})(?:-([0-9]{4}))?)?$/);
+  const match = value.match(/^([^@/#]+(?:\/[^@/#]+)?)(?:@([^/#]+))?(?:\/([^#]+))?$/);
   if (!match) return null;
   return {
     node: match[1],
     version: match[2] || "latest",
     start: match[3] || null,
-    end: match[4] || match[3] || null
+    end: match[3] || null,
+    range: match[3] || "1"
   };
 }
 
 export function rangeToText(fragmentMap, range) {
-  if (!range?.start) return null;
-  const keys = [...fragmentMap.keys()].sort();
-  const selected = keys.filter((key) => key >= range.start && key <= range.end);
-  const text = selected.map((key) => fragmentMap.get(key)?.text).filter(Boolean).join("\n\n");
+  const start = typeof range === "string" ? range : range?.start || range?.range;
+  const end = typeof range === "string" ? range : range?.end || start;
+  if (!start) return null;
+  const entries = fragmentMap instanceof Map
+    ? [...fragmentMap.entries()]
+    : Object.entries(fragmentMap || {});
+  const selected = entries
+    .filter(([key]) => key >= start && key <= end)
+    .sort(([left], [right]) => left.localeCompare(right));
+  const text = selected.map(([, value]) => typeof value === "string" ? value : value?.text).filter(Boolean).join("\n\n");
   return text || null;
 }
 

@@ -28,6 +28,12 @@
       "schema": "../schemas/substrate-relationships.schema.json"
     },
     {
+      "id": "xananode-property-registry",
+      "version": "0.1.0",
+      "path": "../schemas/xananode-property-registry.v0.1.0.json",
+      "schema": "../schemas/property-registry.schema.json"
+    },
+    {
       "id": "merge-report",
       "version": "0.1.0",
       "schema": "../schemas/merge-report.schema.json"

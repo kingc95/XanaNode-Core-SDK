@@ -28,21 +28,29 @@ function existingLinkedTargetIds(markdown, nodeIds) {
 }
 
 function termListForNode(node) {
+  const data = node.data || {};
   return uniqueStrings([
     node.title,
     node.id,
-    node.data?.slug,
-    ...(node.data?.aliases || []),
-    ...(node.data?.terms || [])
+    node.protocolId,
+    node.protocol_id,
+    data.slug,
+    ...(data.aliases || []),
+    ...(data.terms || []),
+    ...(node.aliases || []),
+    ...(node.terms || [])
   ]).filter((term) => term.length >= 3);
 }
 
 export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
   const suggestions = [];
   const nodeList = Array.isArray(nodes) ? nodes : [...nodes.values()];
-  const nodeIds = new Set(nodeList.map((node) => node.id));
+  const targetNodes = options.targetNodes
+    ? (Array.isArray(options.targetNodes) ? options.targetNodes : [...options.targetNodes.values()])
+    : nodeList;
+  const nodeIds = new Set(targetNodes.map((node) => node.id));
   const maxSuggestionsPerNode = options.maxSuggestionsPerNode || 50;
-  const termsByTarget = nodeList.map((target) => ({ target, terms: termListForNode(target) })).filter((entry) => entry.terms.length);
+  const termsByTarget = targetNodes.map((target) => ({ target, terms: termListForNode(target) })).filter((entry) => entry.terms.length);
 
   for (const source of nodeList) {
     const markdown = source.body || "";
@@ -59,9 +67,9 @@ export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
         const pos = lineColumnFor(markdown, first.index);
         suggestions.push({
           kind: "possible_link",
-          source: source.protocolId,
+          source: source.protocolId || source.protocol_id || source.id,
           source_local_id: source.id,
-          target: target.protocolId,
+          target: target.protocolId || target.protocol_id || target.id,
           target_local_id: target.id,
           target_type: target.type,
           phrase: first.text,
@@ -90,7 +98,7 @@ export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
       if (fragmentText.length >= 24 && bodyText.includes(fragmentText.slice(0, 80))) {
         suggestions.push({
           kind: "possible_transclusion",
-          source: source.protocolId,
+          source: source.protocolId || source.protocol_id || source.id,
           target_fragment: fragment.protocol_id,
           source_node: fragment.source_node,
           confidence: 0.72,
@@ -105,4 +113,139 @@ export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
   }
 
   return suggestions.sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
+}
+
+function protocolIdForNode(node) {
+  return node?.protocolId || node?.protocol_id || node?.id || "";
+}
+
+function normalizeComparableText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function nodeComparisonTerms(node) {
+  return uniqueStrings([
+    node.title,
+    node.id,
+    protocolIdForNode(node).split("/").at(-1),
+    ...(node.aliases || []),
+    ...(node.data?.aliases || [])
+  ]).map(normalizeComparableText).filter(Boolean);
+}
+
+function overlapScore(leftTerms, rightTerms) {
+  if (!leftTerms.length || !rightTerms.length) return 0;
+  let best = 0;
+  for (const left of leftTerms) {
+    for (const right of rightTerms) {
+      if (left === right) best = Math.max(best, 1);
+      else if (left.length >= 6 && right.length >= 6 && (left.includes(right) || right.includes(left))) best = Math.max(best, 0.78);
+    }
+  }
+  return best;
+}
+
+export function analyzeSubstrateIntake(substrate = {}, incoming = {}, options = {}) {
+  const existingNodes = Array.isArray(substrate.nodes) ? substrate.nodes : [];
+  const existingProtocolNodes = Array.isArray(substrate.protocolNodes) ? substrate.protocolNodes : existingNodes;
+  const existingRelationships = Array.isArray(substrate.relationships) ? substrate.relationships : [];
+  const fragments = Array.isArray(substrate.fragments) ? substrate.fragments : [];
+  const incomingNodes = Array.isArray(incoming.nodes) ? incoming.nodes : [];
+  const incomingRelationships = Array.isArray(incoming.relationships) ? incoming.relationships : [];
+
+  const existingIds = new Set(existingProtocolNodes.map(protocolIdForNode));
+  const incomingIds = new Set(incomingNodes.map(protocolIdForNode));
+  const allTargetNodes = [...existingNodes, ...incomingNodes];
+
+  const autolinks = buildReviewSuggestions(existingNodes, [], {
+    ...options,
+    targetNodes: allTargetNodes
+  }).filter((suggestion) => suggestion.kind === "possible_link");
+
+  const transclusions = buildReviewSuggestions(existingNodes, fragments, options)
+    .filter((suggestion) => suggestion.kind === "possible_transclusion");
+
+  const mergeCandidates = [];
+  const existingTerms = existingProtocolNodes.map((node) => ({
+    node,
+    id: protocolIdForNode(node),
+    terms: nodeComparisonTerms(node)
+  }));
+  for (const incomingNode of incomingNodes) {
+    const incomingId = protocolIdForNode(incomingNode);
+    const incomingTerms = nodeComparisonTerms(incomingNode);
+    for (const existing of existingTerms) {
+      const score = incomingId && incomingId === existing.id ? 1 : overlapScore(incomingTerms, existing.terms);
+      if (score >= (options.mergeCandidateThreshold || 0.78)) {
+        mergeCandidates.push({
+          kind: score === 1 ? "same_id" : "possible_same_entity",
+          existing: existing.id,
+          incoming: incomingId,
+          existing_title: existing.node.title,
+          incoming_title: incomingNode.title,
+          confidence: score,
+          reason: score === 1
+            ? "Incoming node has the same protocol id as an existing node."
+            : "Incoming node title or alias closely matches an existing node."
+        });
+      }
+    }
+  }
+
+  const relationshipImports = incomingRelationships
+    .filter((relationship) => existingIds.has(relationship.source) || existingIds.has(relationship.target))
+    .map((relationship) => ({
+      kind: "incoming_relationship_touches_existing_node",
+      relationship: relationship.id,
+      source: relationship.source,
+      target: relationship.target,
+      type: relationship.type,
+      summary: relationship.summary || "",
+      touches_source: existingIds.has(relationship.source),
+      touches_target: existingIds.has(relationship.target),
+      confidence: 0.9,
+      reason: "Incoming relationship references at least one node already present in the substrate."
+    }));
+
+  const newNodes = incomingNodes
+    .filter((node) => !existingIds.has(protocolIdForNode(node)))
+    .map((node) => ({
+      kind: "new_node",
+      node: protocolIdForNode(node),
+      title: node.title,
+      type: node.type,
+      connected_by_incoming_relationships: incomingRelationships.filter((relationship) => relationship.source === protocolIdForNode(node) || relationship.target === protocolIdForNode(node)).length
+    }));
+
+  const danglingRelationships = incomingRelationships
+    .filter((relationship) => {
+      const sourceKnown = existingIds.has(relationship.source) || incomingIds.has(relationship.source);
+      const targetKnown = existingIds.has(relationship.target) || incomingIds.has(relationship.target);
+      return !sourceKnown || !targetKnown;
+    })
+    .map((relationship) => ({
+      kind: "dangling_incoming_relationship",
+      relationship: relationship.id,
+      source: relationship.source,
+      target: relationship.target,
+      type: relationship.type,
+      missing_source: !(existingIds.has(relationship.source) || incomingIds.has(relationship.source)),
+      missing_target: !(existingIds.has(relationship.target) || incomingIds.has(relationship.target)),
+      confidence: 1,
+      reason: "Incoming relationship references a node that is not in the current substrate or incoming pack."
+    }));
+
+  return {
+    autolinks,
+    transclusions,
+    merge_candidates: mergeCandidates.sort((a, b) => b.confidence - a.confidence),
+    relationship_imports: relationshipImports,
+    new_nodes: newNodes,
+    dangling_relationships: danglingRelationships
+  };
 }

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://xananode.org/schemas/property-registry.schema.json",
+  "id": "xananode.core:property-registry",
+  "version": "0.1.0",
+  "description": "Canonical common properties for open-ended substrate node adjectives.",
+  "property_registry": [
+    {
+      "id": "birth_date",
+      "label": "Birth date",
+      "description": "Calendar date on which a person, organization, project, or entity began.",
+      "category": "time",
+      "aliases": ["born", "date_of_birth", "founded_date"],
+      "applies_to": ["person", "organization", "project"],
+      "unit_system": "ISO-8601",
+      "value_schema": {
+        "type": "string",
+        "format": "date"
+      },
+      "examples": ["1955-02-24"]
+    },
+    {
+      "id": "geo_coordinates",
+      "label": "Geographic coordinates",
+      "description": "WGS84 latitude and longitude coordinates for a place or geographically located entity.",
+      "category": "space",
+      "aliases": ["coordinates", "lat_lon", "location"],
+      "applies_to": ["place", "event", "organization", "source", "media"],
+      "unit_system": "WGS84",
+      "value_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["latitude", "longitude"],
+        "properties": {
+          "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+          },
+          "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          },
+          "altitude_m": { "type": "number" },
+          "crs": {
+            "type": "string",
+            "const": "WGS84"
+          }
+        }
+      },
+      "examples": [
+        {
+          "latitude": 37.33182,
+          "longitude": -122.03118,
+          "crs": "WGS84"
+        }
+      ]
+    },
+    {
+      "id": "currency_value",
+      "label": "Currency value",
+      "description": "A monetary amount with an ISO 4217 currency code.",
+      "category": "money",
+      "aliases": ["price", "cost", "market_value", "amount_money"],
+      "applies_to": ["claim", "observation", "source", "project"],
+      "unit_system": "ISO-4217",
+      "value_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["amount", "currency"],
+        "properties": {
+          "amount": { "type": "number" },
+          "currency": {
+            "type": "string",
+            "pattern": "^[A-Z]{3}$"
+          },
+          "as_of": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "examples": [
+        {
+          "amount": 199.99,
+          "currency": "USD",
+          "as_of": "2026-01-01T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "measurement_si",
+      "label": "SI measurement",
+      "description": "A quantified physical or conceptual measurement expressed in SI-compatible units.",
+      "category": "quantity",
+      "aliases": ["measurement", "quantity", "metric_value"],
+      "unit_system": "SI",
+      "value_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["value", "unit"],
+        "properties": {
+          "value": { "type": "number" },
+          "unit": { "type": "string" },
+          "quantity_kind": { "type": "string" },
+          "uncertainty": { "type": "number" }
+        }
+      },
+      "examples": [
+        {
+          "value": 1.82,
+          "unit": "m",
+          "quantity_kind": "height"
+        }
+      ]
+    },
+    {
+      "id": "external_identifier",
+      "label": "External identifier",
+      "description": "A typed identifier from an external authority or registry.",
+      "category": "reference",
+      "aliases": ["wikidata_id", "doi", "orcid", "authority_id"],
+      "unit_system": "none",
+      "value_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["authority", "value"],
+        "properties": {
+          "authority": { "type": "string" },
+          "value": { "type": "string" },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "examples": [
+        {
+          "authority": "wikidata",
+          "value": "Q19837",
+          "url": "https://www.wikidata.org/wiki/Q19837"
+        }
+      ]
+    }
+  ]
+}

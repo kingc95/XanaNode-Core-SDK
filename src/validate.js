@@ -19,7 +19,7 @@ export function createAjv() {
 
 export function loadBundledSchemas(schemaDir = path.join(packageRoot, "schemas")) {
   const schemas = new Map();
-  for (const file of fs.readdirSync(schemaDir).filter((name) => name.endsWith(".json"))) {
+  for (const file of fs.readdirSync(schemaDir).filter((name) => name.endsWith(".schema.json"))) {
     const fullPath = path.join(schemaDir, file);
     schemas.set(file, readJson(fullPath));
   }

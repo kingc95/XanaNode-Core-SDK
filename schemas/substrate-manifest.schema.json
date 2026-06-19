@@ -69,7 +69,53 @@
     },
     "imports": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "source", "mode"],
+            "properties": {
+              "id": { "type": "string" },
+              "source": { "type": "string" },
+              "mode": {
+                "type": "string",
+                "enum": ["mounted", "imported", "merged", "absorbed"]
+              },
+              "version": { "type": "string" },
+              "description": { "type": "string" },
+              "required": { "type": "boolean" },
+              "namespace_mappings": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["from", "to", "scope"],
+                  "properties": {
+                    "from": { "type": "string" },
+                    "to": { "type": "string" },
+                    "scope": {
+                      "type": "string",
+                      "enum": ["relationships", "all"]
+                    },
+                    "reason": { "type": "string" }
+                  }
+                }
+              },
+              "trust": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "signed": { "type": "boolean" },
+                  "signature": { "type": "string" },
+                  "public_key": { "type": "string" }
+                }
+              }
+            }
+          }
+        ]
+      }
     },
     "extensions": {
       "type": "array",

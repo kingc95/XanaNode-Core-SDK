@@ -2,6 +2,7 @@ import { Command } from "commander";
 import path from "node:path";
 import { initSubstrate } from "./init.js";
 import { buildSubstrate, writeSubstrateArtifacts } from "./build.js";
+import { writeCanonicalPack } from "./canonical-pack.js";
 
 function printValidation(validation) {
   if (validation.valid) {
@@ -64,6 +65,37 @@ export async function runCli(argv = process.argv) {
       console.log(`Relationships: ${substrate.relationships.length}`);
       console.log(`Fragments: ${substrate.fragments.length}`);
       console.log(`Suggestions: ${substrate.suggestions.length}`);
+    });
+
+  program.command("build-pack")
+    .argument("[sources...]", "substrate source directories")
+    .requiredOption("--out <dir>", "pack output directory")
+    .option("--id <id>", "pack id", "xananode.canonical")
+    .option("--name <name>", "pack name", "XanaNode Canonical Pack")
+    .option("--namespace <namespace>", "pack namespace", "xananode.canonical")
+    .option("--version <version>", "pack version", "0.1.0")
+    .option("--description <description>", "pack description")
+    .option("--repository-url <url>", "repository URL recorded in substrate.json", "local")
+    .option("--default-branch <branch>", "default Git branch recorded in substrate.json", "main")
+    .option("--include-drafts", "include draft nodes", false)
+    .description("build a portable substrate pack from one or more authored substrates")
+    .action(async (sources, options) => {
+      const roots = sources.length ? sources : ["."];
+      const pack = await writeCanonicalPack(roots.map((source) => path.resolve(source)), path.resolve(options.out), {
+        id: options.id,
+        name: options.name,
+        namespace: options.namespace,
+        version: options.version,
+        description: options.description,
+        repositoryUrl: options.repositoryUrl,
+        defaultBranch: options.defaultBranch,
+        includeDrafts: options.includeDrafts
+      });
+      console.log(`Wrote pack to ${path.resolve(options.out)}`);
+      console.log(`Sources: ${pack.source_count}`);
+      console.log(`Nodes: ${pack.node_count}`);
+      console.log(`Relationships: ${pack.relationship_count}`);
+      if (pack.warnings.length) console.log(`Warnings: ${pack.warnings.length}`);
     });
 
   program.command("inspect")
