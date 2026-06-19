@@ -430,9 +430,9 @@
       "build_metadata": {
         "version": "0.1.0",
         "repository": "kingc95/XanaNode-Core-SDK",
-        "generated_at": "2026-06-19T20:40:39.490Z",
+        "generated_at": "2026-06-19T21:46:05.851Z",
         "built_by": "@xananode/core",
-        "git_commit": "930d4f27f1a9463e2337a166a8b5d54896b7caf6",
+        "git_commit": "e03e1ff039cbc8640b9703d88e8883ece35008ac",
         "git_branch": "main",
         "runtime": "node v24.16.0",
         "platform": "win32/x64",
@@ -497,7 +497,7 @@
       "build_metadata": {
         "version": "",
         "repository": "kingc95/xananode-hugo",
-        "generated_at": "2026-06-19T20:40:39.582Z",
+        "generated_at": "2026-06-19T21:46:06.039Z",
         "built_by": "@xananode/core",
         "dependencies": [
           {
@@ -551,7 +551,7 @@
       "build_metadata": {
         "version": "",
         "repository": "kingc95/XanaNode",
-        "generated_at": "2026-06-19T20:40:39.329Z",
+        "generated_at": "2026-06-19T21:46:05.789Z",
         "built_by": "@xananode/core",
         "git_commit": "",
         "git_branch": "",
@@ -581,7 +581,7 @@
       "build_metadata": {
         "version": "",
         "repository": "kingc95/XanaNode-Studio",
-        "generated_at": "2026-06-19T20:40:39.583Z",
+        "generated_at": "2026-06-19T21:46:06.039Z",
         "built_by": "@xananode/core",
         "dependencies": [
           {
@@ -631,7 +631,7 @@
       "build_metadata": {
         "version": "",
         "repository": "kingc95/XanaNode-Workspace",
-        "generated_at": "2026-06-19T20:40:39.583Z",
+        "generated_at": "2026-06-19T21:46:06.039Z",
         "built_by": "@xananode/core",
         "dependencies": [
           {
