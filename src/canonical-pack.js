@@ -9,6 +9,8 @@ import { validateSubstrateArtifacts } from "./validate.js";
 const packageRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const bundledCanonicalPackRoot = path.join(packageRoot, "packs", "xananode-canonical");
 const schemaRoot = path.join(packageRoot, "schemas");
+const registryRoot = path.join(packageRoot, "registry");
+const assertedAt = "2026-06-19T00:00:00.000Z";
 
 function asArray(value) {
   if (value === undefined || value === null) return [];
@@ -52,6 +54,73 @@ function registryRelationshipId(kind, type) {
   return `xananode.canonical:rel/registry-contains-${kind}-${registrySlug(type)}`;
 }
 
+function protocolSourceUrl(relativePath) {
+  return `https://github.com/kingc95/XanaNode-Protocol/blob/main/${String(relativePath || "").replace(/\\/g, "/").replace(/^\.\.\//, "")}`;
+}
+
+function schemaRegistryNode(id, title, summary, subtype = "validation_rule", importance = 4, extra = {}) {
+  return {
+    id: `xananode.canonical:schema/${id}`,
+    title,
+    type: "schema",
+    subtype,
+    importance,
+    summary,
+    relationships: [],
+    ...extra
+  };
+}
+
+function schemaRegistryRelationship(source, target, type, summary, index = "") {
+  return {
+    id: `xananode.canonical:rel/${registrySlug(source)}-${type}-${registrySlug(target)}${index ? `-${index}` : ""}`,
+    source,
+    target,
+    type,
+    summary,
+    weight: type === "defines" || type === "contains" ? 5 : 4,
+    visibility: type === "contains" || type === "defines" ? "primary" : "secondary",
+    asserted_at: assertedAt
+  };
+}
+
+function buildRegistryContainerNodes() {
+  return [
+    schemaRegistryNode(
+      "namespace-registry",
+      "Namespace Registry",
+      "The protocol registry of known namespace identifiers, owners, and extension vocabularies.",
+      "governance_rule",
+      5,
+      { source_url: protocolSourceUrl("registry/namespaces.json") }
+    ),
+    schemaRegistryNode(
+      "known-implementations-registry",
+      "Known Implementations Registry",
+      "The protocol registry of tools, renderers, validators, and substrates that declare XanaNode compatibility.",
+      "governance_rule",
+      4,
+      { source_url: protocolSourceUrl("registry/known-implementations.json") }
+    ),
+    schemaRegistryNode(
+      "canonical-schemas-registry",
+      "Canonical Schemas Registry",
+      "The protocol registry that identifies canonical schema artifacts and their current versions.",
+      "validation_rule",
+      5,
+      { source_url: protocolSourceUrl("registry/canonical-schemas.json") }
+    ),
+    schemaRegistryNode(
+      "property-registry",
+      "Property Registry",
+      "The canonical registry of standardized open-ended node properties for dates, coordinates, money, measurements, and external identifiers.",
+      "validation_rule",
+      5,
+      { source_url: protocolSourceUrl("schemas/xananode-property-registry.v0.1.0.json") }
+    )
+  ];
+}
+
 function buildRegistryTypeNodes() {
   const nodes = [];
   const relationships = [];
@@ -88,16 +157,21 @@ function buildRegistryTypeNodes() {
         summary: `The node type registry contains the ${type} node type.`,
         weight: item.core ? 5 : 3,
         visibility: item.core ? "primary" : "secondary",
-        asserted_at: "2026-06-19T00:00:00.000Z"
+        asserted_at: assertedAt
       });
     }
   }
 
   if (relationshipTypesFile) {
     const registry = readJson(path.join(schemaRoot, relationshipTypesFile));
+    const declaredTypes = new Set((registry.relationship_types || []).map((item) => item.type).filter(Boolean));
+    const inverseTerms = new Map();
     for (const item of registry.relationship_types || []) {
       const type = item.type;
       if (!type) continue;
+      if (item.inverse && !declaredTypes.has(item.inverse) && !inverseTerms.has(item.inverse)) {
+        inverseTerms.set(item.inverse, item);
+      }
       const nodeId = registryNodeId("relationship-type", type);
       nodes.push({
         id: nodeId,
@@ -123,18 +197,231 @@ function buildRegistryTypeNodes() {
         summary: `The relationship type registry contains the ${type} relationship type.`,
         weight: item.core ? 5 : 3,
         visibility: item.core ? "primary" : "secondary",
-        asserted_at: "2026-06-19T00:00:00.000Z"
+        asserted_at: assertedAt
       });
+      if (item.inverse) {
+        relationships.push(schemaRegistryRelationship(
+          nodeId,
+          registryNodeId("relationship-type", item.inverse),
+          "related_to",
+          `${item.label || type} has inverse ${item.inverse}.`,
+          "inverse"
+        ));
+      }
+    }
+    for (const [inverseType, sourceItem] of inverseTerms.entries()) {
+      const nodeId = registryNodeId("relationship-type", inverseType);
+      const sourceNodeId = registryNodeId("relationship-type", sourceItem.type);
+      nodes.push({
+        id: nodeId,
+        title: `${inverseType.replaceAll("_", " ").replace(/\b\w/g, (char) => char.toUpperCase())} Relationship Term`,
+        type: "schema",
+        subtype: "relationship_type_schema",
+        importance: sourceItem.core ? 4 : 3,
+        summary: `The ${inverseType} inverse relationship term derived from ${sourceItem.type}.`,
+        version: registry.version || "",
+        registry_type: inverseType,
+        registry_namespace: sourceItem.namespace || "xananode",
+        category: sourceItem.category || "",
+        inverse: sourceItem.type || "",
+        derived_inverse: true,
+        default_weight: sourceItem.default_weight,
+        default_visibility: sourceItem.default_visibility,
+        relationships: []
+      });
+      relationships.push({
+        id: registryRelationshipId("relationship-type", inverseType),
+        source: "xananode.canonical:schema/relationship-type-registry",
+        target: nodeId,
+        type: "contains",
+        summary: `The relationship type registry documents the ${inverseType} inverse relationship term.`,
+        weight: sourceItem.core ? 4 : 3,
+        visibility: "secondary",
+        asserted_at: assertedAt
+      });
+      relationships.push(schemaRegistryRelationship(
+        nodeId,
+        sourceNodeId,
+        "related_to",
+        `${inverseType} is the inverse term for ${sourceItem.type}.`,
+        "inverse"
+      ));
     }
   }
 
   return { nodes, relationships };
 }
 
+function buildPropertyRegistryNodes() {
+  const nodes = [];
+  const relationships = [];
+  const propertyRegistryFile = latestRegistryFile("xananode-property-registry");
+  if (!propertyRegistryFile) return { nodes, relationships };
+  const registry = readJson(path.join(schemaRoot, propertyRegistryFile));
+  for (const item of registry.property_registry || []) {
+    if (!item.id) continue;
+    const nodeId = `xananode.canonical:schema/property-${registrySlug(item.id)}`;
+    nodes.push({
+      id: nodeId,
+      title: item.label || item.id,
+      type: "schema",
+      subtype: "property_registry_entry",
+      importance: 4,
+      summary: item.description || `The ${item.id} property in the XanaNode property registry.`,
+      registry_type: item.id,
+      category: item.category || "",
+      aliases: item.aliases || [],
+      applies_to: item.applies_to || [],
+      unit_system: item.unit_system || "",
+      value_schema: item.value_schema || {},
+      examples: item.examples || [],
+      relationships: []
+    });
+    relationships.push(schemaRegistryRelationship(
+      "xananode.canonical:schema/property-registry",
+      nodeId,
+      "contains",
+      `The property registry contains the ${item.id} property.`
+    ));
+    for (const nodeType of item.applies_to || []) {
+      relationships.push(schemaRegistryRelationship(
+        nodeId,
+        registryNodeId("node-type", nodeType),
+        "uses",
+        `${item.label || item.id} applies to ${nodeType} nodes.`
+      ));
+    }
+  }
+  return { nodes, relationships };
+}
+
+function buildProtocolMetadataRegistryNodes() {
+  const nodes = buildRegistryContainerNodes();
+  const relationships = [];
+
+  const canonicalSchemasPath = path.join(registryRoot, "canonical-schemas.json");
+  if (fs.existsSync(canonicalSchemasPath)) {
+    const registry = readJson(canonicalSchemasPath);
+    for (const item of registry.schemas || []) {
+      if (!item.id) continue;
+      const nodeId = `xananode.canonical:schema/canonical-schema-${registrySlug(item.id)}`;
+      nodes.push({
+        id: nodeId,
+        title: `${String(item.id).replaceAll("-", " ")} Schema`.replace(/\b\w/g, (char) => char.toUpperCase()),
+        type: "schema",
+        subtype: "canonical_schema_record",
+        importance: item.id.includes("xananode") || item.id.startsWith("substrate") ? 5 : 4,
+        summary: `Canonical schema registry entry for ${item.id}.`,
+        registry_type: item.id,
+        version: item.version || "",
+        schema_path: item.schema || "",
+        artifact_path: item.path || "",
+        source_url: protocolSourceUrl(item.schema || item.path || ""),
+        relationships: []
+      });
+      relationships.push(schemaRegistryRelationship(
+        "xananode.canonical:schema/canonical-schemas-registry",
+        nodeId,
+        "contains",
+        `The canonical schemas registry contains the ${item.id} schema record.`
+      ));
+      if (item.id === "xananode-node-types") {
+        relationships.push(schemaRegistryRelationship(nodeId, "xananode.canonical:schema/node-type-registry", "documents", "The canonical schema record documents the node type registry."));
+      } else if (item.id === "xananode-relationship-types") {
+        relationships.push(schemaRegistryRelationship(nodeId, "xananode.canonical:schema/relationship-type-registry", "documents", "The canonical schema record documents the relationship type registry."));
+      } else if (item.id === "xananode-property-registry") {
+        relationships.push(schemaRegistryRelationship(nodeId, "xananode.canonical:schema/property-registry", "documents", "The canonical schema record documents the property registry."));
+      }
+    }
+  }
+
+  const namespacesPath = path.join(registryRoot, "namespaces.json");
+  if (fs.existsSync(namespacesPath)) {
+    const registry = readJson(namespacesPath);
+    for (const item of registry.namespaces || []) {
+      if (!item.id) continue;
+      const nodeId = `xananode.canonical:schema/namespace-${registrySlug(item.id)}`;
+      nodes.push({
+        id: nodeId,
+        title: item.name || item.id,
+        type: "schema",
+        subtype: "namespace_record",
+        importance: item.id === "xananode" ? 5 : 3,
+        summary: item.description || `Namespace registry entry for ${item.id}.`,
+        registry_type: item.id,
+        schema_path: item.schema || "",
+        example_path: item.example || "",
+        relationships: []
+      });
+      relationships.push(schemaRegistryRelationship(
+        "xananode.canonical:schema/namespace-registry",
+        nodeId,
+        "contains",
+        `The namespace registry contains the ${item.id} namespace.`
+      ));
+      if (item.id === "xananode") {
+        relationships.push(schemaRegistryRelationship(nodeId, "xananode.canonical:concept/xananode", "represents", "The xananode namespace represents XanaNode Core vocabulary."));
+      }
+    }
+  }
+
+  const implementationsPath = path.join(registryRoot, "known-implementations.json");
+  if (fs.existsSync(implementationsPath)) {
+    const registry = readJson(implementationsPath);
+    for (const item of registry.implementations || []) {
+      if (!item.name) continue;
+      const nodeId = `xananode.canonical:project/${registrySlug(item.name)}`;
+      nodes.push({
+        id: nodeId,
+        title: item.name,
+        type: "project",
+        subtype: item.type || "implementation",
+        importance: item.status === "active" ? 4 : 3,
+        summary: item.description || `${item.name} implementation registry entry.`,
+        status: item.status || "",
+        source_url: item.url || "",
+        repository: item.repository || "",
+        protocol_role: item.protocol_role || "",
+        consumes: item.consumes || [],
+        related_protocol_artifacts: item.related_protocol_artifacts || [],
+        relationships: []
+      });
+      relationships.push(schemaRegistryRelationship(
+        "xananode.canonical:schema/known-implementations-registry",
+        nodeId,
+        "contains",
+        `The known implementations registry contains ${item.name}.`
+      ));
+      relationships.push(schemaRegistryRelationship(
+        nodeId,
+        "xananode.canonical:concept/substrate-projection-layer",
+        "implements",
+        `${item.name} implements a XanaNode projection or tooling role.`
+      ));
+    }
+  }
+
+  return { nodes, relationships };
+}
+
+function buildProtocolDigitalTwinNodes() {
+  const parts = [
+    buildRegistryTypeNodes(),
+    buildPropertyRegistryNodes(),
+    buildProtocolMetadataRegistryNodes()
+  ];
+  return {
+    nodes: parts.flatMap((part) => part.nodes),
+    relationships: parts.flatMap((part) => part.relationships)
+  };
+}
+
 function writePackArtifacts(outDir, pack) {
   fs.rmSync(outDir, { recursive: true, force: true });
+  fs.mkdirSync(outDir, { recursive: true });
   fs.mkdirSync(path.join(outDir, "nodes"), { recursive: true });
   writeJson(path.join(outDir, "substrate.json"), pack.manifest);
+  writeJson(path.join(outDir, "nodes.json"), { nodes: pack.nodes });
   writeJson(path.join(outDir, "relationships.json"), { relationships: pack.relationships });
 
   for (const node of pack.nodes) {
@@ -160,7 +447,7 @@ export function buildBundledCanonicalPack(options = {}) {
   const loaded = loadSubstratePack(options.root || bundledCanonicalPackRoot, {
     pack: { id: "xananode.canonical", mode: "mounted" }
   });
-  const registryTypes = buildRegistryTypeNodes();
+  const registryTypes = buildProtocolDigitalTwinNodes();
   const nodesById = new Map();
   const relationshipsById = new Map();
   for (const node of [...loaded.nodes.map(cleanBundledRecord), ...registryTypes.nodes]) {

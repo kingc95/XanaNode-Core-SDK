@@ -1,41 +1,32 @@
 {
   "relationships": [
     {
-      "id": "xananode.canonical:rel/xananode-has-claim-relationships-preserve-knowledge",
-      "source": "xananode.canonical:concept/xananode",
-      "target": "xananode.canonical:claim/relationships-preserve-knowledge",
-      "type": "has_claim",
-      "summary": "XanaNode centers the claim that relationships preserve knowledge.",
-      "weight": 5,
-      "visibility": "primary",
+      "id": "xananode.canonical:rel/bootstrap-created-revision",
+      "source": "xananode.canonical:event/xananode-canonical-pack-bootstrap",
+      "target": "xananode.canonical:revision/canonical-pack-v0-1-0",
+      "type": "created",
+      "summary": "The canonical pack bootstrap created the first bundled pack revision.",
+      "weight": 3,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z",
+      "valid_from": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/built-by-bots-created-icon",
+      "source": "xananode.canonical:organization/built-by-bots",
+      "target": "xananode.canonical:media/xananode-icon",
+      "type": "created",
+      "summary": "Built By Bots created the XanaNode icon asset.",
+      "weight": 4,
+      "visibility": "secondary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
-      "id": "xananode.canonical:rel/xananode-defines-knowledge-substrate",
-      "source": "xananode.canonical:concept/xananode",
-      "target": "xananode.canonical:concept/knowledge-substrate",
-      "type": "defines",
-      "summary": "XanaNode defines a knowledge substrate as an authored graph of addressable nodes and relationships.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-artifacts-enable-projection-layers",
-      "source": "xananode.canonical:concept/protocol-artifacts",
-      "target": "xananode.canonical:concept/substrate-projection-layer",
-      "type": "enables",
-      "summary": "Protocol artifacts let projection layers render a substrate without owning or rewriting the substrate.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/hugo-implements-projection-layer",
-      "source": "xananode.canonical:project/xananode-hugo-theme",
-      "target": "xananode.canonical:concept/substrate-projection-layer",
-      "type": "implements",
-      "summary": "The XanaNode Hugo theme is one static website implementation of a substrate projection layer.",
+      "id": "xananode.canonical:rel/christian-authored-xananode",
+      "source": "xananode.canonical:person/christian-siefen",
+      "target": "xananode.canonical:concept/xananode",
+      "type": "authored",
+      "summary": "Christian Siefen authored the canonical XanaNode substrate identity.",
       "weight": 5,
       "visibility": "primary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
@@ -51,52 +42,22 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/core-documented-by-repository",
+      "source": "xananode.canonical:source/xananode-core-sdk-repository",
+      "target": "xananode.canonical:project/xananode-core-sdk",
+      "type": "documents",
+      "summary": "The public Core SDK repository documents the Core SDK project.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
       "id": "xananode.canonical:rel/core-implements-protocol",
       "source": "xananode.canonical:project/xananode-core-sdk",
       "target": "xananode.canonical:project/xananode-protocol",
       "type": "implements",
       "summary": "Core is a renderer-independent implementation of the XanaNode protocol.",
       "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/workspace-uses-core",
-      "source": "xananode.canonical:project/xananode-workspace",
-      "target": "xananode.canonical:project/xananode-core-sdk",
-      "type": "uses",
-      "summary": "Workspace uses Core for substrate validation, pack handling, and build orchestration.",
-      "weight": 4,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/hugo-uses-core",
-      "source": "xananode.canonical:project/xananode-hugo-theme",
-      "target": "xananode.canonical:project/xananode-core-sdk",
-      "type": "uses",
-      "summary": "The Hugo projection uses Core rather than owning protocol validation logic.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/hugo-uses-hugo",
-      "source": "xananode.canonical:project/xananode-hugo-theme",
-      "target": "xananode.canonical:technology/hugo",
-      "type": "uses",
-      "summary": "The XanaNode Hugo projection uses Hugo as its static site generator.",
-      "weight": 4,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/hugo-uses-cytoscape",
-      "source": "xananode.canonical:project/xananode-hugo-theme",
-      "target": "xananode.canonical:technology/cytoscape-js",
-      "type": "uses",
-      "summary": "The XanaNode Hugo projection uses Cytoscape.js for interactive graph rendering.",
-      "weight": 4,
       "visibility": "primary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
@@ -108,226 +69,6 @@
       "summary": "Core currently uses Node.js for the JavaScript SDK and CLI.",
       "weight": 4,
       "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-uses-python",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:technology/python",
-      "type": "uses",
-      "summary": "The protocol repository includes Python validation tooling alongside JSON Schema artifacts.",
-      "weight": 3,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-node-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/substrate-node-schema",
-      "type": "contains",
-      "summary": "The protocol contains the substrate node schema.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-relationship-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/substrate-relationships-schema",
-      "type": "contains",
-      "summary": "The protocol contains the substrate relationships schema.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-manifest-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/substrate-manifest-schema",
-      "type": "contains",
-      "summary": "The protocol contains the substrate manifest schema.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-node-type-registry",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/node-type-registry",
-      "type": "contains",
-      "summary": "The protocol contains the node type registry.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-relationship-type-registry",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/relationship-type-registry",
-      "type": "contains",
-      "summary": "The protocol contains the relationship type registry.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-property-registry-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/property-registry-schema",
-      "type": "contains",
-      "summary": "The protocol contains the property registry schema.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-author-profile-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/author-profile-schema",
-      "type": "contains",
-      "summary": "The protocol contains the author profile schema.",
-      "weight": 4,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-namespace-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/namespace-schema",
-      "type": "contains",
-      "summary": "The protocol contains the namespace schema.",
-      "weight": 4,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-merge-report-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/merge-report-schema",
-      "type": "contains",
-      "summary": "The protocol contains the merge report schema.",
-      "weight": 4,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-compatibility-report-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/compatibility-report-schema",
-      "type": "contains",
-      "summary": "The protocol contains the compatibility report schema.",
-      "weight": 4,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-substrate-diff-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/substrate-diff-schema",
-      "type": "contains",
-      "summary": "The protocol contains the substrate diff schema.",
-      "weight": 4,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-nanopublication-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/nanopublication-schema",
-      "type": "contains",
-      "summary": "The protocol contains the nanopublication schema.",
-      "weight": 4,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-contains-ro-crate-schema",
-      "source": "xananode.canonical:project/xananode-protocol",
-      "target": "xananode.canonical:schema/ro-crate-metadata-schema",
-      "type": "contains",
-      "summary": "The protocol contains the RO-Crate metadata schema.",
-      "weight": 4,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/protocol-documented-by-repository",
-      "source": "xananode.canonical:source/xananode-protocol-repository",
-      "target": "xananode.canonical:project/xananode-protocol",
-      "type": "documents",
-      "summary": "The public protocol repository documents the protocol project.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/core-documented-by-repository",
-      "source": "xananode.canonical:source/xananode-core-sdk-repository",
-      "target": "xananode.canonical:project/xananode-core-sdk",
-      "type": "documents",
-      "summary": "The public Core SDK repository documents the Core SDK project.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/hugo-documented-by-repository",
-      "source": "xananode.canonical:source/xananode-hugo-repository",
-      "target": "xananode.canonical:project/xananode-hugo-theme",
-      "type": "documents",
-      "summary": "The public Hugo repository documents the Hugo projection project.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/workspace-documented-by-repository",
-      "source": "xananode.canonical:source/xananode-workspace-repository",
-      "target": "xananode.canonical:project/xananode-workspace",
-      "type": "documents",
-      "summary": "The public Workspace repository documents the Workspace project.",
-      "weight": 4,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/xananode-has-primary-media-icon",
-      "source": "xananode.canonical:concept/xananode",
-      "target": "xananode.canonical:media/xananode-icon",
-      "type": "has_primary_media",
-      "summary": "The XanaNode concept uses the XanaNode icon as primary media.",
-      "weight": 4,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/icon-depicts-xananode",
-      "source": "xananode.canonical:media/xananode-icon",
-      "target": "xananode.canonical:concept/xananode",
-      "type": "depicts",
-      "summary": "The XanaNode icon depicts the XanaNode concept and project identity.",
-      "weight": 4,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/xananode-published-at-com",
-      "source": "xananode.canonical:concept/xananode",
-      "target": "xananode.canonical:source/xananode-com-domain",
-      "type": "documents",
-      "summary": "XanaNode is publicly presented at XanaNode.com.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/github-profile-includes-protocol-repo",
-      "source": "xananode.canonical:source/github-profile",
-      "target": "xananode.canonical:source/xananode-protocol-repository",
-      "type": "includes",
-      "summary": "The GitHub profile includes the public protocol repository.",
-      "weight": 4,
-      "visibility": "secondary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
@@ -351,6 +92,3666 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/github-profile-includes-protocol-repo",
+      "source": "xananode.canonical:source/github-profile",
+      "target": "xananode.canonical:source/xananode-protocol-repository",
+      "type": "includes",
+      "summary": "The GitHub profile includes the public protocol repository.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/hugo-documented-by-repository",
+      "source": "xananode.canonical:source/xananode-hugo-repository",
+      "target": "xananode.canonical:project/xananode-hugo-theme",
+      "type": "documents",
+      "summary": "The public Hugo repository documents the Hugo projection project.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/hugo-implements-projection-layer",
+      "source": "xananode.canonical:project/xananode-hugo-theme",
+      "target": "xananode.canonical:concept/substrate-projection-layer",
+      "type": "implements",
+      "summary": "The XanaNode Hugo theme is one static website implementation of a substrate projection layer.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/hugo-uses-core",
+      "source": "xananode.canonical:project/xananode-hugo-theme",
+      "target": "xananode.canonical:project/xananode-core-sdk",
+      "type": "uses",
+      "summary": "The Hugo projection uses Core rather than owning protocol validation logic.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/hugo-uses-cytoscape",
+      "source": "xananode.canonical:project/xananode-hugo-theme",
+      "target": "xananode.canonical:technology/cytoscape-js",
+      "type": "uses",
+      "summary": "The XanaNode Hugo projection uses Cytoscape.js for interactive graph rendering.",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/hugo-uses-hugo",
+      "source": "xananode.canonical:project/xananode-hugo-theme",
+      "target": "xananode.canonical:technology/hugo",
+      "type": "uses",
+      "summary": "The XanaNode Hugo projection uses Hugo as its static site generator.",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/icon-depicts-xananode",
+      "source": "xananode.canonical:media/xananode-icon",
+      "target": "xananode.canonical:concept/xananode",
+      "type": "depicts",
+      "summary": "The XanaNode icon depicts the XanaNode concept and project identity.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-hugo-theme-implements-concept-substrate-projection-layer",
+      "source": "xananode.canonical:project/xananode-hugo-theme",
+      "target": "xananode.canonical:concept/substrate-projection-layer",
+      "type": "implements",
+      "summary": "XanaNode Hugo Theme implements a XanaNode projection or tooling role.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-artifacts-enable-projection-layers",
+      "source": "xananode.canonical:concept/protocol-artifacts",
+      "target": "xananode.canonical:concept/substrate-projection-layer",
+      "type": "enables",
+      "summary": "Protocol artifacts let projection layers render a substrate without owning or rewriting the substrate.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-author-profile-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/author-profile-schema",
+      "type": "contains",
+      "summary": "The protocol contains the author profile schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-compatibility-report-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/compatibility-report-schema",
+      "type": "contains",
+      "summary": "The protocol contains the compatibility report schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-manifest-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/substrate-manifest-schema",
+      "type": "contains",
+      "summary": "The protocol contains the substrate manifest schema.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-merge-report-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/merge-report-schema",
+      "type": "contains",
+      "summary": "The protocol contains the merge report schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-namespace-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/namespace-schema",
+      "type": "contains",
+      "summary": "The protocol contains the namespace schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-nanopublication-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/nanopublication-schema",
+      "type": "contains",
+      "summary": "The protocol contains the nanopublication schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-node-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/substrate-node-schema",
+      "type": "contains",
+      "summary": "The protocol contains the substrate node schema.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-node-type-registry",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/node-type-registry",
+      "type": "contains",
+      "summary": "The protocol contains the node type registry.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-property-registry-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/property-registry-schema",
+      "type": "contains",
+      "summary": "The protocol contains the property registry schema.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-relationship-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/substrate-relationships-schema",
+      "type": "contains",
+      "summary": "The protocol contains the substrate relationships schema.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-relationship-type-registry",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/relationship-type-registry",
+      "type": "contains",
+      "summary": "The protocol contains the relationship type registry.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-ro-crate-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/ro-crate-metadata-schema",
+      "type": "contains",
+      "summary": "The protocol contains the RO-Crate metadata schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-substrate-diff-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/substrate-diff-schema",
+      "type": "contains",
+      "summary": "The protocol contains the substrate diff schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-documented-by-repository",
+      "source": "xananode.canonical:source/xananode-protocol-repository",
+      "target": "xananode.canonical:project/xananode-protocol",
+      "type": "documents",
+      "summary": "The public protocol repository documents the protocol project.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-uses-python",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:technology/python",
+      "type": "uses",
+      "summary": "The protocol repository includes Python validation tooling alongside JSON Schema artifacts.",
+      "weight": 3,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/recreation-friction-motivates-pack-ingress",
+      "source": "xananode.canonical:observation/markdown-recreation-friction",
+      "target": "xananode.canonical:concept/protocol-artifacts",
+      "type": "motivated_by",
+      "summary": "The protocol artifact layer addresses the friction of recreating validated nodes as Markdown.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-claim",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-claim",
+      "type": "contains",
+      "summary": "The node type registry contains the claim node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-community",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-community",
+      "type": "contains",
+      "summary": "The node type registry contains the community node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-concept",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-concept",
+      "type": "contains",
+      "summary": "The node type registry contains the concept node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-essay",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-essay",
+      "type": "contains",
+      "summary": "The node type registry contains the essay node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-event",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-event",
+      "type": "contains",
+      "summary": "The node type registry contains the event node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-fragment",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-fragment",
+      "type": "contains",
+      "summary": "The node type registry contains the fragment node type.",
+      "weight": 3,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-media",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-media",
+      "type": "contains",
+      "summary": "The node type registry contains the media node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-observation",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-observation",
+      "type": "contains",
+      "summary": "The node type registry contains the observation node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-organization",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-organization",
+      "type": "contains",
+      "summary": "The node type registry contains the organization node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-person",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-person",
+      "type": "contains",
+      "summary": "The node type registry contains the person node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-place",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-place",
+      "type": "contains",
+      "summary": "The node type registry contains the place node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-project",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-project",
+      "type": "contains",
+      "summary": "The node type registry contains the project node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-publication",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-publication",
+      "type": "contains",
+      "summary": "The node type registry contains the publication node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-relationship",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-relationship",
+      "type": "contains",
+      "summary": "The node type registry contains the relationship node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-revision",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-revision",
+      "type": "contains",
+      "summary": "The node type registry contains the revision node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-schema",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-schema",
+      "type": "contains",
+      "summary": "The node type registry contains the schema node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-source",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-source",
+      "type": "contains",
+      "summary": "The node type registry contains the source node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-technology",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-technology",
+      "type": "contains",
+      "summary": "The node type registry contains the technology node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-node-type-trail",
+      "source": "xananode.canonical:schema/node-type-registry",
+      "target": "xananode.canonical:schema/node-type-trail",
+      "type": "contains",
+      "summary": "The node type registry contains the trail node type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-alias_of",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-alias_of",
+      "type": "contains",
+      "summary": "The relationship type registry contains the alias_of relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-alternative_to",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-alternative_to",
+      "type": "contains",
+      "summary": "The relationship type registry contains the alternative_to relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-anticipated",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-anticipated",
+      "type": "contains",
+      "summary": "The relationship type registry contains the anticipated relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-anticipated_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-anticipated_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the anticipated_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-anticipates",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-anticipates",
+      "type": "contains",
+      "summary": "The relationship type registry contains the anticipates relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-appears_in",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-appears_in",
+      "type": "contains",
+      "summary": "The relationship type registry contains the appears_in relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-approved",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-approved",
+      "type": "contains",
+      "summary": "The relationship type registry contains the approved relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-approved_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-approved_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the approved_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-arrived_from",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-arrived_from",
+      "type": "contains",
+      "summary": "The relationship type registry documents the arrived_from inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-arrives_at",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-arrives_at",
+      "type": "contains",
+      "summary": "The relationship type registry contains the arrives_at relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-authored",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-authored",
+      "type": "contains",
+      "summary": "The relationship type registry contains the authored relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-authored_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-authored_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the authored_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-broader_than",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-broader_than",
+      "type": "contains",
+      "summary": "The relationship type registry contains the broader_than relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-cited_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-cited_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the cited_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-cites",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-cites",
+      "type": "contains",
+      "summary": "The relationship type registry contains the cites relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-claim_of",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-claim_of",
+      "type": "contains",
+      "summary": "The relationship type registry documents the claim_of inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-clarified_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-clarified_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the clarified_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-clarifies",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-clarifies",
+      "type": "contains",
+      "summary": "The relationship type registry contains the clarifies relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-coined",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-coined",
+      "type": "contains",
+      "summary": "The relationship type registry contains the coined relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-coined_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-coined_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the coined_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-collaborated_with",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-collaborated_with",
+      "type": "contains",
+      "summary": "The relationship type registry contains the collaborated_with relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-compatible_with",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-compatible_with",
+      "type": "contains",
+      "summary": "The relationship type registry contains the compatible_with relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-contains",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-contains",
+      "type": "contains",
+      "summary": "The relationship type registry contains the contains relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-contemporary_of",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-contemporary_of",
+      "type": "contains",
+      "summary": "The relationship type registry contains the contemporary_of relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-context_for",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-context_for",
+      "type": "contains",
+      "summary": "The relationship type registry contains the context_for relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-continued_from",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-continued_from",
+      "type": "contains",
+      "summary": "The relationship type registry documents the continued_from inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-continues_to",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-continues_to",
+      "type": "contains",
+      "summary": "The relationship type registry contains the continues_to relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-contradicted_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-contradicted_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the contradicted_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-contradicts",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-contradicts",
+      "type": "contains",
+      "summary": "The relationship type registry contains the contradicts relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-contrasts_with",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-contrasts_with",
+      "type": "contains",
+      "summary": "The relationship type registry contains the contrasts_with relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-created",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-created",
+      "type": "contains",
+      "summary": "The relationship type registry contains the created relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-created_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-created_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the created_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-deep_linked_from",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-deep_linked_from",
+      "type": "contains",
+      "summary": "The relationship type registry documents the deep_linked_from inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-deep_links_to",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-deep_links_to",
+      "type": "contains",
+      "summary": "The relationship type registry contains the deep_links_to relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-defined_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-defined_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the defined_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-defines",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-defines",
+      "type": "contains",
+      "summary": "The relationship type registry contains the defines relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-demonstrated_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-demonstrated_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the demonstrated_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-demonstrates",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-demonstrates",
+      "type": "contains",
+      "summary": "The relationship type registry contains the demonstrates relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-dependency_of",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-dependency_of",
+      "type": "contains",
+      "summary": "The relationship type registry documents the dependency_of inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-depends_on",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-depends_on",
+      "type": "contains",
+      "summary": "The relationship type registry contains the depends_on relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-depicted_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-depicted_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the depicted_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-depicts",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-depicts",
+      "type": "contains",
+      "summary": "The relationship type registry contains the depicts relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-derived_from",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-derived_from",
+      "type": "contains",
+      "summary": "The relationship type registry contains the derived_from relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-derived_into",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-derived_into",
+      "type": "contains",
+      "summary": "The relationship type registry documents the derived_into inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-discussed_in",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-discussed_in",
+      "type": "contains",
+      "summary": "The relationship type registry documents the discussed_in inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-discusses",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-discusses",
+      "type": "contains",
+      "summary": "The relationship type registry contains the discusses relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-disputed_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-disputed_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the disputed_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-disputed_identity",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-disputed_identity",
+      "type": "contains",
+      "summary": "The relationship type registry contains the disputed_identity relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-disputes",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-disputes",
+      "type": "contains",
+      "summary": "The relationship type registry contains the disputes relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-documented_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-documented_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the documented_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-documents",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-documents",
+      "type": "contains",
+      "summary": "The relationship type registry contains the documents relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-enabled_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-enabled_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the enabled_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-enables",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-enables",
+      "type": "contains",
+      "summary": "The relationship type registry contains the enables relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-equivalent_to",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-equivalent_to",
+      "type": "contains",
+      "summary": "The relationship type registry contains the equivalent_to relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-evidence_for",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-evidence_for",
+      "type": "contains",
+      "summary": "The relationship type registry contains the evidence_for relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-explained_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-explained_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the explained_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-explains",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-explains",
+      "type": "contains",
+      "summary": "The relationship type registry contains the explains relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-extended_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-extended_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the extended_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-extends",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-extends",
+      "type": "contains",
+      "summary": "The relationship type registry contains the extends relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-extension_of",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-extension_of",
+      "type": "contains",
+      "summary": "The relationship type registry contains the extension_of relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-featured_in",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-featured_in",
+      "type": "contains",
+      "summary": "The relationship type registry documents the featured_in inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-featured_speaker",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-featured_speaker",
+      "type": "contains",
+      "summary": "The relationship type registry documents the featured_speaker inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-features",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-features",
+      "type": "contains",
+      "summary": "The relationship type registry contains the features relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-followed",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-followed",
+      "type": "contains",
+      "summary": "The relationship type registry documents the followed inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-friend_of",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-friend_of",
+      "type": "contains",
+      "summary": "The relationship type registry contains the friend_of relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-had_participant",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-had_participant",
+      "type": "contains",
+      "summary": "The relationship type registry documents the had_participant inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-has_alias",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-has_alias",
+      "type": "contains",
+      "summary": "The relationship type registry documents the has_alias inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-has_appearance",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-has_appearance",
+      "type": "contains",
+      "summary": "The relationship type registry documents the has_appearance inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-has_claim",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-has_claim",
+      "type": "contains",
+      "summary": "The relationship type registry contains the has_claim relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-has_context",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-has_context",
+      "type": "contains",
+      "summary": "The relationship type registry documents the has_context inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-has_evidence",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-has_evidence",
+      "type": "contains",
+      "summary": "The relationship type registry documents the has_evidence inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-has_extension",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-has_extension",
+      "type": "contains",
+      "summary": "The relationship type registry documents the has_extension inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-has_primary_media",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-has_primary_media",
+      "type": "contains",
+      "summary": "The relationship type registry contains the has_primary_media relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-identified",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-identified",
+      "type": "contains",
+      "summary": "The relationship type registry contains the identified relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-identified_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-identified_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the identified_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-implemented_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-implemented_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the implemented_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-implements",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-implements",
+      "type": "contains",
+      "summary": "The relationship type registry contains the implements relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-included_in",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-included_in",
+      "type": "contains",
+      "summary": "The relationship type registry documents the included_in inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-includes",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-includes",
+      "type": "contains",
+      "summary": "The relationship type registry contains the includes relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-influenced",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-influenced",
+      "type": "contains",
+      "summary": "The relationship type registry contains the influenced relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-influenced_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-influenced_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the influenced_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-interviewed",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-interviewed",
+      "type": "contains",
+      "summary": "The relationship type registry contains the interviewed relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-interviewed_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-interviewed_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the interviewed_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-introduced",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-introduced",
+      "type": "contains",
+      "summary": "The relationship type registry contains the introduced relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-introduced_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-introduced_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the introduced_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-introduced_in",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-introduced_in",
+      "type": "contains",
+      "summary": "The relationship type registry contains the introduced_in relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-introduction_venue_of",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-introduction_venue_of",
+      "type": "contains",
+      "summary": "The relationship type registry documents the introduction_venue_of inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-is_start_of",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-is_start_of",
+      "type": "contains",
+      "summary": "The relationship type registry documents the is_start_of inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-mapped_from",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-mapped_from",
+      "type": "contains",
+      "summary": "The relationship type registry documents the mapped_from inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-maps_to",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-maps_to",
+      "type": "contains",
+      "summary": "The relationship type registry contains the maps_to relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-memorialized_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-memorialized_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the memorialized_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-memorializes",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-memorializes",
+      "type": "contains",
+      "summary": "The relationship type registry contains the memorializes relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-mentioned_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-mentioned_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the mentioned_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-mentions",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-mentions",
+      "type": "contains",
+      "summary": "The relationship type registry contains the mentions relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-motivated_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-motivated_by",
+      "type": "contains",
+      "summary": "The relationship type registry contains the motivated_by relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-motivates",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-motivates",
+      "type": "contains",
+      "summary": "The relationship type registry documents the motivates inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-narrower_than",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-narrower_than",
+      "type": "contains",
+      "summary": "The relationship type registry documents the narrower_than inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-occurred_at",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-occurred_at",
+      "type": "contains",
+      "summary": "The relationship type registry contains the occurred_at relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-parallel_to",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-parallel_to",
+      "type": "contains",
+      "summary": "The relationship type registry contains the parallel_to relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-part_of",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-part_of",
+      "type": "contains",
+      "summary": "The relationship type registry documents the part_of inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-participated_in",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-participated_in",
+      "type": "contains",
+      "summary": "The relationship type registry contains the participated_in relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-popularized",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-popularized",
+      "type": "contains",
+      "summary": "The relationship type registry contains the popularized relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-popularized_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-popularized_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the popularized_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-possible_match",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-possible_match",
+      "type": "contains",
+      "summary": "The relationship type registry contains the possible_match relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-preceded",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-preceded",
+      "type": "contains",
+      "summary": "The relationship type registry contains the preceded relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-presented",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-presented",
+      "type": "contains",
+      "summary": "The relationship type registry contains the presented relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-presented_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-presented_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the presented_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-preserved_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-preserved_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the preserved_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-preserves",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-preserves",
+      "type": "contains",
+      "summary": "The relationship type registry contains the preserves relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-produces",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-produces",
+      "type": "contains",
+      "summary": "The relationship type registry documents the produces inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-proposed",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-proposed",
+      "type": "contains",
+      "summary": "The relationship type registry contains the proposed relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-proposed_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-proposed_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the proposed_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-quoted_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-quoted_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the quoted_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-quotes",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-quotes",
+      "type": "contains",
+      "summary": "The relationship type registry contains the quotes relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-refined_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-refined_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the refined_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-refines",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-refines",
+      "type": "contains",
+      "summary": "The relationship type registry contains the refines relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-related_to",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-related_to",
+      "type": "contains",
+      "summary": "The relationship type registry contains the related_to relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-represented_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-represented_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the represented_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-represents",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-represents",
+      "type": "contains",
+      "summary": "The relationship type registry contains the represents relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-required_for",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-required_for",
+      "type": "contains",
+      "summary": "The relationship type registry documents the required_for inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-requires",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-requires",
+      "type": "contains",
+      "summary": "The relationship type registry contains the requires relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-results_from",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-results_from",
+      "type": "contains",
+      "summary": "The relationship type registry contains the results_from relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-same_entity",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-same_entity",
+      "type": "contains",
+      "summary": "The relationship type registry contains the same_entity relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-shaped_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-shaped_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the shaped_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-shapes",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-shapes",
+      "type": "contains",
+      "summary": "The relationship type registry contains the shapes relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-site_of",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-site_of",
+      "type": "contains",
+      "summary": "The relationship type registry documents the site_of inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-spoke_at",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-spoke_at",
+      "type": "contains",
+      "summary": "The relationship type registry contains the spoke_at relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-starts_with",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-starts_with",
+      "type": "contains",
+      "summary": "The relationship type registry contains the starts_with relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-superseded_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-superseded_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the superseded_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-supersedes",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-supersedes",
+      "type": "contains",
+      "summary": "The relationship type registry contains the supersedes relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-supported_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-supported_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the supported_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-supports",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-supports",
+      "type": "contains",
+      "summary": "The relationship type registry contains the supports relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-threatened_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-threatened_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the threatened_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-threatens",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-threatens",
+      "type": "contains",
+      "summary": "The relationship type registry contains the threatens relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-trained_on",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-trained_on",
+      "type": "contains",
+      "summary": "The relationship type registry contains the trained_on relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-transcluded_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-transcluded_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the transcluded_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-transcludes",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-transcludes",
+      "type": "contains",
+      "summary": "The relationship type registry contains the transcludes relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-used_as_primary_media_for",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-used_as_primary_media_for",
+      "type": "contains",
+      "summary": "The relationship type registry documents the used_as_primary_media_for inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-used_by",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-used_by",
+      "type": "contains",
+      "summary": "The relationship type registry documents the used_by inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-used_to_train",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-used_to_train",
+      "type": "contains",
+      "summary": "The relationship type registry documents the used_to_train inverse relationship term.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/registry-contains-relationship-type-uses",
+      "source": "xananode.canonical:schema/relationship-type-registry",
+      "target": "xananode.canonical:schema/relationship-type-uses",
+      "type": "contains",
+      "summary": "The relationship type registry contains the uses relationship type.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schema-xananode-node-types-documents-schema-node-type-registry",
+      "source": "xananode.canonical:schema/canonical-schema-xananode-node-types",
+      "target": "xananode.canonical:schema/node-type-registry",
+      "type": "documents",
+      "summary": "The canonical schema record documents the node type registry.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schema-xananode-property-registry-documents-schema-property-registry",
+      "source": "xananode.canonical:schema/canonical-schema-xananode-property-registry",
+      "target": "xananode.canonical:schema/property-registry",
+      "type": "documents",
+      "summary": "The canonical schema record documents the property registry.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schema-xananode-relationship-types-documents-schema-relationship-type-registry",
+      "source": "xananode.canonical:schema/canonical-schema-xananode-relationship-types",
+      "target": "xananode.canonical:schema/relationship-type-registry",
+      "type": "documents",
+      "summary": "The canonical schema record documents the relationship type registry.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-author-profile",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-author-profile",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the author-profile schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-compatibility-report",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-compatibility-report",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the compatibility-report schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-merge-report",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-merge-report",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the merge-report schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-nanopublication",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-nanopublication",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the nanopublication schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-ro-crate-metadata",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-ro-crate-metadata",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the ro-crate-metadata schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-substrate-diff",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-substrate-diff",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the substrate-diff schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-substrate-manifest",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-substrate-manifest",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the substrate-manifest schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-substrate-node",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-substrate-node",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the substrate-node schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-substrate-relationships",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-substrate-relationships",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the substrate-relationships schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-xananode-node-types",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-xananode-node-types",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the xananode-node-types schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-xananode-property-registry",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-xananode-property-registry",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the xananode-property-registry schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-canonical-schemas-registry-contains-schema-canonical-schema-xananode-relationship-types",
+      "source": "xananode.canonical:schema/canonical-schemas-registry",
+      "target": "xananode.canonical:schema/canonical-schema-xananode-relationship-types",
+      "type": "contains",
+      "summary": "The canonical schemas registry contains the xananode-relationship-types schema record.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-known-implementations-registry-contains-project-xananode-hugo-theme",
+      "source": "xananode.canonical:schema/known-implementations-registry",
+      "target": "xananode.canonical:project/xananode-hugo-theme",
+      "type": "contains",
+      "summary": "The known implementations registry contains XanaNode Hugo Theme.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-namespace-registry-contains-schema-namespace-example.merge",
+      "source": "xananode.canonical:schema/namespace-registry",
+      "target": "xananode.canonical:schema/namespace-example.merge",
+      "type": "contains",
+      "summary": "The namespace registry contains the example.merge namespace.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-namespace-registry-contains-schema-namespace-example.minimal",
+      "source": "xananode.canonical:schema/namespace-registry",
+      "target": "xananode.canonical:schema/namespace-example.minimal",
+      "type": "contains",
+      "summary": "The namespace registry contains the example.minimal namespace.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-namespace-registry-contains-schema-namespace-example.museum",
+      "source": "xananode.canonical:schema/namespace-registry",
+      "target": "xananode.canonical:schema/namespace-example.museum",
+      "type": "contains",
+      "summary": "The namespace registry contains the example.museum namespace.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-namespace-registry-contains-schema-namespace-example.researcher_a",
+      "source": "xananode.canonical:schema/namespace-registry",
+      "target": "xananode.canonical:schema/namespace-example.researcher_a",
+      "type": "contains",
+      "summary": "The namespace registry contains the example.researcher_a namespace.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-namespace-registry-contains-schema-namespace-example.researcher_b",
+      "source": "xananode.canonical:schema/namespace-registry",
+      "target": "xananode.canonical:schema/namespace-example.researcher_b",
+      "type": "contains",
+      "summary": "The namespace registry contains the example.researcher_b namespace.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-namespace-registry-contains-schema-namespace-xananode",
+      "source": "xananode.canonical:schema/namespace-registry",
+      "target": "xananode.canonical:schema/namespace-xananode",
+      "type": "contains",
+      "summary": "The namespace registry contains the xananode namespace.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-namespace-xananode-represents-concept-xananode",
+      "source": "xananode.canonical:schema/namespace-xananode",
+      "target": "xananode.canonical:concept/xananode",
+      "type": "represents",
+      "summary": "The xananode namespace represents XanaNode Core vocabulary.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-birth_date-uses-schema-node-type-organization",
+      "source": "xananode.canonical:schema/property-birth_date",
+      "target": "xananode.canonical:schema/node-type-organization",
+      "type": "uses",
+      "summary": "Birth date applies to organization nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-birth_date-uses-schema-node-type-person",
+      "source": "xananode.canonical:schema/property-birth_date",
+      "target": "xananode.canonical:schema/node-type-person",
+      "type": "uses",
+      "summary": "Birth date applies to person nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-birth_date-uses-schema-node-type-project",
+      "source": "xananode.canonical:schema/property-birth_date",
+      "target": "xananode.canonical:schema/node-type-project",
+      "type": "uses",
+      "summary": "Birth date applies to project nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-currency_value-uses-schema-node-type-claim",
+      "source": "xananode.canonical:schema/property-currency_value",
+      "target": "xananode.canonical:schema/node-type-claim",
+      "type": "uses",
+      "summary": "Currency value applies to claim nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-currency_value-uses-schema-node-type-observation",
+      "source": "xananode.canonical:schema/property-currency_value",
+      "target": "xananode.canonical:schema/node-type-observation",
+      "type": "uses",
+      "summary": "Currency value applies to observation nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-currency_value-uses-schema-node-type-project",
+      "source": "xananode.canonical:schema/property-currency_value",
+      "target": "xananode.canonical:schema/node-type-project",
+      "type": "uses",
+      "summary": "Currency value applies to project nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-currency_value-uses-schema-node-type-source",
+      "source": "xananode.canonical:schema/property-currency_value",
+      "target": "xananode.canonical:schema/node-type-source",
+      "type": "uses",
+      "summary": "Currency value applies to source nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-geo_coordinates-uses-schema-node-type-event",
+      "source": "xananode.canonical:schema/property-geo_coordinates",
+      "target": "xananode.canonical:schema/node-type-event",
+      "type": "uses",
+      "summary": "Geographic coordinates applies to event nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-geo_coordinates-uses-schema-node-type-media",
+      "source": "xananode.canonical:schema/property-geo_coordinates",
+      "target": "xananode.canonical:schema/node-type-media",
+      "type": "uses",
+      "summary": "Geographic coordinates applies to media nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-geo_coordinates-uses-schema-node-type-organization",
+      "source": "xananode.canonical:schema/property-geo_coordinates",
+      "target": "xananode.canonical:schema/node-type-organization",
+      "type": "uses",
+      "summary": "Geographic coordinates applies to organization nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-geo_coordinates-uses-schema-node-type-place",
+      "source": "xananode.canonical:schema/property-geo_coordinates",
+      "target": "xananode.canonical:schema/node-type-place",
+      "type": "uses",
+      "summary": "Geographic coordinates applies to place nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-geo_coordinates-uses-schema-node-type-source",
+      "source": "xananode.canonical:schema/property-geo_coordinates",
+      "target": "xananode.canonical:schema/node-type-source",
+      "type": "uses",
+      "summary": "Geographic coordinates applies to source nodes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-registry-contains-schema-property-birth_date",
+      "source": "xananode.canonical:schema/property-registry",
+      "target": "xananode.canonical:schema/property-birth_date",
+      "type": "contains",
+      "summary": "The property registry contains the birth_date property.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-registry-contains-schema-property-currency_value",
+      "source": "xananode.canonical:schema/property-registry",
+      "target": "xananode.canonical:schema/property-currency_value",
+      "type": "contains",
+      "summary": "The property registry contains the currency_value property.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-registry-contains-schema-property-external_identifier",
+      "source": "xananode.canonical:schema/property-registry",
+      "target": "xananode.canonical:schema/property-external_identifier",
+      "type": "contains",
+      "summary": "The property registry contains the external_identifier property.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-registry-contains-schema-property-geo_coordinates",
+      "source": "xananode.canonical:schema/property-registry",
+      "target": "xananode.canonical:schema/property-geo_coordinates",
+      "type": "contains",
+      "summary": "The property registry contains the geo_coordinates property.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-property-registry-contains-schema-property-measurement_si",
+      "source": "xananode.canonical:schema/property-registry",
+      "target": "xananode.canonical:schema/property-measurement_si",
+      "type": "contains",
+      "summary": "The property registry contains the measurement_si property.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-alias_of-related_to-schema-relationship-type-has_alias-inverse",
+      "source": "xananode.canonical:schema/relationship-type-alias_of",
+      "target": "xananode.canonical:schema/relationship-type-has_alias",
+      "type": "related_to",
+      "summary": "Alias of has inverse has_alias.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-alternative_to-related_to-schema-relationship-type-alternative_to-inverse",
+      "source": "xananode.canonical:schema/relationship-type-alternative_to",
+      "target": "xananode.canonical:schema/relationship-type-alternative_to",
+      "type": "related_to",
+      "summary": "Alternative to has inverse alternative_to.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-anticipated_by-related_to-schema-relationship-type-anticipated-inverse",
+      "source": "xananode.canonical:schema/relationship-type-anticipated_by",
+      "target": "xananode.canonical:schema/relationship-type-anticipated",
+      "type": "related_to",
+      "summary": "anticipated_by is the inverse term for anticipated.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-anticipated-related_to-schema-relationship-type-anticipated_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-anticipated",
+      "target": "xananode.canonical:schema/relationship-type-anticipated_by",
+      "type": "related_to",
+      "summary": "Anticipated has inverse anticipated_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-anticipates-related_to-schema-relationship-type-anticipated_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-anticipates",
+      "target": "xananode.canonical:schema/relationship-type-anticipated_by",
+      "type": "related_to",
+      "summary": "Anticipates has inverse anticipated_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-appears_in-related_to-schema-relationship-type-has_appearance-inverse",
+      "source": "xananode.canonical:schema/relationship-type-appears_in",
+      "target": "xananode.canonical:schema/relationship-type-has_appearance",
+      "type": "related_to",
+      "summary": "Appears in has inverse has_appearance.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-approved_by-related_to-schema-relationship-type-approved-inverse",
+      "source": "xananode.canonical:schema/relationship-type-approved_by",
+      "target": "xananode.canonical:schema/relationship-type-approved",
+      "type": "related_to",
+      "summary": "approved_by is the inverse term for approved.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-approved-related_to-schema-relationship-type-approved_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-approved",
+      "target": "xananode.canonical:schema/relationship-type-approved_by",
+      "type": "related_to",
+      "summary": "Approved has inverse approved_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-arrived_from-related_to-schema-relationship-type-arrives_at-inverse",
+      "source": "xananode.canonical:schema/relationship-type-arrived_from",
+      "target": "xananode.canonical:schema/relationship-type-arrives_at",
+      "type": "related_to",
+      "summary": "arrived_from is the inverse term for arrives_at.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-arrives_at-related_to-schema-relationship-type-arrived_from-inverse",
+      "source": "xananode.canonical:schema/relationship-type-arrives_at",
+      "target": "xananode.canonical:schema/relationship-type-arrived_from",
+      "type": "related_to",
+      "summary": "Arrives at has inverse arrived_from.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-authored_by-related_to-schema-relationship-type-authored-inverse",
+      "source": "xananode.canonical:schema/relationship-type-authored_by",
+      "target": "xananode.canonical:schema/relationship-type-authored",
+      "type": "related_to",
+      "summary": "authored_by is the inverse term for authored.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-authored-related_to-schema-relationship-type-authored_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-authored",
+      "target": "xananode.canonical:schema/relationship-type-authored_by",
+      "type": "related_to",
+      "summary": "Authored has inverse authored_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-broader_than-related_to-schema-relationship-type-narrower_than-inverse",
+      "source": "xananode.canonical:schema/relationship-type-broader_than",
+      "target": "xananode.canonical:schema/relationship-type-narrower_than",
+      "type": "related_to",
+      "summary": "Broader than has inverse narrower_than.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-cited_by-related_to-schema-relationship-type-cites-inverse",
+      "source": "xananode.canonical:schema/relationship-type-cited_by",
+      "target": "xananode.canonical:schema/relationship-type-cites",
+      "type": "related_to",
+      "summary": "cited_by is the inverse term for cites.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-cites-related_to-schema-relationship-type-cited_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-cites",
+      "target": "xananode.canonical:schema/relationship-type-cited_by",
+      "type": "related_to",
+      "summary": "Cites has inverse cited_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-claim_of-related_to-schema-relationship-type-has_claim-inverse",
+      "source": "xananode.canonical:schema/relationship-type-claim_of",
+      "target": "xananode.canonical:schema/relationship-type-has_claim",
+      "type": "related_to",
+      "summary": "claim_of is the inverse term for has_claim.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-clarified_by-related_to-schema-relationship-type-clarifies-inverse",
+      "source": "xananode.canonical:schema/relationship-type-clarified_by",
+      "target": "xananode.canonical:schema/relationship-type-clarifies",
+      "type": "related_to",
+      "summary": "clarified_by is the inverse term for clarifies.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-clarifies-related_to-schema-relationship-type-clarified_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-clarifies",
+      "target": "xananode.canonical:schema/relationship-type-clarified_by",
+      "type": "related_to",
+      "summary": "Clarifies has inverse clarified_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-coined_by-related_to-schema-relationship-type-coined-inverse",
+      "source": "xananode.canonical:schema/relationship-type-coined_by",
+      "target": "xananode.canonical:schema/relationship-type-coined",
+      "type": "related_to",
+      "summary": "coined_by is the inverse term for coined.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-coined-related_to-schema-relationship-type-coined_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-coined",
+      "target": "xananode.canonical:schema/relationship-type-coined_by",
+      "type": "related_to",
+      "summary": "Coined has inverse coined_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-collaborated_with-related_to-schema-relationship-type-collaborated_with-inverse",
+      "source": "xananode.canonical:schema/relationship-type-collaborated_with",
+      "target": "xananode.canonical:schema/relationship-type-collaborated_with",
+      "type": "related_to",
+      "summary": "Collaborated with has inverse collaborated_with.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-compatible_with-related_to-schema-relationship-type-compatible_with-inverse",
+      "source": "xananode.canonical:schema/relationship-type-compatible_with",
+      "target": "xananode.canonical:schema/relationship-type-compatible_with",
+      "type": "related_to",
+      "summary": "Compatible with has inverse compatible_with.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-contains-related_to-schema-relationship-type-part_of-inverse",
+      "source": "xananode.canonical:schema/relationship-type-contains",
+      "target": "xananode.canonical:schema/relationship-type-part_of",
+      "type": "related_to",
+      "summary": "Contains has inverse part_of.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-contemporary_of-related_to-schema-relationship-type-contemporary_of-inverse",
+      "source": "xananode.canonical:schema/relationship-type-contemporary_of",
+      "target": "xananode.canonical:schema/relationship-type-contemporary_of",
+      "type": "related_to",
+      "summary": "Contemporary of has inverse contemporary_of.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-context_for-related_to-schema-relationship-type-has_context-inverse",
+      "source": "xananode.canonical:schema/relationship-type-context_for",
+      "target": "xananode.canonical:schema/relationship-type-has_context",
+      "type": "related_to",
+      "summary": "Context for has inverse has_context.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-continued_from-related_to-schema-relationship-type-continues_to-inverse",
+      "source": "xananode.canonical:schema/relationship-type-continued_from",
+      "target": "xananode.canonical:schema/relationship-type-continues_to",
+      "type": "related_to",
+      "summary": "continued_from is the inverse term for continues_to.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-continues_to-related_to-schema-relationship-type-continued_from-inverse",
+      "source": "xananode.canonical:schema/relationship-type-continues_to",
+      "target": "xananode.canonical:schema/relationship-type-continued_from",
+      "type": "related_to",
+      "summary": "Continues to has inverse continued_from.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-contradicted_by-related_to-schema-relationship-type-contradicts-inverse",
+      "source": "xananode.canonical:schema/relationship-type-contradicted_by",
+      "target": "xananode.canonical:schema/relationship-type-contradicts",
+      "type": "related_to",
+      "summary": "contradicted_by is the inverse term for contradicts.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-contradicts-related_to-schema-relationship-type-contradicted_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-contradicts",
+      "target": "xananode.canonical:schema/relationship-type-contradicted_by",
+      "type": "related_to",
+      "summary": "Contradicts has inverse contradicted_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-contrasts_with-related_to-schema-relationship-type-contrasts_with-inverse",
+      "source": "xananode.canonical:schema/relationship-type-contrasts_with",
+      "target": "xananode.canonical:schema/relationship-type-contrasts_with",
+      "type": "related_to",
+      "summary": "Contrasts with has inverse contrasts_with.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-created_by-related_to-schema-relationship-type-created-inverse",
+      "source": "xananode.canonical:schema/relationship-type-created_by",
+      "target": "xananode.canonical:schema/relationship-type-created",
+      "type": "related_to",
+      "summary": "created_by is the inverse term for created.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-created-related_to-schema-relationship-type-created_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-created",
+      "target": "xananode.canonical:schema/relationship-type-created_by",
+      "type": "related_to",
+      "summary": "Created has inverse created_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-deep_linked_from-related_to-schema-relationship-type-deep_links_to-inverse",
+      "source": "xananode.canonical:schema/relationship-type-deep_linked_from",
+      "target": "xananode.canonical:schema/relationship-type-deep_links_to",
+      "type": "related_to",
+      "summary": "deep_linked_from is the inverse term for deep_links_to.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-deep_links_to-related_to-schema-relationship-type-deep_linked_from-inverse",
+      "source": "xananode.canonical:schema/relationship-type-deep_links_to",
+      "target": "xananode.canonical:schema/relationship-type-deep_linked_from",
+      "type": "related_to",
+      "summary": "Deep links to has inverse deep_linked_from.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-defined_by-related_to-schema-relationship-type-defines-inverse",
+      "source": "xananode.canonical:schema/relationship-type-defined_by",
+      "target": "xananode.canonical:schema/relationship-type-defines",
+      "type": "related_to",
+      "summary": "defined_by is the inverse term for defines.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-defines-related_to-schema-relationship-type-defined_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-defines",
+      "target": "xananode.canonical:schema/relationship-type-defined_by",
+      "type": "related_to",
+      "summary": "Defines has inverse defined_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-demonstrated_by-related_to-schema-relationship-type-demonstrates-inverse",
+      "source": "xananode.canonical:schema/relationship-type-demonstrated_by",
+      "target": "xananode.canonical:schema/relationship-type-demonstrates",
+      "type": "related_to",
+      "summary": "demonstrated_by is the inverse term for demonstrates.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-demonstrates-related_to-schema-relationship-type-demonstrated_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-demonstrates",
+      "target": "xananode.canonical:schema/relationship-type-demonstrated_by",
+      "type": "related_to",
+      "summary": "Demonstrates has inverse demonstrated_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-dependency_of-related_to-schema-relationship-type-depends_on-inverse",
+      "source": "xananode.canonical:schema/relationship-type-dependency_of",
+      "target": "xananode.canonical:schema/relationship-type-depends_on",
+      "type": "related_to",
+      "summary": "dependency_of is the inverse term for depends_on.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-depends_on-related_to-schema-relationship-type-dependency_of-inverse",
+      "source": "xananode.canonical:schema/relationship-type-depends_on",
+      "target": "xananode.canonical:schema/relationship-type-dependency_of",
+      "type": "related_to",
+      "summary": "Depends on has inverse dependency_of.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-depicted_by-related_to-schema-relationship-type-depicts-inverse",
+      "source": "xananode.canonical:schema/relationship-type-depicted_by",
+      "target": "xananode.canonical:schema/relationship-type-depicts",
+      "type": "related_to",
+      "summary": "depicted_by is the inverse term for depicts.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-depicts-related_to-schema-relationship-type-depicted_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-depicts",
+      "target": "xananode.canonical:schema/relationship-type-depicted_by",
+      "type": "related_to",
+      "summary": "Depicts has inverse depicted_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-derived_from-related_to-schema-relationship-type-derived_into-inverse",
+      "source": "xananode.canonical:schema/relationship-type-derived_from",
+      "target": "xananode.canonical:schema/relationship-type-derived_into",
+      "type": "related_to",
+      "summary": "Derived from has inverse derived_into.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-derived_into-related_to-schema-relationship-type-derived_from-inverse",
+      "source": "xananode.canonical:schema/relationship-type-derived_into",
+      "target": "xananode.canonical:schema/relationship-type-derived_from",
+      "type": "related_to",
+      "summary": "derived_into is the inverse term for derived_from.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-discussed_in-related_to-schema-relationship-type-discusses-inverse",
+      "source": "xananode.canonical:schema/relationship-type-discussed_in",
+      "target": "xananode.canonical:schema/relationship-type-discusses",
+      "type": "related_to",
+      "summary": "discussed_in is the inverse term for discusses.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-discusses-related_to-schema-relationship-type-discussed_in-inverse",
+      "source": "xananode.canonical:schema/relationship-type-discusses",
+      "target": "xananode.canonical:schema/relationship-type-discussed_in",
+      "type": "related_to",
+      "summary": "Discusses has inverse discussed_in.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-disputed_by-related_to-schema-relationship-type-disputes-inverse",
+      "source": "xananode.canonical:schema/relationship-type-disputed_by",
+      "target": "xananode.canonical:schema/relationship-type-disputes",
+      "type": "related_to",
+      "summary": "disputed_by is the inverse term for disputes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-disputed_identity-related_to-schema-relationship-type-disputed_identity-inverse",
+      "source": "xananode.canonical:schema/relationship-type-disputed_identity",
+      "target": "xananode.canonical:schema/relationship-type-disputed_identity",
+      "type": "related_to",
+      "summary": "Disputed identity has inverse disputed_identity.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-disputes-related_to-schema-relationship-type-disputed_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-disputes",
+      "target": "xananode.canonical:schema/relationship-type-disputed_by",
+      "type": "related_to",
+      "summary": "Disputes has inverse disputed_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-documented_by-related_to-schema-relationship-type-documents-inverse",
+      "source": "xananode.canonical:schema/relationship-type-documented_by",
+      "target": "xananode.canonical:schema/relationship-type-documents",
+      "type": "related_to",
+      "summary": "documented_by is the inverse term for documents.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-documents-related_to-schema-relationship-type-documented_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-documents",
+      "target": "xananode.canonical:schema/relationship-type-documented_by",
+      "type": "related_to",
+      "summary": "Documents has inverse documented_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-enabled_by-related_to-schema-relationship-type-enables-inverse",
+      "source": "xananode.canonical:schema/relationship-type-enabled_by",
+      "target": "xananode.canonical:schema/relationship-type-enables",
+      "type": "related_to",
+      "summary": "enabled_by is the inverse term for enables.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-enables-related_to-schema-relationship-type-enabled_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-enables",
+      "target": "xananode.canonical:schema/relationship-type-enabled_by",
+      "type": "related_to",
+      "summary": "Enables has inverse enabled_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-equivalent_to-related_to-schema-relationship-type-equivalent_to-inverse",
+      "source": "xananode.canonical:schema/relationship-type-equivalent_to",
+      "target": "xananode.canonical:schema/relationship-type-equivalent_to",
+      "type": "related_to",
+      "summary": "Equivalent to has inverse equivalent_to.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-evidence_for-related_to-schema-relationship-type-has_evidence-inverse",
+      "source": "xananode.canonical:schema/relationship-type-evidence_for",
+      "target": "xananode.canonical:schema/relationship-type-has_evidence",
+      "type": "related_to",
+      "summary": "Evidence for has inverse has_evidence.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-explained_by-related_to-schema-relationship-type-explains-inverse",
+      "source": "xananode.canonical:schema/relationship-type-explained_by",
+      "target": "xananode.canonical:schema/relationship-type-explains",
+      "type": "related_to",
+      "summary": "explained_by is the inverse term for explains.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-explains-related_to-schema-relationship-type-explained_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-explains",
+      "target": "xananode.canonical:schema/relationship-type-explained_by",
+      "type": "related_to",
+      "summary": "Explains has inverse explained_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-extended_by-related_to-schema-relationship-type-extends-inverse",
+      "source": "xananode.canonical:schema/relationship-type-extended_by",
+      "target": "xananode.canonical:schema/relationship-type-extends",
+      "type": "related_to",
+      "summary": "extended_by is the inverse term for extends.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-extends-related_to-schema-relationship-type-extended_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-extends",
+      "target": "xananode.canonical:schema/relationship-type-extended_by",
+      "type": "related_to",
+      "summary": "Extends has inverse extended_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-extension_of-related_to-schema-relationship-type-has_extension-inverse",
+      "source": "xananode.canonical:schema/relationship-type-extension_of",
+      "target": "xananode.canonical:schema/relationship-type-has_extension",
+      "type": "related_to",
+      "summary": "Extension of has inverse has_extension.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-featured_in-related_to-schema-relationship-type-features-inverse",
+      "source": "xananode.canonical:schema/relationship-type-featured_in",
+      "target": "xananode.canonical:schema/relationship-type-features",
+      "type": "related_to",
+      "summary": "featured_in is the inverse term for features.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-featured_speaker-related_to-schema-relationship-type-spoke_at-inverse",
+      "source": "xananode.canonical:schema/relationship-type-featured_speaker",
+      "target": "xananode.canonical:schema/relationship-type-spoke_at",
+      "type": "related_to",
+      "summary": "featured_speaker is the inverse term for spoke_at.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-features-related_to-schema-relationship-type-featured_in-inverse",
+      "source": "xananode.canonical:schema/relationship-type-features",
+      "target": "xananode.canonical:schema/relationship-type-featured_in",
+      "type": "related_to",
+      "summary": "Features has inverse featured_in.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-followed-related_to-schema-relationship-type-preceded-inverse",
+      "source": "xananode.canonical:schema/relationship-type-followed",
+      "target": "xananode.canonical:schema/relationship-type-preceded",
+      "type": "related_to",
+      "summary": "followed is the inverse term for preceded.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-friend_of-related_to-schema-relationship-type-friend_of-inverse",
+      "source": "xananode.canonical:schema/relationship-type-friend_of",
+      "target": "xananode.canonical:schema/relationship-type-friend_of",
+      "type": "related_to",
+      "summary": "Friend of has inverse friend_of.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-had_participant-related_to-schema-relationship-type-participated_in-inverse",
+      "source": "xananode.canonical:schema/relationship-type-had_participant",
+      "target": "xananode.canonical:schema/relationship-type-participated_in",
+      "type": "related_to",
+      "summary": "had_participant is the inverse term for participated_in.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-has_alias-related_to-schema-relationship-type-alias_of-inverse",
+      "source": "xananode.canonical:schema/relationship-type-has_alias",
+      "target": "xananode.canonical:schema/relationship-type-alias_of",
+      "type": "related_to",
+      "summary": "has_alias is the inverse term for alias_of.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-has_appearance-related_to-schema-relationship-type-appears_in-inverse",
+      "source": "xananode.canonical:schema/relationship-type-has_appearance",
+      "target": "xananode.canonical:schema/relationship-type-appears_in",
+      "type": "related_to",
+      "summary": "has_appearance is the inverse term for appears_in.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-has_claim-related_to-schema-relationship-type-claim_of-inverse",
+      "source": "xananode.canonical:schema/relationship-type-has_claim",
+      "target": "xananode.canonical:schema/relationship-type-claim_of",
+      "type": "related_to",
+      "summary": "Has claim has inverse claim_of.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-has_context-related_to-schema-relationship-type-context_for-inverse",
+      "source": "xananode.canonical:schema/relationship-type-has_context",
+      "target": "xananode.canonical:schema/relationship-type-context_for",
+      "type": "related_to",
+      "summary": "has_context is the inverse term for context_for.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-has_evidence-related_to-schema-relationship-type-evidence_for-inverse",
+      "source": "xananode.canonical:schema/relationship-type-has_evidence",
+      "target": "xananode.canonical:schema/relationship-type-evidence_for",
+      "type": "related_to",
+      "summary": "has_evidence is the inverse term for evidence_for.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-has_extension-related_to-schema-relationship-type-extension_of-inverse",
+      "source": "xananode.canonical:schema/relationship-type-has_extension",
+      "target": "xananode.canonical:schema/relationship-type-extension_of",
+      "type": "related_to",
+      "summary": "has_extension is the inverse term for extension_of.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-has_primary_media-related_to-schema-relationship-type-used_as_primary_media_for-inverse",
+      "source": "xananode.canonical:schema/relationship-type-has_primary_media",
+      "target": "xananode.canonical:schema/relationship-type-used_as_primary_media_for",
+      "type": "related_to",
+      "summary": "Has primary media has inverse used_as_primary_media_for.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-identified_by-related_to-schema-relationship-type-identified-inverse",
+      "source": "xananode.canonical:schema/relationship-type-identified_by",
+      "target": "xananode.canonical:schema/relationship-type-identified",
+      "type": "related_to",
+      "summary": "identified_by is the inverse term for identified.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-identified-related_to-schema-relationship-type-identified_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-identified",
+      "target": "xananode.canonical:schema/relationship-type-identified_by",
+      "type": "related_to",
+      "summary": "Identified has inverse identified_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-implemented_by-related_to-schema-relationship-type-implements-inverse",
+      "source": "xananode.canonical:schema/relationship-type-implemented_by",
+      "target": "xananode.canonical:schema/relationship-type-implements",
+      "type": "related_to",
+      "summary": "implemented_by is the inverse term for implements.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-implements-related_to-schema-relationship-type-implemented_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-implements",
+      "target": "xananode.canonical:schema/relationship-type-implemented_by",
+      "type": "related_to",
+      "summary": "Implements has inverse implemented_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-included_in-related_to-schema-relationship-type-includes-inverse",
+      "source": "xananode.canonical:schema/relationship-type-included_in",
+      "target": "xananode.canonical:schema/relationship-type-includes",
+      "type": "related_to",
+      "summary": "included_in is the inverse term for includes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-includes-related_to-schema-relationship-type-included_in-inverse",
+      "source": "xananode.canonical:schema/relationship-type-includes",
+      "target": "xananode.canonical:schema/relationship-type-included_in",
+      "type": "related_to",
+      "summary": "Includes has inverse included_in.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-influenced_by-related_to-schema-relationship-type-influenced-inverse",
+      "source": "xananode.canonical:schema/relationship-type-influenced_by",
+      "target": "xananode.canonical:schema/relationship-type-influenced",
+      "type": "related_to",
+      "summary": "influenced_by is the inverse term for influenced.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-influenced-related_to-schema-relationship-type-influenced_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-influenced",
+      "target": "xananode.canonical:schema/relationship-type-influenced_by",
+      "type": "related_to",
+      "summary": "Influenced has inverse influenced_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-interviewed_by-related_to-schema-relationship-type-interviewed-inverse",
+      "source": "xananode.canonical:schema/relationship-type-interviewed_by",
+      "target": "xananode.canonical:schema/relationship-type-interviewed",
+      "type": "related_to",
+      "summary": "interviewed_by is the inverse term for interviewed.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-interviewed-related_to-schema-relationship-type-interviewed_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-interviewed",
+      "target": "xananode.canonical:schema/relationship-type-interviewed_by",
+      "type": "related_to",
+      "summary": "Interviewed has inverse interviewed_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-introduced_by-related_to-schema-relationship-type-introduced-inverse",
+      "source": "xananode.canonical:schema/relationship-type-introduced_by",
+      "target": "xananode.canonical:schema/relationship-type-introduced",
+      "type": "related_to",
+      "summary": "introduced_by is the inverse term for introduced.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-introduced_in-related_to-schema-relationship-type-introduction_venue_of-inverse",
+      "source": "xananode.canonical:schema/relationship-type-introduced_in",
+      "target": "xananode.canonical:schema/relationship-type-introduction_venue_of",
+      "type": "related_to",
+      "summary": "Introduced in has inverse introduction_venue_of.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-introduced-related_to-schema-relationship-type-introduced_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-introduced",
+      "target": "xananode.canonical:schema/relationship-type-introduced_by",
+      "type": "related_to",
+      "summary": "Introduced has inverse introduced_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-introduction_venue_of-related_to-schema-relationship-type-introduced_in-inverse",
+      "source": "xananode.canonical:schema/relationship-type-introduction_venue_of",
+      "target": "xananode.canonical:schema/relationship-type-introduced_in",
+      "type": "related_to",
+      "summary": "introduction_venue_of is the inverse term for introduced_in.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-is_start_of-related_to-schema-relationship-type-starts_with-inverse",
+      "source": "xananode.canonical:schema/relationship-type-is_start_of",
+      "target": "xananode.canonical:schema/relationship-type-starts_with",
+      "type": "related_to",
+      "summary": "is_start_of is the inverse term for starts_with.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-mapped_from-related_to-schema-relationship-type-maps_to-inverse",
+      "source": "xananode.canonical:schema/relationship-type-mapped_from",
+      "target": "xananode.canonical:schema/relationship-type-maps_to",
+      "type": "related_to",
+      "summary": "mapped_from is the inverse term for maps_to.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-maps_to-related_to-schema-relationship-type-mapped_from-inverse",
+      "source": "xananode.canonical:schema/relationship-type-maps_to",
+      "target": "xananode.canonical:schema/relationship-type-mapped_from",
+      "type": "related_to",
+      "summary": "Maps to has inverse mapped_from.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-memorialized_by-related_to-schema-relationship-type-memorializes-inverse",
+      "source": "xananode.canonical:schema/relationship-type-memorialized_by",
+      "target": "xananode.canonical:schema/relationship-type-memorializes",
+      "type": "related_to",
+      "summary": "memorialized_by is the inverse term for memorializes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-memorializes-related_to-schema-relationship-type-memorialized_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-memorializes",
+      "target": "xananode.canonical:schema/relationship-type-memorialized_by",
+      "type": "related_to",
+      "summary": "Memorializes has inverse memorialized_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-mentioned_by-related_to-schema-relationship-type-mentions-inverse",
+      "source": "xananode.canonical:schema/relationship-type-mentioned_by",
+      "target": "xananode.canonical:schema/relationship-type-mentions",
+      "type": "related_to",
+      "summary": "mentioned_by is the inverse term for mentions.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-mentions-related_to-schema-relationship-type-mentioned_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-mentions",
+      "target": "xananode.canonical:schema/relationship-type-mentioned_by",
+      "type": "related_to",
+      "summary": "Mentions has inverse mentioned_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-motivated_by-related_to-schema-relationship-type-motivates-inverse",
+      "source": "xananode.canonical:schema/relationship-type-motivated_by",
+      "target": "xananode.canonical:schema/relationship-type-motivates",
+      "type": "related_to",
+      "summary": "Motivated by has inverse motivates.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-motivates-related_to-schema-relationship-type-motivated_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-motivates",
+      "target": "xananode.canonical:schema/relationship-type-motivated_by",
+      "type": "related_to",
+      "summary": "motivates is the inverse term for motivated_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-narrower_than-related_to-schema-relationship-type-broader_than-inverse",
+      "source": "xananode.canonical:schema/relationship-type-narrower_than",
+      "target": "xananode.canonical:schema/relationship-type-broader_than",
+      "type": "related_to",
+      "summary": "narrower_than is the inverse term for broader_than.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-occurred_at-related_to-schema-relationship-type-site_of-inverse",
+      "source": "xananode.canonical:schema/relationship-type-occurred_at",
+      "target": "xananode.canonical:schema/relationship-type-site_of",
+      "type": "related_to",
+      "summary": "Occurred at has inverse site_of.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-parallel_to-related_to-schema-relationship-type-parallel_to-inverse",
+      "source": "xananode.canonical:schema/relationship-type-parallel_to",
+      "target": "xananode.canonical:schema/relationship-type-parallel_to",
+      "type": "related_to",
+      "summary": "Parallel to has inverse parallel_to.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-part_of-related_to-schema-relationship-type-contains-inverse",
+      "source": "xananode.canonical:schema/relationship-type-part_of",
+      "target": "xananode.canonical:schema/relationship-type-contains",
+      "type": "related_to",
+      "summary": "part_of is the inverse term for contains.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-participated_in-related_to-schema-relationship-type-had_participant-inverse",
+      "source": "xananode.canonical:schema/relationship-type-participated_in",
+      "target": "xananode.canonical:schema/relationship-type-had_participant",
+      "type": "related_to",
+      "summary": "Participated in has inverse had_participant.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-popularized_by-related_to-schema-relationship-type-popularized-inverse",
+      "source": "xananode.canonical:schema/relationship-type-popularized_by",
+      "target": "xananode.canonical:schema/relationship-type-popularized",
+      "type": "related_to",
+      "summary": "popularized_by is the inverse term for popularized.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-popularized-related_to-schema-relationship-type-popularized_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-popularized",
+      "target": "xananode.canonical:schema/relationship-type-popularized_by",
+      "type": "related_to",
+      "summary": "Popularized has inverse popularized_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-possible_match-related_to-schema-relationship-type-possible_match-inverse",
+      "source": "xananode.canonical:schema/relationship-type-possible_match",
+      "target": "xananode.canonical:schema/relationship-type-possible_match",
+      "type": "related_to",
+      "summary": "Possible match has inverse possible_match.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-preceded-related_to-schema-relationship-type-followed-inverse",
+      "source": "xananode.canonical:schema/relationship-type-preceded",
+      "target": "xananode.canonical:schema/relationship-type-followed",
+      "type": "related_to",
+      "summary": "Preceded has inverse followed.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-presented_by-related_to-schema-relationship-type-presented-inverse",
+      "source": "xananode.canonical:schema/relationship-type-presented_by",
+      "target": "xananode.canonical:schema/relationship-type-presented",
+      "type": "related_to",
+      "summary": "presented_by is the inverse term for presented.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-presented-related_to-schema-relationship-type-presented_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-presented",
+      "target": "xananode.canonical:schema/relationship-type-presented_by",
+      "type": "related_to",
+      "summary": "Presented has inverse presented_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-preserved_by-related_to-schema-relationship-type-preserves-inverse",
+      "source": "xananode.canonical:schema/relationship-type-preserved_by",
+      "target": "xananode.canonical:schema/relationship-type-preserves",
+      "type": "related_to",
+      "summary": "preserved_by is the inverse term for preserves.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-preserves-related_to-schema-relationship-type-preserved_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-preserves",
+      "target": "xananode.canonical:schema/relationship-type-preserved_by",
+      "type": "related_to",
+      "summary": "Preserves has inverse preserved_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-produces-related_to-schema-relationship-type-results_from-inverse",
+      "source": "xananode.canonical:schema/relationship-type-produces",
+      "target": "xananode.canonical:schema/relationship-type-results_from",
+      "type": "related_to",
+      "summary": "produces is the inverse term for results_from.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-proposed_by-related_to-schema-relationship-type-proposed-inverse",
+      "source": "xananode.canonical:schema/relationship-type-proposed_by",
+      "target": "xananode.canonical:schema/relationship-type-proposed",
+      "type": "related_to",
+      "summary": "proposed_by is the inverse term for proposed.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-proposed-related_to-schema-relationship-type-proposed_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-proposed",
+      "target": "xananode.canonical:schema/relationship-type-proposed_by",
+      "type": "related_to",
+      "summary": "Proposed has inverse proposed_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-quoted_by-related_to-schema-relationship-type-quotes-inverse",
+      "source": "xananode.canonical:schema/relationship-type-quoted_by",
+      "target": "xananode.canonical:schema/relationship-type-quotes",
+      "type": "related_to",
+      "summary": "quoted_by is the inverse term for quotes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-quotes-related_to-schema-relationship-type-quoted_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-quotes",
+      "target": "xananode.canonical:schema/relationship-type-quoted_by",
+      "type": "related_to",
+      "summary": "Quotes has inverse quoted_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-refined_by-related_to-schema-relationship-type-refines-inverse",
+      "source": "xananode.canonical:schema/relationship-type-refined_by",
+      "target": "xananode.canonical:schema/relationship-type-refines",
+      "type": "related_to",
+      "summary": "refined_by is the inverse term for refines.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-refines-related_to-schema-relationship-type-refined_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-refines",
+      "target": "xananode.canonical:schema/relationship-type-refined_by",
+      "type": "related_to",
+      "summary": "Refines has inverse refined_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-related_to-related_to-schema-relationship-type-related_to-inverse",
+      "source": "xananode.canonical:schema/relationship-type-related_to",
+      "target": "xananode.canonical:schema/relationship-type-related_to",
+      "type": "related_to",
+      "summary": "Related to has inverse related_to.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-represented_by-related_to-schema-relationship-type-represents-inverse",
+      "source": "xananode.canonical:schema/relationship-type-represented_by",
+      "target": "xananode.canonical:schema/relationship-type-represents",
+      "type": "related_to",
+      "summary": "represented_by is the inverse term for represents.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-represents-related_to-schema-relationship-type-represented_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-represents",
+      "target": "xananode.canonical:schema/relationship-type-represented_by",
+      "type": "related_to",
+      "summary": "Represents has inverse represented_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-required_for-related_to-schema-relationship-type-requires-inverse",
+      "source": "xananode.canonical:schema/relationship-type-required_for",
+      "target": "xananode.canonical:schema/relationship-type-requires",
+      "type": "related_to",
+      "summary": "required_for is the inverse term for requires.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-requires-related_to-schema-relationship-type-required_for-inverse",
+      "source": "xananode.canonical:schema/relationship-type-requires",
+      "target": "xananode.canonical:schema/relationship-type-required_for",
+      "type": "related_to",
+      "summary": "Requires has inverse required_for.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-results_from-related_to-schema-relationship-type-produces-inverse",
+      "source": "xananode.canonical:schema/relationship-type-results_from",
+      "target": "xananode.canonical:schema/relationship-type-produces",
+      "type": "related_to",
+      "summary": "Results from has inverse produces.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-same_entity-related_to-schema-relationship-type-same_entity-inverse",
+      "source": "xananode.canonical:schema/relationship-type-same_entity",
+      "target": "xananode.canonical:schema/relationship-type-same_entity",
+      "type": "related_to",
+      "summary": "Same entity has inverse same_entity.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-shaped_by-related_to-schema-relationship-type-shapes-inverse",
+      "source": "xananode.canonical:schema/relationship-type-shaped_by",
+      "target": "xananode.canonical:schema/relationship-type-shapes",
+      "type": "related_to",
+      "summary": "shaped_by is the inverse term for shapes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-shapes-related_to-schema-relationship-type-shaped_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-shapes",
+      "target": "xananode.canonical:schema/relationship-type-shaped_by",
+      "type": "related_to",
+      "summary": "Shapes has inverse shaped_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-site_of-related_to-schema-relationship-type-occurred_at-inverse",
+      "source": "xananode.canonical:schema/relationship-type-site_of",
+      "target": "xananode.canonical:schema/relationship-type-occurred_at",
+      "type": "related_to",
+      "summary": "site_of is the inverse term for occurred_at.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-spoke_at-related_to-schema-relationship-type-featured_speaker-inverse",
+      "source": "xananode.canonical:schema/relationship-type-spoke_at",
+      "target": "xananode.canonical:schema/relationship-type-featured_speaker",
+      "type": "related_to",
+      "summary": "Spoke at has inverse featured_speaker.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-starts_with-related_to-schema-relationship-type-is_start_of-inverse",
+      "source": "xananode.canonical:schema/relationship-type-starts_with",
+      "target": "xananode.canonical:schema/relationship-type-is_start_of",
+      "type": "related_to",
+      "summary": "Starts with has inverse is_start_of.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-superseded_by-related_to-schema-relationship-type-supersedes-inverse",
+      "source": "xananode.canonical:schema/relationship-type-superseded_by",
+      "target": "xananode.canonical:schema/relationship-type-supersedes",
+      "type": "related_to",
+      "summary": "superseded_by is the inverse term for supersedes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-supersedes-related_to-schema-relationship-type-superseded_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-supersedes",
+      "target": "xananode.canonical:schema/relationship-type-superseded_by",
+      "type": "related_to",
+      "summary": "Supersedes has inverse superseded_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-supported_by-related_to-schema-relationship-type-supports-inverse",
+      "source": "xananode.canonical:schema/relationship-type-supported_by",
+      "target": "xananode.canonical:schema/relationship-type-supports",
+      "type": "related_to",
+      "summary": "supported_by is the inverse term for supports.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-supports-related_to-schema-relationship-type-supported_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-supports",
+      "target": "xananode.canonical:schema/relationship-type-supported_by",
+      "type": "related_to",
+      "summary": "Supports has inverse supported_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-threatened_by-related_to-schema-relationship-type-threatens-inverse",
+      "source": "xananode.canonical:schema/relationship-type-threatened_by",
+      "target": "xananode.canonical:schema/relationship-type-threatens",
+      "type": "related_to",
+      "summary": "threatened_by is the inverse term for threatens.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-threatens-related_to-schema-relationship-type-threatened_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-threatens",
+      "target": "xananode.canonical:schema/relationship-type-threatened_by",
+      "type": "related_to",
+      "summary": "Threatens has inverse threatened_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-trained_on-related_to-schema-relationship-type-used_to_train-inverse",
+      "source": "xananode.canonical:schema/relationship-type-trained_on",
+      "target": "xananode.canonical:schema/relationship-type-used_to_train",
+      "type": "related_to",
+      "summary": "Trained on has inverse used_to_train.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-transcluded_by-related_to-schema-relationship-type-transcludes-inverse",
+      "source": "xananode.canonical:schema/relationship-type-transcluded_by",
+      "target": "xananode.canonical:schema/relationship-type-transcludes",
+      "type": "related_to",
+      "summary": "transcluded_by is the inverse term for transcludes.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-transcludes-related_to-schema-relationship-type-transcluded_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-transcludes",
+      "target": "xananode.canonical:schema/relationship-type-transcluded_by",
+      "type": "related_to",
+      "summary": "Transcludes has inverse transcluded_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-used_as_primary_media_for-related_to-schema-relationship-type-has_primary_media-inverse",
+      "source": "xananode.canonical:schema/relationship-type-used_as_primary_media_for",
+      "target": "xananode.canonical:schema/relationship-type-has_primary_media",
+      "type": "related_to",
+      "summary": "used_as_primary_media_for is the inverse term for has_primary_media.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-used_by-related_to-schema-relationship-type-uses-inverse",
+      "source": "xananode.canonical:schema/relationship-type-used_by",
+      "target": "xananode.canonical:schema/relationship-type-uses",
+      "type": "related_to",
+      "summary": "used_by is the inverse term for uses.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-used_to_train-related_to-schema-relationship-type-trained_on-inverse",
+      "source": "xananode.canonical:schema/relationship-type-used_to_train",
+      "target": "xananode.canonical:schema/relationship-type-trained_on",
+      "type": "related_to",
+      "summary": "used_to_train is the inverse term for trained_on.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-relationship-type-uses-related_to-schema-relationship-type-used_by-inverse",
+      "source": "xananode.canonical:schema/relationship-type-uses",
+      "target": "xananode.canonical:schema/relationship-type-used_by",
+      "type": "related_to",
+      "summary": "Uses has inverse used_by.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
       "id": "xananode.canonical:rel/support-supports-contributors",
       "source": "xananode.canonical:source/support-xananode",
       "target": "xananode.canonical:community/xananode-contributors",
@@ -361,21 +3762,11 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
-      "id": "xananode.canonical:rel/christian-authored-xananode",
-      "source": "xananode.canonical:person/christian-siefen",
-      "target": "xananode.canonical:concept/xananode",
-      "type": "authored",
-      "summary": "Christian Siefen authored the canonical XanaNode substrate identity.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/built-by-bots-created-icon",
-      "source": "xananode.canonical:organization/built-by-bots",
-      "target": "xananode.canonical:media/xananode-icon",
-      "type": "created",
-      "summary": "Built By Bots created the XanaNode icon asset.",
+      "id": "xananode.canonical:rel/tagline-fragment-derived-from-claim",
+      "source": "xananode.canonical:fragment/relationships-preserve-knowledge-sentence",
+      "target": "xananode.canonical:claim/relationships-preserve-knowledge",
+      "type": "derived_from",
+      "summary": "The tagline fragment is derived from the relationship preservation claim.",
       "weight": 4,
       "visibility": "secondary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
@@ -391,34 +3782,63 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
-      "id": "xananode.canonical:rel/recreation-friction-motivates-pack-ingress",
-      "source": "xananode.canonical:observation/markdown-recreation-friction",
-      "target": "xananode.canonical:concept/protocol-artifacts",
-      "type": "motivated_by",
-      "summary": "The protocol artifact layer addresses the friction of recreating validated nodes as Markdown.",
+      "id": "xananode.canonical:rel/workspace-documented-by-repository",
+      "source": "xananode.canonical:source/xananode-workspace-repository",
+      "target": "xananode.canonical:project/xananode-workspace",
+      "type": "documents",
+      "summary": "The public Workspace repository documents the Workspace project.",
       "weight": 4,
-      "visibility": "secondary",
+      "visibility": "primary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
-      "id": "xananode.canonical:rel/bootstrap-created-revision",
-      "source": "xananode.canonical:event/xananode-canonical-pack-bootstrap",
-      "target": "xananode.canonical:revision/canonical-pack-v0-1-0",
-      "type": "created",
-      "summary": "The canonical pack bootstrap created the first bundled pack revision.",
-      "weight": 3,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-19T00:00:00.000Z",
-      "valid_from": "2026-06-19T00:00:00.000Z"
+      "id": "xananode.canonical:rel/workspace-uses-core",
+      "source": "xananode.canonical:project/xananode-workspace",
+      "target": "xananode.canonical:project/xananode-core-sdk",
+      "type": "uses",
+      "summary": "Workspace uses Core for substrate validation, pack handling, and build orchestration.",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
-      "id": "xananode.canonical:rel/tagline-fragment-derived-from-claim",
-      "source": "xananode.canonical:fragment/relationships-preserve-knowledge-sentence",
+      "id": "xananode.canonical:rel/xananode-defines-knowledge-substrate",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:concept/knowledge-substrate",
+      "type": "defines",
+      "summary": "XanaNode defines a knowledge substrate as an authored graph of addressable nodes and relationships.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/xananode-has-claim-relationships-preserve-knowledge",
+      "source": "xananode.canonical:concept/xananode",
       "target": "xananode.canonical:claim/relationships-preserve-knowledge",
-      "type": "derived_from",
-      "summary": "The tagline fragment is derived from the relationship preservation claim.",
+      "type": "has_claim",
+      "summary": "XanaNode centers the claim that relationships preserve knowledge.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/xananode-has-primary-media-icon",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:media/xananode-icon",
+      "type": "has_primary_media",
+      "summary": "The XanaNode concept uses the XanaNode icon as primary media.",
       "weight": 4,
-      "visibility": "secondary",
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/xananode-published-at-com",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:source/xananode-com-domain",
+      "type": "documents",
+      "summary": "XanaNode is publicly presented at XanaNode.com.",
+      "weight": 5,
+      "visibility": "primary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
     }
   ]
