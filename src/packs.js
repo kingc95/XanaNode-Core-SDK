@@ -146,6 +146,7 @@ export function packReferenceForManifest(pack = {}) {
     source_namespace,
     sourceNamespace,
     namespaceMappings,
+    enabled,
     ...clean
   } = pack;
   if (namespaceMappings && !clean.namespace_mappings) clean.namespace_mappings = namespaceMappings;
