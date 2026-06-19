@@ -321,7 +321,43 @@ test("ships a bundled canonical XanaNode protocol pack", async () => {
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:concept/substrate-projection-layer"));
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:source/xananode-com-domain"));
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/node-type-person"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/node-subtype-person-writer"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/node-subtype-schema-term"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/node-subtype-schema-semantic_rule"));
+  assert.ok(pack.relationships.some((relationship) => (
+    relationship.source === "xananode.canonical:schema/node-type-person" &&
+    relationship.target === "xananode.canonical:schema/node-subtype-person-writer" &&
+    relationship.type === "contains"
+  )));
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/relationship-type-supports"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/relationship-type-licensed_under"));
+  assert.ok(pack.nodes.some((node) => (
+    node.id === "xananode.canonical:schema/relationship-type-supports" &&
+    node.color &&
+    node.inverse_color &&
+    node.line_style &&
+    node.inverse_line_style
+  )));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/relationship-category-evidence"));
+  assert.ok(pack.relationships.some((relationship) => (
+    relationship.source === "xananode.canonical:schema/relationship-category-evidence" &&
+    relationship.target === "xananode.canonical:schema/relationship-type-supports" &&
+    relationship.type === "contains"
+  )));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:source/cc-by-4-0-license"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:source/apache-2-0-license"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:source/xananode-trademark-policy"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:concept/licensing"));
+  assert.ok(pack.relationships.some((relationship) => (
+    relationship.source === "xananode.canonical:claim/protocol-docs-licensed-cc-by-4-0" &&
+    relationship.target === "xananode.canonical:source/cc-by-4-0-license" &&
+    relationship.type === "licensed_under"
+  )));
+  assert.ok(pack.relationships.some((relationship) => (
+    relationship.source === "xananode.canonical:media/xananode-icon" &&
+    relationship.target === "xananode.canonical:source/xananode-trademark-policy" &&
+    relationship.type === "trademarked_by"
+  )));
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:project/xananode-studio"));
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:source/repository-kingc95-xananode-studio"));
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:technology/xananode-studio-component-workspace-apis"));

@@ -141,7 +141,11 @@
         "social_profile",
         "support_page",
         "web_snapshot",
-        "archive"
+        "archive",
+        "license",
+        "legal_policy",
+        "trademark_policy",
+        "notice"
       ],
       "required_frontmatter": [
         "title",
@@ -256,7 +260,11 @@
         "logo",
         "thumbnail",
         "web_snapshot",
-        "source_snapshot"
+        "source_snapshot",
+        "favicon",
+        "touch_icon",
+        "app_icon",
+        "branding_icon"
       ],
       "required_frontmatter": [
         "title",
@@ -674,7 +682,18 @@
         "relationship_type_schema",
         "validation_rule",
         "governance_rule",
-        "style_rule"
+        "style_rule",
+        "node_subtype_schema",
+        "relationship_category_schema",
+        "property_registry_entry",
+        "canonical_schema_record",
+        "namespace_record",
+        "protocol_artifact",
+        "term",
+        "schema_term",
+        "schema_field",
+        "semantic_rule",
+        "projection_style_rule"
       ],
       "required_frontmatter": [
         "title",
@@ -735,6 +754,246 @@
         "time_range",
         "rights_status"
       ]
+    },
+    {
+      "type": "question",
+      "label": "Question",
+      "color": {
+        "bg": "#fef08a",
+        "fg": "#1f1a00",
+        "outline": "#fff8c9"
+      },
+      "purpose": "An explicit inquiry, prompt, research question, or unresolved ask that motivates investigation and can be answered, partially answered, disputed, or left open.",
+      "allowed_subtypes": [
+        "research_question",
+        "open_question",
+        "design_question",
+        "historical_question",
+        "prediction_question",
+        "diagnostic_question"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "status",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "question_text",
+        "review_status",
+        "research_priority",
+        "concepts",
+        "claims",
+        "sources",
+        "answers"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:question",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "hypothesis",
+      "label": "Hypothesis",
+      "color": {
+        "bg": "#c4b5fd",
+        "fg": "#171022",
+        "outline": "#ede9fe"
+      },
+      "purpose": "A provisional explanation, prediction, or model that can be tested, supported, falsified, revised, or abandoned.",
+      "allowed_subtypes": [
+        "scientific",
+        "design",
+        "historical",
+        "diagnostic",
+        "prediction",
+        "interpretive"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "status",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "confidence",
+        "uncertainty_level",
+        "evidence_strength",
+        "tests",
+        "claims",
+        "sources",
+        "questions"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:hypothesis",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "problem",
+      "label": "Problem",
+      "color": {
+        "bg": "#f97316",
+        "fg": "#211006",
+        "outline": "#ffedd5"
+      },
+      "purpose": "A difficulty, failure mode, design challenge, risk, or open need that organizes inquiry and work.",
+      "allowed_subtypes": [
+        "research_problem",
+        "design_problem",
+        "implementation_problem",
+        "governance_problem",
+        "risk",
+        "failure_mode"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "status",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "research_priority",
+        "requires_information",
+        "claims",
+        "questions",
+        "projects",
+        "sources"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:problem",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "knowledge_gap",
+      "label": "Knowledge Gap",
+      "color": {
+        "bg": "#64748b",
+        "fg": "#f8fafc",
+        "outline": "#cbd5e1"
+      },
+      "purpose": "A known absence, uncertainty, missing source, missing citation, lost document, unknown author, or unresolved area in a substrate.",
+      "allowed_subtypes": [
+        "missing_source",
+        "missing_citation",
+        "unknown_author",
+        "lost_document",
+        "historical_uncertainty",
+        "incomplete_context"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "status",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "uncertainty_level",
+        "review_status",
+        "research_priority",
+        "requires_source",
+        "requires_context",
+        "questions",
+        "sources"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:knowledge_gap",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "communication",
+      "label": "Communication",
+      "color": {
+        "bg": "#22d3ee",
+        "fg": "#04131a",
+        "outline": "#cffafe"
+      },
+      "purpose": "A first-class communication event or artifact whose topology, directionality, participants, and pattern affect how knowledge moved.",
+      "allowed_subtypes": [
+        "conversation",
+        "message",
+        "broadcast",
+        "publication",
+        "discussion",
+        "debate",
+        "interview",
+        "presentation",
+        "meeting",
+        "thread",
+        "forum",
+        "chat",
+        "announcement"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "communication_model",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "communication_pattern",
+        "participants",
+        "audience",
+        "medium",
+        "start_date",
+        "end_date",
+        "source_url",
+        "sources"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:communication",
+      "core": true,
+      "extends": null
+    },
+    {
+      "type": "response",
+      "label": "Response",
+      "color": {
+        "bg": "#7dd3fc",
+        "fg": "#03131f",
+        "outline": "#e0f2fe"
+      },
+      "purpose": "A reply, answer, rebuttal, clarification, or follow-up that responds to a question, communication, claim, or prior response.",
+      "allowed_subtypes": [
+        "answer",
+        "reply",
+        "rebuttal",
+        "clarification",
+        "follow_up",
+        "comment",
+        "review_response"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "provided_by",
+        "answered_question",
+        "communication",
+        "confidence",
+        "review_status",
+        "sources"
+      ],
+      "namespace": "xananode",
+      "id": "xananode:response",
+      "core": true,
+      "extends": null
     }
   ]
 }

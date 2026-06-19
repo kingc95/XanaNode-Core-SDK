@@ -101,6 +101,10 @@ function registryNodeId(kind, type) {
   return `xananode.canonical:schema/${kind}-${registrySlug(type)}`;
 }
 
+function subtypeNodeId(nodeType, subtype) {
+  return registryNodeId("node-subtype", `${nodeType}-${subtype}`);
+}
+
 function registryRelationshipId(kind, type) {
   return `xananode.canonical:rel/registry-contains-${kind}-${registrySlug(type)}`;
 }
@@ -246,16 +250,71 @@ function buildRegistryTypeNodes() {
         visibility: item.core ? "primary" : "secondary",
         asserted_at: assertedAt
       });
+      for (const subtype of item.allowed_subtypes || []) {
+        const subtypeId = subtypeNodeId(type, subtype);
+        nodes.push({
+          id: subtypeId,
+          title: `${item.label || type} subtype: ${String(subtype).replaceAll("_", " ")}`,
+          type: "schema",
+          subtype: "node_subtype_schema",
+          importance: item.core ? 4 : 3,
+          summary: `${subtype} is an allowed subtype of the ${type} node type.`,
+          version: registry.version || "",
+          registry_type: subtype,
+          registry_namespace: item.namespace || "xananode",
+          parent_node_type: type,
+          relationships: []
+        });
+        relationships.push(schemaRegistryRelationship(
+          nodeId,
+          subtypeId,
+          "contains",
+          `The ${type} node type contains the ${subtype} subtype.`
+        ));
+        relationships.push(schemaRegistryRelationship(
+          subtypeId,
+          nodeId,
+          "extension_of",
+          `${subtype} is a subtype extension of ${type}.`
+        ));
+      }
     }
   }
 
   if (relationshipTypesFile) {
     const registry = readJson(path.join(schemaRoot, relationshipTypesFile));
     const declaredTypes = new Set((registry.relationship_types || []).map((item) => item.type).filter(Boolean));
+    const categoryIds = new Map();
     const inverseTerms = new Map();
     for (const item of registry.relationship_types || []) {
       const type = item.type;
       if (!type) continue;
+      if (item.category && !categoryIds.has(item.category)) {
+        const categoryNodeId = registryNodeId("relationship-category", item.category);
+        categoryIds.set(item.category, categoryNodeId);
+        nodes.push({
+          id: categoryNodeId,
+          title: `${String(item.category).replaceAll("_", " ").replace(/\b\w/g, (char) => char.toUpperCase())} Relationship Category`,
+          type: "schema",
+          subtype: "relationship_category_schema",
+          importance: 4,
+          summary: `The ${item.category} category groups relationship types with related meaning.`,
+          version: registry.version || "",
+          registry_type: item.category,
+          registry_namespace: item.namespace || "xananode",
+          color: item.color || "",
+          inverse_color: item.inverse_color || "",
+          line_style: item.line_style || "",
+          inverse_line_style: item.inverse_line_style || "",
+          relationships: []
+        });
+        relationships.push(schemaRegistryRelationship(
+          "xananode.canonical:schema/relationship-type-registry",
+          categoryNodeId,
+          "contains",
+          `The relationship type registry contains the ${item.category} category.`
+        ));
+      }
       if (item.inverse && !declaredTypes.has(item.inverse) && !inverseTerms.has(item.inverse)) {
         inverseTerms.set(item.inverse, item);
       }
@@ -272,6 +331,10 @@ function buildRegistryTypeNodes() {
         registry_namespace: item.namespace || "xananode",
         category: item.category || "",
         inverse: item.inverse || "",
+        color: item.color || "",
+        inverse_color: item.inverse_color || "",
+        line_style: item.line_style || "",
+        inverse_line_style: item.inverse_line_style || "",
         default_weight: item.default_weight,
         default_visibility: item.default_visibility,
         relationships: []
@@ -286,6 +349,14 @@ function buildRegistryTypeNodes() {
         visibility: item.core ? "primary" : "secondary",
         asserted_at: assertedAt
       });
+      if (item.category && categoryIds.has(item.category)) {
+        relationships.push(schemaRegistryRelationship(
+          categoryIds.get(item.category),
+          nodeId,
+          "contains",
+          `The ${item.category} relationship category contains ${type}.`
+        ));
+      }
       if (item.inverse) {
         relationships.push(schemaRegistryRelationship(
           nodeId,
@@ -311,6 +382,10 @@ function buildRegistryTypeNodes() {
         registry_namespace: sourceItem.namespace || "xananode",
         category: sourceItem.category || "",
         inverse: sourceItem.type || "",
+        color: sourceItem.inverse_color || sourceItem.color || "",
+        inverse_color: sourceItem.color || sourceItem.inverse_color || "",
+        line_style: sourceItem.inverse_line_style || sourceItem.line_style || "",
+        inverse_line_style: sourceItem.line_style || sourceItem.inverse_line_style || "",
         derived_inverse: true,
         default_weight: sourceItem.default_weight,
         default_visibility: sourceItem.default_visibility,
@@ -326,6 +401,14 @@ function buildRegistryTypeNodes() {
         visibility: "secondary",
         asserted_at: assertedAt
       });
+      if (sourceItem.category && categoryIds.has(sourceItem.category)) {
+        relationships.push(schemaRegistryRelationship(
+          categoryIds.get(sourceItem.category),
+          nodeId,
+          "contains",
+          `The ${sourceItem.category} relationship category contains the ${inverseType} inverse term.`
+        ));
+      }
       relationships.push(schemaRegistryRelationship(
         nodeId,
         sourceNodeId,

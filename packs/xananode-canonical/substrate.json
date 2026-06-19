@@ -13,6 +13,43 @@
   "pack": {
     "mode": "mounted",
     "built_by": "@xananode/core",
-    "portable": true
+    "portable": true,
+    "built_at": "2026-06-19T20:40:39.688Z",
+    "build_metadata": {
+      "version": "0.1.0",
+      "git_commit": "930d4f27f1a9463e2337a166a8b5d54896b7caf6",
+      "git_branch": "main",
+      "repository": "kingc95/XanaNode-Core-SDK",
+      "generated_at": "2026-06-19T20:40:39.688Z",
+      "built_by": "@xananode/core",
+      "runtime": "node v24.16.0",
+      "platform": "win32/x64",
+      "dependencies": [
+        {
+          "name": "XanaNode Protocol",
+          "version": "",
+          "repository": "kingc95/XanaNode",
+          "relationship": "uses"
+        }
+      ]
+    }
+  },
+  "build_metadata": {
+    "version": "0.1.0",
+    "git_commit": "930d4f27f1a9463e2337a166a8b5d54896b7caf6",
+    "git_branch": "main",
+    "repository": "kingc95/XanaNode-Core-SDK",
+    "generated_at": "2026-06-19T20:40:39.595Z",
+    "built_by": "@xananode/core",
+    "runtime": "node v24.16.0",
+    "platform": "win32/x64",
+    "dependencies": [
+      {
+        "name": "XanaNode Protocol",
+        "version": "",
+        "repository": "kingc95/XanaNode",
+        "relationship": "uses"
+      }
+    ]
   }
 }
