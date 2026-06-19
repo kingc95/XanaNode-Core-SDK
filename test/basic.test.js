@@ -101,6 +101,66 @@ test("analyzes incoming substrate packs for merge, relationship, link, and trans
   assert.ok(analysis.transclusions.some((item) => item.target_fragment === "example:fragment/hyperland-quote"));
 });
 
+test("keeps protocol vocabulary twins out of noisy autolink and self-merge suggestions", () => {
+  const substrate = {
+    nodes: [
+      {
+        id: "local-note",
+        protocolId: "example:concept/note",
+        title: "Note",
+        type: "concept",
+        body: "This source claim should not turn every common schema word into a link. Hyperland still should link."
+      }
+    ],
+    protocolNodes: [
+      {
+        id: "example:concept/note",
+        title: "Note",
+        type: "concept",
+        relationships: []
+      },
+      {
+        id: "incoming:publication/hyperland",
+        title: "Hyperland",
+        type: "publication",
+        relationships: []
+      },
+      {
+        id: "incoming:schema/node-type-source",
+        title: "Source",
+        type: "schema",
+        registry_type: "node-type",
+        relationships: []
+      }
+    ],
+    relationships: [],
+    fragments: []
+  };
+  const incoming = {
+    nodes: [
+      {
+        id: "incoming:publication/hyperland",
+        title: "Hyperland",
+        type: "publication",
+        relationships: []
+      },
+      {
+        id: "incoming:schema/node-type-source",
+        title: "Source",
+        type: "schema",
+        registry_type: "node-type",
+        relationships: []
+      }
+    ],
+    relationships: []
+  };
+
+  const analysis = analyzeSubstrateIntake(substrate, incoming);
+  assert.ok(analysis.autolinks.some((item) => item.target === "incoming:publication/hyperland"));
+  assert.ok(!analysis.autolinks.some((item) => item.target === "incoming:schema/node-type-source"));
+  assert.ok(!analysis.merge_candidates.some((item) => item.existing === item.incoming));
+});
+
 test("loads substrate packs without mistaking node-local relationships for edge records", () => {
   const root = fs.mkdtempSync(path.join(process.cwd(), ".tmp-pack-"));
   try {

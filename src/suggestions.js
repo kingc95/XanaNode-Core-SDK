@@ -42,6 +42,51 @@ function termListForNode(node) {
   ]).filter((term) => term.length >= 3);
 }
 
+function autolinkTargetEnabled(node) {
+  const data = node.data || {};
+  if (data.autolink === true || node.autolink === true) return true;
+  if (data.autolink === false || node.autolink === false) return false;
+
+  const id = protocolIdForNode(node);
+  const registryType = String(data.registry_type || node.registry_type || "");
+  if (
+    node.type === "schema" &&
+    (
+      id.includes("/node-type-") ||
+      id.includes("/relationship-type-") ||
+      id.includes("/property-") ||
+      id.includes("/canonical-schema-") ||
+      registryType.startsWith("node-type") ||
+      registryType.startsWith("relationship-type") ||
+      registryType.startsWith("property")
+    )
+  ) {
+    return false;
+  }
+
+  return true;
+}
+
+function suggestionKey(suggestion) {
+  return [
+    suggestion.source,
+    suggestion.position?.index ?? "",
+    normalizeComparableText(suggestion.phrase)
+  ].join("|");
+}
+
+function dedupeLinkSuggestions(suggestions) {
+  const seen = new Set();
+  const unique = [];
+  for (const suggestion of suggestions) {
+    const key = suggestionKey(suggestion);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    unique.push(suggestion);
+  }
+  return unique;
+}
+
 export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
   const suggestions = [];
   const nodeList = Array.isArray(nodes) ? nodes : [...nodes.values()];
@@ -50,7 +95,10 @@ export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
     : nodeList;
   const nodeIds = new Set(targetNodes.map((node) => node.id));
   const maxSuggestionsPerNode = options.maxSuggestionsPerNode || 50;
-  const termsByTarget = targetNodes.map((target) => ({ target, terms: termListForNode(target) })).filter((entry) => entry.terms.length);
+  const termsByTarget = targetNodes
+    .filter((target) => autolinkTargetEnabled(target))
+    .map((target) => ({ target, terms: termListForNode(target) }))
+    .filter((entry) => entry.terms.length);
 
   for (const source of nodeList) {
     const markdown = source.body || "";
@@ -74,7 +122,7 @@ export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
           target_type: target.type,
           phrase: first.text,
           occurrences: matches.length,
-          position: pos,
+          position: { ...pos, index: first.index },
           confidence: Math.min(0.95, 0.45 + matches.length * 0.1),
           reason: `The phrase "${first.text}" appears in this node and matches ${target.title}.`,
           action: {
@@ -112,7 +160,7 @@ export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
     }
   }
 
-  return suggestions.sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
+  return dedupeLinkSuggestions(suggestions).sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
 }
 
 function protocolIdForNode(node) {
@@ -171,7 +219,9 @@ export function analyzeSubstrateIntake(substrate = {}, incoming = {}, options = 
     .filter((suggestion) => suggestion.kind === "possible_transclusion");
 
   const mergeCandidates = [];
-  const existingTerms = existingProtocolNodes.map((node) => ({
+  const existingTerms = existingProtocolNodes
+    .filter((node) => !incomingIds.has(protocolIdForNode(node)))
+    .map((node) => ({
     node,
     id: protocolIdForNode(node),
     terms: nodeComparisonTerms(node)
