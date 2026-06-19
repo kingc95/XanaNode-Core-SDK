@@ -16,6 +16,7 @@
     "bin",
     "schemas",
     "registry",
+    "packs",
     "templates",
     "vendor/xananode-protocol",
     "README.md",
@@ -25,6 +26,7 @@
     "test": "node --test",
     "validate:example": "node ./bin/xananode.js validate ./templates/basic",
     "build:example": "node ./bin/xananode.js build ./templates/basic --out ./tmp-example-public",
+    "build:canonical-pack": "node ./bin/xananode.js build-pack --out ./tmp-xananode-canonical-pack",
     "protocol:init": "git submodule update --init --recursive vendor/xananode-protocol",
     "protocol:update": "git submodule update --init --remote --merge vendor/xananode-protocol",
     "protocol:status": "git submodule status --recursive"

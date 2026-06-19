@@ -67,6 +67,7 @@ xananode init ./my-substrate --name "My Substrate" --namespace my
 xananode validate ./my-substrate
 xananode build ./my-substrate --out ./my-substrate/public
 xananode build-pack ./my-substrate --out ./packs/my-substrate-pack
+xananode build-pack --out ./packs/xananode-canonical
 ```
 
 ## Programmatic usage
@@ -146,6 +147,14 @@ xananode build-pack ./example --out ./packs/xananode-canonical
 ```
 
 This writes a portable pack directory containing `substrate.json`, `relationships.json`, `nodes/*.json`, and `pack-report.json`. Downstream renderers can mount that pack without owning its content.
+
+When `build-pack` is run without source directories, Core exports the bundled XanaNode canonical pack:
+
+```bash
+xananode build-pack --out ./packs/xananode-canonical
+```
+
+That bundled pack is protocol JSON, not Hugo markdown. It ships nodes for the XanaNode protocol, Core SDK, Hugo projection layer, Workspace, public repositories, official domains, stack technologies, current node types, schema artifacts, primary media, and a starting trail through the stack.
 
 ## Renderer integration status
 

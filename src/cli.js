@@ -80,7 +80,7 @@ export async function runCli(argv = process.argv) {
     .option("--include-drafts", "include draft nodes", false)
     .description("build a portable substrate pack from one or more authored substrates")
     .action(async (sources, options) => {
-      const roots = sources.length ? sources : ["."];
+      const roots = sources.length ? sources : [];
       const pack = await writeCanonicalPack(roots.map((source) => path.resolve(source)), path.resolve(options.out), {
         id: options.id,
         name: options.name,
@@ -92,7 +92,7 @@ export async function runCli(argv = process.argv) {
         includeDrafts: options.includeDrafts
       });
       console.log(`Wrote pack to ${path.resolve(options.out)}`);
-      console.log(`Sources: ${pack.source_count}`);
+      console.log(`Sources: ${pack.source_count}${sources.length ? "" : " (bundled canonical pack)"}`);
       console.log(`Nodes: ${pack.node_count}`);
       console.log(`Relationships: ${pack.relationship_count}`);
       if (pack.warnings.length) console.log(`Warnings: ${pack.warnings.length}`);

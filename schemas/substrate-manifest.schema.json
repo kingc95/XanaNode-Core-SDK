@@ -117,6 +117,33 @@
         ]
       }
     },
+    "pack": {
+      "type": "object",
+      "description": "Metadata used when this manifest describes a portable substrate pack rather than only a live authored substrate.",
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["mounted", "imported", "merged", "absorbed"]
+        },
+        "built_by": { "type": "string" },
+        "portable": { "type": "boolean" },
+        "source_manifests": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" },
+              "namespace": { "type": "string" },
+              "version": { "type": "string" },
+              "repository": { "type": "object" }
+            }
+          }
+        }
+      }
+    },
     "extensions": {
       "type": "array",
       "items": { "type": "string" }

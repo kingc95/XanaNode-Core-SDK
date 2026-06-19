@@ -1,0 +1,18 @@
+{
+  "id": "xananode.canonical",
+  "name": "XanaNode Canonical Pack",
+  "version": "0.1.0",
+  "namespace": "xananode.canonical",
+  "description": "The bundled Core XanaNode substrate pack describing the protocol, schema types, projection layers, public stack, and canonical project sources.",
+  "schema_version": "xananode-core@0.5.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingc95/XanaNode-Core-SDK",
+    "default_branch": "main"
+  },
+  "pack": {
+    "mode": "mounted",
+    "built_by": "@xananode/core",
+    "portable": true
+  }
+}

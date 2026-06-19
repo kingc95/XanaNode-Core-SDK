@@ -1,0 +1,425 @@
+{
+  "relationships": [
+    {
+      "id": "xananode.canonical:rel/xananode-has-claim-relationships-preserve-knowledge",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:claim/relationships-preserve-knowledge",
+      "type": "has_claim",
+      "summary": "XanaNode centers the claim that relationships preserve knowledge.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/xananode-defines-knowledge-substrate",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:concept/knowledge-substrate",
+      "type": "defines",
+      "summary": "XanaNode defines a knowledge substrate as an authored graph of addressable nodes and relationships.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-artifacts-enable-projection-layers",
+      "source": "xananode.canonical:concept/protocol-artifacts",
+      "target": "xananode.canonical:concept/substrate-projection-layer",
+      "type": "enables",
+      "summary": "Protocol artifacts let projection layers render a substrate without owning or rewriting the substrate.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/hugo-implements-projection-layer",
+      "source": "xananode.canonical:project/xananode-hugo-theme",
+      "target": "xananode.canonical:concept/substrate-projection-layer",
+      "type": "implements",
+      "summary": "The XanaNode Hugo theme is one static website implementation of a substrate projection layer.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/core-builds-protocol-artifacts",
+      "source": "xananode.canonical:project/xananode-core-sdk",
+      "target": "xananode.canonical:concept/protocol-artifacts",
+      "type": "enables",
+      "summary": "Core builds and validates the protocol artifacts consumed by projections and workspaces.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/core-implements-protocol",
+      "source": "xananode.canonical:project/xananode-core-sdk",
+      "target": "xananode.canonical:project/xananode-protocol",
+      "type": "implements",
+      "summary": "Core is a renderer-independent implementation of the XanaNode protocol.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/workspace-uses-core",
+      "source": "xananode.canonical:project/xananode-workspace",
+      "target": "xananode.canonical:project/xananode-core-sdk",
+      "type": "uses",
+      "summary": "Workspace uses Core for substrate validation, pack handling, and build orchestration.",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/hugo-uses-core",
+      "source": "xananode.canonical:project/xananode-hugo-theme",
+      "target": "xananode.canonical:project/xananode-core-sdk",
+      "type": "uses",
+      "summary": "The Hugo projection uses Core rather than owning protocol validation logic.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/hugo-uses-hugo",
+      "source": "xananode.canonical:project/xananode-hugo-theme",
+      "target": "xananode.canonical:technology/hugo",
+      "type": "uses",
+      "summary": "The XanaNode Hugo projection uses Hugo as its static site generator.",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/hugo-uses-cytoscape",
+      "source": "xananode.canonical:project/xananode-hugo-theme",
+      "target": "xananode.canonical:technology/cytoscape-js",
+      "type": "uses",
+      "summary": "The XanaNode Hugo projection uses Cytoscape.js for interactive graph rendering.",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/core-uses-nodejs",
+      "source": "xananode.canonical:project/xananode-core-sdk",
+      "target": "xananode.canonical:technology/nodejs",
+      "type": "uses",
+      "summary": "Core currently uses Node.js for the JavaScript SDK and CLI.",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-uses-python",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:technology/python",
+      "type": "uses",
+      "summary": "The protocol repository includes Python validation tooling alongside JSON Schema artifacts.",
+      "weight": 3,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-node-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/substrate-node-schema",
+      "type": "contains",
+      "summary": "The protocol contains the substrate node schema.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-relationship-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/substrate-relationships-schema",
+      "type": "contains",
+      "summary": "The protocol contains the substrate relationships schema.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-manifest-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/substrate-manifest-schema",
+      "type": "contains",
+      "summary": "The protocol contains the substrate manifest schema.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-node-type-registry",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/node-type-registry",
+      "type": "contains",
+      "summary": "The protocol contains the node type registry.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-relationship-type-registry",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/relationship-type-registry",
+      "type": "contains",
+      "summary": "The protocol contains the relationship type registry.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-property-registry-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/property-registry-schema",
+      "type": "contains",
+      "summary": "The protocol contains the property registry schema.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-author-profile-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/author-profile-schema",
+      "type": "contains",
+      "summary": "The protocol contains the author profile schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-namespace-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/namespace-schema",
+      "type": "contains",
+      "summary": "The protocol contains the namespace schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-merge-report-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/merge-report-schema",
+      "type": "contains",
+      "summary": "The protocol contains the merge report schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-compatibility-report-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/compatibility-report-schema",
+      "type": "contains",
+      "summary": "The protocol contains the compatibility report schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-substrate-diff-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/substrate-diff-schema",
+      "type": "contains",
+      "summary": "The protocol contains the substrate diff schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-nanopublication-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/nanopublication-schema",
+      "type": "contains",
+      "summary": "The protocol contains the nanopublication schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-contains-ro-crate-schema",
+      "source": "xananode.canonical:project/xananode-protocol",
+      "target": "xananode.canonical:schema/ro-crate-metadata-schema",
+      "type": "contains",
+      "summary": "The protocol contains the RO-Crate metadata schema.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/protocol-documented-by-repository",
+      "source": "xananode.canonical:source/xananode-protocol-repository",
+      "target": "xananode.canonical:project/xananode-protocol",
+      "type": "documents",
+      "summary": "The public protocol repository documents the protocol project.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/core-documented-by-repository",
+      "source": "xananode.canonical:source/xananode-core-sdk-repository",
+      "target": "xananode.canonical:project/xananode-core-sdk",
+      "type": "documents",
+      "summary": "The public Core SDK repository documents the Core SDK project.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/hugo-documented-by-repository",
+      "source": "xananode.canonical:source/xananode-hugo-repository",
+      "target": "xananode.canonical:project/xananode-hugo-theme",
+      "type": "documents",
+      "summary": "The public Hugo repository documents the Hugo projection project.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/workspace-documented-by-repository",
+      "source": "xananode.canonical:source/xananode-workspace-repository",
+      "target": "xananode.canonical:project/xananode-workspace",
+      "type": "documents",
+      "summary": "The public Workspace repository documents the Workspace project.",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/xananode-has-primary-media-icon",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:media/xananode-icon",
+      "type": "has_primary_media",
+      "summary": "The XanaNode concept uses the XanaNode icon as primary media.",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/icon-depicts-xananode",
+      "source": "xananode.canonical:media/xananode-icon",
+      "target": "xananode.canonical:concept/xananode",
+      "type": "depicts",
+      "summary": "The XanaNode icon depicts the XanaNode concept and project identity.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/xananode-published-at-com",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:source/xananode-com-domain",
+      "type": "documents",
+      "summary": "XanaNode is publicly presented at XanaNode.com.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/github-profile-includes-protocol-repo",
+      "source": "xananode.canonical:source/github-profile",
+      "target": "xananode.canonical:source/xananode-protocol-repository",
+      "type": "includes",
+      "summary": "The GitHub profile includes the public protocol repository.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/github-profile-includes-core-repo",
+      "source": "xananode.canonical:source/github-profile",
+      "target": "xananode.canonical:source/xananode-core-sdk-repository",
+      "type": "includes",
+      "summary": "The GitHub profile includes the public Core SDK repository.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/github-profile-includes-hugo-repo",
+      "source": "xananode.canonical:source/github-profile",
+      "target": "xananode.canonical:source/xananode-hugo-repository",
+      "type": "includes",
+      "summary": "The GitHub profile includes the public Hugo projection repository.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/support-supports-contributors",
+      "source": "xananode.canonical:source/support-xananode",
+      "target": "xananode.canonical:community/xananode-contributors",
+      "type": "supports",
+      "summary": "The support source supports ongoing XanaNode authorship and development.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/christian-authored-xananode",
+      "source": "xananode.canonical:person/christian-siefen",
+      "target": "xananode.canonical:concept/xananode",
+      "type": "authored",
+      "summary": "Christian Siefen authored the canonical XanaNode substrate identity.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/built-by-bots-created-icon",
+      "source": "xananode.canonical:organization/built-by-bots",
+      "target": "xananode.canonical:media/xananode-icon",
+      "type": "created",
+      "summary": "Built By Bots created the XanaNode icon asset.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/what-is-xananode-explains-xananode",
+      "source": "xananode.canonical:essay/what-is-xananode",
+      "target": "xananode.canonical:concept/xananode",
+      "type": "explains",
+      "summary": "The explainer essay explains XanaNode as a layered protocol and substrate model.",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/recreation-friction-motivates-pack-ingress",
+      "source": "xananode.canonical:observation/markdown-recreation-friction",
+      "target": "xananode.canonical:concept/protocol-artifacts",
+      "type": "motivated_by",
+      "summary": "The protocol artifact layer addresses the friction of recreating validated nodes as Markdown.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/bootstrap-created-revision",
+      "source": "xananode.canonical:event/xananode-canonical-pack-bootstrap",
+      "target": "xananode.canonical:revision/canonical-pack-v0-1-0",
+      "type": "created",
+      "summary": "The canonical pack bootstrap created the first bundled pack revision.",
+      "weight": 3,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z",
+      "valid_from": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/tagline-fragment-derived-from-claim",
+      "source": "xananode.canonical:fragment/relationships-preserve-knowledge-sentence",
+      "target": "xananode.canonical:claim/relationships-preserve-knowledge",
+      "type": "derived_from",
+      "summary": "The tagline fragment is derived from the relationship preservation claim.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    }
+  ]
+}

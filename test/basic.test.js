@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
-import { analyzeSubstrateIntake, buildSubstrate, loadSubstratePack, normalizePackReference, writeCanonicalPack } from "../src/index.js";
+import { analyzeSubstrateIntake, buildBundledCanonicalPack, buildSubstrate, loadSubstratePack, normalizePackReference, writeCanonicalPack } from "../src/index.js";
 
 test("builds bundled example substrate", async () => {
   const root = path.resolve("templates/basic");
@@ -224,4 +224,40 @@ test("writes a canonical substrate pack from authored substrate sources", async 
   } finally {
     fs.rmSync(out, { recursive: true, force: true });
   }
+});
+
+test("ships a bundled canonical XanaNode protocol pack", async () => {
+  const pack = buildBundledCanonicalPack();
+  const types = new Set(pack.nodes.map((node) => node.type));
+
+  assert.equal(pack.manifest.id, "xananode.canonical");
+  assert.equal(pack.validation.valid, true);
+  assert.ok(pack.node_count >= 18);
+  assert.ok(pack.relationship_count >= 25);
+  assert.ok(pack.nodes.filter((node) => node.type === "schema").length >= 12);
+  for (const type of [
+    "person",
+    "concept",
+    "claim",
+    "source",
+    "essay",
+    "observation",
+    "media",
+    "event",
+    "place",
+    "organization",
+    "project",
+    "technology",
+    "publication",
+    "community",
+    "relationship",
+    "revision",
+    "trail",
+    "schema",
+    "fragment"
+  ]) {
+    assert.ok(types.has(type), `missing canonical node type ${type}`);
+  }
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:concept/substrate-projection-layer"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:source/xananode-com-domain"));
 });

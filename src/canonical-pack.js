@@ -1,8 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { buildSubstrate } from "./build.js";
 import { writeJson } from "./io.js";
-import { slugify } from "./ids.js";
+import { loadSubstratePack } from "./packs.js";
+import { validateSubstrateArtifacts } from "./validate.js";
+
+const packageRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const bundledCanonicalPackRoot = path.join(packageRoot, "packs", "xananode-canonical");
 
 function asArray(value) {
   if (value === undefined || value === null) return [];
@@ -12,6 +17,67 @@ function asArray(value) {
 function safeNodeFileName(node) {
   const id = String(node.id || node.protocol_id || node.title || "node");
   return `${id.replace(/^[^:]+:/, "").replace(/[^A-Za-z0-9_.-]+/g, "_")}.json`;
+}
+
+function cleanBundledRecord(record) {
+  const { imported_from, pack_id, pack_mode, ...clean } = record;
+  return clean;
+}
+
+function writePackArtifacts(outDir, pack) {
+  fs.rmSync(outDir, { recursive: true, force: true });
+  fs.mkdirSync(path.join(outDir, "nodes"), { recursive: true });
+  writeJson(path.join(outDir, "substrate.json"), pack.manifest);
+  writeJson(path.join(outDir, "relationships.json"), { relationships: pack.relationships });
+
+  for (const node of pack.nodes) {
+    writeJson(path.join(outDir, "nodes", safeNodeFileName(node)), node);
+  }
+
+  writeJson(path.join(outDir, "pack-report.json"), {
+    id: pack.manifest.id,
+    namespace: pack.manifest.namespace,
+    sources: pack.manifest.pack?.source_manifests || [],
+    nodes: pack.node_count,
+    relationships: pack.relationship_count,
+    warnings: pack.warnings,
+    generated_at: new Date().toISOString()
+  });
+}
+
+export function getBundledCanonicalPackRoot() {
+  return bundledCanonicalPackRoot;
+}
+
+export function buildBundledCanonicalPack(options = {}) {
+  const loaded = loadSubstratePack(options.root || bundledCanonicalPackRoot, {
+    pack: { id: "xananode.canonical", mode: "mounted" }
+  });
+  const nodes = loaded.nodes.map(cleanBundledRecord).sort((a, b) => String(a.id).localeCompare(String(b.id)));
+  const relationships = loaded.relationships.map(cleanBundledRecord).sort((a, b) => String(a.id).localeCompare(String(b.id)));
+  const manifest = {
+    ...loaded.manifest,
+    ...(options.id ? { id: options.id } : {}),
+    ...(options.name ? { name: options.name } : {}),
+    ...(options.namespace ? { namespace: options.namespace } : {}),
+    ...(options.version ? { version: options.version } : {}),
+    ...(options.description ? { description: options.description } : {}),
+    ...(options.repositoryUrl ? { repository: { type: "git", url: options.repositoryUrl, default_branch: options.defaultBranch || "main" } } : {})
+  };
+  const validation = validateSubstrateArtifacts({ manifest, protocolNodes: nodes, relationships }, options);
+  const warnings = [...loaded.warnings, ...validation.warnings];
+  if (loaded.errors.length) warnings.push(...loaded.errors.map((error) => ({ kind: "pack_error", ...error })));
+
+  return {
+    manifest,
+    nodes,
+    relationships,
+    warnings,
+    validation,
+    source_count: 1,
+    node_count: nodes.length,
+    relationship_count: relationships.length
+  };
 }
 
 function packManifestFromSubstrates(substrates, options = {}) {
@@ -48,6 +114,9 @@ function packManifestFromSubstrates(substrates, options = {}) {
 
 export async function buildCanonicalPack(sourceRoots = [], options = {}) {
   const roots = asArray(sourceRoots).map((root) => path.resolve(root));
+  if (!roots.length || options.bundled === true) {
+    return buildBundledCanonicalPack(options);
+  }
   const substrates = [];
   const warnings = [];
 
@@ -94,24 +163,7 @@ export async function writeCanonicalPack(sourceRoots = [], outDir, options = {})
   if (!outDir) throw new Error("writeCanonicalPack requires an output directory.");
   const pack = await buildCanonicalPack(sourceRoots, options);
 
-  fs.rmSync(outDir, { recursive: true, force: true });
-  fs.mkdirSync(path.join(outDir, "nodes"), { recursive: true });
-  writeJson(path.join(outDir, "substrate.json"), pack.manifest);
-  writeJson(path.join(outDir, "relationships.json"), { relationships: pack.relationships });
-
-  for (const node of pack.nodes) {
-    writeJson(path.join(outDir, "nodes", safeNodeFileName(node)), node);
-  }
-
-  writeJson(path.join(outDir, "pack-report.json"), {
-    id: pack.manifest.id,
-    namespace: pack.manifest.namespace,
-    sources: pack.manifest.pack.source_manifests,
-    nodes: pack.node_count,
-    relationships: pack.relationship_count,
-    warnings: pack.warnings,
-    generated_at: new Date().toISOString()
-  });
+  writePackArtifacts(outDir, pack);
 
   return pack;
 }

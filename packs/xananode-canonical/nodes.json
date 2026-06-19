@@ -1,0 +1,571 @@
+{
+  "nodes": [
+    {
+      "id": "xananode.canonical:concept/xananode",
+      "title": "XanaNode",
+      "type": "concept",
+      "subtype": "protocol",
+      "importance": 5,
+      "summary": "A protocol for independently authored knowledge substrates that preserve relationships, provenance, lineage, disagreement, and addressable fragments.",
+      "primary_media": "xananode.canonical:media/xananode-icon",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:concept/knowledge-substrate",
+      "title": "Knowledge Substrate",
+      "type": "concept",
+      "subtype": "frame",
+      "importance": 5,
+      "summary": "The graph-shaped structure that lets information remain understandable across time by making claims, sources, media, fragments, and relationships explicit.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:concept/substrate-projection-layer",
+      "title": "Substrate Projection Layer",
+      "type": "concept",
+      "subtypes": ["lens", "renderer"],
+      "importance": 5,
+      "summary": "A renderer or lens that presents a substrate for a particular use without becoming the substrate itself.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:concept/protocol-artifacts",
+      "title": "Protocol Artifacts",
+      "type": "concept",
+      "importance": 5,
+      "summary": "The portable JSON files, schemas, fragments, reports, and media references that allow tools to validate, compare, mount, import, merge, and render substrates.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:claim/relationships-preserve-knowledge",
+      "title": "Relationships Preserve Knowledge",
+      "type": "claim",
+      "subtype": "definition",
+      "status": "asserted",
+      "importance": 5,
+      "summary": "Knowledge survives movement between tools when relationships carry meaning, evidence, authorship, and addressable context instead of collapsing into anonymous links.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/xananode-protocol-repository",
+      "title": "XanaNode Protocol Repository",
+      "type": "source",
+      "subtype": "git_repository",
+      "importance": 5,
+      "summary": "The public repository for the XanaNode protocol schemas, specifications, governance documents, registries, proposals, and examples.",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol",
+      "rights_status": "open-source",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/xananode-core-sdk-repository",
+      "title": "XanaNode Core SDK Repository",
+      "type": "source",
+      "subtype": "git_repository",
+      "importance": 5,
+      "summary": "The public Core SDK repository for validating, building, loading, analyzing, and exporting XanaNode protocol artifacts across renderers and tools.",
+      "source_url": "https://github.com/kingc95/XanaNode-Core-SDK",
+      "rights_status": "open-source",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/xananode-hugo-repository",
+      "title": "XanaNode Hugo Repository",
+      "type": "source",
+      "subtype": "git_repository",
+      "importance": 5,
+      "summary": "The public Hugo projection repository that renders XanaNode substrates as static readable pages and an interactive graph.",
+      "source_url": "https://github.com/kingc95/XanaNode-Hugo",
+      "rights_status": "open-source",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/xananode-workspace-repository",
+      "title": "XanaNode Workspace Repository",
+      "type": "source",
+      "subtype": "git_repository",
+      "importance": 4,
+      "summary": "The public workspace repository for coordinating local substrates, mounted packs, author workflows, media handling, and stack orchestration.",
+      "source_url": "https://github.com/kingc95/XanaNode-Workspace",
+      "rights_status": "open-source",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/xananode-studio-repository",
+      "title": "XanaNode Studio Repository",
+      "type": "source",
+      "subtype": "git_repository",
+      "importance": 3,
+      "summary": "The public Studio repository reserved for richer local-first authoring and review interfaces over XanaNode substrates.",
+      "source_url": "https://github.com/kingc95/XanaNode-Studio",
+      "rights_status": "open-source",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/xananode-com-domain",
+      "title": "XanaNode.com",
+      "type": "source",
+      "subtypes": ["website", "official_site"],
+      "importance": 5,
+      "summary": "The primary public home for the personally authored canonical XanaNode substrate.",
+      "source_url": "https://xananode.com/",
+      "rights_status": "canonical-public",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/xananode-org-domain",
+      "title": "XanaNode.org",
+      "type": "source",
+      "subtypes": ["website", "official_site"],
+      "importance": 4,
+      "summary": "A public XanaNode domain reserved for protocol, community, governance, or organizational presentation.",
+      "source_url": "https://xananode.org/",
+      "rights_status": "canonical-public",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/xananode-net-domain",
+      "title": "XanaNode.net",
+      "type": "source",
+      "subtypes": ["website", "official_site"],
+      "importance": 4,
+      "summary": "A public XanaNode domain reserved for network, federation, or infrastructure presentation.",
+      "source_url": "https://xananode.net/",
+      "rights_status": "canonical-public",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/github-profile",
+      "title": "GitHub Profile",
+      "type": "source",
+      "subtype": "social_profile",
+      "importance": 4,
+      "summary": "The public GitHub profile collecting XanaNode development activity and repositories.",
+      "source_url": "https://github.com/kingc95",
+      "rights_status": "external",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/support-xananode",
+      "title": "Support XanaNode",
+      "type": "source",
+      "subtype": "support_page",
+      "importance": 4,
+      "summary": "A support link for people who want to help sustain authored knowledge substrate creation.",
+      "source_url": "https://github.com/sponsors/kingc95",
+      "rights_status": "external",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:organization/built-by-bots",
+      "title": "Built By Bots",
+      "type": "organization",
+      "subtype": "company",
+      "importance": 4,
+      "summary": "The authoring and project identity associated with XanaNode development and media attribution.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:person/christian-siefen",
+      "title": "Christian Siefen",
+      "type": "person",
+      "subtypes": ["founder", "author"],
+      "importance": 5,
+      "summary": "The personally identified author and maintainer of the canonical XanaNode substrate.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:project/xananode-protocol",
+      "title": "XanaNode Protocol",
+      "type": "project",
+      "subtypes": ["standard", "protocol"],
+      "status": "active",
+      "importance": 5,
+      "summary": "The specification layer that defines substrate artifacts, node types, relationship types, addressing, pack ingress, federation, governance, and validation rules.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:project/xananode-core-sdk",
+      "title": "XanaNode Core SDK",
+      "type": "project",
+      "subtype": "software",
+      "status": "active",
+      "importance": 5,
+      "summary": "The renderer-independent SDK that validates substrates, resolves mounted packs, analyzes intake, builds fragments, generates suggestions, and exports protocol artifacts.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:project/xananode-hugo-theme",
+      "title": "XanaNode Hugo Theme",
+      "type": "project",
+      "subtype": "software",
+      "status": "active",
+      "importance": 5,
+      "summary": "A static website projection layer that uses Hugo to read XanaNode protocol artifacts and present pages, graph navigation, trails, sources, media, fragments, and review utilities.",
+      "primary_media": "xananode.canonical:media/xananode-icon",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:project/xananode-workspace",
+      "title": "XanaNode Workspace",
+      "type": "project",
+      "subtype": "software",
+      "status": "active",
+      "importance": 4,
+      "summary": "A coordination layer for local authoring, mounted pack selection, media placement, import review, Git workflows, and stack-level health checks.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:technology/hugo",
+      "title": "Hugo",
+      "type": "technology",
+      "subtype": "tool",
+      "importance": 4,
+      "summary": "A static site generator used by the XanaNode Hugo projection to publish substrates as static websites.",
+      "source_url": "https://gohugo.io/",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:organization/hugo-authors",
+      "title": "Hugo Authors",
+      "type": "organization",
+      "subtype": "open_source",
+      "importance": 3,
+      "summary": "The open source project community responsible for Hugo.",
+      "source_url": "https://github.com/gohugoio/hugo",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:source/hugo-official-site",
+      "title": "Hugo Official Site",
+      "type": "source",
+      "subtype": "official_site",
+      "importance": 3,
+      "summary": "The official website and documentation source for Hugo.",
+      "source_url": "https://gohugo.io/",
+      "rights_status": "external",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:technology/cytoscape-js",
+      "title": "Cytoscape.js",
+      "type": "technology",
+      "subtype": "library",
+      "importance": 4,
+      "summary": "A graph visualization library used by the XanaNode Hugo projection to render interactive substrate graphs.",
+      "source_url": "https://js.cytoscape.org/",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:organization/cytoscape-consortium",
+      "title": "Cytoscape Consortium",
+      "type": "organization",
+      "subtype": "open_source",
+      "importance": 3,
+      "summary": "The organization and community associated with Cytoscape and Cytoscape.js development.",
+      "source_url": "https://cytoscape.org/",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:technology/nodejs",
+      "title": "Node.js",
+      "type": "technology",
+      "subtype": "runtime",
+      "importance": 4,
+      "summary": "The JavaScript runtime used by XanaNode Core, Hugo preparation scripts, and build tooling.",
+      "source_url": "https://nodejs.org/",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:technology/python",
+      "title": "Python",
+      "type": "technology",
+      "subtype": "language",
+      "importance": 3,
+      "summary": "A language used by the protocol repository validation tooling and supported as a future validation/runtime target.",
+      "source_url": "https://www.python.org/",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:technology/git",
+      "title": "Git",
+      "type": "technology",
+      "subtype": "tool",
+      "importance": 4,
+      "summary": "The distributed version control system used to preserve substrate history, protocol revisions, repositories, and deployment workflows.",
+      "source_url": "https://git-scm.com/",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:publication/xnp-0004-merge-validation",
+      "title": "XNP-0004 Merge Validation",
+      "type": "publication",
+      "subtype": "proposal",
+      "importance": 4,
+      "summary": "A protocol proposal describing merge validation for independently authored substrates.",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0004-merge-validation.md",
+      "rights_status": "open-source",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:essay/what-is-xananode",
+      "title": "What Is XanaNode?",
+      "type": "essay",
+      "subtype": "explainer",
+      "importance": 5,
+      "summary": "An explanation of XanaNode as a layered protocol, not a single viewer, website, repository, or graph visualization.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:observation/markdown-recreation-friction",
+      "title": "Markdown Recreation Friction",
+      "type": "observation",
+      "subtype": "failure",
+      "importance": 4,
+      "summary": "Forcing authors to recreate validated protocol nodes as Markdown creates duplicate governance surfaces and loses the benefit of portable substrate artifacts.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:event/xananode-canonical-pack-bootstrap",
+      "title": "XanaNode Canonical Pack Bootstrap",
+      "type": "event",
+      "subtype": "release",
+      "importance": 4,
+      "summary": "The point where Core begins shipping a mountable canonical XanaNode substrate pack as protocol JSON.",
+      "date": "2026-06-19",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:place/world-wide-web",
+      "title": "World Wide Web",
+      "type": "place",
+      "subtype": "online_space",
+      "importance": 3,
+      "summary": "The public networked space where XanaNode domains, repositories, documentation, and published substrates are reached.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:community/xananode-contributors",
+      "title": "XanaNode Contributors",
+      "type": "community",
+      "subtype": "open_source",
+      "importance": 4,
+      "summary": "The people and future maintainers who author, review, preserve, and project XanaNode-compatible substrates.",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:relationship/protocol-implements-claim",
+      "title": "Protocol Implements Relationship Preservation",
+      "type": "relationship",
+      "subtype": "lineage",
+      "importance": 4,
+      "summary": "A first-class relationship node representing that the XanaNode protocol implements the claim that relationships preserve knowledge.",
+      "source_node": "xananode.canonical:project/xananode-protocol",
+      "target_node": "xananode.canonical:claim/relationships-preserve-knowledge",
+      "relationship_type": "implements",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:revision/canonical-pack-v0-1-0",
+      "title": "Canonical Pack v0.1.0",
+      "type": "revision",
+      "subtype": "node_revision",
+      "importance": 3,
+      "summary": "The first Core-bundled revision of the canonical XanaNode pack.",
+      "revises": "xananode.canonical:concept/xananode",
+      "revision_id": "0.1.0",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:trail/xananode-stack-trail",
+      "title": "XanaNode Stack Trail",
+      "type": "trail",
+      "subtype": "introductory",
+      "importance": 5,
+      "summary": "A curated route from the XanaNode concept through protocol, Core, projection layers, Hugo, workspace, sources, and support.",
+      "nodes": [
+        "xananode.canonical:concept/xananode",
+        "xananode.canonical:project/xananode-protocol",
+        "xananode.canonical:project/xananode-core-sdk",
+        "xananode.canonical:concept/substrate-projection-layer",
+        "xananode.canonical:project/xananode-hugo-theme",
+        "xananode.canonical:project/xananode-workspace",
+        "xananode.canonical:source/xananode-com-domain"
+      ],
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/substrate-node-schema",
+      "title": "Substrate Node Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 5,
+      "summary": "The JSON Schema defining portable node records, including type, subtype, facets, media metadata, source snapshots, fragments, and relationships.",
+      "version": "xananode-core@0.5.0",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-node.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/substrate-relationships-schema",
+      "title": "Substrate Relationships Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 5,
+      "summary": "The JSON Schema defining portable relationship records, including asserted time, validity time, confidence, evidence, and tumbler references.",
+      "version": "xananode-core@0.5.0",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-relationships.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/substrate-manifest-schema",
+      "title": "Substrate Manifest Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 5,
+      "summary": "The JSON Schema defining substrate manifests, repository metadata, federation hints, imports, trust data, and pack metadata.",
+      "version": "xananode-core@0.5.0",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-manifest.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/node-type-registry",
+      "title": "Node Type Registry",
+      "type": "schema",
+      "subtype": "node_type_schema",
+      "importance": 5,
+      "summary": "The canonical registry of current XanaNode node types, subtypes, visual treatment hints, and frontmatter recommendations.",
+      "version": "0.3.0",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-node-types.v0.3.0.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/relationship-type-registry",
+      "title": "Relationship Type Registry",
+      "type": "schema",
+      "subtype": "relationship_type_schema",
+      "importance": 5,
+      "summary": "The canonical registry of current XanaNode relationship types and inverse semantics.",
+      "version": "0.5.0",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.v0.5.0.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/property-registry-schema",
+      "title": "Property Registry Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 5,
+      "summary": "The JSON Schema for declaring standardized custom node properties such as measurements, coordinates, money values, identifiers, and dates.",
+      "version": "0.1.0",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/property-registry.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/author-profile-schema",
+      "title": "Author Profile Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 4,
+      "summary": "The JSON Schema for identifying substrate authors, maintainers, and provenance-bearing author profiles.",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/author-profile.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/namespace-schema",
+      "title": "Namespace Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 4,
+      "summary": "The JSON Schema for declaring interoperable XanaNode namespaces.",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/namespace.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/merge-report-schema",
+      "title": "Merge Report Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 4,
+      "summary": "The JSON Schema for reporting merge decisions, identity handling, conflicts, and intake outcomes between substrates.",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/merge-report.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/compatibility-report-schema",
+      "title": "Compatibility Report Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 4,
+      "summary": "The JSON Schema for describing whether schemas, packs, substrates, or tools can interoperate without destructive conversion.",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/compatibility-report.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/substrate-diff-schema",
+      "title": "Substrate Diff Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 4,
+      "summary": "The JSON Schema for representing portable differences between substrate states.",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-diff.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/nanopublication-schema",
+      "title": "Nanopublication Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 4,
+      "summary": "The JSON Schema for representing assertion, provenance, and publication information in nanopublication-compatible form.",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/nanopublication.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:schema/ro-crate-metadata-schema",
+      "title": "RO-Crate Metadata Schema",
+      "type": "schema",
+      "subtype": "validation_rule",
+      "importance": 4,
+      "summary": "The JSON Schema for Research Object Crate metadata used to describe packaged substrate artifacts and their provenance.",
+      "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:media/xananode-icon",
+      "title": "XanaNode Icon",
+      "type": "media",
+      "subtypes": ["image", "logo"],
+      "media_type": "image",
+      "mime_type": "image/svg+xml",
+      "importance": 5,
+      "summary": "The XanaNode project icon used as primary media for XanaNode nodes and projection branding.",
+      "alt": "A connected node mark with orange and blue paths crossing around a bright central node.",
+      "rights_status": "open-source",
+      "asset_path": "media/images/xananode-icon.svg",
+      "asset_role": "primary_media",
+      "creator": "Built By Bots",
+      "relationships": []
+    },
+    {
+      "id": "xananode.canonical:fragment/relationships-preserve-knowledge-sentence",
+      "title": "Relationships Preserve Knowledge Sentence",
+      "type": "fragment",
+      "subtype": "sentence",
+      "importance": 4,
+      "summary": "Relationships preserve knowledge.",
+      "source_node": "xananode.canonical:claim/relationships-preserve-knowledge",
+      "source_content_id": "sha256:relationship-preservation-claim",
+      "source_version_id": "sha256:canonical-pack-v0-1-0",
+      "fragment_id": "0001",
+      "tumbler": "xananode.canonical:claim/relationships-preserve-knowledge@sha256:canonical-pack-v0-1-0#fragment/0001@sha256:relationship-preservation-sentence",
+      "selector": {
+        "type": "semantic-anchor",
+        "value": "tagline"
+      },
+      "content_id": "sha256:relationship-preservation-sentence",
+      "version_id": "sha256:canonical-pack-v0-1-0-fragment-0001",
+      "rights_status": "open-source",
+      "relationships": []
+    }
+  ]
+}
