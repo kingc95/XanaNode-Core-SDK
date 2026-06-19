@@ -232,8 +232,8 @@ test("ships a bundled canonical XanaNode protocol pack", async () => {
 
   assert.equal(pack.manifest.id, "xananode.canonical");
   assert.equal(pack.validation.valid, true);
-  assert.ok(pack.node_count >= 18);
-  assert.ok(pack.relationship_count >= 25);
+  assert.ok(pack.node_count >= 149);
+  assert.ok(pack.relationship_count >= 138);
   assert.ok(pack.nodes.filter((node) => node.type === "schema").length >= 12);
   for (const type of [
     "person",
@@ -260,4 +260,6 @@ test("ships a bundled canonical XanaNode protocol pack", async () => {
   }
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:concept/substrate-projection-layer"));
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:source/xananode-com-domain"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/node-type-person"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/relationship-type-supports"));
 });
