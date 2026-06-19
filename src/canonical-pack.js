@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { spawnSync } from "node:child_process";
 import { buildSubstrate } from "./build.js";
 import { writeJson } from "./io.js";
 import { loadSubstratePack } from "./packs.js";
@@ -10,6 +11,7 @@ const packageRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "
 const bundledCanonicalPackRoot = path.join(packageRoot, "packs", "xananode-canonical");
 const schemaRoot = path.join(packageRoot, "schemas");
 const registryRoot = path.join(packageRoot, "registry");
+const protocolRoot = path.join(packageRoot, "vendor", "xananode-protocol");
 const assertedAt = "2026-06-19T00:00:00.000Z";
 
 function asArray(value) {
@@ -27,8 +29,57 @@ function cleanBundledRecord(record) {
   return clean;
 }
 
+function mergeNodeRecord(existing, incoming) {
+  if (!existing) return incoming;
+  return {
+    ...existing,
+    ...incoming,
+    relationships: existing.relationships?.length ? existing.relationships : incoming.relationships || []
+  };
+}
+
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
+}
+
+function packageVersion() {
+  try {
+    return readJson(path.join(packageRoot, "package.json")).version || "";
+  } catch {
+    return "";
+  }
+}
+
+function gitValue(cwd, args) {
+  const result = spawnSync("git", args, { cwd, encoding: "utf8", shell: false });
+  return result.status === 0 ? result.stdout.trim() : "";
+}
+
+function buildTimestamp(options = {}) {
+  return options.generatedAt || process.env.XANANODE_BUILD_DATE || new Date().toISOString();
+}
+
+function coreBuildMetadata(options = {}) {
+  const generatedAt = buildTimestamp(options);
+  return {
+    version: packageVersion(),
+    git_commit: gitValue(packageRoot, ["rev-parse", "HEAD"]),
+    git_branch: gitValue(packageRoot, ["rev-parse", "--abbrev-ref", "HEAD"]),
+    repository: "kingc95/XanaNode-Core-SDK",
+    generated_at: generatedAt,
+    built_by: "@xananode/core",
+    runtime: `node ${process.version}`,
+    platform: `${process.platform}/${process.arch}`,
+    dependencies: [
+      {
+        name: "XanaNode Protocol",
+        version: "",
+        repository: "kingc95/XanaNode",
+        relationship: "uses",
+        ...(gitValue(protocolRoot, ["rev-parse", "HEAD"]) ? { version: gitValue(protocolRoot, ["rev-parse", "--short", "HEAD"]) } : {})
+      }
+    ]
+  };
 }
 
 function registrySlug(value) {
@@ -56,6 +107,42 @@ function registryRelationshipId(kind, type) {
 
 function protocolSourceUrl(relativePath) {
   return `https://github.com/kingc95/XanaNode-Protocol/blob/main/${String(relativePath || "").replace(/\\/g, "/").replace(/^\.\.\//, "")}`;
+}
+
+function githubRepoUrl(repository) {
+  return repository ? `https://github.com/${repository}` : "";
+}
+
+function implementationBuildMetadata(item, options = {}) {
+  const metadata = {
+    version: item.version || "",
+    repository: item.repository || "",
+    generated_at: buildTimestamp(options),
+    built_by: "@xananode/core"
+  };
+  if (item.repository === "kingc95/XanaNode-Core-SDK") {
+    const coreMetadata = coreBuildMetadata(options);
+    return {
+      ...metadata,
+      ...coreMetadata,
+      dependencies: [
+        ...(coreMetadata.dependencies || []),
+        ...(item.consumes || []).map((name) => ({ name, relationship: "consumes" }))
+      ]
+    };
+  }
+  if (item.repository === "kingc95/XanaNode") {
+    return {
+      ...metadata,
+      git_commit: gitValue(protocolRoot, ["rev-parse", "HEAD"]),
+      git_branch: gitValue(protocolRoot, ["rev-parse", "--abbrev-ref", "HEAD"]),
+      dependencies: []
+    };
+  }
+  return {
+    ...metadata,
+    dependencies: (item.consumes || []).map((name) => ({ name, relationship: "consumes" }))
+  };
 }
 
 function schemaRegistryNode(id, title, summary, subtype = "validation_rule", importance = 4, extra = {}) {
@@ -404,8 +491,107 @@ function buildProtocolMetadataRegistryNodes() {
   return { nodes, relationships };
 }
 
-function buildProtocolDigitalTwinNodes() {
+function buildSoftwareStackNodes(options = {}) {
+  const nodes = [];
+  const relationships = [];
+  const implementationsPath = path.join(registryRoot, "known-implementations.json");
+  if (!fs.existsSync(implementationsPath)) return { nodes, relationships };
+  const registry = readJson(implementationsPath);
+
+  for (const item of registry.implementations || []) {
+    if (!item.name) continue;
+    const projectId = `xananode.canonical:project/${registrySlug(item.name)}`;
+    const repoId = `xananode.canonical:source/repository-${registrySlug(item.repository || item.name)}`;
+    const buildMetadata = implementationBuildMetadata(item, options);
+
+    nodes.push({
+      id: repoId,
+      title: `${item.name} Repository`,
+      type: "source",
+      subtype: "git_repository",
+      importance: item.status === "active" ? 4 : 3,
+      summary: `Public Git repository for ${item.name}.`,
+      source_url: item.url || githubRepoUrl(item.repository),
+      repository: item.repository || "",
+      rights_status: "external",
+      relationships: []
+    });
+    relationships.push(schemaRegistryRelationship(
+      repoId,
+      projectId,
+      "documents",
+      `${item.name} is documented and versioned in its public repository.`
+    ));
+
+    nodes.push({
+      id: projectId,
+      title: item.name,
+      type: "project",
+      subtype: item.type || "implementation",
+      importance: item.status === "active" ? 4 : 3,
+      summary: item.description || `${item.name} implementation registry entry.`,
+      status: item.status || "",
+      source_url: item.url || "",
+      repository: item.repository || "",
+      protocol_role: item.protocol_role || "",
+      software_version: item.version || "",
+      build_metadata: buildMetadata,
+      consumes: item.consumes || [],
+      related_protocol_artifacts: item.related_protocol_artifacts || [],
+      relationships: []
+    });
+
+    for (const [index, name] of (item.consumes || []).entries()) {
+      const componentId = `xananode.canonical:technology/${registrySlug(item.name)}-component-${registrySlug(name)}`;
+      nodes.push({
+        id: componentId,
+        title: `${item.name}: ${name}`,
+        type: "technology",
+        subtype: "software_component",
+        importance: 3,
+        summary: `${item.name} consumes or depends on ${name}.`,
+        component_of: projectId,
+        relationships: []
+      });
+      relationships.push(schemaRegistryRelationship(
+        projectId,
+        componentId,
+        "uses",
+        `${item.name} uses ${name}.`,
+        `component-${index}`
+      ));
+    }
+
+    for (const [index, artifact] of (item.related_protocol_artifacts || []).entries()) {
+      const artifactPath = String(artifact || "").replace(/^\.\.\//, "");
+      const artifactId = `xananode.canonical:schema/protocol-artifact-${registrySlug(artifactPath)}`;
+      nodes.push({
+        id: artifactId,
+        title: artifactPath || "Protocol artifact",
+        type: "schema",
+        subtype: "protocol_artifact",
+        importance: artifactPath.includes("schemas/") ? 4 : 3,
+        summary: `${item.name} references the protocol artifact ${artifactPath}.`,
+        artifact_path: artifactPath,
+        source_url: protocolSourceUrl(artifactPath),
+        relationships: []
+      });
+      relationships.push(schemaRegistryRelationship(
+        projectId,
+        artifactId,
+        "uses",
+        `${item.name} uses ${artifactPath}.`,
+        `artifact-${index}`
+      ));
+    }
+  }
+
+  return { nodes, relationships };
+}
+
+function buildProtocolDigitalTwinNodes(options = {}) {
   const parts = [
+    buildSoftwareStackNodes(options),
     buildRegistryTypeNodes(),
     buildPropertyRegistryNodes(),
     buildProtocolMetadataRegistryNodes()
@@ -435,7 +621,8 @@ function writePackArtifacts(outDir, pack) {
     nodes: pack.node_count,
     relationships: pack.relationship_count,
     warnings: pack.warnings,
-    generated_at: new Date().toISOString()
+    generated_at: pack.manifest.build_metadata?.generated_at || new Date().toISOString(),
+    build_metadata: pack.manifest.build_metadata || {}
   });
 }
 
@@ -447,11 +634,11 @@ export function buildBundledCanonicalPack(options = {}) {
   const loaded = loadSubstratePack(options.root || bundledCanonicalPackRoot, {
     pack: { id: "xananode.canonical", mode: "mounted" }
   });
-  const registryTypes = buildProtocolDigitalTwinNodes();
+  const registryTypes = buildProtocolDigitalTwinNodes(options);
   const nodesById = new Map();
   const relationshipsById = new Map();
   for (const node of [...loaded.nodes.map(cleanBundledRecord), ...registryTypes.nodes]) {
-    if (!nodesById.has(node.id)) nodesById.set(node.id, node);
+    nodesById.set(node.id, mergeNodeRecord(nodesById.get(node.id), node));
   }
   for (const relationship of [...loaded.relationships.map(cleanBundledRecord), ...registryTypes.relationships]) {
     if (!relationshipsById.has(relationship.id)) relationshipsById.set(relationship.id, relationship);
@@ -465,7 +652,14 @@ export function buildBundledCanonicalPack(options = {}) {
     ...(options.namespace ? { namespace: options.namespace } : {}),
     ...(options.version ? { version: options.version } : {}),
     ...(options.description ? { description: options.description } : {}),
-    ...(options.repositoryUrl ? { repository: { type: "git", url: options.repositoryUrl, default_branch: options.defaultBranch || "main" } } : {})
+    ...(options.repositoryUrl ? { repository: { type: "git", url: options.repositoryUrl, default_branch: options.defaultBranch || "main" } } : {}),
+    build_metadata: coreBuildMetadata(options),
+    pack: {
+      ...(loaded.manifest.pack || {}),
+      built_by: "@xananode/core",
+      built_at: buildTimestamp(options),
+      build_metadata: coreBuildMetadata(options)
+    }
   };
   const validation = validateSubstrateArtifacts({ manifest, protocolNodes: nodes, relationships }, options);
   const warnings = [...loaded.warnings, ...validation.warnings];
@@ -507,9 +701,12 @@ function packManifestFromSubstrates(substrates, options = {}) {
       url: options.repositoryUrl || "local",
       default_branch: options.defaultBranch || "main"
     },
+    build_metadata: coreBuildMetadata(options),
     pack: {
       mode: "mounted",
       built_by: "@xananode/core",
+      built_at: buildTimestamp(options),
+      build_metadata: coreBuildMetadata(options),
       source_manifests: sourceManifests
     }
   };

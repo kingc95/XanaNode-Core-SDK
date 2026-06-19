@@ -79,9 +79,86 @@
       }
     },
     "confidence": { "type": "string" },
+    "uncertainty_level": {
+      "type": "string",
+      "description": "A canonical epistemic uncertainty level for questions, hypotheses, claims, knowledge gaps, responses, or first-class relationships.",
+      "enum": ["unknown", "low", "medium", "high", "unresolved"]
+    },
+    "review_status": {
+      "type": "string",
+      "description": "Workflow review state for a node or relationship being authored, validated, merged, or deprecated.",
+      "enum": ["draft", "needs_review", "under_review", "approved", "rejected", "deprecated"]
+    },
+    "research_priority": {
+      "type": "integer",
+      "description": "Priority signal for inquiry, problems, and knowledge gaps.",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "evidence_strength": {
+      "type": "string",
+      "description": "Compact assessment of the evidence available for a claim, hypothesis, response, or relationship.",
+      "enum": ["none", "weak", "moderate", "strong", "decisive", "contested"]
+    },
+    "communication_model": {
+      "type": "string",
+      "description": "Participant topology for a first-class communication.",
+      "enum": ["one_to_one", "one_to_many", "many_to_one", "many_to_many"]
+    },
+    "communication_pattern": {
+      "type": "string",
+      "description": "Semantic communication pattern beyond participant count.",
+      "enum": [
+        "dialogue",
+        "broadcast",
+        "collection",
+        "coordination",
+        "negotiation",
+        "debate",
+        "consensus",
+        "instruction",
+        "query_response",
+        "publication"
+      ]
+    },
     "protocol_id": { "type": "string" },
     "content_id": { "type": "string" },
     "version_id": { "type": "string" },
+    "software_version": {
+      "type": "string",
+      "description": "Semantic or package version of a software project, component, renderer, SDK, or application."
+    },
+    "build_metadata": {
+      "type": "object",
+      "description": "Build and runtime provenance for software nodes, generated packs, and projection artifacts.",
+      "additionalProperties": false,
+      "properties": {
+        "version": { "type": "string" },
+        "git_commit": { "type": "string" },
+        "git_branch": { "type": "string" },
+        "repository": { "type": "string" },
+        "built_at": { "type": "string", "format": "date-time" },
+        "compiled_at": { "type": "string", "format": "date-time" },
+        "generated_at": { "type": "string", "format": "date-time" },
+        "built_by": { "type": "string" },
+        "runtime": { "type": "string" },
+        "platform": { "type": "string" },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string" },
+              "version": { "type": "string" },
+              "repository": { "type": "string" },
+              "relationship": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
     "source_content_id": { "type": "string" },
     "source_version_id": { "type": "string" },
     "signature": { "type": "string" },

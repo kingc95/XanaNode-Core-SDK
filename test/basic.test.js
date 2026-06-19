@@ -322,4 +322,10 @@ test("ships a bundled canonical XanaNode protocol pack", async () => {
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:source/xananode-com-domain"));
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/node-type-person"));
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:schema/relationship-type-supports"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:project/xananode-studio"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:source/repository-kingc95-xananode-studio"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:technology/xananode-studio-component-workspace-apis"));
+  assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:project/xananode-core-sdk" && node.build_metadata?.git_commit));
+  assert.ok(pack.manifest.build_metadata?.git_commit);
+  assert.ok(pack.manifest.pack?.build_metadata?.dependencies?.some((dependency) => dependency.name === "XanaNode Protocol"));
 });
