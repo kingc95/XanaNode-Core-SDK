@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
-import { analyzeSubstrateIntake, buildBundledCanonicalPack, buildSubstrate, loadSubstratePack, normalizePackReference, writeCanonicalPack } from "../src/index.js";
+import { analyzeSubstrateIntake, buildBundledCanonicalPack, buildGraphProjection, buildSubstrate, createProjectionRegistry, loadSubstratePack, normalizePackReference, relationshipsFromProjectionNodes, writeCanonicalPack } from "../src/index.js";
 
 test("builds bundled example substrate", async () => {
   const root = path.resolve("templates/basic");
@@ -23,6 +23,31 @@ test("builds bundled example substrate", async () => {
   assert.ok(authoredFragment.source_version_id.startsWith("sha256:"));
   assert.match(authoredFragment.tumbler, /@sha256:[^#]+#fragment\/definition@sha256:/);
   assert.equal(substrate.validation.valid, true);
+});
+
+test("builds renderer-neutral graph projection styles from protocol registries", () => {
+  const registry = createProjectionRegistry({
+    nodeTypes: [
+      { type: "person", color: { bg: "#8bd3ff", fg: "#071827", outline: "#d8f1ff" } },
+      { type: "source", color: { bg: "#ffe0e0", fg: "#2b0909", outline: "#fff0f0" } }
+    ],
+    relationshipTypes: [
+      { type: "authored", color: "#f59e0b", line_style: "dashed" }
+    ]
+  });
+  const nodes = [
+    { id: "douglas-adams", title: "Douglas Adams", type: "person" },
+    { id: "hitchhikers-radio", title: "The Hitchhiker's Guide radio series", type: "source", facets: ["person"] }
+  ];
+  const relationships = [{ source: "douglas-adams", target: "hitchhikers-radio", type: "authored" }];
+  const projection = buildGraphProjection(nodes, relationships, { current: nodes[0], registry });
+
+  assert.equal(projection.nodes[0].style.fills[0], "#8bd3ff");
+  assert.equal(projection.nodes[1].style.fills[0], "#ffe0e0");
+  assert.ok(projection.nodes[1].style.fills.includes("#8bd3ff"));
+  assert.equal(projection.edges[0].style.color, "#f59e0b");
+  assert.equal(projection.edges[0].style.dash, "8 6");
+  assert.equal(relationshipsFromProjectionNodes([{ ...nodes[0], relationships }],).length, 0);
 });
 
 test("bundles the current protocol schema inventory", () => {
