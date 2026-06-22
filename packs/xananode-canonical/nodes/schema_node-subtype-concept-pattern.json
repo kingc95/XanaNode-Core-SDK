@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-concept-pattern",
+  "title": "Concept subtype: pattern",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "pattern is an allowed subtype of the concept node type.",
+  "version": "0.3.0",
+  "registry_type": "pattern",
+  "registry_namespace": "xananode",
+  "parent_node_type": "concept",
+  "relationships": []
+}

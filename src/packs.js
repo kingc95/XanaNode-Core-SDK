@@ -29,6 +29,24 @@ function isRelationshipRecord(value) {
   return isPlainObject(value) && Boolean(value.id && value.source && value.target && value.type);
 }
 
+function isBundleManifestRecord(value) {
+  return isPlainObject(value)
+    && value.record_type === "bundle_manifest"
+    && isPlainObject(value.manifest);
+}
+
+function isBundleReportRecord(value) {
+  return isPlainObject(value) && value.record_type === "bundle_report";
+}
+
+function isJsonlBundleNodeRecord(value) {
+  return isPlainObject(value) && value.record_type === "node" && isNodeRecord(value.node);
+}
+
+function isJsonlBundleRelationshipRecord(value) {
+  return isPlainObject(value) && value.record_type === "relationship" && isRelationshipRecord(value.relationship);
+}
+
 function markImported(value, filePath, rootDir, pack = {}) {
   return {
     ...value,
@@ -38,12 +56,62 @@ function markImported(value, filePath, rootDir, pack = {}) {
   };
 }
 
+function stableComparable(value) {
+  if (Array.isArray(value)) return value.map(stableComparable);
+  if (!isPlainObject(value)) return value;
+  return Object.fromEntries(
+    Object.keys(value)
+      .filter((key) => !["imported_from", "pack_id", "pack_mode"].includes(key))
+      .sort()
+      .map((key) => [key, stableComparable(value[key])])
+  );
+}
+
+function dedupeRecords(records, kind, warnings) {
+  const byId = new Map();
+  for (const record of records) {
+    if (!record?.id) continue;
+    const existing = byId.get(record.id);
+    if (!existing) {
+      byId.set(record.id, record);
+      continue;
+    }
+
+    const sameRecord = JSON.stringify(stableComparable(existing)) === JSON.stringify(stableComparable(record));
+    const existingFromNodeFile = String(existing.imported_from || "").startsWith("nodes/");
+    const incomingFromNodeFile = String(record.imported_from || "").startsWith("nodes/");
+    if (!sameRecord) {
+      warnings.push({
+        kind: `duplicate_${kind}_id`,
+        id: record.id,
+        kept: existing.imported_from || "",
+        ignored: record.imported_from || ""
+      });
+    }
+    if (incomingFromNodeFile && !existingFromNodeFile) byId.set(record.id, record);
+  }
+  return [...byId.values()];
+}
+
 function collectJsonArtifact(value, filePath, rootDir, pack, output) {
   if (Array.isArray(value)) {
     for (const item of value) collectJsonArtifact(item, filePath, rootDir, pack, output);
     return;
   }
   if (!isPlainObject(value)) return;
+
+  if (value.format === "xananode.substrate-bundle@0.1.0") {
+    if (isPlainObject(value.manifest) && !output.manifest) output.manifest = value.manifest;
+    if (Array.isArray(value.nodes)) {
+      for (const item of value.nodes) collectJsonArtifact(item, filePath, rootDir, pack, output);
+    }
+    if (Array.isArray(value.relationships)) {
+      for (const relationship of value.relationships) {
+        if (isRelationshipRecord(relationship)) output.relationships.push(markImported(relationship, filePath, rootDir, pack));
+      }
+    }
+    return;
+  }
 
   if (isNodeRecord(value)) {
     output.nodes.push(markImported({
@@ -61,6 +129,40 @@ function collectJsonArtifact(value, filePath, rootDir, pack, output) {
     for (const relationship of value.relationships) {
       if (isRelationshipRecord(relationship)) output.relationships.push(markImported(relationship, filePath, rootDir, pack));
     }
+  }
+}
+
+function collectJsonlArtifact(text, filePath, rootDir, pack, output) {
+  const lines = String(text || "")
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+  for (const line of lines) {
+    let value;
+    try {
+      value = JSON.parse(line);
+    } catch (error) {
+      output.errors.push({
+        kind: "invalid_pack_jsonl",
+        file: path.relative(rootDir, filePath).replace(/\\/g, "/"),
+        message: error.message
+      });
+      return;
+    }
+    if (isBundleManifestRecord(value) && !output.manifest) {
+      output.manifest = value.manifest;
+      continue;
+    }
+    if (isJsonlBundleNodeRecord(value)) {
+      collectJsonArtifact(value.node, filePath, rootDir, pack, output);
+      continue;
+    }
+    if (isJsonlBundleRelationshipRecord(value)) {
+      output.relationships.push(markImported(value.relationship, filePath, rootDir, pack));
+      continue;
+    }
+    if (isBundleReportRecord(value)) continue;
+    collectJsonArtifact(value, filePath, rootDir, pack, output);
   }
 }
 
@@ -174,7 +276,52 @@ export function loadSubstratePack(rootDir, options = {}) {
     return output;
   }
 
-  for (const filePath of walkJsonFiles(rootDir).sort()) {
+  const rootStat = fs.statSync(rootDir);
+  if (rootStat.isFile()) {
+    const ext = path.extname(rootDir).toLowerCase();
+    try {
+      if (ext === ".json") {
+        const value = JSON.parse(fs.readFileSync(rootDir, "utf8"));
+        collectJsonArtifact(value, rootDir, path.dirname(rootDir), pack, output);
+        if (path.basename(rootDir) === "substrate.json" && isPlainObject(value)) output.manifest = value;
+      } else if (ext === ".jsonl") {
+        collectJsonlArtifact(fs.readFileSync(rootDir, "utf8"), rootDir, path.dirname(rootDir), pack, output);
+      } else {
+        output.errors.push({
+          kind: "unsupported_pack_file",
+          file: path.basename(rootDir),
+          message: `Unsupported substrate file type: ${ext || "unknown"}`
+        });
+      }
+    } catch (error) {
+      output.errors.push({
+        kind: ext === ".jsonl" ? "invalid_pack_jsonl" : "invalid_pack_json",
+        file: path.basename(rootDir),
+        message: error.message
+      });
+    }
+    output.nodes = dedupeRecords(output.nodes, "node", output.warnings);
+    output.relationships = dedupeRecords(output.relationships, "relationship", output.warnings);
+    return applyPackIngress(output, options);
+  }
+
+  const jsonlFiles = [];
+  function walkJsonAndJsonl(currentDir) {
+    if (!fs.existsSync(currentDir)) return;
+    for (const entry of fs.readdirSync(currentDir, { withFileTypes: true })) {
+      if (["node_modules", "public", "resources", ".git"].includes(entry.name)) continue;
+      const fullPath = path.join(currentDir, entry.name);
+      if (entry.isDirectory()) {
+        walkJsonAndJsonl(fullPath);
+      } else if (entry.isFile()) {
+        if (entry.name.endsWith(".json")) output.__jsonFiles = [...(output.__jsonFiles || []), fullPath];
+        if (entry.name.endsWith(".jsonl")) jsonlFiles.push(fullPath);
+      }
+    }
+  }
+  walkJsonAndJsonl(rootDir);
+
+  for (const filePath of (output.__jsonFiles || []).sort()) {
     try {
       const value = JSON.parse(fs.readFileSync(filePath, "utf8"));
       if (path.basename(filePath) === "substrate.json" && isPlainObject(value)) {
@@ -189,6 +336,22 @@ export function loadSubstratePack(rootDir, options = {}) {
       });
     }
   }
+  delete output.__jsonFiles;
+
+  for (const filePath of jsonlFiles.sort()) {
+    try {
+      collectJsonlArtifact(fs.readFileSync(filePath, "utf8"), filePath, rootDir, pack, output);
+    } catch (error) {
+      output.errors.push({
+        kind: "invalid_pack_jsonl",
+        file: path.relative(rootDir, filePath).replace(/\\/g, "/"),
+        message: error.message
+      });
+    }
+  }
+
+  output.nodes = dedupeRecords(output.nodes, "node", output.warnings);
+  output.relationships = dedupeRecords(output.relationships, "relationship", output.warnings);
 
   return applyPackIngress(output, options);
 }

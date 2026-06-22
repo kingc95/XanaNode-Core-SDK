@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-claim-interpretive",
+  "title": "Claim subtype: interpretive",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "interpretive is an allowed subtype of the claim node type.",
+  "version": "0.3.0",
+  "registry_type": "interpretive",
+  "registry_namespace": "xananode",
+  "parent_node_type": "claim",
+  "relationships": []
+}

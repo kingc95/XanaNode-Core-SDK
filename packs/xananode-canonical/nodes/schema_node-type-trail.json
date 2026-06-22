@@ -1,0 +1,39 @@
+{
+  "id": "xananode.canonical:schema/node-type-trail",
+  "title": "Trail",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A curated route through the graph.",
+  "version": "0.3.0",
+  "registry_type": "trail",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "introductory",
+    "historical",
+    "argument",
+    "evidence_path",
+    "teaching_path",
+    "dispute_path"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "nodes",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "concepts",
+    "people",
+    "sources",
+    "claims"
+  ],
+  "color": {
+    "bg": "#fb8500",
+    "fg": "#241100",
+    "outline": "#ffe3be"
+  },
+  "relationships": []
+}

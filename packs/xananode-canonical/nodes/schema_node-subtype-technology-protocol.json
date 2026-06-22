@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-technology-protocol",
+  "title": "Technology subtype: protocol",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "protocol is an allowed subtype of the technology node type.",
+  "version": "0.3.0",
+  "registry_type": "protocol",
+  "registry_namespace": "xananode",
+  "parent_node_type": "technology",
+  "relationships": []
+}

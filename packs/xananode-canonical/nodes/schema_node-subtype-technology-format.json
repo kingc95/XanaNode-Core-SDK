@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-technology-format",
+  "title": "Technology subtype: format",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "format is an allowed subtype of the technology node type.",
+  "version": "0.3.0",
+  "registry_type": "format",
+  "registry_namespace": "xananode",
+  "parent_node_type": "technology",
+  "relationships": []
+}

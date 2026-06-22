@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:organization/hugo-authors",
+  "title": "Hugo Authors",
+  "type": "organization",
+  "subtype": "open_source",
+  "importance": 3,
+  "summary": "The open source project community responsible for Hugo.",
+  "source_url": "https://github.com/gohugoio/hugo",
+  "relationships": []
+}

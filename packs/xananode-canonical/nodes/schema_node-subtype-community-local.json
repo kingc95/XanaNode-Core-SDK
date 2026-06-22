@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-community-local",
+  "title": "Community subtype: local",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "local is an allowed subtype of the community node type.",
+  "version": "0.3.0",
+  "registry_type": "local",
+  "registry_namespace": "xananode",
+  "parent_node_type": "community",
+  "relationships": []
+}

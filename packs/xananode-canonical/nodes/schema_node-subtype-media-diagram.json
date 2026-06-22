@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-media-diagram",
+  "title": "Media subtype: diagram",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "diagram is an allowed subtype of the media node type.",
+  "version": "0.3.0",
+  "registry_type": "diagram",
+  "registry_namespace": "xananode",
+  "parent_node_type": "media",
+  "relationships": []
+}

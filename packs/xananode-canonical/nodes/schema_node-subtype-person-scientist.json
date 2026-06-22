@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-person-scientist",
+  "title": "Person subtype: scientist",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "scientist is an allowed subtype of the person node type.",
+  "version": "0.3.0",
+  "registry_type": "scientist",
+  "registry_namespace": "xananode",
+  "parent_node_type": "person",
+  "relationships": []
+}

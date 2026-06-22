@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/hugo",
+  "title": "Hugo",
+  "type": "technology",
+  "subtype": "tool",
+  "importance": 4,
+  "summary": "A static site generator used by the XanaNode Hugo projection to publish substrates as static websites.",
+  "source_url": "https://gohugo.io/",
+  "relationships": []
+}

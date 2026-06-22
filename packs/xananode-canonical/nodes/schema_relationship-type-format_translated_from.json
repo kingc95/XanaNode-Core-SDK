@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-format_translated_from",
+  "title": "Format translated from",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source preserves the target content while changing format, medium, or presentation layer.",
+  "version": "0.5.0",
+  "registry_type": "format_translated_from",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "format_translated_into",
+  "color": "#8b5cf6",
+  "inverse_color": "#c4b5fd",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "xananode.canonical:schema/relationship-category-explanation",
+  "title": "Explanation Relationship Category",
+  "type": "schema",
+  "subtype": "relationship_category_schema",
+  "importance": 4,
+  "summary": "The explanation category groups relationship types with related meaning.",
+  "version": "0.5.0",
+  "registry_type": "explanation",
+  "registry_namespace": "xananode",
+  "relationships": [],
+  "color": "#60a5fa",
+  "inverse_color": "#bfdbfe",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

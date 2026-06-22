@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-hypothesis-scientific",
+  "title": "Hypothesis subtype: scientific",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "scientific is an allowed subtype of the hypothesis node type.",
+  "version": "0.3.0",
+  "registry_type": "scientific",
+  "registry_namespace": "xananode",
+  "parent_node_type": "hypothesis",
+  "relationships": []
+}

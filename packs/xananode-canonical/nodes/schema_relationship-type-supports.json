@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-supports",
+  "title": "Supports",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source supports the target.",
+  "version": "0.5.0",
+  "registry_type": "supports",
+  "registry_namespace": "xananode",
+  "category": "evidence",
+  "inverse": "supported_by",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#10b981",
+  "inverse_color": "#6ee7b7",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

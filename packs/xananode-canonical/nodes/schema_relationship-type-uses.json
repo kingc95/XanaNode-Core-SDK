@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-uses",
+  "title": "Uses",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source uses, employs, or relies on the target.",
+  "version": "0.5.0",
+  "registry_type": "uses",
+  "registry_namespace": "xananode",
+  "category": "composition",
+  "inverse": "used_by",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#22c55e",
+  "inverse_color": "#86efac",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

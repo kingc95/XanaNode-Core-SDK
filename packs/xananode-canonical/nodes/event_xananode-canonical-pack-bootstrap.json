@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:event/xananode-canonical-pack-bootstrap",
+  "title": "XanaNode Canonical Pack Bootstrap",
+  "type": "event",
+  "subtype": "release",
+  "importance": 4,
+  "summary": "The point where Core begins shipping a mountable canonical XanaNode substrate pack as protocol JSON.",
+  "date": "2026-06-19",
+  "relationships": []
+}

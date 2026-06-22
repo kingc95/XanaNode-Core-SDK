@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-person-artist",
+  "title": "Person subtype: artist",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "artist is an allowed subtype of the person node type.",
+  "version": "0.3.0",
+  "registry_type": "artist",
+  "registry_namespace": "xananode",
+  "parent_node_type": "person",
+  "relationships": []
+}

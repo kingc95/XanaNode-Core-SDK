@@ -1,0 +1,40 @@
+{
+  "id": "xananode.canonical:schema/node-type-place",
+  "title": "Place",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A physical or virtual location where people, projects, organizations, or events exist or occurred.",
+  "version": "0.3.0",
+  "registry_type": "place",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "city",
+    "building",
+    "lab",
+    "institution_site",
+    "online_space",
+    "country",
+    "region"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "location",
+    "geo",
+    "organizations",
+    "events",
+    "projects"
+  ],
+  "color": {
+    "bg": "#84cc16",
+    "fg": "#0a1a00",
+    "outline": "#e8ffe0"
+  },
+  "relationships": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "xananode.canonical:schema/node-type-essay",
+  "title": "Essay",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A human-authored argument that connects claims, sources, observations, and concepts.",
+  "version": "0.3.0",
+  "registry_type": "essay",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "argument",
+    "explainer",
+    "critique",
+    "manifesto",
+    "analysis",
+    "reflection"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "claims",
+    "concepts",
+    "people",
+    "sources",
+    "observations"
+  ],
+  "color": {
+    "bg": "#f59ec3",
+    "fg": "#1f1020",
+    "outline": "#ffe3f0"
+  },
+  "relationships": []
+}

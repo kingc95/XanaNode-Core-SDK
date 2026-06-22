@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-interviewed",
+  "title": "Interviewed",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source interviewed the target.",
+  "version": "0.5.0",
+  "registry_type": "interviewed",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "interviewed_by",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fb7185",
+  "inverse_color": "#fecdd3",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted"
+}

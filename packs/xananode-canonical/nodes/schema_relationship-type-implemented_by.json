@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-implemented_by",
+  "title": "Implemented By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The implemented_by inverse relationship term derived from implements.",
+  "version": "0.5.0",
+  "registry_type": "implemented_by",
+  "registry_namespace": "xananode",
+  "category": "composition",
+  "inverse": "implements",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#86efac",
+  "inverse_color": "#22c55e",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

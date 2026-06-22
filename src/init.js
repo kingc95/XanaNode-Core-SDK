@@ -7,8 +7,19 @@ export function initSubstrate(targetDir, options = {}) {
   const name = options.name || "New XanaNode Substrate";
   const namespace = options.namespace || slugify(name, "substrate");
   fs.mkdirSync(targetDir, { recursive: true });
-  fs.mkdirSync(path.join(targetDir, "content", "nodes"), { recursive: true });
-  fs.mkdirSync(path.join(targetDir, "assets"), { recursive: true });
+  for (const relativeDir of [
+    path.join("content", "nodes"),
+    "nodes",
+    path.join("assets", "media"),
+    path.join("assets", "sources"),
+    path.join("assets", "projection"),
+    "schemas",
+    "reports",
+    "packs",
+    "imports"
+  ]) {
+    fs.mkdirSync(path.join(targetDir, relativeDir), { recursive: true });
+  }
 
   writeJson(path.join(targetDir, "substrate.json"), {
     id: namespace,
@@ -29,21 +40,11 @@ export function initSubstrate(targetDir, options = {}) {
   writeMarkdownNode(path.join(targetDir, "content", "nodes", "start-here.md"), {
     title: "Start Here",
     type: "trail",
-    summary: "The starting trail for this substrate.",
+    summary: "An empty starting trail for this substrate.",
     created_by: options.author || "unknown",
-    relationships: []
-  }, "# Start Here\n\nThis is the first node in your XanaNode substrate. Add concepts, claims, sources, observations, trails, and relationships as the substrate grows.\n");
+    nodes: []
+  }, "# Start Here\n\nThis trail is ready for your first path through the substrate.\n");
 
-  writeMarkdownNode(path.join(targetDir, "content", "nodes", "first-concept.md"), {
-    title: "First Concept",
-    type: "concept",
-    summary: "A starter concept node.",
-    created_by: options.author || "unknown",
-    relationships: [
-      { type: "related_to", target: `${namespace}:trail/start-here`, summary: "This concept appears in the starter trail." }
-    ]
-  }, "# First Concept\n\nDescribe an important concept in this substrate.\n");
-
-  fs.writeFileSync(path.join(targetDir, "README.md"), `# ${name}\n\nThis is a XanaNode substrate created by @xananode/core.\n\n## Commands\n\n\`xananode validate .\`\n\`xananode build . --out public\`\n`);
+  fs.writeFileSync(path.join(targetDir, "README.md"), `# ${name}\n\nThis is a XanaNode substrate created by @xananode/core.\n\nThe substrate root is this folder. Keep authored Markdown nodes in \`content/nodes/\`, protocol JSON nodes in \`nodes/\` or \`nodes.json\`, relationships in \`relationships.json\`, local media and source files in \`assets/\`, extension schemas in \`schemas/\`, reports in \`reports/\`, mounted substrates in \`packs/\`, and incoming material in \`imports/\`.\n\n## Commands\n\n\`xananode validate .\`\n\`xananode build . --out public\`\n`);
   return { targetDir, namespace, name };
 }

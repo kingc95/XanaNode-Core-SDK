@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-project-standard",
+  "title": "Project subtype: standard",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "standard is an allowed subtype of the project node type.",
+  "version": "0.3.0",
+  "registry_type": "standard",
+  "registry_namespace": "xananode",
+  "parent_node_type": "project",
+  "relationships": []
+}

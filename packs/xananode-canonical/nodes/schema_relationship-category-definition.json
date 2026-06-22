@@ -1,0 +1,16 @@
+{
+  "id": "xananode.canonical:schema/relationship-category-definition",
+  "title": "Definition Relationship Category",
+  "type": "schema",
+  "subtype": "relationship_category_schema",
+  "importance": 4,
+  "summary": "The definition category groups relationship types with related meaning.",
+  "version": "0.5.0",
+  "registry_type": "definition",
+  "registry_namespace": "xananode",
+  "relationships": [],
+  "color": "#facc15",
+  "inverse_color": "#fde68a",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

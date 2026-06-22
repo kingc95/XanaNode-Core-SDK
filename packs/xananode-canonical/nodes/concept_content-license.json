@@ -1,0 +1,9 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:concept/content-license",
+  "title": "Content License",
+  "type": "concept",
+  "subtype": "distinction",
+  "importance": 4,
+  "summary": "A license applied to authored text, documentation, examples, or explanatory material rather than executable reference code."
+}

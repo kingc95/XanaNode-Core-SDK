@@ -1,0 +1,34 @@
+{
+  "id": "example.minimal:question/why-relationships-matter",
+  "title": "Why do relationships matter?",
+  "type": "question",
+  "protocol_id": "example.minimal:question/why-relationships-matter",
+  "content_id": "sha256:example-question-why-relationships-matter",
+  "version_id": "git:HEAD:examples/minimal-substrate/nodes/question-why-relationships-matter.json",
+  "status": "open",
+  "importance": 5,
+  "summary": "An inquiry into why preserving relationship structure changes what a knowledge system can do.",
+  "uncertainty_level": "medium",
+  "review_status": "needs_review",
+  "research_priority": 4,
+  "relationships": [
+    {
+      "id": "example.minimal:rel/question-raises-gap",
+      "type": "raises",
+      "target": "example.minimal:knowledge_gap/missing-relationship-evidence",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/response-answers-question",
+      "type": "answers",
+      "source": "example.minimal:response/relationships-preserve-context",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/question-asked-in-communication",
+      "type": "asked_in",
+      "target": "example.minimal:communication/minimal-substrate-discussion",
+      "direction": "outgoing"
+    }
+  ]
+}

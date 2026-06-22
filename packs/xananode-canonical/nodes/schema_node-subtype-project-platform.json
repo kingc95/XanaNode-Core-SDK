@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-project-platform",
+  "title": "Project subtype: platform",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "platform is an allowed subtype of the project node type.",
+  "version": "0.3.0",
+  "registry_type": "platform",
+  "registry_namespace": "xananode",
+  "parent_node_type": "project",
+  "relationships": []
+}

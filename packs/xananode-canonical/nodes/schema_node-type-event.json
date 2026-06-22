@@ -1,0 +1,42 @@
+{
+  "id": "xananode.canonical:schema/node-type-event",
+  "title": "Event",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "Something that happened at a time and optionally at a place.",
+  "version": "0.3.0",
+  "registry_type": "event",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "conference",
+    "talk",
+    "publication_event",
+    "meeting",
+    "release",
+    "incident",
+    "historical_event"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "date",
+    "start_date",
+    "end_date",
+    "place",
+    "people",
+    "organizations",
+    "sources"
+  ],
+  "color": {
+    "bg": "#f59e0b",
+    "fg": "#1a0a00",
+    "outline": "#fff3e0"
+  },
+  "relationships": []
+}

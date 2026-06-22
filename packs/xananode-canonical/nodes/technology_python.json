@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/python",
+  "title": "Python",
+  "type": "technology",
+  "subtype": "language",
+  "importance": 3,
+  "summary": "A language used by the protocol repository validation tooling and supported as a future validation/runtime target.",
+  "source_url": "https://www.python.org/",
+  "relationships": []
+}

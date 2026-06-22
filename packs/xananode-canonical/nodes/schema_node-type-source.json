@@ -1,0 +1,59 @@
+{
+  "id": "xananode.canonical:schema/node-type-source",
+  "title": "Source",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A reference work, transcript, paper, book, talk, article, dataset, or primary evidence item.",
+  "version": "0.3.0",
+  "registry_type": "source",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "book",
+    "paper",
+    "article",
+    "transcript",
+    "talk",
+    "interview",
+    "dataset",
+    "website",
+    "official_site",
+    "documentation",
+    "git_repository",
+    "social_profile",
+    "support_page",
+    "web_snapshot",
+    "radio_series",
+    "radio_episode",
+    "television_series",
+    "television_episode",
+    "stage_play",
+    "audio_drama",
+    "archive",
+    "license",
+    "legal_policy",
+    "trademark_policy",
+    "notice"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "author",
+    "year",
+    "source_url",
+    "archive_url",
+    "license",
+    "rights_status"
+  ],
+  "color": {
+    "bg": "#ff9f7a",
+    "fg": "#2a1208",
+    "outline": "#ffe4d9"
+  },
+  "relationships": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "xananode.canonical:schema/relationship-category-uncertainty",
+  "title": "Uncertainty Relationship Category",
+  "type": "schema",
+  "subtype": "relationship_category_schema",
+  "importance": 4,
+  "summary": "The uncertainty category groups relationship types with related meaning.",
+  "version": "0.5.0",
+  "registry_type": "uncertainty",
+  "registry_namespace": "xananode",
+  "color": "#d946ef",
+  "inverse_color": "#f5d0fe",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "relationships": []
+}

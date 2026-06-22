@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-response-comment",
+  "title": "Response subtype: comment",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "comment is an allowed subtype of the response node type.",
+  "version": "0.3.0",
+  "registry_type": "comment",
+  "registry_namespace": "xananode",
+  "parent_node_type": "response",
+  "relationships": []
+}

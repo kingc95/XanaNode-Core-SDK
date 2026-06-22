@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-presented_to",
+  "title": "Presented to",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source presented the target content, claim, source, or project to an audience.",
+  "version": "0.5.0",
+  "registry_type": "presented_to",
+  "registry_namespace": "xananode",
+  "category": "communication",
+  "inverse": "presentation_received_from",
+  "color": "#38bdf8",
+  "inverse_color": "#bae6fd",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

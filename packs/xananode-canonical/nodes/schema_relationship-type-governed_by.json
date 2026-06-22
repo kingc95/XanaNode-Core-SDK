@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-governed_by",
+  "title": "governed by",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source artifact, workflow, implementation, substrate, or mark is governed by the target policy, rule, specification, or legal instrument.",
+  "version": "0.5.0",
+  "registry_type": "governed_by",
+  "registry_namespace": "xananode",
+  "category": "governance",
+  "inverse": "governs",
+  "color": "#eab308",
+  "inverse_color": "#fde047",
+  "line_style": "double",
+  "inverse_line_style": "solid",
+  "relationships": [],
+  "default_weight": 4,
+  "default_visibility": "secondary"
+}

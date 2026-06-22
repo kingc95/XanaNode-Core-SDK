@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "xana": "https://xananode.org/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "title": "schema:name",
+    "summary": "schema:description",
+    "created_by": {
+      "@id": "prov:wasAttributedTo",
+      "@type": "@id"
+    },
+    "created_at": {
+      "@id": "prov:generatedAtTime",
+      "@type": "schema:DateTime"
+    },
+    "updated_at": {
+      "@id": "prov:invalidatedAtTime",
+      "@type": "schema:DateTime"
+    },
+    "asserted_by": {
+      "@id": "xana:assertedBy",
+      "@type": "@id"
+    },
+    "asserted_at": {
+      "@id": "xana:assertedAt",
+      "@type": "schema:DateTime"
+    },
+    "source_node": {
+      "@id": "xana:sourceNode",
+      "@type": "@id"
+    },
+    "fragment_id": "xana:fragmentId",
+    "tumbler": "xana:tumbler",
+    "selector": "oa:hasSelector",
+    "content_id": "xana:contentId",
+    "version_id": "xana:versionId",
+    "source_content_id": "xana:sourceContentId",
+    "source_version_id": "xana:sourceVersionId",
+    "relationships": "xana:relationships",
+    "evidence": {
+      "@id": "xana:evidence",
+      "@type": "@id"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "xananode.canonical:schema/node-type-item",
+  "title": "Item",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A discrete physical thing, product, ingredient, component, tool, or other tangible object that can be counted, assembled, consumed, used, or stored.",
+  "version": "0.3.0",
+  "registry_type": "item",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "material",
+    "ingredient",
+    "component",
+    "tool",
+    "artifact",
+    "appliance",
+    "container",
+    "utensil",
+    "finished_item",
+    "spare_part"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "quantity",
+    "unit",
+    "weight",
+    "dimensions",
+    "condition",
+    "material_composition",
+    "components",
+    "ingredients",
+    "primary_media",
+    "source"
+  ],
+  "color": {
+    "bg": "#f4b183",
+    "fg": "#25170a",
+    "outline": "#ffe8d6"
+  },
+  "relationships": []
+}

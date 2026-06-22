@@ -1,0 +1,12 @@
+{
+  "id": "xananode.canonical:concept/substrate-projection-layer",
+  "title": "Substrate Projection Layer",
+  "type": "concept",
+  "subtypes": [
+    "lens",
+    "renderer"
+  ],
+  "importance": 5,
+  "summary": "A renderer or lens that presents a substrate for a particular use without becoming the substrate itself.",
+  "relationships": []
+}

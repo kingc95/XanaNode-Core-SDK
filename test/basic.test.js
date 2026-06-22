@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
 import { analyzeSubstrateIntake, buildBundledCanonicalPack, buildGraphProjection, buildSubstrate, createProjectionRegistry, loadSubstratePack, normalizePackReference, relationshipsFromProjectionNodes, writeCanonicalPack } from "../src/index.js";
 
 test("builds bundled example substrate", async () => {
@@ -236,6 +237,53 @@ test("loads substrate packs without mistaking node-local relationships for edge 
   }
 });
 
+test("loads substrate packs from substrate-bundle.json and substrate-bundle.jsonl", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "xananode-bundle-load-"));
+  try {
+    const bundle = {
+      format: "xananode.substrate-bundle@0.1.0",
+      manifest: {
+        id: "example.bundle",
+        name: "Example Bundle",
+        namespace: "example.bundle",
+        version: "0.1.0",
+        schema_version: "xananode-core@0.5.0"
+      },
+      nodes: [
+        { id: "example.bundle:concept/alpha", title: "Alpha", type: "concept", summary: "Alpha node." },
+        { id: "example.bundle:concept/beta", title: "Beta", type: "concept", summary: "Beta node." }
+      ],
+      relationships: [
+        { id: "example.bundle:rel/alpha-related-to-beta", source: "example.bundle:concept/alpha", target: "example.bundle:concept/beta", type: "related_to" }
+      ]
+    };
+    fs.writeFileSync(path.join(root, "substrate-bundle.json"), JSON.stringify(bundle, null, 2));
+    fs.writeFileSync(path.join(root, "substrate-bundle.jsonl"), [
+      JSON.stringify({ record_type: "bundle_manifest", format: bundle.format, manifest: bundle.manifest, counts: { nodes: 2, relationships: 1 } }),
+      JSON.stringify({ record_type: "node", node: bundle.nodes[0] }),
+      JSON.stringify({ record_type: "node", node: bundle.nodes[1] }),
+      JSON.stringify({ record_type: "relationship", relationship: bundle.relationships[0] })
+    ].join("\n"));
+
+    const folderPack = loadSubstratePack(root, { pack: { id: "example.bundle", mode: "mounted" } });
+    assert.equal(folderPack.manifest?.namespace, "example.bundle");
+    assert.equal(folderPack.nodes.length, 2);
+    assert.equal(folderPack.relationships.length, 1);
+
+    const jsonPack = loadSubstratePack(path.join(root, "substrate-bundle.json"), { pack: { id: "example.bundle", mode: "mounted" } });
+    assert.equal(jsonPack.manifest?.namespace, "example.bundle");
+    assert.equal(jsonPack.nodes.length, 2);
+    assert.equal(jsonPack.relationships.length, 1);
+
+    const jsonlPack = loadSubstratePack(path.join(root, "substrate-bundle.jsonl"), { pack: { id: "example.bundle", mode: "mounted" } });
+    assert.equal(jsonlPack.manifest?.namespace, "example.bundle");
+    assert.equal(jsonlPack.nodes.length, 2);
+    assert.equal(jsonlPack.relationships.length, 1);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test("applies mounted pack namespace mappings during ingress", () => {
   const root = fs.mkdtempSync(path.join(process.cwd(), ".tmp-pack-"));
   try {
@@ -300,12 +348,17 @@ test("writes a canonical substrate pack from authored substrate sources", async 
     assert.ok(fs.existsSync(path.join(out, "substrate.json")));
     assert.ok(fs.existsSync(path.join(out, "relationships.json")));
     assert.ok(fs.existsSync(path.join(out, "pack-report.json")));
+    assert.ok(fs.existsSync(path.join(out, "substrate-bundle.json")));
     assert.ok(fs.readdirSync(path.join(out, "nodes")).some((name) => name.endsWith(".json")));
 
     const manifest = JSON.parse(fs.readFileSync(path.join(out, "substrate.json"), "utf8"));
+    const bundle = JSON.parse(fs.readFileSync(path.join(out, "substrate-bundle.json"), "utf8"));
     assert.equal(manifest.id, "xananode.test-pack");
     assert.equal(manifest.pack.mode, "mounted");
     assert.equal(manifest.pack.built_by, "@xananode/core");
+    assert.equal(bundle.manifest.id, "xananode.test-pack");
+    assert.ok(Array.isArray(bundle.nodes));
+    assert.ok(Array.isArray(bundle.relationships));
   } finally {
     fs.rmSync(out, { recursive: true, force: true });
   }
@@ -389,4 +442,52 @@ test("ships a bundled canonical XanaNode protocol pack", async () => {
   assert.ok(pack.nodes.some((node) => node.id === "xananode.canonical:project/xananode-core-sdk" && node.build_metadata?.git_commit));
   assert.ok(pack.manifest.build_metadata?.git_commit);
   assert.ok(pack.manifest.pack?.build_metadata?.dependencies?.some((dependency) => dependency.name === "XanaNode Protocol"));
+});
+
+test("writes bundled canonical pack with raw protocol snapshots and duplicate report", async () => {
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), "xananode-canonical-pack-"));
+  try {
+    const pack = await writeCanonicalPack([], out);
+    const report = JSON.parse(fs.readFileSync(path.join(out, "pack-report.json"), "utf8"));
+    const bundle = JSON.parse(fs.readFileSync(path.join(out, "substrate-bundle.json"), "utf8"));
+    const nodes = JSON.parse(fs.readFileSync(path.join(out, "nodes.json"), "utf8")).nodes;
+    const titleTypeCounts = new Map();
+    for (const node of nodes) {
+      const key = `${node.title}::${node.type}`;
+      titleTypeCounts.set(key, (titleTypeCounts.get(key) || 0) + 1);
+    }
+
+    assert.equal(pack.validation.valid, true);
+    assert.equal(titleTypeCounts.get("Substrate Node Schema::schema"), 1);
+    assert.equal(titleTypeCounts.get("XanaNode Core SDK Repository::source"), 1);
+    assert.ok(Array.isArray(report.duplicate_collapses));
+    assert.ok(report.raw_sources.some((item) => item.asset_path === "assets/raw/protocol/schemas/substrate-node.schema.json"));
+    assert.ok(report.raw_repository_files.some((item) => item.asset_path === "assets/raw/protocol/README.md"));
+    assert.ok(report.raw_repository_files.some((item) => item.asset_path === "assets/raw/protocol/specs/substrates.md"));
+    assert.ok(report.raw_repository_files.some((item) => item.asset_path === "assets/raw/protocol/governance/federation-rules.md"));
+    assert.ok(fs.existsSync(path.join(out, "assets", "raw", "protocol", "schemas", "substrate-node.schema.json")));
+    assert.ok(fs.existsSync(path.join(out, "assets", "raw", "protocol", "README.md")));
+    assert.equal(bundle.format, "xananode.substrate-bundle@0.1.0");
+    assert.equal(bundle.manifest.id, pack.manifest.id);
+    assert.equal(bundle.counts.nodes, nodes.length);
+    assert.equal(bundle.counts.relationships, pack.relationship_count);
+    assert.ok(bundle.nodes.some((node) => node.id === "xananode.canonical:source/protocol-artifact-readme.md"));
+    assert.ok(nodes.some((node) => (
+      node.id === "xananode.canonical:schema/canonical-schema-substrate-node" &&
+      node.asset_path === "assets/raw/protocol/schemas/substrate-node.schema.json" &&
+      String(node.content_id || "").startsWith("sha256:")
+    )));
+    assert.ok(nodes.some((node) => (
+      node.id === "xananode.canonical:source/protocol-artifact-readme.md" &&
+      node.asset_path === "assets/raw/protocol/README.md" &&
+      String(node.content || "").includes("XanaNode")
+    )));
+    assert.ok(nodes.some((node) => (
+      node.id === "xananode.canonical:source/protocol-artifact-specs-substrates.md" &&
+      node.asset_path === "assets/raw/protocol/specs/substrates.md" &&
+      String(node.content || "").includes("substrate")
+    )));
+  } finally {
+    fs.rmSync(out, { recursive: true, force: true });
+  }
 });

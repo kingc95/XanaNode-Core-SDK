@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-anticipated",
+  "title": "Anticipated",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source anticipated the target without necessarily directly causing it.",
+  "version": "0.5.0",
+  "registry_type": "anticipated",
+  "registry_namespace": "xananode",
+  "category": "influence",
+  "inverse": "anticipated_by",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#14b8a6",
+  "inverse_color": "#99f6e4",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-response-answer",
+  "title": "Response subtype: answer",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "answer is an allowed subtype of the response node type.",
+  "version": "0.3.0",
+  "registry_type": "answer",
+  "registry_namespace": "xananode",
+  "parent_node_type": "response",
+  "relationships": []
+}

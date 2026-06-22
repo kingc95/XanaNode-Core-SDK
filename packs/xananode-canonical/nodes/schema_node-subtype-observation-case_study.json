@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-observation-case_study",
+  "title": "Observation subtype: case study",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "case_study is an allowed subtype of the observation node type.",
+  "version": "0.3.0",
+  "registry_type": "case_study",
+  "registry_namespace": "xananode",
+  "parent_node_type": "observation",
+  "relationships": []
+}

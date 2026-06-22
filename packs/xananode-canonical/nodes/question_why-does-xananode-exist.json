@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:question/why-does-xananode-exist",
+  "title": "Why does XanaNode exist?",
+  "type": "question",
+  "subtype": "faq",
+  "importance": 5,
+  "summary": "XanaNode exists to preserve relationships, provenance, disagreement, lineage, and reusable fragments as durable knowledge structure.",
+  "content": "A normal website can publish text. XanaNode publishes the relationships behind the text. It is meant for authored knowledge substrates where sources, claims, trails, versions, transclusions, conflicts, and projection layers remain inspectable instead of disappearing into a flat page.",
+  "relationships": []
+}

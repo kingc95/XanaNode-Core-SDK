@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-relationship-dependency",
+  "title": "Relationship subtype: dependency",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "dependency is an allowed subtype of the relationship node type.",
+  "version": "0.3.0",
+  "registry_type": "dependency",
+  "registry_namespace": "xananode",
+  "parent_node_type": "relationship",
+  "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-publication-reissue",
+  "title": "Publication subtype: reissue",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "reissue is an allowed subtype of the publication node type.",
+  "version": "0.3.0",
+  "registry_type": "reissue",
+  "registry_namespace": "xananode",
+  "parent_node_type": "publication",
+  "relationships": []
+}

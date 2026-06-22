@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-important_for",
+  "title": "Important for",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is important for understanding, navigating, preserving, or acting on the target.",
+  "version": "0.5.0",
+  "registry_type": "important_for",
+  "registry_namespace": "xananode",
+  "category": "attention",
+  "inverse": "has_important_context",
+  "color": "#fbbf24",
+  "inverse_color": "#fde68a",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

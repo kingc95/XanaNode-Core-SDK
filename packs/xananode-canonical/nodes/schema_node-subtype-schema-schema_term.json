@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-schema-schema_term",
+  "title": "Schema subtype: schema term",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "schema_term is an allowed subtype of the schema node type.",
+  "version": "0.3.0",
+  "registry_type": "schema_term",
+  "registry_namespace": "xananode",
+  "parent_node_type": "schema",
+  "relationships": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-trademarked_by",
+  "title": "trademarked by",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source name, logo, brand asset, project identity, or mark is governed as a trademark by the target person, organization, project, or policy.",
+  "version": "0.5.0",
+  "registry_type": "trademarked_by",
+  "registry_namespace": "xananode",
+  "category": "governance",
+  "inverse": "trademark_holder_for",
+  "color": "#eab308",
+  "inverse_color": "#fde047",
+  "line_style": "double",
+  "inverse_line_style": "dashed",
+  "relationships": [],
+  "default_weight": 4,
+  "default_visibility": "secondary"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "example.minimal:communication/minimal-substrate-discussion",
+  "title": "Minimal Substrate Discussion",
+  "type": "communication",
+  "subtype": "discussion",
+  "protocol_id": "example.minimal:communication/minimal-substrate-discussion",
+  "content_id": "sha256:example-communication-minimal-substrate-discussion",
+  "version_id": "git:HEAD:examples/minimal-substrate/nodes/communication-minimal-substrate-discussion.json",
+  "status": "active",
+  "importance": 3,
+  "summary": "A small example communication showing that questions and responses can be modeled as knowledge flow.",
+  "communication_model": "many_to_many",
+  "communication_pattern": "query_response",
+  "relationships": [
+    {
+      "id": "example.minimal:rel/question-asked-in-communication",
+      "type": "asked_in",
+      "source": "example.minimal:question/why-relationships-matter",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/response-answered-in-communication",
+      "type": "answered_in",
+      "source": "example.minimal:response/relationships-preserve-context",
+      "direction": "incoming"
+    }
+  ]
+}

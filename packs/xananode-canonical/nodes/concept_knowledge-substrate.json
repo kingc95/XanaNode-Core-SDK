@@ -1,0 +1,9 @@
+{
+  "id": "xananode.canonical:concept/knowledge-substrate",
+  "title": "Knowledge Substrate",
+  "type": "concept",
+  "subtype": "frame",
+  "importance": 5,
+  "summary": "The graph-shaped structure that lets information remain understandable across time by making claims, sources, media, fragments, and relationships explicit.",
+  "relationships": []
+}

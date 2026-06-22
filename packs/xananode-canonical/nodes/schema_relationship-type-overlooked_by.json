@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-overlooked_by",
+  "title": "Overlooked by",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is overlooked by the target person, community, source, or substrate.",
+  "version": "0.5.0",
+  "registry_type": "overlooked_by",
+  "registry_namespace": "xananode",
+  "category": "attention",
+  "inverse": "overlooks",
+  "color": "#fbbf24",
+  "inverse_color": "#fde68a",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

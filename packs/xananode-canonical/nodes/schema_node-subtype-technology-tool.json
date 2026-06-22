@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-technology-tool",
+  "title": "Technology subtype: tool",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "tool is an allowed subtype of the technology node type.",
+  "version": "0.3.0",
+  "registry_type": "tool",
+  "registry_namespace": "xananode",
+  "parent_node_type": "technology",
+  "relationships": []
+}

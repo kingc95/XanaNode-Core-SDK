@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-approved",
+  "title": "Approved",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source user, reviewer, or process approved the target.",
+  "version": "0.5.0",
+  "registry_type": "approved",
+  "registry_namespace": "xananode",
+  "category": "governance",
+  "inverse": "approved_by",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#eab308",
+  "inverse_color": "#fde047",
+  "line_style": "double",
+  "inverse_line_style": "double"
+}

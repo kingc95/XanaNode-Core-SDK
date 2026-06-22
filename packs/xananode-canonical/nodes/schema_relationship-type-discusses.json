@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-discusses",
+  "title": "Discusses",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source discusses, explores, or analyzes the target.",
+  "version": "0.5.0",
+  "registry_type": "discusses",
+  "registry_namespace": "xananode",
+  "category": "citation",
+  "inverse": "discussed_in",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#38bdf8",
+  "inverse_color": "#bae6fd",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted"
+}

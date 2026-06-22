@@ -15,12 +15,14 @@ This project is a XanaNode-compatible reference implementation. Canonical specif
 - Generates block fragments and authored fragment records.
 - Detects `xana://...` references and Hugo-style `{{< xana ref="..." >}}` shortcodes.
 - Builds review suggestions for possible links, transclusions, incoming relationships, merge candidates, and new imported nodes.
-- Loads mounted, imported, and merged substrate packs from protocol artifact directories.
-- Analyzes incoming substrate packs against an existing substrate before merge/import.
-- Builds portable canonical substrate packs from one or more authored substrate roots.
+- Loads mounted, imported, and merged substrates from protocol artifact directories or `.substrate` bundles.
+- Analyzes incoming substrates against an existing substrate before merge/import.
+- Builds portable canonical substrate bundles from one or more authored substrate roots.
 - Validates generated artifacts against bundled XanaNode schemas.
 - Writes canonical protocol artifacts independent of Hugo.
 - Provides a CLI for `init`, `validate`, `build`, `build-pack`, and `inspect`.
+
+In current XanaNode language, the substrate is the thing. A `.substrate` file is a packaged substrate for transport or release. The `build-pack`, `loadSubstratePack`, and related helper names remain in Core for compatibility, but downstream tools should present these as substrate import/export actions rather than as a separate conceptual layer.
 
 ## Why this exists
 
@@ -70,7 +72,16 @@ xananode validate ./my-substrate
 xananode build ./my-substrate --out ./my-substrate/public
 xananode build-pack ./my-substrate --out ./packs/my-substrate-pack
 xananode build-pack --out ./packs/xananode-canonical
+xananode build-pack --out ./packs/xananode-canonical --bundle-jsonl
 ```
+
+`build-pack` can now emit multiple interchangeable artifact shapes from the same substrate data:
+
+- split protocol artifacts: `substrate.json`, `nodes.json`, `relationships.json`, and `nodes/*.json`
+- `substrate-bundle.json`: one mass JSON file with the manifest, all nodes, authored text, summaries, relationships, warnings, and pack report
+- `substrate-bundle.jsonl`: the same bundle as JSON Lines for line-oriented or streaming ingestion
+
+Use `--no-split-artifacts` when you want the single-file formats only, `--no-bundle-json` when you want only split artifacts, and `--bundle-jsonl` when you want the JSONL companion too.
 
 ## Programmatic usage
 
@@ -142,21 +153,42 @@ validation.json
 nodes/*.json
 ```
 
-### Build a substrate pack
+### Build a portable substrate bundle
 
 ```bash
 xananode build-pack ./example --out ./packs/xananode-canonical
 ```
 
-This writes a portable pack directory containing `substrate.json`, `relationships.json`, `nodes/*.json`, and `pack-report.json`. Downstream renderers can mount that pack without owning its content.
+This writes a portable substrate directory containing `substrate.json`, `relationships.json`, `nodes/*.json`, and `pack-report.json`. Downstream renderers can mount that substrate without owning its content.
 
-When `build-pack` is run without source directories, Core exports the bundled XanaNode canonical pack:
+When `build-pack` is run without source directories, Core exports the XanaNode canonical pack shape from the Core generator:
 
 ```bash
 xananode build-pack --out ./packs/xananode-canonical
 ```
 
-That bundled pack is protocol JSON, not Hugo markdown. It ships nodes for the XanaNode protocol, Core SDK, Hugo projection layer, Workspace, public repositories, official domains, stack technologies, current node types, schema artifacts, primary media, and a starting trail through the stack.
+For XanaNode stack development, the source of truth for that generated substrate is the sibling public repository:
+
+```text
+../XanaNode-Canonical-Substrate
+https://github.com/kingc95/XanaNode-Canonical-Substrate
+```
+
+Use the workspace-level assembler from `XanaNode-Master` to refresh that repository:
+
+```bash
+npm run substrates:build
+```
+
+`packs/xananode-canonical` is only a package/offline bootstrap fixture for Core releases. It is not the canonical working copy, and downstream tools should not mount it when the sibling substrate repo or registry target is available.
+
+For package maintenance before a Core release, run:
+
+```bash
+npm run update:canonical-pack
+```
+
+The canonical substrate is protocol JSON, not Hugo markdown. It ships nodes for the XanaNode protocol, Core SDK, Hugo projection layer, Workspace, public repositories, official domains, stack technologies, current node types, schema artifacts, primary media, and a starting trail through the stack. Core also copies canonical raw protocol files into `assets/raw/protocol/` and records their `asset_path`, `source_snapshot`, and `sha256` content ids on the relevant nodes.
 
 ## Renderer integration status
 

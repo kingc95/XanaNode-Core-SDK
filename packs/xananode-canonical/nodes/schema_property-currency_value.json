@@ -1,0 +1,52 @@
+{
+  "id": "xananode.canonical:schema/property-currency_value",
+  "title": "Currency value",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A monetary amount with an ISO 4217 currency code.",
+  "registry_type": "currency_value",
+  "category": "money",
+  "aliases": [
+    "price",
+    "cost",
+    "market_value",
+    "amount_money"
+  ],
+  "applies_to": [
+    "claim",
+    "observation",
+    "source",
+    "project"
+  ],
+  "unit_system": "ISO-4217",
+  "value_schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "amount",
+      "currency"
+    ],
+    "properties": {
+      "amount": {
+        "type": "number"
+      },
+      "currency": {
+        "type": "string",
+        "pattern": "^[A-Z]{3}$"
+      },
+      "as_of": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  },
+  "examples": [
+    {
+      "amount": 199.99,
+      "currency": "USD",
+      "as_of": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "relationships": []
+}

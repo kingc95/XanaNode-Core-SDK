@@ -1,8 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
-import { buildSubstrate } from "./build.js";
+import { buildSubstrate, filterSubstrateForSharing } from "./build.js";
 import { writeJson } from "./io.js";
 import { loadSubstratePack } from "./packs.js";
 import { validateSubstrateArtifacts } from "./validate.js";
@@ -29,17 +30,325 @@ function cleanBundledRecord(record) {
   return clean;
 }
 
+function isGeneratedCanonicalFaqRecord(record) {
+  const id = String(record?.id || "");
+  const source = String(record?.source || "");
+  return source.startsWith("xananode.canonical:question/")
+    || id.startsWith("xananode.canonical:question/")
+    || id.startsWith("xananode.canonical:rel/question-");
+}
+
+function duplicatePreference(node) {
+  const id = String(node?.id || "");
+  const subtype = String(node?.subtype || "");
+  if (subtype === "canonical_schema_record") return 80;
+  if (id.includes(":source/repository-")) return 75;
+  if (subtype === "git_repository") return 70;
+  if (subtype === "validation_rule") return 45;
+  return 50;
+}
+
+function duplicateIdentityKey(node) {
+  const title = String(node?.title || "").trim().toLowerCase();
+  const type = String(node?.type || "").trim().toLowerCase();
+  if (!title || !type) return "";
+  if (type === "schema" && String(node?.source_url || "").includes("github.com/kingc95/XanaNode-Protocol/blob/main/")) {
+    return `${type}::${title}`;
+  }
+  if (type === "source" && String(node?.subtype || "") === "git_repository") {
+    return `${type}::${title}`;
+  }
+  return "";
+}
+
+function collapseDuplicateCanonicalNodes(nodes = [], relationships = []) {
+  const canonicalByKey = new Map();
+  const aliasById = new Map();
+  const duplicates = [];
+
+  for (const node of nodes) {
+    const key = duplicateIdentityKey(node);
+    if (!key) continue;
+    const existing = canonicalByKey.get(key);
+    if (!existing) {
+      canonicalByKey.set(key, node);
+      continue;
+    }
+    const preferred = duplicatePreference(node) > duplicatePreference(existing) ? node : existing;
+    const duplicate = preferred === node ? existing : node;
+    canonicalByKey.set(key, preferred);
+    aliasById.set(duplicate.id, preferred.id);
+    duplicates.push({
+      dropped: duplicate.id,
+      kept: preferred.id,
+      title: preferred.title,
+      type: preferred.type
+    });
+  }
+
+  if (!duplicates.length) return { nodes, relationships, duplicates };
+
+  const droppedIds = new Set(duplicates.map((item) => item.dropped));
+  const rewrittenRelationships = relationships
+    .filter((relationship) => !droppedIds.has(relationship.id))
+    .map((relationship) => ({
+      ...relationship,
+      source: aliasById.get(relationship.source) || relationship.source,
+      target: aliasById.get(relationship.target) || relationship.target
+    }))
+    .filter((relationship) => relationship.source !== relationship.target);
+  const relationshipMap = new Map();
+  for (const relationship of rewrittenRelationships) {
+    const key = [relationship.source, relationship.type, relationship.target].join("::");
+    if (!relationshipMap.has(key)) relationshipMap.set(key, relationship);
+  }
+
+  return {
+    nodes: nodes.filter((node) => !droppedIds.has(node.id)),
+    relationships: [...relationshipMap.values()],
+    duplicates
+  };
+}
+
+function protocolRawRelativePath(node) {
+  const candidates = [
+    node?.schema_path,
+    node?.artifact_path,
+    node?.example_path,
+    node?.source_url
+  ].filter(Boolean);
+  for (const value of candidates) {
+    const raw = String(value || "");
+    if (raw.includes("github.com/kingc95/XanaNode-Protocol/blob/main/")) {
+      return raw.split("github.com/kingc95/XanaNode-Protocol/blob/main/").pop();
+    }
+    if (raw.includes("github.com/kingc95/XanaNode/blob/main/")) {
+      return raw.split("github.com/kingc95/XanaNode/blob/main/").pop();
+    }
+    if (!/^https?:\/\//.test(raw)) {
+      return raw.replace(/\\/g, "/").replace(/^\.\.\//, "");
+    }
+  }
+  return "";
+}
+
+function attachProtocolRawSnapshots(nodes = [], outDir, generatedAt = new Date().toISOString()) {
+  const copied = [];
+  const updatedNodes = nodes.map((node) => {
+    const relativePath = protocolRawRelativePath(node);
+    if (!relativePath || relativePath.endsWith("/")) return node;
+    const sourcePath = path.resolve(protocolRoot, relativePath);
+    if (!sourcePath.startsWith(protocolRoot) || !fs.existsSync(sourcePath) || !fs.statSync(sourcePath).isFile()) return node;
+
+    const assetPath = `assets/raw/protocol/${safeRelativeAssetPath(relativePath)}`;
+    const targetPath = path.join(outDir, assetPath);
+    fs.mkdirSync(path.dirname(targetPath), { recursive: true });
+    fs.copyFileSync(sourcePath, targetPath);
+    const contentId = sha256File(sourcePath);
+    copied.push({ node: node.id, source: relativePath, asset_path: assetPath, content_id: contentId });
+    return {
+      ...node,
+      asset_path: node.asset_path || assetPath,
+      asset_role: node.asset_role || "canonical_raw_source",
+      content_id: node.content_id || contentId,
+      source_snapshot: {
+        ...(node.source_snapshot || {}),
+        captured_at: generatedAt,
+        source_url: node.source_url || protocolSourceUrl(relativePath),
+        method: "archive",
+        content_id: contentId,
+        rights_status: node.rights_status || "canonical-public",
+        tool: "@xananode/core"
+      }
+    };
+  });
+  return { nodes: updatedNodes, copied };
+}
+
+function listProtocolRawFiles(root = protocolRoot) {
+  const includeRoots = new Set(["contexts", "examples", "governance", "links", "media", "proposals", "registry", "schemas", "specs", "tools"]);
+  const includeRootFiles = new Set(["LICENSE.md", "NOTICE", "README.md", "TRADEMARK.md"]);
+  const includeExtensions = new Set([".json", ".jsonld", ".md", ".txt", ".svg", ".png", ".ico", ".webmanifest"]);
+  const files = [];
+
+  function visit(dir) {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (entry.name.startsWith(".") || entry.name === "node_modules") continue;
+      const fullPath = path.join(dir, entry.name);
+      const relativePath = path.relative(root, fullPath).replace(/\\/g, "/");
+      const top = relativePath.split("/")[0];
+      if (entry.isDirectory()) {
+        if (includeRoots.has(top)) visit(fullPath);
+        continue;
+      }
+      if (!entry.isFile()) continue;
+      const ext = path.extname(entry.name);
+      if (!includeRootFiles.has(relativePath) && !includeRoots.has(top)) continue;
+      if (!includeExtensions.has(ext) && !includeRootFiles.has(relativePath)) continue;
+      files.push(relativePath);
+    }
+  }
+
+  visit(root);
+  return files.sort((a, b) => a.localeCompare(b));
+}
+
+function copyProtocolRawRepositorySnapshot(outDir) {
+  const copied = [];
+  for (const relativePath of listProtocolRawFiles()) {
+    const sourcePath = path.resolve(protocolRoot, relativePath);
+    if (!sourcePath.startsWith(protocolRoot) || !fs.existsSync(sourcePath) || !fs.statSync(sourcePath).isFile()) continue;
+    const assetPath = `assets/raw/protocol/${safeRelativeAssetPath(relativePath)}`;
+    const targetPath = path.join(outDir, assetPath);
+    fs.mkdirSync(path.dirname(targetPath), { recursive: true });
+    fs.copyFileSync(sourcePath, targetPath);
+    copied.push({
+      source: relativePath,
+      asset_path: assetPath,
+      content_id: sha256File(sourcePath)
+    });
+  }
+  return copied;
+}
+
+function copyProtocolProjectionAssets(outDir) {
+  const source = path.join(protocolRoot, "media", "projection");
+  if (!fs.existsSync(source)) return [];
+  const target = path.join(outDir, "assets", "projection");
+  fs.mkdirSync(path.dirname(target), { recursive: true });
+  fs.cpSync(source, target, { recursive: true });
+  const copied = [];
+  const stack = [source];
+  while (stack.length) {
+    const current = stack.pop();
+    for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+      const full = path.join(current, entry.name);
+      if (entry.isDirectory()) {
+        stack.push(full);
+        continue;
+      }
+      if (!entry.isFile()) continue;
+      const relative = path.relative(source, full).replaceAll("\\", "/");
+      copied.push({
+        source: `media/projection/${relative}`,
+        asset_path: `assets/projection/${relative}`,
+        content_id: sha256File(full)
+      });
+    }
+  }
+  return copied;
+}
+
+function collectSourceAssetFiles(rootDir) {
+  const assetRoot = path.join(rootDir, "assets");
+  if (!fs.existsSync(assetRoot)) return [];
+  const files = [];
+  const stack = [assetRoot];
+  while (stack.length) {
+    const current = stack.pop();
+    for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+      const fullPath = path.join(current, entry.name);
+      if (entry.isDirectory()) {
+        stack.push(fullPath);
+        continue;
+      }
+      if (!entry.isFile()) continue;
+      files.push(path.relative(rootDir, fullPath).replace(/\\/g, "/"));
+    }
+  }
+  return files;
+}
+
+function localAssetPathCandidates(node) {
+  const candidates = [
+    node?.asset_path,
+    node?.file,
+    node?.source_snapshot?.asset_path,
+    node?.source_snapshot?.file
+  ].filter(Boolean);
+  return candidates
+    .map((value) => String(value || "").replace(/\\/g, "/"))
+    .filter((value) => value && !/^[a-z][a-z0-9+.-]*:/i.test(value) && !value.startsWith("//"));
+}
+
+function copySourcePackAssets(sourceRoots = [], outDir, nodes = []) {
+  const copiedByAssetPath = new Map();
+  const duplicates = [];
+  const conflicts = [];
+  const roots = asArray(sourceRoots).map((root) => path.resolve(root));
+  const assetPaths = new Set();
+
+  for (const root of roots) {
+    for (const relativePath of collectSourceAssetFiles(root)) assetPaths.add(relativePath);
+  }
+  for (const node of nodes) {
+    for (const assetPath of localAssetPathCandidates(node)) assetPaths.add(assetPath);
+  }
+
+  for (const assetPath of [...assetPaths].sort((a, b) => a.localeCompare(b))) {
+    const safePath = safeRelativeAssetPath(assetPath);
+    if (!safePath) continue;
+    const source = roots
+      .map((root) => path.resolve(root, assetPath))
+      .find((candidate) => roots.some((root) => candidate.startsWith(`${root}${path.sep}`) || candidate === root) && fs.existsSync(candidate) && fs.statSync(candidate).isFile());
+    if (!source) continue;
+    const contentId = sha256File(source);
+    const targetAssetPath = safePath.startsWith("assets/") ? safePath : `assets/imported/${safePath}`;
+    const existing = copiedByAssetPath.get(targetAssetPath);
+    if (existing) {
+      if (existing.content_id === contentId) {
+        duplicates.push({ asset_path: targetAssetPath, source: path.relative(process.cwd(), source).replace(/\\/g, "/"), duplicate_of: existing.source, content_id: contentId });
+        continue;
+      }
+      conflicts.push({ asset_path: targetAssetPath, source: path.relative(process.cwd(), source).replace(/\\/g, "/"), existing_source: existing.source, existing_content_id: existing.content_id, content_id: contentId });
+      continue;
+    }
+    const targetPath = path.join(outDir, targetAssetPath);
+    fs.mkdirSync(path.dirname(targetPath), { recursive: true });
+    fs.copyFileSync(source, targetPath);
+    const record = {
+      source: path.relative(process.cwd(), source).replace(/\\/g, "/"),
+      asset_path: targetAssetPath,
+      content_id: contentId
+    };
+    copiedByAssetPath.set(targetAssetPath, record);
+  }
+
+  return {
+    copied: [...copiedByAssetPath.values()],
+    duplicates,
+    conflicts
+  };
+}
+
 function mergeNodeRecord(existing, incoming) {
   if (!existing) return incoming;
   return {
     ...existing,
     ...incoming,
-    relationships: existing.relationships?.length ? existing.relationships : incoming.relationships || []
+    relationships: Object.prototype.hasOwnProperty.call(incoming, "relationships")
+      ? incoming.relationships || []
+      : existing.relationships || []
   };
 }
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
+}
+
+function sha256File(filePath) {
+  return `sha256:${crypto.createHash("sha256").update(fs.readFileSync(filePath)).digest("hex")}`;
+}
+
+function safeRelativeAssetPath(relativePath) {
+  return String(relativePath || "")
+    .replace(/\\/g, "/")
+    .replace(/^\.\.\//, "")
+    .replace(/^\/+/, "")
+    .split("/")
+    .filter(Boolean)
+    .map((part) => part.replace(/[^A-Za-z0-9._-]+/g, "-"))
+    .join("/");
 }
 
 function packageVersion() {
@@ -78,7 +387,8 @@ function coreBuildMetadata(options = {}) {
         relationship: "uses",
         ...(gitValue(protocolRoot, ["rev-parse", "HEAD"]) ? { version: gitValue(protocolRoot, ["rev-parse", "--short", "HEAD"]) } : {})
       }
-    ]
+    ],
+    ...(options.buildMetadata || {})
   };
 }
 
@@ -105,12 +415,68 @@ function subtypeNodeId(nodeType, subtype) {
   return registryNodeId("node-subtype", `${nodeType}-${subtype}`);
 }
 
+function projectionMediaNodeId(kind, value) {
+  return `xananode.canonical:media/${kind}-${registrySlug(value)}-projection-icon`;
+}
+
 function registryRelationshipId(kind, type) {
   return `xananode.canonical:rel/registry-contains-${kind}-${registrySlug(type)}`;
 }
 
 function protocolSourceUrl(relativePath) {
   return `https://github.com/kingc95/XanaNode-Protocol/blob/main/${String(relativePath || "").replace(/\\/g, "/").replace(/^\.\.\//, "")}`;
+}
+
+function protocolRawFileKind(relativePath) {
+  const ext = path.extname(relativePath).toLowerCase();
+  if ([".svg", ".png", ".ico"].includes(ext)) {
+    return {
+      type: "media",
+      subtype: "protocol_media_asset",
+      media_type: "image",
+      mime_type: ext === ".svg" ? "image/svg+xml" : ext === ".ico" ? "image/x-icon" : "image/png"
+    };
+  }
+  if ([".json", ".jsonld", ".webmanifest"].includes(ext)) {
+    return {
+      type: "schema",
+      subtype: "protocol_json_artifact",
+      media_type: "document",
+      mime_type: ext === ".jsonld" ? "application/ld+json" : "application/json"
+    };
+  }
+  return {
+    type: "source",
+    subtype: "protocol_document",
+    media_type: "document",
+    mime_type: "text/markdown"
+  };
+}
+
+function protocolRawFileTitle(relativePath) {
+  const clean = String(relativePath || "").replace(/\\/g, "/");
+  if (clean === "README.md") return "XanaNode Protocol README";
+  if (clean === "LICENSE.md") return "XanaNode Protocol License";
+  if (clean === "TRADEMARK.md") return "XanaNode Trademark Policy";
+  if (clean === "NOTICE") return "XanaNode Protocol Notice";
+  const withoutExt = clean.replace(/\.[^.]+$/, "");
+  return withoutExt
+    .split("/")
+    .filter(Boolean)
+    .map((part) => part.replace(/[-_]+/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase()))
+    .join(" / ");
+}
+
+function readProtocolRawText(relativePath) {
+  const ext = path.extname(relativePath).toLowerCase();
+  if (![".json", ".jsonld", ".md", ".txt", ".webmanifest", ""].includes(ext)) return "";
+  const sourcePath = path.resolve(protocolRoot, relativePath);
+  if (!sourcePath.startsWith(protocolRoot) || !fs.existsSync(sourcePath) || !fs.statSync(sourcePath).isFile()) return "";
+  try {
+    return fs.readFileSync(sourcePath, "utf8");
+  } catch {
+    return "";
+  }
 }
 
 function githubRepoUrl(repository) {
@@ -172,6 +538,31 @@ function schemaRegistryRelationship(source, target, type, summary, index = "") {
     weight: type === "defines" || type === "contains" ? 5 : 4,
     visibility: type === "contains" || type === "defines" ? "primary" : "secondary",
     asserted_at: assertedAt
+  };
+}
+
+function projectionAssetSourcePath(assetPath = "") {
+  const relative = String(assetPath || "").replace(/^assets\/projection\//, "media/projection/");
+  const sourcePath = path.join(protocolRoot, relative);
+  return fs.existsSync(sourcePath) ? sourcePath : "";
+}
+
+function projectionMediaNode(kind, value, title, assetPath, assetRole, summary) {
+  const sourcePath = projectionAssetSourcePath(assetPath);
+  return {
+    id: projectionMediaNodeId(kind, value),
+    title,
+    type: "media",
+    subtype: "projection_icon",
+    media_type: "image",
+    mime_type: "image/svg+xml",
+    asset_path: assetPath,
+    asset_role: assetRole,
+    source_url: sourcePath ? protocolSourceUrl(path.relative(protocolRoot, sourcePath).replaceAll("\\", "/")) : "",
+    rights_status: "open-source",
+    importance: 3,
+    summary,
+    relationships: []
   };
 }
 
@@ -240,6 +631,29 @@ function buildRegistryTypeNodes() {
         color: item.color,
         relationships: []
       });
+      if (item.projection?.asset_path && projectionAssetSourcePath(item.projection.asset_path)) {
+        const mediaNode = projectionMediaNode(
+          "node-type",
+          type,
+          `${item.label || type} Projection Icon`,
+          item.projection.asset_path,
+          "node_type_projection_icon",
+          `The canonical projection icon for the ${type} node type.`
+        );
+        nodes.push(mediaNode);
+        relationships.push(schemaRegistryRelationship(
+          nodeId,
+          mediaNode.id,
+          "has_primary_media",
+          `The ${type} node type uses this projection icon as its primary type media.`
+        ));
+        relationships.push(schemaRegistryRelationship(
+          mediaNode.id,
+          nodeId,
+          "represents",
+          `This media asset represents the ${type} node type in graph projections.`
+        ));
+      }
       relationships.push({
         id: registryRelationshipId("node-type", type),
         source: "xananode.canonical:schema/node-type-registry",
@@ -308,6 +722,30 @@ function buildRegistryTypeNodes() {
           inverse_line_style: item.inverse_line_style || "",
           relationships: []
         });
+        const categoryProjectionPath = item.projection?.category_asset_path || `assets/projection/relationship-categories/${item.category}.svg`;
+        if (projectionAssetSourcePath(categoryProjectionPath)) {
+          const mediaNode = projectionMediaNode(
+            "relationship-category",
+            item.category,
+            `${String(item.category).replaceAll("_", " ")} Relationship Category Projection Icon`,
+            categoryProjectionPath,
+            "relationship_category_projection_icon",
+            `The canonical projection icon for the ${item.category} relationship category.`
+          );
+          nodes.push(mediaNode);
+          relationships.push(schemaRegistryRelationship(
+            categoryNodeId,
+            mediaNode.id,
+            "has_primary_media",
+            `The ${item.category} relationship category uses this projection icon.`
+          ));
+          relationships.push(schemaRegistryRelationship(
+            mediaNode.id,
+            categoryNodeId,
+            "represents",
+            `This media asset represents the ${item.category} relationship category in projections.`
+          ));
+        }
         relationships.push(schemaRegistryRelationship(
           "xananode.canonical:schema/relationship-type-registry",
           categoryNodeId,
@@ -339,6 +777,29 @@ function buildRegistryTypeNodes() {
         default_visibility: item.default_visibility,
         relationships: []
       });
+      if (item.projection?.asset_path && projectionAssetSourcePath(item.projection.asset_path)) {
+        const mediaNode = projectionMediaNode(
+          "relationship-type",
+          type,
+          `${item.label || type} Relationship Projection Icon`,
+          item.projection.asset_path,
+          "relationship_type_projection_icon",
+          `The canonical projection icon for the ${type} relationship type.`
+        );
+        nodes.push(mediaNode);
+        relationships.push(schemaRegistryRelationship(
+          nodeId,
+          mediaNode.id,
+          "has_primary_media",
+          `The ${type} relationship type uses this projection icon.`
+        ));
+        relationships.push(schemaRegistryRelationship(
+          mediaNode.id,
+          nodeId,
+          "represents",
+          `This media asset represents the ${type} relationship type in projection legends and catalogs.`
+        ));
+      }
       relationships.push({
         id: registryRelationshipId("relationship-type", type),
         source: "xananode.canonical:schema/relationship-type-registry",
@@ -672,12 +1133,191 @@ function buildSoftwareStackNodes(options = {}) {
   return { nodes, relationships };
 }
 
+function canonicalFaqNode(id, title, summary, content, extra = {}) {
+  return {
+    id: `xananode.canonical:question/${id}`,
+    title,
+    type: "question",
+    subtype: "faq",
+    importance: 5,
+    summary,
+    content,
+    relationships: [],
+    ...extra
+  };
+}
+
+function buildCanonicalFaqNodes() {
+  const entries = [
+    {
+      node: canonicalFaqNode(
+      "is-xananode-a-real-working-stack",
+      "Is XanaNode a real working stack?",
+      "Yes. XanaNode has a protocol, Core SDK, Hugo projection, Workspace layer, and Studio authoring application that work together.",
+      "XanaNode is not only a design idea. The current stack includes protocol schemas and governance rules, a Core SDK for validation and pack building, Hugo for static public projection, Workspace for local substrate handling, and Studio for desktop authoring. The pieces are versioned so a reader can trace what each part does and why it exists."
+      ),
+      links: [
+        { type: "explains", target: "xananode.canonical:concept/xananode", summary: "This FAQ explains XanaNode as a working stack." },
+        { type: "requires", target: "xananode.canonical:project/xananode-protocol", summary: "The protocol defines the shared rules." },
+        { type: "requires", target: "xananode.canonical:project/xananode-core-sdk", summary: "Core validates and builds protocol artifacts." },
+        { type: "uses", target: "xananode.canonical:project/xananode-hugo-theme", summary: "Hugo renders a public read-only projection." },
+        { type: "uses", target: "xananode.canonical:project/xananode-studio", summary: "Studio provides local-first authoring." }
+      ]
+    },
+    {
+      node: canonicalFaqNode(
+      "how-do-i-use-xananode-myself",
+      "How do I use XanaNode myself?",
+      "Start with a substrate, add nodes and typed relationships, validate it with Core, and project it with a renderer such as Hugo or Studio.",
+      "A user can begin with a small question, claim, source, or trail. Core can initialize a substrate, validate nodes and relationships, generate review suggestions, and build packs. Hugo can mount or import those packs for a public website. Studio can open a pack as a local working copy so authors can edit without pretending they own someone else's substrate."
+      ),
+      links: [
+        { type: "explains", target: "xananode.canonical:concept/xananode", summary: "The FAQ explains how to begin using XanaNode." },
+        { type: "requires", target: "xananode.canonical:project/xananode-core-sdk", summary: "Core provides validation and pack creation." },
+        { type: "uses", target: "xananode.canonical:project/xananode-hugo-theme", summary: "Hugo is one projection option." },
+        { type: "uses", target: "xananode.canonical:project/xananode-studio", summary: "Studio is the authoring option." }
+      ]
+    },
+    {
+      node: canonicalFaqNode(
+      "who-made-xananode",
+      "Who made XanaNode?",
+      "XanaNode is authored by Christian Siefen. Built By Bots remains part of the project's historical lineage, but XanaNode.com is the long-term public home of the work.",
+      "The canonical project substrate identifies Christian Siefen as the human author of XanaNode. It also preserves historical lineage records, including the temporary Built By Bots bridge period, the current XanaNode.com domain, the public repositories, branding, and support links. That provenance matters because people should be able to trace who authored a substrate, how the public identity evolved, and where project work now lives."
+      ),
+      links: [
+        { type: "explains", target: "xananode.canonical:concept/xananode", summary: "The FAQ question is about XanaNode authorship." },
+        { type: "documents", target: "xananode.canonical:person/christian-siefen", summary: "Christian Siefen is the human author of the project substrate." },
+        { type: "documents", target: "xananode.canonical:organization/built-by-bots", summary: "Built By Bots remains in the canonical substrate as historical lineage context, not as the current public identity of XanaNode." }
+      ]
+    },
+    {
+      node: canonicalFaqNode(
+      "why-does-xananode-exist",
+      "Why does XanaNode exist?",
+      "XanaNode exists to preserve relationships, provenance, disagreement, lineage, and reusable fragments as durable knowledge structure.",
+      "A normal website can publish text. XanaNode publishes the relationships behind the text. It is meant for authored knowledge substrates where sources, claims, trails, versions, transclusions, conflicts, and projection layers remain inspectable instead of disappearing into a flat page."
+      ),
+      links: [
+        { type: "explains", target: "xananode.canonical:concept/xananode", summary: "The FAQ question explains the purpose of XanaNode." },
+        { type: "explains", target: "xananode.canonical:essay/what-is-xananode", summary: "The essay gives a longer explanation of the project." },
+        { type: "supports", target: "xananode.canonical:concept/substrate-projection-layer", summary: "Projection layers are one reason the substrate model exists." }
+      ]
+    },
+    {
+      node: canonicalFaqNode(
+      "how-do-sharing-rules-work",
+      "How do sharing rules work?",
+      "Nodes are shareable by default, but a substrate can exclude individual nodes, relationships, trails, or selected groups from shared exports.",
+      "XanaNode assumes portability unless an author says otherwise. A private workspace can hold a large substrate while its pack export omits sensitive records. Sharing rules can live on the substrate manifest or on individual nodes, and official tools must respect those rules before publishing, exporting, mounting, or federating records."
+      ),
+      links: [
+        { type: "documents", target: "xananode.canonical:schema/canonical-schema-substrate-node", summary: "Node records can carry node-level sharing rules." },
+        { type: "documents", target: "xananode.canonical:schema/canonical-schema-substrate-manifest", summary: "The substrate manifest can carry default and selector-based sharing policy." },
+        { type: "requires", target: "xananode.canonical:project/xananode-core-sdk", summary: "Core enforces sharing policy during pack building and exports." }
+      ]
+    }
+  ];
+
+  const relationships = [];
+  for (const entry of entries) {
+    for (const [index, relationship] of (entry.links || []).entries()) {
+      relationships.push(schemaRegistryRelationship(
+        entry.node.id,
+        relationship.target,
+        relationship.type,
+        relationship.summary,
+        `faq-${index}`
+      ));
+    }
+  }
+  return { nodes: entries.map((entry) => entry.node), relationships };
+}
+
+function buildProtocolRawFileNodes() {
+  const nodes = [];
+  const relationships = [];
+  const groupIds = new Map();
+  const files = listProtocolRawFiles();
+
+  for (const relativePath of files) {
+    const top = relativePath.includes("/") ? relativePath.split("/")[0] : "root";
+    const groupId = top === "root"
+      ? "xananode.canonical:schema/protocol-artifact-root"
+      : `xananode.canonical:schema/protocol-artifact-${registrySlug(top)}`;
+    if (!groupIds.has(top)) {
+      groupIds.set(top, groupId);
+      nodes.push({
+        id: groupId,
+        title: top === "root" ? "Protocol Root Files" : `Protocol ${protocolRawFileTitle(top)}`,
+        type: "schema",
+        subtype: "protocol_artifact_group",
+        importance: 3,
+        summary: top === "root"
+          ? "Root-level XanaNode protocol source files preserved inside the canonical substrate."
+          : `Protocol files under ${top}/ preserved inside the canonical substrate.`,
+        artifact_path: top === "root" ? "" : `${top}/`,
+        source_url: top === "root" ? protocolSourceUrl("") : protocolSourceUrl(`${top}/`),
+        relationships: []
+      });
+      relationships.push(schemaRegistryRelationship(
+        "xananode.canonical:concept/protocol-artifacts",
+        groupId,
+        "contains",
+        `Protocol Artifacts contains the ${top === "root" ? "root file" : top} artifact group.`,
+        `raw-group-${registrySlug(top)}`
+      ));
+    }
+
+    const kind = protocolRawFileKind(relativePath);
+    const nodeId = `xananode.canonical:${kind.type}/protocol-artifact-${registrySlug(relativePath)}`;
+    const rawText = readProtocolRawText(relativePath);
+    const node = {
+      id: nodeId,
+      title: protocolRawFileTitle(relativePath),
+      type: kind.type,
+      subtype: kind.subtype,
+      importance: relativePath === "README.md" || relativePath.startsWith("schemas/") || relativePath.startsWith("specs/") ? 4 : 3,
+      summary: `${relativePath} is preserved as a raw protocol artifact in the XanaNode canonical substrate.`,
+      artifact_path: relativePath,
+      source_url: protocolSourceUrl(relativePath),
+      media_type: kind.media_type,
+      mime_type: kind.mime_type,
+      asset_role: "canonical_raw_source",
+      rights_status: relativePath.startsWith("schemas/") || relativePath.startsWith("tools/") || relativePath.endsWith(".json")
+        ? "Apache-2.0"
+        : "CC-BY-4.0",
+      relationships: []
+    };
+    if (rawText) node.content = rawText;
+    nodes.push(node);
+    relationships.push(schemaRegistryRelationship(
+      groupId,
+      nodeId,
+      "contains",
+      `${protocolRawFileTitle(top)} contains ${relativePath}.`,
+      `raw-file-${registrySlug(relativePath)}`
+    ));
+    relationships.push(schemaRegistryRelationship(
+      nodeId,
+      "xananode.canonical:concept/protocol-artifacts",
+      "documents",
+      `${relativePath} documents the XanaNode protocol artifact set.`,
+      `raw-file-docs-${registrySlug(relativePath)}`
+    ));
+  }
+
+  return { nodes, relationships };
+}
+
 function buildProtocolDigitalTwinNodes(options = {}) {
   const parts = [
     buildSoftwareStackNodes(options),
     buildRegistryTypeNodes(),
     buildPropertyRegistryNodes(),
-    buildProtocolMetadataRegistryNodes()
+    buildProtocolMetadataRegistryNodes(),
+    buildCanonicalFaqNodes(),
+    buildProtocolRawFileNodes()
   ];
   return {
     nodes: parts.flatMap((part) => part.nodes),
@@ -686,27 +1326,100 @@ function buildProtocolDigitalTwinNodes(options = {}) {
 }
 
 function writePackArtifacts(outDir, pack) {
-  fs.rmSync(outDir, { recursive: true, force: true });
+  const artifactOptions = {
+    splitArtifacts: pack.artifact_options?.splitArtifacts !== false,
+    bundleJson: pack.artifact_options?.bundleJson !== false,
+    bundleJsonl: pack.artifact_options?.bundleJsonl === true
+  };
+  cleanPackOutputDirectory(outDir);
   fs.mkdirSync(outDir, { recursive: true });
-  fs.mkdirSync(path.join(outDir, "nodes"), { recursive: true });
-  writeJson(path.join(outDir, "substrate.json"), pack.manifest);
-  writeJson(path.join(outDir, "nodes.json"), { nodes: pack.nodes });
-  writeJson(path.join(outDir, "relationships.json"), { relationships: pack.relationships });
+  if (artifactOptions.splitArtifacts) {
+    fs.mkdirSync(path.join(outDir, "nodes"), { recursive: true });
+  }
+  const rawSnapshots = attachProtocolRawSnapshots(
+    pack.nodes,
+    outDir,
+    pack.manifest.build_metadata?.generated_at || pack.manifest.pack?.built_at || new Date().toISOString()
+  );
+  const rawRepositoryFiles = copyProtocolRawRepositorySnapshot(outDir);
+  const projectionAssets = copyProtocolProjectionAssets(outDir);
+  const nodes = rawSnapshots.nodes;
+  const sourceAssets = copySourcePackAssets(pack.source_roots || [], outDir, nodes);
+  if (artifactOptions.splitArtifacts) {
+    writeJson(path.join(outDir, "substrate.json"), pack.manifest);
+    writeJson(path.join(outDir, "nodes.json"), { nodes });
+    writeJson(path.join(outDir, "relationships.json"), { relationships: pack.relationships });
 
-  for (const node of pack.nodes) {
-    writeJson(path.join(outDir, "nodes", safeNodeFileName(node)), node);
+    for (const node of nodes) {
+      writeJson(path.join(outDir, "nodes", safeNodeFileName(node)), node);
+    }
   }
 
-  writeJson(path.join(outDir, "pack-report.json"), {
+  const report = {
     id: pack.manifest.id,
     namespace: pack.manifest.namespace,
     sources: pack.manifest.pack?.source_manifests || [],
-    nodes: pack.node_count,
+    nodes: nodes.length,
     relationships: pack.relationship_count,
     warnings: pack.warnings,
+    duplicate_collapses: pack.duplicate_collapses || [],
+    raw_sources: rawSnapshots.copied,
+    raw_repository_files: rawRepositoryFiles,
+    projection_assets: projectionAssets,
+    source_assets: sourceAssets.copied,
+    duplicate_assets: sourceAssets.duplicates,
+    asset_conflicts: sourceAssets.conflicts,
     generated_at: pack.manifest.build_metadata?.generated_at || new Date().toISOString(),
     build_metadata: pack.manifest.build_metadata || {}
-  });
+  };
+  writeJson(path.join(outDir, "pack-report.json"), report);
+  const bundle = {
+    format: "xananode.substrate-bundle@0.1.0",
+    generated_at: report.generated_at,
+    manifest: pack.manifest,
+    counts: {
+      nodes: nodes.length,
+      relationships: pack.relationship_count,
+      warnings: pack.warnings.length,
+      duplicate_collapses: (pack.duplicate_collapses || []).length
+    },
+    nodes,
+    relationships: pack.relationships,
+    warnings: pack.warnings,
+    duplicate_collapses: pack.duplicate_collapses || [],
+    pack_report: report
+  };
+  if (artifactOptions.bundleJson) {
+    writeJson(path.join(outDir, "substrate-bundle.json"), bundle);
+  }
+  if (artifactOptions.bundleJsonl) {
+    const lines = [
+      JSON.stringify({
+        record_type: "bundle_manifest",
+        format: bundle.format,
+        generated_at: bundle.generated_at,
+        manifest: bundle.manifest,
+        counts: bundle.counts
+      }),
+      ...bundle.nodes.map((node) => JSON.stringify({ record_type: "node", node })),
+      ...bundle.relationships.map((relationship) => JSON.stringify({ record_type: "relationship", relationship })),
+      JSON.stringify({
+        record_type: "bundle_report",
+        warnings: bundle.warnings,
+        duplicate_collapses: bundle.duplicate_collapses,
+        pack_report: bundle.pack_report
+      })
+    ];
+    fs.writeFileSync(path.join(outDir, "substrate-bundle.jsonl"), `${lines.join("\n")}\n`);
+  }
+}
+
+function cleanPackOutputDirectory(outDir) {
+  if (!fs.existsSync(outDir)) return;
+  for (const entry of fs.readdirSync(outDir, { withFileTypes: true })) {
+    if (entry.name === ".git") continue;
+    fs.rmSync(path.join(outDir, entry.name), { recursive: true, force: true });
+  }
 }
 
 export function getBundledCanonicalPackRoot() {
@@ -720,14 +1433,18 @@ export function buildBundledCanonicalPack(options = {}) {
   const registryTypes = buildProtocolDigitalTwinNodes(options);
   const nodesById = new Map();
   const relationshipsById = new Map();
-  for (const node of [...loaded.nodes.map(cleanBundledRecord), ...registryTypes.nodes]) {
+  for (const node of [...loaded.nodes.map(cleanBundledRecord).filter((node) => !isGeneratedCanonicalFaqRecord(node)), ...registryTypes.nodes]) {
     nodesById.set(node.id, mergeNodeRecord(nodesById.get(node.id), node));
   }
-  for (const relationship of [...loaded.relationships.map(cleanBundledRecord), ...registryTypes.relationships]) {
+  for (const relationship of [...loaded.relationships.map(cleanBundledRecord).filter((relationship) => !isGeneratedCanonicalFaqRecord(relationship)), ...registryTypes.relationships]) {
     if (!relationshipsById.has(relationship.id)) relationshipsById.set(relationship.id, relationship);
   }
-  const nodes = [...nodesById.values()].sort((a, b) => String(a.id).localeCompare(String(b.id)));
-  const relationships = [...relationshipsById.values()].sort((a, b) => String(a.id).localeCompare(String(b.id)));
+  const collapsed = collapseDuplicateCanonicalNodes(
+    [...nodesById.values()],
+    [...relationshipsById.values()]
+  );
+  const nodes = collapsed.nodes.sort((a, b) => String(a.id).localeCompare(String(b.id)));
+  const relationships = collapsed.relationships.sort((a, b) => String(a.id).localeCompare(String(b.id)));
   const manifest = {
     ...loaded.manifest,
     ...(options.id ? { id: options.id } : {}),
@@ -753,6 +1470,12 @@ export function buildBundledCanonicalPack(options = {}) {
     nodes,
     relationships,
     warnings,
+    artifact_options: {
+      splitArtifacts: options.splitArtifacts !== false,
+      bundleJson: options.bundleJson !== false,
+      bundleJsonl: options.bundleJsonl === true
+    },
+    duplicate_collapses: collapsed.duplicates,
     validation,
     source_count: 1,
     node_count: nodes.length,
@@ -808,11 +1531,12 @@ export async function buildCanonicalPack(sourceRoots = [], options = {}) {
       warnings.push({ kind: "missing_source_root", root });
       continue;
     }
-    substrates.push(await buildSubstrate(root, {
+    const substrate = await buildSubstrate(root, {
       includeDrafts: options.includeDrafts === true,
       suggestions: false,
       namespace: options.sourceNamespace
-    }));
+    });
+    substrates.push(filterSubstrateForSharing(substrate, options));
   }
 
   const nodesById = new Map();
@@ -836,6 +1560,12 @@ export async function buildCanonicalPack(sourceRoots = [], options = {}) {
     nodes,
     relationships,
     warnings,
+    artifact_options: {
+      splitArtifacts: options.splitArtifacts !== false,
+      bundleJson: options.bundleJson !== false,
+      bundleJsonl: options.bundleJsonl === true
+    },
+    source_roots: roots,
     source_count: substrates.length,
     node_count: nodes.length,
     relationship_count: relationships.length

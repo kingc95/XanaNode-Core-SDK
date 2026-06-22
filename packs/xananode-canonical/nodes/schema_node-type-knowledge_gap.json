@@ -1,0 +1,42 @@
+{
+  "id": "xananode.canonical:schema/node-type-knowledge_gap",
+  "title": "Knowledge Gap",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A known absence, uncertainty, missing source, missing citation, lost document, unknown author, or unresolved area in a substrate.",
+  "version": "0.3.0",
+  "registry_type": "knowledge_gap",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "missing_source",
+    "missing_citation",
+    "unknown_author",
+    "lost_document",
+    "historical_uncertainty",
+    "incomplete_context"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "status",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "uncertainty_level",
+    "review_status",
+    "research_priority",
+    "requires_source",
+    "requires_context",
+    "questions",
+    "sources"
+  ],
+  "color": {
+    "bg": "#64748b",
+    "fg": "#f8fafc",
+    "outline": "#cbd5e1"
+  },
+  "relationships": []
+}

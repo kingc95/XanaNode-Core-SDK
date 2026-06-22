@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-clarified_by",
+  "title": "Clarified By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The clarified_by inverse relationship term derived from clarifies.",
+  "version": "0.5.0",
+  "registry_type": "clarified_by",
+  "registry_namespace": "xananode",
+  "category": "explanation",
+  "inverse": "clarifies",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#bfdbfe",
+  "inverse_color": "#60a5fa",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

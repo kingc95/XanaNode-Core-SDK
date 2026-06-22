@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-organization-agency",
+  "title": "Organization subtype: agency",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "agency is an allowed subtype of the organization node type.",
+  "version": "0.3.0",
+  "registry_type": "agency",
+  "registry_namespace": "xananode",
+  "parent_node_type": "organization",
+  "relationships": []
+}

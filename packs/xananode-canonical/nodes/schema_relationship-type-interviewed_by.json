@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-interviewed_by",
+  "title": "Interviewed By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The interviewed_by inverse relationship term derived from interviewed.",
+  "version": "0.5.0",
+  "registry_type": "interviewed_by",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "interviewed",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fecdd3",
+  "inverse_color": "#fb7185",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted"
+}

@@ -4,6 +4,7 @@ export * from "./frontmatter.js";
 export * from "./markdown.js";
 export * from "./fragments.js";
 export * from "./graph.js";
+export * from "./cleanup.js";
 export * from "./projection.js";
 export * from "./io.js";
 export * from "./validate.js";

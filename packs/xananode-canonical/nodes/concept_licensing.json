@@ -1,0 +1,9 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:concept/licensing",
+  "title": "Licensing",
+  "type": "concept",
+  "subtype": "governance",
+  "importance": 5,
+  "summary": "The legal layer that describes how documents, schemas, code, media, and names may be copied, reused, attributed, modified, or governed."
+}

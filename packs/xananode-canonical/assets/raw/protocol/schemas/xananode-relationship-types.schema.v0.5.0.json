@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/xananode-relationship-types.schema.v0.5.0.json",
+  "title": "XanaNode Relationship Type Registry",
+  "description": "Canonical and extension relationship type registry for XanaNode-compatible knowledge substrates.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "relationship_types"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*$"
+    },
+    "media_conventions": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Portable projection asset path conventions for relationship type media.",
+      "properties": {
+        "relationship_type_asset_path_template": {
+          "type": "string",
+          "description": "Relative path template for relationship type projection media. Use {type} as the relationship type placeholder."
+        },
+        "relationship_category_asset_path_template": {
+          "type": "string",
+          "description": "Relative path template for relationship category projection media. Use {category} as the category placeholder."
+        }
+      }
+    },
+    "relationship_types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "namespace",
+          "id",
+          "type",
+          "label",
+          "category",
+          "meaning",
+          "color",
+          "inverse_color",
+          "line_style",
+          "inverse_line_style",
+          "default_weight",
+          "default_visibility"
+        ],
+        "properties": {
+          "namespace": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*$"
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*$"
+          },
+          "type": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*$"
+          },
+          "label": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "anyOf": [
+              {
+                "enum": [
+                  "causation",
+                  "citation",
+                  "claim_structure",
+                  "comparison",
+                  "composition",
+                  "creation",
+                  "definition",
+                  "evidence",
+                  "explanation",
+                  "generic",
+                  "governance",
+                  "evolution",
+                  "historical",
+                  "identity",
+                  "influence",
+                  "inquiry",
+                  "knowledge_workflow",
+                  "lineage",
+                  "location",
+                  "participation",
+                  "reasoning",
+                  "research_workflow",
+                  "representation",
+                  "revision",
+                  "schema_mapping",
+                  "social",
+                  "temporal",
+                  "uncertainty",
+                  "discovery",
+                  "cognition",
+                  "attention",
+                  "communication"
+                ]
+              },
+              {
+                "pattern": "^[a-z][a-z0-9_:-]*$"
+              }
+            ]
+          },
+          "meaning": {
+            "type": "string"
+          },
+          "inverse": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$",
+            "description": "Canonical projection color for this relationship type when rendered from source to target."
+          },
+          "inverse_color": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$",
+            "description": "Canonical projection color for the inverse reading of this relationship type."
+          },
+          "line_style": {
+            "type": "string",
+            "enum": [
+              "solid",
+              "dashed",
+              "dotted",
+              "double"
+            ],
+            "description": "Canonical projection line style for this relationship type."
+          },
+          "inverse_line_style": {
+            "type": "string",
+            "enum": [
+              "solid",
+              "dashed",
+              "dotted",
+              "double"
+            ],
+            "description": "Canonical projection line style for the inverse reading of this relationship type."
+          },
+          "core": {
+            "type": "boolean"
+          },
+          "extends": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*(:[a-z][a-z0-9_-]*)?$"
+          },
+          "default_weight": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "default_visibility": {
+            "type": "string",
+            "enum": [
+              "primary",
+              "secondary",
+              "background"
+            ]
+          },
+          "projection": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Canonical projection metadata for this relationship type.",
+            "properties": {
+              "icon": {
+                "type": "string",
+                "description": "Stable icon identifier for renderers that use an icon library or built-in glyph set."
+              },
+              "icon_label": {
+                "type": "string",
+                "description": "Short fallback label when no media asset or icon library glyph is available."
+              },
+              "asset_path": {
+                "type": "string",
+                "description": "Relative path to the canonical projection media asset for this relationship type."
+              },
+              "media_node": {
+                "type": "string",
+                "description": "Optional media node id that represents the canonical projection asset for this relationship type."
+              },
+              "category_asset_path": {
+                "type": "string",
+                "description": "Relative path to a category-level projection media asset used when the specific type asset is absent."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

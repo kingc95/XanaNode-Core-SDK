@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-medium_transition",
+  "title": "Medium transition",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source marks a shift from the target through a different medium, presentation mode, or publication form.",
+  "version": "0.5.0",
+  "registry_type": "medium_transition",
+  "registry_namespace": "xananode",
+  "category": "evolution",
+  "inverse": "medium_transitioned_from",
+  "color": "#14b8a6",
+  "inverse_color": "#99f6e4",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "xananode.canonical:schema/namespace-example.minimal",
+  "title": "Minimal Example Namespace",
+  "type": "schema",
+  "subtype": "namespace_record",
+  "importance": 3,
+  "summary": "Namespace used by the minimal example substrate.",
+  "registry_type": "example.minimal",
+  "schema_path": "",
+  "example_path": "../examples/minimal-substrate/",
+  "relationships": []
+}

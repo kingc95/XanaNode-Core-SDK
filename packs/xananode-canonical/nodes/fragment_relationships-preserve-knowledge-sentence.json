@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:fragment/relationships-preserve-knowledge-sentence",
+  "title": "Relationships Preserve Knowledge Sentence",
+  "type": "fragment",
+  "subtype": "sentence",
+  "importance": 4,
+  "summary": "Relationships preserve knowledge.",
+  "source_node": "xananode.canonical:claim/relationships-preserve-knowledge",
+  "source_content_id": "sha256:relationship-preservation-claim",
+  "source_version_id": "sha256:canonical-pack-v0-1-0",
+  "fragment_id": "0001",
+  "tumbler": "xananode.canonical:claim/relationships-preserve-knowledge@sha256:canonical-pack-v0-1-0#fragment/0001@sha256:relationship-preservation-sentence",
+  "selector": {
+    "type": "semantic-anchor",
+    "value": "tagline"
+  },
+  "content_id": "sha256:relationship-preservation-sentence",
+  "version_id": "sha256:canonical-pack-v0-1-0-fragment-0001",
+  "rights_status": "open-source",
+  "relationships": []
+}

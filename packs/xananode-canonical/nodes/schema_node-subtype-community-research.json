@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-community-research",
+  "title": "Community subtype: research",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "research is an allowed subtype of the community node type.",
+  "version": "0.3.0",
+  "registry_type": "research",
+  "registry_namespace": "xananode",
+  "parent_node_type": "community",
+  "relationships": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "xananode.canonical:trail/xananode-stack-trail",
+  "title": "XanaNode Stack Trail",
+  "type": "trail",
+  "subtype": "introductory",
+  "importance": 5,
+  "summary": "A curated route from the XanaNode concept through protocol, Core, projection layers, Hugo, workspace, sources, and support.",
+  "nodes": [
+    "xananode.canonical:concept/xananode",
+    "xananode.canonical:project/xananode-protocol",
+    "xananode.canonical:project/xananode-core-sdk",
+    "xananode.canonical:concept/substrate-projection-layer",
+    "xananode.canonical:project/xananode-hugo-theme",
+    "xananode.canonical:project/xananode-workspace",
+    "xananode.canonical:source/xananode-com-domain"
+  ],
+  "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-source-license",
+  "title": "Source subtype: license",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "license is an allowed subtype of the source node type.",
+  "version": "0.3.0",
+  "registry_type": "license",
+  "registry_namespace": "xananode",
+  "parent_node_type": "source",
+  "relationships": []
+}

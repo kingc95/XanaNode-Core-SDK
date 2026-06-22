@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-has_evidence",
+  "title": "Has Evidence Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The has_evidence inverse relationship term derived from evidence_for.",
+  "version": "0.5.0",
+  "registry_type": "has_evidence",
+  "registry_namespace": "xananode",
+  "category": "evidence",
+  "inverse": "evidence_for",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#6ee7b7",
+  "inverse_color": "#10b981",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "xananode.canonical:schema/node-type-schema",
+  "title": "Schema",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A rule, ontology, validation document, or governance definition used by XanaNode itself.",
+  "version": "0.3.0",
+  "registry_type": "schema",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "node_type_schema",
+    "relationship_type_schema",
+    "validation_rule",
+    "governance_rule",
+    "style_rule",
+    "node_subtype_schema",
+    "relationship_category_schema",
+    "property_registry_entry",
+    "canonical_schema_record",
+    "namespace_record",
+    "protocol_artifact",
+    "term",
+    "schema_term",
+    "schema_field",
+    "semantic_rule",
+    "projection_style_rule"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "version",
+    "status",
+    "source_url"
+  ],
+  "color": {
+    "bg": "#e2e8f0",
+    "fg": "#111827",
+    "outline": "#ffffff"
+  },
+  "relationships": []
+}

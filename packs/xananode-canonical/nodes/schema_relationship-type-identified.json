@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-identified",
+  "title": "Identified",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source identified, named, or recognized the target.",
+  "version": "0.5.0",
+  "registry_type": "identified",
+  "registry_namespace": "xananode",
+  "category": "creation",
+  "inverse": "identified_by",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fb923c",
+  "inverse_color": "#fed7aa",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

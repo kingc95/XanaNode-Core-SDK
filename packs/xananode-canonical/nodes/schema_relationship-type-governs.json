@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-governs",
+  "title": "Governs Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The governs inverse relationship term derived from governed_by.",
+  "version": "0.5.0",
+  "registry_type": "governs",
+  "registry_namespace": "xananode",
+  "category": "governance",
+  "inverse": "governed_by",
+  "color": "#fde047",
+  "inverse_color": "#eab308",
+  "line_style": "solid",
+  "inverse_line_style": "double",
+  "derived_inverse": true,
+  "relationships": [],
+  "default_weight": 4,
+  "default_visibility": "secondary"
+}

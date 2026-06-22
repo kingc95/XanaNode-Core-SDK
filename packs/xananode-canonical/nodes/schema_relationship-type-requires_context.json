@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-requires_context",
+  "title": "Requires context",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source needs additional context to be interpreted responsibly.",
+  "version": "0.5.0",
+  "registry_type": "requires_context",
+  "registry_namespace": "xananode",
+  "category": "knowledge_workflow",
+  "inverse": "context_required_by",
+  "color": "#06b6d4",
+  "inverse_color": "#a5f3fc",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

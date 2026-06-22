@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-has_high_risk",
+  "title": "Has High Risk Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The has_high_risk inverse relationship term derived from high_risk_for.",
+  "version": "0.5.0",
+  "registry_type": "has_high_risk",
+  "registry_namespace": "xananode",
+  "category": "attention",
+  "inverse": "high_risk_for",
+  "color": "#fde68a",
+  "inverse_color": "#fbbf24",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

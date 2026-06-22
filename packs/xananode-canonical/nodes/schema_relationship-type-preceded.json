@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-preceded",
+  "title": "Preceded",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source came before the target.",
+  "version": "0.5.0",
+  "registry_type": "preceded",
+  "registry_namespace": "xananode",
+  "category": "temporal",
+  "inverse": "followed",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#a3e635",
+  "inverse_color": "#d9f99d",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

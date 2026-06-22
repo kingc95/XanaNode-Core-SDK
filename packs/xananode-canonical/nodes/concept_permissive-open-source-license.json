@@ -1,0 +1,9 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:concept/permissive-open-source-license",
+  "title": "Permissive Open Source License",
+  "type": "concept",
+  "subtype": "distinction",
+  "importance": 4,
+  "summary": "An open source license family that allows broad reuse, modification, distribution, and commercial adoption with limited obligations."
+}

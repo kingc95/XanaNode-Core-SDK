@@ -1,0 +1,41 @@
+{
+  "id": "example.merge:report/federation-example-001",
+  "status": "review-needed",
+  "generated_at": "2026-01-01T00:00:00Z",
+  "substrates": [
+    "example.researcher_a",
+    "example.researcher_b"
+  ],
+  "compatibility_level": 4,
+  "mappings": [
+    {
+      "id": "example.merge:mapping/knowledge-memory-substrate",
+      "source": "example.researcher_a:concept/knowledge-substrate",
+      "target": "example.researcher_b:concept/memory-substrate",
+      "type": "possible_match",
+      "confidence": 0.78,
+      "status": "review-needed",
+      "preserves_local_nodes": true,
+      "creates_relationships": [
+        "example.researcher_a:rel/knowledge-substrate-possible-match-memory-substrate",
+        "example.researcher_b:rel/memory-substrate-possible-match-knowledge-substrate"
+      ],
+      "rationale": "Both nodes describe substrate-like structures for preserving context and relationships, but one emphasizes knowledge objects while the other emphasizes memory over time."
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "example.merge:conflict/do-not-collapse-concepts",
+      "type": "identity_ambiguity",
+      "nodes": [
+        "example.researcher_a:concept/knowledge-substrate",
+        "example.researcher_b:concept/memory-substrate"
+      ],
+      "resolution": "preserve_both",
+      "summary": "The merge pass records a possible match but does not replace either local concept with a canonical node."
+    }
+  ],
+  "warnings": [
+    "The two concepts are close but should not be automatically collapsed into a single canonical node."
+  ]
+}

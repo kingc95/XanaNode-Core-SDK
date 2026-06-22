@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/namespace.schema.json",
+  "title": "Namespace Descriptor",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["prefix", "uri"],
+  "properties": {
+    "prefix": { "type": "string" },
+    "uri": { "type": "string", "format": "uri" },
+    "owner": { "type": "string" },
+    "description": { "type": "string" }
+  }
+}

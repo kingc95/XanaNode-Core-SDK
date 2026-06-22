@@ -1,0 +1,39 @@
+{
+  "id": "example.minimal:concept/knowledge-substrate",
+  "title": "Knowledge Substrate",
+  "type": "concept",
+  "importance": 5,
+  "summary": "A structure that determines how information relates, persists, and can be navigated.",
+  "relationships": [
+    {
+      "id": "example.minimal:rel/associative-trails-context-for-substrate",
+      "type": "related_to",
+      "source": "example.minimal:concept/associative-trails",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/claim-defines-concept",
+      "type": "defines",
+      "source": "example.minimal:claim/substrate-is-structure",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/concept-has-claim",
+      "type": "has_claim",
+      "target": "example.minimal:claim/substrate-is-structure",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/trail-continues-to-concept",
+      "type": "continues_to",
+      "source": "example.minimal:claim/substrate-is-structure",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/substrate-has-primary-media",
+      "type": "has_primary_media",
+      "target": "example.minimal:media/xananode-icon",
+      "direction": "outgoing"
+    }
+  ]
+}

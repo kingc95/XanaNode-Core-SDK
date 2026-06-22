@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-workspace-component-author-profiles",
+  "title": "XanaNode Workspace: author profiles",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Workspace consumes or depends on author profiles.",
+  "component_of": "xananode.canonical:project/xananode-workspace",
+  "relationships": []
+}

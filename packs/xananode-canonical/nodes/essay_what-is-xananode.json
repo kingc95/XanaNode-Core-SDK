@@ -1,0 +1,9 @@
+{
+  "id": "xananode.canonical:essay/what-is-xananode",
+  "title": "What Is XanaNode?",
+  "type": "essay",
+  "subtype": "explainer",
+  "importance": 5,
+  "summary": "An explanation of XanaNode as a layered protocol, not a single viewer, website, repository, or graph visualization.",
+  "relationships": []
+}

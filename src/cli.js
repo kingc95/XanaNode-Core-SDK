@@ -52,12 +52,20 @@ export async function runCli(argv = process.argv) {
     .argument("[dir]", "substrate directory", ".")
     .requiredOption("--out <dir>", "artifact output directory")
     .option("--include-drafts", "include draft nodes", false)
+    .option("--include-private", "include nodes marked private by sharing policy", false)
     .option("--no-suggestions", "skip suggestion generation")
+    .option("--no-split-artifacts", "skip substrate.json, relationships.json, and nodes/*.json")
+    .option("--no-bundle-json", "skip substrate-bundle.json")
+    .option("--bundle-jsonl", "also write substrate-bundle.jsonl", false)
     .description("build protocol artifacts from a substrate")
     .action(async (dir, options) => {
       const substrate = await writeSubstrateArtifacts(path.resolve(dir), path.resolve(options.out), {
         includeDrafts: options.includeDrafts,
-        suggestions: options.suggestions
+        includePrivate: options.includePrivate,
+        suggestions: options.suggestions,
+        splitArtifacts: options.splitArtifacts,
+        bundleJson: options.bundleJson,
+        bundleJsonl: options.bundleJsonl
       });
       printValidation(substrate.validation);
       console.log(`\nWrote artifacts to ${path.resolve(options.out)}`);
@@ -78,6 +86,10 @@ export async function runCli(argv = process.argv) {
     .option("--repository-url <url>", "repository URL recorded in substrate.json", "local")
     .option("--default-branch <branch>", "default Git branch recorded in substrate.json", "main")
     .option("--include-drafts", "include draft nodes", false)
+    .option("--include-private", "include nodes marked private by sharing policy", false)
+    .option("--no-split-artifacts", "skip substrate.json, nodes.json, relationships.json, and nodes/*.json")
+    .option("--no-bundle-json", "skip substrate-bundle.json")
+    .option("--bundle-jsonl", "also write substrate-bundle.jsonl", false)
     .description("build a portable substrate pack from one or more authored substrates")
     .action(async (sources, options) => {
       const roots = sources.length ? sources : [];
@@ -89,7 +101,11 @@ export async function runCli(argv = process.argv) {
         description: options.description,
         repositoryUrl: options.repositoryUrl,
         defaultBranch: options.defaultBranch,
-        includeDrafts: options.includeDrafts
+        includeDrafts: options.includeDrafts,
+        includePrivate: options.includePrivate,
+        splitArtifacts: options.splitArtifacts,
+        bundleJson: options.bundleJson,
+        bundleJsonl: options.bundleJsonl
       });
       console.log(`Wrote pack to ${path.resolve(options.out)}`);
       console.log(`Sources: ${pack.source_count}${sources.length ? "" : " (bundled canonical pack)"}`);

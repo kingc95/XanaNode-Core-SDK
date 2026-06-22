@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-ingredient_of",
+  "title": "Ingredient of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source item is an ingredient in the target recipe, dish, or preparation.",
+  "version": "0.5.0",
+  "registry_type": "ingredient_of",
+  "registry_namespace": "xananode",
+  "category": "composition",
+  "inverse": "has_ingredient",
+  "color": "#22c55e",
+  "inverse_color": "#86efac",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

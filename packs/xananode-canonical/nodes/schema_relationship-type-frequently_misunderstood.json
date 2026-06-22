@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-frequently_misunderstood",
+  "title": "Frequently misunderstood",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is frequently misunderstood in relation to the target context or audience.",
+  "version": "0.5.0",
+  "registry_type": "frequently_misunderstood",
+  "registry_namespace": "xananode",
+  "category": "attention",
+  "inverse": "misunderstanding_context_for",
+  "color": "#fbbf24",
+  "inverse_color": "#fde68a",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

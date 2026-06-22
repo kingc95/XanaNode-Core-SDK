@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:claim/relationships-preserve-knowledge",
+  "title": "Relationships Preserve Knowledge",
+  "type": "claim",
+  "subtype": "definition",
+  "status": "asserted",
+  "importance": 5,
+  "summary": "Knowledge survives movement between tools when relationships carry meaning, evidence, authorship, and addressable context instead of collapsing into anonymous links.",
+  "relationships": []
+}

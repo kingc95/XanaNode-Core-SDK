@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-source-official_site",
+  "title": "Source subtype: official site",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "official_site is an allowed subtype of the source node type.",
+  "version": "0.3.0",
+  "registry_type": "official_site",
+  "registry_namespace": "xananode",
+  "parent_node_type": "source",
+  "relationships": []
+}

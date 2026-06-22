@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-organization-university",
+  "title": "Organization subtype: university",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "university is an allowed subtype of the organization node type.",
+  "version": "0.3.0",
+  "registry_type": "university",
+  "registry_namespace": "xananode",
+  "parent_node_type": "organization",
+  "relationships": []
+}

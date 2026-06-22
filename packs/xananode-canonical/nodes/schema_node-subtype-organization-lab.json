@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-organization-lab",
+  "title": "Organization subtype: lab",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "lab is an allowed subtype of the organization node type.",
+  "version": "0.3.0",
+  "registry_type": "lab",
+  "registry_namespace": "xananode",
+  "parent_node_type": "organization",
+  "relationships": []
+}

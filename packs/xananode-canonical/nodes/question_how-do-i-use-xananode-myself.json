@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:question/how-do-i-use-xananode-myself",
+  "title": "How do I use XanaNode myself?",
+  "type": "question",
+  "subtype": "faq",
+  "importance": 5,
+  "summary": "Start with a substrate, add nodes and typed relationships, validate it with Core, and project it with a renderer such as Hugo or Studio.",
+  "content": "A user can begin with a small question, claim, source, or trail. Core can initialize a substrate, validate nodes and relationships, generate review suggestions, and build packs. Hugo can mount or import those packs for a public website. Studio can open a pack as a local working copy so authors can edit without pretending they own someone else's substrate.",
+  "relationships": []
+}

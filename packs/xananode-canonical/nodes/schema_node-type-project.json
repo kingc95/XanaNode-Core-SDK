@@ -1,0 +1,39 @@
+{
+  "id": "xananode.canonical:schema/node-type-project",
+  "title": "Project",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A built, proposed, fictional, abandoned, or active system with a purpose and lineage.",
+  "version": "0.3.0",
+  "registry_type": "project",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "software",
+    "research_project",
+    "fictional_system",
+    "prototype",
+    "standard",
+    "platform"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "status",
+    "people",
+    "organizations",
+    "technologies",
+    "sources"
+  ],
+  "color": {
+    "bg": "#ffd166",
+    "fg": "#1d1500",
+    "outline": "#fff0c2"
+  },
+  "relationships": []
+}

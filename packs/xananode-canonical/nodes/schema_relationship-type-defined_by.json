@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-defined_by",
+  "title": "Defined By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The defined_by inverse relationship term derived from defines.",
+  "version": "0.5.0",
+  "registry_type": "defined_by",
+  "registry_namespace": "xananode",
+  "category": "definition",
+  "inverse": "defines",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fde68a",
+  "inverse_color": "#facc15",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

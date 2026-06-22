@@ -1,0 +1,51 @@
+{
+  "$schema": "./federation-targets.schema.json",
+  "federation_targets": [
+    {
+      "id": "xananode.canonical",
+      "name": "XanaNode Canonical Substrate",
+      "namespace": "xananode.canonical",
+      "description": "The canonical XanaNode substrate for protocol vocabulary, project identity, governance, software stack records, raw source snapshots, branding, and self-referential examples.",
+      "status": "canonical",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kingc95/XanaNode-Canonical-Substrate.git",
+        "default_branch": "main"
+      },
+      "recommended_mode": "mounted",
+      "licenses": ["CC-BY-4.0", "Apache-2.0"],
+      "homepage": "https://xananode.com/"
+    },
+    {
+      "id": "xananode.alphabet",
+      "name": "XanaNode Alphabet Substrate",
+      "namespace": "xananode.alphabet",
+      "description": "A deliberately small example substrate with a start trail, A-Z letter nodes, typed relationships, and bundled media assets for every letter.",
+      "status": "example",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kingc95/XanaNode-Alphabet-Substrate.git",
+        "default_branch": "main"
+      },
+      "recommended_mode": "mounted",
+      "licenses": ["CC0"],
+      "homepage": "https://xananode.com/"
+    },
+    {
+      "id": "xananode.lineage",
+      "name": "XanaNode Lost Lineage Substrate",
+      "namespace": "xananode.lineage",
+      "description": "A lineage substrate for the historical and conceptual path into XanaNode.",
+      "status": "community",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kingc95/XanaNode-Core-SDK.git",
+        "default_branch": "main",
+        "substrate_path": "packs/xananode-lineage"
+      },
+      "recommended_mode": "mounted",
+      "licenses": ["CC-BY-4.0"],
+      "homepage": "https://xananode.com/"
+    }
+  ]
+}

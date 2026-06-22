@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-fragment-sentence",
+  "title": "Fragment subtype: sentence",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 3,
+  "summary": "sentence is an allowed subtype of the fragment node type.",
+  "version": "0.3.0",
+  "registry_type": "sentence",
+  "registry_namespace": "xananode",
+  "parent_node_type": "fragment",
+  "relationships": []
+}

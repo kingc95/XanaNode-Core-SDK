@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-place-online_space",
+  "title": "Place subtype: online space",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "online_space is an allowed subtype of the place node type.",
+  "version": "0.3.0",
+  "registry_type": "online_space",
+  "registry_namespace": "xananode",
+  "parent_node_type": "place",
+  "relationships": []
+}

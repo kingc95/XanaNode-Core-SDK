@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-defines",
+  "title": "Defines",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source gives the defining explanation of the target.",
+  "version": "0.5.0",
+  "registry_type": "defines",
+  "registry_namespace": "xananode",
+  "category": "definition",
+  "inverse": "defined_by",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#facc15",
+  "inverse_color": "#fde68a",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

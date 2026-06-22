@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:concept/xananode",
+  "title": "XanaNode",
+  "type": "concept",
+  "subtype": "protocol",
+  "importance": 5,
+  "summary": "A protocol for independently authored knowledge substrates that preserve relationships, provenance, lineage, disagreement, and addressable fragments.",
+  "primary_media": "xananode.canonical:media/xananode-icon",
+  "relationships": []
+}

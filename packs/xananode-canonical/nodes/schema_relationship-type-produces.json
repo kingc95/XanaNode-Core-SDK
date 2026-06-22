@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-produces",
+  "title": "Produces Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The produces inverse relationship term derived from results_from.",
+  "version": "0.5.0",
+  "registry_type": "produces",
+  "registry_namespace": "xananode",
+  "category": "causation",
+  "inverse": "results_from",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fdba74",
+  "inverse_color": "#f97316",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

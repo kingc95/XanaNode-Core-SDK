@@ -1,0 +1,27 @@
+{
+  "id": "example.minimal:concept/associative-trails",
+  "title": "Associative Trails",
+  "type": "concept",
+  "importance": 4,
+  "summary": "A way of navigating knowledge by following meaningful associations rather than only linear order or hierarchy.",
+  "relationships": [
+    {
+      "id": "example.minimal:rel/source-discusses-associative-trails",
+      "type": "discusses",
+      "source": "example.minimal:source/as-we-may-think",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/associative-trails-context-for-substrate",
+      "type": "related_to",
+      "target": "example.minimal:concept/knowledge-substrate",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/trail-includes-associative-trails",
+      "type": "features",
+      "source": "example.minimal:trail/start-here",
+      "direction": "incoming"
+    }
+  ]
+}

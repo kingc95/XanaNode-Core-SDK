@@ -1,0 +1,14 @@
+{
+  "id": "xananode.canonical:source/xananode-net-domain",
+  "title": "XanaNode.net",
+  "type": "source",
+  "subtypes": [
+    "website",
+    "official_site"
+  ],
+  "importance": 4,
+  "summary": "A project-owned alias domain that resolves to the same canonical XanaNode projection as XanaNode.com so the XanaNode project does not compete with itself in search, linking, or naming.",
+  "source_url": "https://xananode.net/",
+  "rights_status": "canonical-public",
+  "relationships": []
+}

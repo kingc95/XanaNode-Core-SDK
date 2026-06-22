@@ -1,0 +1,41 @@
+{
+  "id": "xananode.canonical:schema/node-type-problem",
+  "title": "Problem",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A difficulty, failure mode, design challenge, risk, or open need that organizes inquiry and work.",
+  "version": "0.3.0",
+  "registry_type": "problem",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "research_problem",
+    "design_problem",
+    "implementation_problem",
+    "governance_problem",
+    "risk",
+    "failure_mode"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "status",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "research_priority",
+    "requires_information",
+    "claims",
+    "questions",
+    "projects",
+    "sources"
+  ],
+  "color": {
+    "bg": "#f97316",
+    "fg": "#211006",
+    "outline": "#ffedd5"
+  },
+  "relationships": []
+}

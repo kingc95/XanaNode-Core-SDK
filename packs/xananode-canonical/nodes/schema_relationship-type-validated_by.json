@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-validated_by",
+  "title": "Validated By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The validated_by inverse relationship term derived from validates.",
+  "version": "0.5.0",
+  "registry_type": "validated_by",
+  "registry_namespace": "xananode",
+  "category": "research_workflow",
+  "inverse": "validates",
+  "color": "#7dd3fc",
+  "inverse_color": "#0ea5e9",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": []
+}

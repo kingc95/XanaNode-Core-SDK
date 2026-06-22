@@ -1,0 +1,44 @@
+{
+  "id": "example.minimal:claim/substrate-is-structure",
+  "title": "A knowledge substrate is structure, not just information",
+  "type": "claim",
+  "protocol_id": "example.minimal:claim/substrate-is-structure",
+  "content_id": "sha256:example-substrate-structure-claim",
+  "version_id": "git:HEAD:examples/minimal-substrate/nodes/claim-substrate-structure.json",
+  "status": "active",
+  "importance": 5,
+  "summary": "The same information arranged through different relationships can produce different epistemic capabilities.",
+  "confidence": "interpretive",
+  "relationships": [
+    {
+      "id": "example.minimal:rel/source-supports-claim",
+      "type": "supports",
+      "source": "example.minimal:source/as-we-may-think",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/claim-defines-concept",
+      "type": "defines",
+      "target": "example.minimal:concept/knowledge-substrate",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/concept-has-claim",
+      "type": "has_claim",
+      "source": "example.minimal:concept/knowledge-substrate",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/trail-continues-to-claim",
+      "type": "continues_to",
+      "source": "example.minimal:source/as-we-may-think",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/trail-continues-to-concept",
+      "type": "continues_to",
+      "target": "example.minimal:concept/knowledge-substrate",
+      "direction": "outgoing"
+    }
+  ]
+}

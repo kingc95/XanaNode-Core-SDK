@@ -1,0 +1,23 @@
+{
+  "id": "example.minimal:essay/relationship-navigation-intro",
+  "title": "Relationship Navigation Intro",
+  "type": "essay",
+  "importance": 4,
+  "summary": "A short example essay that includes an addressable source fragment by reference rather than duplicating it.",
+  "created_by": "example.minimal:person/example-maintainer",
+  "created_at": "2026-01-01T00:00:00Z",
+  "relationships": [
+    {
+      "id": "example.minimal:rel/maintainer-created-intro-essay",
+      "type": "created",
+      "source": "example.minimal:person/example-maintainer",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/essay-transcludes-fragment",
+      "type": "transcludes",
+      "target": "example.minimal:fragment/as-we-may-think-0004",
+      "direction": "outgoing"
+    }
+  ]
+}

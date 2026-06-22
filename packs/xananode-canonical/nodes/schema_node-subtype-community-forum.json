@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-community-forum",
+  "title": "Community subtype: forum",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "forum is an allowed subtype of the community node type.",
+  "version": "0.3.0",
+  "registry_type": "forum",
+  "registry_namespace": "xananode",
+  "parent_node_type": "community",
+  "relationships": []
+}

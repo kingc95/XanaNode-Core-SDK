@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/xananode-node-types.schema.v0.3.0.json",
+  "title": "XanaNode Node Type Registry",
+  "description": "Canonical and extension node type registry for XanaNode-compatible knowledge substrates.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "node_types"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*$"
+    },
+    "media_conventions": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Portable projection asset path conventions for node type and subtype media.",
+      "properties": {
+        "node_type_asset_path_template": {
+          "type": "string",
+          "description": "Relative path template for node type projection media. Use {type} as the node type placeholder."
+        },
+        "node_subtype_asset_path_template": {
+          "type": "string",
+          "description": "Relative path template for node subtype projection media. Use {type} and {subtype} placeholders."
+        }
+      }
+    },
+    "node_types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "namespace",
+          "id",
+          "type",
+          "label",
+          "purpose",
+          "allowed_subtypes",
+          "color"
+        ],
+        "properties": {
+          "namespace": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*$"
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*$"
+          },
+          "type": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*$"
+          },
+          "label": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "core": {
+            "type": "boolean"
+          },
+          "extends": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*(:[a-z][a-z0-9_-]*)?$"
+          },
+          "allowed_subtypes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "required_frontmatter": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "recommended_frontmatter": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "color": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "bg",
+              "fg",
+              "outline"
+            ],
+            "properties": {
+              "bg": {
+                "type": "string"
+              },
+              "fg": {
+                "type": "string"
+              },
+              "outline": {
+                "type": "string"
+              }
+            }
+          },
+          "projection": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Canonical projection metadata for this node type. Projection layers may adapt presentation, but official renderers should use this as the source for type glyphs, labels, and media lookup.",
+            "properties": {
+              "icon": {
+                "type": "string",
+                "description": "Stable icon identifier for renderers that use an icon library or built-in glyph set."
+              },
+              "icon_label": {
+                "type": "string",
+                "description": "Short fallback label when no media asset or icon library glyph is available."
+              },
+              "asset_path": {
+                "type": "string",
+                "description": "Relative path to the canonical projection media asset for this type."
+              },
+              "media_node": {
+                "type": "string",
+                "description": "Optional media node id that represents the canonical projection asset for this type."
+              },
+              "subtype_asset_path_template": {
+                "type": "string",
+                "description": "Optional relative path template for subtype projection media. Use {type} and {subtype} placeholders."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

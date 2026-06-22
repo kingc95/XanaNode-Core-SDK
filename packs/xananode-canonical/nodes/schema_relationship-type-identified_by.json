@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-identified_by",
+  "title": "Identified By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The identified_by inverse relationship term derived from identified.",
+  "version": "0.5.0",
+  "registry_type": "identified_by",
+  "registry_namespace": "xananode",
+  "category": "creation",
+  "inverse": "identified",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fed7aa",
+  "inverse_color": "#fb923c",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-shapes",
+  "title": "Shapes",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source significantly shapes or molds the form, direction, or character of the target.",
+  "version": "0.5.0",
+  "registry_type": "shapes",
+  "registry_namespace": "xananode",
+  "category": "influence",
+  "inverse": "shaped_by",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#14b8a6",
+  "inverse_color": "#99f6e4",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

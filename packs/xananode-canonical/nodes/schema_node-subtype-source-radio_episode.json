@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-source-radio_episode",
+  "title": "Source subtype: radio episode",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "radio_episode is an allowed subtype of the source node type.",
+  "version": "0.3.0",
+  "registry_type": "radio_episode",
+  "registry_namespace": "xananode",
+  "parent_node_type": "source",
+  "relationships": []
+}

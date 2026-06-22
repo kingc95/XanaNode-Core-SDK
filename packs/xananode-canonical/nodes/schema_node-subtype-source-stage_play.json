@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-source-stage_play",
+  "title": "Source subtype: stage play",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "stage_play is an allowed subtype of the source node type.",
+  "version": "0.3.0",
+  "registry_type": "stage_play",
+  "registry_namespace": "xananode",
+  "parent_node_type": "source",
+  "relationships": []
+}

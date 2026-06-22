@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-alias_of",
+  "title": "Alias of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is an alternative name for the target entity.",
+  "version": "0.5.0",
+  "registry_type": "alias_of",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "has_alias",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#f59e0b",
+  "inverse_color": "#fcd34d",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "xananode.canonical:relationship/protocol-implements-claim",
+  "title": "Protocol Implements Relationship Preservation",
+  "type": "relationship",
+  "subtype": "lineage",
+  "importance": 4,
+  "summary": "A first-class relationship node representing that the XanaNode protocol implements the claim that relationships preserve knowledge.",
+  "source_node": "xananode.canonical:project/xananode-protocol",
+  "target_node": "xananode.canonical:claim/relationships-preserve-knowledge",
+  "relationship_type": "implements",
+  "relationships": []
+}

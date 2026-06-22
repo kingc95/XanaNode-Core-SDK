@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-discussed_in",
+  "title": "Discussed In Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The discussed_in inverse relationship term derived from discusses.",
+  "version": "0.5.0",
+  "registry_type": "discussed_in",
+  "registry_namespace": "xananode",
+  "category": "citation",
+  "inverse": "discusses",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#bae6fd",
+  "inverse_color": "#38bdf8",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted"
+}

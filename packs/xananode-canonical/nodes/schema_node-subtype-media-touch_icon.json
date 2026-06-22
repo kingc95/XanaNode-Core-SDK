@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-media-touch_icon",
+  "title": "Media subtype: touch icon",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "touch_icon is an allowed subtype of the media node type.",
+  "version": "0.3.0",
+  "registry_type": "touch_icon",
+  "registry_namespace": "xananode",
+  "parent_node_type": "media",
+  "relationships": []
+}

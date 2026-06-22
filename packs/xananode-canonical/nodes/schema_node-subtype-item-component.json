@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-item-component",
+  "title": "Item subtype: component",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "component is an allowed subtype of the item node type.",
+  "version": "0.3.0",
+  "registry_type": "component",
+  "registry_namespace": "xananode",
+  "parent_node_type": "item",
+  "relationships": []
+}

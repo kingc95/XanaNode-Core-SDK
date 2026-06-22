@@ -1,0 +1,29 @@
+{
+  "id": "xananode.canonical:schema/property-birth_date",
+  "title": "Birth date",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "Calendar date on which a person, organization, project, or entity began.",
+  "registry_type": "birth_date",
+  "category": "time",
+  "aliases": [
+    "born",
+    "date_of_birth",
+    "founded_date"
+  ],
+  "applies_to": [
+    "person",
+    "organization",
+    "project"
+  ],
+  "unit_system": "ISO-8601",
+  "value_schema": {
+    "type": "string",
+    "format": "date"
+  },
+  "examples": [
+    "1955-02-24"
+  ],
+  "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-fragment-code_block",
+  "title": "Fragment subtype: code block",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 3,
+  "summary": "code_block is an allowed subtype of the fragment node type.",
+  "version": "0.3.0",
+  "registry_type": "code_block",
+  "registry_namespace": "xananode",
+  "parent_node_type": "fragment",
+  "relationships": []
+}

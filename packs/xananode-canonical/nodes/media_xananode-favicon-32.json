@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:media/xananode-favicon-32",
+  "title": "XanaNode Favicon 32x32",
+  "type": "media",
+  "subtypes": [
+    "image",
+    "logo",
+    "favicon"
+  ],
+  "media_type": "image",
+  "mime_type": "image/png",
+  "importance": 4,
+  "summary": "32 pixel PNG favicon for XanaNode projections.",
+  "alt": "XanaNode branding icon derived from the canonical XanaNode mark.",
+  "rights_status": "open-source",
+  "asset_path": "media/images/favicon-32x32.png",
+  "asset_role": "favicon",
+  "creator": "Christian Siefen",
+  "created_at": "2026-06-19T00:00:00.000Z",
+  "relationships": []
+}

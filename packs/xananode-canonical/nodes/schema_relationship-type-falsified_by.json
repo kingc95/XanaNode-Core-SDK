@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-falsified_by",
+  "title": "Falsified By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The falsified_by inverse relationship term derived from falsifies.",
+  "version": "0.5.0",
+  "registry_type": "falsified_by",
+  "registry_namespace": "xananode",
+  "category": "research_workflow",
+  "inverse": "falsifies",
+  "color": "#7dd3fc",
+  "inverse_color": "#0ea5e9",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": []
+}

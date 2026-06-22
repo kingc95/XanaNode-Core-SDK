@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-motivates",
+  "title": "Motivates Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The motivates inverse relationship term derived from motivated_by.",
+  "version": "0.5.0",
+  "registry_type": "motivates",
+  "registry_namespace": "xananode",
+  "category": "causation",
+  "inverse": "motivated_by",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fdba74",
+  "inverse_color": "#f97316",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

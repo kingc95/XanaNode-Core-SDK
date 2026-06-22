@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-continues_to",
+  "title": "Continues to",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source continues, leads into, or sequences directly to the target.",
+  "version": "0.5.0",
+  "registry_type": "continues_to",
+  "registry_namespace": "xananode",
+  "category": "temporal",
+  "inverse": "continued_from",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#a3e635",
+  "inverse_color": "#d9f99d",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-arrives_at",
+  "title": "Arrives at",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source reasoning, argument, or inquiry leads to the target conclusion or position.",
+  "version": "0.5.0",
+  "registry_type": "arrives_at",
+  "registry_namespace": "xananode",
+  "category": "reasoning",
+  "inverse": "arrived_from",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#818cf8",
+  "inverse_color": "#c7d2fe",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

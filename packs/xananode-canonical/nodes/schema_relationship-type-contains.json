@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-contains",
+  "title": "Contains",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source contains the target.",
+  "version": "0.5.0",
+  "registry_type": "contains",
+  "registry_namespace": "xananode",
+  "category": "composition",
+  "inverse": "part_of",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#22c55e",
+  "inverse_color": "#86efac",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

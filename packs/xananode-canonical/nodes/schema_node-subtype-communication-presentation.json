@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-communication-presentation",
+  "title": "Communication subtype: presentation",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "presentation is an allowed subtype of the communication node type.",
+  "version": "0.3.0",
+  "registry_type": "presentation",
+  "registry_namespace": "xananode",
+  "parent_node_type": "communication",
+  "relationships": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-misunderstanding_context_for",
+  "title": "Misunderstanding Context For Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The misunderstanding_context_for inverse relationship term derived from frequently_misunderstood.",
+  "version": "0.5.0",
+  "registry_type": "misunderstanding_context_for",
+  "registry_namespace": "xananode",
+  "category": "attention",
+  "inverse": "frequently_misunderstood",
+  "color": "#fde68a",
+  "inverse_color": "#fbbf24",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

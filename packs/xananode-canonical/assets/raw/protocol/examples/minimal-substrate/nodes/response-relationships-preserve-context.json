@@ -1,0 +1,33 @@
+{
+  "id": "example.minimal:response/relationships-preserve-context",
+  "title": "Relationships Preserve Context",
+  "type": "response",
+  "protocol_id": "example.minimal:response/relationships-preserve-context",
+  "content_id": "sha256:example-response-relationships-preserve-context",
+  "version_id": "git:HEAD:examples/minimal-substrate/nodes/response-relationships-preserve-context.json",
+  "status": "active",
+  "importance": 4,
+  "summary": "A response that answers the example question by connecting relationship structure to preserved context.",
+  "evidence_strength": "moderate",
+  "review_status": "under_review",
+  "relationships": [
+    {
+      "id": "example.minimal:rel/response-answers-question",
+      "type": "answers",
+      "target": "example.minimal:question/why-relationships-matter",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/response-answered-in-communication",
+      "type": "answered_in",
+      "target": "example.minimal:communication/minimal-substrate-discussion",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/response-supports-claim",
+      "type": "supports",
+      "target": "example.minimal:claim/substrate-is-structure",
+      "direction": "outgoing"
+    }
+  ]
+}

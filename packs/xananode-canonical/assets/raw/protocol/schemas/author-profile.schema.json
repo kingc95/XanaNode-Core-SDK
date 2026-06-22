@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/author-profile.schema.json",
+  "title": "Author Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "orcid": { "type": "string" },
+    "github": { "type": "string" },
+    "website": { "type": "string", "format": "uri" },
+    "branding": {
+      "$ref": "#/$defs/branding"
+    },
+    "public_key": { "type": "string" },
+    "default_rights": { "type": "string" },
+    "default_license": { "type": "string" },
+    "default_role": { "type": "string" }
+  },
+  "$defs": {
+    "branding": {
+      "type": "object",
+      "description": "Portable branding metadata for an author, organization, substrate, pack, or projection. Branding is knowledge provenance, not renderer-only decoration.",
+      "additionalProperties": false,
+      "properties": {
+        "brand_name": { "type": "string" },
+        "tagline": { "type": "string" },
+        "description": { "type": "string" },
+        "primary_media": { "type": "string" },
+        "logo_media": { "type": "string" },
+        "icon_media": { "type": "string" },
+        "primary_color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "accent_color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "background_color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "text_color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "source_node": { "type": "string" },
+        "rights_status": { "type": "string" },
+        "license": { "type": "string" },
+        "updated_at": { "type": "string", "format": "date-time" },
+        "reason": { "type": "string" }
+      }
+    }
+  }
+}

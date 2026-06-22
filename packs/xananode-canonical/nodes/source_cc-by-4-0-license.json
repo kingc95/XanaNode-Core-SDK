@@ -1,0 +1,12 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:source/cc-by-4-0-license",
+  "title": "Creative Commons Attribution 4.0 International",
+  "type": "source",
+  "subtype": "license",
+  "importance": 5,
+  "summary": "The Creative Commons license used for XanaNode protocol documentation, allowing sharing and adaptation with attribution.",
+  "source_url": "https://creativecommons.org/licenses/by/4.0/",
+  "rights_status": "external",
+  "license": "CC-BY-4.0"
+}

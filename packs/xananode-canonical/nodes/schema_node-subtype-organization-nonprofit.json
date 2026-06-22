@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-organization-nonprofit",
+  "title": "Organization subtype: nonprofit",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "nonprofit is an allowed subtype of the organization node type.",
+  "version": "0.3.0",
+  "registry_type": "nonprofit",
+  "registry_namespace": "xananode",
+  "parent_node_type": "organization",
+  "relationships": []
+}

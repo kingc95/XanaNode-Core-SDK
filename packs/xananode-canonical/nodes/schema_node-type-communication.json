@@ -1,0 +1,50 @@
+{
+  "id": "xananode.canonical:schema/node-type-communication",
+  "title": "Communication",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A first-class communication event or artifact whose topology, directionality, participants, and pattern affect how knowledge moved.",
+  "version": "0.3.0",
+  "registry_type": "communication",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "conversation",
+    "message",
+    "broadcast",
+    "publication",
+    "discussion",
+    "debate",
+    "interview",
+    "presentation",
+    "meeting",
+    "thread",
+    "forum",
+    "chat",
+    "announcement"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "communication_model",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "communication_pattern",
+    "participants",
+    "audience",
+    "medium",
+    "start_date",
+    "end_date",
+    "source_url",
+    "sources"
+  ],
+  "color": {
+    "bg": "#22d3ee",
+    "fg": "#04131a",
+    "outline": "#cffafe"
+  },
+  "relationships": []
+}

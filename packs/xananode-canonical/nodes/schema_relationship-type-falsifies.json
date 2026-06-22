@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-falsifies",
+  "title": "Falsifies",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source falsifies, refutes, or shows the target hypothesis or claim to be false under stated conditions.",
+  "version": "0.5.0",
+  "registry_type": "falsifies",
+  "registry_namespace": "xananode",
+  "category": "research_workflow",
+  "inverse": "falsified_by",
+  "color": "#0ea5e9",
+  "inverse_color": "#7dd3fc",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": []
+}

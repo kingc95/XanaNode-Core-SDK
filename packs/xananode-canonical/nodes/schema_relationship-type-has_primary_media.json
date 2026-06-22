@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-has_primary_media",
+  "title": "Has primary media",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source node uses the target media node as its primary representative image or icon.",
+  "version": "0.5.0",
+  "registry_type": "has_primary_media",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "used_as_primary_media_for",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#f59e0b",
+  "inverse_color": "#fcd34d",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

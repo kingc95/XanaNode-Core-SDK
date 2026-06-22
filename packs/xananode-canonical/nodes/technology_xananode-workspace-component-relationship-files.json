@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-workspace-component-relationship-files",
+  "title": "XanaNode Workspace: relationship files",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Workspace consumes or depends on relationship files.",
+  "component_of": "xananode.canonical:project/xananode-workspace",
+  "relationships": []
+}

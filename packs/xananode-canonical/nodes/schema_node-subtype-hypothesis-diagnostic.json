@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-hypothesis-diagnostic",
+  "title": "Hypothesis subtype: diagnostic",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "diagnostic is an allowed subtype of the hypothesis node type.",
+  "version": "0.3.0",
+  "registry_type": "diagnostic",
+  "registry_namespace": "xananode",
+  "parent_node_type": "hypothesis",
+  "relationships": []
+}

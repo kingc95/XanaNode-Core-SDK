@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-disputes",
+  "title": "Disputes",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source disputes the target.",
+  "version": "0.5.0",
+  "registry_type": "disputes",
+  "registry_namespace": "xananode",
+  "category": "governance",
+  "inverse": "disputed_by",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#eab308",
+  "inverse_color": "#fde047",
+  "line_style": "double",
+  "inverse_line_style": "double"
+}

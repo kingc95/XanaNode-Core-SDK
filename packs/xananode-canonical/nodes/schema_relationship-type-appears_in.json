@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-appears_in",
+  "title": "Appears in",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source appears in the target work, collection, or event.",
+  "version": "0.5.0",
+  "registry_type": "appears_in",
+  "registry_namespace": "xananode",
+  "category": "participation",
+  "inverse": "has_appearance",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#ec4899",
+  "inverse_color": "#f9a8d4",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

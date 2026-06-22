@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-hugo-theme-component-schema-registries",
+  "title": "XanaNode Hugo Theme: schema registries",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Hugo Theme consumes or depends on schema registries.",
+  "component_of": "xananode.canonical:project/xananode-hugo-theme",
+  "relationships": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "example.museum:artifact/memex-illustration",
+  "title": "Memex Exhibit Illustration",
+  "type": "example.museum:artifact",
+  "importance": 3,
+  "summary": "A fictional exhibit artifact representing the Memex concept.",
+  "rights_status": "example",
+  "relationships": [
+    {
+      "id": "example.museum:rel/artifact-represents-concept",
+      "type": "represents",
+      "target": "example.museum:concept/memex",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.museum:rel/artifact-context",
+      "type": "example.museum:curatorial_context_for",
+      "target": "example.museum:concept/memex",
+      "direction": "outgoing"
+    }
+  ]
+}

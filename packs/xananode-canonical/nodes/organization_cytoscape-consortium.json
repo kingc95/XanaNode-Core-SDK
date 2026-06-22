@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:organization/cytoscape-consortium",
+  "title": "Cytoscape Consortium",
+  "type": "organization",
+  "subtype": "open_source",
+  "importance": 3,
+  "summary": "The organization and community associated with Cytoscape and Cytoscape.js development.",
+  "source_url": "https://cytoscape.org/",
+  "relationships": []
+}

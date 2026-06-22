@@ -1,0 +1,52 @@
+{
+  "namespaces": [
+    {
+      "id": "xananode",
+      "name": "XanaNode Core",
+      "description": "Canonical namespace for core XanaNode node and relationship types.",
+      "schema": "../schemas/"
+    },
+    {
+      "id": "xananode.canonical",
+      "name": "XanaNode Canonical Substrate Namespace",
+      "description": "Namespace used by the standalone canonical XanaNode substrate.",
+      "federation_target": "xananode.canonical"
+    },
+    {
+      "id": "xananode.alphabet",
+      "name": "XanaNode Alphabet Example Namespace",
+      "description": "Namespace used by the tiny alphabet substrate for federation, media, and trail testing.",
+      "federation_target": "xananode.alphabet"
+    },
+    {
+      "id": "example.minimal",
+      "name": "Minimal Example Namespace",
+      "description": "Namespace used by the minimal example substrate.",
+      "example": "../examples/minimal-substrate/"
+    },
+    {
+      "id": "example.museum",
+      "name": "Museum Extension Example Namespace",
+      "description": "Namespace used by the custom extension example substrate.",
+      "example": "../examples/custom-extension-substrate/"
+    },
+    {
+      "id": "example.researcher_a",
+      "name": "Federation Example A Namespace",
+      "description": "Namespace used by the first independently authored federation example substrate.",
+      "example": "../examples/federation-example/substrate-a/"
+    },
+    {
+      "id": "example.researcher_b",
+      "name": "Federation Example B Namespace",
+      "description": "Namespace used by the second independently authored federation example substrate.",
+      "example": "../examples/federation-example/substrate-b/"
+    },
+    {
+      "id": "example.merge",
+      "name": "Federation Merge Report Example Namespace",
+      "description": "Namespace used for merge report and mapping records in the federation example.",
+      "example": "../examples/federation-example/"
+    }
+  ]
+}

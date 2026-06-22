@@ -1,0 +1,42 @@
+{
+  "id": "xananode.canonical:schema/node-type-hypothesis",
+  "title": "Hypothesis",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A provisional explanation, prediction, or model that can be tested, supported, falsified, revised, or abandoned.",
+  "version": "0.3.0",
+  "registry_type": "hypothesis",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "scientific",
+    "design",
+    "historical",
+    "diagnostic",
+    "prediction",
+    "interpretive"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "status",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "confidence",
+    "uncertainty_level",
+    "evidence_strength",
+    "tests",
+    "claims",
+    "sources",
+    "questions"
+  ],
+  "color": {
+    "bg": "#c4b5fd",
+    "fg": "#171022",
+    "outline": "#ede9fe"
+  },
+  "relationships": []
+}

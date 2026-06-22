@@ -1,0 +1,12 @@
+{
+  "id": "xananode.canonical:person/christian-siefen",
+  "title": "Christian Siefen",
+  "type": "person",
+  "subtypes": [
+    "founder",
+    "author"
+  ],
+  "importance": 5,
+  "summary": "The personally identified author and maintainer of the canonical XanaNode substrate.",
+  "relationships": []
+}

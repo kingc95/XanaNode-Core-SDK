@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/nodejs",
+  "title": "Node.js",
+  "type": "technology",
+  "subtype": "runtime",
+  "importance": 4,
+  "summary": "The JavaScript runtime used by XanaNode Core, Hugo preparation scripts, and build tooling.",
+  "source_url": "https://nodejs.org/",
+  "relationships": []
+}

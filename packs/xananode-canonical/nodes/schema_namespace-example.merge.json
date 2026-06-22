@@ -1,0 +1,12 @@
+{
+  "id": "xananode.canonical:schema/namespace-example.merge",
+  "title": "Federation Merge Report Example Namespace",
+  "type": "schema",
+  "subtype": "namespace_record",
+  "importance": 3,
+  "summary": "Namespace used for merge report and mapping records in the federation example.",
+  "registry_type": "example.merge",
+  "schema_path": "",
+  "example_path": "../examples/federation-example/",
+  "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-concept-failure_mode",
+  "title": "Concept subtype: failure mode",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "failure_mode is an allowed subtype of the concept node type.",
+  "version": "0.3.0",
+  "registry_type": "failure_mode",
+  "registry_namespace": "xananode",
+  "parent_node_type": "concept",
+  "relationships": []
+}

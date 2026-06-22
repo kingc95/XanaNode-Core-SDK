@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-partially_answers",
+  "title": "Partially answers",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source provides a partial answer to the target question while leaving important parts unresolved.",
+  "version": "0.5.0",
+  "registry_type": "partially_answers",
+  "registry_namespace": "xananode",
+  "category": "inquiry",
+  "inverse": "partially_answered_by",
+  "color": "#2dd4bf",
+  "inverse_color": "#99f6e4",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

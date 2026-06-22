@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-workspace-component-substrate-manifests",
+  "title": "XanaNode Workspace: substrate manifests",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Workspace consumes or depends on substrate manifests.",
+  "component_of": "xananode.canonical:project/xananode-workspace",
+  "relationships": []
+}

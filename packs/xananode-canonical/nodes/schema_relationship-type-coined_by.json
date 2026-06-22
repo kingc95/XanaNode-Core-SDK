@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-coined_by",
+  "title": "Coined By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The coined_by inverse relationship term derived from coined.",
+  "version": "0.5.0",
+  "registry_type": "coined_by",
+  "registry_namespace": "xananode",
+  "category": "creation",
+  "inverse": "coined",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fed7aa",
+  "inverse_color": "#fb923c",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

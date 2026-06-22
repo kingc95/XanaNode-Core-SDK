@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-item-artifact",
+  "title": "Item subtype: artifact",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "artifact is an allowed subtype of the item node type.",
+  "version": "0.3.0",
+  "registry_type": "artifact",
+  "registry_namespace": "xananode",
+  "parent_node_type": "item",
+  "relationships": []
+}

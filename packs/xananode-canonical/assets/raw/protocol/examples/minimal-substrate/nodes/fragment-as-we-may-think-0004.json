@@ -1,0 +1,37 @@
+{
+  "id": "example.minimal:fragment/as-we-may-think-0004",
+  "title": "As We May Think Fragment 0004",
+  "type": "fragment",
+  "protocol_id": "example.minimal:fragment/as-we-may-think-0004",
+  "content_id": "sha256:example-as-we-may-think-fragment-0004",
+  "version_id": "sha256:example-as-we-may-think-fragment-0004",
+  "importance": 4,
+  "summary": "An addressable fragment of the source used to demonstrate stable fragment references and transclusion.",
+  "source_node": "example.minimal:source/as-we-may-think",
+  "source_content_id": "sha256:example-as-we-may-think-source",
+  "source_version_id": "git:8e47e70:examples/minimal-substrate/nodes/source-as-we-may-think.json",
+  "fragment_id": "0004",
+  "tumbler": "example.minimal:source/as-we-may-think@git:8e47e70:examples/minimal-substrate/nodes/source-as-we-may-think.json#fragment/0004@sha256:example-as-we-may-think-fragment-0004",
+  "selector": {
+    "type": "TextQuoteSelector",
+    "value": "associative-trails-discussion",
+    "exact": "associative trails"
+  },
+  "rights_status": "copyrighted",
+  "created_by": "example.minimal:person/example-maintainer",
+  "created_at": "2026-01-01T00:00:00Z",
+  "relationships": [
+    {
+      "id": "example.minimal:rel/fragment-derived-from-source",
+      "type": "derived_from",
+      "target": "example.minimal:source/as-we-may-think",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/essay-transcludes-fragment",
+      "type": "transcludes",
+      "source": "example.minimal:essay/relationship-navigation-intro",
+      "direction": "incoming"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-cites",
+  "title": "Cites",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source cites the target.",
+  "version": "0.5.0",
+  "registry_type": "cites",
+  "registry_namespace": "xananode",
+  "category": "citation",
+  "inverse": "cited_by",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#38bdf8",
+  "inverse_color": "#bae6fd",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted"
+}

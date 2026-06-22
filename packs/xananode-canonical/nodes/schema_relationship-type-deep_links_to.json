@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-deep_links_to",
+  "title": "Deep links to",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source points to a specific addressable fragment of the target.",
+  "version": "0.5.0",
+  "registry_type": "deep_links_to",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "deep_linked_from",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#f59e0b",
+  "inverse_color": "#fcd34d",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

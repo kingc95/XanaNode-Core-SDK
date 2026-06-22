@@ -1,0 +1,17 @@
+{
+  "id": "example.researcher_a:concept/knowledge-substrate",
+  "title": "Knowledge Substrate",
+  "type": "concept",
+  "importance": 4,
+  "summary": "A structure for preserving relationships among knowledge objects.",
+  "relationships": [
+    {
+      "id": "example.researcher_a:rel/knowledge-substrate-possible-match-memory-substrate",
+      "type": "possible_match",
+      "target": "example.researcher_b:concept/memory-substrate",
+      "direction": "outgoing",
+      "external": true,
+      "target_substrate": "example.researcher_b"
+    }
+  ]
+}

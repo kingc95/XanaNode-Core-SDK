@@ -1,0 +1,43 @@
+{
+  "id": "xananode.canonical:schema/node-type-person",
+  "title": "Person",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A human actor who created, influenced, witnessed, argued, documented, or participated in something.",
+  "version": "0.3.0",
+  "registry_type": "person",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "writer",
+    "researcher",
+    "engineer",
+    "critic",
+    "artist",
+    "founder",
+    "scientist",
+    "programmer"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "roles",
+    "primary_media",
+    "people",
+    "concepts",
+    "sources",
+    "projects",
+    "events"
+  ],
+  "color": {
+    "bg": "#8bd3ff",
+    "fg": "#071827",
+    "outline": "#d8f1ff"
+  },
+  "relationships": []
+}

@@ -1,0 +1,9 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:concept/open-license",
+  "title": "Open License",
+  "type": "concept",
+  "subtype": "principle",
+  "importance": 4,
+  "summary": "A license that grants broad public permission to use, share, adapt, or implement a work while preserving stated conditions such as attribution or notices."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-studio-component-core-sdk-apis",
+  "title": "XanaNode Studio: Core SDK APIs",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Studio consumes or depends on Core SDK APIs.",
+  "component_of": "xananode.canonical:project/xananode-studio",
+  "relationships": []
+}

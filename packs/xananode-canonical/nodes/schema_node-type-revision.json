@@ -1,0 +1,39 @@
+{
+  "id": "xananode.canonical:schema/node-type-revision",
+  "title": "Revision",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "An immutable historical version of another node.",
+  "version": "0.3.0",
+  "registry_type": "revision",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "node_revision",
+    "claim_revision",
+    "relationship_revision",
+    "media_revision"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "revises",
+    "revision_id",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "created_by",
+    "created_date",
+    "supersedes",
+    "superseded_by",
+    "change_summary"
+  ],
+  "color": {
+    "bg": "#94a3b8",
+    "fg": "#0f172a",
+    "outline": "#dde5f2"
+  },
+  "relationships": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "example.minimal:nanopub/substrate-is-structure",
+  "claim": "example.minimal:claim/substrate-is-structure",
+  "assertion": {
+    "summary": "A knowledge substrate is structure, not just information.",
+    "relationships": [
+      "example.minimal:rel/source-supports-claim",
+      "example.minimal:rel/claim-defines-concept"
+    ]
+  },
+  "provenance": {
+    "asserted_by": "example.minimal:person/example-maintainer",
+    "asserted_at": "2026-01-01T00:00:00Z",
+    "evidence": [
+      "example.minimal:source/as-we-may-think"
+    ]
+  },
+  "publication_info": {
+    "published_by": "example.minimal",
+    "published_at": "2026-01-01T00:00:00Z",
+    "license": "CC0-1.0",
+    "content_id": "sha256:example-nanopub-substrate-is-structure"
+  }
+}

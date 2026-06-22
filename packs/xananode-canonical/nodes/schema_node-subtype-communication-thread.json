@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-communication-thread",
+  "title": "Communication subtype: thread",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "thread is an allowed subtype of the communication node type.",
+  "version": "0.3.0",
+  "registry_type": "thread",
+  "registry_namespace": "xananode",
+  "parent_node_type": "communication",
+  "relationships": []
+}

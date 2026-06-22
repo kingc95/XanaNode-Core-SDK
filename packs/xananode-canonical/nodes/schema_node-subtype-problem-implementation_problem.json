@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-problem-implementation_problem",
+  "title": "Problem subtype: implementation problem",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "implementation_problem is an allowed subtype of the problem node type.",
+  "version": "0.3.0",
+  "registry_type": "implementation_problem",
+  "registry_namespace": "xananode",
+  "parent_node_type": "problem",
+  "relationships": []
+}

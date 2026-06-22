@@ -1,0 +1,45 @@
+{
+  "id": "example.merge:diff/federation-example-001",
+  "base": "git:fba4906",
+  "head": "git:HEAD",
+  "generated_at": "2026-01-01T00:00:00Z",
+  "changes": {
+    "nodes": {
+      "added": [
+        "example.researcher_a:concept/knowledge-substrate",
+        "example.researcher_b:concept/memory-substrate"
+      ],
+      "removed": [],
+      "changed": []
+    },
+    "relationships": {
+      "added": [
+        "example.researcher_a:rel/knowledge-substrate-possible-match-memory-substrate",
+        "example.researcher_b:rel/memory-substrate-possible-match-knowledge-substrate"
+      ],
+      "removed": [],
+      "changed": []
+    },
+    "schemas": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "fragments": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    }
+  },
+  "conflicts": [
+    {
+      "type": "identity_ambiguity",
+      "nodes": [
+        "example.researcher_a:concept/knowledge-substrate",
+        "example.researcher_b:concept/memory-substrate"
+      ],
+      "resolution": "preserve_both",
+      "summary": "The two concepts are close enough to map but not safe to collapse."
+    }
+  ]
+}

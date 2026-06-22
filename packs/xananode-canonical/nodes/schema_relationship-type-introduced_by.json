@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-introduced_by",
+  "title": "Introduced By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The introduced_by inverse relationship term derived from introduced.",
+  "version": "0.5.0",
+  "registry_type": "introduced_by",
+  "registry_namespace": "xananode",
+  "category": "creation",
+  "inverse": "introduced",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fed7aa",
+  "inverse_color": "#fb923c",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

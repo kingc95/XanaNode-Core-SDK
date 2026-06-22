@@ -1,0 +1,46 @@
+{
+  "id": "xananode.canonical:schema/property-external_identifier",
+  "title": "External identifier",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A typed identifier from an external authority or registry.",
+  "registry_type": "external_identifier",
+  "category": "reference",
+  "aliases": [
+    "wikidata_id",
+    "doi",
+    "orcid",
+    "authority_id"
+  ],
+  "applies_to": [],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "authority",
+      "value"
+    ],
+    "properties": {
+      "authority": {
+        "type": "string"
+      },
+      "value": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "examples": [
+    {
+      "authority": "wikidata",
+      "value": "Q19837",
+      "url": "https://www.wikidata.org/wiki/Q19837"
+    }
+  ],
+  "relationships": []
+}

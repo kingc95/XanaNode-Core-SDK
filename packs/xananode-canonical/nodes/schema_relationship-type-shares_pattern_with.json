@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-shares_pattern_with",
+  "title": "Shares pattern with",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source shares a recognizable structure, behavior, or pattern with the target.",
+  "version": "0.5.0",
+  "registry_type": "shares_pattern_with",
+  "registry_namespace": "xananode",
+  "category": "discovery",
+  "inverse": "shares_pattern_with",
+  "color": "#34d399",
+  "inverse_color": "#a7f3d0",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

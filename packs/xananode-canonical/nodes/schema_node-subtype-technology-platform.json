@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-technology-platform",
+  "title": "Technology subtype: platform",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "platform is an allowed subtype of the technology node type.",
+  "version": "0.3.0",
+  "registry_type": "platform",
+  "registry_namespace": "xananode",
+  "parent_node_type": "technology",
+  "relationships": []
+}

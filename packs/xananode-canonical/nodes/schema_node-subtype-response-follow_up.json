@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-response-follow_up",
+  "title": "Response subtype: follow up",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "follow_up is an allowed subtype of the response node type.",
+  "version": "0.3.0",
+  "registry_type": "follow_up",
+  "registry_namespace": "xananode",
+  "parent_node_type": "response",
+  "relationships": []
+}

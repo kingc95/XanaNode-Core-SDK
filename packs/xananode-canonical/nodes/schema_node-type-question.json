@@ -1,0 +1,42 @@
+{
+  "id": "xananode.canonical:schema/node-type-question",
+  "title": "Question",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "An explicit inquiry, prompt, research question, or unresolved ask that motivates investigation and can be answered, partially answered, disputed, or left open.",
+  "version": "0.3.0",
+  "registry_type": "question",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "research_question",
+    "open_question",
+    "design_question",
+    "historical_question",
+    "prediction_question",
+    "diagnostic_question"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "status",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "question_text",
+    "review_status",
+    "research_priority",
+    "concepts",
+    "claims",
+    "sources",
+    "answers"
+  ],
+  "color": {
+    "bg": "#fef08a",
+    "fg": "#1f1a00",
+    "outline": "#fff8c9"
+  },
+  "relationships": []
+}

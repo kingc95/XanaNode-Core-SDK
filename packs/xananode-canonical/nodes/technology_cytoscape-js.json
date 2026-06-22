@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/cytoscape-js",
+  "title": "Cytoscape.js",
+  "type": "technology",
+  "subtype": "library",
+  "importance": 4,
+  "summary": "A graph visualization library used by the XanaNode Hugo projection to render interactive substrate graphs.",
+  "source_url": "https://js.cytoscape.org/",
+  "relationships": []
+}

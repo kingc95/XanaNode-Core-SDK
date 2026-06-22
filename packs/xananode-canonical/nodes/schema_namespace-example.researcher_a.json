@@ -1,0 +1,12 @@
+{
+  "id": "xananode.canonical:schema/namespace-example.researcher_a",
+  "title": "Federation Example A Namespace",
+  "type": "schema",
+  "subtype": "namespace_record",
+  "importance": 3,
+  "summary": "Namespace used by the first independently authored federation example substrate.",
+  "registry_type": "example.researcher_a",
+  "schema_path": "",
+  "example_path": "../examples/federation-example/substrate-a/",
+  "relationships": []
+}

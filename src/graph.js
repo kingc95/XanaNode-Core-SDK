@@ -57,6 +57,8 @@ export function buildAdjacency(nodes, relationships) {
 export function nodeToProtocolRecord(node, relationships = []) {
   const outgoing = relationships.filter((relationship) => relationship.source === node.protocolId);
   const incoming = relationships.filter((relationship) => relationship.target === node.protocolId);
+  const trailNodes = asArray(node.data?.nodes).filter(Boolean);
+  const trailBranches = asArray(node.data?.branches).filter(Boolean);
   return omitUndefined({
     id: node.protocolId,
     protocol_id: node.protocolId,
@@ -69,6 +71,8 @@ export function nodeToProtocolRecord(node, relationships = []) {
     facets: asArray(node.data?.facets),
     summary: node.summary,
     importance: node.data?.importance || 3,
+    trail_nodes: trailNodes.length ? trailNodes : undefined,
+    trail_branches: trailBranches.length ? trailBranches : undefined,
     relationships: [
       ...outgoing.map((relationship) => ({ id: relationship.id, type: relationship.type, source: relationship.source, target: relationship.target, direction: "outgoing", external: relationship.external || false, target_substrate: relationship.target_substrate })),
       ...incoming.map((relationship) => ({ id: relationship.id, type: relationship.type, source: relationship.source, target: relationship.target, direction: "incoming", external: relationship.external || false, target_substrate: relationship.target_substrate }))

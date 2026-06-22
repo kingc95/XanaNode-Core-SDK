@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/registry/federation-targets.schema.json",
+  "title": "XanaNode Federation Targets Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["federation_targets"],
+  "properties": {
+    "federation_targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "namespace", "repository"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "namespace": { "type": "string" },
+          "description": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["canonical", "community", "example", "experimental", "archived"]
+          },
+          "repository": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "url", "default_branch"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["git"]
+              },
+              "url": { "type": "string" },
+              "default_branch": { "type": "string" },
+              "substrate_path": { "type": "string" }
+            }
+          },
+          "recommended_mode": {
+            "type": "string",
+            "enum": ["mounted", "imported", "merged", "absorbed"]
+          },
+          "licenses": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "homepage": { "type": "string", "format": "uri" }
+        }
+      }
+    }
+  }
+}

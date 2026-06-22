@@ -1,0 +1,42 @@
+{
+  "id": "xananode.canonical:schema/node-type-claim",
+  "title": "Claim",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A specific assertion that can be supported, disputed, revised, deprecated, or rejected.",
+  "version": "0.3.0",
+  "registry_type": "claim",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "definition",
+    "historical",
+    "causal",
+    "interpretive",
+    "predictive",
+    "normative",
+    "comparative"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "status",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "confidence",
+    "claim_type",
+    "evidence",
+    "counterevidence",
+    "concepts",
+    "sources"
+  ],
+  "color": {
+    "bg": "#ff6b6b",
+    "fg": "#1a0000",
+    "outline": "#ffe0e0"
+  },
+  "relationships": []
+}

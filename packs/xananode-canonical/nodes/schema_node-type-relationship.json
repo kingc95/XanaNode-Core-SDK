@@ -1,0 +1,43 @@
+{
+  "id": "xananode.canonical:schema/node-type-relationship",
+  "title": "Relationship",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A first-class edge treated as a node because the relationship itself has history, evidence, dispute, or explanation.",
+  "version": "0.3.0",
+  "registry_type": "relationship",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "friendship",
+    "influence",
+    "collaboration",
+    "citation",
+    "dispute",
+    "lineage",
+    "dependency"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "source_node",
+    "target_node",
+    "relationship_type",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "evidence",
+    "confidence",
+    "status",
+    "asserted_by",
+    "reviewed_by"
+  ],
+  "color": {
+    "bg": "#ec4899",
+    "fg": "#240812",
+    "outline": "#ffd8ea"
+  },
+  "relationships": []
+}

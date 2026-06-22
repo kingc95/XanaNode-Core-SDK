@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-critical_to",
+  "title": "Critical to",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is critical to the target and should be prioritized in navigation, review, or preservation.",
+  "version": "0.5.0",
+  "registry_type": "critical_to",
+  "registry_namespace": "xananode",
+  "category": "attention",
+  "inverse": "critically_depends_on",
+  "color": "#fbbf24",
+  "inverse_color": "#fde68a",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": []
+}

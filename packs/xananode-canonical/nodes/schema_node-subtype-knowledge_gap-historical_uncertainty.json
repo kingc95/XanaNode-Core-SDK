@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-knowledge_gap-historical_uncertainty",
+  "title": "Knowledge Gap subtype: historical uncertainty",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "historical_uncertainty is an allowed subtype of the knowledge_gap node type.",
+  "version": "0.3.0",
+  "registry_type": "historical_uncertainty",
+  "registry_namespace": "xananode",
+  "parent_node_type": "knowledge_gap",
+  "relationships": []
+}

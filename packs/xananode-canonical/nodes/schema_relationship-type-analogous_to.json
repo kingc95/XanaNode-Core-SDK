@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-analogous_to",
+  "title": "Analogous to",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is analogous to the target in a way that may aid reasoning or explanation.",
+  "version": "0.5.0",
+  "registry_type": "analogous_to",
+  "registry_namespace": "xananode",
+  "category": "cognition",
+  "inverse": "analogous_to",
+  "color": "#7c3aed",
+  "inverse_color": "#ddd6fe",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

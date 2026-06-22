@@ -1,0 +1,20 @@
+{
+  "id": "example.minimal:person/example-maintainer",
+  "name": "Example Maintainer",
+  "github": "example-maintainer",
+  "website": "https://example.com",
+  "branding": {
+    "brand_name": "Example Maintainer",
+    "tagline": "Example substrate author",
+    "primary_media": "example.minimal:media/xananode-icon",
+    "icon_media": "example.minimal:media/xananode-icon",
+    "primary_color": "#55D6BE",
+    "accent_color": "#FF8C00",
+    "rights_status": "open-example",
+    "license": "CC0-1.0",
+    "reason": "Author profiles may carry portable branding that tools can apply to authored substrates."
+  },
+  "default_rights": "open-example",
+  "default_license": "CC0-1.0",
+  "default_role": "maintainer"
+}

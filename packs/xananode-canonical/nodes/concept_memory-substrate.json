@@ -1,0 +1,17 @@
+{
+  "id": "example.researcher_b:concept/memory-substrate",
+  "title": "Memory Substrate",
+  "type": "concept",
+  "importance": 4,
+  "summary": "A system for preserving context, lineage, and navigable memory over time.",
+  "relationships": [
+    {
+      "id": "example.researcher_b:rel/memory-substrate-possible-match-knowledge-substrate",
+      "type": "possible_match",
+      "target": "example.researcher_a:concept/knowledge-substrate",
+      "direction": "outgoing",
+      "external": true,
+      "target_substrate": "example.researcher_a"
+    }
+  ]
+}

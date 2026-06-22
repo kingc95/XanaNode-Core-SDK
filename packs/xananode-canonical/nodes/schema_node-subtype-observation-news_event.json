@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-observation-news_event",
+  "title": "Observation subtype: news event",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "news_event is an allowed subtype of the observation node type.",
+  "version": "0.3.0",
+  "registry_type": "news_event",
+  "registry_namespace": "xananode",
+  "parent_node_type": "observation",
+  "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-media-scan",
+  "title": "Media subtype: scan",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "scan is an allowed subtype of the media node type.",
+  "version": "0.3.0",
+  "registry_type": "scan",
+  "registry_namespace": "xananode",
+  "parent_node_type": "media",
+  "relationships": []
+}

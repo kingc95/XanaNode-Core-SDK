@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-answered_in",
+  "title": "Answered in",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source response, claim, or answer was given in the target communication context.",
+  "version": "0.5.0",
+  "registry_type": "answered_in",
+  "registry_namespace": "xananode",
+  "category": "communication",
+  "inverse": "had_answer",
+  "color": "#38bdf8",
+  "inverse_color": "#bae6fd",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

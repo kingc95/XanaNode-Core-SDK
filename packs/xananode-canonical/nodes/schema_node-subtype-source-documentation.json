@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-source-documentation",
+  "title": "Source subtype: documentation",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "documentation is an allowed subtype of the source node type.",
+  "version": "0.3.0",
+  "registry_type": "documentation",
+  "registry_namespace": "xananode",
+  "parent_node_type": "source",
+  "relationships": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-shaped_by",
+  "title": "Shaped By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The shaped_by inverse relationship term derived from shapes.",
+  "version": "0.5.0",
+  "registry_type": "shaped_by",
+  "registry_namespace": "xananode",
+  "category": "influence",
+  "inverse": "shapes",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#99f6e4",
+  "inverse_color": "#14b8a6",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

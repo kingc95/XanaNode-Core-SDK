@@ -1,0 +1,8 @@
+{
+  "id": "xananode.canonical:concept/protocol-artifacts",
+  "title": "Protocol Artifacts",
+  "type": "concept",
+  "importance": 5,
+  "summary": "The portable JSON files, schemas, fragments, reports, and media references that allow tools to validate, compare, mount, import, merge, and render substrates.",
+  "relationships": []
+}

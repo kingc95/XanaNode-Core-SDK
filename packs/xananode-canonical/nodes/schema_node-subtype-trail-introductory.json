@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-trail-introductory",
+  "title": "Trail subtype: introductory",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "introductory is an allowed subtype of the trail node type.",
+  "version": "0.3.0",
+  "registry_type": "introductory",
+  "registry_namespace": "xananode",
+  "parent_node_type": "trail",
+  "relationships": []
+}

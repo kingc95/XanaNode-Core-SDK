@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-has_alias",
+  "title": "Has Alias Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The has_alias inverse relationship term derived from alias_of.",
+  "version": "0.5.0",
+  "registry_type": "has_alias",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "alias_of",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fcd34d",
+  "inverse_color": "#f59e0b",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

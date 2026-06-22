@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-high_risk_for",
+  "title": "High risk for",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source identifies a high risk for the target.",
+  "version": "0.5.0",
+  "registry_type": "high_risk_for",
+  "registry_namespace": "xananode",
+  "category": "attention",
+  "inverse": "has_high_risk",
+  "color": "#fbbf24",
+  "inverse_color": "#fde68a",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

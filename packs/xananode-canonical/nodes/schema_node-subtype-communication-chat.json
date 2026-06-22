@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-communication-chat",
+  "title": "Communication subtype: chat",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "chat is an allowed subtype of the communication node type.",
+  "version": "0.3.0",
+  "registry_type": "chat",
+  "registry_namespace": "xananode",
+  "parent_node_type": "communication",
+  "relationships": []
+}

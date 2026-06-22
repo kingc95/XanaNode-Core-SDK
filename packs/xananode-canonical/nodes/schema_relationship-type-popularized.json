@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-popularized",
+  "title": "Popularized",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source brought the target to a wider audience or made it culturally visible.",
+  "version": "0.5.0",
+  "registry_type": "popularized",
+  "registry_namespace": "xananode",
+  "category": "influence",
+  "inverse": "popularized_by",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#14b8a6",
+  "inverse_color": "#99f6e4",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

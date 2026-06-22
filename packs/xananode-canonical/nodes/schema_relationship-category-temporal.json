@@ -1,0 +1,16 @@
+{
+  "id": "xananode.canonical:schema/relationship-category-temporal",
+  "title": "Temporal Relationship Category",
+  "type": "schema",
+  "subtype": "relationship_category_schema",
+  "importance": 4,
+  "summary": "The temporal category groups relationship types with related meaning.",
+  "version": "0.5.0",
+  "registry_type": "temporal",
+  "registry_namespace": "xananode",
+  "relationships": [],
+  "color": "#a3e635",
+  "inverse_color": "#d9f99d",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

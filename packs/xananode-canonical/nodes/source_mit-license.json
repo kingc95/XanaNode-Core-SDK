@@ -1,0 +1,12 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:source/mit-license",
+  "title": "MIT License",
+  "type": "source",
+  "subtype": "license",
+  "importance": 3,
+  "summary": "A widely used permissive open source license included as a comparative licensing concept.",
+  "source_url": "https://opensource.org/license/mit/",
+  "rights_status": "external",
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-relationship-collaboration",
+  "title": "Relationship subtype: collaboration",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "collaboration is an allowed subtype of the relationship node type.",
+  "version": "0.3.0",
+  "registry_type": "collaboration",
+  "registry_namespace": "xananode",
+  "parent_node_type": "relationship",
+  "relationships": []
+}

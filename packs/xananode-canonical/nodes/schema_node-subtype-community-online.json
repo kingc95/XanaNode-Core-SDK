@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-community-online",
+  "title": "Community subtype: online",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "online is an allowed subtype of the community node type.",
+  "version": "0.3.0",
+  "registry_type": "online",
+  "registry_namespace": "xananode",
+  "parent_node_type": "community",
+  "relationships": []
+}

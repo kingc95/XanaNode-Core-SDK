@@ -1,0 +1,106 @@
+{
+  "implementations": [
+    {
+      "name": "XanaNode Protocol",
+      "type": "protocol",
+      "status": "active",
+      "url": "https://github.com/kingc95/XanaNode",
+      "repository": "kingc95/XanaNode",
+      "protocol_role": "schema-and-governance-source",
+      "description": "Canonical XanaNode protocol repository containing schemas, registries, specs, governance, examples, branding, and proposals.",
+      "consumes": [],
+      "related_protocol_artifacts": [
+        "../schemas/",
+        "../registry/",
+        "../specs/",
+        "../governance/",
+        "../examples/minimal-substrate/"
+      ]
+    },
+    {
+      "name": "XanaNode Core SDK",
+      "type": "core-sdk",
+      "status": "active",
+      "url": "https://github.com/kingc95/XanaNode-Core-SDK",
+      "repository": "kingc95/XanaNode-Core-SDK",
+      "protocol_role": "reference-core-engine",
+      "description": "Renderer-independent parser, validator, graph builder, fragment engine, pack composer, suggestion engine, and exporter for XanaNode substrates.",
+      "consumes": [
+        "protocol schemas",
+        "node files",
+        "relationship files",
+        "substrate manifests",
+        "substrate packs"
+      ],
+      "related_protocol_artifacts": [
+        "../schemas/substrate-manifest.schema.json",
+        "../schemas/substrate-node.schema.json",
+        "../schemas/substrate-relationships.schema.json",
+        "../schemas/xananode-node-types.v0.3.0.json",
+        "../schemas/xananode-relationship-types.v0.5.0.json"
+      ]
+    },
+    {
+      "name": "XanaNode Hugo Theme",
+      "type": "static-site-reference-implementation",
+      "status": "active",
+      "url": "https://github.com/kingc95/xananode-hugo",
+      "repository": "kingc95/xananode-hugo",
+      "protocol_role": "reference-renderer",
+      "description": "Static-site renderer and graph viewer for XanaNode-compatible substrates.",
+      "consumes": [
+        "substrate manifests",
+        "node files",
+        "relationship files",
+        "schema registries"
+      ],
+      "related_protocol_artifacts": [
+        "../schemas/substrate-manifest.schema.json",
+        "../schemas/substrate-node.schema.json",
+        "../schemas/substrate-relationships.schema.json",
+        "../examples/minimal-substrate/"
+      ]
+    },
+    {
+      "name": "XanaNode Workspace",
+      "type": "workspace-engine",
+      "status": "active",
+      "url": "https://github.com/kingc95/XanaNode-Workspace",
+      "repository": "kingc95/XanaNode-Workspace",
+      "protocol_role": "local-first-workspace-layer",
+      "description": "Local-first workspace engine for creating, opening, validating, building, importing, and snapshotting XanaNode substrates.",
+      "consumes": [
+        "Core SDK APIs",
+        "substrate manifests",
+        "node files",
+        "relationship files",
+        "author profiles"
+      ],
+      "related_protocol_artifacts": [
+        "../schemas/author-profile.schema.json",
+        "../schemas/substrate-manifest.schema.json",
+        "../schemas/substrate-node.schema.json"
+      ]
+    },
+    {
+      "name": "XanaNode Studio",
+      "type": "desktop-authoring-application",
+      "status": "active",
+      "url": "https://github.com/kingc95/XanaNode-Studio",
+      "repository": "kingc95/XanaNode-Studio",
+      "protocol_role": "desktop-authoring-interface",
+      "description": "Electron authoring workbench for creating nodes, editing protocol metadata, navigating graph context, and previewing projection layers.",
+      "consumes": [
+        "Workspace APIs",
+        "Core SDK APIs",
+        "protocol registries",
+        "protocol branding"
+      ],
+      "related_protocol_artifacts": [
+        "../schemas/xananode-node-types.v0.3.0.json",
+        "../schemas/xananode-relationship-types.v0.5.0.json",
+        "../media/images/xananode-icon.svg"
+      ]
+    }
+  ]
+}

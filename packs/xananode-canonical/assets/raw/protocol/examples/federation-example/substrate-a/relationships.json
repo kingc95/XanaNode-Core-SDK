@@ -1,0 +1,18 @@
+{
+  "relationships": [
+    {
+      "id": "example.researcher_a:rel/knowledge-substrate-possible-match-memory-substrate",
+      "source": "example.researcher_a:concept/knowledge-substrate",
+      "target": "example.researcher_b:concept/memory-substrate",
+      "type": "possible_match",
+      "weight": 3,
+      "visibility": "secondary",
+      "external": true,
+      "target_substrate": "example.researcher_b",
+      "asserted_by": "example.researcher_a:person/researcher-a",
+      "asserted_at": "2026-01-01T00:00:00Z",
+      "confidence": "0.78",
+      "summary": "Researcher A marks Researcher B's memory-substrate concept as a possible match, not an automatic identity merge."
+    }
+  ]
+}

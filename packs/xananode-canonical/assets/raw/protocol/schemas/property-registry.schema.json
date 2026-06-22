@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/property-registry.schema.json",
+  "title": "XanaNode Property Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "version", "property_registry"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*$"
+    },
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "property_registry": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "category", "value_schema"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+          },
+          "label": { "type": "string" },
+          "description": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": [
+              "identity",
+              "time",
+              "space",
+              "quantity",
+              "money",
+              "classification",
+              "reference",
+              "epistemology",
+              "workflow",
+              "attention",
+              "communication"
+            ]
+          },
+          "aliases": {
+            "type": "array",
+            "items": { "type": "string" },
+            "uniqueItems": true
+          },
+          "applies_to": {
+            "type": "array",
+            "items": { "type": "string" },
+            "uniqueItems": true
+          },
+          "canonical_unit": { "type": "string" },
+          "unit_system": {
+            "type": "string",
+            "enum": ["SI", "ISO-4217", "ISO-8601", "WGS84", "none"]
+          },
+          "value_schema": {
+            "type": "object",
+            "description": "JSON Schema fragment for validating this property value."
+          },
+          "examples": {
+            "type": "array",
+            "items": true
+          }
+        }
+      }
+    }
+  }
+}

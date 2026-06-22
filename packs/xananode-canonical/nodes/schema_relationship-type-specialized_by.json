@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-specialized_by",
+  "title": "Specialized By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The specialized_by inverse relationship term derived from generalizes.",
+  "version": "0.5.0",
+  "registry_type": "specialized_by",
+  "registry_namespace": "xananode",
+  "category": "cognition",
+  "inverse": "generalizes",
+  "color": "#ddd6fe",
+  "inverse_color": "#7c3aed",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": "example.museum",
+  "name": "Museum Extension Substrate",
+  "description": "Example of a XanaNode-compatible substrate with local schema extensions.",
+  "version": "0.1.0",
+  "namespace": "example.museum",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingc95/xananode.git",
+    "default_branch": "main",
+    "path": "examples/custom-extension-substrate"
+  },
+  "schema_version": "xananode-core@0.5.0",
+  "license": "CC-BY-4.0",
+  "imports": [
+    "xananode:core"
+  ],
+  "extensions": [
+    "schemas/node-types.example.museum.json",
+    "schemas/relationship-types.example.museum.json"
+  ]
+}

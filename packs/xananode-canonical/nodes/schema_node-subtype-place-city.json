@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-place-city",
+  "title": "Place subtype: city",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "city is an allowed subtype of the place node type.",
+  "version": "0.3.0",
+  "registry_type": "city",
+  "registry_namespace": "xananode",
+  "parent_node_type": "place",
+  "relationships": []
+}
