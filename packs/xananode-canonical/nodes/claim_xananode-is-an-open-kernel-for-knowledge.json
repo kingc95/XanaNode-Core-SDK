@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:claim/xananode-is-an-open-kernel-for-knowledge",
+  "title": "XanaNode is an open kernel for knowledge",
+  "type": "claim",
+  "subtype": "comparative",
+  "status": "asserted",
+  "importance": 5,
+  "summary": "XanaNode should function as a shared substrate layer for knowledge the way Linux functions as a shared kernel layer for computing: open, reusable, and separable from any one end-user interface.",
+  "content": "The Linux comparison matters because it shifts XanaNode out of the category of one more application. The protocol, Core SDK, workspace behavior, fragment model, and federation rules are intended to become the shared plumbing underneath many projections rather than a single locked experience.\n\nThat is why the substrate must remain durable when a viewer changes. If the underlying knowledge survives the loss of one projection, the protocol is doing the job a kernel-like substrate layer is supposed to do.",
+  "relationships": []
+}

@@ -364,6 +364,56 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/christian-created-kernel-thought-draft",
+      "source": "xananode.canonical:person/christian-siefen",
+      "target": "xananode.canonical:source/xananode-kernel-for-human-thought-draft",
+      "type": "created",
+      "summary": "Christian Siefen authored the raw Linux-kernel comparison draft preserved in the canonical substrate.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/christian-created-kernel-thought-essay",
+      "source": "xananode.canonical:person/christian-siefen",
+      "target": "xananode.canonical:essay/xananode-as-a-kernel-for-human-thought",
+      "type": "created",
+      "summary": "Christian Siefen authored the canonical essay that reframes XanaNode as a kernel for knowledge.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/claim-copy-paste-defines-trifecta",
+      "source": "xananode.canonical:claim/copy-paste-breaks-lineage",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "defines",
+      "summary": "Broken lineage through duplication defines one part of the computing failure XanaNode is meant to address.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/claim-document-boundaries-defines-trifecta",
+      "source": "xananode.canonical:claim/documents-collapse-knowledge-structure",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "defines",
+      "summary": "Document-centric knowledge boundaries define one part of the computing failure XanaNode is meant to address.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/claim-local-first-defines-trifecta",
+      "source": "xananode.canonical:claim/local-first-without-federation-is-not-enough",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "defines",
+      "summary": "The lack of a federation protocol defines one part of the computing failure XanaNode is meant to address.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
       "id": "xananode.canonical:rel/code-schemas-licensed-under-apache",
       "source": "xananode.canonical:claim/schemas-validators-reference-code-apache-2-0",
       "target": "xananode.canonical:source/apache-2-0-license",
@@ -372,6 +422,26 @@
       "weight": 5,
       "visibility": "primary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/comparison-essay-investigates-trifecta",
+      "source": "xananode.canonical:essay/xananode-compared-to-networked-notes-tools",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "investigates",
+      "summary": "The comparison essay investigates the same computing failure pattern through contemporary note-linking tools.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/comparison-essay-related-to-xananode",
+      "source": "xananode.canonical:essay/xananode-compared-to-networked-notes-tools",
+      "target": "xananode.canonical:concept/xananode",
+      "type": "related_to",
+      "summary": "The comparison essay explains XanaNode by contrasting it with current networked notes tools.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
     },
     {
       "id": "xananode.canonical:rel/compatibility-claim-supported-by-spec",
@@ -554,6 +624,88 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/essay-kernel-thought-explains-xananode",
+      "source": "xananode.canonical:essay/xananode-as-a-kernel-for-human-thought",
+      "target": "xananode.canonical:concept/xananode",
+      "type": "explains",
+      "summary": "The essay explains XanaNode through the Linux kernel analogy.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/essay-kernel-thought-investigates-trifecta",
+      "source": "xananode.canonical:essay/xananode-as-a-kernel-for-human-thought",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "investigates",
+      "summary": "The essay investigates the same three-part failure from the angle of open infrastructure.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/essay-kernel-thought-related-to-projection-layer",
+      "source": "xananode.canonical:essay/xananode-as-a-kernel-for-human-thought",
+      "target": "xananode.canonical:concept/substrate-projection-layer",
+      "type": "related_to",
+      "summary": "The essay links the Linux distribution model to XanaNode projection layers.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/essay-kernel-thought-transcludes-fragment-0001",
+      "source": "xananode.canonical:essay/xananode-as-a-kernel-for-human-thought",
+      "target": "xananode.canonical:fragment/xananode-kernel-thought-0001",
+      "type": "transcludes",
+      "summary": "The essay transcludes the shared-plumbing fragment by stable reference.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_by": "xananode.canonical:person/christian-siefen",
+      "asserted_at": "2026-06-22T00:00:00.000Z",
+      "confidence": "high",
+      "tumbler": "xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0001@sha256:xananode-kernel-thought-fragment-0001"
+    },
+    {
+      "id": "xananode.canonical:rel/essay-kernel-thought-transcludes-fragment-0002",
+      "source": "xananode.canonical:essay/xananode-as-a-kernel-for-human-thought",
+      "target": "xananode.canonical:fragment/xananode-kernel-thought-0002",
+      "type": "transcludes",
+      "summary": "The essay transcludes the distributions-versus-projections fragment by stable reference.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_by": "xananode.canonical:person/christian-siefen",
+      "asserted_at": "2026-06-22T00:00:00.000Z",
+      "confidence": "high",
+      "tumbler": "xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0002@sha256:xananode-kernel-thought-fragment-0002"
+    },
+    {
+      "id": "xananode.canonical:rel/essay-kernel-thought-transcludes-fragment-0003",
+      "source": "xananode.canonical:essay/xananode-as-a-kernel-for-human-thought",
+      "target": "xananode.canonical:fragment/xananode-kernel-thought-0003",
+      "type": "transcludes",
+      "summary": "The essay transcludes the tool-hostage fragment by stable reference.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_by": "xananode.canonical:person/christian-siefen",
+      "asserted_at": "2026-06-22T00:00:00.000Z",
+      "confidence": "high",
+      "tumbler": "xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0003@sha256:xananode-kernel-thought-fragment-0003"
+    },
+    {
+      "id": "xananode.canonical:rel/essay-kernel-thought-transcludes-fragment-0004",
+      "source": "xananode.canonical:essay/xananode-as-a-kernel-for-human-thought",
+      "target": "xananode.canonical:fragment/xananode-kernel-thought-0004",
+      "type": "transcludes",
+      "summary": "The essay transcludes the federation fragment by stable reference.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_by": "xananode.canonical:person/christian-siefen",
+      "asserted_at": "2026-06-22T00:00:00.000Z",
+      "confidence": "high",
+      "tumbler": "xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0004@sha256:xananode-kernel-thought-fragment-0004"
+    },
+    {
       "id": "xananode.canonical:rel/github-profile-includes-core-repo",
       "source": "xananode.canonical:source/github-profile",
       "target": "xananode.canonical:source/repository-kingc95-xananode-core-sdk",
@@ -652,6 +804,90 @@
       "weight": 4,
       "visibility": "secondary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/kernel-fragment-0001-derived-from-source",
+      "source": "xananode.canonical:fragment/xananode-kernel-thought-0001",
+      "target": "xananode.canonical:source/xananode-kernel-for-human-thought-draft",
+      "type": "derived_from",
+      "summary": "Fragment 0001 is derived from the authored kernel comparison draft.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z",
+      "tumbler": "xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0001@sha256:xananode-kernel-thought-fragment-0001"
+    },
+    {
+      "id": "xananode.canonical:rel/kernel-fragment-0001-supports-open-kernel-claim",
+      "source": "xananode.canonical:fragment/xananode-kernel-thought-0001",
+      "target": "xananode.canonical:claim/xananode-is-an-open-kernel-for-knowledge",
+      "type": "supports",
+      "summary": "The shared-plumbing fragment supports the claim that XanaNode should function as an open kernel for knowledge.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/kernel-fragment-0002-derived-from-source",
+      "source": "xananode.canonical:fragment/xananode-kernel-thought-0002",
+      "target": "xananode.canonical:source/xananode-kernel-for-human-thought-draft",
+      "type": "derived_from",
+      "summary": "Fragment 0002 is derived from the authored kernel comparison draft.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z",
+      "tumbler": "xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0002@sha256:xananode-kernel-thought-fragment-0002"
+    },
+    {
+      "id": "xananode.canonical:rel/kernel-fragment-0002-supports-projection-lenses-claim",
+      "source": "xananode.canonical:fragment/xananode-kernel-thought-0002",
+      "target": "xananode.canonical:claim/projections-are-lenses-over-a-stable-substrate",
+      "type": "supports",
+      "summary": "The distributions-versus-projections fragment supports the claim that projections are lenses over a stable substrate.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/kernel-fragment-0003-derived-from-source",
+      "source": "xananode.canonical:fragment/xananode-kernel-thought-0003",
+      "target": "xananode.canonical:source/xananode-kernel-for-human-thought-draft",
+      "type": "derived_from",
+      "summary": "Fragment 0003 is derived from the authored kernel comparison draft.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z",
+      "tumbler": "xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0003@sha256:xananode-kernel-thought-fragment-0003"
+    },
+    {
+      "id": "xananode.canonical:rel/kernel-fragment-0003-supports-local-first-federation-claim",
+      "source": "xananode.canonical:fragment/xananode-kernel-thought-0003",
+      "target": "xananode.canonical:claim/local-first-without-federation-is-not-enough",
+      "type": "supports",
+      "summary": "The tool-hostage fragment supports the claim that local-first alone is not enough without a federated protocol layer.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/kernel-fragment-0004-derived-from-source",
+      "source": "xananode.canonical:fragment/xananode-kernel-thought-0004",
+      "target": "xananode.canonical:source/xananode-kernel-for-human-thought-draft",
+      "type": "derived_from",
+      "summary": "Fragment 0004 is derived from the authored kernel comparison draft.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z",
+      "tumbler": "xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0004@sha256:xananode-kernel-thought-fragment-0004"
+    },
+    {
+      "id": "xananode.canonical:rel/kernel-fragment-0004-supports-open-kernel-claim",
+      "source": "xananode.canonical:fragment/xananode-kernel-thought-0004",
+      "target": "xananode.canonical:claim/xananode-is-an-open-kernel-for-knowledge",
+      "type": "supports",
+      "summary": "The federation fragment supports the claim that XanaNode should become an open substrate ecosystem rather than a single product.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
     },
     {
       "id": "xananode.canonical:rel/license-policy-defines-licensing",
@@ -3054,6 +3290,16 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/open-kernel-claim-defines-xananode",
+      "source": "xananode.canonical:claim/xananode-is-an-open-kernel-for-knowledge",
+      "target": "xananode.canonical:concept/xananode",
+      "type": "defines",
+      "summary": "The kernel analogy helps define what XanaNode is trying to become in the stack.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
       "id": "xananode.canonical:rel/open-license-includes-content-license",
       "source": "xananode.canonical:concept/open-license",
       "target": "xananode.canonical:concept/content-license",
@@ -3612,6 +3858,16 @@
       "weight": 4,
       "visibility": "secondary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/projection-lenses-claim-defines-projection-layer",
+      "source": "xananode.canonical:claim/projections-are-lenses-over-a-stable-substrate",
+      "target": "xananode.canonical:concept/substrate-projection-layer",
+      "type": "defines",
+      "summary": "The claim defines why a projection layer is a lens rather than the substrate itself.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
     },
     {
       "id": "xananode.canonical:rel/protocol-artifacts-enable-projection-layers",
@@ -21904,6 +22160,36 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/trifecta-has-claim-copy-paste",
+      "source": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "target": "xananode.canonical:claim/copy-paste-breaks-lineage",
+      "type": "has_claim",
+      "summary": "The trifecta concept includes the claim that copy and paste breaks lineage.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/trifecta-has-claim-document-boundaries",
+      "source": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "target": "xananode.canonical:claim/documents-collapse-knowledge-structure",
+      "type": "has_claim",
+      "summary": "The trifecta concept includes the claim that document boundaries collapse knowledge structure.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/trifecta-has-claim-local-first-alone",
+      "source": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "target": "xananode.canonical:claim/local-first-without-federation-is-not-enough",
+      "type": "has_claim",
+      "summary": "The trifecta concept includes the claim that local-first alone is not enough without a federation protocol.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
       "id": "xananode.canonical:rel/what-is-xananode-explains-xananode",
       "source": "xananode.canonical:essay/what-is-xananode",
       "target": "xananode.canonical:concept/xananode",
@@ -22074,6 +22360,26 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/xananode-has-claim-open-kernel",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:claim/xananode-is-an-open-kernel-for-knowledge",
+      "type": "has_claim",
+      "summary": "The XanaNode concept includes the claim that it should function as an open kernel for knowledge.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/xananode-has-claim-projection-lenses",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:claim/projections-are-lenses-over-a-stable-substrate",
+      "type": "has_claim",
+      "summary": "The XanaNode concept includes the claim that projections are lenses over a stable substrate.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
       "id": "xananode.canonical:rel/xananode-has-claim-relationships-preserve-knowledge",
       "source": "xananode.canonical:concept/xananode",
       "target": "xananode.canonical:claim/relationships-preserve-knowledge",
@@ -22144,6 +22450,16 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/xananode-related-to-trifecta",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "related_to",
+      "summary": "XanaNode is explicitly positioned as an answer to the trifecta of computing failure.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
       "id": "xananode.canonical:rel/xananode-studio-identifies-compatibility",
       "source": "xananode.canonical:project/xananode-studio",
       "target": "xananode.canonical:concept/compatibility-attribution",
@@ -22182,106 +22498,6 @@
       "weight": 4,
       "visibility": "secondary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/trifecta-has-claim-document-boundaries",
-      "source": "xananode.canonical:concept/trifecta-of-computing-failure",
-      "target": "xananode.canonical:claim/documents-collapse-knowledge-structure",
-      "type": "has_claim",
-      "summary": "The trifecta concept includes the claim that document boundaries collapse knowledge structure.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-22T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/trifecta-has-claim-copy-paste",
-      "source": "xananode.canonical:concept/trifecta-of-computing-failure",
-      "target": "xananode.canonical:claim/copy-paste-breaks-lineage",
-      "type": "has_claim",
-      "summary": "The trifecta concept includes the claim that copy and paste breaks lineage.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-22T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/trifecta-has-claim-local-first-alone",
-      "source": "xananode.canonical:concept/trifecta-of-computing-failure",
-      "target": "xananode.canonical:claim/local-first-without-federation-is-not-enough",
-      "type": "has_claim",
-      "summary": "The trifecta concept includes the claim that local-first alone is not enough without a federation protocol.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-22T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/claim-document-boundaries-defines-trifecta",
-      "source": "xananode.canonical:claim/documents-collapse-knowledge-structure",
-      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
-      "type": "defines",
-      "summary": "Document-centric knowledge boundaries define one part of the computing failure XanaNode is meant to address.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-22T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/claim-copy-paste-defines-trifecta",
-      "source": "xananode.canonical:claim/copy-paste-breaks-lineage",
-      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
-      "type": "defines",
-      "summary": "Broken lineage through duplication defines one part of the computing failure XanaNode is meant to address.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-22T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/claim-local-first-defines-trifecta",
-      "source": "xananode.canonical:claim/local-first-without-federation-is-not-enough",
-      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
-      "type": "defines",
-      "summary": "The lack of a federation protocol defines one part of the computing failure XanaNode is meant to address.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-22T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/xananode-related-to-trifecta",
-      "source": "xananode.canonical:concept/xananode",
-      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
-      "type": "related_to",
-      "summary": "XanaNode is explicitly positioned as an answer to the trifecta of computing failure.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-22T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/question-why-xananode-investigates-trifecta",
-      "source": "xananode.canonical:question/why-does-xananode-exist",
-      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
-      "type": "investigates",
-      "summary": "The question of why XanaNode exists investigates the three-part computing failure the protocol is meant to address.",
-      "weight": 5,
-      "visibility": "primary",
-      "asserted_at": "2026-06-22T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/comparison-essay-investigates-trifecta",
-      "source": "xananode.canonical:essay/xananode-compared-to-networked-notes-tools",
-      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
-      "type": "investigates",
-      "summary": "The comparison essay investigates the same computing failure pattern through contemporary note-linking tools.",
-      "weight": 4,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-22T00:00:00.000Z"
-    },
-    {
-      "id": "xananode.canonical:rel/comparison-essay-related-to-xananode",
-      "source": "xananode.canonical:essay/xananode-compared-to-networked-notes-tools",
-      "target": "xananode.canonical:concept/xananode",
-      "type": "related_to",
-      "summary": "The comparison essay explains XanaNode by contrasting it with current networked notes tools.",
-      "weight": 4,
-      "visibility": "secondary",
-      "asserted_at": "2026-06-22T00:00:00.000Z"
     }
   ]
 }

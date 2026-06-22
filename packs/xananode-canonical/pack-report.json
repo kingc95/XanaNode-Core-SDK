@@ -2,9 +2,45 @@
   "id": "xananode.canonical",
   "namespace": "xananode.canonical",
   "sources": [],
-  "nodes": 1049,
-  "relationships": 2213,
+  "nodes": 1062,
+  "relationships": 2243,
   "warnings": [
+    {
+      "kind": "duplicate_node_id",
+      "id": "xananode.canonical:essay/what-is-xananode",
+      "kept": "nodes.json",
+      "ignored": "nodes/essay_what-is-xananode.json"
+    },
+    {
+      "kind": "duplicate_node_id",
+      "id": "xananode.canonical:question/why-does-xananode-exist",
+      "kept": "nodes.json",
+      "ignored": "nodes/question_why-does-xananode-exist.json"
+    },
+    {
+      "kind": "duplicate_node_id",
+      "id": "xananode.canonical:essay/what-is-xananode",
+      "kept": "nodes/essay_what-is-xananode.json",
+      "ignored": "substrate-bundle.json"
+    },
+    {
+      "kind": "duplicate_node_id",
+      "id": "xananode.canonical:question/why-does-xananode-exist",
+      "kept": "nodes/question_why-does-xananode-exist.json",
+      "ignored": "substrate-bundle.json"
+    },
+    {
+      "kind": "duplicate_node_id",
+      "id": "xananode.canonical:essay/what-is-xananode",
+      "kept": "nodes/essay_what-is-xananode.json",
+      "ignored": "substrate-bundle.jsonl"
+    },
+    {
+      "kind": "duplicate_node_id",
+      "id": "xananode.canonical:question/why-does-xananode-exist",
+      "kept": "nodes/question_why-does-xananode-exist.json",
+      "ignored": "substrate-bundle.jsonl"
+    },
     {
       "kind": "unknown_node_type",
       "node": "example.museum:artifact/memex-illustration",
@@ -4858,13 +4894,13 @@
   "source_assets": [],
   "duplicate_assets": [],
   "asset_conflicts": [],
-  "generated_at": "2026-06-22T10:09:48.167Z",
+  "generated_at": "2026-06-22T10:33:27.001Z",
   "build_metadata": {
     "version": "0.1.0",
-    "git_commit": "73dfd084a0556af18a87294ff38582aecd4a2c5e",
+    "git_commit": "79fe4688d8dc354555740af6a24f708ca5bbc7ee",
     "git_branch": "main",
     "repository": "kingc95/XanaNode-Core-SDK",
-    "generated_at": "2026-06-22T10:09:48.167Z",
+    "generated_at": "2026-06-22T10:33:27.001Z",
     "built_by": "@xananode/core",
     "runtime": "node v24.16.0",
     "platform": "win32/x64",

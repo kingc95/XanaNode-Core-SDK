@@ -14,9 +14,9 @@
   "build_metadata": {
     "version": "0.1.0",
     "repository": "kingc95/XanaNode-Core-SDK",
-    "generated_at": "2026-06-22T10:09:48.006Z",
+    "generated_at": "2026-06-22T10:33:26.576Z",
     "built_by": "@xananode/core",
-    "git_commit": "73dfd084a0556af18a87294ff38582aecd4a2c5e",
+    "git_commit": "79fe4688d8dc354555740af6a24f708ca5bbc7ee",
     "git_branch": "main",
     "runtime": "node v24.16.0",
     "platform": "win32/x64",

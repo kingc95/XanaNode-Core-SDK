@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:claim/projections-are-lenses-over-a-stable-substrate",
+  "title": "Projections are lenses over a stable substrate",
+  "type": "claim",
+  "subtype": "definition",
+  "status": "asserted",
+  "importance": 5,
+  "summary": "Studio, Mobile, Hugo, and future tools are projections of the same substrate rather than separate competing sources of truth.",
+  "content": "A projection is the interface a person happens to use, not the canonical knowledge itself. The same substrate should be able to appear as a desktop workbench, a mobile capture tool, a static website, a printed booklet, or another compatible interface without rewriting the underlying node identities, relationships, fragments, or media.\n\nThis is why XanaNode separates the substrate from the projection layer. The lens can change. The knowledge should not have to start over.",
+  "relationships": []
+}
