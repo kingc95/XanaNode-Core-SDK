@@ -6,5 +6,6 @@
   "status": "asserted",
   "importance": 5,
   "summary": "Knowledge survives movement between tools when relationships carry meaning, evidence, authorship, and addressable context instead of collapsing into anonymous links.",
+  "content": "Relationships preserve knowledge because they carry the structure that explains why one thing matters to another. A claim is not equivalent to its source, a person is not equivalent to the work they authored, and a fragment is not equivalent to the whole document it came from.\n\nIf a system preserves only isolated notes or files, much of that meaning dissolves during copying, migration, summarization, or machine processing. When the typed relationships remain intact, the knowledge can still be inspected as a coherent structure with evidence, disagreement, provenance, lineage, and context.",
   "relationships": []
 }

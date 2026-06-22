@@ -4,7 +4,7 @@
   "type": "question",
   "subtype": "faq",
   "importance": 5,
-  "summary": "Yes. XanaNode has a protocol, Core SDK, Hugo projection, Workspace layer, and Studio authoring application that work together.",
-  "content": "XanaNode is not only a design idea. The current stack includes protocol schemas and governance rules, a Core SDK for validation and pack building, Hugo for static public projection, Workspace for local substrate handling, and Studio for desktop authoring. The pieces are versioned so a reader can trace what each part does and why it exists.",
+  "summary": "Yes. XanaNode has a protocol, Core SDK, Workspace layer, Studio authoring application, Mobile capture companion, and Hugo projection layer that work together.",
+  "content": "XanaNode is not only a design idea. The current stack includes protocol schemas and governance rules, a Core SDK for validation and pack building, Workspace for local substrate handling, Studio for desktop authoring, Mobile for capture-first substrate intake, and Hugo for static public projection. The pieces are versioned so a reader can trace what each part does and why it exists.",
   "relationships": []
 }

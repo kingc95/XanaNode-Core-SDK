@@ -9,6 +9,7 @@ export * from "./projection.js";
 export * from "./io.js";
 export * from "./validate.js";
 export * from "./suggestions.js";
+export * from "./intake.js";
 export * from "./packs.js";
 export * from "./build.js";
 export * from "./canonical-pack.js";

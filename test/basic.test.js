@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
-import { analyzeSubstrateIntake, buildBundledCanonicalPack, buildGraphProjection, buildSubstrate, createProjectionRegistry, loadSubstratePack, normalizePackReference, relationshipsFromProjectionNodes, writeCanonicalPack } from "../src/index.js";
+import { analyzeSubstrateIntake, analyzeTextIntake, buildBundledCanonicalPack, buildGraphProjection, buildSubstrate, createProjectionRegistry, loadSubstratePack, normalizePackReference, relationshipsFromProjectionNodes, writeCanonicalPack, writeSubstrateArtifacts } from "../src/index.js";
 
 test("builds bundled example substrate", async () => {
   const root = path.resolve("templates/basic");
@@ -125,6 +125,127 @@ test("analyzes incoming substrate packs for merge, relationship, link, and trans
   assert.ok(analysis.relationship_imports.some((item) => item.relationship === "incoming:rel/hyperland-context-xananode"));
   assert.ok(analysis.autolinks.some((item) => item.target === "incoming:publication/hyperland"));
   assert.ok(analysis.transclusions.some((item) => item.target_fragment === "example:fragment/hyperland-quote"));
+});
+
+test("applies autolink and transclusion suggestions during build when requested", async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "xananode-apply-suggestions-"));
+  try {
+    fs.writeFileSync(path.join(root, "substrate.json"), JSON.stringify({
+      id: "apply.test",
+      name: "Apply Test",
+      namespace: "apply.test",
+      version: "0.1.0",
+      repository: { type: "git", url: "local", default_branch: "main" }
+    }, null, 2));
+    fs.mkdirSync(path.join(root, "content", "nodes"), { recursive: true });
+    fs.writeFileSync(path.join(root, "content", "nodes", "target.md"), [
+      "---",
+      "title: Hyperland",
+      "type: publication",
+      "summary: A hypermedia documentary.",
+      "fragments:",
+      "  - id: lineage-quote",
+      "    label: Lineage Quote",
+      "    text: Douglas Adams make the missing lineage easier to see.",
+      "---",
+      "# Hyperland",
+      "",
+      "Douglas Adams make the missing lineage easier to see."
+    ].join("\n"));
+    fs.writeFileSync(path.join(root, "content", "nodes", "note.md"), [
+      "---",
+      "title: Missing Lineage Note",
+      "type: concept",
+      "summary: This summary is shorter.",
+      "---",
+      "# Missing Lineage Note",
+      "",
+      "Hyperland matters here.",
+      "",
+      "Douglas Adams make the missing lineage easier to see."
+    ].join("\n"));
+
+    const substrate = await buildSubstrate(root, { suggestionMode: "apply" });
+    const note = substrate.protocolNodes.find((node) => node.title === "Missing Lineage Note" && node.type === "concept");
+    assert.ok(note);
+    assert.match(note.body, /\[Hyperland\]\(hyperland\)/);
+    assert.match(note.body, /\{\{< xana ref="apply\.test:fragment\//);
+    assert.ok(substrate.applied_suggestions.length >= 2);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test("suggests transclusions from generated fragments when authored fragments are absent", async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "xananode-generated-fragments-"));
+  try {
+    fs.writeFileSync(path.join(root, "substrate.json"), JSON.stringify({
+      id: "generated.test",
+      name: "Generated Fragment Test",
+      namespace: "generated.test",
+      version: "0.1.0",
+      repository: { type: "git", url: "local", default_branch: "main" }
+    }, null, 2));
+    fs.mkdirSync(path.join(root, "content", "nodes"), { recursive: true });
+    fs.writeFileSync(path.join(root, "content", "nodes", "source.md"), [
+      "---",
+      "title: Semantic Route Health",
+      "type: concept",
+      "summary: A concept about route quality.",
+      "---",
+      "# Semantic Route Health",
+      "",
+      "Semantic route health measures whether a chain of reasoning stays coherent, reproducible, and structurally intact."
+    ].join("\n"));
+    fs.writeFileSync(path.join(root, "content", "nodes", "note.md"), [
+      "---",
+      "title: Route Health Note",
+      "type: essay",
+      "summary: A note about route health.",
+      "---",
+      "# Route Health Note",
+      "",
+      "Semantic route health measures whether a chain of reasoning stays coherent, reproducible, and structurally intact."
+    ].join("\n"));
+
+    const substrate = await buildSubstrate(root, { suggestions: true });
+    assert.ok(substrate.suggestions.some((item) =>
+      item.kind === "possible_transclusion" &&
+      item.source === "generated.test:essay/route-health-note"
+    ));
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test("analyzes imported text for summary, likely type, mentions, and transclusions", () => {
+  const nodes = [
+    {
+      id: "example:publication/hyperland",
+      protocolId: "example:publication/hyperland",
+      title: "Hyperland",
+      type: "publication",
+      data: {}
+    }
+  ];
+  const fragments = [
+    {
+      protocol_id: "example:fragment/route-health-0001",
+      source_node: "example:concept/semantic-route-health",
+      text: "Semantic route health measures whether a chain of reasoning stays coherent, reproducible, and structurally intact.",
+      generated: true
+    }
+  ];
+  const analysis = analyzeTextIntake(
+    "Hyperland shows why semantic route health matters. Semantic route health measures whether a chain of reasoning stays coherent, reproducible, and structurally intact.",
+    { nodes, fragments, title: "Imported Note" }
+  );
+
+  assert.equal(analysis.suggested_type, "source");
+  assert.ok(analysis.suggested_summary.includes("Hyperland"));
+  assert.ok(analysis.mention_relationships.some((item) => item.target === "example:publication/hyperland"));
+  assert.ok(analysis.link_suggestions.some((item) => item.target === "example:publication/hyperland"));
+  assert.ok(analysis.transclusion_suggestions.some((item) => item.target_fragment === "example:fragment/route-health-0001"));
 });
 
 test("keeps protocol vocabulary twins out of noisy autolink and self-merge suggestions", () => {
@@ -279,6 +400,95 @@ test("loads substrate packs from substrate-bundle.json and substrate-bundle.json
     assert.equal(jsonlPack.manifest?.namespace, "example.bundle");
     assert.equal(jsonlPack.nodes.length, 2);
     assert.equal(jsonlPack.relationships.length, 1);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test("single-file bundle exports preserve node content under the content field", async () => {
+  const root = fs.mkdtempSync(path.join(process.cwd(), ".tmp-bundle-content-"));
+  const outDir = path.join(root, "dist");
+  try {
+    fs.writeFileSync(path.join(root, "substrate.json"), JSON.stringify({
+      id: "bundle.test",
+      name: "Bundle Test",
+      namespace: "bundle.test",
+      version: "0.1.0",
+      repository: { type: "git", url: "local", default_branch: "main" }
+    }, null, 2));
+    fs.writeFileSync(path.join(root, "nodes.json"), JSON.stringify({
+      nodes: [
+        {
+          id: "bundle.test:essay/full-export",
+          title: "Full Export",
+          type: "essay",
+          summary: "A node with real authored content.",
+          content: "This authored body must survive in bundle.json and bundle.jsonl."
+        }
+      ]
+    }, null, 2));
+    fs.writeFileSync(path.join(root, "relationships.json"), JSON.stringify({ relationships: [] }, null, 2));
+
+    await writeSubstrateArtifacts(root, outDir, { bundleJson: true, bundleJsonl: true });
+
+    const bundle = JSON.parse(fs.readFileSync(path.join(outDir, "substrate-bundle.json"), "utf8"));
+    assert.equal(bundle.nodes[0].content, "This authored body must survive in bundle.json and bundle.jsonl.");
+
+    const jsonlNodeLine = fs.readFileSync(path.join(outDir, "substrate-bundle.jsonl"), "utf8")
+      .trim()
+      .split("\n")
+      .map((line) => JSON.parse(line))
+      .find((entry) => entry.record_type === "node");
+    assert.equal(jsonlNodeLine.node.content, "This authored body must survive in bundle.json and bundle.jsonl.");
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test("builds JSON-authored substrates from nodes.json and relationships.json", async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "xananode-json-substrate-"));
+  try {
+    fs.writeFileSync(path.join(root, "substrate.json"), JSON.stringify({
+      id: "json.test",
+      name: "JSON Test",
+      namespace: "json.test",
+      version: "0.1.0",
+      repository: { type: "git", url: "local", default_branch: "main" }
+    }, null, 2));
+    fs.writeFileSync(path.join(root, "nodes.json"), JSON.stringify({
+      nodes: [
+        {
+          id: "json.test:trail/start-here",
+          title: "Start Here",
+          type: "trail",
+          summary: "A starter trail.",
+          content: "Follow the trail."
+        },
+        {
+          id: "json.test:item/example",
+          title: "Example",
+          type: "item",
+          summary: "An example node.",
+          content: "This node exists in JSON form."
+        }
+      ]
+    }, null, 2));
+    fs.writeFileSync(path.join(root, "relationships.json"), JSON.stringify({
+      relationships: [
+        {
+          id: "json.test:rel/start-here-starts-with-example",
+          source: "json.test:trail/start-here",
+          target: "json.test:item/example",
+          type: "starts_with",
+          summary: "The trail starts with the example node."
+        }
+      ]
+    }, null, 2));
+
+    const substrate = await buildSubstrate(root);
+    assert.equal(substrate.protocolNodes.filter((node) => node.type !== "fragment").length, 2);
+    assert.ok(substrate.relationships.some((relationship) => relationship.id === "json.test:rel/start-here-starts-with-example"));
+    assert.equal(substrate.validation.valid, true);
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }

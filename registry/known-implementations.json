@@ -101,6 +101,29 @@
         "../schemas/xananode-relationship-types.v0.5.0.json",
         "../media/images/xananode-icon.svg"
       ]
+    },
+    {
+      "name": "XanaNode Mobile",
+      "type": "mobile-capture-companion",
+      "status": "active",
+      "url": "https://github.com/kingc95/XanaNode-Mobile",
+      "repository": "kingc95/XanaNode-Mobile",
+      "protocol_role": "mobile-capture-interface",
+      "description": "Android capture companion for quick substrate intake, field notes, media capture, file import, URL import, QR intake, and portable .substrate handoff.",
+      "consumes": [
+        "Workspace APIs",
+        "Core SDK APIs",
+        "protocol registries",
+        "protocol branding",
+        ".substrate bundles"
+      ],
+      "related_protocol_artifacts": [
+        "../schemas/author-profile.schema.json",
+        "../schemas/substrate-manifest.schema.json",
+        "../schemas/substrate-node.schema.json",
+        "../schemas/substrate-relationships.schema.json",
+        "../media/images/xananode-icon.svg"
+      ]
     }
   ]
 }

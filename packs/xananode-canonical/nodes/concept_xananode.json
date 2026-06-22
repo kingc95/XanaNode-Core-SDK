@@ -4,7 +4,8 @@
   "type": "concept",
   "subtype": "protocol",
   "importance": 5,
-  "summary": "A protocol for independently authored knowledge substrates that preserve relationships, provenance, lineage, disagreement, and addressable fragments.",
+  "summary": "A protocol for independently authored knowledge substrates that preserve relationships, provenance, lineage, disagreement, and addressable fragments so knowledge can move across tools and media without losing its structure.",
+  "content": "XanaNode is a protocol for independently authored knowledge substrates that preserve relationships, provenance, lineage, disagreement, and addressable fragments, so knowledge can move across tools and media without losing its structure.\n\nThe protocol does not define a single viewer or one mandatory application. It defines the durable substrate shape, the validation rules, the registries, and the artifact contracts that let many tools read, compare, merge, and project the same knowledge.\n\nA XanaNode-compatible stack should be able to carry people, places, things, ideas, claims, questions, evidence, uncertainty, raw assets, and typed relationships in a form that survives transmission. That is why the protocol centers relationships, authorship, source lineage, and stable references instead of treating a document as the only meaningful unit.",
   "primary_media": "xananode.canonical:media/xananode-icon",
   "relationships": []
 }

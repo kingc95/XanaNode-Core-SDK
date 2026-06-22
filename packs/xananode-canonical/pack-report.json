@@ -2,8 +2,8 @@
   "id": "xananode.canonical",
   "namespace": "xananode.canonical",
   "sources": [],
-  "nodes": 1042,
-  "relationships": 2198,
+  "nodes": 1049,
+  "relationships": 2213,
   "warnings": [
     {
       "kind": "unknown_node_type",
@@ -1522,7 +1522,7 @@
       "node": "xananode.canonical:schema/known-implementations-registry",
       "source": "registry/known-implementations.json",
       "asset_path": "assets/raw/protocol/registry/known-implementations.json",
-      "content_id": "sha256:e233016a166e0ff27e45fc46dc706567dfb0814f747c6d9cbd549fc915bc56ae"
+      "content_id": "sha256:40fad1a6f4f139207a09fe8c98c74b734a6706a21352f8fa8180a139800d58dd"
     },
     {
       "node": "xananode.canonical:schema/namespace-registry",
@@ -1810,7 +1810,7 @@
       "node": "xananode.canonical:schema/protocol-artifact-registry-known-implementations.json",
       "source": "registry/known-implementations.json",
       "asset_path": "assets/raw/protocol/registry/known-implementations.json",
-      "content_id": "sha256:e233016a166e0ff27e45fc46dc706567dfb0814f747c6d9cbd549fc915bc56ae"
+      "content_id": "sha256:40fad1a6f4f139207a09fe8c98c74b734a6706a21352f8fa8180a139800d58dd"
     },
     {
       "node": "xananode.canonical:schema/protocol-artifact-registry-namespaces.json",
@@ -2152,7 +2152,7 @@
       "node": "xananode.canonical:source/protocol-artifact-readme.md",
       "source": "README.md",
       "asset_path": "assets/raw/protocol/README.md",
-      "content_id": "sha256:57ed7b2281714e35b301e5766a07993815fb00776981fa4e05abd52cfb34797f"
+      "content_id": "sha256:55ad8a45690d836e06e69f869a9e7987a4e87dded7cbdae65256e3522e6f3816"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-registry-readme.md",
@@ -3665,7 +3665,7 @@
     {
       "source": "README.md",
       "asset_path": "assets/raw/protocol/README.md",
-      "content_id": "sha256:57ed7b2281714e35b301e5766a07993815fb00776981fa4e05abd52cfb34797f"
+      "content_id": "sha256:55ad8a45690d836e06e69f869a9e7987a4e87dded7cbdae65256e3522e6f3816"
     },
     {
       "source": "registry/canonical-schemas.json",
@@ -3685,7 +3685,7 @@
     {
       "source": "registry/known-implementations.json",
       "asset_path": "assets/raw/protocol/registry/known-implementations.json",
-      "content_id": "sha256:e233016a166e0ff27e45fc46dc706567dfb0814f747c6d9cbd549fc915bc56ae"
+      "content_id": "sha256:40fad1a6f4f139207a09fe8c98c74b734a6706a21352f8fa8180a139800d58dd"
     },
     {
       "source": "registry/namespaces.json",
@@ -4858,13 +4858,13 @@
   "source_assets": [],
   "duplicate_assets": [],
   "asset_conflicts": [],
-  "generated_at": "2026-06-22T04:47:02.506Z",
+  "generated_at": "2026-06-22T10:09:48.167Z",
   "build_metadata": {
     "version": "0.1.0",
-    "git_commit": "cda2cd1b0d413408b35cf3495df11e18eb9a6a6d",
+    "git_commit": "73dfd084a0556af18a87294ff38582aecd4a2c5e",
     "git_branch": "main",
     "repository": "kingc95/XanaNode-Core-SDK",
-    "generated_at": "2026-06-22T04:47:02.506Z",
+    "generated_at": "2026-06-22T10:09:48.167Z",
     "built_by": "@xananode/core",
     "runtime": "node v24.16.0",
     "platform": "win32/x64",

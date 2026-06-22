@@ -3274,6 +3274,116 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/project-xananode-mobile-implements-concept-substrate-projection-layer",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:concept/substrate-projection-layer",
+      "type": "implements",
+      "summary": "XanaNode Mobile implements a XanaNode projection or tooling role.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-mobile-uses-schema-protocol-artifact-media-images-xananode-icon.svg-artifact-4",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:schema/protocol-artifact-media-images-xananode-icon.svg",
+      "type": "uses",
+      "summary": "XanaNode Mobile uses media/images/xananode-icon.svg.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-mobile-uses-schema-protocol-artifact-schemas-author-profile.schema.json-artifact-0",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:schema/protocol-artifact-schemas-author-profile.schema.json",
+      "type": "uses",
+      "summary": "XanaNode Mobile uses schemas/author-profile.schema.json.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-mobile-uses-schema-protocol-artifact-schemas-substrate-manifest.schema.json-artifact-1",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:schema/protocol-artifact-schemas-substrate-manifest.schema.json",
+      "type": "uses",
+      "summary": "XanaNode Mobile uses schemas/substrate-manifest.schema.json.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-mobile-uses-schema-protocol-artifact-schemas-substrate-node.schema.json-artifact-2",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:schema/protocol-artifact-schemas-substrate-node.schema.json",
+      "type": "uses",
+      "summary": "XanaNode Mobile uses schemas/substrate-node.schema.json.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-mobile-uses-schema-protocol-artifact-schemas-substrate-relationships.schema.json-artifact-3",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:schema/protocol-artifact-schemas-substrate-relationships.schema.json",
+      "type": "uses",
+      "summary": "XanaNode Mobile uses schemas/substrate-relationships.schema.json.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-mobile-uses-technology-xananode-mobile-component-.substrate-bundles-component-4",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:technology/xananode-mobile-component-.substrate-bundles",
+      "type": "uses",
+      "summary": "XanaNode Mobile uses .substrate bundles.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-mobile-uses-technology-xananode-mobile-component-core-sdk-apis-component-1",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:technology/xananode-mobile-component-core-sdk-apis",
+      "type": "uses",
+      "summary": "XanaNode Mobile uses Core SDK APIs.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-mobile-uses-technology-xananode-mobile-component-protocol-branding-component-3",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:technology/xananode-mobile-component-protocol-branding",
+      "type": "uses",
+      "summary": "XanaNode Mobile uses protocol branding.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-mobile-uses-technology-xananode-mobile-component-protocol-registries-component-2",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:technology/xananode-mobile-component-protocol-registries",
+      "type": "uses",
+      "summary": "XanaNode Mobile uses protocol registries.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/project-xananode-mobile-uses-technology-xananode-mobile-component-workspace-apis-component-0",
+      "source": "xananode.canonical:project/xananode-mobile",
+      "target": "xananode.canonical:technology/xananode-mobile-component-workspace-apis",
+      "type": "uses",
+      "summary": "XanaNode Mobile uses Workspace APIs.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
       "id": "xananode.canonical:rel/project-xananode-protocol-implements-concept-substrate-projection-layer",
       "source": "xananode.canonical:project/xananode-protocol",
       "target": "xananode.canonical:concept/substrate-projection-layer",
@@ -3794,11 +3904,21 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/question-how-do-i-use-xananode-myself-uses-project-xananode-mobile-faq-4",
+      "source": "xananode.canonical:question/how-do-i-use-xananode-myself",
+      "target": "xananode.canonical:project/xananode-mobile",
+      "type": "uses",
+      "summary": "Mobile is the field capture option.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
       "id": "xananode.canonical:rel/question-how-do-i-use-xananode-myself-uses-project-xananode-studio-faq-3",
       "source": "xananode.canonical:question/how-do-i-use-xananode-myself",
       "target": "xananode.canonical:project/xananode-studio",
       "type": "uses",
-      "summary": "Studio is the authoring option.",
+      "summary": "Studio is the desktop authoring option.",
       "weight": 4,
       "visibility": "secondary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
@@ -3869,6 +3989,16 @@
       "target": "xananode.canonical:project/xananode-hugo-theme",
       "type": "uses",
       "summary": "Hugo renders a public read-only projection.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/question-is-xananode-a-real-working-stack-uses-project-xananode-mobile-faq-5",
+      "source": "xananode.canonical:question/is-xananode-a-real-working-stack",
+      "target": "xananode.canonical:project/xananode-mobile",
+      "type": "uses",
+      "summary": "Mobile provides capture-first intake and portable substrate handoff.",
       "weight": 4,
       "visibility": "secondary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
@@ -6849,6 +6979,16 @@
       "target": "xananode.canonical:project/xananode-hugo-theme",
       "type": "contains",
       "summary": "The known implementations registry contains XanaNode Hugo Theme.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/schema-known-implementations-registry-contains-project-xananode-mobile",
+      "source": "xananode.canonical:schema/known-implementations-registry",
+      "target": "xananode.canonical:project/xananode-mobile",
+      "type": "contains",
+      "summary": "The known implementations registry contains XanaNode Mobile.",
       "weight": 5,
       "visibility": "primary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
@@ -21694,6 +21834,16 @@
       "asserted_at": "2026-06-19T00:00:00.000Z"
     },
     {
+      "id": "xananode.canonical:rel/source-repository-kingc95-xananode-mobile-documents-project-xananode-mobile",
+      "source": "xananode.canonical:source/repository-kingc95-xananode-mobile",
+      "target": "xananode.canonical:project/xananode-mobile",
+      "type": "documents",
+      "summary": "XanaNode Mobile is documented and versioned in its public repository.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
       "id": "xananode.canonical:rel/source-repository-kingc95-xananode-studio-documents-project-xananode-studio",
       "source": "xananode.canonical:source/repository-kingc95-xananode-studio",
       "target": "xananode.canonical:project/xananode-studio",
@@ -22032,6 +22182,106 @@
       "weight": 4,
       "visibility": "secondary",
       "asserted_at": "2026-06-19T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/trifecta-has-claim-document-boundaries",
+      "source": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "target": "xananode.canonical:claim/documents-collapse-knowledge-structure",
+      "type": "has_claim",
+      "summary": "The trifecta concept includes the claim that document boundaries collapse knowledge structure.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/trifecta-has-claim-copy-paste",
+      "source": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "target": "xananode.canonical:claim/copy-paste-breaks-lineage",
+      "type": "has_claim",
+      "summary": "The trifecta concept includes the claim that copy and paste breaks lineage.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/trifecta-has-claim-local-first-alone",
+      "source": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "target": "xananode.canonical:claim/local-first-without-federation-is-not-enough",
+      "type": "has_claim",
+      "summary": "The trifecta concept includes the claim that local-first alone is not enough without a federation protocol.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/claim-document-boundaries-defines-trifecta",
+      "source": "xananode.canonical:claim/documents-collapse-knowledge-structure",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "defines",
+      "summary": "Document-centric knowledge boundaries define one part of the computing failure XanaNode is meant to address.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/claim-copy-paste-defines-trifecta",
+      "source": "xananode.canonical:claim/copy-paste-breaks-lineage",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "defines",
+      "summary": "Broken lineage through duplication defines one part of the computing failure XanaNode is meant to address.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/claim-local-first-defines-trifecta",
+      "source": "xananode.canonical:claim/local-first-without-federation-is-not-enough",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "defines",
+      "summary": "The lack of a federation protocol defines one part of the computing failure XanaNode is meant to address.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/xananode-related-to-trifecta",
+      "source": "xananode.canonical:concept/xananode",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "related_to",
+      "summary": "XanaNode is explicitly positioned as an answer to the trifecta of computing failure.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/question-why-xananode-investigates-trifecta",
+      "source": "xananode.canonical:question/why-does-xananode-exist",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "investigates",
+      "summary": "The question of why XanaNode exists investigates the three-part computing failure the protocol is meant to address.",
+      "weight": 5,
+      "visibility": "primary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/comparison-essay-investigates-trifecta",
+      "source": "xananode.canonical:essay/xananode-compared-to-networked-notes-tools",
+      "target": "xananode.canonical:concept/trifecta-of-computing-failure",
+      "type": "investigates",
+      "summary": "The comparison essay investigates the same computing failure pattern through contemporary note-linking tools.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "id": "xananode.canonical:rel/comparison-essay-related-to-xananode",
+      "source": "xananode.canonical:essay/xananode-compared-to-networked-notes-tools",
+      "target": "xananode.canonical:concept/xananode",
+      "type": "related_to",
+      "summary": "The comparison essay explains XanaNode by contrasting it with current networked notes tools.",
+      "weight": 4,
+      "visibility": "secondary",
+      "asserted_at": "2026-06-22T00:00:00.000Z"
     }
   ]
 }

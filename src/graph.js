@@ -70,6 +70,7 @@ export function nodeToProtocolRecord(node, relationships = []) {
     type: node.type,
     facets: asArray(node.data?.facets),
     summary: node.summary,
+    content: node.body,
     importance: node.data?.importance || 3,
     trail_nodes: trailNodes.length ? trailNodes : undefined,
     trail_branches: trailBranches.length ? trailBranches : undefined,

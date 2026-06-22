@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:claim/documents-collapse-knowledge-structure",
+  "title": "Document boundaries collapse knowledge structure",
+  "type": "claim",
+  "subtype": "problem_statement",
+  "status": "asserted",
+  "importance": 5,
+  "summary": "When a document is treated as the main unit of knowledge, many of the relationships that give meaning to the material become implicit, hidden, or lost.",
+  "content": "A page, file, note, or database row can store information, but it does not automatically preserve why one idea supports another, where a quote came from, who disagreed, or what later changed. Those relationships usually live in a human reader's head or in conventions that a machine cannot reliably inspect.\n\nThat is why document-centric systems feel good for publication but weak for durable knowledge transfer. The information survives. The structure that made it useful often does not.",
+  "relationships": []
+}

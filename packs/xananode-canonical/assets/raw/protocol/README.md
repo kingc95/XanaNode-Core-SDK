@@ -4,13 +4,23 @@
 
 ## What is XanaNode?
 
-XanaNode is a protocol, ontology, and publishing architecture for building interoperable knowledge substrates.
+Short:
+
+Relationships preserve knowledge.
+
+Canonical:
+
+XanaNode is a protocol for independently authored knowledge substrates that preserve relationships, provenance, lineage, disagreement, and addressable fragments, so knowledge can move across tools and media without losing its structure.
+
+Expanded:
+
+XanaNode is a protocol for independently authoring, transmitting, and federating knowledge substrates that preserve relationships, provenance, lineage, disagreement, and addressable fragments, enabling durable human-to-machine knowledge transfer through many possible projection layers.
 
 Rather than treating documents as the primary unit of knowledge, XanaNode treats relationships as first-class entities and models knowledge as a connected network of people, concepts, claims, questions, hypotheses, problems, knowledge gaps, communications, responses, sources, events, media, organizations, technologies, and their relationships.
 
 XanaNode is designed to be both human-readable and machine-interpretable.
 
-XanaNode is also a working software stack. The protocol, Core SDK, Workspace engine, Hugo projection layer, Studio workbench, and canonical XanaNode.com substrate are designed to run together and to describe themselves as XanaNode data. The canonical substrate is not only documentation about the project; it is a living example of the protocol carrying its own schemas, registries, media assets, source snapshots, project history, implementation links, build metadata, governance notes, and unresolved work.
+XanaNode is also a working software stack. The protocol, Core SDK, Workspace engine, Studio workbench, Mobile capture companion, Hugo projection layer, and canonical XanaNode.com substrate are designed to run together and to describe themselves as XanaNode data. The canonical substrate is not only documentation about the project; it is a living example of the protocol carrying its own schemas, registries, media assets, source snapshots, project history, implementation links, build metadata, governance notes, and unresolved work.
 
 That recursive quality is intentional. If XanaNode says relationships preserve knowledge, the XanaNode project itself must preserve the relationships that explain XanaNode: why files exist, where schemas came from, which tools consume them, what changed, what is pending, and how the public website was produced.
 
@@ -29,7 +39,7 @@ It is not a graph database.
 
 It is not a note-taking application.
 
-It is a framework for preserving, navigating, and federating knowledge across independently authored knowledge substrates.
+It is a protocol for knowledge substrates and the rules that let them move, federate, and be projected without losing their structure.
 
 ---
 
@@ -258,6 +268,7 @@ The protocol repository is implementation-neutral. It defines the canonical sche
 * [XanaNode Workspace](https://github.com/kingc95/XanaNode-Workspace) is the local-first workspace engine used by Studio, CLIs, and editor integrations. It includes Core SDK as `vendor/xananode-core`.
 * [XanaNode Hugo Theme](https://github.com/kingc95/XanaNode-Hugo) is the static-site renderer and graph viewer for XanaNode-compatible substrates.
 * [XanaNode Studio](https://github.com/kingc95/XanaNode-Studio) is the desktop authoring workbench. It includes Hugo and Workspace as submodules.
+* [XanaNode Mobile](https://github.com/kingc95/XanaNode-Mobile) is the Android capture companion for field intake, media capture, quick notes, portable `.substrate` handoff, and later federation back into the rest of the stack.
 
 The intended dependency chain is:
 
@@ -266,6 +277,7 @@ xananode protocol
   -> XanaNode-Core-SDK
     -> XanaNode-Workspace
       -> XanaNode-Studio
+      -> XanaNode-Mobile
 
 XanaNode-Hugo consumes the protocol artifacts as the published/static preview renderer.
 ```
@@ -290,6 +302,7 @@ Protocol defines the rules
 Core reads, validates, analyzes, and exports substrates
 Workspace manages substrate folders, registry targets, working copies, and .substrate bundles
 Studio uses Workspace/Core for authoring and federation UX
+Mobile uses Workspace/Core for capture-first intake and portable handoff
 Hugo uses Core to validate and mount substrate sources, then projects them as a static site
 ```
 
@@ -301,7 +314,7 @@ The protocol registry can list known federation targets. Official tools should p
 
 ### Is this a real working stack?
 
-Yes. XanaNode is not just a schema set. The protocol, Core SDK, Workspace engine, Studio authoring tool, Hugo projection layer, and canonical XanaNode substrate are meant to run together right now.
+Yes. XanaNode is not just a schema set. The protocol, Core SDK, Workspace engine, Studio authoring tool, Mobile capture companion, Hugo projection layer, and canonical XanaNode substrate are meant to run together right now.
 
 ### What is a `.substrate` file?
 

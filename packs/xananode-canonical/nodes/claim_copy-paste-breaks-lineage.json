@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:claim/copy-paste-breaks-lineage",
+  "title": "Copy and paste breaks lineage",
+  "type": "claim",
+  "subtype": "problem_statement",
+  "status": "asserted",
+  "importance": 5,
+  "summary": "When knowledge is reused by duplication instead of reference, provenance, attribution, surrounding context, and revision history become harder to preserve.",
+  "content": "Ordinary reuse usually means making another anonymous copy. Once a quote, summary, screenshot, or excerpt is pasted into a new document, the connection back to the exact source version often becomes social rather than structural.\n\nXanaNode treats that break as a core failure mode. Addressable fragments, typed relationships, and transclusion let a later projection show not only the reused passage, but where it came from, which version it came from, and how it is being used now.",
+  "relationships": []
+}

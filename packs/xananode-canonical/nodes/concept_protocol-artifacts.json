@@ -4,5 +4,6 @@
   "type": "concept",
   "importance": 5,
   "summary": "The portable JSON files, schemas, fragments, reports, and media references that allow tools to validate, compare, mount, import, merge, and render substrates.",
+  "content": "Protocol artifacts are the portable files that make a XanaNode substrate inspectable by both people and machines. They include the manifest, node records, relationship lists, fragments, validation reports, suggestions, registries, media references, and any other standardized outputs the protocol defines.\n\nThese artifacts matter because tools should not need private in-memory state or one specific application in order to understand a substrate. If the artifacts are present and valid, another compatible tool should be able to open the substrate, validate it, compare it, federate it, or project it.\n\nWhen the protocol stack is working properly, the artifacts are not a side effect. They are part of the knowledge being preserved and transmitted.",
   "relationships": []
 }

@@ -5,5 +5,6 @@
   "subtype": "frame",
   "importance": 5,
   "summary": "The graph-shaped structure that lets information remain understandable across time by making claims, sources, media, fragments, and relationships explicit.",
+  "content": "A knowledge substrate is not the same thing as a pile of information. It is the structure that makes information navigable, reviewable, and preservable over time.\n\nIn XanaNode, a substrate keeps nodes, relationships, raw assets, fragments, provenance, and authorship together so meaning does not disappear when the material moves between tools or formats. The same facts arranged through different relationships can produce very different explanatory power, which is why the structure itself matters.\n\nA substrate can be authored locally, transmitted as a portable bundle, mounted from another source, or projected into a site, app, archive, or physical medium. The substrate is the underlying knowledge; projections are only lenses over it.",
   "relationships": []
 }

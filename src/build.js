@@ -1,17 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
-import { loadManifest, loadMarkdownNodes, writeJson } from "./io.js";
+import { loadJsonNodes, loadJsonRelationships, loadManifest, loadMarkdownNodes, writeJson } from "./io.js";
 import { buildFragments, findXanaReferences } from "./fragments.js";
 import { relationshipsFromNode, normalizeRelationship, nodeToProtocolRecord } from "./graph.js";
 import { omitUndefined, relationshipIdFor } from "./ids.js";
-import { buildReviewSuggestions } from "./suggestions.js";
+import { applySuggestionActions, buildReviewSuggestions } from "./suggestions.js";
 import { validateSubstrateArtifacts } from "./validate.js";
 
-export async function buildSubstrate(rootDir, options = {}) {
-  const manifest = loadManifest(rootDir, options.manifest || {});
-  const namespace = options.namespace || manifest.namespace || "local";
-  const nodes = await loadMarkdownNodes(rootDir, { ...options, namespace });
-
+function deriveSubstrateStructures(nodes, namespace, externalRelationships = []) {
   const fragmentGroups = new Map();
   const authoredFragmentNodes = [];
   const allFragments = [];
@@ -86,20 +82,59 @@ export async function buildSubstrate(rootDir, options = {}) {
     });
   }
 
-  const relationships = [...authoredRelationships, ...fragmentDerivedRelationships, ...transclusionRelationships];
+  const relationships = [
+    ...authoredRelationships,
+    ...externalRelationships.map((relationship, index) => normalizeRelationship(relationship, { namespace, index: authoredRelationships.length + index })),
+    ...fragmentDerivedRelationships,
+    ...transclusionRelationships
+  ];
   const protocolNodes = [
     ...nodes.map((node) => nodeToProtocolRecord(node, relationships)),
     ...authoredFragmentNodes
   ];
 
-  const suggestions = options.suggestions === false ? [] : buildReviewSuggestions(nodes, allFragments, options.suggestionOptions || {});
+  return {
+    fragmentGroups,
+    authoredFragmentNodes,
+    allFragments,
+    relationships,
+    protocolNodes
+  };
+}
+
+export async function buildSubstrate(rootDir, options = {}) {
+  const manifest = loadManifest(rootDir, options.manifest || {});
+  const namespace = options.namespace || manifest.namespace || "local";
+  const markdownNodes = await loadMarkdownNodes(rootDir, { ...options, namespace });
+  const jsonNodes = await loadJsonNodes(rootDir, { ...options, namespace });
+  const dedupedNodes = new Map();
+  for (const node of [...markdownNodes, ...jsonNodes]) {
+    const key = node.protocolId || node.protocol_id || node.id;
+    if (!key || dedupedNodes.has(key)) continue;
+    dedupedNodes.set(key, node);
+  }
+  let nodes = [...dedupedNodes.values()];
+  const externalRelationships = loadJsonRelationships(rootDir);
+  let derived = deriveSubstrateStructures(nodes, namespace, externalRelationships);
+  let suggestions = options.suggestions === false ? [] : buildReviewSuggestions(nodes, derived.allFragments, options.suggestionOptions || {});
+  let appliedSuggestions = [];
+
+  if ((options.suggestionMode || "review") === "apply" && suggestions.length) {
+    const applied = applySuggestionActions(nodes, suggestions, { mode: "apply" });
+    nodes = applied.nodes;
+    appliedSuggestions = applied.applied;
+    derived = deriveSubstrateStructures(nodes, namespace, externalRelationships);
+    suggestions = options.suggestions === false ? [] : buildReviewSuggestions(nodes, derived.allFragments, options.suggestionOptions || {});
+  }
+
   const substrate = {
     manifest,
     nodes,
-    protocolNodes,
-    relationships,
-    fragments: allFragments,
+    protocolNodes: derived.protocolNodes,
+    relationships: derived.relationships,
+    fragments: derived.allFragments,
     suggestions,
+    applied_suggestions: appliedSuggestions,
     namespace,
     generated_at: new Date().toISOString()
   };
@@ -180,13 +215,24 @@ export function filterSubstrateForSharing(substrate, options = {}) {
     ].filter(Boolean);
     return refs.every((ref) => !String(ref).includes(":") || allowedNodeIds.has(ref));
   });
+  const applied_suggestions = (substrate.applied_suggestions || []).filter((suggestion) => {
+    const refs = [
+      suggestion.source,
+      suggestion.target,
+      suggestion.node,
+      suggestion.target_fragment,
+      suggestion.source_node
+    ].filter(Boolean);
+    return refs.every((ref) => !String(ref).includes(":") || allowedNodeIds.has(ref));
+  });
 
   const filtered = {
     ...substrate,
     protocolNodes,
     relationships,
     fragments,
-    suggestions
+    suggestions,
+    applied_suggestions
   };
   filtered.validation = validateSubstrateArtifacts(filtered, options);
   return filtered;
@@ -208,6 +254,7 @@ export async function writeSubstrateArtifacts(rootDir, outDir, options = {}) {
   }
   writeJson(path.join(outDir, "xananode-fragments.json"), { fragments: substrate.fragments });
   writeJson(path.join(outDir, "xananode-suggestions.json"), { suggestions: substrate.suggestions });
+  writeJson(path.join(outDir, "xananode-applied-suggestions.json"), { suggestions: substrate.applied_suggestions || [] });
   writeJson(path.join(outDir, "validation.json"), substrate.validation);
   const bundle = {
     format: "xananode.substrate-bundle@0.1.0",
@@ -218,12 +265,14 @@ export async function writeSubstrateArtifacts(rootDir, outDir, options = {}) {
       relationships: substrate.relationships.length,
       fragments: substrate.fragments.length,
       suggestions: substrate.suggestions.length,
+      applied_suggestions: substrate.applied_suggestions?.length || 0,
       warnings: substrate.validation?.warnings?.length || 0
     },
     nodes: substrate.protocolNodes,
     relationships: substrate.relationships,
     fragments: substrate.fragments,
     suggestions: substrate.suggestions,
+    applied_suggestions: substrate.applied_suggestions || [],
     validation: substrate.validation
   };
   if (bundleJson) {
@@ -247,6 +296,10 @@ export async function writeSubstrateArtifacts(rootDir, outDir, options = {}) {
       JSON.stringify({
         record_type: "bundle_suggestions",
         suggestions: bundle.suggestions
+      }),
+      JSON.stringify({
+        record_type: "bundle_applied_suggestions",
+        suggestions: bundle.applied_suggestions
       }),
       JSON.stringify({
         record_type: "bundle_report",

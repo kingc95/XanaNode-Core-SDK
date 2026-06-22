@@ -54,6 +54,7 @@ export async function runCli(argv = process.argv) {
     .option("--include-drafts", "include draft nodes", false)
     .option("--include-private", "include nodes marked private by sharing policy", false)
     .option("--no-suggestions", "skip suggestion generation")
+    .option("--suggestions-mode <mode>", "review or apply", "review")
     .option("--no-split-artifacts", "skip substrate.json, relationships.json, and nodes/*.json")
     .option("--no-bundle-json", "skip substrate-bundle.json")
     .option("--bundle-jsonl", "also write substrate-bundle.jsonl", false)
@@ -63,6 +64,7 @@ export async function runCli(argv = process.argv) {
         includeDrafts: options.includeDrafts,
         includePrivate: options.includePrivate,
         suggestions: options.suggestions,
+        suggestionMode: options.suggestionsMode,
         splitArtifacts: options.splitArtifacts,
         bundleJson: options.bundleJson,
         bundleJsonl: options.bundleJsonl
@@ -73,6 +75,7 @@ export async function runCli(argv = process.argv) {
       console.log(`Relationships: ${substrate.relationships.length}`);
       console.log(`Fragments: ${substrate.fragments.length}`);
       console.log(`Suggestions: ${substrate.suggestions.length}`);
+      console.log(`Applied suggestions: ${substrate.applied_suggestions?.length || 0}`);
     });
 
   program.command("build-pack")
@@ -87,6 +90,7 @@ export async function runCli(argv = process.argv) {
     .option("--default-branch <branch>", "default Git branch recorded in substrate.json", "main")
     .option("--include-drafts", "include draft nodes", false)
     .option("--include-private", "include nodes marked private by sharing policy", false)
+    .option("--suggestions-mode <mode>", "review or apply", "review")
     .option("--no-split-artifacts", "skip substrate.json, nodes.json, relationships.json, and nodes/*.json")
     .option("--no-bundle-json", "skip substrate-bundle.json")
     .option("--bundle-jsonl", "also write substrate-bundle.jsonl", false)
@@ -103,6 +107,7 @@ export async function runCli(argv = process.argv) {
         defaultBranch: options.defaultBranch,
         includeDrafts: options.includeDrafts,
         includePrivate: options.includePrivate,
+        suggestionMode: options.suggestionsMode,
         splitArtifacts: options.splitArtifacts,
         bundleJson: options.bundleJson,
         bundleJsonl: options.bundleJsonl

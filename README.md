@@ -2,6 +2,10 @@
 
 `@xananode/core` is a renderer-independent reference implementation for the XanaNode protocol.
 
+Canonical protocol statement:
+
+XanaNode is a protocol for independently authored knowledge substrates that preserve relationships, provenance, lineage, disagreement, and addressable fragments, so knowledge can move across tools and media without losing its structure.
+
 It exists to keep protocol behavior out of any one presentation layer. Hugo, Studio, CLIs, AI agents, and future renderers should be able to use the same substrate parser, validator, graph builder, fragment engine, and exporter.
 
 This project is a XanaNode-compatible reference implementation. Canonical specification: `https://github.com/kingc95/XanaNode`. Reference code, schemas, and validators are licensed under `Apache-2.0`; protocol documentation is licensed separately under `CC-BY-4.0`.

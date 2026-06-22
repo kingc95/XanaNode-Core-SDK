@@ -1,5 +1,6 @@
 import { stripMarkdown, markdownProtectedRanges, positionInRanges, lineColumnFor } from "./markdown.js";
 import { uniqueStrings } from "./ids.js";
+import { createNodeRecord } from "./graph.js";
 
 function escapeRegExp(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -95,6 +96,7 @@ export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
     : nodeList;
   const nodeIds = new Set(targetNodes.map((node) => node.id));
   const maxSuggestionsPerNode = options.maxSuggestionsPerNode || 50;
+  const includeGeneratedTransclusions = options.includeGeneratedTransclusions !== false;
   const termsByTarget = targetNodes
     .filter((target) => autolinkTargetEnabled(target))
     .map((target) => ({ target, terms: termListForNode(target) }))
@@ -138,19 +140,27 @@ export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
   }
 
   for (const fragment of fragments) {
-    if (!fragment.text || fragment.generated) continue;
+    if (!fragment.text) continue;
+    if (fragment.generated && !includeGeneratedTransclusions) continue;
     for (const source of nodeList) {
       if (source.protocolId === fragment.source_node) continue;
-      const bodyText = stripMarkdown(source.body || "").toLowerCase();
+      const rawBody = String(source.body || "");
+      const bodyText = stripMarkdown(rawBody).toLowerCase();
       const fragmentText = String(fragment.text || "").toLowerCase();
       if (fragmentText.length >= 24 && bodyText.includes(fragmentText.slice(0, 80))) {
+        const rawIndex = rawBody.toLowerCase().indexOf(fragmentText);
         suggestions.push({
           kind: "possible_transclusion",
           source: source.protocolId || source.protocol_id || source.id,
+          source_local_id: source.id,
           target_fragment: fragment.protocol_id,
           source_node: fragment.source_node,
-          confidence: 0.72,
-          reason: "This node appears to quote or closely reuse an authored fragment.",
+          phrase: fragment.text,
+          position: rawIndex >= 0 ? { ...lineColumnFor(rawBody, rawIndex), index: rawIndex } : undefined,
+          confidence: fragment.generated ? 0.58 : 0.72,
+          reason: fragment.generated
+            ? "This node appears to reuse a repeated fragment that could be transcluded."
+            : "This node appears to quote or closely reuse an authored fragment.",
           action: {
             type: "insert_xana_shortcode",
             replacement: `{{< xana ref="${fragment.protocol_id}" >}}`
@@ -161,6 +171,103 @@ export function buildReviewSuggestions(nodes, fragments = [], options = {}) {
   }
 
   return dedupeLinkSuggestions(suggestions).sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
+}
+
+function replaceSlice(text, start, end, replacement) {
+  return `${text.slice(0, start)}${replacement}${text.slice(end)}`;
+}
+
+function applyLinkSuggestionToBody(body, suggestion) {
+  const source = String(body || "");
+  const phrase = String(suggestion.phrase || "");
+  const replacement = suggestion.action?.replacement;
+  const index = suggestion.position?.index;
+  if (!phrase || !replacement || !Number.isInteger(index) || index < 0) {
+    return { changed: false, body: source };
+  }
+  const ranges = markdownProtectedRanges(source);
+  if (positionInRanges(index, ranges)) return { changed: false, body: source };
+  const existing = source.slice(index, index + phrase.length);
+  if (!existing || existing.toLowerCase() !== phrase.toLowerCase()) return { changed: false, body: source };
+  return {
+    changed: true,
+    body: replaceSlice(source, index, index + phrase.length, replacement)
+  };
+}
+
+function applyTransclusionSuggestionToBody(body, suggestion) {
+  const source = String(body || "");
+  const phrase = String(suggestion.phrase || "");
+  const replacement = suggestion.action?.replacement;
+  let index = suggestion.position?.index;
+  if (!phrase || !replacement) return { changed: false, body: source };
+  if (!Number.isInteger(index) || index < 0) index = source.toLowerCase().indexOf(phrase.toLowerCase());
+  if (!Number.isInteger(index) || index < 0) return { changed: false, body: source };
+  const ranges = markdownProtectedRanges(source);
+  if (positionInRanges(index, ranges)) return { changed: false, body: source };
+  const existing = source.slice(index, index + phrase.length);
+  if (!existing || existing.toLowerCase() !== phrase.toLowerCase()) return { changed: false, body: source };
+  return {
+    changed: true,
+    body: replaceSlice(source, index, index + phrase.length, replacement)
+  };
+}
+
+export function applySuggestionActions(nodes = [], suggestions = [], options = {}) {
+  const mode = options.mode || "apply";
+  if (mode !== "apply") return { nodes: Array.isArray(nodes) ? nodes : [], applied: [], skipped: suggestions };
+  const bySource = new Map();
+  for (const suggestion of suggestions) {
+    if (!suggestion?.source) continue;
+    if (!bySource.has(suggestion.source)) bySource.set(suggestion.source, []);
+    bySource.get(suggestion.source).push(suggestion);
+  }
+
+  const applied = [];
+  const skipped = [];
+  const nextNodes = (Array.isArray(nodes) ? nodes : []).map((node) => {
+    const sourceId = node.protocolId || node.protocol_id || node.id;
+    const sourceSuggestions = (bySource.get(sourceId) || [])
+      .slice()
+      .sort((left, right) => (right.position?.index ?? -1) - (left.position?.index ?? -1));
+    if (!sourceSuggestions.length) return node;
+
+    let body = String(node.body || "");
+    for (const suggestion of sourceSuggestions) {
+      let outcome = { changed: false, body };
+      if (suggestion.kind === "possible_link") {
+        outcome = applyLinkSuggestionToBody(body, suggestion);
+      } else if (suggestion.kind === "possible_transclusion") {
+        outcome = applyTransclusionSuggestionToBody(body, suggestion);
+      }
+      if (outcome.changed) {
+        body = outcome.body;
+        applied.push({
+          ...suggestion,
+          applied_at: new Date().toISOString()
+        });
+      } else {
+        skipped.push(suggestion);
+      }
+    }
+
+    if (body === String(node.body || "")) return node;
+    const data = { ...(node.data || {}), summary: node.summary || node.data?.summary || "" };
+    const rebuilt = createNodeRecord({
+      data,
+      body,
+      relativeFile: node.relativeFile || "",
+      namespace: node.namespace || String(sourceId).split(":")[0] || "local"
+    });
+    return {
+      ...node,
+      ...rebuilt,
+      fullPath: node.fullPath,
+      raw: node.raw
+    };
+  });
+
+  return { nodes: nextNodes, applied, skipped };
 }
 
 function protocolIdForNode(node) {

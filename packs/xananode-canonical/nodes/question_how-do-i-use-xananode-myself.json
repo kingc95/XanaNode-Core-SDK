@@ -4,7 +4,7 @@
   "type": "question",
   "subtype": "faq",
   "importance": 5,
-  "summary": "Start with a substrate, add nodes and typed relationships, validate it with Core, and project it with a renderer such as Hugo or Studio.",
-  "content": "A user can begin with a small question, claim, source, or trail. Core can initialize a substrate, validate nodes and relationships, generate review suggestions, and build packs. Hugo can mount or import those packs for a public website. Studio can open a pack as a local working copy so authors can edit without pretending they own someone else's substrate.",
+  "summary": "Start with a substrate, add nodes and typed relationships, validate it with Core, and project or capture it with tools such as Studio, Mobile, or Hugo.",
+  "content": "A user can begin with a small question, claim, source, or trail. Core can initialize a substrate, validate nodes and relationships, generate review suggestions, and build bundles. Mobile can capture notes, files, URLs, and field media into a compliant working substrate. Studio can open a substrate as a local working copy so authors can edit without pretending they own someone else's substrate. Hugo can mount or import validated substrate data for a public website.",
   "relationships": []
 }

@@ -3,6 +3,7 @@ import path from "node:path";
 import fg from "fast-glob";
 import { parseFrontMatter, stringifyFrontMatter } from "./frontmatter.js";
 import { createNodeRecord } from "./graph.js";
+import { contentIdFor, protocolIdFor, slugify } from "./ids.js";
 
 export function findManifest(rootDir) {
   const candidates = ["substrate.json", "xananode.json", "data/substrate.json", "static/substrate.json"];
@@ -49,6 +50,82 @@ export async function loadMarkdownNodes(rootDir, options = {}) {
     nodes.push(node);
   }
   return nodes;
+}
+
+function normalizeJsonNodeRecord(record = {}, relativeFile = "", namespace = "local") {
+  const protocolId = record.protocol_id || record.id || "";
+  const inferredNamespace = String(protocolId).includes(":") ? String(protocolId).split(":")[0] : namespace;
+  const localId = record.local_id
+    || (String(protocolId).includes("/") ? String(protocolId).split("/").at(-1) : "")
+    || record.slug
+    || record.title
+    || relativeFile.replace(/\.[^.]+$/, "");
+  const body = record.body || record.content || "";
+  const type = record.type || "concept";
+  const protocol = protocolId || protocolIdFor(slugify(localId, "node"), { ...record, type }, inferredNamespace);
+  const data = {
+    ...record,
+    id: slugify(localId, "node"),
+    type,
+    protocol_id: protocol
+  };
+  return {
+    id: data.id,
+    protocolId: protocol,
+    protocol_id: protocol,
+    content_id: record.content_id || contentIdFor(`${JSON.stringify(record)}\n${body}`),
+    version_id: record.version_id || record.content_id || contentIdFor(`${JSON.stringify(record)}\n${body}`),
+    namespace: inferredNamespace,
+    type,
+    title: record.title || data.id,
+    summary: record.summary || record.description || "",
+    data,
+    body,
+    relativeFile
+  };
+}
+
+export async function loadJsonNodes(rootDir, options = {}) {
+  const namespace = options.namespace || loadManifest(rootDir).namespace || "local";
+  const ignore = options.ignore || ["node_modules/**", "public/**", "dist/**", ".git/**"];
+  const files = await fg(["nodes/**/*.json"], { cwd: rootDir, ignore, onlyFiles: true, dot: false });
+  const nodes = [];
+  const seen = new Set();
+
+  for (const relativeFile of files.sort()) {
+    const fullPath = path.join(rootDir, relativeFile);
+    const record = JSON.parse(fs.readFileSync(fullPath, "utf8"));
+    if (!record || typeof record !== "object" || Array.isArray(record)) continue;
+    const node = normalizeJsonNodeRecord(record, relativeFile, namespace);
+    const key = node.protocolId || node.id;
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    node.fullPath = fullPath;
+    nodes.push(node);
+  }
+
+  if (nodes.length) return nodes;
+
+  const rootNodesPath = path.join(rootDir, "nodes.json");
+  if (!fs.existsSync(rootNodesPath)) return [];
+  const value = JSON.parse(fs.readFileSync(rootNodesPath, "utf8"));
+  const records = Array.isArray(value) ? value : Array.isArray(value?.nodes) ? value.nodes : [];
+  for (const [index, record] of records.entries()) {
+    if (!record || typeof record !== "object") continue;
+    const node = normalizeJsonNodeRecord(record, `nodes.json#${index + 1}`, namespace);
+    const key = node.protocolId || node.id;
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    nodes.push(node);
+  }
+  return nodes;
+}
+
+export function loadJsonRelationships(rootDir) {
+  const relationshipsPath = path.join(rootDir, "relationships.json");
+  if (!fs.existsSync(relationshipsPath)) return [];
+  const value = JSON.parse(fs.readFileSync(relationshipsPath, "utf8"));
+  return Array.isArray(value) ? value : Array.isArray(value?.relationships) ? value.relationships : [];
 }
 
 export function writeJson(filePath, value) {

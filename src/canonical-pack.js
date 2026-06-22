@@ -1153,29 +1153,31 @@ function buildCanonicalFaqNodes() {
       node: canonicalFaqNode(
       "is-xananode-a-real-working-stack",
       "Is XanaNode a real working stack?",
-      "Yes. XanaNode has a protocol, Core SDK, Hugo projection, Workspace layer, and Studio authoring application that work together.",
-      "XanaNode is not only a design idea. The current stack includes protocol schemas and governance rules, a Core SDK for validation and pack building, Hugo for static public projection, Workspace for local substrate handling, and Studio for desktop authoring. The pieces are versioned so a reader can trace what each part does and why it exists."
+      "Yes. XanaNode has a protocol, Core SDK, Workspace layer, Studio authoring application, Mobile capture companion, and Hugo projection layer that work together.",
+      "XanaNode is not only a design idea. The current stack includes protocol schemas and governance rules, a Core SDK for validation and pack building, Workspace for local substrate handling, Studio for desktop authoring, Mobile for capture-first substrate intake, and Hugo for static public projection. The pieces are versioned so a reader can trace what each part does and why it exists."
       ),
       links: [
         { type: "explains", target: "xananode.canonical:concept/xananode", summary: "This FAQ explains XanaNode as a working stack." },
         { type: "requires", target: "xananode.canonical:project/xananode-protocol", summary: "The protocol defines the shared rules." },
         { type: "requires", target: "xananode.canonical:project/xananode-core-sdk", summary: "Core validates and builds protocol artifacts." },
         { type: "uses", target: "xananode.canonical:project/xananode-hugo-theme", summary: "Hugo renders a public read-only projection." },
-        { type: "uses", target: "xananode.canonical:project/xananode-studio", summary: "Studio provides local-first authoring." }
+        { type: "uses", target: "xananode.canonical:project/xananode-studio", summary: "Studio provides local-first authoring." },
+        { type: "uses", target: "xananode.canonical:project/xananode-mobile", summary: "Mobile provides capture-first intake and portable substrate handoff." }
       ]
     },
     {
       node: canonicalFaqNode(
       "how-do-i-use-xananode-myself",
       "How do I use XanaNode myself?",
-      "Start with a substrate, add nodes and typed relationships, validate it with Core, and project it with a renderer such as Hugo or Studio.",
-      "A user can begin with a small question, claim, source, or trail. Core can initialize a substrate, validate nodes and relationships, generate review suggestions, and build packs. Hugo can mount or import those packs for a public website. Studio can open a pack as a local working copy so authors can edit without pretending they own someone else's substrate."
+      "Start with a substrate, add nodes and typed relationships, validate it with Core, and project or capture it with tools such as Studio, Mobile, or Hugo.",
+      "A user can begin with a small question, claim, source, or trail. Core can initialize a substrate, validate nodes and relationships, generate review suggestions, and build bundles. Mobile can capture notes, files, URLs, and field media into a compliant working substrate. Studio can open a substrate as a local working copy so authors can edit without pretending they own someone else's substrate. Hugo can mount or import validated substrate data for a public website."
       ),
       links: [
         { type: "explains", target: "xananode.canonical:concept/xananode", summary: "The FAQ explains how to begin using XanaNode." },
         { type: "requires", target: "xananode.canonical:project/xananode-core-sdk", summary: "Core provides validation and pack creation." },
         { type: "uses", target: "xananode.canonical:project/xananode-hugo-theme", summary: "Hugo is one projection option." },
-        { type: "uses", target: "xananode.canonical:project/xananode-studio", summary: "Studio is the authoring option." }
+        { type: "uses", target: "xananode.canonical:project/xananode-studio", summary: "Studio is the desktop authoring option." },
+        { type: "uses", target: "xananode.canonical:project/xananode-mobile", summary: "Mobile is the field capture option." }
       ]
     },
     {
@@ -1533,7 +1535,8 @@ export async function buildCanonicalPack(sourceRoots = [], options = {}) {
     }
     const substrate = await buildSubstrate(root, {
       includeDrafts: options.includeDrafts === true,
-      suggestions: false,
+      suggestions: options.suggestionMode === "apply" || options.suggestions === true,
+      suggestionMode: options.suggestionMode || "review",
       namespace: options.sourceNamespace
     });
     substrates.push(filterSubstrateForSharing(substrate, options));
