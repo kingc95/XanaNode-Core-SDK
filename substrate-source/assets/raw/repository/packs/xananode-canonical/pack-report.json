@@ -4875,20 +4875,20 @@
   "source_assets": [],
   "duplicate_assets": [],
   "asset_conflicts": [],
-  "generated_at": "2026-06-25T14:00:25.360Z",
+  "generated_at": "2026-06-25T14:22:39.906Z",
   "build_metadata": {
     "version": "0.1.0",
-    "git_commit": "",
-    "git_branch": "",
+    "git_commit": "b29928be095f94f10f92a365015a5a471d0ba825",
+    "git_branch": "main",
     "repository": "kingc95/XanaNode-Core-SDK",
-    "generated_at": "2026-06-25T14:00:25.360Z",
+    "generated_at": "2026-06-25T14:22:39.906Z",
     "built_by": "@xananode/core",
     "runtime": "node v24.16.0",
     "platform": "win32/x64",
     "dependencies": [
       {
         "name": "XanaNode Protocol",
-        "version": "",
+        "version": "9973dcf",
         "repository": "kingc95/XanaNode",
         "relationship": "uses"
       }

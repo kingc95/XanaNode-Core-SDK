@@ -15,7 +15,7 @@
   "content_id": "sha256:26142f8dfaafb9ffc05c051933a7c6a8b8566cee53867077db3d54f2c112073b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-discusses\",\n  \"title\": \"Discusses\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source discusses, explores, or analyzes the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"discusses\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"citation\",\n  \"inverse\": \"discussed_in\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#38bdf8\",\n  \"inverse_color\": \"#bae6fd\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-discusses.json",
     "method": "archive",
     "content_id": "sha256:26142f8dfaafb9ffc05c051933a7c6a8b8566cee53867077db3d54f2c112073b",

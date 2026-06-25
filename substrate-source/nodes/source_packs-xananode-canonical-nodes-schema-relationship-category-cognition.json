@@ -15,7 +15,7 @@
   "content_id": "sha256:85d530ba2f91b4ad8f37577a7d861ddb5e00495a1df15b891a9a8af09425b7c4",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-cognition\",\n  \"title\": \"Cognition Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The cognition category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"cognition\",\n  \"registry_namespace\": \"xananode\",\n  \"color\": \"#7c3aed\",\n  \"inverse_color\": \"#ddd6fe\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-cognition.json",
     "method": "archive",
     "content_id": "sha256:85d530ba2f91b4ad8f37577a7d861ddb5e00495a1df15b891a9a8af09425b7c4",

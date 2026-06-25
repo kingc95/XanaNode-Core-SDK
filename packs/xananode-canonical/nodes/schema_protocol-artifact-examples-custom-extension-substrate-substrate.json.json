@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/substrate.json",
   "content_id": "sha256:bf9f7c129d46186131cf5e9d8ea2d512cf290217b39455c7aece9ed69bb67101",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/custom-extension-substrate/substrate.json",
     "method": "archive",
     "content_id": "sha256:bf9f7c129d46186131cf5e9d8ea2d512cf290217b39455c7aece9ed69bb67101",

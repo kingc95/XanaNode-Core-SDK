@@ -15,7 +15,7 @@
   "content_id": "sha256:36413ad9daa273eb7b89073ede5e56867b20a2350efc11ed3eb6345967279ec6",
   "content": "{\n  \"id\": \"xananode.canonical:schema/protocol-artifact-governance\",\n  \"title\": \"Protocol Governance\",\n  \"type\": \"schema\",\n  \"subtype\": \"protocol_artifact_group\",\n  \"importance\": 3,\n  \"summary\": \"Protocol files under governance/ preserved inside the canonical substrate.\",\n  \"artifact_path\": \"governance/\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-governance.json",
     "method": "archive",
     "content_id": "sha256:36413ad9daa273eb7b89073ede5e56867b20a2350efc11ed3eb6345967279ec6",

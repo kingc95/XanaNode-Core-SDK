@@ -15,7 +15,7 @@
   "content_id": "sha256:b835694d863fd3fd068868319a18d9088750f8dda449cb60b144a7debc410a53",
   "content": "{\n  \"id\": \"xananode.canonical:schema/namespace-example.researcher_b\",\n  \"title\": \"Federation Example B Namespace\",\n  \"type\": \"schema\",\n  \"subtype\": \"namespace_record\",\n  \"importance\": 3,\n  \"summary\": \"Namespace used by the second independently authored federation example substrate.\",\n  \"registry_type\": \"example.researcher_b\",\n  \"schema_path\": \"\",\n  \"example_path\": \"../examples/federation-example/substrate-b/\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_namespace-example.researcher_b.json",
     "method": "archive",
     "content_id": "sha256:b835694d863fd3fd068868319a18d9088750f8dda449cb60b144a7debc410a53",

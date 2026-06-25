@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:ddb1ae31578b361924e0c5ee5df796adff7bab06ee25b14ab5fef161e506bd1f",
-  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schema-ro-crate-metadata\",\n  \"title\": \"Ro Crate Metadata Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"canonical_schema_record\",\n  \"importance\": 4,\n  \"summary\": \"Canonical schema registry entry for ro-crate-metadata.\",\n  \"registry_type\": \"ro-crate-metadata\",\n  \"version\": \"0.1.0\",\n  \"schema_path\": \"../schemas/ro-crate-metadata.schema.json\",\n  \"artifact_path\": \"\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/ro-crate-metadata.schema.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:29692b67dac1b35358415342911b209f19dc590371a9f332da0bff548ac44f66\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "content_id": "sha256:7db090f0c735273577e9220790048979453577c5eb50756b6082faba8b57801b",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schema-ro-crate-metadata\",\n  \"title\": \"Ro Crate Metadata Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"canonical_schema_record\",\n  \"importance\": 4,\n  \"summary\": \"Canonical schema registry entry for ro-crate-metadata.\",\n  \"registry_type\": \"ro-crate-metadata\",\n  \"version\": \"0.1.0\",\n  \"schema_path\": \"../schemas/ro-crate-metadata.schema.json\",\n  \"artifact_path\": \"\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/ro-crate-metadata.schema.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:29692b67dac1b35358415342911b209f19dc590371a9f332da0bff548ac44f66\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:22:39.906Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-ro-crate-metadata.json",
     "method": "archive",
-    "content_id": "sha256:ddb1ae31578b361924e0c5ee5df796adff7bab06ee25b14ab5fef161e506bd1f",
+    "content_id": "sha256:7db090f0c735273577e9220790048979453577c5eb50756b6082faba8b57801b",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

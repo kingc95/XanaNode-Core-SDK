@@ -14,20 +14,20 @@
     "mode": "mounted",
     "built_by": "@xananode/core",
     "portable": true,
-    "built_at": "2026-06-25T14:22:40.366Z",
+    "built_at": "2026-06-25T14:24:48.531Z",
     "build_metadata": {
       "version": "0.1.0",
-      "git_commit": "b29928be095f94f10f92a365015a5a471d0ba825",
+      "git_commit": "01d960de44614fe25110d6e9adfa5fb99834b9bf",
       "git_branch": "main",
       "repository": "kingc95/XanaNode-Core-SDK",
-      "generated_at": "2026-06-25T14:22:40.366Z",
+      "generated_at": "2026-06-25T14:24:48.531Z",
       "built_by": "@xananode/core",
       "runtime": "node v24.16.0",
       "platform": "win32/x64",
       "dependencies": [
         {
           "name": "XanaNode Protocol",
-          "version": "9973dcf",
+          "version": "9e8bf84",
           "repository": "kingc95/XanaNode",
           "relationship": "uses"
         }
@@ -36,17 +36,17 @@
   },
   "build_metadata": {
     "version": "0.1.0",
-    "git_commit": "b29928be095f94f10f92a365015a5a471d0ba825",
+    "git_commit": "01d960de44614fe25110d6e9adfa5fb99834b9bf",
     "git_branch": "main",
     "repository": "kingc95/XanaNode-Core-SDK",
-    "generated_at": "2026-06-25T14:22:39.906Z",
+    "generated_at": "2026-06-25T14:24:48.048Z",
     "built_by": "@xananode/core",
     "runtime": "node v24.16.0",
     "platform": "win32/x64",
     "dependencies": [
       {
         "name": "XanaNode Protocol",
-        "version": "9973dcf",
+        "version": "9e8bf84",
         "repository": "kingc95/XanaNode",
         "relationship": "uses"
       }

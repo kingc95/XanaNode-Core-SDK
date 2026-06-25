@@ -15,7 +15,7 @@
   "content_id": "sha256:59b10b3cb173b83cede2eca77a0e5b550bf3d579963a69d3e6c9497ecf026292",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-essay-explainer\",\n  \"title\": \"Essay subtype: explainer\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"explainer is an allowed subtype of the essay node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"explainer\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"essay\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-essay-explainer.json",
     "method": "archive",
     "content_id": "sha256:59b10b3cb173b83cede2eca77a0e5b550bf3d579963a69d3e6c9497ecf026292",

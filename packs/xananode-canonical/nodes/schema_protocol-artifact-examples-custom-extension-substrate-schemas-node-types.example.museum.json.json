@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/schemas/node-types.example.museum.json",
   "content_id": "sha256:b40b9196f1e71396032f2e5630628d0ee5cc5ae2917ed534bc36ffb3607055b4",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/custom-extension-substrate/schemas/node-types.example.museum.json",
     "method": "archive",
     "content_id": "sha256:b40b9196f1e71396032f2e5630628d0ee5cc5ae2917ed534bc36ffb3607055b4",

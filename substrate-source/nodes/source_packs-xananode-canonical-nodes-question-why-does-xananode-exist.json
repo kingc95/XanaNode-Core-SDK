@@ -15,7 +15,7 @@
   "content_id": "sha256:4af9494ae15e7998111cd091c0bde1fe7b191c0fd9ba2be341c87c191f21ebdd",
   "content": "{\n  \"id\": \"xananode.canonical:question/why-does-xananode-exist\",\n  \"title\": \"Why does XanaNode exist?\",\n  \"type\": \"question\",\n  \"subtype\": \"faq\",\n  \"importance\": 5,\n  \"summary\": \"XanaNode exists to preserve relationships, provenance, disagreement, lineage, and reusable fragments as durable knowledge structure.\",\n  \"content\": \"A normal website can publish text. XanaNode publishes the relationships behind the text. It is meant for authored knowledge substrates where sources, claims, trails, versions, transclusions, conflicts, and projection layers remain inspectable instead of disappearing into a flat page.\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/question_why-does-xananode-exist.json",
     "method": "archive",
     "content_id": "sha256:4af9494ae15e7998111cd091c0bde1fe7b191c0fd9ba2be341c87c191f21ebdd",

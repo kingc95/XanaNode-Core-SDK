@@ -15,7 +15,7 @@
   "content_id": "sha256:ba8fec7ddf921b1f75b58104e07b8710f97a77bc53d40cdc1c2c99a030d18beb",
   "content": "# Namespaces\n\nNamespaces prevent independently authored substrates from colliding.\n\nA namespace identifies who owns a local vocabulary or substrate.\n\nExamples:\n\n```text\nxananode:claim\nexample.museum:artifact\nexample.researcher_a:concept/knowledge-substrate\n```\n\nThe core namespace is `xananode`.\n\nCustom substrates should use their own namespace.\n\nA namespace should be declared in a substrate manifest and in any extension schema files.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/specs/namespaces.md",
     "method": "archive",
     "content_id": "sha256:ba8fec7ddf921b1f75b58104e07b8710f97a77bc53d40cdc1c2c99a030d18beb",

@@ -15,7 +15,7 @@
   "content_id": "sha256:da9bf5d1d8bf731e5536cb3d7ed7b7ccf9de53d9789211002bbcffeedfb51aad",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-event-release\",\n  \"title\": \"Event subtype: release\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"release is an allowed subtype of the event node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"release\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"event\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-event-release.json",
     "method": "archive",
     "content_id": "sha256:da9bf5d1d8bf731e5536cb3d7ed7b7ccf9de53d9789211002bbcffeedfb51aad",

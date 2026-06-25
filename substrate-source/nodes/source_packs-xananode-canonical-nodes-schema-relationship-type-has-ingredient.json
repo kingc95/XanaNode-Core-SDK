@@ -15,7 +15,7 @@
   "content_id": "sha256:50c0c298967724369171209fb2257dc36c8eea5e2f182e1da5283a5c6a2f7e1a",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-has_ingredient\",\n  \"title\": \"Has Ingredient Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The has_ingredient inverse relationship term derived from ingredient_of.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"has_ingredient\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"composition\",\n  \"inverse\": \"ingredient_of\",\n  \"color\": \"#86efac\",\n  \"inverse_color\": \"#22c55e\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-has_ingredient.json",
     "method": "archive",
     "content_id": "sha256:50c0c298967724369171209fb2257dc36c8eea5e2f182e1da5283a5c6a2f7e1a",

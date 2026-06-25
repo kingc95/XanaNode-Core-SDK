@@ -15,7 +15,7 @@
   "content_id": "sha256:64927a0b236c1cdad1bbbe396794f1f0329b6d9f3e65b7db7332329cd475dd9c",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-dependency_of\",\n  \"title\": \"Dependency Of Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The dependency_of inverse relationship term derived from depends_on.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"dependency_of\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"composition\",\n  \"inverse\": \"depends_on\",\n  \"derived_inverse\": true,\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#86efac\",\n  \"inverse_color\": \"#22c55e\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-dependency_of.json",
     "method": "archive",
     "content_id": "sha256:64927a0b236c1cdad1bbbe396794f1f0329b6d9f3e65b7db7332329cd475dd9c",

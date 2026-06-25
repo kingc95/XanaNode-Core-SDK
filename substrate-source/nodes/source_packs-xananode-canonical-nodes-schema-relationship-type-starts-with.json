@@ -15,7 +15,7 @@
   "content_id": "sha256:962cb8a795c58e4aa7d2c9323adcbeddd3e9cc333e6ac18a61dcc16bba604125",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-starts_with\",\n  \"title\": \"Starts with\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source sequence, work, or argument begins with the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"starts_with\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"temporal\",\n  \"inverse\": \"is_start_of\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#a3e635\",\n  \"inverse_color\": \"#d9f99d\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-starts_with.json",
     "method": "archive",
     "content_id": "sha256:962cb8a795c58e4aa7d2c9323adcbeddd3e9cc333e6ac18a61dcc16bba604125",

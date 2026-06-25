@@ -15,7 +15,7 @@
   "content_id": "sha256:663b596623df74f7a13526a5f96bcae32d064da9ed0ad446b1757ddfb32b772a",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-person\",\n  \"title\": \"Person\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"A human actor who created, influenced, witnessed, argued, documented, or participated in something.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"person\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"writer\",\n    \"researcher\",\n    \"engineer\",\n    \"critic\",\n    \"artist\",\n    \"founder\",\n    \"scientist\",\n    \"programmer\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"roles\",\n    \"primary_media\",\n    \"people\",\n    \"concepts\",\n    \"sources\",\n    \"projects\",\n    \"events\"\n  ],\n  \"color\": {\n    \"bg\": \"#8bd3ff\",\n    \"fg\": \"#071827\",\n    \"outline\": \"#d8f1ff\"\n  },\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-person.json",
     "method": "archive",
     "content_id": "sha256:663b596623df74f7a13526a5f96bcae32d064da9ed0ad446b1757ddfb32b772a",

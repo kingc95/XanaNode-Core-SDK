@@ -15,7 +15,7 @@
   "content_id": "sha256:d7fce6756415edffa0dd7d3ce19f588ea9477dd4830eb00b1ffd3db02e6d7e5a",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-includes\",\n  \"title\": \"Includes\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source includes or encompasses the target as a member or component.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"includes\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"composition\",\n  \"inverse\": \"included_in\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#22c55e\",\n  \"inverse_color\": \"#86efac\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-includes.json",
     "method": "archive",
     "content_id": "sha256:d7fce6756415edffa0dd7d3ce19f588ea9477dd4830eb00b1ffd3db02e6d7e5a",

@@ -15,7 +15,7 @@
   "content_id": "sha256:ebd9fc7af21dceea486dd6c149107ffeedcae12fac3768bfc36b01c4e079fc1e",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-reviewed_under\",\n  \"title\": \"Reviewed Under Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The reviewed_under inverse relationship term derived from under_review.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"reviewed_under\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"uncertainty\",\n  \"inverse\": \"under_review\",\n  \"color\": \"#f5d0fe\",\n  \"inverse_color\": \"#d946ef\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\",\n  \"derived_inverse\": true,\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-reviewed_under.json",
     "method": "archive",
     "content_id": "sha256:ebd9fc7af21dceea486dd6c149107ffeedcae12fac3768bfc36b01c4e079fc1e",

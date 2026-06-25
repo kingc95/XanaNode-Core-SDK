@@ -15,7 +15,7 @@
   "content_id": "sha256:b326b05732add40cc49cb14744d958a59d6d40262b8bd3f0308450d0f77df43b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-evolution\",\n  \"title\": \"Evolution Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The evolution category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"evolution\",\n  \"registry_namespace\": \"xananode\",\n  \"color\": \"#64748b\",\n  \"inverse_color\": \"#cbd5e1\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-evolution.json",
     "method": "archive",
     "content_id": "sha256:b326b05732add40cc49cb14744d958a59d6d40262b8bd3f0308450d0f77df43b",

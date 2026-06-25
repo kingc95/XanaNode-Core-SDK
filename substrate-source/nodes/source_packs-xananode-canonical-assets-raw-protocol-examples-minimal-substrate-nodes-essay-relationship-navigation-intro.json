@@ -15,7 +15,7 @@
   "content_id": "sha256:856046f01bcc3f0e55af54cebf0ea1922165140262c99a36c2912603d9f74af6",
   "content": "{\r\n  \"id\": \"example.minimal:essay/relationship-navigation-intro\",\r\n  \"title\": \"Relationship Navigation Intro\",\r\n  \"type\": \"essay\",\r\n  \"importance\": 4,\r\n  \"summary\": \"A short example essay that includes an addressable source fragment by reference rather than duplicating it.\",\r\n  \"created_by\": \"example.minimal:person/example-maintainer\",\r\n  \"created_at\": \"2026-01-01T00:00:00Z\",\r\n  \"relationships\": [\r\n    {\r\n      \"id\": \"example.minimal:rel/maintainer-created-intro-essay\",\r\n      \"type\": \"created\",\n      \"source\": \"example.minimal:person/example-maintainer\",\r\n      \"direction\": \"incoming\"\r\n    },\r\n    {\r\n      \"id\": \"example.minimal:rel/essay-transcludes-fragment\",\r\n      \"type\": \"transcludes\",\r\n      \"target\": \"example.minimal:fragment/as-we-may-think-0004\",\r\n      \"direction\": \"outgoing\"\r\n    }\r\n  ]\r\n}\r\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/essay-relationship-navigation-intro.json",
     "method": "archive",
     "content_id": "sha256:856046f01bcc3f0e55af54cebf0ea1922165140262c99a36c2912603d9f74af6",

@@ -15,7 +15,7 @@
   "content_id": "sha256:2dded8a8ddf5676ed5d2c902809d0ac285e46fb1db380a656b8578ef278da763",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:concept/licensing\",\n  \"title\": \"Licensing\",\n  \"type\": \"concept\",\n  \"subtype\": \"governance\",\n  \"importance\": 5,\n  \"summary\": \"The legal layer that describes how documents, schemas, code, media, and names may be copied, reused, attributed, modified, or governed.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_licensing.json",
     "method": "archive",
     "content_id": "sha256:2dded8a8ddf5676ed5d2c902809d0ac285e46fb1db380a656b8578ef278da763",

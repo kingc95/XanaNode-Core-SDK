@@ -15,7 +15,7 @@
   "content_id": "sha256:de0570f674afbbb0629172efe288c21c73b73de5addd3fd2071da0aceb023229",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:concept/trademark\",\n  \"title\": \"Trademark\",\n  \"type\": \"concept\",\n  \"subtype\": \"governance\",\n  \"importance\": 5,\n  \"summary\": \"A protected name, logo, or mark that identifies the source and reputation of a project, product, organization, or community.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_trademark.json",
     "method": "archive",
     "content_id": "sha256:de0570f674afbbb0629172efe288c21c73b73de5addd3fd2071da0aceb023229",

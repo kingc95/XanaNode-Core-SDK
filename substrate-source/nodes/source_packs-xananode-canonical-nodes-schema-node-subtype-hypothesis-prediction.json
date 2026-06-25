@@ -15,7 +15,7 @@
   "content_id": "sha256:b7bb7ab8c3fc5b72a15adeba7c87cda59740f84bef7e7f083ad8580303f3a118",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-hypothesis-prediction\",\n  \"title\": \"Hypothesis subtype: prediction\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"prediction is an allowed subtype of the hypothesis node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"prediction\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"hypothesis\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-hypothesis-prediction.json",
     "method": "archive",
     "content_id": "sha256:b7bb7ab8c3fc5b72a15adeba7c87cda59740f84bef7e7f083ad8580303f3a118",

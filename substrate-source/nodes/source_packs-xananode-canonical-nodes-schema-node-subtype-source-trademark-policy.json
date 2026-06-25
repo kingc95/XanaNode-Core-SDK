@@ -15,7 +15,7 @@
   "content_id": "sha256:4f9e0fee799159bb7c69433cb6de3102847ab7e863e1c157a1049a0ed9b1f405",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-source-trademark_policy\",\n  \"title\": \"Source subtype: trademark policy\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"trademark_policy is an allowed subtype of the source node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"trademark_policy\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"source\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-source-trademark_policy.json",
     "method": "archive",
     "content_id": "sha256:4f9e0fee799159bb7c69433cb6de3102847ab7e863e1c157a1049a0ed9b1f405",

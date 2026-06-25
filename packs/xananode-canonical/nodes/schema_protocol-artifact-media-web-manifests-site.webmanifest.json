@@ -12,7 +12,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:7a9e07ce1f7386689917602ddc5a75750ad842e605ff764f67173529c181bf04",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/web-manifests/site.webmanifest",
     "method": "archive",
     "content_id": "sha256:7a9e07ce1f7386689917602ddc5a75750ad842e605ff764f67173529c181bf04",

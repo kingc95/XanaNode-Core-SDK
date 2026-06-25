@@ -15,7 +15,7 @@
   "content_id": "sha256:55ec1a4bfee5b273199923abb27aa86ed773c2e5d4511a2c9acb7a4db94455cc",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-communication-chat\",\n  \"title\": \"Communication subtype: chat\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"chat is an allowed subtype of the communication node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"chat\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"communication\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-communication-chat.json",
     "method": "archive",
     "content_id": "sha256:55ec1a4bfee5b273199923abb27aa86ed773c2e5d4511a2c9acb7a4db94455cc",

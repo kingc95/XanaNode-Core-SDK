@@ -15,7 +15,7 @@
   "content_id": "sha256:6dede1698567e7d69f26c3ac02babc8e5a0594a1a3f10603f9bcc55e03cabc43",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-proposed_by\",\n  \"title\": \"Proposed By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The proposed_by inverse relationship term derived from proposed.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"proposed_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"creation\",\n  \"inverse\": \"proposed\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#fed7aa\",\n  \"inverse_color\": \"#fb923c\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-proposed_by.json",
     "method": "archive",
     "content_id": "sha256:6dede1698567e7d69f26c3ac02babc8e5a0594a1a3f10603f9bcc55e03cabc43",

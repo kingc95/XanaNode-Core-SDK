@@ -15,7 +15,7 @@
   "content_id": "sha256:9e5e12595b59d781366311e375f7c1f6f730a45d3d63be4ae1148e1b7b239f8c",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-critical_to\",\n  \"title\": \"Critical to\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source is critical to the target and should be prioritized in navigation, review, or preservation.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"critical_to\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"attention\",\n  \"inverse\": \"critically_depends_on\",\n  \"color\": \"#fbbf24\",\n  \"inverse_color\": \"#fde68a\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\",\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-critical_to.json",
     "method": "archive",
     "content_id": "sha256:9e5e12595b59d781366311e375f7c1f6f730a45d3d63be4ae1148e1b7b239f8c",

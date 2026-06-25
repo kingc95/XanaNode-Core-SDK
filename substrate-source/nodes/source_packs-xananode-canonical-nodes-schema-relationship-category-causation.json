@@ -15,7 +15,7 @@
   "content_id": "sha256:fd965d3717fea82bb2162c215bc35fc9e23e6fe21f8ae15b0072f86adfc75c61",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-causation\",\n  \"title\": \"Causation Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The causation category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"causation\",\n  \"registry_namespace\": \"xananode\",\n  \"relationships\": [],\n  \"color\": \"#f97316\",\n  \"inverse_color\": \"#fdba74\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-causation.json",
     "method": "archive",
     "content_id": "sha256:fd965d3717fea82bb2162c215bc35fc9e23e6fe21f8ae15b0072f86adfc75c61",

@@ -15,7 +15,7 @@
   "content_id": "sha256:9c2df9afda5e2a2d7215ee90bb43be6cdad0d057f93ff3d190de5f5c671df592",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-technology-protocol\",\n  \"title\": \"Technology subtype: protocol\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"protocol is an allowed subtype of the technology node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"protocol\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"technology\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-technology-protocol.json",
     "method": "archive",
     "content_id": "sha256:9c2df9afda5e2a2d7215ee90bb43be6cdad0d057f93ff3d190de5f5c671df592",

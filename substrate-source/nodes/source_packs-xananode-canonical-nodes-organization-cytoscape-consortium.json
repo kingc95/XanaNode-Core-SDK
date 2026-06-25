@@ -15,7 +15,7 @@
   "content_id": "sha256:db3b6f51c230f1c3746c60b70f92c20ed830a76cc95299ae0650c9c87256f9f7",
   "content": "{\n  \"id\": \"xananode.canonical:organization/cytoscape-consortium\",\n  \"title\": \"Cytoscape Consortium\",\n  \"type\": \"organization\",\n  \"subtype\": \"open_source\",\n  \"importance\": 3,\n  \"summary\": \"The organization and community associated with Cytoscape and Cytoscape.js development.\",\n  \"source_url\": \"https://cytoscape.org/\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/organization_cytoscape-consortium.json",
     "method": "archive",
     "content_id": "sha256:db3b6f51c230f1c3746c60b70f92c20ed830a76cc95299ae0650c9c87256f9f7",

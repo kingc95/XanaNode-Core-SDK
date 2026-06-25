@@ -15,7 +15,7 @@
   "content_id": "sha256:9f0bd5168dd88103e690ff68a4d5c93ee53b521b8a37acfd05b2eaa124ea8746",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-requires_validation\",\n  \"title\": \"Requires validation\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source needs schema, evidence, reproducibility, or process validation.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"requires_validation\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"knowledge_workflow\",\n  \"inverse\": \"validation_required_by\",\n  \"color\": \"#06b6d4\",\n  \"inverse_color\": \"#a5f3fc\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-requires_validation.json",
     "method": "archive",
     "content_id": "sha256:9f0bd5168dd88103e690ff68a4d5c93ee53b521b8a37acfd05b2eaa124ea8746",

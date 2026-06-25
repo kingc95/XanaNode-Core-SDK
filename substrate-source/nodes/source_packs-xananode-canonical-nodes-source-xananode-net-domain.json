@@ -15,7 +15,7 @@
   "content_id": "sha256:6329a79e4c36ae50b8b659b65dbf70f70a1ddc5deea0aca628007900a1a14ff5",
   "content": "{\n  \"id\": \"xananode.canonical:source/xananode-net-domain\",\n  \"title\": \"XanaNode.net\",\n  \"type\": \"source\",\n  \"subtypes\": [\n    \"website\",\n    \"official_site\"\n  ],\n  \"importance\": 4,\n  \"summary\": \"A project-owned alias domain that resolves to the same canonical XanaNode projection as XanaNode.com so the XanaNode project does not compete with itself in search, linking, or naming.\",\n  \"source_url\": \"https://xananode.net/\",\n  \"rights_status\": \"canonical-public\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_xananode-net-domain.json",
     "method": "archive",
     "content_id": "sha256:6329a79e4c36ae50b8b659b65dbf70f70a1ddc5deea0aca628007900a1a14ff5",

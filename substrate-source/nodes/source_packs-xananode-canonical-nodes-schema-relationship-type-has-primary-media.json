@@ -15,7 +15,7 @@
   "content_id": "sha256:f78923a4b23d5b33df11e6f74f303038fc000206f75f230b5bc0fe162a79ec7d",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-has_primary_media\",\n  \"title\": \"Has primary media\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source node uses the target media node as its primary representative image or icon.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"has_primary_media\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"representation\",\n  \"inverse\": \"used_as_primary_media_for\",\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#f59e0b\",\n  \"inverse_color\": \"#fcd34d\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-has_primary_media.json",
     "method": "archive",
     "content_id": "sha256:f78923a4b23d5b33df11e6f74f303038fc000206f75f230b5bc0fe162a79ec7d",

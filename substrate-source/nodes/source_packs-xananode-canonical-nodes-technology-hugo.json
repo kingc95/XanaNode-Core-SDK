@@ -15,7 +15,7 @@
   "content_id": "sha256:28474d39e2f0a9804a32a7464828f4f7fbcfabb95753c694e2ac526833bebef6",
   "content": "{\n  \"id\": \"xananode.canonical:technology/hugo\",\n  \"title\": \"Hugo\",\n  \"type\": \"technology\",\n  \"subtype\": \"tool\",\n  \"importance\": 4,\n  \"summary\": \"A static site generator used by the XanaNode Hugo projection to publish substrates as static websites.\",\n  \"source_url\": \"https://gohugo.io/\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_hugo.json",
     "method": "archive",
     "content_id": "sha256:28474d39e2f0a9804a32a7464828f4f7fbcfabb95753c694e2ac526833bebef6",

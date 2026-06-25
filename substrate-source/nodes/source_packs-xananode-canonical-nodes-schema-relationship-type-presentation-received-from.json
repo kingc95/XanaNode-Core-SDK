@@ -15,7 +15,7 @@
   "content_id": "sha256:0e68b5ed24e658468dab61a941e6b1a29afd3c12a1e846e62cf5d77a8243b5d7",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-presentation_received_from\",\n  \"title\": \"Presentation Received From Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The presentation_received_from inverse relationship term derived from presented_to.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"presentation_received_from\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"communication\",\n  \"inverse\": \"presented_to\",\n  \"color\": \"#bae6fd\",\n  \"inverse_color\": \"#38bdf8\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-presentation_received_from.json",
     "method": "archive",
     "content_id": "sha256:0e68b5ed24e658468dab61a941e6b1a29afd3c12a1e846e62cf5d77a8243b5d7",

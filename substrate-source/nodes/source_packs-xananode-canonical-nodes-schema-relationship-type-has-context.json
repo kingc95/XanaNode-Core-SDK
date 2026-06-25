@@ -15,7 +15,7 @@
   "content_id": "sha256:3f599961543644c7a3677422f3160a55246c1e65d600d1b2af610b2c5e39e56f",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-has_context\",\n  \"title\": \"Has Context Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The has_context inverse relationship term derived from context_for.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"has_context\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"explanation\",\n  \"inverse\": \"context_for\",\n  \"derived_inverse\": true,\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#bfdbfe\",\n  \"inverse_color\": \"#60a5fa\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-has_context.json",
     "method": "archive",
     "content_id": "sha256:3f599961543644c7a3677422f3160a55246c1e65d600d1b2af610b2c5e39e56f",

@@ -15,7 +15,7 @@
   "content_id": "sha256:a0c040e6aabd29da30f8964e09e7ec910cdcbadbe09dab231e0d52e6775d2988",
   "content": "# XanaNode Canonical Substrate\n\nThis repository-shaped folder is the living canonical XanaNode substrate.\n\nIt is not just a compiled viewer output. It carries the canonical nodes, relationships, protocol artifacts, raw source snapshots, media assets, registry records, governance files, software stack records, branding records, and build report used to federate XanaNode into other substrates.\n\nRun this from the XanaNode-Master workspace to refresh it:\n\n```powershell\nnpm run substrates:build\n```\n\nThe portable archive is written to `dist/` as a `.substrate` file.\n\nFor LLM handoff and simpler interchange, this repo also writes:\n\n- `substrate-bundle.json` - one mass JSON file with the manifest, all nodes, all relationships, summaries, authored content, warnings, and pack report\n- `substrate-bundle.jsonl` - the same bundle as JSON Lines for tools that prefer streaming or line-oriented ingestion\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/README.md",
     "method": "archive",
     "content_id": "sha256:a0c040e6aabd29da30f8964e09e7ec910cdcbadbe09dab231e0d52e6775d2988",

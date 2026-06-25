@@ -15,7 +15,7 @@
   "content_id": "sha256:98111454d78989abeaba43647904fc0f0c0c223f1a333f749eb69d3f8614650d",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-hugo-theme-component-relationship-files\",\n  \"title\": \"XanaNode Hugo Theme: relationship files\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Hugo Theme consumes or depends on relationship files.\",\n  \"component_of\": \"xananode.canonical:project/xananode-hugo-theme\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-hugo-theme-component-relationship-files.json",
     "method": "archive",
     "content_id": "sha256:98111454d78989abeaba43647904fc0f0c0c223f1a333f749eb69d3f8614650d",

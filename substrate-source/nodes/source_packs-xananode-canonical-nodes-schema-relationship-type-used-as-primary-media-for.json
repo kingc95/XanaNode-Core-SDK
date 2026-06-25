@@ -15,7 +15,7 @@
   "content_id": "sha256:c2e94c7cfb8cbfa61f3d2f98dce186688c3a42ee182f23c0cad7bbef1262ef1a",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-used_as_primary_media_for\",\n  \"title\": \"Used As Primary Media For Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The used_as_primary_media_for inverse relationship term derived from has_primary_media.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"used_as_primary_media_for\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"representation\",\n  \"inverse\": \"has_primary_media\",\n  \"derived_inverse\": true,\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#fcd34d\",\n  \"inverse_color\": \"#f59e0b\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-used_as_primary_media_for.json",
     "method": "archive",
     "content_id": "sha256:c2e94c7cfb8cbfa61f3d2f98dce186688c3a42ee182f23c0cad7bbef1262ef1a",

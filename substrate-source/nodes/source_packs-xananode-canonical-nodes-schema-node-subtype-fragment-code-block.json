@@ -15,7 +15,7 @@
   "content_id": "sha256:9e2643b6d5e26861678f5a197c19333c7219d05a9a3fbbfd4d128ac4591488e7",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-fragment-code_block\",\n  \"title\": \"Fragment subtype: code block\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 3,\n  \"summary\": \"code_block is an allowed subtype of the fragment node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"code_block\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"fragment\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-fragment-code_block.json",
     "method": "archive",
     "content_id": "sha256:9e2643b6d5e26861678f5a197c19333c7219d05a9a3fbbfd4d128ac4591488e7",

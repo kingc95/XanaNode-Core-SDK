@@ -15,7 +15,7 @@
   "content_id": "sha256:2eba55ed64e9be7d075f82945dac911edad1da4fa93c9bcb11dbdf08ec7695ef",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-trademark_holder_for\",\n  \"title\": \"Trademark Holder For Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The trademark_holder_for inverse relationship term derived from trademarked_by.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"trademark_holder_for\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"governance\",\n  \"inverse\": \"trademarked_by\",\n  \"color\": \"#fde047\",\n  \"inverse_color\": \"#eab308\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"double\",\n  \"derived_inverse\": true,\n  \"relationships\": [],\n  \"default_weight\": 4,\n  \"default_visibility\": \"secondary\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-trademark_holder_for.json",
     "method": "archive",
     "content_id": "sha256:2eba55ed64e9be7d075f82945dac911edad1da4fa93c9bcb11dbdf08ec7695ef",

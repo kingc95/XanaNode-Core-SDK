@@ -15,7 +15,7 @@
   "content_id": "sha256:a7409d70486c84d7e6016e64efcac7eba454bafe93f20de4bf5c35e8e73a929b",
   "content": "{\n  \"id\": \"xananode.canonical:relationship/protocol-implements-claim\",\n  \"title\": \"Protocol Implements Relationship Preservation\",\n  \"type\": \"relationship\",\n  \"subtype\": \"lineage\",\n  \"importance\": 4,\n  \"summary\": \"A first-class relationship node representing that the XanaNode protocol implements the claim that relationships preserve knowledge.\",\n  \"source_node\": \"xananode.canonical:project/xananode-protocol\",\n  \"target_node\": \"xananode.canonical:claim/relationships-preserve-knowledge\",\n  \"relationship_type\": \"implements\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/relationship_protocol-implements-claim.json",
     "method": "archive",
     "content_id": "sha256:a7409d70486c84d7e6016e64efcac7eba454bafe93f20de4bf5c35e8e73a929b",

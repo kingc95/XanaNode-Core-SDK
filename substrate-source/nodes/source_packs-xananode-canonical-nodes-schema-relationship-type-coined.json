@@ -15,7 +15,7 @@
   "content_id": "sha256:198037b24f19d1a4247ebcac087ab18cf8b545222c937b1ca11d40cf9f250c47",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-coined\",\n  \"title\": \"Coined\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source coined the target term.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"coined\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"creation\",\n  \"inverse\": \"coined_by\",\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#fb923c\",\n  \"inverse_color\": \"#fed7aa\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-coined.json",
     "method": "archive",
     "content_id": "sha256:198037b24f19d1a4247ebcac087ab18cf8b545222c937b1ca11d40cf9f250c47",

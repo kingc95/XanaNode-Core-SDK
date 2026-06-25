@@ -15,7 +15,7 @@
   "content_id": "sha256:4065cec55622ddb2b445c43cb7ef8fbaeb2d3c1dec05b9a1a7e3c6f5141cdba7",
   "content": "{\n  \"id\": \"xananode.canonical:concept/self-federating-stack\",\n  \"title\": \"Self-Federating Stack\",\n  \"type\": \"concept\",\n  \"subtype\": \"architecture_pattern\",\n  \"importance\": 5,\n  \"summary\": \"The XanaNode stack demonstrates federation by treating its own major layers as independently versioned substrates that can still interoperate as one system.\",\n  \"content\": \"XanaNode is not only a protocol with external federation examples. The stack itself is federated. Protocol, Core, Workspace, Studio, Mobile, Hugo, Canonical, Alphabet, and Lineage are all represented as distinct substrates or substrate targets with their own namespace, repository, transport shape, and governance path. The canonical bundle also carries embedded example namespaces for teaching and testing, but those are not the same thing as the real stack-layer substrate sources. Together, these two patterns show that each layer can stand on its own while the layers can still be mounted, compared, validated, projected, and carried together without collapsing into one monolithic blob.\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_self-federating-stack.json",
     "method": "archive",
     "content_id": "sha256:4065cec55622ddb2b445c43cb7ef8fbaeb2d3c1dec05b9a1a7e3c6f5141cdba7",

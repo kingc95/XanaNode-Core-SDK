@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:5f6155b77b6da22d70f8f6a6972c8b96f4174145ac34dc6d53de70f19c28a3a5",
-  "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:source/xananode-license-policy\",\n  \"title\": \"XanaNode License Policy\",\n  \"type\": \"source\",\n  \"subtype\": \"legal_policy\",\n  \"importance\": 5,\n  \"summary\": \"The protocol-level policy splitting XanaNode documentation, schemas, validators, reference code, and trademarks into their proper legal categories.\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/LICENSE.md\",\n  \"rights_status\": \"canonical-public\",\n  \"license\": \"CC-BY-4.0\",\n  \"asset_path\": \"assets/raw/protocol/LICENSE.md\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:730989736d8ebdbea699937dc93e8b36d8210445b6774cf142ec626cbab06559\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/LICENSE.md\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:598ffb99d5fa073d173bb68528457d2be19f719872f9e4d36874dfa45d97bbba\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "content_id": "sha256:c0b6469c7ed498a8ef55f2521e3e5426364089e5692fdceccb93a8a49d46786c",
+  "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:source/xananode-license-policy\",\n  \"title\": \"XanaNode License Policy\",\n  \"type\": \"source\",\n  \"subtype\": \"legal_policy\",\n  \"importance\": 5,\n  \"summary\": \"The protocol-level policy splitting XanaNode documentation, schemas, validators, reference code, and trademarks into their proper legal categories.\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/LICENSE.md\",\n  \"rights_status\": \"canonical-public\",\n  \"license\": \"CC-BY-4.0\",\n  \"asset_path\": \"assets/raw/protocol/LICENSE.md\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:730989736d8ebdbea699937dc93e8b36d8210445b6774cf142ec626cbab06559\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:22:39.906Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/LICENSE.md\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:598ffb99d5fa073d173bb68528457d2be19f719872f9e4d36874dfa45d97bbba\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_xananode-license-policy.json",
     "method": "archive",
-    "content_id": "sha256:5f6155b77b6da22d70f8f6a6972c8b96f4174145ac34dc6d53de70f19c28a3a5",
+    "content_id": "sha256:c0b6469c7ed498a8ef55f2521e3e5426364089e5692fdceccb93a8a49d46786c",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

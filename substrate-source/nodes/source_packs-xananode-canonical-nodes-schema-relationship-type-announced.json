@@ -15,7 +15,7 @@
   "content_id": "sha256:0f6efd1fa72d6cd319242bcb5bb6580317c3008100be311fa924808dc7b83725",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-announced\",\n  \"title\": \"Announced\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source announced the target event, project, release, claim, or decision.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"announced\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"communication\",\n  \"inverse\": \"announced_by\",\n  \"color\": \"#38bdf8\",\n  \"inverse_color\": \"#bae6fd\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-announced.json",
     "method": "archive",
     "content_id": "sha256:0f6efd1fa72d6cd319242bcb5bb6580317c3008100be311fa924808dc7b83725",

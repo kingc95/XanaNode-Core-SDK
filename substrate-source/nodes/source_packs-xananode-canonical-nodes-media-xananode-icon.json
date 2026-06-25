@@ -15,7 +15,7 @@
   "content_id": "sha256:c4975f476986022676fbcf88567f2fde89d9f000b551f1861d48febf788e7bc9",
   "content": "{\n  \"id\": \"xananode.canonical:media/xananode-icon\",\n  \"title\": \"XanaNode Icon\",\n  \"type\": \"media\",\n  \"subtypes\": [\n    \"image\",\n    \"logo\"\n  ],\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"importance\": 5,\n  \"summary\": \"The XanaNode project icon used as primary media for XanaNode nodes and projection branding.\",\n  \"alt\": \"A connected node mark with orange and blue paths crossing around a bright central node.\",\n  \"rights_status\": \"open-source\",\n  \"asset_path\": \"media/images/xananode-icon.svg\",\n  \"asset_role\": \"primary_media\",\n  \"creator\": \"Christian Siefen\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_xananode-icon.json",
     "method": "archive",
     "content_id": "sha256:c4975f476986022676fbcf88567f2fde89d9f000b551f1861d48febf788e7bc9",

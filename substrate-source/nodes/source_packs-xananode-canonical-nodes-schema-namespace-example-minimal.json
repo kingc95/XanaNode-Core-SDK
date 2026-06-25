@@ -15,7 +15,7 @@
   "content_id": "sha256:39786d7577340abcad98fb8623cfd2a3fbc723019dbc8ca467cab1e17753e55b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/namespace-example.minimal\",\n  \"title\": \"Minimal Example Namespace\",\n  \"type\": \"schema\",\n  \"subtype\": \"namespace_record\",\n  \"importance\": 3,\n  \"summary\": \"Namespace used by the minimal example substrate.\",\n  \"registry_type\": \"example.minimal\",\n  \"schema_path\": \"\",\n  \"example_path\": \"../examples/minimal-substrate/\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_namespace-example.minimal.json",
     "method": "archive",
     "content_id": "sha256:39786d7577340abcad98fb8623cfd2a3fbc723019dbc8ca467cab1e17753e55b",

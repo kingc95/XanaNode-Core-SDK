@@ -15,7 +15,7 @@
   "content_id": "sha256:5c9bb5dee5e694e94d7d8a66607337f23cbdbffcac61abb7b8bc679f50b188a9",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-community-local\",\n  \"title\": \"Community subtype: local\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"local is an allowed subtype of the community node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"local\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"community\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-community-local.json",
     "method": "archive",
     "content_id": "sha256:5c9bb5dee5e694e94d7d8a66607337f23cbdbffcac61abb7b8bc679f50b188a9",

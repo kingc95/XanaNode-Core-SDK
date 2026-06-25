@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/minimal-substrate/substrate.json",
   "content_id": "sha256:7e022016422780a1d6564862972483fa0f7db8b491fc294fafd09edf4c73a6ac",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/substrate.json",
     "method": "archive",
     "content_id": "sha256:7e022016422780a1d6564862972483fa0f7db8b491fc294fafd09edf4c73a6ac",

@@ -15,7 +15,7 @@
   "content_id": "sha256:95c8d90fff919c653881cd62d763a04e3357e09cf2fea3815d71f3133286a447",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-documents\",\n  \"title\": \"Documents\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source records evidence about the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"documents\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"evidence\",\n  \"inverse\": \"documented_by\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#10b981\",\n  \"inverse_color\": \"#6ee7b7\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-documents.json",
     "method": "archive",
     "content_id": "sha256:95c8d90fff919c653881cd62d763a04e3357e09cf2fea3815d71f3133286a447",

@@ -15,7 +15,7 @@
   "content_id": "sha256:4aae1d32fc97b3475a7abe91bb7cfdc6c411ca46d38f3b29e1dc071a6a09daf0",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-question-research_question\",\n  \"title\": \"Question subtype: research question\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"research_question is an allowed subtype of the question node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"research_question\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"question\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-question-research_question.json",
     "method": "archive",
     "content_id": "sha256:4aae1d32fc97b3475a7abe91bb7cfdc6c411ca46d38f3b29e1dc071a6a09daf0",

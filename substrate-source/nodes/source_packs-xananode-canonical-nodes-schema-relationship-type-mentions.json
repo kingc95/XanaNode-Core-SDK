@@ -15,7 +15,7 @@
   "content_id": "sha256:ab05242cd6f8a264248ca757dfa9b3d38d053cf9c4696f7fcd8821b08a7b75ea",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-mentions\",\n  \"title\": \"Mentions\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source mentions the target without making it structurally central.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"mentions\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"citation\",\n  \"inverse\": \"mentioned_by\",\n  \"default_weight\": 2,\n  \"default_visibility\": \"background\",\n  \"relationships\": [],\n  \"color\": \"#38bdf8\",\n  \"inverse_color\": \"#bae6fd\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-mentions.json",
     "method": "archive",
     "content_id": "sha256:ab05242cd6f8a264248ca757dfa9b3d38d053cf9c4696f7fcd8821b08a7b75ea",

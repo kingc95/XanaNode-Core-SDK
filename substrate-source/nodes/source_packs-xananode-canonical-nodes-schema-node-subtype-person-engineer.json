@@ -15,7 +15,7 @@
   "content_id": "sha256:4f4cf4f6e36624c7ce4a7fe40c73b5db18f0a634d12a7118864595b8f2728b67",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-person-engineer\",\n  \"title\": \"Person subtype: engineer\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"engineer is an allowed subtype of the person node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"engineer\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"person\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-person-engineer.json",
     "method": "archive",
     "content_id": "sha256:4f4cf4f6e36624c7ce4a7fe40c73b5db18f0a634d12a7118864595b8f2728b67",

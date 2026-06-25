@@ -15,7 +15,7 @@
   "content_id": "sha256:9d25cf80b0060d07e5f1aba0886559e0c790ca0f03e01ad4c9da74e63f2162ec",
   "content": "# substrate-b\n\nAn independently authored substrate using namespace `example.researcher_b`.\n\nThis substrate intentionally overlaps with the other example substrate without using identical node IDs.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/federation-example/substrate-b/README.md",
     "method": "archive",
     "content_id": "sha256:9d25cf80b0060d07e5f1aba0886559e0c790ca0f03e01ad4c9da74e63f2162ec",

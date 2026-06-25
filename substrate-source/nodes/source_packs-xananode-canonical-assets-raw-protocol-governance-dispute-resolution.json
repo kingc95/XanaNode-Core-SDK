@@ -15,7 +15,7 @@
   "content_id": "sha256:ce5f64b3bd7d9d47b1314a3431aa0d9195482f3c73a3ed87c32f0b6b2d6bce2d",
   "content": "# Dispute Resolution\n\nXanaNode treats disputes as knowledge, not merely failure.\n\nA disputed claim should remain visible when appropriate, along with:\n\n- who disputes it\n- what evidence supports it\n- what counterevidence challenges it\n- what assumptions differ\n- what sources are involved\n\nDisputes can be represented with relationships such as:\n\n- `contradicts`\n- `contradicted_by`\n- `disputes`\n- `disputed_by`\n- `alternative_to`\n- `possible_match`\n- `disputed_identity`\n\nThe goal is not instant consensus. The goal is navigable uncertainty.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/governance/dispute-resolution.md",
     "method": "archive",
     "content_id": "sha256:ce5f64b3bd7d9d47b1314a3431aa0d9195482f3c73a3ed87c32f0b6b2d6bce2d",

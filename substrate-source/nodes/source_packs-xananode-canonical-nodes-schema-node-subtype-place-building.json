@@ -15,7 +15,7 @@
   "content_id": "sha256:4efd1c2dc9c7a62f20b6aad8589521aed629ccf953ff58a3a53351765becdd8c",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-place-building\",\n  \"title\": \"Place subtype: building\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"building is an allowed subtype of the place node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"building\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"place\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-place-building.json",
     "method": "archive",
     "content_id": "sha256:4efd1c2dc9c7a62f20b6aad8589521aed629ccf953ff58a3a53351765becdd8c",

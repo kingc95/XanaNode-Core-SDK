@@ -15,7 +15,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:32aa53969c9cc55a7f258202c9910e7639bafb4a114abb93e2ca67e8b556c3c3",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.schema.v0.5.0.json",
     "method": "archive",
     "content_id": "sha256:05cca697d1cc06aa94c11fce8b0237e051ca4416e3f31eebf32a473e5e5e150d",

@@ -15,7 +15,7 @@
   "content_id": "sha256:ebe7d642ad7ab2f06439fca7a4c7c1fc3a2a14e4fec74b7d2d75a7ef4e520f7f",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-schema-projection_style_rule\",\n  \"title\": \"Schema subtype: projection style rule\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"projection_style_rule is an allowed subtype of the schema node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"projection_style_rule\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"schema\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-schema-projection_style_rule.json",
     "method": "archive",
     "content_id": "sha256:ebe7d642ad7ab2f06439fca7a4c7c1fc3a2a14e4fec74b7d2d75a7ef4e520f7f",

@@ -15,7 +15,7 @@
   "content_id": "sha256:7a7bf388f3bb0dd2b705fde7d8a7eeb3064267b2e31af9e09769cce6f2a9341d",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-preceded\",\n  \"title\": \"Preceded\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source came before the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"preceded\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"temporal\",\n  \"inverse\": \"followed\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#a3e635\",\n  \"inverse_color\": \"#d9f99d\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-preceded.json",
     "method": "archive",
     "content_id": "sha256:7a7bf388f3bb0dd2b705fde7d8a7eeb3064267b2e31af9e09769cce6f2a9341d",

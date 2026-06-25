@@ -15,7 +15,7 @@
   "content_id": "sha256:163ed3d26469e1951c99a6bb26a1d8339cecbf1dfb188f87713df244267067e6",
   "content": "{\n  \"id\": \"xananode.canonical:source/repository-kingc95-xananode\",\n  \"title\": \"XanaNode Protocol Repository\",\n  \"type\": \"source\",\n  \"subtype\": \"git_repository\",\n  \"importance\": 4,\n  \"summary\": \"Public Git repository for XanaNode Protocol.\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode\",\n  \"repository\": \"kingc95/XanaNode\",\n  \"rights_status\": \"external\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_repository-kingc95-xananode.json",
     "method": "archive",
     "content_id": "sha256:163ed3d26469e1951c99a6bb26a1d8339cecbf1dfb188f87713df244267067e6",

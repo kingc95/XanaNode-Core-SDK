@@ -15,7 +15,7 @@
   "content_id": "sha256:e3a7bc9e2f864263157f84e5af640c3ffbfceac90ccd0c684529d441a0a89e69",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-validated_by\",\n  \"title\": \"Validated By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The validated_by inverse relationship term derived from validates.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"validated_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"research_workflow\",\n  \"inverse\": \"validates\",\n  \"color\": \"#7dd3fc\",\n  \"inverse_color\": \"#0ea5e9\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\",\n  \"derived_inverse\": true,\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-validated_by.json",
     "method": "archive",
     "content_id": "sha256:e3a7bc9e2f864263157f84e5af640c3ffbfceac90ccd0c684529d441a0a89e69",

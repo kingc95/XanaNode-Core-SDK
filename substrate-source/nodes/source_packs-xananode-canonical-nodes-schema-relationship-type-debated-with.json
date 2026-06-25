@@ -15,7 +15,7 @@
   "content_id": "sha256:5df4d9299e22d04e6cd0d562707920c90445402742989c84c383aa4d53257708",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-debated_with\",\n  \"title\": \"Debated with\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source debated the target participant, claim, or position.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"debated_with\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"communication\",\n  \"inverse\": \"debated_with\",\n  \"color\": \"#38bdf8\",\n  \"inverse_color\": \"#bae6fd\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-debated_with.json",
     "method": "archive",
     "content_id": "sha256:5df4d9299e22d04e6cd0d562707920c90445402742989c84c383aa4d53257708",

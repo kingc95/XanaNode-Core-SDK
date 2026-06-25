@@ -15,7 +15,7 @@
   "content_id": "sha256:7ef707d61d55005af4e17a264f34b2b6d96ee18ccc0ded574e1f66826e365a1d",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-inquiry\",\n  \"title\": \"Inquiry Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The inquiry category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"inquiry\",\n  \"registry_namespace\": \"xananode\",\n  \"color\": \"#2dd4bf\",\n  \"inverse_color\": \"#99f6e4\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-inquiry.json",
     "method": "archive",
     "content_id": "sha256:7ef707d61d55005af4e17a264f34b2b6d96ee18ccc0ded574e1f66826e365a1d",

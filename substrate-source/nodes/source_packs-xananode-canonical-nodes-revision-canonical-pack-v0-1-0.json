@@ -15,7 +15,7 @@
   "content_id": "sha256:4a4ac91ffe96167382be2a8bed5bb4f69b5a060a7cf095118fbda5ed7f465de7",
   "content": "{\n  \"id\": \"xananode.canonical:revision/canonical-pack-v0-1-0\",\n  \"title\": \"Canonical Pack v0.1.0\",\n  \"type\": \"revision\",\n  \"subtype\": \"node_revision\",\n  \"importance\": 3,\n  \"summary\": \"The first Core-bundled revision of the canonical XanaNode pack.\",\n  \"revises\": \"xananode.canonical:concept/xananode\",\n  \"revision_id\": \"0.1.0\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/revision_canonical-pack-v0-1-0.json",
     "method": "archive",
     "content_id": "sha256:4a4ac91ffe96167382be2a8bed5bb4f69b5a060a7cf095118fbda5ed7f465de7",

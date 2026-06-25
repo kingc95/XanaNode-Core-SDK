@@ -15,7 +15,7 @@
   "content_id": "sha256:c9608a6f32bdfcb1212cd4f70cf2cdefbf23c30621d21698b0bfd35e4f100559",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-received_report_from\",\n  \"title\": \"Received Report From Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The received_report_from inverse relationship term derived from reported_to.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"received_report_from\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"communication\",\n  \"inverse\": \"reported_to\",\n  \"color\": \"#bae6fd\",\n  \"inverse_color\": \"#38bdf8\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"derived_inverse\": true,\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-received_report_from.json",
     "method": "archive",
     "content_id": "sha256:c9608a6f32bdfcb1212cd4f70cf2cdefbf23c30621d21698b0bfd35e4f100559",

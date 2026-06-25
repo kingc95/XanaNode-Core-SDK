@@ -15,7 +15,7 @@
   "content_id": "sha256:7412974fb68c130d03039ab1a1c6977dc326c910411b6b596a9ac58044d3c327",
   "content": "# XNP-0001: Namespaces\n\nStatus: Accepted\n\n## Summary\n\nDefines how substrates and extension schemas avoid ID collisions.\n\n## Motivation\n\nXanaNode aims to support independently authored knowledge substrates that can later interoperate. This proposal records the design expectations for namespaces so implementations can converge without requiring centralized control.\n\n## Requirements\n\n- Must remain human-readable.\n- Must remain machine-interpretable.\n- Must preserve provenance.\n- Must avoid destructive merging.\n- Must allow independent substrate ownership.\n\n## Open Questions\n\n- What is the smallest useful implementation?\n- Which parts are required for compatibility?\n- Which parts should remain optional or experimental?\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0001-namespaces.md",
     "method": "archive",
     "content_id": "sha256:7412974fb68c130d03039ab1a1c6977dc326c910411b6b596a9ac58044d3c327",

@@ -15,7 +15,7 @@
   "content_id": "sha256:fb9ec6a419e5cc923946fccdad168149d1b37d5572ab44b1053faabe256e5912",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-source-audio_drama\",\n  \"title\": \"Source subtype: audio drama\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"audio_drama is an allowed subtype of the source node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"audio_drama\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"source\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-source-audio_drama.json",
     "method": "archive",
     "content_id": "sha256:fb9ec6a419e5cc923946fccdad168149d1b37d5572ab44b1053faabe256e5912",

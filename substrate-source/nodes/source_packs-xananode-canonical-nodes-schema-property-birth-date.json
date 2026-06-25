@@ -15,7 +15,7 @@
   "content_id": "sha256:44da3c0ab1d949e7bacf3d2aad460b8d93c1d068c25acab3ccbe78e435848c65",
   "content": "{\n  \"id\": \"xananode.canonical:schema/property-birth_date\",\n  \"title\": \"Birth date\",\n  \"type\": \"schema\",\n  \"subtype\": \"property_registry_entry\",\n  \"importance\": 4,\n  \"summary\": \"Calendar date on which a person, organization, project, or entity began.\",\n  \"registry_type\": \"birth_date\",\n  \"category\": \"time\",\n  \"aliases\": [\n    \"born\",\n    \"date_of_birth\",\n    \"founded_date\"\n  ],\n  \"applies_to\": [\n    \"person\",\n    \"organization\",\n    \"project\"\n  ],\n  \"unit_system\": \"ISO-8601\",\n  \"value_schema\": {\n    \"type\": \"string\",\n    \"format\": \"date\"\n  },\n  \"examples\": [\n    \"1955-02-24\"\n  ],\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_property-birth_date.json",
     "method": "archive",
     "content_id": "sha256:44da3c0ab1d949e7bacf3d2aad460b8d93c1d068c25acab3ccbe78e435848c65",

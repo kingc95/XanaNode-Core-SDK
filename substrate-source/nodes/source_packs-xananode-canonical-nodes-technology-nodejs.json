@@ -15,7 +15,7 @@
   "content_id": "sha256:f8e201b2c7f7a150b4d5758387d7bdc670418569941d9b21c653c9f7c8534130",
   "content": "{\n  \"id\": \"xananode.canonical:technology/nodejs\",\n  \"title\": \"Node.js\",\n  \"type\": \"technology\",\n  \"subtype\": \"runtime\",\n  \"importance\": 4,\n  \"summary\": \"The JavaScript runtime used by XanaNode Core, Hugo preparation scripts, and build tooling.\",\n  \"source_url\": \"https://nodejs.org/\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_nodejs.json",
     "method": "archive",
     "content_id": "sha256:f8e201b2c7f7a150b4d5758387d7bdc670418569941d9b21c653c9f7c8534130",

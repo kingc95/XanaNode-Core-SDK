@@ -15,7 +15,7 @@
   "content_id": "sha256:700e10a5b50edd332699460a44281aa53bfe6b91d08b193c703a358fad29636b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-approved_by\",\n  \"title\": \"Approved By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The approved_by inverse relationship term derived from approved.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"approved_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"governance\",\n  \"inverse\": \"approved\",\n  \"derived_inverse\": true,\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#fde047\",\n  \"inverse_color\": \"#eab308\",\n  \"line_style\": \"double\",\n  \"inverse_line_style\": \"double\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-approved_by.json",
     "method": "archive",
     "content_id": "sha256:700e10a5b50edd332699460a44281aa53bfe6b91d08b193c703a358fad29636b",

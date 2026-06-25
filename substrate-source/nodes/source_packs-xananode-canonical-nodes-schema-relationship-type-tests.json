@@ -15,7 +15,7 @@
   "content_id": "sha256:22d9312a9cb2bc0551224601c8c40860abc7837369a1aaf4695ca77b36bee49f",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-tests\",\n  \"title\": \"Tests\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source tests the target hypothesis, claim, method, or prediction.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"tests\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"research_workflow\",\n  \"inverse\": \"tested_by\",\n  \"color\": \"#0ea5e9\",\n  \"inverse_color\": \"#7dd3fc\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-tests.json",
     "method": "archive",
     "content_id": "sha256:22d9312a9cb2bc0551224601c8c40860abc7837369a1aaf4695ca77b36bee49f",

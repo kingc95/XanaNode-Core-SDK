@@ -15,7 +15,7 @@
   "content_id": "sha256:52280fdf2c6337fc48e1354e6cf566d31266df94c36faa6a07d7fb8c6a934271",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-continues_to\",\n  \"title\": \"Continues to\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source continues, leads into, or sequences directly to the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"continues_to\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"temporal\",\n  \"inverse\": \"continued_from\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#a3e635\",\n  \"inverse_color\": \"#d9f99d\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-continues_to.json",
     "method": "archive",
     "content_id": "sha256:52280fdf2c6337fc48e1354e6cf566d31266df94c36faa6a07d7fb8c6a934271",

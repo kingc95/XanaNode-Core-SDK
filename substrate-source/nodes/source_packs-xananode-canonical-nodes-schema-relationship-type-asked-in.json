@@ -15,7 +15,7 @@
   "content_id": "sha256:c6da7a68c6e9dd0c6a16bb145c362d07062fe582c98f1422204e5567543d8281",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-asked_in\",\n  \"title\": \"Asked in\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source question was asked in the target communication context.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"asked_in\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"communication\",\n  \"inverse\": \"had_question\",\n  \"color\": \"#38bdf8\",\n  \"inverse_color\": \"#bae6fd\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-asked_in.json",
     "method": "archive",
     "content_id": "sha256:c6da7a68c6e9dd0c6a16bb145c362d07062fe582c98f1422204e5567543d8281",

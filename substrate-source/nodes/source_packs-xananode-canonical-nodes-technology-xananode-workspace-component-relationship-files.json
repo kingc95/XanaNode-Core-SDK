@@ -15,7 +15,7 @@
   "content_id": "sha256:cb0281ce2180a49589f5a6ea1ec2c166e2b16fcd6ed265e50158a733957d2f24",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-workspace-component-relationship-files\",\n  \"title\": \"XanaNode Workspace: relationship files\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Workspace consumes or depends on relationship files.\",\n  \"component_of\": \"xananode.canonical:project/xananode-workspace\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-workspace-component-relationship-files.json",
     "method": "archive",
     "content_id": "sha256:cb0281ce2180a49589f5a6ea1ec2c166e2b16fcd6ed265e50158a733957d2f24",

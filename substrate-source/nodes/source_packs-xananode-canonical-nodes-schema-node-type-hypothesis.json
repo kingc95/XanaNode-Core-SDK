@@ -15,7 +15,7 @@
   "content_id": "sha256:bb87491ccece07301e71417a3728ded0154476b489699b26d0a85d8094cbfa7a",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-hypothesis\",\n  \"title\": \"Hypothesis\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"A provisional explanation, prediction, or model that can be tested, supported, falsified, revised, or abandoned.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"hypothesis\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"scientific\",\n    \"design\",\n    \"historical\",\n    \"diagnostic\",\n    \"prediction\",\n    \"interpretive\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"status\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"confidence\",\n    \"uncertainty_level\",\n    \"evidence_strength\",\n    \"tests\",\n    \"claims\",\n    \"sources\",\n    \"questions\"\n  ],\n  \"color\": {\n    \"bg\": \"#c4b5fd\",\n    \"fg\": \"#171022\",\n    \"outline\": \"#ede9fe\"\n  },\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-hypothesis.json",
     "method": "archive",
     "content_id": "sha256:bb87491ccece07301e71417a3728ded0154476b489699b26d0a85d8094cbfa7a",

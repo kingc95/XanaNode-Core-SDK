@@ -15,7 +15,7 @@
   "content_id": "sha256:d9c825d6cdf92a1f31dbbbd3a44cb81e0d950e2b05aca2c14dea9388c69d4363",
   "content": "{\n  \"id\": \"xananode.canonical:media/xananode-favicon-ico\",\n  \"title\": \"XanaNode Favicon ICO\",\n  \"type\": \"media\",\n  \"subtypes\": [\n    \"image\",\n    \"logo\",\n    \"favicon\"\n  ],\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/vnd.microsoft.icon\",\n  \"importance\": 4,\n  \"summary\": \"Browser favicon bundle for XanaNode projections.\",\n  \"alt\": \"XanaNode branding icon derived from the canonical XanaNode mark.\",\n  \"rights_status\": \"open-source\",\n  \"asset_path\": \"media/images/favicon.ico\",\n  \"asset_role\": \"favicon\",\n  \"creator\": \"Christian Siefen\",\n  \"created_at\": \"2026-06-19T00:00:00.000Z\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_xananode-favicon-ico.json",
     "method": "archive",
     "content_id": "sha256:d9c825d6cdf92a1f31dbbbd3a44cb81e0d950e2b05aca2c14dea9388c69d4363",

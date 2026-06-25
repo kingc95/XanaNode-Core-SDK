@@ -15,7 +15,7 @@
   "content_id": "sha256:96a62316a9da1676437215810dcd820b18a5363dbc985de60e4d7b9d82127804",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-communication-broadcast\",\n  \"title\": \"Communication subtype: broadcast\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"broadcast is an allowed subtype of the communication node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"broadcast\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"communication\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-communication-broadcast.json",
     "method": "archive",
     "content_id": "sha256:96a62316a9da1676437215810dcd820b18a5363dbc985de60e4d7b9d82127804",

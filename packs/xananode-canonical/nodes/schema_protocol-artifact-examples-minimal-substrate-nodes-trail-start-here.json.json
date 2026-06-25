@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/trail-start-here.json",
   "content_id": "sha256:355ac323837b0ceb2c247e652a3f0f563c1ff64473e365be5b50af1114298ace",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/trail-start-here.json",
     "method": "archive",
     "content_id": "sha256:355ac323837b0ceb2c247e652a3f0f563c1ff64473e365be5b50af1114298ace",

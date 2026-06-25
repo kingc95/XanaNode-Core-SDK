@@ -11,7 +11,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:76f2024eac0e5745584032f8adfd62594f7a2ba1798ecd9b391f27f355462d11",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/namespaces.json",
     "method": "archive",
     "content_id": "sha256:1c70d6330e60e757cbf30eef1f6f1d0cc57a6993467bb7680e831ec4573ab7f6",

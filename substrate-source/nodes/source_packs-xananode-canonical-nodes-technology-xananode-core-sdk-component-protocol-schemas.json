@@ -15,7 +15,7 @@
   "content_id": "sha256:c244f667ea57e697ee54d669106bf72a894b9d2b303bfc0cf9f6292d685c6145",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-core-sdk-component-protocol-schemas\",\n  \"title\": \"XanaNode Core SDK: protocol schemas\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Core SDK consumes or depends on protocol schemas.\",\n  \"component_of\": \"xananode.canonical:project/xananode-core-sdk\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-core-sdk-component-protocol-schemas.json",
     "method": "archive",
     "content_id": "sha256:c244f667ea57e697ee54d669106bf72a894b9d2b303bfc0cf9f6292d685c6145",

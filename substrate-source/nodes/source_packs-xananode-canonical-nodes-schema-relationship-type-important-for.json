@@ -15,7 +15,7 @@
   "content_id": "sha256:a627d0b239343c963f1e387c00c735bc1b8f0b2faa7e2c3c885cd0fb401fd69b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-important_for\",\n  \"title\": \"Important for\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source is important for understanding, navigating, preserving, or acting on the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"important_for\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"attention\",\n  \"inverse\": \"has_important_context\",\n  \"color\": \"#fbbf24\",\n  \"inverse_color\": \"#fde68a\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-important_for.json",
     "method": "archive",
     "content_id": "sha256:a627d0b239343c963f1e387c00c735bc1b8f0b2faa7e2c3c885cd0fb401fd69b",

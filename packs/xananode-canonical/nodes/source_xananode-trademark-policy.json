@@ -13,7 +13,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:daf662fca1d1ec595a2302e4edc28559e3398b243ece831c36d3b7807590626f",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/TRADEMARK.md",
     "method": "archive",
     "content_id": "sha256:920cc1e4e4719f3383ec0c50e4eafba89f848b730b4d297b3a22ab576edde81c",

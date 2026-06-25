@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:8fc7ac9063072d7533c5cab3ef1074679ae8e634118d96c86a1254befdc09a10",
-  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-evolution-projection-icon\",\n  \"title\": \"evolution Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/evolution.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/evolution.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the evolution relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:0f99fd8d00596d67f3d7fd7a66567dcb1db8654e0a242a0b81825aacde74312d\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/evolution.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:0f99fd8d00596d67f3d7fd7a66567dcb1db8654e0a242a0b81825aacde74312d\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "content_id": "sha256:acf5edf99b4295dedf9b25ba507517fbe125da80e28584e6d93da43e204073c4",
+  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-evolution-projection-icon\",\n  \"title\": \"evolution Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/evolution.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/evolution.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the evolution relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:0f99fd8d00596d67f3d7fd7a66567dcb1db8654e0a242a0b81825aacde74312d\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:22:39.906Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/evolution.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:0f99fd8d00596d67f3d7fd7a66567dcb1db8654e0a242a0b81825aacde74312d\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_relationship-category-evolution-projection-icon.json",
     "method": "archive",
-    "content_id": "sha256:8fc7ac9063072d7533c5cab3ef1074679ae8e634118d96c86a1254befdc09a10",
+    "content_id": "sha256:acf5edf99b4295dedf9b25ba507517fbe125da80e28584e6d93da43e204073c4",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

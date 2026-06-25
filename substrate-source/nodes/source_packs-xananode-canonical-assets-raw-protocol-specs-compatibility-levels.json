@@ -15,7 +15,7 @@
   "content_id": "sha256:9e8e8ee8beaf1a7d1f3fc872d4c60dc17a7c7713c737009b85da5a3bdd38cc29",
   "content": "# Compatibility Levels\n\nCompatibility levels describe how safely one implementation can ingest or federate another substrate.\n\n## Level 0: Opaque\n\nThe substrate can be stored as raw data, but its schema is unknown.\n\n## Level 1: Manifest Recognized\n\nThe substrate declares a manifest and namespace.\n\n## Level 2: Core Valid\n\nThe substrate validates against XanaNode Core.\n\n## Level 3: Extensions Declared\n\nThe substrate uses custom types, but those types are declared in namespaced extension schemas.\n\n## Level 4: Merge Candidate\n\nThe substrate can participate in identity matching, schema mapping, and merge reporting.\n\n## Level 5: Federation Ready\n\nThe substrate supports stable IDs, provenance, declared schemas, merge reports, and compatibility reports.\n\nCompatibility is not a moral ranking. It is a practical statement about how much automated interoperation is safe.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/specs/compatibility-levels.md",
     "method": "archive",
     "content_id": "sha256:9e8e8ee8beaf1a7d1f3fc872d4c60dc17a7c7713c737009b85da5a3bdd38cc29",

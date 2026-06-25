@@ -15,7 +15,7 @@
   "content_id": "sha256:fe4dc4b7d5e50b0e3cb721433d2bbbe58db367edb5ccc9254ece2d71daf85c36",
   "content": "{\n  \"id\": \"xananode.canonical:trail/federated-stack-proof\",\n  \"title\": \"Federated Stack Proof\",\n  \"type\": \"trail\",\n  \"subtype\": \"evidence_path\",\n  \"importance\": 5,\n  \"summary\": \"A short trail showing that the XanaNode stack proves federation by publishing its own layers as interoperable substrates.\",\n  \"content\": \"Follow the stack from the protocol substrate into Core, then outward into Workspace, Studio, Mobile, and Hugo. The canonical substrate points to each real layer as a federated substrate source, while also carrying embedded example namespaces that teach the same federation patterns in a portable local bundle. Together these show that the stack is not one giant opaque application. It is a federation of layers that remain interoperable without surrendering identity.\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/trail_federated-stack-proof.json",
     "method": "archive",
     "content_id": "sha256:fe4dc4b7d5e50b0e3cb721433d2bbbe58db367edb5ccc9254ece2d71daf85c36",

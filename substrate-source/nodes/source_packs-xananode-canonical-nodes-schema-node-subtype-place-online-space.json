@@ -15,7 +15,7 @@
   "content_id": "sha256:f6369d705d8246a79aee4f3f17f8f1311259575f6c27b52c8ffdca192d64ea6b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-place-online_space\",\n  \"title\": \"Place subtype: online space\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"online_space is an allowed subtype of the place node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"online_space\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"place\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-place-online_space.json",
     "method": "archive",
     "content_id": "sha256:f6369d705d8246a79aee4f3f17f8f1311259575f6c27b52c8ffdca192d64ea6b",

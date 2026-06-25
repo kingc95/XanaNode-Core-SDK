@@ -15,7 +15,7 @@
   "content_id": "sha256:2b8859a13a2c767483f69bcc7c646d08272a96a825ae5021afe0e6889deb92d5",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-investigates\",\n  \"title\": \"Investigates\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source investigates the target question, problem, claim, hypothesis, or knowledge gap.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"investigates\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"inquiry\",\n  \"inverse\": \"investigated_by\",\n  \"color\": \"#2dd4bf\",\n  \"inverse_color\": \"#99f6e4\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-investigates.json",
     "method": "archive",
     "content_id": "sha256:2b8859a13a2c767483f69bcc7c646d08272a96a825ae5021afe0e6889deb92d5",

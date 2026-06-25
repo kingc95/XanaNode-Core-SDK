@@ -15,7 +15,7 @@
   "content_id": "sha256:b0c00759d2c1e79833e445e5adb543dc066a7919421c358e905cdf2cb138aab6",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-studio-component-protocol-branding\",\n  \"title\": \"XanaNode Studio: protocol branding\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Studio consumes or depends on protocol branding.\",\n  \"component_of\": \"xananode.canonical:project/xananode-studio\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-studio-component-protocol-branding.json",
     "method": "archive",
     "content_id": "sha256:b0c00759d2c1e79833e445e5adb543dc066a7919421c358e905cdf2cb138aab6",

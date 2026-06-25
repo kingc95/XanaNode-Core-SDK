@@ -15,7 +15,7 @@
   "content_id": "sha256:e86fc04c86a729921f8558504e5f5a43b8e57b33dbebc94dafe399a67b7d673c",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-publication-article\",\n  \"title\": \"Publication subtype: article\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"article is an allowed subtype of the publication node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"article\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"publication\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-publication-article.json",
     "method": "archive",
     "content_id": "sha256:e86fc04c86a729921f8558504e5f5a43b8e57b33dbebc94dafe399a67b7d673c",

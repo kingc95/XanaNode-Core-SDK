@@ -15,7 +15,7 @@
   "content_id": "sha256:b653cf3a3b96a3cc523986923dfae4296e3d02591a6d6dacafa4241e69a94c9d",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-governs\",\n  \"title\": \"Governs Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The governs inverse relationship term derived from governed_by.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"governs\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"governance\",\n  \"inverse\": \"governed_by\",\n  \"color\": \"#fde047\",\n  \"inverse_color\": \"#eab308\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"double\",\n  \"derived_inverse\": true,\n  \"relationships\": [],\n  \"default_weight\": 4,\n  \"default_visibility\": \"secondary\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-governs.json",
     "method": "archive",
     "content_id": "sha256:b653cf3a3b96a3cc523986923dfae4296e3d02591a6d6dacafa4241e69a94c9d",

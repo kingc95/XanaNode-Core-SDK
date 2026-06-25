@@ -15,7 +15,7 @@
   "content_id": "sha256:fee7b692c02022d8ffda25421467f5a76a29c2812853acba7f1ad3c60357728d",
   "content": "{\n  \"id\": \"xananode.canonical:event/xananode-canonical-pack-bootstrap\",\n  \"title\": \"XanaNode Canonical Pack Bootstrap\",\n  \"type\": \"event\",\n  \"subtype\": \"release\",\n  \"importance\": 4,\n  \"summary\": \"The point where Core begins shipping a mountable canonical XanaNode substrate pack as protocol JSON.\",\n  \"date\": \"2026-06-19\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/event_xananode-canonical-pack-bootstrap.json",
     "method": "archive",
     "content_id": "sha256:fee7b692c02022d8ffda25421467f5a76a29c2812853acba7f1ad3c60357728d",

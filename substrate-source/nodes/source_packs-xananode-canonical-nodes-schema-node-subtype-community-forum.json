@@ -15,7 +15,7 @@
   "content_id": "sha256:bc7c22d02d25bc19065e3e73acf4c2e94f0a5bb009f0f01ec1abf071cff131fc",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-community-forum\",\n  \"title\": \"Community subtype: forum\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"forum is an allowed subtype of the community node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"forum\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"community\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-community-forum.json",
     "method": "archive",
     "content_id": "sha256:bc7c22d02d25bc19065e3e73acf4c2e94f0a5bb009f0f01ec1abf071cff131fc",

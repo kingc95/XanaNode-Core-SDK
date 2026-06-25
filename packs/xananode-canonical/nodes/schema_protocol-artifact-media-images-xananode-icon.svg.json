@@ -12,7 +12,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:08f14405bb12b15981cff907975c9d7f910652465e6919b4f6908188549df17a",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/images/xananode-icon.svg",
     "method": "archive",
     "content_id": "sha256:d7b60a3f9a05156041dae523790d3465e7909a54425dfbeea3e112eace5f9c9a",

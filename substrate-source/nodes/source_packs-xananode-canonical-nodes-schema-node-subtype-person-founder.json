@@ -15,7 +15,7 @@
   "content_id": "sha256:122002c9492b5f4b2cbd2a14c06a9e1bc150e3fefee606bf06e348ea6661b184",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-person-founder\",\n  \"title\": \"Person subtype: founder\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"founder is an allowed subtype of the person node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"founder\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"person\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-person-founder.json",
     "method": "archive",
     "content_id": "sha256:122002c9492b5f4b2cbd2a14c06a9e1bc150e3fefee606bf06e348ea6661b184",

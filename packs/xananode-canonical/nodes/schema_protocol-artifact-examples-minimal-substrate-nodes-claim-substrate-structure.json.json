@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/claim-substrate-structure.json",
   "content_id": "sha256:7b9d489e6aac06aef0478a6840bc6170722be070ea63e0093b821095587e6709",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/claim-substrate-structure.json",
     "method": "archive",
     "content_id": "sha256:7b9d489e6aac06aef0478a6840bc6170722be070ea63e0093b821095587e6709",

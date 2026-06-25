@@ -15,7 +15,7 @@
   "content_id": "sha256:bf43a6ddb3ccffc0c8f2bfa89caa589339f9ea142ec3361b779f5c6efae6cee3",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-influence\",\n  \"title\": \"Influence Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The influence category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"influence\",\n  \"registry_namespace\": \"xananode\",\n  \"relationships\": [],\n  \"color\": \"#14b8a6\",\n  \"inverse_color\": \"#99f6e4\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-influence.json",
     "method": "archive",
     "content_id": "sha256:bf43a6ddb3ccffc0c8f2bfa89caa589339f9ea142ec3361b779f5c6efae6cee3",

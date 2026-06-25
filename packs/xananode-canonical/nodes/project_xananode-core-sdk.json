@@ -14,16 +14,16 @@
   "build_metadata": {
     "version": "0.1.0",
     "repository": "kingc95/XanaNode-Core-SDK",
-    "generated_at": "2026-06-25T14:22:39.718Z",
+    "generated_at": "2026-06-25T14:24:47.852Z",
     "built_by": "@xananode/core",
-    "git_commit": "b29928be095f94f10f92a365015a5a471d0ba825",
+    "git_commit": "01d960de44614fe25110d6e9adfa5fb99834b9bf",
     "git_branch": "main",
     "runtime": "node v24.16.0",
     "platform": "win32/x64",
     "dependencies": [
       {
         "name": "XanaNode Protocol",
-        "version": "9973dcf",
+        "version": "9e8bf84",
         "repository": "kingc95/XanaNode",
         "relationship": "uses"
       },

@@ -15,7 +15,7 @@
   "content_id": "sha256:2744b662620e6f39a9ea49995a5f527c2640bfe05948c14b60d0d1ed4b311011",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-community-research\",\n  \"title\": \"Community subtype: research\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"research is an allowed subtype of the community node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"research\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"community\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-community-research.json",
     "method": "archive",
     "content_id": "sha256:2744b662620e6f39a9ea49995a5f527c2640bfe05948c14b60d0d1ed4b311011",

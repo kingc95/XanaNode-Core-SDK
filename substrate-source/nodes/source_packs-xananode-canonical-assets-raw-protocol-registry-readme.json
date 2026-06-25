@@ -15,7 +15,7 @@
   "content_id": "sha256:2e57be35097a7f0fba2619f97a5839dca73f3b4ca5ea472523f147a9e6108e74",
   "content": "# Registry\n\nThe registry directory lists known namespaces, schemas, implementations, and related resources.\n\nThis is not a central authority over truth.\n\nIt is a discovery aid.\n\nKnown implementations are listed in [known-implementations.json](known-implementations.json). Implementation repositories should point back to the protocol version and schema artifacts they target.\n\nKnown federation targets are listed in [federation-targets.json](federation-targets.json). These are discoverable online substrate sources that Workspace tools can clone, identify by branch and commit, and mount into another substrate without absorbing their records.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/registry/README.md",
     "method": "archive",
     "content_id": "sha256:2e57be35097a7f0fba2619f97a5839dca73f3b4ca5ea472523f147a9e6108e74",

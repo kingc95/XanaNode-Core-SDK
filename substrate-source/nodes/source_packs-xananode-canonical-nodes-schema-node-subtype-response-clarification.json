@@ -15,7 +15,7 @@
   "content_id": "sha256:1553306180c037704218e5a32b41b23f81b9359be1acaeb171c6347c1d63a5f0",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-response-clarification\",\n  \"title\": \"Response subtype: clarification\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"clarification is an allowed subtype of the response node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"clarification\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"response\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-response-clarification.json",
     "method": "archive",
     "content_id": "sha256:1553306180c037704218e5a32b41b23f81b9359be1acaeb171c6347c1d63a5f0",

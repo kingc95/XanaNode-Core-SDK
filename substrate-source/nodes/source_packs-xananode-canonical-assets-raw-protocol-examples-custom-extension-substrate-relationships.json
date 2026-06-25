@@ -15,7 +15,7 @@
   "content_id": "sha256:54e8e87ba09b669be846143c9aeecfb512ace6248c32b3d8f359bd220d5db61b",
   "content": "{\r\n  \"relationships\": [\r\n    {\r\n      \"id\": \"example.museum:rel/artifact-represents-concept\",\r\n      \"source\": \"example.museum:artifact/memex-illustration\",\r\n      \"target\": \"example.museum:concept/memex\",\r\n      \"type\": \"represents\",\r\n      \"weight\": 4,\r\n      \"visibility\": \"primary\",\r\n      \"asserted_by\": \"example.museum:person/example-curator\",\r\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\r\n      \"confidence\": \"curatorial\",\r\n      \"summary\": \"The exhibit illustration is used as a representative artifact for the Memex concept.\"\r\n    },\r\n    {\r\n      \"id\": \"example.museum:rel/artifact-context\",\r\n      \"source\": \"example.museum:artifact/memex-illustration\",\r\n      \"target\": \"example.museum:concept/memex\",\r\n      \"type\": \"example.museum:curatorial_context_for\",\r\n      \"weight\": 3,\r\n      \"visibility\": \"secondary\",\r\n      \"asserted_by\": \"example.museum:person/example-curator\",\r\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\r\n      \"confidence\": \"curatorial\",\r\n      \"summary\": \"The artifact provides curatorial framing for how the Memex concept is presented in the exhibit.\"\r\n    }\r\n  ]\r\n}\r\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/relationships.json",
     "method": "archive",
     "content_id": "sha256:54e8e87ba09b669be846143c9aeecfb512ace6248c32b3d8f359bd220d5db61b",

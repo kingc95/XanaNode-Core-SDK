@@ -15,7 +15,7 @@
   "content_id": "sha256:83676d0856ba13a6083e36c3ae49ebf8c536ea61826a32864fcf5c434e1f0a52",
   "content": "{\n  \"id\": \"xananode.canonical:observation/markdown-recreation-friction\",\n  \"title\": \"Markdown Recreation Friction\",\n  \"type\": \"observation\",\n  \"subtype\": \"failure\",\n  \"importance\": 4,\n  \"summary\": \"Forcing authors to recreate validated protocol nodes as Markdown creates duplicate governance surfaces and loses the benefit of portable substrate artifacts.\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/observation_markdown-recreation-friction.json",
     "method": "archive",
     "content_id": "sha256:83676d0856ba13a6083e36c3ae49ebf8c536ea61826a32864fcf5c434e1f0a52",

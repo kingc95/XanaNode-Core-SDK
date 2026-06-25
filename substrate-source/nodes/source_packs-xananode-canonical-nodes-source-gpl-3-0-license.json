@@ -15,7 +15,7 @@
   "content_id": "sha256:604b2edf7e8803eca3d5408d31984f56211c9faa9e9267a0f95a8d81c82643b1",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:source/gpl-3-0-license\",\n  \"title\": \"GNU General Public License 3.0\",\n  \"type\": \"source\",\n  \"subtype\": \"license\",\n  \"importance\": 3,\n  \"summary\": \"A strong copyleft open source license included as a comparative licensing concept.\",\n  \"source_url\": \"https://www.gnu.org/licenses/gpl-3.0.en.html\",\n  \"rights_status\": \"external\",\n  \"license\": \"GPL-3.0\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_gpl-3-0-license.json",
     "method": "archive",
     "content_id": "sha256:604b2edf7e8803eca3d5408d31984f56211c9faa9e9267a0f95a8d81c82643b1",

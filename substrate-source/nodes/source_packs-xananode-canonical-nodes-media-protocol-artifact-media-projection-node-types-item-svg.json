@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:370939714d75901b0b9768b685121baaae180ff63dea9e0de4121641f3a1c475",
-  "content": "{\n  \"id\": \"xananode.canonical:media/protocol-artifact-media-projection-node-types-item.svg\",\n  \"title\": \"Media / Projection / Node Types / Item\",\n  \"type\": \"media\",\n  \"subtype\": \"protocol_media_asset\",\n  \"importance\": 3,\n  \"summary\": \"media/projection/node-types/item.svg is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"media/projection/node-types/item.svg\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/item.svg\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/media/projection/node-types/item.svg\",\n  \"content_id\": \"sha256:5d2a7ada33b46025a3b52e7209312b46959d10b298694d81da0cc9fbb45285f2\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/item.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:5d2a7ada33b46025a3b52e7209312b46959d10b298694d81da0cc9fbb45285f2\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "content_id": "sha256:7ed9eb416b151ade44d8cacef9ba62d03ab273e07d6dc244f2aee11b8d41f9f7",
+  "content": "{\n  \"id\": \"xananode.canonical:media/protocol-artifact-media-projection-node-types-item.svg\",\n  \"title\": \"Media / Projection / Node Types / Item\",\n  \"type\": \"media\",\n  \"subtype\": \"protocol_media_asset\",\n  \"importance\": 3,\n  \"summary\": \"media/projection/node-types/item.svg is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"media/projection/node-types/item.svg\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/item.svg\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/media/projection/node-types/item.svg\",\n  \"content_id\": \"sha256:5d2a7ada33b46025a3b52e7209312b46959d10b298694d81da0cc9fbb45285f2\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:22:39.906Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/item.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:5d2a7ada33b46025a3b52e7209312b46959d10b298694d81da0cc9fbb45285f2\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-node-types-item.svg.json",
     "method": "archive",
-    "content_id": "sha256:370939714d75901b0b9768b685121baaae180ff63dea9e0de4121641f3a1c475",
+    "content_id": "sha256:7ed9eb416b151ade44d8cacef9ba62d03ab273e07d6dc244f2aee11b8d41f9f7",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

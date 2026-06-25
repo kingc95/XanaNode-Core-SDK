@@ -15,7 +15,7 @@
   "content_id": "sha256:aa3363149988a85355a5be43019cd45e16c0a0be5ca737cb0fa3511380e4e336",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-item-appliance\",\n  \"title\": \"Item subtype: appliance\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"appliance is an allowed subtype of the item node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"appliance\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"item\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-item-appliance.json",
     "method": "archive",
     "content_id": "sha256:aa3363149988a85355a5be43019cd45e16c0a0be5ca737cb0fa3511380e4e336",

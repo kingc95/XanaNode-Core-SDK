@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/minimal-substrate/nanopublication-substrate-claim.json",
   "content_id": "sha256:058c8e5604416d884b81cc589203ede8660a57b6101a043e087624e7ccd38734",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nanopublication-substrate-claim.json",
     "method": "archive",
     "content_id": "sha256:058c8e5604416d884b81cc589203ede8660a57b6101a043e087624e7ccd38734",

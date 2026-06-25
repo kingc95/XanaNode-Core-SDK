@@ -12,7 +12,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:5200668eff49a37c9e0af11bfd09a709c17c65f93e1777b7e72dbc75c703411e",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/property-registry.schema.json",
     "method": "archive",
     "content_id": "sha256:74c45259c0200a27c9f879511c8557b33da3b9b6c2f5c34a14c219c89c91a216",

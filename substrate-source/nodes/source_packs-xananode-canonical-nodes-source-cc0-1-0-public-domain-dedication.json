@@ -15,7 +15,7 @@
   "content_id": "sha256:743047216e477231d0c625c4ba3ba5b22ae1b55210c3a1f2983366a9eca43ac0",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:source/cc0-1-0-public-domain-dedication\",\n  \"title\": \"CC0 1.0 Public Domain Dedication\",\n  \"type\": \"source\",\n  \"subtype\": \"license\",\n  \"importance\": 3,\n  \"summary\": \"A public-domain dedication used when authors want to waive copyright restrictions as fully as possible.\",\n  \"source_url\": \"https://creativecommons.org/publicdomain/zero/1.0/\",\n  \"rights_status\": \"external\",\n  \"license\": \"CC0-1.0\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_cc0-1-0-public-domain-dedication.json",
     "method": "archive",
     "content_id": "sha256:743047216e477231d0c625c4ba3ba5b22ae1b55210c3a1f2983366a9eca43ac0",

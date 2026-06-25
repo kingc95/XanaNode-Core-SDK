@@ -15,7 +15,7 @@
   "content_id": "sha256:be07e9922d6cce98210ee802a31a9df1f30d92eb9cf4be7ef6311b9cf9bc5e07",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-trained_on\",\n  \"title\": \"Trained on\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source system or model was trained on the target dataset, corpus, or collection.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"trained_on\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"composition\",\n  \"inverse\": \"used_to_train\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#22c55e\",\n  \"inverse_color\": \"#86efac\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-trained_on.json",
     "method": "archive",
     "content_id": "sha256:be07e9922d6cce98210ee802a31a9df1f30d92eb9cf4be7ef6311b9cf9bc5e07",

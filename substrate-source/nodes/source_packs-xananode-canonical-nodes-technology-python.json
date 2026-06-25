@@ -15,7 +15,7 @@
   "content_id": "sha256:0f00c5bdb7356293b8dbd7a5f281df8fd646c28bfb88c4d84787022975dba15c",
   "content": "{\n  \"id\": \"xananode.canonical:technology/python\",\n  \"title\": \"Python\",\n  \"type\": \"technology\",\n  \"subtype\": \"language\",\n  \"importance\": 3,\n  \"summary\": \"A language used by the protocol repository validation tooling and supported as a future validation/runtime target.\",\n  \"source_url\": \"https://www.python.org/\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_python.json",
     "method": "archive",
     "content_id": "sha256:0f00c5bdb7356293b8dbd7a5f281df8fd646c28bfb88c4d84787022975dba15c",

@@ -15,7 +15,7 @@
   "content_id": "sha256:c82f71016d67cc3a9de3d67ff5fb8f2a4d035dc5e8ad093babf5ed70ae0447bc",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-media-touch_icon\",\n  \"title\": \"Media subtype: touch icon\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"touch_icon is an allowed subtype of the media node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"touch_icon\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"media\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-media-touch_icon.json",
     "method": "archive",
     "content_id": "sha256:c82f71016d67cc3a9de3d67ff5fb8f2a4d035dc5e8ad093babf5ed70ae0447bc",

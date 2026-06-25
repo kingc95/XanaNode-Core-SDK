@@ -15,7 +15,7 @@
   "content_id": "sha256:38a3d2c9d7614145f289842e0de01f66952f0f2b86ba5f517eb46cb015cb3261",
   "content": "{\n  \"id\": \"xananode.canonical:source/hugo-official-site\",\n  \"title\": \"Hugo Official Site\",\n  \"type\": \"source\",\n  \"subtype\": \"official_site\",\n  \"importance\": 3,\n  \"summary\": \"The official website and documentation source for Hugo.\",\n  \"source_url\": \"https://gohugo.io/\",\n  \"rights_status\": \"external\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_hugo-official-site.json",
     "method": "archive",
     "content_id": "sha256:38a3d2c9d7614145f289842e0de01f66952f0f2b86ba5f517eb46cb015cb3261",

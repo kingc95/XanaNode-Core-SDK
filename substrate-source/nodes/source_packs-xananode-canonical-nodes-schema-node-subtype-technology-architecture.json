@@ -15,7 +15,7 @@
   "content_id": "sha256:2c3c117d90f3ec148c13c4162a3c33067a3d79e5de6dc29ab33d90f8b6d7ef22",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-technology-architecture\",\n  \"title\": \"Technology subtype: architecture\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"architecture is an allowed subtype of the technology node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"architecture\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"technology\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-technology-architecture.json",
     "method": "archive",
     "content_id": "sha256:2c3c117d90f3ec148c13c4162a3c33067a3d79e5de6dc29ab33d90f8b6d7ef22",

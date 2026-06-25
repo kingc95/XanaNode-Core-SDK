@@ -15,7 +15,7 @@
   "content_id": "sha256:2247432bc955a1cb08c44001def4fe58ec5889aabe10da14f80902cd3a9a8e5a",
   "content": "# XanaNode Proposals\n\nXanaNode Proposals, or XNPs, are design records for protocol changes.\n\nUse proposals for changes that affect:\n\n- canonical schemas\n- federation behavior\n- namespace rules\n- compatibility levels\n- transclusion\n- tumbler addressing\n- Git-backed substrates\n- derived inverse relationships\n- standards alignment profiles\n- federation discovery and trust\n- Studio local-first authoring\n- governance\n\nProposal statuses:\n\n- Draft\n- Review\n- Accepted\n- Rejected\n- Superseded\n- Experimental\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/proposals/README.md",
     "method": "archive",
     "content_id": "sha256:2247432bc955a1cb08c44001def4fe58ec5889aabe10da14f80902cd3a9a8e5a",

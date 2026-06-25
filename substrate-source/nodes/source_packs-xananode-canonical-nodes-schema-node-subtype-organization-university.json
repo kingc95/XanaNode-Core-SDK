@@ -15,7 +15,7 @@
   "content_id": "sha256:56cf51f0e0df49e52ed320a2110c2db5e8b6f931c040ecc86e083372c82613ee",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-organization-university\",\n  \"title\": \"Organization subtype: university\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"university is an allowed subtype of the organization node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"university\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"organization\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-organization-university.json",
     "method": "archive",
     "content_id": "sha256:56cf51f0e0df49e52ed320a2110c2db5e8b6f931c040ecc86e083372c82613ee",

@@ -15,7 +15,7 @@
   "content_id": "sha256:acf9a69904b1b6a8d1ed3e301347ee4f7f261c5daee9dfc01628a6cc5a08a76d",
   "content": "# XanaNode Examples\n\nThese examples are protocol examples, not full applications.\n\nThey show how a substrate can declare a namespace, define nodes, create typed relationships, extend the core schema, and produce a federation merge report.\n\n## Examples\n\n- `minimal-substrate/` — the smallest useful XanaNode substrate.\n- `custom-extension-substrate/` — a substrate that adds custom namespace-specific types.\n- `federation-example/` — two independently authored substrates plus a merge report.\n\nThe examples intentionally use JSON files instead of a specific CMS, static-site generator, database, or graph renderer. Implementations may store the same structures in Markdown front matter, a database, RDF, graph stores, or other formats.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/README.md",
     "method": "archive",
     "content_id": "sha256:acf9a69904b1b6a8d1ed3e301347ee4f7f261c5daee9dfc01628a6cc5a08a76d",

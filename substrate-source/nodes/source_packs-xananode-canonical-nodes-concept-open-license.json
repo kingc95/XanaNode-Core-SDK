@@ -15,7 +15,7 @@
   "content_id": "sha256:48c974d507bd6fb87bb6a36655837c24179363d56c87f9de24accad5088b529c",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:concept/open-license\",\n  \"title\": \"Open License\",\n  \"type\": \"concept\",\n  \"subtype\": \"principle\",\n  \"importance\": 4,\n  \"summary\": \"A license that grants broad public permission to use, share, adapt, or implement a work while preserving stated conditions such as attribution or notices.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_open-license.json",
     "method": "archive",
     "content_id": "sha256:48c974d507bd6fb87bb6a36655837c24179363d56c87f9de24accad5088b529c",

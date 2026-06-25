@@ -15,7 +15,7 @@
   "content_id": "sha256:8ac6f3407f87ef617a75e131d4ae5826aabed3ca33c176715eb0ce22bd703d5a",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-mobile-component-protocol-branding\",\n  \"title\": \"XanaNode Mobile: protocol branding\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Mobile consumes or depends on protocol branding.\",\n  \"component_of\": \"xananode.canonical:project/xananode-mobile\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-mobile-component-protocol-branding.json",
     "method": "archive",
     "content_id": "sha256:8ac6f3407f87ef617a75e131d4ae5826aabed3ca33c176715eb0ce22bd703d5a",

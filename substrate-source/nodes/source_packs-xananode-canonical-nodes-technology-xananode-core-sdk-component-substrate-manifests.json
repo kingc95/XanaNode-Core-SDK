@@ -15,7 +15,7 @@
   "content_id": "sha256:48c4605696af047c4c4ca2601d07d0d05c69a348c62b0950e1bc4b492e98c17f",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-core-sdk-component-substrate-manifests\",\n  \"title\": \"XanaNode Core SDK: substrate manifests\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Core SDK consumes or depends on substrate manifests.\",\n  \"component_of\": \"xananode.canonical:project/xananode-core-sdk\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-core-sdk-component-substrate-manifests.json",
     "method": "archive",
     "content_id": "sha256:48c4605696af047c4c4ca2601d07d0d05c69a348c62b0950e1bc4b492e98c17f",

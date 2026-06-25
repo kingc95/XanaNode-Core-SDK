@@ -15,7 +15,7 @@
   "content_id": "sha256:ea64fee40b6db4d80d7877d10286ce4de1b5239b1aa810601b5c370f477f575d",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-project-software\",\n  \"title\": \"Project subtype: software\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"software is an allowed subtype of the project node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"software\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"project\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-project-software.json",
     "method": "archive",
     "content_id": "sha256:ea64fee40b6db4d80d7877d10286ce4de1b5239b1aa810601b5c370f477f575d",

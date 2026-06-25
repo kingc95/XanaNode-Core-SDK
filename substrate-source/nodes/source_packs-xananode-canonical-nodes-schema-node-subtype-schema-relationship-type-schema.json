@@ -15,7 +15,7 @@
   "content_id": "sha256:5b54aeaa0812892169cbf4d7df064448bf8a984d06d46ced22d3350a62951b8a",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-schema-relationship_type_schema\",\n  \"title\": \"Schema subtype: relationship type schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"relationship_type_schema is an allowed subtype of the schema node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"relationship_type_schema\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"schema\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-schema-relationship_type_schema.json",
     "method": "archive",
     "content_id": "sha256:5b54aeaa0812892169cbf4d7df064448bf8a984d06d46ced22d3350a62951b8a",

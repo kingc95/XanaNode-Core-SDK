@@ -15,7 +15,7 @@
   "content_id": "sha256:3ef71e50a3480a2a6b0c8bcb8ed54b5c0818b12c01c6ec1fd0ffc440d1ba56b8",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-workspace-component-author-profiles\",\n  \"title\": \"XanaNode Workspace: author profiles\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Workspace consumes or depends on author profiles.\",\n  \"component_of\": \"xananode.canonical:project/xananode-workspace\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-workspace-component-author-profiles.json",
     "method": "archive",
     "content_id": "sha256:3ef71e50a3480a2a6b0c8bcb8ed54b5c0818b12c01c6ec1fd0ffc440d1ba56b8",

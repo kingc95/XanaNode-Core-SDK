@@ -15,7 +15,7 @@
   "content_id": "sha256:a493ab54a11bdc999b8b9b413d4e8be1095ee4689f781bbee1533ac12216c13a",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:concept/software-license\",\n  \"title\": \"Software License\",\n  \"type\": \"concept\",\n  \"subtype\": \"distinction\",\n  \"importance\": 4,\n  \"summary\": \"A license applied to source code, validators, tooling, schemas, and implementation artifacts.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_software-license.json",
     "method": "archive",
     "content_id": "sha256:a493ab54a11bdc999b8b9b413d4e8be1095ee4689f781bbee1533ac12216c13a",

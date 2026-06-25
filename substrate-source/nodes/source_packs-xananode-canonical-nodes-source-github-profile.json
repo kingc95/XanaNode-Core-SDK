@@ -15,7 +15,7 @@
   "content_id": "sha256:307ca240ce6ddc0227a6735c4c7d3c61659bb859494edcc34cf74fdee6be42cf",
   "content": "{\n  \"id\": \"xananode.canonical:source/github-profile\",\n  \"title\": \"GitHub Profile\",\n  \"type\": \"source\",\n  \"subtype\": \"social_profile\",\n  \"importance\": 4,\n  \"summary\": \"The public GitHub profile collecting XanaNode development activity and repositories.\",\n  \"source_url\": \"https://github.com/kingc95\",\n  \"rights_status\": \"external\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_github-profile.json",
     "method": "archive",
     "content_id": "sha256:307ca240ce6ddc0227a6735c4c7d3c61659bb859494edcc34cf74fdee6be42cf",

@@ -15,7 +15,7 @@
   "content_id": "sha256:7cdebf803484c1de623f59f7a931dd35d7a569c259bfe601bac65e70c6ebe2de",
   "content": "# XNP-0010: Federation Discovery and Trust\n\nStatus: Accepted\n\n## Summary\n\nDefines optional discovery and trust metadata in substrate manifests.\n\n## Decision\n\nSubstrate manifests may include:\n\n- federation inbox\n- federation outbox\n- subscription or feed URL\n- merge report endpoint\n- mapping endpoint\n- signature metadata\n- public key metadata\n- trust scopes\n\nTrust scopes are:\n\n- `local_substrate`\n- `imported_schema`\n- `mapping`\n- `assertion`\n\n## Rationale\n\nGit-backed substrates can federate through repository exchange, but active federation benefits from discoverable update and mapping endpoints. Signatures and public keys provide a path toward verifiable manifests, merge reports, mappings, and assertions.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0010-federation-discovery-and-trust.md",
     "method": "archive",
     "content_id": "sha256:7cdebf803484c1de623f59f7a931dd35d7a569c259bfe601bac65e70c6ebe2de",

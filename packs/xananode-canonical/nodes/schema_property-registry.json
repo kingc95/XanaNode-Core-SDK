@@ -11,7 +11,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:a60b4ba549d97566097ddf2c8be5aef179120dff261e3485d0640c56a21bcd4f",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-property-registry.v0.1.0.json",
     "method": "archive",
     "content_id": "sha256:09c0306032e01170c92bfa0bc044c0983e980b68e8bd88b3e8c9f37110acf39b",

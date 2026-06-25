@@ -15,7 +15,7 @@
   "content_id": "sha256:771ba0c10fa0703e17ed6dc601567099437771fc4a1c1a31214c54c4fbcd7f92",
   "content": "export class XanaNodeError extends Error {\n  constructor(message, details = {}) {\n    super(message);\n    this.name = \"XanaNodeError\";\n    this.details = details;\n  }\n}\n\nexport class ValidationError extends XanaNodeError {\n  constructor(message, details = {}) {\n    super(message, details);\n    this.name = \"ValidationError\";\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/errors.js",
     "method": "archive",
     "content_id": "sha256:771ba0c10fa0703e17ed6dc601567099437771fc4a1c1a31214c54c4fbcd7f92",

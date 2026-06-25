@@ -15,7 +15,7 @@
   "content_id": "sha256:8ea0fde4c885b51a5d7317604c70dbc6d6a13d5f3ad2cd2e0e14b9ff76fe1d4f",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-format_translated_into\",\n  \"title\": \"Format translated into\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source is a format translation of the target content.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"format_translated_into\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"representation\",\n  \"inverse\": \"format_translated_from\",\n  \"color\": \"#c4b5fd\",\n  \"inverse_color\": \"#8b5cf6\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-format_translated_into.json",
     "method": "archive",
     "content_id": "sha256:8ea0fde4c885b51a5d7317604c70dbc6d6a13d5f3ad2cd2e0e14b9ff76fe1d4f",

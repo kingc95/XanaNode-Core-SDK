@@ -15,7 +15,7 @@
   "content_id": "sha256:ce4c2954ad2c3b626f55dc75cef1dfdf96567b3e8f69815e85dc8d54ab416dd8",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-had_participant\",\n  \"title\": \"Had Participant Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The had_participant inverse relationship term derived from participated_in.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"had_participant\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"participation\",\n  \"inverse\": \"participated_in\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#f9a8d4\",\n  \"inverse_color\": \"#ec4899\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-had_participant.json",
     "method": "archive",
     "content_id": "sha256:ce4c2954ad2c3b626f55dc75cef1dfdf96567b3e8f69815e85dc8d54ab416dd8",

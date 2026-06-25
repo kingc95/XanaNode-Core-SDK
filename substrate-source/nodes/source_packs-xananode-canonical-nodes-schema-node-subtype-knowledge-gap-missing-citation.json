@@ -15,7 +15,7 @@
   "content_id": "sha256:b99a983ece7d844794dfbc085de76f151a9a956345152d9bf8e80eeb7e0cb381",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-knowledge_gap-missing_citation\",\n  \"title\": \"Knowledge Gap subtype: missing citation\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"missing_citation is an allowed subtype of the knowledge_gap node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"missing_citation\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"knowledge_gap\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-knowledge_gap-missing_citation.json",
     "method": "archive",
     "content_id": "sha256:b99a983ece7d844794dfbc085de76f151a9a956345152d9bf8e80eeb7e0cb381",

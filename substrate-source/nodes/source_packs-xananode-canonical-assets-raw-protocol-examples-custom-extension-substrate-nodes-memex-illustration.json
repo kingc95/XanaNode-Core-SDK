@@ -15,7 +15,7 @@
   "content_id": "sha256:fe8d0bf783d999143bb55128e44dfe30d83a3955de67bf5f448d9095db43eb12",
   "content": "{\n  \"id\": \"example.museum:artifact/memex-illustration\",\n  \"title\": \"Memex Exhibit Illustration\",\n  \"type\": \"example.museum:artifact\",\n  \"importance\": 3,\n  \"summary\": \"A fictional exhibit artifact representing the Memex concept.\",\n  \"rights_status\": \"example\",\n  \"relationships\": [\n    {\n      \"id\": \"example.museum:rel/artifact-represents-concept\",\n      \"type\": \"represents\",\n      \"target\": \"example.museum:concept/memex\",\n      \"direction\": \"outgoing\"\n    },\n    {\n      \"id\": \"example.museum:rel/artifact-context\",\n      \"type\": \"example.museum:curatorial_context_for\",\n      \"target\": \"example.museum:concept/memex\",\n      \"direction\": \"outgoing\"\n    }\n  ]\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/nodes/memex-illustration.json",
     "method": "archive",
     "content_id": "sha256:fe8d0bf783d999143bb55128e44dfe30d83a3955de67bf5f448d9095db43eb12",

@@ -15,7 +15,7 @@
   "content_id": "sha256:d82ba51bf3a6c94621bf14a10fd3f4e72eef1ec07f00bc766a5d5032f6e6a5e1",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-identity\",\n  \"title\": \"Identity Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The identity category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"identity\",\n  \"registry_namespace\": \"xananode\",\n  \"relationships\": [],\n  \"color\": \"#f472b6\",\n  \"inverse_color\": \"#fbcfe8\",\n  \"line_style\": \"double\",\n  \"inverse_line_style\": \"double\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-identity.json",
     "method": "archive",
     "content_id": "sha256:d82ba51bf3a6c94621bf14a10fd3f4e72eef1ec07f00bc766a5d5032f6e6a5e1",

@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:f4a881260f514efb375de054a8788094dd28a35b58c8c946741abf7cbe94cc35",
-  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schema-substrate-manifest\",\n  \"title\": \"Substrate Manifest Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"canonical_schema_record\",\n  \"importance\": 5,\n  \"summary\": \"Canonical schema registry entry for substrate-manifest.\",\n  \"registry_type\": \"substrate-manifest\",\n  \"version\": \"0.1.0\",\n  \"schema_path\": \"../schemas/substrate-manifest.schema.json\",\n  \"artifact_path\": \"\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-manifest.schema.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/substrate-manifest.schema.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:ed1bb5aa0ff4ec9b6f4c4bed4ac2e25883e96dcd586a1b4a5e74c1b78e80cb48\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-manifest.schema.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:70f06fa47eb996155b18c459e50ee9389d1d1501557f3320364fe06100acc592\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "content_id": "sha256:03d25ab3898079c394d8f8cd5d554745f26429418d9555ca619b342e09700a44",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schema-substrate-manifest\",\n  \"title\": \"Substrate Manifest Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"canonical_schema_record\",\n  \"importance\": 5,\n  \"summary\": \"Canonical schema registry entry for substrate-manifest.\",\n  \"registry_type\": \"substrate-manifest\",\n  \"version\": \"0.1.0\",\n  \"schema_path\": \"../schemas/substrate-manifest.schema.json\",\n  \"artifact_path\": \"\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-manifest.schema.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/substrate-manifest.schema.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:ed1bb5aa0ff4ec9b6f4c4bed4ac2e25883e96dcd586a1b4a5e74c1b78e80cb48\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:22:39.906Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-manifest.schema.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:70f06fa47eb996155b18c459e50ee9389d1d1501557f3320364fe06100acc592\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-substrate-manifest.json",
     "method": "archive",
-    "content_id": "sha256:f4a881260f514efb375de054a8788094dd28a35b58c8c946741abf7cbe94cc35",
+    "content_id": "sha256:03d25ab3898079c394d8f8cd5d554745f26429418d9555ca619b342e09700a44",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

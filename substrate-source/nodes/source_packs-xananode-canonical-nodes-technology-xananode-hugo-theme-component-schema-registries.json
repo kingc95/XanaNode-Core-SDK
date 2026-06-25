@@ -15,7 +15,7 @@
   "content_id": "sha256:682e4cce68860afc6e3202f264550e00b6389ae9848b161d6ae7845d066e7777",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-hugo-theme-component-schema-registries\",\n  \"title\": \"XanaNode Hugo Theme: schema registries\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Hugo Theme consumes or depends on schema registries.\",\n  \"component_of\": \"xananode.canonical:project/xananode-hugo-theme\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-hugo-theme-component-schema-registries.json",
     "method": "archive",
     "content_id": "sha256:682e4cce68860afc6e3202f264550e00b6389ae9848b161d6ae7845d066e7777",

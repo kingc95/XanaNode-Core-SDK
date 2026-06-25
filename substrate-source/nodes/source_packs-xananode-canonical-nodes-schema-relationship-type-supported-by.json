@@ -15,7 +15,7 @@
   "content_id": "sha256:daed5979e1df25650324328ff36fe64f957bf63de33285a8d13c8ee987e0611d",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-supported_by\",\n  \"title\": \"Supported By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The supported_by inverse relationship term derived from supports.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"supported_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"evidence\",\n  \"inverse\": \"supports\",\n  \"derived_inverse\": true,\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#6ee7b7\",\n  \"inverse_color\": \"#10b981\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-supported_by.json",
     "method": "archive",
     "content_id": "sha256:daed5979e1df25650324328ff36fe64f957bf63de33285a8d13c8ee987e0611d",

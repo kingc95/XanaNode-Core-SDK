@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:d89d24c07a0c8e6746c55bed5d4b2b736c8ad6eb7b92d3d2ffee3d95cc44c97b",
-  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-temporal-projection-icon\",\n  \"title\": \"temporal Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/temporal.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/temporal.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the temporal relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:ba47c9bd720072a19d36ead5dbbffeee32836c0811f8fb286f7c608336d108cd\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/temporal.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:ba47c9bd720072a19d36ead5dbbffeee32836c0811f8fb286f7c608336d108cd\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "content_id": "sha256:da304fe1c1e5f9502d1f7681614a033cb373f6f37a8d07c2ea00f7fb21f661fa",
+  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-temporal-projection-icon\",\n  \"title\": \"temporal Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/temporal.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/temporal.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the temporal relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:ba47c9bd720072a19d36ead5dbbffeee32836c0811f8fb286f7c608336d108cd\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:22:39.906Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/temporal.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:ba47c9bd720072a19d36ead5dbbffeee32836c0811f8fb286f7c608336d108cd\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_relationship-category-temporal-projection-icon.json",
     "method": "archive",
-    "content_id": "sha256:d89d24c07a0c8e6746c55bed5d4b2b736c8ad6eb7b92d3d2ffee3d95cc44c97b",
+    "content_id": "sha256:da304fe1c1e5f9502d1f7681614a033cb373f6f37a8d07c2ea00f7fb21f661fa",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

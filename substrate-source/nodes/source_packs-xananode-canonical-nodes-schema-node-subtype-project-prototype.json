@@ -15,7 +15,7 @@
   "content_id": "sha256:db4ad297c3773c6b03013556b0663019556c00719d796ce202aa7bf49361b2a2",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-project-prototype\",\n  \"title\": \"Project subtype: prototype\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"prototype is an allowed subtype of the project node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"prototype\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"project\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-project-prototype.json",
     "method": "archive",
     "content_id": "sha256:db4ad297c3773c6b03013556b0663019556c00719d796ce202aa7bf49361b2a2",

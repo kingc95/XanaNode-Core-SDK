@@ -15,7 +15,7 @@
   "content_id": "sha256:42970b5cfb538d3d080dcfcd4f54494859a622b915f89938186bedbaab0ee16b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-has_extension\",\n  \"title\": \"Has Extension Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The has_extension inverse relationship term derived from extension_of.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"has_extension\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"schema_mapping\",\n  \"inverse\": \"extension_of\",\n  \"derived_inverse\": true,\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#a5f3fc\",\n  \"inverse_color\": \"#22d3ee\",\n  \"line_style\": \"double\",\n  \"inverse_line_style\": \"double\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-has_extension.json",
     "method": "archive",
     "content_id": "sha256:42970b5cfb538d3d080dcfcd4f54494859a622b915f89938186bedbaab0ee16b",

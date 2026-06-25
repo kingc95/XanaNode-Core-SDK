@@ -15,7 +15,7 @@
   "content_id": "sha256:7145377f4925b396d86402e0384188986fac49813c56171fe472491312f867c2",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-resonates_with\",\n  \"title\": \"Resonates with\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source has a low-commitment conceptual or experiential resonance with the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"resonates_with\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"cognition\",\n  \"inverse\": \"resonates_with\",\n  \"color\": \"#7c3aed\",\n  \"inverse_color\": \"#ddd6fe\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\",\n  \"default_weight\": 2,\n  \"default_visibility\": \"background\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-resonates_with.json",
     "method": "archive",
     "content_id": "sha256:7145377f4925b396d86402e0384188986fac49813c56171fe472491312f867c2",

@@ -15,7 +15,7 @@
   "content_id": "sha256:a0802dd442a9964098960892a05ded2a652d40ac63d2df42479d11351a0e60d7",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-abstraction_of\",\n  \"title\": \"Abstraction of\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source abstracts away details from the target while preserving a relevant structure.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"abstraction_of\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"cognition\",\n  \"inverse\": \"concrete_example_of\",\n  \"color\": \"#7c3aed\",\n  \"inverse_color\": \"#ddd6fe\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-abstraction_of.json",
     "method": "archive",
     "content_id": "sha256:a0802dd442a9964098960892a05ded2a652d40ac63d2df42479d11351a0e60d7",

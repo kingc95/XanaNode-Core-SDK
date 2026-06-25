@@ -15,7 +15,7 @@
   "content_id": "sha256:e3f85f145220dcc7e8ed8c86b56ec8d676f0188b3251ed45d84007aa35321899",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-item-component\",\n  \"title\": \"Item subtype: component\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"component is an allowed subtype of the item node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"component\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"item\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-item-component.json",
     "method": "archive",
     "content_id": "sha256:e3f85f145220dcc7e8ed8c86b56ec8d676f0188b3251ed45d84007aa35321899",

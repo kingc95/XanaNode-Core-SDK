@@ -15,7 +15,7 @@
   "content_id": "sha256:50781e4d71eab6cebb14a5f6e38b87cee561cc7e7d6df2441bcc3b57dc74a07f",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-media-scan\",\n  \"title\": \"Media subtype: scan\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"scan is an allowed subtype of the media node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"scan\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"media\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-media-scan.json",
     "method": "archive",
     "content_id": "sha256:50781e4d71eab6cebb14a5f6e38b87cee561cc7e7d6df2441bcc3b57dc74a07f",

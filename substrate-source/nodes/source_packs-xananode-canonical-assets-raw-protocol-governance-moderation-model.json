@@ -15,7 +15,7 @@
   "content_id": "sha256:ed7db2a6ee2c8ab204059c8835ebcff1d326372271771931af8c684691a13bb2",
   "content": "# Moderation Model\n\nXanaNode does not require one universal moderation authority.\n\nEach substrate controls its own moderation rules.\n\nFederation allows independently moderated substrates to be analyzed together while preserving their local decisions.\n\nA substrate may choose to:\n\n- approve nodes\n- reject nodes\n- deprecate claims\n- preserve disputed claims\n- hide low-confidence relationships\n- publish merge reports\n\nModeration actions should themselves be traceable whenever possible.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/governance/moderation-model.md",
     "method": "archive",
     "content_id": "sha256:ed7db2a6ee2c8ab204059c8835ebcff1d326372271771931af8c684691a13bb2",

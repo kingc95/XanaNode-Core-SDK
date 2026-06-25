@@ -15,7 +15,7 @@
   "content_id": "sha256:b44bf7982b5f3d99d5864888bbda4e034b286cd13af352ca65db60ecc9faee8a",
   "content": "{\n  \"id\": \"xananode.canonical:source/xananode-hugo-repository\",\n  \"title\": \"XanaNode Hugo Repository\",\n  \"type\": \"source\",\n  \"subtype\": \"git_repository\",\n  \"importance\": 5,\n  \"summary\": \"The public Hugo projection repository that renders XanaNode substrates as static readable pages and an interactive graph.\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Hugo\",\n  \"rights_status\": \"open-source\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_xananode-hugo-repository.json",
     "method": "archive",
     "content_id": "sha256:b44bf7982b5f3d99d5864888bbda4e034b286cd13af352ca65db60ecc9faee8a",

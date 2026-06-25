@@ -15,7 +15,7 @@
   "content_id": "sha256:afe94284ba664415923ad4ff9b230764216057cb3139cda50886db943a9beacf",
   "content": "{\n  \"id\": \"xananode.canonical:source/federated-substrate-xananode.studio\",\n  \"title\": \"XanaNode Studio Substrate\",\n  \"type\": \"source\",\n  \"subtype\": \"federated_substrate\",\n  \"importance\": 4,\n  \"summary\": \"A substrate source built directly from the XanaNode Studio repository, preserving the Electron app, renderer code, preload and main-process logic, scripts, tests, and raw project documents as first-class XanaNode records.\",\n  \"namespace\": \"xananode.studio\",\n  \"status\": \"official\",\n  \"recommended_mode\": \"mounted\",\n  \"source_url\": \"https://xananode.com/\",\n  \"repository\": \"https://github.com/kingc95/XanaNode-Studio.git\",\n  \"repository_branch\": \"main\",\n  \"substrate_path\": \"substrate-source\",\n  \"licenses\": [\n    \"Apache-2.0\"\n  ],\n  \"rights_status\": \"external\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_federated-substrate-xananode.studio.json",
     "method": "archive",
     "content_id": "sha256:afe94284ba664415923ad4ff9b230764216057cb3139cda50886db943a9beacf",

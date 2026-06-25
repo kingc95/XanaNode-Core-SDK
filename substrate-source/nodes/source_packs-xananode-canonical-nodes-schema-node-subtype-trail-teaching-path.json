@@ -15,7 +15,7 @@
   "content_id": "sha256:73cdf61e18d0512d505eb2b5a0bb806d67c3054b50233a8fc962e7fcfea7f47e",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-trail-teaching_path\",\n  \"title\": \"Trail subtype: teaching path\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"teaching_path is an allowed subtype of the trail node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"teaching_path\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"trail\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-trail-teaching_path.json",
     "method": "archive",
     "content_id": "sha256:73cdf61e18d0512d505eb2b5a0bb806d67c3054b50233a8fc962e7fcfea7f47e",

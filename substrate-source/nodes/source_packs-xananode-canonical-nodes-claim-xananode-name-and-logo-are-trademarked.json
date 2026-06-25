@@ -15,7 +15,7 @@
   "content_id": "sha256:6173bbc3a0196f9dfeb0b562df68ddde1e7830aa9260fb678448d5a85f3615fe",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:claim/xananode-name-and-logo-are-trademarked\",\n  \"title\": \"XanaNode Name And Logo Are Trademarked\",\n  \"type\": \"claim\",\n  \"subtype\": \"definition\",\n  \"status\": \"asserted\",\n  \"importance\": 5,\n  \"summary\": \"The XanaNode name, logo, and related brand assets are governed as trademarks even when protocol docs and code are openly licensed.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/claim_xananode-name-and-logo-are-trademarked.json",
     "method": "archive",
     "content_id": "sha256:6173bbc3a0196f9dfeb0b562df68ddde1e7830aa9260fb678448d5a85f3615fe",

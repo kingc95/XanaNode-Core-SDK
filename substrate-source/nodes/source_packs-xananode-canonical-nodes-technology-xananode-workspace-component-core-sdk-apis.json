@@ -15,7 +15,7 @@
   "content_id": "sha256:b0e6713fce9d22d7cab9840f2138916d33f9a7d6f1eb899dac8dcea4345fd5c4",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-workspace-component-core-sdk-apis\",\n  \"title\": \"XanaNode Workspace: Core SDK APIs\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Workspace consumes or depends on Core SDK APIs.\",\n  \"component_of\": \"xananode.canonical:project/xananode-workspace\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-workspace-component-core-sdk-apis.json",
     "method": "archive",
     "content_id": "sha256:b0e6713fce9d22d7cab9840f2138916d33f9a7d6f1eb899dac8dcea4345fd5c4",

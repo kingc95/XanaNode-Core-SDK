@@ -15,7 +15,7 @@
   "content_id": "sha256:f628a071607ac03c1dfde449db9ffd9b7fa984118ac0f8fd7d13f34f85210db6",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-compatible_with\",\n  \"title\": \"Compatible with\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source schema, substrate, type, field, or relationship can interoperate with the target without destructive conversion.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"compatible_with\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"schema_mapping\",\n  \"inverse\": \"compatible_with\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#22d3ee\",\n  \"inverse_color\": \"#a5f3fc\",\n  \"line_style\": \"double\",\n  \"inverse_line_style\": \"double\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-compatible_with.json",
     "method": "archive",
     "content_id": "sha256:f628a071607ac03c1dfde449db9ffd9b7fa984118ac0f8fd7d13f34f85210db6",

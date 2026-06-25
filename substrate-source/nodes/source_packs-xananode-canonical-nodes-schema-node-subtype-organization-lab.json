@@ -15,7 +15,7 @@
   "content_id": "sha256:be8600a9a988f5dc0acf36577324ae428bcc51f3dd5d4a19b521c771533d3604",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-organization-lab\",\n  \"title\": \"Organization subtype: lab\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"lab is an allowed subtype of the organization node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"lab\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"organization\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-organization-lab.json",
     "method": "archive",
     "content_id": "sha256:be8600a9a988f5dc0acf36577324ae428bcc51f3dd5d4a19b521c771533d3604",

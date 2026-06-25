@@ -15,7 +15,7 @@
   "content_id": "sha256:8f0f9721fe183f1ac267363ef132646193004e2e45593abb07deaea644d2a5d1",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:concept/attribution-license\",\n  \"title\": \"Attribution License\",\n  \"type\": \"concept\",\n  \"subtype\": \"distinction\",\n  \"importance\": 4,\n  \"summary\": \"A license pattern that allows reuse while requiring credit to the original author or project.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_attribution-license.json",
     "method": "archive",
     "content_id": "sha256:8f0f9721fe183f1ac267363ef132646193004e2e45593abb07deaea644d2a5d1",

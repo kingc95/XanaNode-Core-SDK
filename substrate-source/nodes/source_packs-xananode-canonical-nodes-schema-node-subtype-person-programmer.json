@@ -15,7 +15,7 @@
   "content_id": "sha256:53b835fe2921d0e44c0b65ee760b1013e7307b371f9129e852839d4b807bc6df",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-person-programmer\",\n  \"title\": \"Person subtype: programmer\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"programmer is an allowed subtype of the person node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"programmer\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"person\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-person-programmer.json",
     "method": "archive",
     "content_id": "sha256:53b835fe2921d0e44c0b65ee760b1013e7307b371f9129e852839d4b807bc6df",

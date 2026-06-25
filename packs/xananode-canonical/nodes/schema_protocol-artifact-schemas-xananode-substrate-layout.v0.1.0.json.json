@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/schemas/xananode-substrate-layout.v0.1.0.json",
   "content_id": "sha256:0ef1a5307ba2e725c2ee4be1e3f4e7d40f8250695b38d1d9ef76b4801b02460b",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-substrate-layout.v0.1.0.json",
     "method": "archive",
     "content_id": "sha256:0ef1a5307ba2e725c2ee4be1e3f4e7d40f8250695b38d1d9ef76b4801b02460b",

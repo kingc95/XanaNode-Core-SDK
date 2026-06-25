@@ -15,7 +15,7 @@
   "content_id": "sha256:e454293bf939e801d2f9728484715c0772cf6cf7f8ff1d0b3ecec177085164a5",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-shares_pattern_with\",\n  \"title\": \"Shares pattern with\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source shares a recognizable structure, behavior, or pattern with the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"shares_pattern_with\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"discovery\",\n  \"inverse\": \"shares_pattern_with\",\n  \"color\": \"#34d399\",\n  \"inverse_color\": \"#a7f3d0\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-shares_pattern_with.json",
     "method": "archive",
     "content_id": "sha256:e454293bf939e801d2f9728484715c0772cf6cf7f8ff1d0b3ecec177085164a5",

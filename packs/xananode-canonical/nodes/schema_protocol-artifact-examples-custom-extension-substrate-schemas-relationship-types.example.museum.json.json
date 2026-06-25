@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/schemas/relationship-types.example.museum.json",
   "content_id": "sha256:75581680b47f0df16f8ca88a562eddd585fc5a79fe3830846870f90af414a462",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/custom-extension-substrate/schemas/relationship-types.example.museum.json",
     "method": "archive",
     "content_id": "sha256:833eb73b7c3455a6e99a39e9c52f3ab27f499430f8daa1f29043a2aecd3d87a4",

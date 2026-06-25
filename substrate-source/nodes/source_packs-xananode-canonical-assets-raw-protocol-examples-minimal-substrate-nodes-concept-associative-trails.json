@@ -15,7 +15,7 @@
   "content_id": "sha256:595ae22c4675a02b7ca801761cdfa6bd868d012cc96419a66461a25c7a4c112f",
   "content": "{\n  \"id\": \"example.minimal:concept/associative-trails\",\n  \"title\": \"Associative Trails\",\n  \"type\": \"concept\",\n  \"importance\": 4,\n  \"summary\": \"A way of navigating knowledge by following meaningful associations rather than only linear order or hierarchy.\",\n  \"relationships\": [\n    {\n      \"id\": \"example.minimal:rel/source-discusses-associative-trails\",\n      \"type\": \"discusses\",\n      \"source\": \"example.minimal:source/as-we-may-think\",\n      \"direction\": \"incoming\"\n    },\n    {\n      \"id\": \"example.minimal:rel/associative-trails-context-for-substrate\",\n      \"type\": \"related_to\",\n      \"target\": \"example.minimal:concept/knowledge-substrate\",\n      \"direction\": \"outgoing\"\n    },\n    {\n      \"id\": \"example.minimal:rel/trail-includes-associative-trails\",\n      \"type\": \"features\",\n      \"source\": \"example.minimal:trail/start-here\",\n      \"direction\": \"incoming\"\n    }\n  ]\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/concept-associative-trails.json",
     "method": "archive",
     "content_id": "sha256:595ae22c4675a02b7ca801761cdfa6bd868d012cc96419a66461a25c7a4c112f",

@@ -15,7 +15,7 @@
   "content_id": "sha256:0ab9598950b5978d1d9fd6b66ef4188bbaf149ff16737e5ba2214bb49af617af",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-publication-webpage\",\n  \"title\": \"Publication subtype: webpage\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"webpage is an allowed subtype of the publication node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"webpage\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"publication\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-publication-webpage.json",
     "method": "archive",
     "content_id": "sha256:0ab9598950b5978d1d9fd6b66ef4188bbaf149ff16737e5ba2214bb49af617af",

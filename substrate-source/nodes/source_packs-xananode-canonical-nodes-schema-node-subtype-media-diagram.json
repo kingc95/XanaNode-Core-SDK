@@ -15,7 +15,7 @@
   "content_id": "sha256:c9744731c6bb845a164e4c3d16be24c40386fab4ca76fa01e0e2d0ff8e7fd1c5",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-media-diagram\",\n  \"title\": \"Media subtype: diagram\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"diagram is an allowed subtype of the media node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"diagram\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"media\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-media-diagram.json",
     "method": "archive",
     "content_id": "sha256:c9744731c6bb845a164e4c3d16be24c40386fab4ca76fa01e0e2d0ff8e7fd1c5",

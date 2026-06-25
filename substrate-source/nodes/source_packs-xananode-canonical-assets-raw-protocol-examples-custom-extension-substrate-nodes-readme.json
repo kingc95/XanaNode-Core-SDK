@@ -15,7 +15,7 @@
   "content_id": "sha256:80cc6078d13b081f0b35d49e1c5c2e61575a9985faacedaa7ee8b0efb052d61c",
   "content": "# Nodes\n\nThis directory contains both canonical XanaNode nodes and local extension nodes.\n\nThe file `memex-illustration.json` uses the custom node type:\n\n```text\nexample.museum:artifact\n```\n\nBecause the type is namespaced and declared in `schemas/`, other substrates can preserve it even when they do not natively support museum artifacts.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/nodes/README.md",
     "method": "archive",
     "content_id": "sha256:80cc6078d13b081f0b35d49e1c5c2e61575a9985faacedaa7ee8b0efb052d61c",

@@ -15,7 +15,7 @@
   "content_id": "sha256:fd8f68cb88fd401fcb38be03cbd7d1318c69e409c306fb64106dd9dd463ededc",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-possible_match\",\n  \"title\": \"Possible match\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source may represent the same entity, concept, claim, source, or fragment as the target, but the match has not been confirmed.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"possible_match\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"identity\",\n  \"inverse\": \"possible_match\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#f472b6\",\n  \"inverse_color\": \"#fbcfe8\",\n  \"line_style\": \"double\",\n  \"inverse_line_style\": \"double\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-possible_match.json",
     "method": "archive",
     "content_id": "sha256:fd8f68cb88fd401fcb38be03cbd7d1318c69e409c306fb64106dd9dd463ededc",

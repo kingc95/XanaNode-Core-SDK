@@ -15,7 +15,7 @@
   "content_id": "sha256:d8ee22f02b4df5114381361ab7ce9d7f33de50808c98f75248376bf5b092f324",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-community-open_source\",\n  \"title\": \"Community subtype: open source\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"open_source is an allowed subtype of the community node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"open_source\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"community\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-community-open_source.json",
     "method": "archive",
     "content_id": "sha256:d8ee22f02b4df5114381361ab7ce9d7f33de50808c98f75248376bf5b092f324",

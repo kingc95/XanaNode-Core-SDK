@@ -15,7 +15,7 @@
   "content_id": "sha256:2f8b6d2bc4fcb8a0eeb17ab2810b32dc348c9598a703a83c0e7c1507dc185d75",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-hugo-theme-component-node-files\",\n  \"title\": \"XanaNode Hugo Theme: node files\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Hugo Theme consumes or depends on node files.\",\n  \"component_of\": \"xananode.canonical:project/xananode-hugo-theme\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-hugo-theme-component-node-files.json",
     "method": "archive",
     "content_id": "sha256:2f8b6d2bc4fcb8a0eeb17ab2810b32dc348c9598a703a83c0e7c1507dc185d75",

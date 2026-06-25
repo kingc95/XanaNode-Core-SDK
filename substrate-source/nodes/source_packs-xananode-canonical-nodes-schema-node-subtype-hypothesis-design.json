@@ -15,7 +15,7 @@
   "content_id": "sha256:a984b879dc1f7d8cfb29bd4ce6072edb12aa232ec0bc2cdb686c5c83ab9f44e2",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-hypothesis-design\",\n  \"title\": \"Hypothesis subtype: design\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"design is an allowed subtype of the hypothesis node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"design\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"hypothesis\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-hypothesis-design.json",
     "method": "archive",
     "content_id": "sha256:a984b879dc1f7d8cfb29bd4ce6072edb12aa232ec0bc2cdb686c5c83ab9f44e2",

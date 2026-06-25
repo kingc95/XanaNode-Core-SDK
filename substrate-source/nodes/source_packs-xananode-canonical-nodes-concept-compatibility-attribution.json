@@ -15,7 +15,7 @@
   "content_id": "sha256:0337215ab5b5d1f878f0b8308276eb0d880810492e7ab99dde656174dca05943",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:concept/compatibility-attribution\",\n  \"title\": \"Compatibility Attribution\",\n  \"type\": \"concept\",\n  \"subtype\": \"principle\",\n  \"importance\": 5,\n  \"summary\": \"The convention that implementations should identify themselves as XanaNode-compatible and point to the canonical specification without implying ownership or endorsement.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_compatibility-attribution.json",
     "method": "archive",
     "content_id": "sha256:0337215ab5b5d1f878f0b8308276eb0d880810492e7ab99dde656174dca05943",

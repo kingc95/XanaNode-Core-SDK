@@ -15,7 +15,7 @@
   "content_id": "sha256:62897031e88742c03acde6fcc233a409e6c07f8ae9415aee991796ad5128a2bc",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-relationship-citation\",\n  \"title\": \"Relationship subtype: citation\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"citation is an allowed subtype of the relationship node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"citation\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"relationship\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-relationship-citation.json",
     "method": "archive",
     "content_id": "sha256:62897031e88742c03acde6fcc233a409e6c07f8ae9415aee991796ad5128a2bc",

@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:4ee238bbe4d6706fae96bf3d92522ff0520c0720786ac8a4519e121e90b445de",
-  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schemas-registry\",\n  \"title\": \"Canonical Schemas Registry\",\n  \"type\": \"schema\",\n  \"subtype\": \"validation_rule\",\n  \"importance\": 5,\n  \"summary\": \"The protocol registry that identifies canonical schema artifacts and their current versions.\",\n  \"relationships\": [],\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/canonical-schemas.json\",\n  \"asset_path\": \"assets/raw/protocol/registry/canonical-schemas.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:8ba16cdc4c3f9ca018f355e27def3477683ccd30d8c47dfa0ea87a4b54229371\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/canonical-schemas.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:a37a134ff539525456dada8cbafc182f812a50589f3de0358aac77de47cc6928\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "content_id": "sha256:a688d902e978fe5a998abb2f7f093056599a6bb6fc3186dff6f522123bae2ab8",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schemas-registry\",\n  \"title\": \"Canonical Schemas Registry\",\n  \"type\": \"schema\",\n  \"subtype\": \"validation_rule\",\n  \"importance\": 5,\n  \"summary\": \"The protocol registry that identifies canonical schema artifacts and their current versions.\",\n  \"relationships\": [],\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/canonical-schemas.json\",\n  \"asset_path\": \"assets/raw/protocol/registry/canonical-schemas.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:8ba16cdc4c3f9ca018f355e27def3477683ccd30d8c47dfa0ea87a4b54229371\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:22:39.906Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/canonical-schemas.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:a37a134ff539525456dada8cbafc182f812a50589f3de0358aac77de47cc6928\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schemas-registry.json",
     "method": "archive",
-    "content_id": "sha256:4ee238bbe4d6706fae96bf3d92522ff0520c0720786ac8a4519e121e90b445de",
+    "content_id": "sha256:a688d902e978fe5a998abb2f7f093056599a6bb6fc3186dff6f522123bae2ab8",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

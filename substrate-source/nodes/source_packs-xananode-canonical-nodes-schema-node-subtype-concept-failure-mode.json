@@ -15,7 +15,7 @@
   "content_id": "sha256:2b274d269452bdaea98e4a92d6f93ecf1f38c35c8d95d73e78986fe208a97ed0",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-concept-failure_mode\",\n  \"title\": \"Concept subtype: failure mode\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"failure_mode is an allowed subtype of the concept node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"failure_mode\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"concept\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-concept-failure_mode.json",
     "method": "archive",
     "content_id": "sha256:2b274d269452bdaea98e4a92d6f93ecf1f38c35c8d95d73e78986fe208a97ed0",

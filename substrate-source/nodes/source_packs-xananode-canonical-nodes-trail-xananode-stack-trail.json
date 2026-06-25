@@ -15,7 +15,7 @@
   "content_id": "sha256:ff35dec251c92263dcf5e61c7ecb5627b4af07fc9856ddf5305bb6ae778b4ccb",
   "content": "{\n  \"id\": \"xananode.canonical:trail/xananode-stack-trail\",\n  \"title\": \"XanaNode Stack Trail\",\n  \"type\": \"trail\",\n  \"subtype\": \"introductory\",\n  \"importance\": 5,\n  \"summary\": \"A curated route from the XanaNode concept through protocol, Core, workspace, Studio, Mobile, projection layers, Hugo, sources, and support.\",\n  \"nodes\": [\n    \"xananode.canonical:concept/xananode\",\n    \"xananode.canonical:project/xananode-protocol\",\n    \"xananode.canonical:project/xananode-core-sdk\",\n    \"xananode.canonical:project/xananode-workspace\",\n    \"xananode.canonical:project/xananode-studio\",\n    \"xananode.canonical:project/xananode-mobile\",\n    \"xananode.canonical:concept/substrate-projection-layer\",\n    \"xananode.canonical:project/xananode-hugo-theme\",\n    \"xananode.canonical:source/xananode-com-domain\"\n  ],\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/trail_xananode-stack-trail.json",
     "method": "archive",
     "content_id": "sha256:ff35dec251c92263dcf5e61c7ecb5627b4af07fc9856ddf5305bb6ae778b4ccb",

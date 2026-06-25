@@ -15,7 +15,7 @@
   "content_id": "sha256:0a0d8a1968acc33cae0944e7b1f26f18e97615bfef65fd1c2c6282947f6fcb7b",
   "content": "# Tools\r\n\r\nThis directory contains repository maintenance tools.\r\n\r\n## Validator\r\n\r\nRun:\r\n\r\n```bash\r\npython -m pip install -r requirements-dev.txt\r\npython tools/validate.py\r\n```\r\n\r\nThe validator checks JSON Schema conformance for protocol artifacts and XanaNode-specific integrity rules such as declared relationship types, registered namespaces, and resolvable relationship endpoints.\r\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/tools/README.md",
     "method": "archive",
     "content_id": "sha256:0a0d8a1968acc33cae0944e7b1f26f18e97615bfef65fd1c2c6282947f6fcb7b",

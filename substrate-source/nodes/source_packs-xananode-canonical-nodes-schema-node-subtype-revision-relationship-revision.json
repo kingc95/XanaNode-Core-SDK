@@ -15,7 +15,7 @@
   "content_id": "sha256:14a5e698d50c34c38931e830755c725fdde6400fd69e1d8f33e675233304ddb6",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-revision-relationship_revision\",\n  \"title\": \"Revision subtype: relationship revision\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"relationship_revision is an allowed subtype of the revision node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"relationship_revision\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"revision\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-revision-relationship_revision.json",
     "method": "archive",
     "content_id": "sha256:14a5e698d50c34c38931e830755c725fdde6400fd69e1d8f33e675233304ddb6",

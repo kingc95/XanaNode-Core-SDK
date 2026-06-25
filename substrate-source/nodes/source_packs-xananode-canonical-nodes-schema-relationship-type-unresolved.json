@@ -15,7 +15,7 @@
   "content_id": "sha256:f6b891460297ffe19f7093b77780a05aa07101a0f4c4768a2a461cd777f20988",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-unresolved\",\n  \"title\": \"Unresolved\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source marks the target as unresolved, unsettled, or not yet answerable.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"unresolved\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"uncertainty\",\n  \"inverse\": \"unresolved_by\",\n  \"color\": \"#d946ef\",\n  \"inverse_color\": \"#f5d0fe\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-unresolved.json",
     "method": "archive",
     "content_id": "sha256:f6b891460297ffe19f7093b77780a05aa07101a0f4c4768a2a461cd777f20988",

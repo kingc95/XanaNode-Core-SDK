@@ -15,7 +15,7 @@
   "content_id": "sha256:956a8749cf4e9361165379bc55be6bc8e3105f0e4e2e4dd80258b6a9da205458",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-place-region\",\n  \"title\": \"Place subtype: region\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"region is an allowed subtype of the place node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"region\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"place\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-place-region.json",
     "method": "archive",
     "content_id": "sha256:956a8749cf4e9361165379bc55be6bc8e3105f0e4e2e4dd80258b6a9da205458",

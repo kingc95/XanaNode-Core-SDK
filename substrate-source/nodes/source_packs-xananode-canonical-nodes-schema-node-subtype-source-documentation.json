@@ -15,7 +15,7 @@
   "content_id": "sha256:f6d92c59505afaca6605e5d94f4220a220a7a9ff5b6e6aaa146cd900d61301f9",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-source-documentation\",\n  \"title\": \"Source subtype: documentation\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"documentation is an allowed subtype of the source node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"documentation\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"source\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-source-documentation.json",
     "method": "archive",
     "content_id": "sha256:f6d92c59505afaca6605e5d94f4220a220a7a9ff5b6e6aaa146cd900d61301f9",

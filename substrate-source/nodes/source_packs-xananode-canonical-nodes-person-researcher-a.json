@@ -15,7 +15,7 @@
   "content_id": "sha256:38357a82fba476fd09cbb10dc0599789d07298959c125b4393d35b3ea67eed8c",
   "content": "{\n  \"id\": \"example.researcher_a:person/researcher-a\",\n  \"title\": \"Researcher A\",\n  \"type\": \"person\",\n  \"importance\": 3,\n  \"summary\": \"The local actor responsible for assertions in federation example substrate A.\",\n  \"created_at\": \"2026-01-01T00:00:00Z\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/person_researcher-a.json",
     "method": "archive",
     "content_id": "sha256:38357a82fba476fd09cbb10dc0599789d07298959c125b4393d35b3ea67eed8c",

@@ -15,7 +15,7 @@
   "content_id": "sha256:34ad04b33935f5000c7b76c96c89db20d7dd40145f91cd32e08cc0d15f9c4905",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-fragment-sentence\",\n  \"title\": \"Fragment subtype: sentence\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 3,\n  \"summary\": \"sentence is an allowed subtype of the fragment node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"sentence\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"fragment\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-fragment-sentence.json",
     "method": "archive",
     "content_id": "sha256:34ad04b33935f5000c7b76c96c89db20d7dd40145f91cd32e08cc0d15f9c4905",

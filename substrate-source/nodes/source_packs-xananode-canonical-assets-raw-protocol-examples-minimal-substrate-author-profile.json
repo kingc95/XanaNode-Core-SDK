@@ -15,7 +15,7 @@
   "content_id": "sha256:9663891d09582c1e5af0dedae6f811ea5aae883eae0e77137b3a451f07cdbae7",
   "content": "{\n  \"id\": \"example.minimal:person/example-maintainer\",\n  \"name\": \"Example Maintainer\",\n  \"github\": \"example-maintainer\",\n  \"website\": \"https://example.com\",\n  \"branding\": {\n    \"brand_name\": \"Example Maintainer\",\n    \"tagline\": \"Example substrate author\",\n    \"primary_media\": \"example.minimal:media/xananode-icon\",\n    \"icon_media\": \"example.minimal:media/xananode-icon\",\n    \"primary_color\": \"#55D6BE\",\n    \"accent_color\": \"#FF8C00\",\n    \"rights_status\": \"open-example\",\n    \"license\": \"CC0-1.0\",\n    \"reason\": \"Author profiles may carry portable branding that tools can apply to authored substrates.\"\n  },\n  \"default_rights\": \"open-example\",\n  \"default_license\": \"CC0-1.0\",\n  \"default_role\": \"maintainer\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/author-profile.json",
     "method": "archive",
     "content_id": "sha256:9663891d09582c1e5af0dedae6f811ea5aae883eae0e77137b3a451f07cdbae7",

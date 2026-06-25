@@ -15,7 +15,7 @@
   "content_id": "sha256:6d095eaf120d97bacce77b7bb5658b66c6eac38afa94fdffc4054baa32759fc6",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:concept/content-license\",\n  \"title\": \"Content License\",\n  \"type\": \"concept\",\n  \"subtype\": \"distinction\",\n  \"importance\": 4,\n  \"summary\": \"A license applied to authored text, documentation, examples, or explanatory material rather than executable reference code.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_content-license.json",
     "method": "archive",
     "content_id": "sha256:6d095eaf120d97bacce77b7bb5658b66c6eac38afa94fdffc4054baa32759fc6",

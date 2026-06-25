@@ -15,7 +15,7 @@
   "content_id": "sha256:d0a56d4e3d53bdf5b33e8dba898cf7542bdea07e85f62a3f5efbe910b5373746",
   "content": "{\n  \"id\": \"xananode.canonical:schema/property-measurement_si\",\n  \"title\": \"SI measurement\",\n  \"type\": \"schema\",\n  \"subtype\": \"property_registry_entry\",\n  \"importance\": 4,\n  \"summary\": \"A quantified physical or conceptual measurement expressed in SI-compatible units.\",\n  \"registry_type\": \"measurement_si\",\n  \"category\": \"quantity\",\n  \"aliases\": [\n    \"measurement\",\n    \"quantity\",\n    \"metric_value\"\n  ],\n  \"applies_to\": [],\n  \"unit_system\": \"SI\",\n  \"value_schema\": {\n    \"type\": \"object\",\n    \"additionalProperties\": false,\n    \"required\": [\n      \"value\",\n      \"unit\"\n    ],\n    \"properties\": {\n      \"value\": {\n        \"type\": \"number\"\n      },\n      \"unit\": {\n        \"type\": \"string\"\n      },\n      \"quantity_kind\": {\n        \"type\": \"string\"\n      },\n      \"uncertainty\": {\n        \"type\": \"number\"\n      }\n    }\n  },\n  \"examples\": [\n    {\n      \"value\": 1.82,\n      \"unit\": \"m\",\n      \"quantity_kind\": \"height\"\n    }\n  ],\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_property-measurement_si.json",
     "method": "archive",
     "content_id": "sha256:d0a56d4e3d53bdf5b33e8dba898cf7542bdea07e85f62a3f5efbe910b5373746",

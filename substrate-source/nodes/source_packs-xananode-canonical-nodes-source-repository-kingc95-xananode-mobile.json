@@ -15,7 +15,7 @@
   "content_id": "sha256:667244c0e7195015a9d869c89dddc189b78bea5dbb471e876aebd87e10dd50f4",
   "content": "{\n  \"id\": \"xananode.canonical:source/repository-kingc95-xananode-mobile\",\n  \"title\": \"XanaNode Mobile Repository\",\n  \"type\": \"source\",\n  \"subtype\": \"git_repository\",\n  \"importance\": 4,\n  \"summary\": \"Public Git repository for XanaNode Mobile.\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Mobile\",\n  \"repository\": \"kingc95/XanaNode-Mobile\",\n  \"rights_status\": \"external\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_repository-kingc95-xananode-mobile.json",
     "method": "archive",
     "content_id": "sha256:667244c0e7195015a9d869c89dddc189b78bea5dbb471e876aebd87e10dd50f4",

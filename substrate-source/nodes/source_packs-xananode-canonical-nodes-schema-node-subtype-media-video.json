@@ -15,7 +15,7 @@
   "content_id": "sha256:0c5e04e49bc4f5611b799fdc1e3fa7ed2b5a8cbcb360352b7beb9dd5030a4654",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-media-video\",\n  \"title\": \"Media subtype: video\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"video is an allowed subtype of the media node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"video\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"media\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-media-video.json",
     "method": "archive",
     "content_id": "sha256:0c5e04e49bc4f5611b799fdc1e3fa7ed2b5a8cbcb360352b7beb9dd5030a4654",

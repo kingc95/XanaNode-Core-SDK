@@ -15,7 +15,7 @@
   "content_id": "sha256:65186917670f737d44ed102bcb4eb08b188e8da11f0a0576eeed02a993428f89",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-schema\",\n  \"title\": \"Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"A rule, ontology, validation document, or governance definition used by XanaNode itself.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"schema\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"node_type_schema\",\n    \"relationship_type_schema\",\n    \"validation_rule\",\n    \"governance_rule\",\n    \"style_rule\",\n    \"node_subtype_schema\",\n    \"relationship_category_schema\",\n    \"property_registry_entry\",\n    \"canonical_schema_record\",\n    \"namespace_record\",\n    \"protocol_artifact\",\n    \"term\",\n    \"schema_term\",\n    \"schema_field\",\n    \"semantic_rule\",\n    \"projection_style_rule\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"version\",\n    \"status\",\n    \"source_url\"\n  ],\n  \"color\": {\n    \"bg\": \"#e2e8f0\",\n    \"fg\": \"#111827\",\n    \"outline\": \"#ffffff\"\n  },\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-schema.json",
     "method": "archive",
     "content_id": "sha256:65186917670f737d44ed102bcb4eb08b188e8da11f0a0576eeed02a993428f89",

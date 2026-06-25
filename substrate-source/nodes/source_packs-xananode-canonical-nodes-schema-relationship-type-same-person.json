@@ -15,7 +15,7 @@
   "content_id": "sha256:3375f3000730169bc99129fec422c3ac86501d29208b669a864778888d15239b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-same_person\",\n  \"title\": \"Same person\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source and target represent the same person across substrates, namespaces, versions, or local identifiers.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"same_person\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"identity\",\n  \"inverse\": \"same_person\",\n  \"color\": \"#f472b6\",\n  \"inverse_color\": \"#fbcfe8\",\n  \"line_style\": \"double\",\n  \"inverse_line_style\": \"double\",\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-same_person.json",
     "method": "archive",
     "content_id": "sha256:3375f3000730169bc99129fec422c3ac86501d29208b669a864778888d15239b",

@@ -15,7 +15,7 @@
   "content_id": "sha256:3d1fb7585765ff859c1373c7974280cb50393acdcf8d706214d2124bb7745143",
   "content": "{\n  \"id\": \"example.minimal:person/example-maintainer\",\n  \"title\": \"Example Maintainer\",\n  \"type\": \"person\",\n  \"importance\": 3,\n  \"summary\": \"The local actor responsible for asserting and curating the minimal example substrate.\",\n  \"created_at\": \"2026-01-01T00:00:00Z\",\n  \"relationships\": [\n    {\n      \"id\": \"example.minimal:rel/maintainer-created-intro-essay\",\n      \"type\": \"created\",\n      \"target\": \"example.minimal:essay/relationship-navigation-intro\",\n      \"direction\": \"outgoing\"\n    }\n  ]\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/person_example-maintainer.json",
     "method": "archive",
     "content_id": "sha256:3d1fb7585765ff859c1373c7974280cb50393acdcf8d706214d2124bb7745143",

@@ -15,7 +15,7 @@
   "content_id": "sha256:f0d0591d9cbd1dc11c70b58e214eed7838ac3a367bbb9f5fdf5f6ee6568a373f",
   "content": "{\n  \"id\": \"xananode.canonical:schema/property-currency_value\",\n  \"title\": \"Currency value\",\n  \"type\": \"schema\",\n  \"subtype\": \"property_registry_entry\",\n  \"importance\": 4,\n  \"summary\": \"A monetary amount with an ISO 4217 currency code.\",\n  \"registry_type\": \"currency_value\",\n  \"category\": \"money\",\n  \"aliases\": [\n    \"price\",\n    \"cost\",\n    \"market_value\",\n    \"amount_money\"\n  ],\n  \"applies_to\": [\n    \"claim\",\n    \"observation\",\n    \"source\",\n    \"project\"\n  ],\n  \"unit_system\": \"ISO-4217\",\n  \"value_schema\": {\n    \"type\": \"object\",\n    \"additionalProperties\": false,\n    \"required\": [\n      \"amount\",\n      \"currency\"\n    ],\n    \"properties\": {\n      \"amount\": {\n        \"type\": \"number\"\n      },\n      \"currency\": {\n        \"type\": \"string\",\n        \"pattern\": \"^[A-Z]{3}$\"\n      },\n      \"as_of\": {\n        \"type\": \"string\",\n        \"format\": \"date-time\"\n      }\n    }\n  },\n  \"examples\": [\n    {\n      \"amount\": 199.99,\n      \"currency\": \"USD\",\n      \"as_of\": \"2026-01-01T00:00:00Z\"\n    }\n  ],\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_property-currency_value.json",
     "method": "archive",
     "content_id": "sha256:f0d0591d9cbd1dc11c70b58e214eed7838ac3a367bbb9f5fdf5f6ee6568a373f",

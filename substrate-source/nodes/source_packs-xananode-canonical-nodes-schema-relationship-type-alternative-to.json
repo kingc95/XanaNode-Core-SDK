@@ -15,7 +15,7 @@
   "content_id": "sha256:99e3f3eae6e038b75ad2bd9b4ea5623ea67f5f2878c55fb13eb46629935e42e7",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-alternative_to\",\n  \"title\": \"Alternative to\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source is an alternate interpretation, approach, or implementation relative to the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"alternative_to\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"comparison\",\n  \"inverse\": \"alternative_to\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#a78bfa\",\n  \"inverse_color\": \"#ddd6fe\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-alternative_to.json",
     "method": "archive",
     "content_id": "sha256:99e3f3eae6e038b75ad2bd9b4ea5623ea67f5f2878c55fb13eb46629935e42e7",

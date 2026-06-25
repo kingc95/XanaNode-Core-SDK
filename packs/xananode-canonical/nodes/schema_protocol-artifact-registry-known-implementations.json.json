@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/registry/known-implementations.json",
   "content_id": "sha256:e233016a166e0ff27e45fc46dc706567dfb0814f747c6d9cbd549fc915bc56ae",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/known-implementations.json",
     "method": "archive",
     "content_id": "sha256:40fad1a6f4f139207a09fe8c98c74b734a6706a21352f8fa8180a139800d58dd",

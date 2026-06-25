@@ -15,7 +15,7 @@
   "content_id": "sha256:c8e8fbf00b86f2e412b707a8a6a7cfec88cc1a954b9221f818db64dc226f986c",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-implemented_by\",\n  \"title\": \"Implemented By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The implemented_by inverse relationship term derived from implements.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"implemented_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"composition\",\n  \"inverse\": \"implements\",\n  \"derived_inverse\": true,\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#86efac\",\n  \"inverse_color\": \"#22c55e\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-implemented_by.json",
     "method": "archive",
     "content_id": "sha256:c8e8fbf00b86f2e412b707a8a6a7cfec88cc1a954b9221f818db64dc226f986c",

@@ -15,7 +15,7 @@
   "content_id": "sha256:9be035d900c2dd750ca9e8f2b7941300454c4b5d91720534444489a33a569b52",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-publication-edition\",\n  \"title\": \"Publication subtype: edition\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"edition is an allowed subtype of the publication node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"edition\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"publication\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-publication-edition.json",
     "method": "archive",
     "content_id": "sha256:9be035d900c2dd750ca9e8f2b7941300454c4b5d91720534444489a33a569b52",

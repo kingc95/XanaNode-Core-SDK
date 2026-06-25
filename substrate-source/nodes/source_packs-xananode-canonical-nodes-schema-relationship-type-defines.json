@@ -15,7 +15,7 @@
   "content_id": "sha256:b2a961b776a4ff4706e52d6fdcf326ad32723befadcf204c64d178bc064bb462",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-defines\",\n  \"title\": \"Defines\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source gives the defining explanation of the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"defines\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"definition\",\n  \"inverse\": \"defined_by\",\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#facc15\",\n  \"inverse_color\": \"#fde68a\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-defines.json",
     "method": "archive",
     "content_id": "sha256:b2a961b776a4ff4706e52d6fdcf326ad32723befadcf204c64d178bc064bb462",

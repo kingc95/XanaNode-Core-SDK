@@ -15,7 +15,7 @@
   "content_id": "sha256:c568369efb5719aa251f15eb31f10cef4d76a8cb3c5ad8416652eec02a1b014e",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-relationship-dispute\",\n  \"title\": \"Relationship subtype: dispute\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"dispute is an allowed subtype of the relationship node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"dispute\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"relationship\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-relationship-dispute.json",
     "method": "archive",
     "content_id": "sha256:c568369efb5719aa251f15eb31f10cef4d76a8cb3c5ad8416652eec02a1b014e",

@@ -15,7 +15,7 @@
   "content_id": "sha256:fa178f91c6860eea03e7963ae836e6be4d00d0329b893eaa3b0702297451e5cb",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-discovery\",\n  \"title\": \"Discovery Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The discovery category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"discovery\",\n  \"registry_namespace\": \"xananode\",\n  \"color\": \"#34d399\",\n  \"inverse_color\": \"#a7f3d0\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-discovery.json",
     "method": "archive",
     "content_id": "sha256:fa178f91c6860eea03e7963ae836e6be4d00d0329b893eaa3b0702297451e5cb",

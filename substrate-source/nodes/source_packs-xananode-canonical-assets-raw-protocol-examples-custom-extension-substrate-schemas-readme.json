@@ -15,7 +15,7 @@
   "content_id": "sha256:6b0984ace202d0a34d559a74809ac0630103f49ad6a33107115c17586a3cd4ec",
   "content": "# Custom Schemas\n\nThese schema registry files define local extensions to XanaNode Core.\n\nCustom types should be:\n\n- namespaced\n- described in human-readable language\n- versioned\n- mappable to a core type when possible\n- safe to preserve even when another implementation does not fully understand them\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/schemas/README.md",
     "method": "archive",
     "content_id": "sha256:6b0984ace202d0a34d559a74809ac0630103f49ad6a33107115c17586a3cd4ec",

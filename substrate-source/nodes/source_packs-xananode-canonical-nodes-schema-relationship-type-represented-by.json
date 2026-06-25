@@ -15,7 +15,7 @@
   "content_id": "sha256:804f2b9c1f7d6816240b7663387dbcaba0a63f74a1627e1472e4d3a321efb1fc",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-represented_by\",\n  \"title\": \"Represented By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The represented_by inverse relationship term derived from represents.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"represented_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"representation\",\n  \"inverse\": \"represents\",\n  \"derived_inverse\": true,\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#fcd34d\",\n  \"inverse_color\": \"#f59e0b\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-represented_by.json",
     "method": "archive",
     "content_id": "sha256:804f2b9c1f7d6816240b7663387dbcaba0a63f74a1627e1472e4d3a321efb1fc",

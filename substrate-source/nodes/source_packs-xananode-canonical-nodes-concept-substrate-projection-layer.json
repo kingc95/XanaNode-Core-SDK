@@ -15,7 +15,7 @@
   "content_id": "sha256:0195d649f150107b829a457f371524c1e1b3576476e603e552173e8a67b8b2c2",
   "content": "{\n  \"id\": \"xananode.canonical:concept/substrate-projection-layer\",\n  \"title\": \"Substrate Projection Layer\",\n  \"type\": \"concept\",\n  \"subtypes\": [\n    \"lens\",\n    \"renderer\"\n  ],\n  \"importance\": 5,\n  \"summary\": \"A renderer or lens that presents a substrate for a particular use without becoming the substrate itself.\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_substrate-projection-layer.json",
     "method": "archive",
     "content_id": "sha256:0195d649f150107b829a457f371524c1e1b3576476e603e552173e8a67b8b2c2",

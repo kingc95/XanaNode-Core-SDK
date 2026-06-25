@@ -15,7 +15,7 @@
   "content_id": "sha256:4931de18b1631d2b5f6ec91b9c0cf99cc00999d9eb8906c879214c415062d375",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-asked_by\",\n  \"title\": \"Asked By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The asked_by inverse relationship term derived from asked.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"asked_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"communication\",\n  \"inverse\": \"asked\",\n  \"color\": \"#bae6fd\",\n  \"inverse_color\": \"#38bdf8\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-asked_by.json",
     "method": "archive",
     "content_id": "sha256:4931de18b1631d2b5f6ec91b9c0cf99cc00999d9eb8906c879214c415062d375",

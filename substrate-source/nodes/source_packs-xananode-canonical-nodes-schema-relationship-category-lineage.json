@@ -15,7 +15,7 @@
   "content_id": "sha256:104bab1820367797e009a22c79554798e9e738a14455837e7b7065920d138a30",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-lineage\",\n  \"title\": \"Lineage Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The lineage category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"lineage\",\n  \"registry_namespace\": \"xananode\",\n  \"relationships\": [],\n  \"color\": \"#8b5cf6\",\n  \"inverse_color\": \"#c4b5fd\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-lineage.json",
     "method": "archive",
     "content_id": "sha256:104bab1820367797e009a22c79554798e9e738a14455837e7b7065920d138a30",

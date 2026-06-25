@@ -15,7 +15,7 @@
   "content_id": "sha256:683106062824ae53dfe5cd8d85df7dcbdf287836422b35463af25bf1f4953036",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-requires_source\",\n  \"title\": \"Requires source\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source needs a cited source or primary evidence before it should be treated as supported.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"requires_source\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"knowledge_workflow\",\n  \"inverse\": \"source_required_by\",\n  \"color\": \"#06b6d4\",\n  \"inverse_color\": \"#a5f3fc\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-requires_source.json",
     "method": "archive",
     "content_id": "sha256:683106062824ae53dfe5cd8d85df7dcbdf287836422b35463af25bf1f4953036",

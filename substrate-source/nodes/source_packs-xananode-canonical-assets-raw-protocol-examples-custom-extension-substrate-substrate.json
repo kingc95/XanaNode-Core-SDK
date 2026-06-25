@@ -15,7 +15,7 @@
   "content_id": "sha256:bf9f7c129d46186131cf5e9d8ea2d512cf290217b39455c7aece9ed69bb67101",
   "content": "{\n  \"id\": \"example.museum\",\n  \"name\": \"Museum Extension Substrate\",\n  \"description\": \"Example of a XanaNode-compatible substrate with local schema extensions.\",\n  \"version\": \"0.1.0\",\n  \"namespace\": \"example.museum\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/kingc95/xananode.git\",\n    \"default_branch\": \"main\",\n    \"path\": \"examples/custom-extension-substrate\"\n  },\n  \"schema_version\": \"xananode-core@0.5.0\",\n  \"license\": \"CC-BY-4.0\",\n  \"imports\": [\n    \"xananode:core\"\n  ],\n  \"extensions\": [\n    \"schemas/node-types.example.museum.json\",\n    \"schemas/relationship-types.example.museum.json\"\n  ]\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/substrate.json",
     "method": "archive",
     "content_id": "sha256:bf9f7c129d46186131cf5e9d8ea2d512cf290217b39455c7aece9ed69bb67101",

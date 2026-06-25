@@ -15,7 +15,7 @@
   "content_id": "sha256:9c2b9fd6bec866ab755ffc9e86b23649458f78c76a2ff9e949f9ca3238f9053f",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-response-rebuttal\",\n  \"title\": \"Response subtype: rebuttal\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"rebuttal is an allowed subtype of the response node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"rebuttal\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"response\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-response-rebuttal.json",
     "method": "archive",
     "content_id": "sha256:9c2b9fd6bec866ab755ffc9e86b23649458f78c76a2ff9e949f9ca3238f9053f",

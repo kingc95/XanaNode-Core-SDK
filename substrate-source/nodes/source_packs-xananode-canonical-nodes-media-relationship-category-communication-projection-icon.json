@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:c63ddd19e4f32892d1e5ea20780744abe3a2a549b4e18592587cc6356dc92fc4",
-  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-communication-projection-icon\",\n  \"title\": \"communication Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/communication.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/communication.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the communication relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:66e741a47619846dfa178885cddc666d164a433fc3d63527a4a853496a458d53\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/communication.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:66e741a47619846dfa178885cddc666d164a433fc3d63527a4a853496a458d53\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "content_id": "sha256:82c617f04213996060344d70803752a787d0e73815e477054c13226a510a6114",
+  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-communication-projection-icon\",\n  \"title\": \"communication Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/communication.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/communication.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the communication relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:66e741a47619846dfa178885cddc666d164a433fc3d63527a4a853496a458d53\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:22:39.906Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/communication.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:66e741a47619846dfa178885cddc666d164a433fc3d63527a4a853496a458d53\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_relationship-category-communication-projection-icon.json",
     "method": "archive",
-    "content_id": "sha256:c63ddd19e4f32892d1e5ea20780744abe3a2a549b4e18592587cc6356dc92fc4",
+    "content_id": "sha256:82c617f04213996060344d70803752a787d0e73815e477054c13226a510a6114",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

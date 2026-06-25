@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:2c4bf7a16897b09d2a7d8dc970c02dc7a02e36314e19386352671a629d9e7936",
-  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-citation-projection-icon\",\n  \"title\": \"citation Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/citation.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/citation.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the citation relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:681bac3266c7644084fb1a81c10db18b1f4e9a58befba8c9e9dfed6cca551553\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/citation.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:681bac3266c7644084fb1a81c10db18b1f4e9a58befba8c9e9dfed6cca551553\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "content_id": "sha256:c5f221177c4486fb2bc81f657f96b508254112cc88959cfdd104027dc1d6f0ed",
+  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-citation-projection-icon\",\n  \"title\": \"citation Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/citation.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/citation.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the citation relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:681bac3266c7644084fb1a81c10db18b1f4e9a58befba8c9e9dfed6cca551553\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:22:39.906Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/citation.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:681bac3266c7644084fb1a81c10db18b1f4e9a58befba8c9e9dfed6cca551553\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_relationship-category-citation-projection-icon.json",
     "method": "archive",
-    "content_id": "sha256:2c4bf7a16897b09d2a7d8dc970c02dc7a02e36314e19386352671a629d9e7936",
+    "content_id": "sha256:c5f221177c4486fb2bc81f657f96b508254112cc88959cfdd104027dc1d6f0ed",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

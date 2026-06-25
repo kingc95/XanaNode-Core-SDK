@@ -15,7 +15,7 @@
   "content_id": "sha256:10d7240ccf5bed1f089a65bf7c12e8ab247160d53fbfcca22ea50aabafb933f0",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-claim-causal\",\n  \"title\": \"Claim subtype: causal\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"causal is an allowed subtype of the claim node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"causal\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"claim\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-claim-causal.json",
     "method": "archive",
     "content_id": "sha256:10d7240ccf5bed1f089a65bf7c12e8ab247160d53fbfcca22ea50aabafb933f0",

@@ -15,7 +15,7 @@
   "content_id": "sha256:aac2d030f5e3b4eb0b711cf93077972dc350be7153a7d670f4810b2819fc3e31",
   "content": "# Tools\r\n\r\nPotential tool categories for XanaNode:\r\n\r\n- schema validators\r\n- index builders\r\n- merge validators\r\n- namespace resolvers\r\n- duplicate detectors\r\n- relationship suggesters\r\n- substrate importers/exporters\r\n- repository validator: `tools/validate.py`\r\n\r\nThis repository may link to tools here rather than include every implementation directly.\r\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/links/tools.md",
     "method": "archive",
     "content_id": "sha256:aac2d030f5e3b4eb0b711cf93077972dc350be7153a7d670f4810b2819fc3e31",

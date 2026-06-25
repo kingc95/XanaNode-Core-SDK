@@ -15,7 +15,7 @@
   "content_id": "sha256:86597b9c587c5a01800772d596c2e4b3073513119223de6e4f8d2982edf9aa5c",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-concrete_example_of\",\n  \"title\": \"Concrete Example Of Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The concrete_example_of inverse relationship term derived from abstraction_of.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"concrete_example_of\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"cognition\",\n  \"inverse\": \"abstraction_of\",\n  \"color\": \"#ddd6fe\",\n  \"inverse_color\": \"#7c3aed\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-concrete_example_of.json",
     "method": "archive",
     "content_id": "sha256:86597b9c587c5a01800772d596c2e4b3073513119223de6e4f8d2982edf9aa5c",

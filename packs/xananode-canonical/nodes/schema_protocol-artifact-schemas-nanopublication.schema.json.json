@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/schemas/nanopublication.schema.json",
   "content_id": "sha256:e39ee3b6c2fe4d069450c7b45d0fdeddcb7be0af88f35d436d4a4aab54d8285d",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/nanopublication.schema.json",
     "method": "archive",
     "content_id": "sha256:e39ee3b6c2fe4d069450c7b45d0fdeddcb7be0af88f35d436d4a4aab54d8285d",

@@ -15,7 +15,7 @@
   "content_id": "sha256:e7f9be124f2021b41ea86e5751422df1752b0e30f5b49fbf086587bccb8ebe08",
   "content": "{\n  \"id\": \"example.museum:person/example-curator\",\n  \"title\": \"Example Museum Curator\",\n  \"type\": \"person\",\n  \"importance\": 3,\n  \"summary\": \"The local actor responsible for curating and asserting the museum extension example.\",\n  \"created_at\": \"2026-01-01T00:00:00Z\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/person_example-curator.json",
     "method": "archive",
     "content_id": "sha256:e7f9be124f2021b41ea86e5751422df1752b0e30f5b49fbf086587bccb8ebe08",

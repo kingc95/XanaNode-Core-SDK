@@ -15,7 +15,7 @@
   "content_id": "sha256:1db3848fe5df8807deb4c5320c2bd7075b9dc56fa6c54a378c926ef57644286f",
   "content": "{\n  \"id\": \"xananode.canonical:schema/protocol-artifact-schemas\",\n  \"title\": \"Protocol Schemas\",\n  \"type\": \"schema\",\n  \"subtype\": \"protocol_artifact_group\",\n  \"importance\": 3,\n  \"summary\": \"Protocol files under schemas/ preserved inside the canonical substrate.\",\n  \"artifact_path\": \"schemas/\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-schemas.json",
     "method": "archive",
     "content_id": "sha256:1db3848fe5df8807deb4c5320c2bd7075b9dc56fa6c54a378c926ef57644286f",

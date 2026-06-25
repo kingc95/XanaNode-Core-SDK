@@ -15,7 +15,7 @@
   "content_id": "sha256:0012d2d7628830f54acf3a2bfd68b68e3902f48c09aefea1ec8e818187528154",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-relationship-friendship\",\n  \"title\": \"Relationship subtype: friendship\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"friendship is an allowed subtype of the relationship node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"friendship\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"relationship\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-relationship-friendship.json",
     "method": "archive",
     "content_id": "sha256:0012d2d7628830f54acf3a2bfd68b68e3902f48c09aefea1ec8e818187528154",

@@ -15,7 +15,7 @@
   "content_id": "sha256:ef289849c0cfba0fe95fa2e6671df51c964c81d9c1e299e14ff0b8dbf6446047",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-source-legal_policy\",\n  \"title\": \"Source subtype: legal policy\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"legal_policy is an allowed subtype of the source node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"legal_policy\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"source\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-source-legal_policy.json",
     "method": "archive",
     "content_id": "sha256:ef289849c0cfba0fe95fa2e6671df51c964c81d9c1e299e14ff0b8dbf6446047",

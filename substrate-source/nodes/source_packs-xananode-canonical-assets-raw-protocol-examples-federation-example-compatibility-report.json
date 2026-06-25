@@ -15,7 +15,7 @@
   "content_id": "sha256:13c556257221045ff9276bf42f1e3ff8bcad2cf3333838d23d5a5ebbef803491",
   "content": "{\n  \"status\": \"merge-candidate\",\n  \"compatibility_level\": 4,\n  \"details\": \"Both federation example substrates declare manifests, namespaces, stable node IDs, core relationship types, and non-destructive possible-match mappings.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/federation-example/compatibility-report.json",
     "method": "archive",
     "content_id": "sha256:13c556257221045ff9276bf42f1e3ff8bcad2cf3333838d23d5a5ebbef803491",

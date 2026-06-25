@@ -15,7 +15,7 @@
   "content_id": "sha256:53311fa04349b28ff013ccbddbc459cd4671563fe22428000ede91a00877eac9",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-clarifies\",\n  \"title\": \"Clarifies\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source clarifies, resolves ambiguity in, or makes the target more precise.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"clarifies\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"explanation\",\n  \"inverse\": \"clarified_by\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#60a5fa\",\n  \"inverse_color\": \"#bfdbfe\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-clarifies.json",
     "method": "archive",
     "content_id": "sha256:53311fa04349b28ff013ccbddbc459cd4671563fe22428000ede91a00877eac9",

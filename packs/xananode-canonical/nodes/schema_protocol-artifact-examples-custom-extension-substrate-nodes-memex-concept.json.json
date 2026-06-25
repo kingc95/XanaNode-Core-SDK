@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/nodes/memex-concept.json",
   "content_id": "sha256:ad0018ea1219df4d54a78fcad727d8b4beab6110329558f1949241c0ce3407bf",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/custom-extension-substrate/nodes/memex-concept.json",
     "method": "archive",
     "content_id": "sha256:ad0018ea1219df4d54a78fcad727d8b4beab6110329558f1949241c0ce3407bf",

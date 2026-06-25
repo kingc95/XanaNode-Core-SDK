@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:66cda2e98f1dbf770ceec64093fb1183e33c4a85002708dab99b62d4b54025d9",
-  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-registry\",\n  \"title\": \"Relationship Type Registry\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The canonical registry of current XanaNode relationship types and inverse semantics.\",\n  \"version\": \"0.5.0\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.v0.5.0.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/xananode-relationship-types.v0.5.0.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:742483160148d05ff915f24373167cd0945583946de853bd80486297301ed3a3\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.v0.5.0.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:fcf685c11c5df923dd51fc09a31566ec5d27f9b76ef3a0a542b7bb7b8b65f17b\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "content_id": "sha256:6c4640df6f8a0b5459a5e48b595ecfe3e5d442828a64a8fbfdd0346447ff4228",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-registry\",\n  \"title\": \"Relationship Type Registry\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The canonical registry of current XanaNode relationship types and inverse semantics.\",\n  \"version\": \"0.5.0\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.v0.5.0.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/xananode-relationship-types.v0.5.0.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:742483160148d05ff915f24373167cd0945583946de853bd80486297301ed3a3\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:22:39.906Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.v0.5.0.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:fcf685c11c5df923dd51fc09a31566ec5d27f9b76ef3a0a542b7bb7b8b65f17b\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-registry.json",
     "method": "archive",
-    "content_id": "sha256:66cda2e98f1dbf770ceec64093fb1183e33c4a85002708dab99b62d4b54025d9",
+    "content_id": "sha256:6c4640df6f8a0b5459a5e48b595ecfe3e5d442828a64a8fbfdd0346447ff4228",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

@@ -15,7 +15,7 @@
   "content_id": "sha256:7d1496c32f264259b6a7775760f95649a77fa02b82ccf4064b53756f259907c1",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-negotiated_with\",\n  \"title\": \"Negotiated with\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source negotiated with the target actor, group, or position.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"negotiated_with\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"communication\",\n  \"inverse\": \"negotiated_with\",\n  \"color\": \"#38bdf8\",\n  \"inverse_color\": \"#bae6fd\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-negotiated_with.json",
     "method": "archive",
     "content_id": "sha256:7d1496c32f264259b6a7775760f95649a77fa02b82ccf4064b53756f259907c1",

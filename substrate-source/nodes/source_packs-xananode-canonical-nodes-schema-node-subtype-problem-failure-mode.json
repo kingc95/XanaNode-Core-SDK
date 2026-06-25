@@ -15,7 +15,7 @@
   "content_id": "sha256:b1ac26e4e906bb2186b35056a7e2c20f3ef0b89e2390876903f02ef7e7418a7b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-problem-failure_mode\",\n  \"title\": \"Problem subtype: failure mode\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"failure_mode is an allowed subtype of the problem node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"failure_mode\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"problem\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-problem-failure_mode.json",
     "method": "archive",
     "content_id": "sha256:b1ac26e4e906bb2186b35056a7e2c20f3ef0b89e2390876903f02ef7e7418a7b",

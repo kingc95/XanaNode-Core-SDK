@@ -15,7 +15,7 @@
   "content_id": "sha256:989979f4850ff4464ff904f4e4265ae8fffad6071f11d938985bd28f21e7464a",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-used_to_train\",\n  \"title\": \"Used To Train Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The used_to_train inverse relationship term derived from trained_on.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"used_to_train\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"composition\",\n  \"inverse\": \"trained_on\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#86efac\",\n  \"inverse_color\": \"#22c55e\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-used_to_train.json",
     "method": "archive",
     "content_id": "sha256:989979f4850ff4464ff904f4e4265ae8fffad6071f11d938985bd28f21e7464a",

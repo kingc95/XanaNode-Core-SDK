@@ -15,7 +15,7 @@
   "content_id": "sha256:9f589abfaae9a1217f5a8797e460aaf34aba1f77169eca3982561c5284a0b7bc",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-communication-thread\",\n  \"title\": \"Communication subtype: thread\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"thread is an allowed subtype of the communication node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"thread\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"communication\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-communication-thread.json",
     "method": "archive",
     "content_id": "sha256:9f589abfaae9a1217f5a8797e460aaf34aba1f77169eca3982561c5284a0b7bc",

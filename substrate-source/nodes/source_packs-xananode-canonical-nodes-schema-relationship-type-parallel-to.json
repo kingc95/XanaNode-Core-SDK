@@ -15,7 +15,7 @@
   "content_id": "sha256:c1d6ca1415e56ece1a2d2e9a1590f56c5b77f9e8a5818f01a63582f04be02985",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-parallel_to\",\n  \"title\": \"Parallel to\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source developed alongside or resembles the target without necessarily descending from it.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"parallel_to\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"comparison\",\n  \"inverse\": \"parallel_to\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#a78bfa\",\n  \"inverse_color\": \"#ddd6fe\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-parallel_to.json",
     "method": "archive",
     "content_id": "sha256:c1d6ca1415e56ece1a2d2e9a1590f56c5b77f9e8a5818f01a63582f04be02985",

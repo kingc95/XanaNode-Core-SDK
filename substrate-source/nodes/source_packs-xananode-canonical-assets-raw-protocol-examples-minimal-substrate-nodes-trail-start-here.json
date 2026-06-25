@@ -15,7 +15,7 @@
   "content_id": "sha256:355ac323837b0ceb2c247e652a3f0f563c1ff64473e365be5b50af1114298ace",
   "content": "{\n  \"id\": \"example.minimal:trail/start-here\",\n  \"title\": \"Start Here\",\n  \"type\": \"trail\",\n  \"importance\": 5,\n  \"summary\": \"A short curated route introducing the substrate through source, claim, supporting context, and concept.\",\n  \"nodes\": [\n    \"example.minimal:source/as-we-may-think\",\n    \"example.minimal:concept/associative-trails\",\n    \"example.minimal:claim/substrate-is-structure\",\n    \"example.minimal:concept/knowledge-substrate\"\n  ],\n  \"relationships\": [\n    {\n      \"id\": \"example.minimal:rel/trail-starts-with-source\",\n      \"type\": \"starts_with\",\n      \"target\": \"example.minimal:source/as-we-may-think\",\n      \"direction\": \"outgoing\"\n    },\n    {\n      \"id\": \"example.minimal:rel/trail-includes-associative-trails\",\n      \"type\": \"features\",\n      \"target\": \"example.minimal:concept/associative-trails\",\n      \"direction\": \"outgoing\"\n    }\n  ]\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/trail-start-here.json",
     "method": "archive",
     "content_id": "sha256:355ac323837b0ceb2c247e652a3f0f563c1ff64473e365be5b50af1114298ace",

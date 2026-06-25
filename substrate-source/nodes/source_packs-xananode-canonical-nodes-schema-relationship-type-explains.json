@@ -15,7 +15,7 @@
   "content_id": "sha256:51f7b086849e8acd32265fb6de50a5f4c242605ea60a390bef3c12e421014cc1",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-explains\",\n  \"title\": \"Explains\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source provides an explanation of the target - its causes, mechanisms, or meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"explains\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"explanation\",\n  \"inverse\": \"explained_by\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#60a5fa\",\n  \"inverse_color\": \"#bfdbfe\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-explains.json",
     "method": "archive",
     "content_id": "sha256:51f7b086849e8acd32265fb6de50a5f4c242605ea60a390bef3c12e421014cc1",

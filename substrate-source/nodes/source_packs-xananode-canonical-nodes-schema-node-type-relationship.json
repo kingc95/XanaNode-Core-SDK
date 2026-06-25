@@ -15,7 +15,7 @@
   "content_id": "sha256:d6310afcb66f67221c4259e095070b132b89b3c0821d00c765ab94bd4a2abc43",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-relationship\",\n  \"title\": \"Relationship\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"A first-class edge treated as a node because the relationship itself has history, evidence, dispute, or explanation.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"relationship\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"friendship\",\n    \"influence\",\n    \"collaboration\",\n    \"citation\",\n    \"dispute\",\n    \"lineage\",\n    \"dependency\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"source_node\",\n    \"target_node\",\n    \"relationship_type\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"evidence\",\n    \"confidence\",\n    \"status\",\n    \"asserted_by\",\n    \"reviewed_by\"\n  ],\n  \"color\": {\n    \"bg\": \"#ec4899\",\n    \"fg\": \"#240812\",\n    \"outline\": \"#ffd8ea\"\n  },\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-relationship.json",
     "method": "archive",
     "content_id": "sha256:d6310afcb66f67221c4259e095070b132b89b3c0821d00c765ab94bd4a2abc43",

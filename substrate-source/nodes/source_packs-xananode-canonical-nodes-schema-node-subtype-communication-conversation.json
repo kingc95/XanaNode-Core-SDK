@@ -15,7 +15,7 @@
   "content_id": "sha256:73b4a93ddf12b5043e18fdb569a775bfc90c348d96e868c0e3fb264a4c8ef9e5",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-communication-conversation\",\n  \"title\": \"Communication subtype: conversation\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"conversation is an allowed subtype of the communication node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"conversation\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"communication\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-communication-conversation.json",
     "method": "archive",
     "content_id": "sha256:73b4a93ddf12b5043e18fdb569a775bfc90c348d96e868c0e3fb264a4c8ef9e5",

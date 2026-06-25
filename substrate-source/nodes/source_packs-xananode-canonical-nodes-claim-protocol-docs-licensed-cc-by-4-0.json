@@ -15,7 +15,7 @@
   "content_id": "sha256:0b84f385feadb1b2fc7f415f01baa6017115a9a9c17a3f7e928243eec62b4b4e",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:claim/protocol-docs-licensed-cc-by-4-0\",\n  \"title\": \"Protocol Docs Are Licensed CC-BY 4.0\",\n  \"type\": \"claim\",\n  \"subtype\": \"definition\",\n  \"status\": \"asserted\",\n  \"importance\": 5,\n  \"summary\": \"XanaNode protocol documentation is licensed under CC-BY 4.0 so the docs can be shared and adapted with attribution.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/claim_protocol-docs-licensed-cc-by-4-0.json",
     "method": "archive",
     "content_id": "sha256:0b84f385feadb1b2fc7f415f01baa6017115a9a9c17a3f7e928243eec62b4b4e",

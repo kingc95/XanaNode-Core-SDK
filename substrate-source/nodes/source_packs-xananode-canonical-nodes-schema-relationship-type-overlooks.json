@@ -15,7 +15,7 @@
   "content_id": "sha256:4235bb5f0590e4dac9b2cb49c8ef916069f5b9349e34ce11445c8d053398468b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-overlooks\",\n  \"title\": \"Overlooks Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The overlooks inverse relationship term derived from overlooked_by.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"overlooks\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"attention\",\n  \"inverse\": \"overlooked_by\",\n  \"color\": \"#fde68a\",\n  \"inverse_color\": \"#fbbf24\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\",\n  \"derived_inverse\": true,\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-overlooks.json",
     "method": "archive",
     "content_id": "sha256:4235bb5f0590e4dac9b2cb49c8ef916069f5b9349e34ce11445c8d053398468b",

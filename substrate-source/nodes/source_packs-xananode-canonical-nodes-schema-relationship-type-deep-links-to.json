@@ -15,7 +15,7 @@
   "content_id": "sha256:08b68290f1a27fb18a481911769f20e659192c50071bf44fcc9a8b6c7c09ba92",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-deep_links_to\",\n  \"title\": \"Deep links to\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source points to a specific addressable fragment of the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"deep_links_to\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"representation\",\n  \"inverse\": \"deep_linked_from\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#f59e0b\",\n  \"inverse_color\": \"#fcd34d\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-deep_links_to.json",
     "method": "archive",
     "content_id": "sha256:08b68290f1a27fb18a481911769f20e659192c50071bf44fcc9a8b6c7c09ba92",

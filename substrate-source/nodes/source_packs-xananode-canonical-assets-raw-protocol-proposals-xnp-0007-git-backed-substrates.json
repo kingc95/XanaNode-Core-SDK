@@ -15,7 +15,7 @@
   "content_id": "sha256:b24c29fbe0a89e6b6d6ba67997a6e674e4fe5ba2811bdf4f858255aedb295c6d",
   "content": "# XNP-0007: Git-Backed Substrates\n\nStatus: Accepted\n\n## Summary\n\nDefines Git as the required versioning and history layer for production XanaNode substrates.\n\n## Decision\n\nEach production substrate is a Git repository. The substrate manifest must include a `repository` block describing the Git remote and default branch.\n\nGit provides:\n\n- revision history\n- branching\n- review\n- merge\n- synchronization\n- rollback\n\nXanaNode provides:\n\n- node and relationship artifacts\n- schema validation\n- provenance fields\n- merge and compatibility reports\n- federation semantics\n\n## Rationale\n\nXanaNode should not reinvent distributed version control. Git already provides the substrate-level history model that knowledge authors need, while XanaNode adds knowledge-specific structure on top.\n\nUser-facing tools may rename Git concepts for approachability, such as \"save snapshot\" for commit or \"draft path\" for branch, but the underlying substrate history remains Git.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0007-git-backed-substrates.md",
     "method": "archive",
     "content_id": "sha256:b24c29fbe0a89e6b6d6ba67997a6e674e4fe5ba2811bdf4f858255aedb295c6d",

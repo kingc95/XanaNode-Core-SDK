@@ -15,7 +15,7 @@
   "content_id": "sha256:931a9870c60b65ea0f94f555512cbbbeba96fe2d810efacd1073b127d4d0405c",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-alias_of\",\n  \"title\": \"Alias of\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source is an alternative name for the target entity.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"alias_of\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"representation\",\n  \"inverse\": \"has_alias\",\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#f59e0b\",\n  \"inverse_color\": \"#fcd34d\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-alias_of.json",
     "method": "archive",
     "content_id": "sha256:931a9870c60b65ea0f94f555512cbbbeba96fe2d810efacd1073b127d4d0405c",

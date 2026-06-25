@@ -15,7 +15,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:ed1bb5aa0ff4ec9b6f4c4bed4ac2e25883e96dcd586a1b4a5e74c1b78e80cb48",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-manifest.schema.json",
     "method": "archive",
     "content_id": "sha256:70f06fa47eb996155b18c459e50ee9389d1d1501557f3320364fe06100acc592",

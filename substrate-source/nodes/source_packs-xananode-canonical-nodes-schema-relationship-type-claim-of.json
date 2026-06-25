@@ -15,7 +15,7 @@
   "content_id": "sha256:9ffe732e41d8d16f58be210db409ef62c0fae48f1516d629a73e9cced8c70808",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-claim_of\",\n  \"title\": \"Claim Of Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The claim_of inverse relationship term derived from has_claim.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"claim_of\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"claim_structure\",\n  \"inverse\": \"has_claim\",\n  \"derived_inverse\": true,\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#fda4af\",\n  \"inverse_color\": \"#f43f5e\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-claim_of.json",
     "method": "archive",
     "content_id": "sha256:9ffe732e41d8d16f58be210db409ef62c0fae48f1516d629a73e9cced8c70808",

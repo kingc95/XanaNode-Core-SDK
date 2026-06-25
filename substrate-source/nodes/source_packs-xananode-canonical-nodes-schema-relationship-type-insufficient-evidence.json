@@ -15,7 +15,7 @@
   "content_id": "sha256:aa992f523abdbbc003985241d6c22c93879d4a265763a128aa91037a0f7c6cad",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-insufficient_evidence\",\n  \"title\": \"Insufficient evidence\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source indicates that the target lacks enough evidence for the asserted interpretation or status.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"insufficient_evidence\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"uncertainty\",\n  \"inverse\": \"evidence_insufficient_for\",\n  \"color\": \"#d946ef\",\n  \"inverse_color\": \"#f5d0fe\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-insufficient_evidence.json",
     "method": "archive",
     "content_id": "sha256:aa992f523abdbbc003985241d6c22c93879d4a265763a128aa91037a0f7c6cad",

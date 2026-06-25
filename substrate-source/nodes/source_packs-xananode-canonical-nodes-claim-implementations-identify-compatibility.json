@@ -15,7 +15,7 @@
   "content_id": "sha256:b4314cbb86357bec829f638f5c101ff738ee3f594a0a428fbde631921f956e92",
   "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:claim/implementations-identify-compatibility\",\n  \"title\": \"Implementations Identify XanaNode Compatibility\",\n  \"type\": \"claim\",\n  \"subtype\": \"normative\",\n  \"status\": \"asserted\",\n  \"importance\": 5,\n  \"summary\": \"Implementations should identify themselves as XanaNode-compatible and reference the canonical specification without implying official ownership.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/claim_implementations-identify-compatibility.json",
     "method": "archive",
     "content_id": "sha256:b4314cbb86357bec829f638f5c101ff738ee3f594a0a428fbde631921f956e92",

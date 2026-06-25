@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/fragment-as-we-may-think-0004.json",
   "content_id": "sha256:f0c4f8b1ac22a733c1893242413d6970f5f2734f15f7a66bd09cb8bccc8116fe",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/fragment-as-we-may-think-0004.json",
     "method": "archive",
     "content_id": "sha256:f0c4f8b1ac22a733c1893242413d6970f5f2734f15f7a66bd09cb8bccc8116fe",

@@ -15,7 +15,7 @@
   "content_id": "sha256:322597579795913abd37755e4d39f42f2173abf70ec9ba7a78f94dd9c6549274",
   "content": "{\n  \"id\": \"xananode.canonical:organization/built-by-bots\",\n  \"title\": \"Built By Bots\",\n  \"type\": \"organization\",\n  \"subtype\": \"company\",\n  \"importance\": 4,\n  \"summary\": \"A historical bridge identity recorded in XanaNode's lineage. It is preserved for provenance, but XanaNode's current and durable public identity lives at XanaNode.com under Christian Siefen's authorship.\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/organization_built-by-bots.json",
     "method": "archive",
     "content_id": "sha256:322597579795913abd37755e4d39f42f2173abf70ec9ba7a78f94dd9c6549274",

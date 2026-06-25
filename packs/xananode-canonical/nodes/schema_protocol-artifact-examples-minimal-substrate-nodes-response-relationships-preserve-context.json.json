@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/response-relationships-preserve-context.json",
   "content_id": "sha256:479c37d7a9e310ba81bdb5a8de649da83af99fce536d6719fc6ca03b18ae1131",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/response-relationships-preserve-context.json",
     "method": "archive",
     "content_id": "sha256:479c37d7a9e310ba81bdb5a8de649da83af99fce536d6719fc6ca03b18ae1131",

@@ -15,7 +15,7 @@
   "content_id": "sha256:9a5fc27c52d6c526dad3663c5fa839bb73b4b0a27119ef8fefbce786a74d074d",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-core-sdk-component-substrate-packs\",\n  \"title\": \"XanaNode Core SDK: substrate packs\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Core SDK consumes or depends on substrate packs.\",\n  \"component_of\": \"xananode.canonical:project/xananode-core-sdk\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-core-sdk-component-substrate-packs.json",
     "method": "archive",
     "content_id": "sha256:9a5fc27c52d6c526dad3663c5fa839bb73b4b0a27119ef8fefbce786a74d074d",

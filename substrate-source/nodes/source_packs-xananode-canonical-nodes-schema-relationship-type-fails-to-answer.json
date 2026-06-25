@@ -15,7 +15,7 @@
   "content_id": "sha256:e99f0527a5f4dbc5500e15a890ce11c2b9a70d48fdebfa55197aac890b371c29",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-fails_to_answer\",\n  \"title\": \"Fails to answer\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source explicitly does not answer the target question, or demonstrates that an attempted answer is inadequate.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"fails_to_answer\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"inquiry\",\n  \"inverse\": \"not_answered_by\",\n  \"color\": \"#2dd4bf\",\n  \"inverse_color\": \"#99f6e4\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-fails_to_answer.json",
     "method": "archive",
     "content_id": "sha256:e99f0527a5f4dbc5500e15a890ce11c2b9a70d48fdebfa55197aac890b371c29",

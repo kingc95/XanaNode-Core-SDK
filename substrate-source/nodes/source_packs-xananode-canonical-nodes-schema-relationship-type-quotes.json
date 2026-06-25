@@ -15,7 +15,7 @@
   "content_id": "sha256:a5fc1e6909a849d7d0969cf029b96e75349fabc4af707279b9d2def864642afe",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-quotes\",\n  \"title\": \"Quotes\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source quotes the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"quotes\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"citation\",\n  \"inverse\": \"quoted_by\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#38bdf8\",\n  \"inverse_color\": \"#bae6fd\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-quotes.json",
     "method": "archive",
     "content_id": "sha256:a5fc1e6909a849d7d0969cf029b96e75349fabc4af707279b9d2def864642afe",

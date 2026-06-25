@@ -15,7 +15,7 @@
   "content_id": "sha256:726084eb9cfa7c00a1529ae10ff40a03b2e5bc7e6c2677c79e2a3f6c1277a420",
   "content": "{\n  \"id\": \"xananode.canonical:media/xananode-android-chrome-512\",\n  \"title\": \"XanaNode Android Chrome Icon 512x512\",\n  \"type\": \"media\",\n  \"subtypes\": [\n    \"image\",\n    \"logo\",\n    \"app_icon\"\n  ],\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/png\",\n  \"importance\": 3,\n  \"summary\": \"512 pixel Android Chrome icon for XanaNode projections.\",\n  \"alt\": \"XanaNode branding icon derived from the canonical XanaNode mark.\",\n  \"rights_status\": \"open-source\",\n  \"asset_path\": \"media/images/android-chrome-512x512.png\",\n  \"asset_role\": \"app_icon\",\n  \"creator\": \"Christian Siefen\",\n  \"created_at\": \"2026-06-19T00:00:00.000Z\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_xananode-android-chrome-512.json",
     "method": "archive",
     "content_id": "sha256:726084eb9cfa7c00a1529ae10ff40a03b2e5bc7e6c2677c79e2a3f6c1277a420",

@@ -15,7 +15,7 @@
   "content_id": "sha256:1de8afd53b3d9bd0533f253c4b26e9a2777ea63e327614eab42308c9fc5e186c",
   "content": "{\n  \"id\": \"xananode.canonical:source/federated-substrate-xananode.alphabet\",\n  \"title\": \"XanaNode Alphabet Substrate\",\n  \"type\": \"source\",\n  \"subtype\": \"federated_substrate\",\n  \"importance\": 3,\n  \"summary\": \"A deliberately small example substrate with a start trail, A-Z letter nodes, typed relationships, and bundled media assets for every letter.\",\n  \"namespace\": \"xananode.alphabet\",\n  \"status\": \"example\",\n  \"recommended_mode\": \"mounted\",\n  \"source_url\": \"https://xananode.com/\",\n  \"repository\": \"https://github.com/kingc95/XanaNode-Alphabet-Substrate.git\",\n  \"repository_branch\": \"main\",\n  \"substrate_path\": \"\",\n  \"licenses\": [\n    \"CC0\"\n  ],\n  \"rights_status\": \"external\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_federated-substrate-xananode.alphabet.json",
     "method": "archive",
     "content_id": "sha256:1de8afd53b3d9bd0533f253c4b26e9a2777ea63e327614eab42308c9fc5e186c",

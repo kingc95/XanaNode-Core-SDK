@@ -15,7 +15,7 @@
   "content_id": "sha256:c601f742413ad710fbfad5d22f2b39c98f9a8521d06f49e5038c3a0446a281bd",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-event-meeting\",\n  \"title\": \"Event subtype: meeting\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"meeting is an allowed subtype of the event node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"meeting\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"event\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-event-meeting.json",
     "method": "archive",
     "content_id": "sha256:c601f742413ad710fbfad5d22f2b39c98f9a8521d06f49e5038c3a0446a281bd",

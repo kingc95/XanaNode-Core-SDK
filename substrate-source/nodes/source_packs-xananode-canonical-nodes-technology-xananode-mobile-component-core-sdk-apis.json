@@ -15,7 +15,7 @@
   "content_id": "sha256:5bc0a38d1deff11eabb1a63aa61f4765052e43b90963f3ea443a11b541971bf3",
   "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-mobile-component-core-sdk-apis\",\n  \"title\": \"XanaNode Mobile: Core SDK APIs\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Mobile consumes or depends on Core SDK APIs.\",\n  \"component_of\": \"xananode.canonical:project/xananode-mobile\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-mobile-component-core-sdk-apis.json",
     "method": "archive",
     "content_id": "sha256:5bc0a38d1deff11eabb1a63aa61f4765052e43b90963f3ea443a11b541971bf3",

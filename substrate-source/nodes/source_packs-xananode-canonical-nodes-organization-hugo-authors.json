@@ -15,7 +15,7 @@
   "content_id": "sha256:751359a5d725c38a6aa3ef75467f18e8ce91a737771a0563efb6fbac036f66c2",
   "content": "{\n  \"id\": \"xananode.canonical:organization/hugo-authors\",\n  \"title\": \"Hugo Authors\",\n  \"type\": \"organization\",\n  \"subtype\": \"open_source\",\n  \"importance\": 3,\n  \"summary\": \"The open source project community responsible for Hugo.\",\n  \"source_url\": \"https://github.com/gohugoio/hugo\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/organization_hugo-authors.json",
     "method": "archive",
     "content_id": "sha256:751359a5d725c38a6aa3ef75467f18e8ce91a737771a0563efb6fbac036f66c2",

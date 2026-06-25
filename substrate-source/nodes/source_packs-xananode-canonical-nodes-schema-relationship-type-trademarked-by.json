@@ -15,7 +15,7 @@
   "content_id": "sha256:71fab763b1a57bc664c554d9bbf521dfc6000619573d23690e72a53afb1522f0",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-trademarked_by\",\n  \"title\": \"trademarked by\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source name, logo, brand asset, project identity, or mark is governed as a trademark by the target person, organization, project, or policy.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"trademarked_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"governance\",\n  \"inverse\": \"trademark_holder_for\",\n  \"color\": \"#eab308\",\n  \"inverse_color\": \"#fde047\",\n  \"line_style\": \"double\",\n  \"inverse_line_style\": \"dashed\",\n  \"relationships\": [],\n  \"default_weight\": 4,\n  \"default_visibility\": \"secondary\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-trademarked_by.json",
     "method": "archive",
     "content_id": "sha256:71fab763b1a57bc664c554d9bbf521dfc6000619573d23690e72a53afb1522f0",

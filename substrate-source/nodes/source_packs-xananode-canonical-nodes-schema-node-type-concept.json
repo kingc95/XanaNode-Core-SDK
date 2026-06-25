@@ -15,7 +15,7 @@
   "content_id": "sha256:eb73f7608890fed54fd2c3cee741c0751ffb6576c2eeee095b17695b186615ee",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-concept\",\n  \"title\": \"Concept\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"An idea, pattern, theory, failure mode, or explanatory structure. A concept is built from claims.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"concept\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"theory\",\n    \"principle\",\n    \"failure_mode\",\n    \"method\",\n    \"pattern\",\n    \"distinction\",\n    \"frame\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"claims\",\n    \"concepts\",\n    \"sources\",\n    \"people\",\n    \"projects\"\n  ],\n  \"color\": {\n    \"bg\": \"#91f2a6\",\n    \"fg\": \"#062010\",\n    \"outline\": \"#dcffe4\"\n  },\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-concept.json",
     "method": "archive",
     "content_id": "sha256:eb73f7608890fed54fd2c3cee741c0751ffb6576c2eeee095b17695b186615ee",

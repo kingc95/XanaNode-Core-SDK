@@ -15,7 +15,7 @@
   "content_id": "sha256:97bf2fc3bbf8cbe376f7001efa7950e3b8c3c867b347c6f9fcfc462c608606c7",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-source-television_episode\",\n  \"title\": \"Source subtype: television episode\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"television_episode is an allowed subtype of the source node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"television_episode\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"source\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-source-television_episode.json",
     "method": "archive",
     "content_id": "sha256:97bf2fc3bbf8cbe376f7001efa7950e3b8c3c867b347c6f9fcfc462c608606c7",

@@ -15,7 +15,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:178c2c72ee97ee25ed46fc5d506224fc6e0cb8e39c90b7aa9874cdde390b0ca3",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-relationships.schema.json",
     "method": "archive",
     "content_id": "sha256:f54850b79d92255a2ed8753086ec114a2bb425b0219e30f614072fbf117a53a2",

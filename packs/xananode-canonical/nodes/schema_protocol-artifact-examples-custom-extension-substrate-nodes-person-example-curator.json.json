@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/nodes/person-example-curator.json",
   "content_id": "sha256:c5705906b5ab478c070504428e8aa2fbec1bce513d04687ca1a6e6f6976fc1f3",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:39.906Z",
+    "captured_at": "2026-06-25T14:24:48.048Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/custom-extension-substrate/nodes/person-example-curator.json",
     "method": "archive",
     "content_id": "sha256:c5705906b5ab478c070504428e8aa2fbec1bce513d04687ca1a6e6f6976fc1f3",

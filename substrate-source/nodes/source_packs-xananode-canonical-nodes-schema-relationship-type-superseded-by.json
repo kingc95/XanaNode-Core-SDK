@@ -15,7 +15,7 @@
   "content_id": "sha256:4d10e32479285a337baf7df79bf689346033164ee30e723df3b720aed475d5ba",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-superseded_by\",\n  \"title\": \"Superseded By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The superseded_by inverse relationship term derived from supersedes.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"superseded_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"evolution\",\n  \"inverse\": \"supersedes\",\n  \"derived_inverse\": true,\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#cbd5e1\",\n  \"inverse_color\": \"#64748b\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-superseded_by.json",
     "method": "archive",
     "content_id": "sha256:4d10e32479285a337baf7df79bf689346033164ee30e723df3b720aed475d5ba",

@@ -15,7 +15,7 @@
   "content_id": "sha256:be1a50a2a2d735a94be6fc8aaefc242ba9e8a72191603befc3a41e94b9be3be4",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-observation-news_event\",\n  \"title\": \"Observation subtype: news event\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"news_event is an allowed subtype of the observation node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"news_event\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"observation\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-observation-news_event.json",
     "method": "archive",
     "content_id": "sha256:be1a50a2a2d735a94be6fc8aaefc242ba9e8a72191603befc3a41e94b9be3be4",

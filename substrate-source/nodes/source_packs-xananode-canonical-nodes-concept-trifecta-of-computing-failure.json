@@ -15,7 +15,7 @@
   "content_id": "sha256:830805484f767c2d2874beb9fcf4bb1eb67ddfa2c4a47129953cfff3b2ce0219",
   "content": "{\n  \"id\": \"xananode.canonical:concept/trifecta-of-computing-failure\",\n  \"title\": \"The Trifecta of Computing Failure\",\n  \"type\": \"concept\",\n  \"subtype\": \"problem_frame\",\n  \"importance\": 5,\n  \"summary\": \"A three-part failure pattern in modern computing where knowledge is trapped in isolated documents, copied without durable lineage, and kept in tools that do not naturally federate.\",\n  \"content\": \"The Trifecta of Computing Failure names the pattern XanaNode is trying to escape.\\n\\nFirst, most systems treat the document or file as the primary container of meaning. Second, when people need to reuse or synthesize knowledge, they usually copy and paste excerpts into new places, which severs provenance, surrounding context, and revision lineage. Third, even tools that improve local note-linking rarely provide a durable protocol for independent authorship, portable raw assets, and federation across many tools and owners.\\n\\nXanaNode is meant to answer all three at once: relationships become first-class, transclusion and fragment identity preserve lineage, and the substrate can move between projection layers without collapsing back into one app's private format.\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_trifecta-of-computing-failure.json",
     "method": "archive",
     "content_id": "sha256:830805484f767c2d2874beb9fcf4bb1eb67ddfa2c4a47129953cfff3b2ce0219",

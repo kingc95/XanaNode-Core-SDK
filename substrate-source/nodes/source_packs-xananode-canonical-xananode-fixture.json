@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "application/json",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:2248b3ba18c355aff4211f560d952649eb8483790270935eb711c4a36ea5ec6b",
-  "content": "{\n  \"generated_at\": \"2026-06-25T14:00:29.121Z\",\n  \"source_of_truth\": \"../../../XanaNode-Canonical-Substrate\",\n  \"source_manifest\": \"xananode.canonical\",\n  \"note\": \"Generated fixture for Core bootstrap/offline use. Do not edit directly.\"\n}\n",
+  "content_id": "sha256:0f2af2c1ec262849cb98facd2c47a9f75ac91dcb11bfbb62dfb880e7f4d8838c",
+  "content": "{\n  \"generated_at\": \"2026-06-25T14:22:43.061Z\",\n  \"source_of_truth\": \"../../../XanaNode-Canonical-Substrate\",\n  \"source_manifest\": \"xananode.canonical\",\n  \"note\": \"Generated fixture for Core bootstrap/offline use. Do not edit directly.\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/.xananode-fixture.json",
     "method": "archive",
-    "content_id": "sha256:2248b3ba18c355aff4211f560d952649eb8483790270935eb711c4a36ea5ec6b",
+    "content_id": "sha256:0f2af2c1ec262849cb98facd2c47a9f75ac91dcb11bfbb62dfb880e7f4d8838c",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

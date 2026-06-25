@@ -15,7 +15,7 @@
   "content_id": "sha256:132444f6af63daca0e9010dc12f1766f118a03c242554f2a44303699bb88d79c",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-memorialized_by\",\n  \"title\": \"Memorialized By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The memorialized_by inverse relationship term derived from memorializes.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"memorialized_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"social\",\n  \"inverse\": \"memorializes\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#fecdd3\",\n  \"inverse_color\": \"#fb7185\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-memorialized_by.json",
     "method": "archive",
     "content_id": "sha256:132444f6af63daca0e9010dc12f1766f118a03c242554f2a44303699bb88d79c",

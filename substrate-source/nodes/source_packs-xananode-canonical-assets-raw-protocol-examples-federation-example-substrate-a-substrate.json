@@ -15,7 +15,7 @@
   "content_id": "sha256:de367242547736608a9b0f558025436ff6069df1c1f2d66019c4882823970489",
   "content": "{\n  \"id\": \"example.researcher_a\",\n  \"name\": \"Federation Example A\",\n  \"version\": \"0.1.0\",\n  \"namespace\": \"example.researcher_a\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/kingc95/xananode.git\",\n    \"default_branch\": \"main\",\n    \"path\": \"examples/federation-example/substrate-a\"\n  },\n  \"schema_version\": \"xananode-core@0.5.0\",\n  \"imports\": [\n    \"xananode:core\"\n  ]\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/federation-example/substrate-a/substrate.json",
     "method": "archive",
     "content_id": "sha256:de367242547736608a9b0f558025436ff6069df1c1f2d66019c4882823970489",

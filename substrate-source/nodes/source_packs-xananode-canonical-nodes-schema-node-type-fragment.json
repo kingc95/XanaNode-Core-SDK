@@ -15,7 +15,7 @@
   "content_id": "sha256:9ec9a0628e496da8706d9d9247ba100d030aec58e74c1ba9a1d9159b2feeea45",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-fragment\",\n  \"title\": \"Fragment\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 3,\n  \"summary\": \"A stable, addressable portion of another node, source, media object, or publication used for deep linking, quotation, citation, transclusion, and revision-aware reference.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"fragment\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"section\",\n    \"paragraph\",\n    \"sentence\",\n    \"quote\",\n    \"code_block\",\n    \"data_range\",\n    \"media_segment\",\n    \"image_region\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"source_node\",\n    \"fragment_id\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"tumbler\",\n    \"source_revision\",\n    \"content_hash\",\n    \"selector\",\n    \"start_offset\",\n    \"end_offset\",\n    \"byte_range\",\n    \"line_range\",\n    \"time_range\",\n    \"rights_status\"\n  ],\n  \"color\": {\n    \"bg\": \"#38bdf8\",\n    \"fg\": \"#03131f\",\n    \"outline\": \"#d8f4ff\"\n  },\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-fragment.json",
     "method": "archive",
     "content_id": "sha256:9ec9a0628e496da8706d9d9247ba100d030aec58e74c1ba9a1d9159b2feeea45",

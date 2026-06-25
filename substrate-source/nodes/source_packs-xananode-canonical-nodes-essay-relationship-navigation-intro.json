@@ -15,7 +15,7 @@
   "content_id": "sha256:3729c80c68d92a23f18cc8ef5fc620f3c156f6ce2f50124a347fcbd9660384ff",
   "content": "{\n  \"id\": \"example.minimal:essay/relationship-navigation-intro\",\n  \"title\": \"Relationship Navigation Intro\",\n  \"type\": \"essay\",\n  \"importance\": 4,\n  \"summary\": \"A short example essay that includes an addressable source fragment by reference rather than duplicating it.\",\n  \"created_by\": \"example.minimal:person/example-maintainer\",\n  \"created_at\": \"2026-01-01T00:00:00Z\",\n  \"relationships\": [\n    {\n      \"id\": \"example.minimal:rel/maintainer-created-intro-essay\",\n      \"type\": \"created\",\n      \"source\": \"example.minimal:person/example-maintainer\",\n      \"direction\": \"incoming\"\n    },\n    {\n      \"id\": \"example.minimal:rel/essay-transcludes-fragment\",\n      \"type\": \"transcludes\",\n      \"target\": \"example.minimal:fragment/as-we-may-think-0004\",\n      \"direction\": \"outgoing\"\n    }\n  ]\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/essay_relationship-navigation-intro.json",
     "method": "archive",
     "content_id": "sha256:3729c80c68d92a23f18cc8ef5fc620f3c156f6ce2f50124a347fcbd9660384ff",

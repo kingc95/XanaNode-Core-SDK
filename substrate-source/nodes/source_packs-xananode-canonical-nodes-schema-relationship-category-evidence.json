@@ -15,7 +15,7 @@
   "content_id": "sha256:46529479db0015e0f0465a2b24e3f476c12bdae653a1b15a1d1cd7127dc96953",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-evidence\",\n  \"title\": \"Evidence Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The evidence category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"evidence\",\n  \"registry_namespace\": \"xananode\",\n  \"relationships\": [],\n  \"color\": \"#10b981\",\n  \"inverse_color\": \"#6ee7b7\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-evidence.json",
     "method": "archive",
     "content_id": "sha256:46529479db0015e0f0465a2b24e3f476c12bdae653a1b15a1d1cd7127dc96953",

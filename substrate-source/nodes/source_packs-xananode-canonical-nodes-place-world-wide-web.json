@@ -15,7 +15,7 @@
   "content_id": "sha256:74a432d84b664bf88564c49420584598c4d104c78bb1bcc93e1421f507d9036b",
   "content": "{\n  \"id\": \"xananode.canonical:place/world-wide-web\",\n  \"title\": \"World Wide Web\",\n  \"type\": \"place\",\n  \"subtype\": \"online_space\",\n  \"importance\": 3,\n  \"summary\": \"The public networked space where XanaNode domains, repositories, documentation, and published substrates are reached.\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/place_world-wide-web.json",
     "method": "archive",
     "content_id": "sha256:74a432d84b664bf88564c49420584598c4d104c78bb1bcc93e1421f507d9036b",

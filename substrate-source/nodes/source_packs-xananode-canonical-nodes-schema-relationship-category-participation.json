@@ -15,7 +15,7 @@
   "content_id": "sha256:a983b849e63a6a237d289d77a815faa779ca1fa929c920c7d8f92d77e08d431b",
   "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-participation\",\n  \"title\": \"Participation Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The participation category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"participation\",\n  \"registry_namespace\": \"xananode\",\n  \"relationships\": [],\n  \"color\": \"#ec4899\",\n  \"inverse_color\": \"#f9a8d4\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-participation.json",
     "method": "archive",
     "content_id": "sha256:a983b849e63a6a237d289d77a815faa779ca1fa929c920c7d8f92d77e08d431b",

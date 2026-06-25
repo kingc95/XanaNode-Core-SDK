@@ -15,7 +15,7 @@
   "content_id": "sha256:37ffeda2284b3505c35904e8a35c53ddfcf49414c0dff747eb55fcd2088f14d1",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-schema-semantic_rule\",\n  \"title\": \"Schema subtype: semantic rule\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"semantic_rule is an allowed subtype of the schema node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"semantic_rule\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"schema\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-schema-semantic_rule.json",
     "method": "archive",
     "content_id": "sha256:37ffeda2284b3505c35904e8a35c53ddfcf49414c0dff747eb55fcd2088f14d1",

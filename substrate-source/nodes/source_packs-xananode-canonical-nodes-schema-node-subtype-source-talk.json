@@ -15,7 +15,7 @@
   "content_id": "sha256:1f6b4ca37f10b06890e7a04752d53bee9aedc74b87d150a4465613ceaac6effb",
   "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-source-talk\",\n  \"title\": \"Source subtype: talk\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"talk is an allowed subtype of the source node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"talk\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"source\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-source-talk.json",
     "method": "archive",
     "content_id": "sha256:1f6b4ca37f10b06890e7a04752d53bee9aedc74b87d150a4465613ceaac6effb",

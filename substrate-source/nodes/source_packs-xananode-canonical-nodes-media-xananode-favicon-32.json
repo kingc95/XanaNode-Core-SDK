@@ -15,7 +15,7 @@
   "content_id": "sha256:845552de516292d732dd2017735c4107dbe43ad0515cbac80f0930df067d0fe5",
   "content": "{\n  \"id\": \"xananode.canonical:media/xananode-favicon-32\",\n  \"title\": \"XanaNode Favicon 32x32\",\n  \"type\": \"media\",\n  \"subtypes\": [\n    \"image\",\n    \"logo\",\n    \"favicon\"\n  ],\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/png\",\n  \"importance\": 4,\n  \"summary\": \"32 pixel PNG favicon for XanaNode projections.\",\n  \"alt\": \"XanaNode branding icon derived from the canonical XanaNode mark.\",\n  \"rights_status\": \"open-source\",\n  \"asset_path\": \"media/images/favicon-32x32.png\",\n  \"asset_role\": \"favicon\",\n  \"creator\": \"Christian Siefen\",\n  \"created_at\": \"2026-06-19T00:00:00.000Z\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_xananode-favicon-32.json",
     "method": "archive",
     "content_id": "sha256:845552de516292d732dd2017735c4107dbe43ad0515cbac80f0930df067d0fe5",

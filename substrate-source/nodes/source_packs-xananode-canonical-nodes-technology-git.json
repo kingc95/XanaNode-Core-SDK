@@ -15,7 +15,7 @@
   "content_id": "sha256:a9fb68f6d014c74a0fdbcfc6a51ef279c853014ce3552881dc98110fd34e24b5",
   "content": "{\n  \"id\": \"xananode.canonical:technology/git\",\n  \"title\": \"Git\",\n  \"type\": \"technology\",\n  \"subtype\": \"tool\",\n  \"importance\": 4,\n  \"summary\": \"The distributed version control system used to preserve substrate history, protocol revisions, repositories, and deployment workflows.\",\n  \"source_url\": \"https://git-scm.com/\",\n  \"relationships\": []\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-25T14:22:34.827Z",
+    "captured_at": "2026-06-25T14:24:42.948Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_git.json",
     "method": "archive",
     "content_id": "sha256:a9fb68f6d014c74a0fdbcfc6a51ef279c853014ce3552881dc98110fd34e24b5",
