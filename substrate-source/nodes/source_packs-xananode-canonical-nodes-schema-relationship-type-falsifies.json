@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-falsifies",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Falsifies",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-falsifies.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-falsifies.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-falsifies.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-falsifies.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:d385c671f72cf4a8f1bf885ec994dabb55d1d7ab242a001d01e5ce70cf936955",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-falsifies\",\n  \"title\": \"Falsifies\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source falsifies, refutes, or shows the target hypothesis or claim to be false under stated conditions.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"falsifies\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"research_workflow\",\n  \"inverse\": \"falsified_by\",\n  \"color\": \"#0ea5e9\",\n  \"inverse_color\": \"#7dd3fc\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-falsifies.json",
+    "method": "archive",
+    "content_id": "sha256:d385c671f72cf4a8f1bf885ec994dabb55d1d7ab242a001d01e5ce70cf936955",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

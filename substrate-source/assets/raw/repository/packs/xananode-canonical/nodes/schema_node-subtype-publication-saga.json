@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-publication-saga",
+  "title": "Publication subtype: saga",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "saga is an allowed subtype of the publication node type.",
+  "version": "0.3.0",
+  "registry_type": "saga",
+  "registry_namespace": "xananode",
+  "parent_node_type": "publication",
+  "relationships": []
+}

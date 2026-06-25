@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-protocol-artifact-trademark-md",
+  "title": "Packs / Xananode Canonical / Nodes / Source Protocol Artifact Trademark.Md",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_protocol-artifact-trademark.md.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_protocol-artifact-trademark.md.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_protocol-artifact-trademark.md.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_protocol-artifact-trademark.md.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:577eda6512c78c8379279af718c0b9303163a83bee8d637d8247424e310df406",
+  "content": "{\n  \"id\": \"xananode.canonical:source/protocol-artifact-trademark.md\",\n  \"title\": \"XanaNode Trademark Policy\",\n  \"type\": \"source\",\n  \"subtype\": \"protocol_document\",\n  \"importance\": 3,\n  \"summary\": \"TRADEMARK.md is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"TRADEMARK.md\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/TRADEMARK.md\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"text/markdown\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"content\": \"# XanaNode Trademark Policy\\n\\nThe XanaNode name, XanaNode logo, and related brand assets identify the canonical XanaNode protocol and project.\\n\\nYou may use the name XanaNode to make accurate factual statements, such as:\\n\\n- \\\"implements the XanaNode protocol\\\"\\n- \\\"XanaNode-compatible\\\"\\n- \\\"built with XanaNode schemas\\\"\\n- \\\"uses XanaNode Core\\\"\\n\\nYou may not use the XanaNode name or logo in a way that implies endorsement, official status, or control by the XanaNode project unless that relationship is true.\\n\\nImplementations should identify themselves as independently authored unless they are maintained by the XanaNode project. For example:\\n\\n> ExampleApp is an independent XanaNode-compatible implementation.\\n\\nModified logos, confusingly similar marks, and product names that imply ownership of XanaNode itself are not permitted without permission.\\n\\n\",\n  \"asset_path\": \"assets/raw/protocol/TRADEMARK.md\",\n  \"content_id\": \"sha256:920cc1e4e4719f3383ec0c50e4eafba89f848b730b4d297b3a22ab576edde81c\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/TRADEMARK.md\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:920cc1e4e4719f3383ec0c50e4eafba89f848b730b4d297b3a22ab576edde81c\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_protocol-artifact-trademark.md.json",
+    "method": "archive",
+    "content_id": "sha256:577eda6512c78c8379279af718c0b9303163a83bee8d637d8247424e310df406",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

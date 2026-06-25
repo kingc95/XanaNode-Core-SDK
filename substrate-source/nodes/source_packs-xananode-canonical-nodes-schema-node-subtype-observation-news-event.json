@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-observation-news-event",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Observation News Event",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-observation-news_event.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-observation-news_event.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-observation-news_event.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-observation-news_event.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:be1a50a2a2d735a94be6fc8aaefc242ba9e8a72191603befc3a41e94b9be3be4",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-observation-news_event\",\n  \"title\": \"Observation subtype: news event\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"news_event is an allowed subtype of the observation node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"news_event\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"observation\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-observation-news_event.json",
+    "method": "archive",
+    "content_id": "sha256:be1a50a2a2d735a94be6fc8aaefc242ba9e8a72191603befc3a41e94b9be3be4",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

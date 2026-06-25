@@ -1,0 +1,19 @@
+{
+  "id": "xananode.canonical:media/xananode-icon",
+  "title": "XanaNode Icon",
+  "type": "media",
+  "subtypes": [
+    "image",
+    "logo"
+  ],
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "importance": 5,
+  "summary": "The XanaNode project icon used as primary media for XanaNode nodes and projection branding.",
+  "alt": "A connected node mark with orange and blue paths crossing around a bright central node.",
+  "rights_status": "open-source",
+  "asset_path": "media/images/xananode-icon.svg",
+  "asset_role": "primary_media",
+  "creator": "Christian Siefen",
+  "relationships": []
+}

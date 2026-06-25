@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-src-init",
+  "title": "Src / Init",
+  "type": "source",
+  "subtype": "reference_code",
+  "importance": 4,
+  "summary": "src/init.js is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/init.js",
+  "artifact_path": "src/init.js",
+  "asset_path": "assets/raw/repository/src/init.js",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/javascript",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:b501209bc6430d4e5b1a251f4bbce073b7da84b4e3c1f315bd229401df275acc",
+  "content": "import fs from \"node:fs\";\nimport path from \"node:path\";\nimport { writeJson, writeMarkdownNode } from \"./io.js\";\nimport { slugify } from \"./ids.js\";\n\nexport function initSubstrate(targetDir, options = {}) {\n  const name = options.name || \"New XanaNode Substrate\";\n  const namespace = options.namespace || slugify(name, \"substrate\");\n  fs.mkdirSync(targetDir, { recursive: true });\n  for (const relativeDir of [\n    path.join(\"content\", \"nodes\"),\n    \"nodes\",\n    path.join(\"assets\", \"media\"),\n    path.join(\"assets\", \"sources\"),\n    path.join(\"assets\", \"projection\"),\n    \"schemas\",\n    \"reports\",\n    \"packs\",\n    \"imports\"\n  ]) {\n    fs.mkdirSync(path.join(targetDir, relativeDir), { recursive: true });\n  }\n\n  writeJson(path.join(targetDir, \"substrate.json\"), {\n    id: namespace,\n    name,\n    version: \"0.1.0\",\n    namespace,\n    schema_version: \"xananode-core@0.5.0\",\n    repository: {\n      type: \"git\",\n      url: options.repositoryUrl || \"local\",\n      default_branch: options.defaultBranch || \"main\"\n    },\n    imports: [\"xananode:core\"],\n    extensions: [],\n    maintainers: options.author ? [{ name: options.author }] : []\n  });\n\n  writeMarkdownNode(path.join(targetDir, \"content\", \"nodes\", \"start-here.md\"), {\n    title: \"Start Here\",\n    type: \"trail\",\n    summary: \"An empty starting trail for this substrate.\",\n    created_by: options.author || \"unknown\",\n    nodes: []\n  }, \"# Start Here\\n\\nThis trail is ready for your first path through the substrate.\\n\");\n\n  fs.writeFileSync(path.join(targetDir, \"README.md\"), `# ${name}\\n\\nThis is a XanaNode substrate created by @xananode/core.\\n\\nThe substrate root is this folder. Keep authored Markdown nodes in \\`content/nodes/\\`, protocol JSON nodes in \\`nodes/\\` or \\`nodes.json\\`, relationships in \\`relationships.json\\`, local media and source files in \\`assets/\\`, extension schemas in \\`schemas/\\`, reports in \\`reports/\\`, mounted substrates in \\`packs/\\`, and incoming material in \\`imports/\\`.\\n\\n## Commands\\n\\n\\`xananode validate .\\`\\n\\`xananode build . --out public\\`\\n`);\n  return { targetDir, namespace, name };\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/init.js",
+    "method": "archive",
+    "content_id": "sha256:b501209bc6430d4e5b1a251f4bbce073b7da84b4e3c1f315bd229401df275acc",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

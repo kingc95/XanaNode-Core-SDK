@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-assembled_from",
+  "title": "Assembled from",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source physical item or system was assembled from the target parts, components, or ingredients.",
+  "version": "0.5.0",
+  "registry_type": "assembled_from",
+  "registry_namespace": "xananode",
+  "category": "composition",
+  "inverse": "assembled_into",
+  "color": "#22c55e",
+  "inverse_color": "#86efac",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

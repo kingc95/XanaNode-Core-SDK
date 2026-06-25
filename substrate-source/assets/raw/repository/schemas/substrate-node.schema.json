@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/substrate-node.schema.json",
+  "title": "Substrate Node",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["id", "title", "type", "importance", "summary", "relationships"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*/[^\\s#]+$"
+    },
+    "title": { "type": "string" },
+    "type": {
+      "type": "string",
+      "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+    },
+    "subtype": {
+      "type": "string",
+      "description": "A narrower kind within the primary node type, such as git_repository, official_site, documentation, support_page, screenshot, logo, or web_snapshot.",
+      "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+    },
+    "subtypes": {
+      "type": "array",
+      "description": "Additional narrower kinds within the primary node type. Use when one node needs more than one subtype without changing its primary type.",
+      "items": {
+        "type": "string",
+        "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+      },
+      "uniqueItems": true
+    },
+    "facets": {
+      "type": "array",
+      "description": "Secondary node roles used when one knowledge object participates in multiple modeling categories without duplicating its identity.",
+      "items": {
+        "type": "string",
+        "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+      },
+      "uniqueItems": true
+    },
+    "status": { "type": "string" },
+    "importance": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "summary": { "type": "string" },
+    "created_by": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "source_url": { "type": "string", "format": "uri" },
+    "rights_status": { "type": "string" },
+    "sharing": {
+      "type": "object",
+      "description": "Node-level sharing policy. Nodes are shareable by default unless this object or a substrate-level rule says otherwise.",
+      "additionalProperties": false,
+      "properties": {
+        "shareable": {
+          "type": "boolean",
+          "description": "Whether this node may be included in exported, published, federated, or shared packs. Defaults to true."
+        },
+        "scope": {
+          "type": "string",
+          "description": "The intended sharing scope for tools that support private workspaces or limited review.",
+          "enum": ["public", "unlisted", "trusted", "private"]
+        },
+        "reason": { "type": "string" },
+        "review_status": {
+          "type": "string",
+          "enum": ["allowed", "blocked", "needs_review"]
+        }
+      }
+    },
+    "asset_path": {
+      "type": "string",
+      "description": "Portable relative path to a local asset file inside the substrate or pack, usually used by media nodes."
+    },
+    "asset_role": {
+      "type": "string",
+      "description": "The role this asset plays for the node, such as primary_media, source_snapshot, thumbnail, transcript, attachment, or archival_copy."
+    },
+    "media_type": { "type": "string" },
+    "mime_type": { "type": "string" },
+    "alt": { "type": "string" },
+    "caption": { "type": "string" },
+    "source_snapshot": {
+      "type": "object",
+      "description": "Metadata for a captured representation of an external source page.",
+      "additionalProperties": false,
+      "properties": {
+        "captured_at": { "type": "string", "format": "date-time" },
+        "source_url": { "type": "string", "format": "uri" },
+        "method": {
+          "type": "string",
+          "enum": ["opengraph", "screenshot", "readability", "manual", "archive"]
+        },
+        "content_id": { "type": "string" },
+        "rights_status": { "type": "string" },
+        "tool": { "type": "string" }
+      }
+    },
+    "confidence": { "type": "string" },
+    "uncertainty_level": {
+      "type": "string",
+      "description": "A canonical epistemic uncertainty level for questions, hypotheses, claims, knowledge gaps, responses, or first-class relationships.",
+      "enum": ["unknown", "low", "medium", "high", "unresolved"]
+    },
+    "review_status": {
+      "type": "string",
+      "description": "Workflow review state for a node or relationship being authored, validated, merged, or deprecated.",
+      "enum": ["draft", "needs_review", "under_review", "approved", "rejected", "deprecated"]
+    },
+    "research_priority": {
+      "type": "integer",
+      "description": "Priority signal for inquiry, problems, and knowledge gaps.",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "evidence_strength": {
+      "type": "string",
+      "description": "Compact assessment of the evidence available for a claim, hypothesis, response, or relationship.",
+      "enum": ["none", "weak", "moderate", "strong", "decisive", "contested"]
+    },
+    "communication_model": {
+      "type": "string",
+      "description": "Participant topology for a first-class communication.",
+      "enum": ["one_to_one", "one_to_many", "many_to_one", "many_to_many"]
+    },
+    "communication_pattern": {
+      "type": "string",
+      "description": "Semantic communication pattern beyond participant count.",
+      "enum": [
+        "dialogue",
+        "broadcast",
+        "collection",
+        "coordination",
+        "negotiation",
+        "debate",
+        "consensus",
+        "instruction",
+        "query_response",
+        "publication"
+      ]
+    },
+    "protocol_id": { "type": "string" },
+    "content_id": { "type": "string" },
+    "version_id": { "type": "string" },
+    "software_version": {
+      "type": "string",
+      "description": "Semantic or package version of a software project, component, renderer, SDK, or application."
+    },
+    "build_metadata": {
+      "type": "object",
+      "description": "Build and runtime provenance for software nodes, generated packs, and projection artifacts.",
+      "additionalProperties": false,
+      "properties": {
+        "version": { "type": "string" },
+        "git_commit": { "type": "string" },
+        "git_branch": { "type": "string" },
+        "repository": { "type": "string" },
+        "built_at": { "type": "string", "format": "date-time" },
+        "compiled_at": { "type": "string", "format": "date-time" },
+        "generated_at": { "type": "string", "format": "date-time" },
+        "built_by": { "type": "string" },
+        "runtime": { "type": "string" },
+        "platform": { "type": "string" },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string" },
+              "version": { "type": "string" },
+              "repository": { "type": "string" },
+              "relationship": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "source_content_id": { "type": "string" },
+    "source_version_id": { "type": "string" },
+    "signature": { "type": "string" },
+    "source_node": { "type": "string" },
+    "fragment_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._-]+$"
+    },
+    "tumbler": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*/[^\\s#@]+(@[^\\s#]+)?(#fragment/[A-Za-z0-9._-]+(@[^\\s#]+)?)?$"
+    },
+    "selector": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "semantic-anchor",
+            "TextQuoteSelector",
+            "TextPositionSelector",
+            "FragmentSelector",
+            "CssSelector",
+            "XPathSelector",
+            "RangeSelector"
+          ]
+        },
+        "value": { "type": "string" },
+        "exact": { "type": "string" },
+        "prefix": { "type": "string" },
+        "suffix": { "type": "string" },
+        "start": { "type": "integer" },
+        "end": { "type": "integer" }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "type", "direction"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": {
+            "type": "string",
+            "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+          },
+          "source": { "type": "string" },
+          "target": { "type": "string" },
+          "direction": {
+            "type": "string",
+            "enum": ["incoming", "outgoing"]
+          },
+          "external": { "type": "boolean" },
+          "target_substrate": { "type": "string" }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": { "const": "fragment" }
+        },
+        "required": ["type"]
+      },
+      "then": {
+        "required": [
+          "source_node",
+          "source_version_id",
+          "source_content_id",
+          "fragment_id",
+          "tumbler",
+          "selector",
+          "content_id",
+          "version_id"
+        ]
+      }
+    }
+  ]
+}

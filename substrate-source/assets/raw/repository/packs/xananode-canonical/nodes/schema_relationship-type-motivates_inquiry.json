@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-motivates_inquiry",
+  "title": "Motivates inquiry",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source motivates inquiry into the target question, problem, claim, or knowledge gap.",
+  "version": "0.5.0",
+  "registry_type": "motivates_inquiry",
+  "registry_namespace": "xananode",
+  "category": "inquiry",
+  "inverse": "inquiry_motivated_by",
+  "color": "#2dd4bf",
+  "inverse_color": "#99f6e4",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

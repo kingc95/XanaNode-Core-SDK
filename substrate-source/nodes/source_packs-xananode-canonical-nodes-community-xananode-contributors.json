@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-community-xananode-contributors",
+  "title": "Packs / Xananode Canonical / Nodes / Community Xananode Contributors",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/community_xananode-contributors.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/community_xananode-contributors.json",
+  "artifact_path": "packs/xananode-canonical/nodes/community_xananode-contributors.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/community_xananode-contributors.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:6f2852271af3fd44dfcbebd91c9a7cfd4f3e3d5c51b587bb271505397ffad80a",
+  "content": "{\n  \"id\": \"xananode.canonical:community/xananode-contributors\",\n  \"title\": \"XanaNode Contributors\",\n  \"type\": \"community\",\n  \"subtype\": \"open_source\",\n  \"importance\": 4,\n  \"summary\": \"The people and future maintainers who author, review, preserve, and project XanaNode-compatible substrates.\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/community_xananode-contributors.json",
+    "method": "archive",
+    "content_id": "sha256:6f2852271af3fd44dfcbebd91c9a7cfd4f3e3d5c51b587bb271505397ffad80a",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

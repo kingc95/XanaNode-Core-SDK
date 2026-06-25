@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-explained_by",
+  "title": "Explained By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The explained_by inverse relationship term derived from explains.",
+  "version": "0.5.0",
+  "registry_type": "explained_by",
+  "registry_namespace": "xananode",
+  "category": "explanation",
+  "inverse": "explains",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#bfdbfe",
+  "inverse_color": "#60a5fa",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-claim-protocol-docs-licensed-cc-by-4-0",
+  "title": "Packs / Xananode Canonical / Nodes / Claim Protocol Docs Licensed Cc By 4 0",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/claim_protocol-docs-licensed-cc-by-4-0.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/claim_protocol-docs-licensed-cc-by-4-0.json",
+  "artifact_path": "packs/xananode-canonical/nodes/claim_protocol-docs-licensed-cc-by-4-0.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/claim_protocol-docs-licensed-cc-by-4-0.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:0b84f385feadb1b2fc7f415f01baa6017115a9a9c17a3f7e928243eec62b4b4e",
+  "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:claim/protocol-docs-licensed-cc-by-4-0\",\n  \"title\": \"Protocol Docs Are Licensed CC-BY 4.0\",\n  \"type\": \"claim\",\n  \"subtype\": \"definition\",\n  \"status\": \"asserted\",\n  \"importance\": 5,\n  \"summary\": \"XanaNode protocol documentation is licensed under CC-BY 4.0 so the docs can be shared and adapted with attribution.\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/claim_protocol-docs-licensed-cc-by-4-0.json",
+    "method": "archive",
+    "content_id": "sha256:0b84f385feadb1b2fc7f415f01baa6017115a9a9c17a3f7e928243eec62b4b4e",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

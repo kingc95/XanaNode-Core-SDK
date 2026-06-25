@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-protocol-artifact-examples-federation-example-substrate-b-relationships-json",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Protocol Artifact Examples Federation Example Substrate B Relationships.Json",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_protocol-artifact-examples-federation-example-substrate-b-relationships.json.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-federation-example-substrate-b-relationships.json.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_protocol-artifact-examples-federation-example-substrate-b-relationships.json.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-federation-example-substrate-b-relationships.json.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:e4c8fc2cf0518cce13a4e4bc3cccaa39ff1c3afdbf9d83e239a7a6f645b7f4cf",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/protocol-artifact-examples-federation-example-substrate-b-relationships.json\",\n  \"title\": \"Examples / Federation Example / Substrate B / Relationships\",\n  \"type\": \"schema\",\n  \"subtype\": \"protocol_json_artifact\",\n  \"importance\": 3,\n  \"summary\": \"examples/federation-example/substrate-b/relationships.json is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"examples/federation-example/substrate-b/relationships.json\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/relationships.json\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"application/json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"Apache-2.0\",\n  \"relationships\": [],\n  \"content\": \"{\\r\\n  \\\"relationships\\\": [\\r\\n    {\\r\\n      \\\"id\\\": \\\"example.researcher_b:rel/memory-substrate-possible-match-knowledge-substrate\\\",\\r\\n      \\\"source\\\": \\\"example.researcher_b:concept/memory-substrate\\\",\\r\\n      \\\"target\\\": \\\"example.researcher_a:concept/knowledge-substrate\\\",\\r\\n      \\\"type\\\": \\\"possible_match\\\",\\r\\n      \\\"weight\\\": 3,\\r\\n      \\\"visibility\\\": \\\"secondary\\\",\\r\\n      \\\"external\\\": true,\\r\\n      \\\"target_substrate\\\": \\\"example.researcher_a\\\",\\r\\n      \\\"asserted_by\\\": \\\"example.researcher_b:person/researcher-b\\\",\\r\\n      \\\"asserted_at\\\": \\\"2026-01-01T00:00:00Z\\\",\\r\\n      \\\"confidence\\\": \\\"0.78\\\",\\r\\n      \\\"summary\\\": \\\"Researcher B records the reciprocal possible-match edge while preserving the local memory-substrate framing.\\\"\\r\\n    }\\r\\n  ]\\r\\n}\\r\\n\",\n  \"asset_path\": \"assets/raw/protocol/examples/federation-example/substrate-b/relationships.json\",\n  \"content_id\": \"sha256:2644bf38596caf93aedf0defef25783e67cb98c46461044420a3615f7eb89f59\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/relationships.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:2644bf38596caf93aedf0defef25783e67cb98c46461044420a3615f7eb89f59\",\n    \"rights_status\": \"Apache-2.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-federation-example-substrate-b-relationships.json.json",
+    "method": "archive",
+    "content_id": "sha256:e4c8fc2cf0518cce13a4e4bc3cccaa39ff1c3afdbf9d83e239a7a6f645b7f4cf",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

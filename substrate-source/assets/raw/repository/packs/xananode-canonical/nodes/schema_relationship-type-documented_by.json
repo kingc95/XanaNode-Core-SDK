@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-documented_by",
+  "title": "Documented By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The documented_by inverse relationship term derived from documents.",
+  "version": "0.5.0",
+  "registry_type": "documented_by",
+  "registry_namespace": "xananode",
+  "category": "evidence",
+  "inverse": "documents",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#6ee7b7",
+  "inverse_color": "#10b981",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-claim-normative",
+  "title": "Claim subtype: normative",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "normative is an allowed subtype of the claim node type.",
+  "version": "0.3.0",
+  "registry_type": "normative",
+  "registry_namespace": "xananode",
+  "parent_node_type": "claim",
+  "relationships": []
+}

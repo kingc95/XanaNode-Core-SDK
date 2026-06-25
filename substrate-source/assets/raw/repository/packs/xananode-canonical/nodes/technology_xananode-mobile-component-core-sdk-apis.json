@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-mobile-component-core-sdk-apis",
+  "title": "XanaNode Mobile: Core SDK APIs",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Mobile consumes or depends on Core SDK APIs.",
+  "component_of": "xananode.canonical:project/xananode-mobile",
+  "relationships": []
+}

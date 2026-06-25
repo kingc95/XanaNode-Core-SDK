@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-relationship-dispute",
+  "title": "Relationship subtype: dispute",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "dispute is an allowed subtype of the relationship node type.",
+  "version": "0.3.0",
+  "registry_type": "dispute",
+  "registry_namespace": "xananode",
+  "parent_node_type": "relationship",
+  "relationships": []
+}

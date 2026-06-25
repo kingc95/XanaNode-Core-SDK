@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-category-schema-mapping",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Category Schema Mapping",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-category-schema_mapping.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-schema_mapping.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-category-schema_mapping.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-category-schema_mapping.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:eacfd9ea5584be5bb3cbea5c542428daaf5d8111997c784122db49eb470defc4",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-schema_mapping\",\n  \"title\": \"Schema Mapping Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The schema_mapping category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"schema_mapping\",\n  \"registry_namespace\": \"xananode\",\n  \"relationships\": [],\n  \"color\": \"#22d3ee\",\n  \"inverse_color\": \"#a5f3fc\",\n  \"line_style\": \"double\",\n  \"inverse_line_style\": \"double\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-schema_mapping.json",
+    "method": "archive",
+    "content_id": "sha256:eacfd9ea5584be5bb3cbea5c542428daaf5d8111997c784122db49eb470defc4",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

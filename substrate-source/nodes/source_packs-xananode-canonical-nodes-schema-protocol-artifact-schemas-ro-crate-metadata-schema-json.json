@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-protocol-artifact-schemas-ro-crate-metadata-schema-json",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Protocol Artifact Schemas Ro Crate Metadata.Schema.Json",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_protocol-artifact-schemas-ro-crate-metadata.schema.json.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-schemas-ro-crate-metadata.schema.json.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_protocol-artifact-schemas-ro-crate-metadata.schema.json.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_protocol-artifact-schemas-ro-crate-metadata.schema.json.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:3f4f695ae622dd60652324430d91362564de910e62e18a5fe18ef0adabf9facc",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/protocol-artifact-schemas-ro-crate-metadata.schema.json\",\n  \"title\": \"Schemas / Ro Crate Metadata.Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"protocol_json_artifact\",\n  \"importance\": 4,\n  \"summary\": \"schemas/ro-crate-metadata.schema.json is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"schemas/ro-crate-metadata.schema.json\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"application/json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"Apache-2.0\",\n  \"relationships\": [],\n  \"content\": \"{\\n  \\\"$schema\\\": \\\"https://json-schema.org/draft/2020-12/schema\\\",\\n  \\\"$id\\\": \\\"https://xananode.org/schemas/ro-crate-metadata.schema.json\\\",\\n  \\\"title\\\": \\\"XanaNode RO-Crate Companion Metadata\\\",\\n  \\\"type\\\": \\\"object\\\",\\n  \\\"additionalProperties\\\": true,\\n  \\\"required\\\": [\\\"@context\\\", \\\"@graph\\\"],\\n  \\\"properties\\\": {\\n    \\\"@context\\\": {},\\n    \\\"@graph\\\": {\\n      \\\"type\\\": \\\"array\\\",\\n      \\\"items\\\": { \\\"type\\\": \\\"object\\\" }\\n    }\\n  }\\n}\\n\",\n  \"asset_path\": \"assets/raw/protocol/schemas/ro-crate-metadata.schema.json\",\n  \"content_id\": \"sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df\",\n    \"rights_status\": \"Apache-2.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-schemas-ro-crate-metadata.schema.json.json",
+    "method": "archive",
+    "content_id": "sha256:3f4f695ae622dd60652324430d91362564de910e62e18a5fe18ef0adabf9facc",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

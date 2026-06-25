@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-raw-protocol-media-projection-relationship-types-motivates-inquiry",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Media / Projection / Relationship Types / Motivates Inquiry",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/motivates_inquiry.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/motivates_inquiry.svg",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/motivates_inquiry.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/motivates_inquiry.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:f0808e040974566b49e8de48eb6a145aff7022c2668fd0e1c4f2ff006210481b",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/motivates_inquiry.svg",
+    "method": "archive",
+    "content_id": "sha256:f0808e040974566b49e8de48eb6a145aff7022c2668fd0e1c4f2ff006210481b",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

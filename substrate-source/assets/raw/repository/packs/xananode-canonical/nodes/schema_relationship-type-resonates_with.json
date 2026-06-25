@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-resonates_with",
+  "title": "Resonates with",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source has a low-commitment conceptual or experiential resonance with the target.",
+  "version": "0.5.0",
+  "registry_type": "resonates_with",
+  "registry_namespace": "xananode",
+  "category": "cognition",
+  "inverse": "resonates_with",
+  "color": "#7c3aed",
+  "inverse_color": "#ddd6fe",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 2,
+  "default_visibility": "background",
+  "relationships": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:claim/local-first-without-federation-is-not-enough",
+  "title": "Local-first without federation is not enough",
+  "type": "claim",
+  "subtype": "problem_statement",
+  "status": "asserted",
+  "importance": 5,
+  "summary": "Owning local files is important, but durable knowledge transfer also requires a shared protocol for portability, identity, raw assets, and federation.",
+  "content": "Local-first tools solve a real problem: people should own their data. But ownership alone does not create interoperability. If a tool stores files locally without a strong substrate model for node identity, relationships, fragments, assets, and exchange, the knowledge still tends to stay trapped inside that tool's habits and assumptions.\n\nXanaNode tries to keep the benefits of local-first authorship while adding a protocol layer that allows federation, mounting, merging, projection, and transport without discarding meaning.",
+  "relationships": []
+}

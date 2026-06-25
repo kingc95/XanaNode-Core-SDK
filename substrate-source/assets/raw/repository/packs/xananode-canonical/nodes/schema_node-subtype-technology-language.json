@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-technology-language",
+  "title": "Technology subtype: language",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "language is an allowed subtype of the technology node type.",
+  "version": "0.3.0",
+  "registry_type": "language",
+  "registry_namespace": "xananode",
+  "parent_node_type": "technology",
+  "relationships": []
+}

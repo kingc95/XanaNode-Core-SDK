@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-raised_by",
+  "title": "Raised By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The raised_by inverse relationship term derived from raises.",
+  "version": "0.5.0",
+  "registry_type": "raised_by",
+  "registry_namespace": "xananode",
+  "category": "inquiry",
+  "inverse": "raises",
+  "color": "#99f6e4",
+  "inverse_color": "#2dd4bf",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

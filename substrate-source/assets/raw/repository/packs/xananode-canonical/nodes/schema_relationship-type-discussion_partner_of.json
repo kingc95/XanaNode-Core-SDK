@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-discussion_partner_of",
+  "title": "Discussion Partner Of Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The discussion_partner_of inverse relationship term derived from discussed_with.",
+  "version": "0.5.0",
+  "registry_type": "discussion_partner_of",
+  "registry_namespace": "xananode",
+  "category": "communication",
+  "inverse": "discussed_with",
+  "color": "#bae6fd",
+  "inverse_color": "#38bdf8",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

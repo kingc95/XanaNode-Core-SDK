@@ -1,0 +1,9 @@
+{
+  "id": "example.museum:person/example-curator",
+  "title": "Example Museum Curator",
+  "type": "person",
+  "importance": 3,
+  "summary": "The local actor responsible for curating and asserting the museum extension example.",
+  "created_at": "2026-01-01T00:00:00Z",
+  "relationships": []
+}

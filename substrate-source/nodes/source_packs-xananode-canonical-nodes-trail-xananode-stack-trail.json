@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-trail-xananode-stack-trail",
+  "title": "Packs / Xananode Canonical / Nodes / Trail Xananode Stack Trail",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/trail_xananode-stack-trail.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/trail_xananode-stack-trail.json",
+  "artifact_path": "packs/xananode-canonical/nodes/trail_xananode-stack-trail.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/trail_xananode-stack-trail.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:ff35dec251c92263dcf5e61c7ecb5627b4af07fc9856ddf5305bb6ae778b4ccb",
+  "content": "{\n  \"id\": \"xananode.canonical:trail/xananode-stack-trail\",\n  \"title\": \"XanaNode Stack Trail\",\n  \"type\": \"trail\",\n  \"subtype\": \"introductory\",\n  \"importance\": 5,\n  \"summary\": \"A curated route from the XanaNode concept through protocol, Core, workspace, Studio, Mobile, projection layers, Hugo, sources, and support.\",\n  \"nodes\": [\n    \"xananode.canonical:concept/xananode\",\n    \"xananode.canonical:project/xananode-protocol\",\n    \"xananode.canonical:project/xananode-core-sdk\",\n    \"xananode.canonical:project/xananode-workspace\",\n    \"xananode.canonical:project/xananode-studio\",\n    \"xananode.canonical:project/xananode-mobile\",\n    \"xananode.canonical:concept/substrate-projection-layer\",\n    \"xananode.canonical:project/xananode-hugo-theme\",\n    \"xananode.canonical:source/xananode-com-domain\"\n  ],\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/trail_xananode-stack-trail.json",
+    "method": "archive",
+    "content_id": "sha256:ff35dec251c92263dcf5e61c7ecb5627b4af07fc9856ddf5305bb6ae778b4ccb",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

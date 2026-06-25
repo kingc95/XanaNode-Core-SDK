@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-protocol-artifact-specs-merge-validation-md",
+  "title": "Packs / Xananode Canonical / Nodes / Source Protocol Artifact Specs Merge Validation.Md",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_protocol-artifact-specs-merge-validation.md.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_protocol-artifact-specs-merge-validation.md.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_protocol-artifact-specs-merge-validation.md.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_protocol-artifact-specs-merge-validation.md.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:375bb64ed2b88d7177a989c3f3179526bca5176884994b06066d17339fa636ea",
+  "content": "{\n  \"id\": \"xananode.canonical:source/protocol-artifact-specs-merge-validation.md\",\n  \"title\": \"Specs / Merge Validation\",\n  \"type\": \"source\",\n  \"subtype\": \"protocol_document\",\n  \"importance\": 4,\n  \"summary\": \"specs/merge-validation.md is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"specs/merge-validation.md\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/merge-validation.md\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"text/markdown\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"content\": \"# Merge Validation\\n\\nMerge validation checks whether multiple substrates can be analyzed together.\\n\\nIt should verify:\\n\\n- each substrate has a namespace\\n- each node has a stable ID\\n- relationship types are declared\\n- custom types are declared\\n- required fields exist\\n- target nodes can be resolved or marked external\\n- conflicts are reported rather than silently overwritten\\n\\nA merge report is not a final truth statement. It is a record of what the merge process found.\\n\",\n  \"asset_path\": \"assets/raw/protocol/specs/merge-validation.md\",\n  \"content_id\": \"sha256:bc771268de15b40321daa2a8c7f5432a7882d31f2931b59403c48e14a8636676\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/merge-validation.md\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:bc771268de15b40321daa2a8c7f5432a7882d31f2931b59403c48e14a8636676\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_protocol-artifact-specs-merge-validation.md.json",
+    "method": "archive",
+    "content_id": "sha256:375bb64ed2b88d7177a989c3f3179526bca5176884994b06066d17339fa636ea",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

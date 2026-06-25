@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-claim_of",
+  "title": "Claim Of Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The claim_of inverse relationship term derived from has_claim.",
+  "version": "0.5.0",
+  "registry_type": "claim_of",
+  "registry_namespace": "xananode",
+  "category": "claim_structure",
+  "inverse": "has_claim",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fda4af",
+  "inverse_color": "#f43f5e",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-src-intake",
+  "title": "Src / Intake",
+  "type": "source",
+  "subtype": "reference_code",
+  "importance": 4,
+  "summary": "src/intake.js is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/intake.js",
+  "artifact_path": "src/intake.js",
+  "asset_path": "assets/raw/repository/src/intake.js",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/javascript",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:5caf3bd521a4ba7dc6c115661cad057302f8160141c24678ca8de866e235d3bc",
+  "content": "import { stripMarkdown } from \"./markdown.js\";\nimport { buildReviewSuggestions } from \"./suggestions.js\";\n\nfunction firstMeaningfulSentence(text = \"\") {\n  const cleaned = String(text || \"\").replace(/\\s+/g, \" \").trim();\n  if (!cleaned) return \"\";\n  const sentenceMatch = cleaned.match(/(.{24,240}?[.!?])(\\s|$)/);\n  if (sentenceMatch) return sentenceMatch[1].trim();\n  return cleaned.slice(0, 220).trim();\n}\n\nfunction firstHeading(text = \"\") {\n  const heading = String(text || \"\").match(/^\\s*#\\s+(.+)$/m);\n  return heading?.[1]?.trim() || \"\";\n}\n\nfunction inferTextNodeType(text = \"\") {\n  const cleaned = stripMarkdown(String(text || \"\")).trim();\n  if (!cleaned) return \"source\";\n  if (cleaned.includes(\"?\")) return \"question\";\n  if (/\\b(i observed|i saw|we observed|field note|observed that)\\b/i.test(cleaned)) return \"observation\";\n  if (/\\b(should|must|need to|requires|proves|shows that|argues that)\\b/i.test(cleaned)) return \"claim\";\n  if (/\\b(protocol|concept|means|is defined as|refers to)\\b/i.test(cleaned)) return \"concept\";\n  return \"source\";\n}\n\nfunction uniqueBy(items, keyFn) {\n  const seen = new Set();\n  const result = [];\n  for (const item of items) {\n    const key = keyFn(item);\n    if (seen.has(key)) continue;\n    seen.add(key);\n    result.push(item);\n  }\n  return result;\n}\n\nexport function analyzeTextIntake(text, options = {}) {\n  const body = String(text || \"\").trim();\n  const existingNodes = Array.isArray(options.nodes) ? options.nodes : [];\n  const fragments = Array.isArray(options.fragments) ? options.fragments : [];\n  const source = {\n    id: \"__intake_source__\",\n    protocolId: \"__intake_source__\",\n    title: options.title || \"Imported Text\",\n    type: options.type || \"source\",\n    body,\n    data: {}\n  };\n  const suggestions = body\n    ? buildReviewSuggestions([source], fragments, {\n      targetNodes: existingNodes,\n      includeGeneratedTransclusions: true,\n      maxSuggestionsPerNode: options.maxSuggestionsPerNode || 12\n    })\n    : [];\n\n  const linkSuggestions = suggestions\n    .filter((suggestion) => suggestion.kind === \"possible_link\")\n    .map((suggestion) => ({\n      target: suggestion.target,\n      target_local_id: suggestion.target_local_id,\n      target_type: suggestion.target_type,\n      phrase: suggestion.phrase,\n      confidence: suggestion.confidence,\n      reason: suggestion.reason\n    }));\n\n  const transclusionSuggestions = suggestions\n    .filter((suggestion) => suggestion.kind === \"possible_transclusion\")\n    .map((suggestion) => ({\n      target_fragment: suggestion.target_fragment,\n      source_node: suggestion.source_node,\n      phrase: suggestion.phrase,\n      confidence: suggestion.confidence,\n      reason: suggestion.reason\n    }));\n\n  const mentionRelationships = uniqueBy(linkSuggestions, (item) => item.target).map((item) => ({\n    type: \"mentions\",\n    target: item.target,\n    summary: `This imported text mentions ${item.phrase}.`,\n    confidence: item.confidence\n  }));\n\n  const suggestedTitle = options.title || firstHeading(body) || \"\";\n  const suggestedSummary = firstMeaningfulSentence(stripMarkdown(body));\n  return {\n    source_kind: options.sourceKind || \"text\",\n    suggested_title: suggestedTitle,\n    suggested_type: inferTextNodeType(body),\n    suggested_summary: suggestedSummary,\n    link_suggestions: linkSuggestions,\n    transclusion_suggestions: transclusionSuggestions,\n    mention_relationships: mentionRelationships\n  };\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/intake.js",
+    "method": "archive",
+    "content_id": "sha256:5caf3bd521a4ba7dc6c115661cad057302f8160141c24678ca8de866e235d3bc",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

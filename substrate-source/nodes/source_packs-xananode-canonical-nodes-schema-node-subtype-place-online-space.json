@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-place-online-space",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Place Online Space",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-place-online_space.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-place-online_space.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-place-online_space.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-place-online_space.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:f6369d705d8246a79aee4f3f17f8f1311259575f6c27b52c8ffdca192d64ea6b",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-place-online_space\",\n  \"title\": \"Place subtype: online space\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"online_space is an allowed subtype of the place node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"online_space\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"place\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-place-online_space.json",
+    "method": "archive",
+    "content_id": "sha256:f6369d705d8246a79aee4f3f17f8f1311259575f6c27b52c8ffdca192d64ea6b",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

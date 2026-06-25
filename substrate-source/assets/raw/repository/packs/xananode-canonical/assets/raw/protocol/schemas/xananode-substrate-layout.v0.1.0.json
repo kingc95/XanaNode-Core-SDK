@@ -1,0 +1,121 @@
+{
+  "$schema": "./substrate-layout.schema.json",
+  "id": "xananode.substrate-layout",
+  "version": "0.1.0",
+  "description": "The standard directory layout for a portable XanaNode substrate root.",
+  "root_contract": "A substrate root is the directory containing substrate.json. Tools should be able to validate, pack, mount, and project a substrate from this root without needing private application state.",
+  "required_paths": [
+    {
+      "path": "substrate.json",
+      "role": "substrate_manifest",
+      "required": true,
+      "kind": "file",
+      "format": "json",
+      "description": "The substrate manifest declaring id, name, namespace, version, repository, imports, sharing policy, and build/provenance metadata.",
+      "tools_must_preserve": true
+    }
+  ],
+  "recognized_paths": [
+    {
+      "path": "nodes/*.json",
+      "role": "protocol_nodes",
+      "kind": "glob",
+      "format": "json",
+      "description": "Canonical protocol node records. A hand-built substrate may use this directory directly.",
+      "tools_must_preserve": true
+    },
+    {
+      "path": "nodes.json",
+      "role": "protocol_node_bundle",
+      "kind": "file",
+      "format": "json",
+      "description": "An alternate bundled protocol node artifact with a top-level nodes array.",
+      "tools_must_preserve": true
+    },
+    {
+      "path": "relationships.json",
+      "role": "protocol_relationships",
+      "kind": "file",
+      "format": "json",
+      "description": "Typed relationship records for the substrate.",
+      "tools_must_preserve": true
+    },
+    {
+      "path": "assets/**",
+      "role": "portable_media_and_source_assets",
+      "kind": "glob",
+      "description": "Images, PDFs, audio, video, source snapshots, projection media, documents, and other files carried by the substrate.",
+      "tools_must_preserve": true
+    },
+    {
+      "path": "schemas/*.json",
+      "role": "local_schema_extensions",
+      "kind": "glob",
+      "format": "json",
+      "description": "Namespaced node type, relationship type, property, layout, or validation extensions.",
+      "tools_must_preserve": true
+    },
+    {
+      "path": "reports/*.json",
+      "role": "reports",
+      "kind": "glob",
+      "format": "json",
+      "description": "Merge, compatibility, health, validation, duplicate-file, and intake reports.",
+      "tools_must_preserve": true
+    },
+    {
+      "path": "packs/*",
+      "role": "mounted_substrate_packs",
+      "kind": "glob",
+      "description": "Unpacked substrate packs mounted into this substrate for local federation.",
+      "tools_must_preserve": true
+    },
+    {
+      "path": "imports/*",
+      "role": "incoming_substrate_material",
+      "kind": "glob",
+      "description": "Dropped-in incoming packs or source material awaiting review, mounting, importing, or merge.",
+      "tools_must_preserve": true
+    },
+    {
+      "path": "author-profile.json",
+      "role": "default_author_profile",
+      "kind": "file",
+      "format": "json",
+      "description": "Portable default author profile for hand-built or minimal substrates.",
+      "tools_must_preserve": true
+    },
+    {
+      "path": "ro-crate-metadata.json",
+      "role": "research_object_metadata",
+      "kind": "file",
+      "format": "json",
+      "description": "Optional RO-Crate metadata describing the substrate as a research object.",
+      "tools_must_preserve": true
+    }
+  ],
+  "authoring_paths": [
+    {
+      "path": "content/nodes/*.md",
+      "role": "markdown_authoring_nodes",
+      "kind": "glob",
+      "format": "markdown_frontmatter",
+      "description": "Markdown authoring projection used by Core, Workspace, Studio, and Hugo workflows. Tools may generate protocol nodes from these files.",
+      "tools_must_preserve": true
+    },
+    {
+      "path": ".xananode/**",
+      "role": "workspace_metadata",
+      "kind": "glob",
+      "description": "Local workspace metadata such as preview settings, author lists, caches, and opened-source copies. Public exports may omit private caches but must preserve metadata needed for authored workspace round trips.",
+      "tools_must_preserve": false
+    }
+  ],
+  "archive_rules": [
+    "A .substrate archive should contain every recognized path unless sharing policy excludes it.",
+    "Tools must not include .git, node_modules, public renderer output, transient caches, or generated build directories unless explicitly requested.",
+    "Every local media/source file referenced by asset_path, file, source_snapshot, primary media resolution, or registry projection metadata must be included or reported as missing.",
+    "Duplicate files should be reported by content hash rather than silently duplicated without provenance.",
+    "A hand-built substrate that follows this layout should open in Core, Workspace, Studio, Hugo, or any compatible projection without private tool state."
+  ]
+}

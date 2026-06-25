@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-project-xananode-studio",
+  "title": "Packs / Xananode Canonical / Nodes / Project Xananode Studio",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/project_xananode-studio.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/project_xananode-studio.json",
+  "artifact_path": "packs/xananode-canonical/nodes/project_xananode-studio.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/project_xananode-studio.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:5ad51a6af48d049451baeeb32c867b1042c895901e1919671c6ec0885b80b4b7",
+  "content": "{\n  \"id\": \"xananode.canonical:project/xananode-studio\",\n  \"title\": \"XanaNode Studio\",\n  \"type\": \"project\",\n  \"subtype\": \"desktop-authoring-application\",\n  \"importance\": 4,\n  \"summary\": \"Electron authoring workbench for creating nodes, editing protocol metadata, navigating graph context, and previewing projection layers.\",\n  \"status\": \"active\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Studio\",\n  \"repository\": \"kingc95/XanaNode-Studio\",\n  \"protocol_role\": \"desktop-authoring-interface\",\n  \"software_version\": \"\",\n  \"build_metadata\": {\n    \"version\": \"\",\n    \"repository\": \"kingc95/XanaNode-Studio\",\n    \"generated_at\": \"2026-06-25T14:00:25.310Z\",\n    \"built_by\": \"@xananode/core\",\n    \"dependencies\": [\n      {\n        \"name\": \"Workspace APIs\",\n        \"relationship\": \"consumes\"\n      },\n      {\n        \"name\": \"Core SDK APIs\",\n        \"relationship\": \"consumes\"\n      },\n      {\n        \"name\": \"protocol registries\",\n        \"relationship\": \"consumes\"\n      },\n      {\n        \"name\": \"protocol branding\",\n        \"relationship\": \"consumes\"\n      }\n    ]\n  },\n  \"consumes\": [\n    \"Workspace APIs\",\n    \"Core SDK APIs\",\n    \"protocol registries\",\n    \"protocol branding\"\n  ],\n  \"related_protocol_artifacts\": [\n    \"../schemas/xananode-node-types.v0.3.0.json\",\n    \"../schemas/xananode-relationship-types.v0.5.0.json\",\n    \"../media/images/xananode-icon.svg\"\n  ],\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/project_xananode-studio.json",
+    "method": "archive",
+    "content_id": "sha256:5ad51a6af48d049451baeeb32c867b1042c895901e1919671c6ec0885b80b4b7",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

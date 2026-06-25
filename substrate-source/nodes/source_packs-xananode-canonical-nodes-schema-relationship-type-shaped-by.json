@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-shaped-by",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Shaped By",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-shaped_by.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-shaped_by.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-shaped_by.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-shaped_by.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:c66457399d9a910a58e656478b63e39ba4671dd289c2f17b84dc5115b04ae388",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-shaped_by\",\n  \"title\": \"Shaped By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The shaped_by inverse relationship term derived from shapes.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"shaped_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"influence\",\n  \"inverse\": \"shapes\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#99f6e4\",\n  \"inverse_color\": \"#14b8a6\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-shaped_by.json",
+    "method": "archive",
+    "content_id": "sha256:c66457399d9a910a58e656478b63e39ba4671dd289c2f17b84dc5115b04ae388",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

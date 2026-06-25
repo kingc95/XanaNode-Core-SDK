@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:source/federated-substrate-xananode.core",
+  "title": "XanaNode Core SDK Substrate",
+  "type": "source",
+  "subtype": "federated_substrate",
+  "importance": 4,
+  "summary": "A substrate source built directly from the XanaNode Core SDK repository, preserving reference code, schemas, registries, templates, tests, raw project documents, and executable-contract artifacts as first-class XanaNode records.",
+  "namespace": "xananode.core",
+  "status": "official",
+  "recommended_mode": "mounted",
+  "source_url": "https://xananode.com/",
+  "repository": "https://github.com/kingc95/XanaNode-Core-SDK.git",
+  "repository_branch": "main",
+  "substrate_path": "substrate-source",
+  "licenses": [
+    "Apache-2.0"
+  ],
+  "rights_status": "external",
+  "relationships": []
+}

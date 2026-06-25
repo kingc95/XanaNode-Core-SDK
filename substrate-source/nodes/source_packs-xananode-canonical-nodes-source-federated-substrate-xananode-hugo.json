@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-federated-substrate-xananode-hugo",
+  "title": "Packs / Xananode Canonical / Nodes / Source Federated Substrate Xananode.Hugo",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_federated-substrate-xananode.hugo.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_federated-substrate-xananode.hugo.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_federated-substrate-xananode.hugo.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_federated-substrate-xananode.hugo.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:9855d97e0d1f65ec0ed3c01e28d8234bd436ee83331aa9ce4a396a7e122d1a3f",
+  "content": "{\n  \"id\": \"xananode.canonical:source/federated-substrate-xananode.hugo\",\n  \"title\": \"XanaNode Hugo Theme Substrate\",\n  \"type\": \"source\",\n  \"subtype\": \"federated_substrate\",\n  \"importance\": 4,\n  \"summary\": \"A substrate source built directly from the XanaNode Hugo repository, preserving the Hugo theme, static viewer assets, example site, layouts, build glue, and projection-facing documents as first-class XanaNode records.\",\n  \"namespace\": \"xananode.hugo\",\n  \"status\": \"official\",\n  \"recommended_mode\": \"mounted\",\n  \"source_url\": \"https://xananode.com/\",\n  \"repository\": \"https://github.com/kingc95/XanaNode-Hugo.git\",\n  \"repository_branch\": \"main\",\n  \"substrate_path\": \"substrate-source\",\n  \"licenses\": [\n    \"Apache-2.0\"\n  ],\n  \"rights_status\": \"external\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_federated-substrate-xananode.hugo.json",
+    "method": "archive",
+    "content_id": "sha256:9855d97e0d1f65ec0ed3c01e28d8234bd436ee83331aa9ce4a396a7e122d1a3f",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

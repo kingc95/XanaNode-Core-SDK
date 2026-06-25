@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-source-legal-policy",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Source Legal Policy",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-source-legal_policy.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-source-legal_policy.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-source-legal_policy.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-source-legal_policy.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:ef289849c0cfba0fe95fa2e6671df51c964c81d9c1e299e14ff0b8dbf6446047",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-source-legal_policy\",\n  \"title\": \"Source subtype: legal policy\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"legal_policy is an allowed subtype of the source node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"legal_policy\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"source\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-source-legal_policy.json",
+    "method": "archive",
+    "content_id": "sha256:ef289849c0cfba0fe95fa2e6671df51c964c81d9c1e299e14ff0b8dbf6446047",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

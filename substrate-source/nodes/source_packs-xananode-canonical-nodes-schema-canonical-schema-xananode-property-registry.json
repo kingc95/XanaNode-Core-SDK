@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-canonical-schema-xananode-property-registry",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Canonical Schema Xananode Property Registry",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_canonical-schema-xananode-property-registry.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-xananode-property-registry.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_canonical-schema-xananode-property-registry.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_canonical-schema-xananode-property-registry.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:4e20b6210ec0013007bb2395873529c2cc61d9afcafe2987faba994877b97b38",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schema-xananode-property-registry\",\n  \"title\": \"Xananode Property Registry Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"canonical_schema_record\",\n  \"importance\": 5,\n  \"summary\": \"Canonical schema registry entry for xananode-property-registry.\",\n  \"registry_type\": \"xananode-property-registry\",\n  \"version\": \"0.1.0\",\n  \"schema_path\": \"../schemas/property-registry.schema.json\",\n  \"artifact_path\": \"../schemas/xananode-property-registry.v0.1.0.json\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/property-registry.schema.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/property-registry.schema.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:5200668eff49a37c9e0af11bfd09a709c17c65f93e1777b7e72dbc75c703411e\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/property-registry.schema.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:74c45259c0200a27c9f879511c8557b33da3b9b6c2f5c34a14c219c89c91a216\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-xananode-property-registry.json",
+    "method": "archive",
+    "content_id": "sha256:4e20b6210ec0013007bb2395873529c2cc61d9afcafe2987faba994877b97b38",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

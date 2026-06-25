@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-category-location",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Category Location",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-category-location.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-location.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-category-location.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-category-location.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:9e5ebe028f3d855f88afdc2ce72f40d1ea8ad923bdf661ce6f5cff14d75398fb",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-location\",\n  \"title\": \"Location Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The location category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"location\",\n  \"registry_namespace\": \"xananode\",\n  \"relationships\": [],\n  \"color\": \"#84cc16\",\n  \"inverse_color\": \"#bef264\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-location.json",
+    "method": "archive",
+    "content_id": "sha256:9e5ebe028f3d855f88afdc2ce72f40d1ea8ad923bdf661ce6f5cff14d75398fb",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

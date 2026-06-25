@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-protocol-artifact-specs-compatibility-levels-md",
+  "title": "Packs / Xananode Canonical / Nodes / Source Protocol Artifact Specs Compatibility Levels.Md",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_protocol-artifact-specs-compatibility-levels.md.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_protocol-artifact-specs-compatibility-levels.md.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_protocol-artifact-specs-compatibility-levels.md.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_protocol-artifact-specs-compatibility-levels.md.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:95ac258bf234470db161f93a0d9a24943740bc63f8803be11344a0a5bb2ebe95",
+  "content": "{\n  \"id\": \"xananode.canonical:source/protocol-artifact-specs-compatibility-levels.md\",\n  \"title\": \"Specs / Compatibility Levels\",\n  \"type\": \"source\",\n  \"subtype\": \"protocol_document\",\n  \"importance\": 4,\n  \"summary\": \"specs/compatibility-levels.md is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"specs/compatibility-levels.md\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/compatibility-levels.md\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"text/markdown\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"content\": \"# Compatibility Levels\\n\\nCompatibility levels describe how safely one implementation can ingest or federate another substrate.\\n\\n## Level 0: Opaque\\n\\nThe substrate can be stored as raw data, but its schema is unknown.\\n\\n## Level 1: Manifest Recognized\\n\\nThe substrate declares a manifest and namespace.\\n\\n## Level 2: Core Valid\\n\\nThe substrate validates against XanaNode Core.\\n\\n## Level 3: Extensions Declared\\n\\nThe substrate uses custom types, but those types are declared in namespaced extension schemas.\\n\\n## Level 4: Merge Candidate\\n\\nThe substrate can participate in identity matching, schema mapping, and merge reporting.\\n\\n## Level 5: Federation Ready\\n\\nThe substrate supports stable IDs, provenance, declared schemas, merge reports, and compatibility reports.\\n\\nCompatibility is not a moral ranking. It is a practical statement about how much automated interoperation is safe.\\n\",\n  \"asset_path\": \"assets/raw/protocol/specs/compatibility-levels.md\",\n  \"content_id\": \"sha256:9e8e8ee8beaf1a7d1f3fc872d4c60dc17a7c7713c737009b85da5a3bdd38cc29\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/compatibility-levels.md\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:9e8e8ee8beaf1a7d1f3fc872d4c60dc17a7c7713c737009b85da5a3bdd38cc29\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_protocol-artifact-specs-compatibility-levels.md.json",
+    "method": "archive",
+    "content_id": "sha256:95ac258bf234470db161f93a0d9a24943740bc63f8803be11344a0a5bb2ebe95",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

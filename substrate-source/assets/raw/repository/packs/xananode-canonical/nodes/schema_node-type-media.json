@@ -1,0 +1,59 @@
+{
+  "id": "xananode.canonical:schema/node-type-media",
+  "title": "Media",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "An image, video, audio clip, screenshot, diagram, document, or other media item with provenance.",
+  "version": "0.3.0",
+  "registry_type": "media",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "image",
+    "video",
+    "audio",
+    "document",
+    "screenshot",
+    "diagram",
+    "clip",
+    "scan",
+    "logo",
+    "thumbnail",
+    "web_snapshot",
+    "source_snapshot",
+    "favicon",
+    "touch_icon",
+    "app_icon",
+    "branding_icon"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "media_type",
+    "importance",
+    "summary",
+    "alt",
+    "rights_status",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "file",
+    "asset_path",
+    "asset_role",
+    "mime_type",
+    "caption",
+    "creator",
+    "created_date",
+    "source_name",
+    "source_url",
+    "license",
+    "license_url",
+    "depicts"
+  ],
+  "color": {
+    "bg": "#55d6be",
+    "fg": "#04201a",
+    "outline": "#dcfff8"
+  },
+  "relationships": []
+}

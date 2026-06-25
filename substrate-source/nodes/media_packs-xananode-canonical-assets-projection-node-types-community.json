@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-projection-node-types-community",
+  "title": "Packs / Xananode Canonical / Assets / Projection / Node Types / Community",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/projection/node-types/community.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/node-types/community.svg",
+  "artifact_path": "packs/xananode-canonical/assets/projection/node-types/community.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/projection/node-types/community.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:25798ad89a7275a534eb2ca2934d9e1b98d6b876e612c06a97d9ecd51a16ff30",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/node-types/community.svg",
+    "method": "archive",
+    "content_id": "sha256:25798ad89a7275a534eb2ca2934d9e1b98d6b876e612c06a97d9ecd51a16ff30",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

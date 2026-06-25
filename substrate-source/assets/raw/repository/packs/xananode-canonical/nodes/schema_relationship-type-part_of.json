@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-part_of",
+  "title": "Part Of Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The part_of inverse relationship term derived from contains.",
+  "version": "0.5.0",
+  "registry_type": "part_of",
+  "registry_namespace": "xananode",
+  "category": "composition",
+  "inverse": "contains",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#86efac",
+  "inverse_color": "#22c55e",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

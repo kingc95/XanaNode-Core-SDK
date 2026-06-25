@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-communication-chat",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Communication Chat",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-communication-chat.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-communication-chat.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-communication-chat.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-communication-chat.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:55ec1a4bfee5b273199923abb27aa86ed773c2e5d4511a2c9acb7a4db94455cc",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-communication-chat\",\n  \"title\": \"Communication subtype: chat\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"chat is an allowed subtype of the communication node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"chat\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"communication\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-communication-chat.json",
+    "method": "archive",
+    "content_id": "sha256:55ec1a4bfee5b273199923abb27aa86ed773c2e5d4511a2c9acb7a4db94455cc",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

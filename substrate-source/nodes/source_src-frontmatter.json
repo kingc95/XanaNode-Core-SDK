@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-src-frontmatter",
+  "title": "Src / Frontmatter",
+  "type": "source",
+  "subtype": "reference_code",
+  "importance": 4,
+  "summary": "src/frontmatter.js is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/frontmatter.js",
+  "artifact_path": "src/frontmatter.js",
+  "asset_path": "assets/raw/repository/src/frontmatter.js",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/javascript",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:5d91e275a158e88ee3944d6415d23858461ad5c79de264ccd0de6a753dc31ea3",
+  "content": "import yaml from \"js-yaml\";\n\nexport function parseFrontMatter(raw, filePath = \"\") {\n  const text = String(raw || \"\");\n  if (!text.startsWith(\"---\\n\") && !text.startsWith(\"---\\r\\n\")) {\n    return { data: {}, body: text, raw, filePath };\n  }\n\n  const lineEnd = text.startsWith(\"---\\r\\n\") ? \"\\r\\n\" : \"\\n\";\n  const marker = `${lineEnd}---${lineEnd}`;\n  const endIndex = text.indexOf(marker, 3);\n  if (endIndex === -1) {\n    return { data: {}, body: text, raw, filePath };\n  }\n\n  const yamlText = text.slice(3 + lineEnd.length - 1, endIndex).trim();\n  const body = text.slice(endIndex + marker.length);\n  const data = yamlText ? yaml.load(yamlText) || {} : {};\n  return { data, body, raw, filePath };\n}\n\nexport function stringifyFrontMatter(data, body = \"\") {\n  const yamlText = yaml.dump(data || {}, { lineWidth: 100, noRefs: true, sortKeys: false }).trimEnd();\n  return `---\\n${yamlText}\\n---\\n${body || \"\"}`;\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/frontmatter.js",
+    "method": "archive",
+    "content_id": "sha256:5d91e275a158e88ee3944d6415d23858461ad5c79de264ccd0de6a753dc31ea3",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

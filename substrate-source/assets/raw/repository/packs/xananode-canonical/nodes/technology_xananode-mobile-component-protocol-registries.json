@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-mobile-component-protocol-registries",
+  "title": "XanaNode Mobile: protocol registries",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Mobile consumes or depends on protocol registries.",
+  "component_of": "xananode.canonical:project/xananode-mobile",
+  "relationships": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-media-protocol-artifact-media-projection-node-types-technology-svg",
+  "title": "Packs / Xananode Canonical / Nodes / Media Protocol Artifact Media Projection Node Types Technology.Svg",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-node-types-technology.svg.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-node-types-technology.svg.json",
+  "artifact_path": "packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-node-types-technology.svg.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-node-types-technology.svg.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:2e1c4872f86dc5c68b4ed851c8065dc7184032a59587658f8bbc0d4efdbd6270",
+  "content": "{\n  \"id\": \"xananode.canonical:media/protocol-artifact-media-projection-node-types-technology.svg\",\n  \"title\": \"Media / Projection / Node Types / Technology\",\n  \"type\": \"media\",\n  \"subtype\": \"protocol_media_asset\",\n  \"importance\": 3,\n  \"summary\": \"media/projection/node-types/technology.svg is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"media/projection/node-types/technology.svg\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/technology.svg\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/media/projection/node-types/technology.svg\",\n  \"content_id\": \"sha256:fba27205f83d807e11b844b75fbc8f45748ae0014b89fc3f7428bda394f5c57c\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/technology.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:fba27205f83d807e11b844b75fbc8f45748ae0014b89fc3f7428bda394f5c57c\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-node-types-technology.svg.json",
+    "method": "archive",
+    "content_id": "sha256:2e1c4872f86dc5c68b4ed851c8065dc7184032a59587658f8bbc0d4efdbd6270",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

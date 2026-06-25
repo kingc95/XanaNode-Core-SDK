@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-media-relationship-category-explanation-projection-icon",
+  "title": "Packs / Xananode Canonical / Nodes / Media Relationship Category Explanation Projection Icon",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/media_relationship-category-explanation-projection-icon.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_relationship-category-explanation-projection-icon.json",
+  "artifact_path": "packs/xananode-canonical/nodes/media_relationship-category-explanation-projection-icon.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/media_relationship-category-explanation-projection-icon.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:2c63d424861bb9293571f363616436b2ff102f2511cc0b1533eb0baa96ad6a13",
+  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-explanation-projection-icon\",\n  \"title\": \"explanation Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/explanation.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/explanation.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the explanation relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:4e4874d5199141421f5a5d7b171ebb98658441850c3dac004c0049372537f1d3\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/explanation.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:4e4874d5199141421f5a5d7b171ebb98658441850c3dac004c0049372537f1d3\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_relationship-category-explanation-projection-icon.json",
+    "method": "archive",
+    "content_id": "sha256:2c63d424861bb9293571f363616436b2ff102f2511cc0b1533eb0baa96ad6a13",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

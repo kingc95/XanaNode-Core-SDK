@@ -1,0 +1,12 @@
+{
+  "id": "xananode.canonical:source/repository-kingc95-xananode-hugo",
+  "title": "XanaNode Hugo Theme Repository",
+  "type": "source",
+  "subtype": "git_repository",
+  "importance": 4,
+  "summary": "Public Git repository for XanaNode Hugo Theme.",
+  "source_url": "https://github.com/kingc95/xananode-hugo",
+  "repository": "kingc95/xananode-hugo",
+  "rights_status": "external",
+  "relationships": []
+}

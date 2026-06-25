@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-concrete_example_of",
+  "title": "Concrete Example Of Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The concrete_example_of inverse relationship term derived from abstraction_of.",
+  "version": "0.5.0",
+  "registry_type": "concrete_example_of",
+  "registry_namespace": "xananode",
+  "category": "cognition",
+  "inverse": "abstraction_of",
+  "color": "#ddd6fe",
+  "inverse_color": "#7c3aed",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

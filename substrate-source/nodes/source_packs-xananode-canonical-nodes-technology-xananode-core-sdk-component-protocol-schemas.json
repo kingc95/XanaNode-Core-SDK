@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-technology-xananode-core-sdk-component-protocol-schemas",
+  "title": "Packs / Xananode Canonical / Nodes / Technology Xananode Core Sdk Component Protocol Schemas",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/technology_xananode-core-sdk-component-protocol-schemas.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-core-sdk-component-protocol-schemas.json",
+  "artifact_path": "packs/xananode-canonical/nodes/technology_xananode-core-sdk-component-protocol-schemas.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/technology_xananode-core-sdk-component-protocol-schemas.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:c244f667ea57e697ee54d669106bf72a894b9d2b303bfc0cf9f6292d685c6145",
+  "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-core-sdk-component-protocol-schemas\",\n  \"title\": \"XanaNode Core SDK: protocol schemas\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Core SDK consumes or depends on protocol schemas.\",\n  \"component_of\": \"xananode.canonical:project/xananode-core-sdk\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-core-sdk-component-protocol-schemas.json",
+    "method": "archive",
+    "content_id": "sha256:c244f667ea57e697ee54d669106bf72a894b9d2b303bfc0cf9f6292d685c6145",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "xananode.canonical:schema/relationship-category-attention",
+  "title": "Attention Relationship Category",
+  "type": "schema",
+  "subtype": "relationship_category_schema",
+  "importance": 4,
+  "summary": "The attention category groups relationship types with related meaning.",
+  "version": "0.5.0",
+  "registry_type": "attention",
+  "registry_namespace": "xananode",
+  "color": "#fbbf24",
+  "inverse_color": "#fde68a",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "relationships": []
+}

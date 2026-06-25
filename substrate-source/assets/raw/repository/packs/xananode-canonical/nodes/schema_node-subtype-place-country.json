@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-place-country",
+  "title": "Place subtype: country",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "country is an allowed subtype of the place node type.",
+  "version": "0.3.0",
+  "registry_type": "country",
+  "registry_namespace": "xananode",
+  "parent_node_type": "place",
+  "relationships": []
+}

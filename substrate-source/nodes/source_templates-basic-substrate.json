@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-templates-basic-substrate",
+  "title": "Templates / Basic / Substrate",
+  "type": "source",
+  "subtype": "example_substrate_template",
+  "importance": 3,
+  "summary": "templates/basic/substrate.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/templates/basic/substrate.json",
+  "artifact_path": "templates/basic/substrate.json",
+  "asset_path": "assets/raw/repository/templates/basic/substrate.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:8d19d267a1d6254c17c100301cbbba91d24da3e13c48c664f2b301d3d267424b",
+  "content": "{\n  \"id\": \"example-substrate\",\n  \"name\": \"Example Substrate\",\n  \"version\": \"0.1.0\",\n  \"namespace\": \"example\",\n  \"schema_version\": \"xananode-core@0.5.0\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"local\",\n    \"default_branch\": \"main\"\n  },\n  \"imports\": [\"xananode:core\"],\n  \"extensions\": [],\n  \"maintainers\": [{ \"name\": \"Example Author\" }]\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/templates/basic/substrate.json",
+    "method": "archive",
+    "content_id": "sha256:8d19d267a1d6254c17c100301cbbba91d24da3e13c48c664f2b301d3d267424b",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

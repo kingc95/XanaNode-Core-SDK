@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-canonical-schema-merge-report",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Canonical Schema Merge Report",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_canonical-schema-merge-report.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-merge-report.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_canonical-schema-merge-report.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_canonical-schema-merge-report.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:abaa7a8bd10974eebb12001629819162d85e249354ff6cfba7b6795919d30a22",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schema-merge-report\",\n  \"title\": \"Merge Report Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"canonical_schema_record\",\n  \"importance\": 4,\n  \"summary\": \"Canonical schema registry entry for merge-report.\",\n  \"registry_type\": \"merge-report\",\n  \"version\": \"0.1.0\",\n  \"schema_path\": \"../schemas/merge-report.schema.json\",\n  \"artifact_path\": \"\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/merge-report.schema.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/merge-report.schema.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:b5800fe6bbc0f5d5f01b936462cb2d4c7b69b2ff7b3268b0bb96f907a140c17a\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/merge-report.schema.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:1db233199589a5ec082d4d74814d0e8225bd53d7a0a968962c88db692ee58665\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-merge-report.json",
+    "method": "archive",
+    "content_id": "sha256:abaa7a8bd10974eebb12001629819162d85e249354ff6cfba7b6795919d30a22",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

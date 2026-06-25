@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-broader_than",
+  "title": "Broader than",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source schema type, concept, or relationship is broader or more general than the target.",
+  "version": "0.5.0",
+  "registry_type": "broader_than",
+  "registry_namespace": "xananode",
+  "category": "schema_mapping",
+  "inverse": "narrower_than",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#22d3ee",
+  "inverse_color": "#a5f3fc",
+  "line_style": "double",
+  "inverse_line_style": "double"
+}

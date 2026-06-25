@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-trademark_holder_for",
+  "title": "Trademark Holder For Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The trademark_holder_for inverse relationship term derived from trademarked_by.",
+  "version": "0.5.0",
+  "registry_type": "trademark_holder_for",
+  "registry_namespace": "xananode",
+  "category": "governance",
+  "inverse": "trademarked_by",
+  "color": "#fde047",
+  "inverse_color": "#eab308",
+  "line_style": "dashed",
+  "inverse_line_style": "double",
+  "derived_inverse": true,
+  "relationships": [],
+  "default_weight": 4,
+  "default_visibility": "secondary"
+}

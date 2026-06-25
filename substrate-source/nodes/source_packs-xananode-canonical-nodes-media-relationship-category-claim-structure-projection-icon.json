@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-media-relationship-category-claim-structure-projection-icon",
+  "title": "Packs / Xananode Canonical / Nodes / Media Relationship Category Claim Structure Projection Icon",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/media_relationship-category-claim_structure-projection-icon.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_relationship-category-claim_structure-projection-icon.json",
+  "artifact_path": "packs/xananode-canonical/nodes/media_relationship-category-claim_structure-projection-icon.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/media_relationship-category-claim_structure-projection-icon.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:1d31113f568deca0d4894faf472e0cf660bb3f4086e365d316c5680a9d49009d",
+  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-claim_structure-projection-icon\",\n  \"title\": \"claim structure Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/claim_structure.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/claim_structure.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the claim_structure relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:b87755995f16a1d47d4fbe7d85a05c70d439b4dadcdbac4244c747e47d493c60\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/claim_structure.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:b87755995f16a1d47d4fbe7d85a05c70d439b4dadcdbac4244c747e47d493c60\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_relationship-category-claim_structure-projection-icon.json",
+    "method": "archive",
+    "content_id": "sha256:1d31113f568deca0d4894faf472e0cf660bb3f4086e365d316c5680a9d49009d",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

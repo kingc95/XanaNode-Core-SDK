@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:source/federated-substrate-xananode.canonical",
+  "title": "XanaNode Canonical Substrate",
+  "type": "source",
+  "subtype": "federated_substrate",
+  "importance": 5,
+  "summary": "The canonical XanaNode substrate for protocol vocabulary, project identity, governance, software stack records, raw source snapshots, branding, and self-referential examples.",
+  "namespace": "xananode.canonical",
+  "status": "canonical",
+  "recommended_mode": "mounted",
+  "source_url": "https://xananode.com/",
+  "repository": "https://github.com/kingc95/XanaNode-Canonical-Substrate.git",
+  "repository_branch": "main",
+  "substrate_path": "",
+  "licenses": [
+    "CC-BY-4.0",
+    "Apache-2.0"
+  ],
+  "rights_status": "external",
+  "relationships": []
+}

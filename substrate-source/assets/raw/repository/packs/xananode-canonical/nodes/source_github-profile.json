@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:source/github-profile",
+  "title": "GitHub Profile",
+  "type": "source",
+  "subtype": "social_profile",
+  "importance": 4,
+  "summary": "The public GitHub profile collecting XanaNode development activity and repositories.",
+  "source_url": "https://github.com/kingc95",
+  "rights_status": "external",
+  "relationships": []
+}

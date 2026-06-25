@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-tested_by",
+  "title": "Tested By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The tested_by inverse relationship term derived from tests.",
+  "version": "0.5.0",
+  "registry_type": "tested_by",
+  "registry_namespace": "xananode",
+  "category": "research_workflow",
+  "inverse": "tests",
+  "color": "#7dd3fc",
+  "inverse_color": "#0ea5e9",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

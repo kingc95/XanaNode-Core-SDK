@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/xananode-node-types.schema.v0.3.0.json",
+  "title": "XanaNode Node Type Registry",
+  "description": "Canonical and extension node type registry for XanaNode-compatible knowledge substrates.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "node_types"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*$"
+    },
+    "node_types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "namespace",
+          "id",
+          "type",
+          "label",
+          "purpose",
+          "allowed_subtypes",
+          "color"
+        ],
+        "properties": {
+          "namespace": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*$"
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*$"
+          },
+          "type": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*$"
+          },
+          "label": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "core": {
+            "type": "boolean"
+          },
+          "extends": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*(:[a-z][a-z0-9_-]*)?$"
+          },
+          "allowed_subtypes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "required_frontmatter": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "recommended_frontmatter": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "color": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "bg",
+              "fg",
+              "outline"
+            ],
+            "properties": {
+              "bg": {
+                "type": "string"
+              },
+              "fg": {
+                "type": "string"
+              },
+              "outline": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

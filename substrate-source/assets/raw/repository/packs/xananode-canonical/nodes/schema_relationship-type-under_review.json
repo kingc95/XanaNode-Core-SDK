@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-under_review",
+  "title": "Under review",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source places the target under review or indicates that its status is being evaluated.",
+  "version": "0.5.0",
+  "registry_type": "under_review",
+  "registry_namespace": "xananode",
+  "category": "uncertainty",
+  "inverse": "reviewed_under",
+  "color": "#d946ef",
+  "inverse_color": "#f5d0fe",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

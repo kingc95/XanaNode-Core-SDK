@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/nanopublication.schema.json",
+  "title": "XanaNode Nanopublication Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "claim", "assertion", "provenance", "publication_info"],
+  "properties": {
+    "id": { "type": "string" },
+    "claim": { "type": "string" },
+    "assertion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["summary"],
+      "properties": {
+        "summary": { "type": "string" },
+        "relationships": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "asserted_by": { "type": "string" },
+        "asserted_at": { "type": "string", "format": "date-time" },
+        "evidence": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "publication_info": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "published_by": { "type": "string" },
+        "published_at": { "type": "string", "format": "date-time" },
+        "license": { "type": "string" },
+        "content_id": { "type": "string" }
+      }
+    }
+  }
+}

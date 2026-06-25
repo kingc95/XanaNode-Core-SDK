@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-raw-protocol-media-projection-relationship-types-collaborated-with",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Media / Projection / Relationship Types / Collaborated With",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/collaborated_with.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/collaborated_with.svg",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/collaborated_with.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/collaborated_with.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:b615aa9ece644548739aad41cf8b2d35d19a893c9c646d94600145de8fa7e712",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/collaborated_with.svg",
+    "method": "archive",
+    "content_id": "sha256:b615aa9ece644548739aad41cf8b2d35d19a893c9c646d94600145de8fa7e712",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

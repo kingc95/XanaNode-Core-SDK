@@ -1,0 +1,48 @@
+{
+  "id": "xananode.canonical:schema/node-type-fragment",
+  "title": "Fragment",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 3,
+  "summary": "A stable, addressable portion of another node, source, media object, or publication used for deep linking, quotation, citation, transclusion, and revision-aware reference.",
+  "version": "0.3.0",
+  "registry_type": "fragment",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "section",
+    "paragraph",
+    "sentence",
+    "quote",
+    "code_block",
+    "data_range",
+    "media_segment",
+    "image_region"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "source_node",
+    "fragment_id",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "tumbler",
+    "source_revision",
+    "content_hash",
+    "selector",
+    "start_offset",
+    "end_offset",
+    "byte_range",
+    "line_range",
+    "time_range",
+    "rights_status"
+  ],
+  "color": {
+    "bg": "#38bdf8",
+    "fg": "#03131f",
+    "outline": "#d8f4ff"
+  },
+  "relationships": []
+}

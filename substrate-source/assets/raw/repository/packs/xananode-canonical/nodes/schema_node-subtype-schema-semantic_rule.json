@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-schema-semantic_rule",
+  "title": "Schema subtype: semantic rule",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "semantic_rule is an allowed subtype of the schema node type.",
+  "version": "0.3.0",
+  "registry_type": "semantic_rule",
+  "registry_namespace": "xananode",
+  "parent_node_type": "schema",
+  "relationships": []
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/substrate-relationships.schema.json",
+  "title": "Substrate Relationship List",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["relationships"],
+  "properties": {
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "source", "target", "type", "summary"],
+        "properties": {
+          "id": { "type": "string" },
+          "source": { "type": "string" },
+          "target": { "type": "string" },
+          "type": {
+            "type": "string",
+            "pattern": "^([a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$"
+          },
+          "weight": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "visibility": {
+            "type": "string",
+            "enum": ["primary", "secondary", "background"]
+          },
+          "summary": { "type": "string" },
+          "asserted_by": { "type": "string" },
+          "asserted_at": { "type": "string", "format": "date-time" },
+          "valid_from": { "type": "string", "format": "date-time" },
+          "valid_to": { "type": "string", "format": "date-time" },
+          "confidence": { "type": "string" },
+          "content_id": { "type": "string" },
+          "version_id": { "type": "string" },
+          "signature": { "type": "string" },
+          "tumbler": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*(\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*/[^\\s#@]+(@[^\\s#]+)?(#fragment/[A-Za-z0-9._-]+(@[^\\s#]+)?)?$"
+          },
+          "evidence": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "external": { "type": "boolean" },
+          "target_substrate": { "type": "string" }
+        }
+      }
+    }
+  }
+}

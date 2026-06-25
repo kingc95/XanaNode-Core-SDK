@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-discussed_with",
+  "title": "Discussed with",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source discussed the target topic, claim, problem, or source with another participant or group.",
+  "version": "0.5.0",
+  "registry_type": "discussed_with",
+  "registry_namespace": "xananode",
+  "category": "communication",
+  "inverse": "discussion_partner_of",
+  "color": "#38bdf8",
+  "inverse_color": "#bae6fd",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

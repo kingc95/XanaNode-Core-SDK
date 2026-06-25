@@ -1,0 +1,10 @@
+{
+  "id": "xananode.core:technology/xananode-core-cli",
+  "title": "XanaNode Core CLI",
+  "type": "technology",
+  "subtype": "cli",
+  "importance": 4,
+  "summary": "The stable command-contract surface for validating, building, bundling, and inspecting XanaNode substrates.",
+  "software_version": "0.1.0",
+  "relationships": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-contemporary_of",
+  "title": "Contemporary of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source existed or worked during the same relevant period as the target.",
+  "version": "0.5.0",
+  "registry_type": "contemporary_of",
+  "registry_namespace": "xananode",
+  "category": "temporal",
+  "inverse": "contemporary_of",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#a3e635",
+  "inverse_color": "#d9f99d",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

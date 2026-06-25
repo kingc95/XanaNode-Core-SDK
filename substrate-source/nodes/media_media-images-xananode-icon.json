@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-media-images-xananode-icon",
+  "title": "Media / Images / Xananode Icon",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "media/images/xananode-icon.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/media/images/xananode-icon.svg",
+  "artifact_path": "media/images/xananode-icon.svg",
+  "asset_path": "assets/raw/repository/media/images/xananode-icon.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:08f14405bb12b15981cff907975c9d7f910652465e6919b4f6908188549df17a",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/media/images/xananode-icon.svg",
+    "method": "archive",
+    "content_id": "sha256:08f14405bb12b15981cff907975c9d7f910652465e6919b4f6908188549df17a",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-has_example",
+  "title": "Has Example Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The has_example inverse relationship term derived from example_of.",
+  "version": "0.5.0",
+  "registry_type": "has_example",
+  "registry_namespace": "xananode",
+  "category": "cognition",
+  "inverse": "example_of",
+  "color": "#ddd6fe",
+  "inverse_color": "#7c3aed",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

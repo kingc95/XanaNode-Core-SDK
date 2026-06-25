@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-place-building",
+  "title": "Place subtype: building",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "building is an allowed subtype of the place node type.",
+  "version": "0.3.0",
+  "registry_type": "building",
+  "registry_namespace": "xananode",
+  "parent_node_type": "place",
+  "relationships": []
+}

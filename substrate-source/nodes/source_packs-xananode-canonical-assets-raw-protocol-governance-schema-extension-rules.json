@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-governance-schema-extension-rules",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Governance / Schema Extension Rules",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/governance/schema-extension-rules.md is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/governance/schema-extension-rules.md",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/governance/schema-extension-rules.md",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/governance/schema-extension-rules.md",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:faf22ba3636ce404d1ceee0e1829c44a87a9b44859eb00bbaec4c0935ee565ab",
+  "content": "# Schema Extension Rules\n\nSubstrates may define custom node and relationship types.\n\nCustom types must be:\n\n- namespaced\n- versioned\n- human-readable\n- machine-readable\n- preserved even when not understood\n- optionally mapped to a core type\n\nA valid extension should include:\n\n- `id`\n- `namespace`\n- `type`\n- `label`\n- `purpose` or `meaning`\n- `core: false`\n- optional `extends`\n\nUnknown extension types should not break import. They should be marked opaque and preserved.\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/governance/schema-extension-rules.md",
+    "method": "archive",
+    "content_id": "sha256:faf22ba3636ce404d1ceee0e1829c44a87a9b44859eb00bbaec4c0935ee565ab",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

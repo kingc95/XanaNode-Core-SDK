@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-media-relationship-category-knowledge-workflow-projection-icon",
+  "title": "Packs / Xananode Canonical / Nodes / Media Relationship Category Knowledge Workflow Projection Icon",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/media_relationship-category-knowledge_workflow-projection-icon.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_relationship-category-knowledge_workflow-projection-icon.json",
+  "artifact_path": "packs/xananode-canonical/nodes/media_relationship-category-knowledge_workflow-projection-icon.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/media_relationship-category-knowledge_workflow-projection-icon.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:3d4fd27969e028a796f5755aaf098c53ce6655fe6aff579ca86b25f3814f8372",
+  "content": "{\n  \"id\": \"xananode.canonical:media/relationship-category-knowledge_workflow-projection-icon\",\n  \"title\": \"knowledge workflow Relationship Category Projection Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"projection_icon\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_path\": \"assets/projection/relationship-categories/knowledge_workflow.svg\",\n  \"asset_role\": \"relationship_category_projection_icon\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/knowledge_workflow.svg\",\n  \"rights_status\": \"open-source\",\n  \"importance\": 3,\n  \"summary\": \"The canonical projection icon for the knowledge_workflow relationship category.\",\n  \"relationships\": [],\n  \"content_id\": \"sha256:ffef22f26185d4179018afbfc0f85e218594d74c75decaf89088946fc013d487\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/knowledge_workflow.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:ffef22f26185d4179018afbfc0f85e218594d74c75decaf89088946fc013d487\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_relationship-category-knowledge_workflow-projection-icon.json",
+    "method": "archive",
+    "content_id": "sha256:3d4fd27969e028a796f5755aaf098c53ce6655fe6aff579ca86b25f3814f8372",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

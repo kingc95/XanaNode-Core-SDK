@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-trail-evidence_path",
+  "title": "Trail subtype: evidence path",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "evidence_path is an allowed subtype of the trail node type.",
+  "version": "0.3.0",
+  "registry_type": "evidence_path",
+  "registry_namespace": "xananode",
+  "parent_node_type": "trail",
+  "relationships": []
+}

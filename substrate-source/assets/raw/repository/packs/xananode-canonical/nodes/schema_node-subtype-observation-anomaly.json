@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-observation-anomaly",
+  "title": "Observation subtype: anomaly",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "anomaly is an allowed subtype of the observation node type.",
+  "version": "0.3.0",
+  "registry_type": "anomaly",
+  "registry_namespace": "xananode",
+  "parent_node_type": "observation",
+  "relationships": []
+}

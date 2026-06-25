@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/merge-report.schema.json",
+  "title": "Merge Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "substrates"],
+  "properties": {
+    "status": { "type": "string" },
+    "id": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "substrates": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "compatibility_level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "base": { "type": "string" },
+    "ours": { "type": "string" },
+    "theirs": { "type": "string" },
+    "signature": { "type": "string" },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "source", "target", "type", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "source": { "type": "string" },
+          "target": { "type": "string" },
+          "type": { "type": "string" },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "status": { "type": "string" },
+          "preserves_local_nodes": { "type": "boolean" },
+          "creates_relationships": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "rationale": { "type": "string" }
+        }
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "type", "summary"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string" },
+          "nodes": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "resolution": { "type": "string" },
+          "summary": { "type": "string" }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

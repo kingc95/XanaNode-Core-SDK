@@ -1,0 +1,40 @@
+{
+  "id": "xananode.canonical:schema/node-type-concept",
+  "title": "Concept",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "An idea, pattern, theory, failure mode, or explanatory structure. A concept is built from claims.",
+  "version": "0.3.0",
+  "registry_type": "concept",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "theory",
+    "principle",
+    "failure_mode",
+    "method",
+    "pattern",
+    "distinction",
+    "frame"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "claims",
+    "concepts",
+    "sources",
+    "people",
+    "projects"
+  ],
+  "color": {
+    "bg": "#91f2a6",
+    "fg": "#062010",
+    "outline": "#dcffe4"
+  },
+  "relationships": []
+}

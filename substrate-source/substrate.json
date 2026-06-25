@@ -1,0 +1,35 @@
+{
+  "id": "xananode.core",
+  "name": "XanaNode Core SDK Substrate",
+  "version": "0.1.0",
+  "namespace": "xananode.core",
+  "description": "A substrate source built directly from the XanaNode Core SDK repository, preserving reference code, schemas, registries, templates, tests, raw project documents, and executable-contract artifacts as first-class XanaNode records.",
+  "schema_version": "xananode-core@0.5.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingc95/XanaNode-Core-SDK.git",
+    "default_branch": "main"
+  },
+  "imports": [
+    "xananode.protocol"
+  ],
+  "build_metadata": {
+    "built_at": "2026-06-25T14:22:34.827Z",
+    "git_commit": "b29928be095f94f10f92a365015a5a471d0ba825",
+    "git_branch": "main",
+    "built_by": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "sharing": {
+    "default_shareable": true,
+    "rules": [
+      {
+        "selector": {
+          "namespace": "xananode.core"
+        },
+        "shareable": true,
+        "scope": "public",
+        "reason": "The Core SDK substrate is intended to be federated as a public implementation source."
+      }
+    ]
+  }
+}

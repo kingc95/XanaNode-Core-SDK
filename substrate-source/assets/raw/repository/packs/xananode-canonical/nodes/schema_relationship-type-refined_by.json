@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-refined_by",
+  "title": "Refined By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The refined_by inverse relationship term derived from refines.",
+  "version": "0.5.0",
+  "registry_type": "refined_by",
+  "registry_namespace": "xananode",
+  "category": "evolution",
+  "inverse": "refines",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#cbd5e1",
+  "inverse_color": "#64748b",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

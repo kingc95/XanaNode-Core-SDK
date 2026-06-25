@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-raw-protocol-media-projection-relationship-types-tests",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Media / Projection / Relationship Types / Tests",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/tests.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/tests.svg",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/tests.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/tests.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:745781d0047f3ee4577cd4fe49c4d3373bb4cd3a6ed85a74af56ea5909bce078",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/tests.svg",
+    "method": "archive",
+    "content_id": "sha256:745781d0047f3ee4577cd4fe49c4d3373bb4cd3a6ed85a74af56ea5909bce078",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "xananode.canonical:schema/node-type-observation",
+  "title": "Observation",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A real-world case, symptom, example, incident, failure, or pattern being analyzed.",
+  "version": "0.3.0",
+  "registry_type": "observation",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "case_study",
+    "failure",
+    "news_event",
+    "symptom",
+    "anomaly",
+    "example"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "observed_date",
+    "source_url",
+    "concepts",
+    "claims",
+    "sources"
+  ],
+  "color": {
+    "bg": "#ef476f",
+    "fg": "#2a0610",
+    "outline": "#ffd7e0"
+  },
+  "relationships": []
+}

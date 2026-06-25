@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-specs-implementation-compatibility",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Specs / Implementation Compatibility",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/specs/implementation-compatibility.md is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/specs/implementation-compatibility.md",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/specs/implementation-compatibility.md",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/specs/implementation-compatibility.md",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:ae0a610b3ab7207f0daa026baa104b1b95aaf85b96634b0fdf44a738a6b7de09",
+  "content": "# Implementation Compatibility\n\nAn implementation may describe itself as XanaNode-compatible when it validates, emits, imports, or projects XanaNode protocol artifacts according to the canonical specification and registries.\n\nImplementations should identify themselves clearly and reference the canonical specification:\n\n```text\nThis project is a XanaNode-compatible implementation.\nCanonical specification: https://github.com/kingc95/XanaNode\n```\n\nIf the implementation supports only part of the protocol, it should say so:\n\n```text\nThis project is a partial XanaNode-compatible renderer for mounted substrate packs.\n```\n\nImplementations should not imply they are the canonical XanaNode project unless they are maintained as part of the canonical project. Compatibility means interoperability, not ownership.\n\nRecommended metadata:\n\n```json\n{\n  \"implements\": \"xananode-protocol\",\n  \"compatibility\": \"xananode-compatible\",\n  \"specification\": \"https://github.com/kingc95/XanaNode\",\n  \"supported_artifacts\": [\"substrate.json\", \"nodes.json\", \"relationships.json\"]\n}\n```\n\nThis convention supports legal attribution, community attribution, brand recognition, and independent federation.\n\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/specs/implementation-compatibility.md",
+    "method": "archive",
+    "content_id": "sha256:ae0a610b3ab7207f0daa026baa104b1b95aaf85b96634b0fdf44a738a6b7de09",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

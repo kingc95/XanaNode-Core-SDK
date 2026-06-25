@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-publication-webpage",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Publication Webpage",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-publication-webpage.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-publication-webpage.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-publication-webpage.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-publication-webpage.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:0ab9598950b5978d1d9fd6b66ef4188bbaf149ff16737e5ba2214bb49af617af",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-publication-webpage\",\n  \"title\": \"Publication subtype: webpage\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"webpage is an allowed subtype of the publication node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"webpage\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"publication\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-publication-webpage.json",
+    "method": "archive",
+    "content_id": "sha256:0ab9598950b5978d1d9fd6b66ef4188bbaf149ff16737e5ba2214bb49af617af",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

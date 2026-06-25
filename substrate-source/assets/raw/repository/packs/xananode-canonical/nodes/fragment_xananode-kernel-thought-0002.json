@@ -1,0 +1,22 @@
+{
+  "id": "xananode.canonical:fragment/xananode-kernel-thought-0002",
+  "title": "XanaNode Kernel Thought Fragment 0002",
+  "type": "fragment",
+  "subtype": "paragraph",
+  "importance": 4,
+  "summary": "The distributions-versus-projections comparison.",
+  "source_node": "xananode.canonical:source/xananode-kernel-for-human-thought-draft",
+  "source_content_id": "sha256:xananode-kernel-for-human-thought-draft-source",
+  "source_version_id": "sha256:xananode-kernel-for-human-thought-draft-source-v1",
+  "fragment_id": "0002",
+  "tumbler": "xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0002@sha256:xananode-kernel-thought-fragment-0002",
+  "selector": {
+    "type": "semantic-anchor",
+    "value": "distributions-vs-projections"
+  },
+  "content_id": "sha256:xananode-kernel-thought-fragment-0002",
+  "version_id": "sha256:xananode-kernel-thought-fragment-0002-v1",
+  "rights_status": "canonical-public",
+  "content": "The substrate and the projection are intentionally separated. In Linux, people interact through distributions such as Ubuntu, Fedora, or Red Hat while the kernel remains the underlying contract. In XanaNode, the same substrate can be viewed through Studio, Mobile, Hugo, or a future projection that does not exist yet. The tool is a lens over the data, not the data itself.",
+  "relationships": []
+}

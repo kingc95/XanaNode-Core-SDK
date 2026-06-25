@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-claim-canonical-assembles-federated-stack-layer-substrates",
+  "title": "Packs / Xananode Canonical / Nodes / Claim Canonical Assembles Federated Stack Layer Substrates",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/claim_canonical-assembles-federated-stack-layer-substrates.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/claim_canonical-assembles-federated-stack-layer-substrates.json",
+  "artifact_path": "packs/xananode-canonical/nodes/claim_canonical-assembles-federated-stack-layer-substrates.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/claim_canonical-assembles-federated-stack-layer-substrates.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:5d6634b1ceecf27cffc87ea1f521958e3173696d3a0520f6460dde33cdc021f7",
+  "content": "{\n  \"id\": \"xananode.canonical:claim/canonical-assembles-federated-stack-layer-substrates\",\n  \"title\": \"The canonical substrate assembles federated stack-layer substrates\",\n  \"type\": \"claim\",\n  \"subtype\": \"implementation_claim\",\n  \"importance\": 5,\n  \"summary\": \"The canonical substrate is no longer only a monolithic description of XanaNode; it explicitly points to the real stack-layer substrate sources that make the system work.\",\n  \"content\": \"The canonical substrate should teach that the stack is composed, not merely listed. Its project nodes describe the layers, and its federated substrate source nodes point at the real repositories and substrate roots for those layers. That lets people inspect the stack as a working federation of independently authored and versioned parts instead of assuming the canonical bundle is only a flat merge.\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/claim_canonical-assembles-federated-stack-layer-substrates.json",
+    "method": "archive",
+    "content_id": "sha256:5d6634b1ceecf27cffc87ea1f521958e3173696d3a0520f6460dde33cdc021f7",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

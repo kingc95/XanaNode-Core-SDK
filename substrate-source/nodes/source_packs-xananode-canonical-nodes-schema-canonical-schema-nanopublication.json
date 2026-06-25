@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-canonical-schema-nanopublication",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Canonical Schema Nanopublication",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_canonical-schema-nanopublication.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-nanopublication.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_canonical-schema-nanopublication.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_canonical-schema-nanopublication.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:18c0ba2f9f515f22ffbdc228263b39e0cc7464f7287d9bad61ec2a0c817ff681",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schema-nanopublication\",\n  \"title\": \"Nanopublication Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"canonical_schema_record\",\n  \"importance\": 4,\n  \"summary\": \"Canonical schema registry entry for nanopublication.\",\n  \"registry_type\": \"nanopublication\",\n  \"version\": \"0.1.0\",\n  \"schema_path\": \"../schemas/nanopublication.schema.json\",\n  \"artifact_path\": \"\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/nanopublication.schema.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/nanopublication.schema.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:867b2bbc4f242f013a98a174b6e4d2a738cf6df34c43fd431b551ec980ed576a\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/nanopublication.schema.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:e39ee3b6c2fe4d069450c7b45d0fdeddcb7be0af88f35d436d4a4aab54d8285d\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-nanopublication.json",
+    "method": "archive",
+    "content_id": "sha256:18c0ba2f9f515f22ffbdc228263b39e0cc7464f7287d9bad61ec2a0c817ff681",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

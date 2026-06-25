@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-important-for",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Important For",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-important_for.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-important_for.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-important_for.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-important_for.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:a627d0b239343c963f1e387c00c735bc1b8f0b2faa7e2c3c885cd0fb401fd69b",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-important_for\",\n  \"title\": \"Important for\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source is important for understanding, navigating, preserving, or acting on the target.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"important_for\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"attention\",\n  \"inverse\": \"has_important_context\",\n  \"color\": \"#fbbf24\",\n  \"inverse_color\": \"#fde68a\",\n  \"line_style\": \"dotted\",\n  \"inverse_line_style\": \"dotted\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-important_for.json",
+    "method": "archive",
+    "content_id": "sha256:a627d0b239343c963f1e387c00c735bc1b8f0b2faa7e2c3c885cd0fb401fd69b",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-organization-nonprofit",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Organization Nonprofit",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-organization-nonprofit.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-organization-nonprofit.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-organization-nonprofit.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-organization-nonprofit.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:ec8e1fcb262e2d5527d419b547219c90cb3e827ac69e6be56d0e0a75f7c995a6",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-organization-nonprofit\",\n  \"title\": \"Organization subtype: nonprofit\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"nonprofit is an allowed subtype of the organization node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"nonprofit\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"organization\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-organization-nonprofit.json",
+    "method": "archive",
+    "content_id": "sha256:ec8e1fcb262e2d5527d419b547219c90cb3e827ac69e6be56d0e0a75f7c995a6",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

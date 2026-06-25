@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-fragment-paragraph",
+  "title": "Fragment subtype: paragraph",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 3,
+  "summary": "paragraph is an allowed subtype of the fragment node type.",
+  "version": "0.3.0",
+  "registry_type": "paragraph",
+  "registry_namespace": "xananode",
+  "parent_node_type": "fragment",
+  "relationships": []
+}

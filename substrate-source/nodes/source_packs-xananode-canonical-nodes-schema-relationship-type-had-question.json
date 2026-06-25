@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-had-question",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Had Question",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-had_question.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-had_question.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-had_question.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-had_question.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:959cb0c461daa24ccecc70264962e708d95d65feb32018bb6cd4d207da5d7e95",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-had_question\",\n  \"title\": \"Had Question Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The had_question inverse relationship term derived from asked_in.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"had_question\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"communication\",\n  \"inverse\": \"asked_in\",\n  \"color\": \"#bae6fd\",\n  \"inverse_color\": \"#38bdf8\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-had_question.json",
+    "method": "archive",
+    "content_id": "sha256:959cb0c461daa24ccecc70264962e708d95d65feb32018bb6cd4d207da5d7e95",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

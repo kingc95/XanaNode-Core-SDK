@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-publication-installment",
+  "title": "Publication subtype: installment",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "installment is an allowed subtype of the publication node type.",
+  "version": "0.3.0",
+  "registry_type": "installment",
+  "registry_namespace": "xananode",
+  "parent_node_type": "publication",
+  "relationships": []
+}

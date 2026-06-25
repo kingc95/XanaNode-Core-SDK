@@ -1,0 +1,16 @@
+{
+  "id": "xananode.canonical:schema/relationship-category-evidence",
+  "title": "Evidence Relationship Category",
+  "type": "schema",
+  "subtype": "relationship_category_schema",
+  "importance": 4,
+  "summary": "The evidence category groups relationship types with related meaning.",
+  "version": "0.5.0",
+  "registry_type": "evidence",
+  "registry_namespace": "xananode",
+  "relationships": [],
+  "color": "#10b981",
+  "inverse_color": "#6ee7b7",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

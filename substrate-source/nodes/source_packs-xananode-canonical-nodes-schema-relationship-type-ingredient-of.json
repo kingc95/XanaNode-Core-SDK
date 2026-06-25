@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-ingredient-of",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Ingredient Of",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-ingredient_of.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-ingredient_of.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-ingredient_of.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-ingredient_of.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:298f26e418dec9b38d7ba7a7998eb923bb8c19505b56dceef6f15e7822c05950",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-ingredient_of\",\n  \"title\": \"Ingredient of\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source item is an ingredient in the target recipe, dish, or preparation.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"ingredient_of\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"composition\",\n  \"inverse\": \"has_ingredient\",\n  \"color\": \"#22c55e\",\n  \"inverse_color\": \"#86efac\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-ingredient_of.json",
+    "method": "archive",
+    "content_id": "sha256:298f26e418dec9b38d7ba7a7998eb923bb8c19505b56dceef6f15e7822c05950",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

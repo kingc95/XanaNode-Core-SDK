@@ -1,0 +1,12 @@
+{
+  "id": "xananode.canonical:schema/namespace-xananode",
+  "title": "XanaNode Core",
+  "type": "schema",
+  "subtype": "namespace_record",
+  "importance": 5,
+  "summary": "Canonical namespace for core XanaNode node and relationship types.",
+  "registry_type": "xananode",
+  "schema_path": "../schemas/",
+  "example_path": "",
+  "relationships": []
+}

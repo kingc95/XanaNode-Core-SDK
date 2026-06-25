@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-motivates-inquiry",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Motivates Inquiry",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-motivates_inquiry.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-motivates_inquiry.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-motivates_inquiry.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-motivates_inquiry.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:f6da485cb71cb018b51cbb25b9a66459bb92f0badbc1608b73bf9132d67deafb",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-motivates_inquiry\",\n  \"title\": \"Motivates inquiry\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source motivates inquiry into the target question, problem, claim, or knowledge gap.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"motivates_inquiry\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"inquiry\",\n  \"inverse\": \"inquiry_motivated_by\",\n  \"color\": \"#2dd4bf\",\n  \"inverse_color\": \"#99f6e4\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-motivates_inquiry.json",
+    "method": "archive",
+    "content_id": "sha256:f6da485cb71cb018b51cbb25b9a66459bb92f0badbc1608b73bf9132d67deafb",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

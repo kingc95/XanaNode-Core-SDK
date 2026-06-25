@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-observation-example",
+  "title": "Observation subtype: example",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "example is an allowed subtype of the observation node type.",
+  "version": "0.3.0",
+  "registry_type": "example",
+  "registry_namespace": "xananode",
+  "parent_node_type": "observation",
+  "relationships": []
+}

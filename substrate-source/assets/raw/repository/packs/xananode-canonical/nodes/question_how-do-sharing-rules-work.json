@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:question/how-do-sharing-rules-work",
+  "title": "How do sharing rules work?",
+  "type": "question",
+  "subtype": "faq",
+  "importance": 5,
+  "summary": "Nodes are shareable by default, but a substrate can exclude individual nodes, relationships, trails, or selected groups from shared exports.",
+  "content": "XanaNode assumes portability unless an author says otherwise. A private workspace can hold a large substrate while its pack export omits sensitive records. Sharing rules can live on the substrate manifest or on individual nodes, and official tools must respect those rules before publishing, exporting, mounting, or federating records.",
+  "relationships": []
+}

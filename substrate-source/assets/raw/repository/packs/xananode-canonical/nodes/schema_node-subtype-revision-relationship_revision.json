@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-revision-relationship_revision",
+  "title": "Revision subtype: relationship revision",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "relationship_revision is an allowed subtype of the revision node type.",
+  "version": "0.3.0",
+  "registry_type": "relationship_revision",
+  "registry_namespace": "xananode",
+  "parent_node_type": "revision",
+  "relationships": []
+}

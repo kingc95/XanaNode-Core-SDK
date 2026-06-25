@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-media-protocol-artifact-media-projection-relationship-categories-communication-svg",
+  "title": "Packs / Xananode Canonical / Nodes / Media Protocol Artifact Media Projection Relationship Categories Communication.Svg",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-categories-communication.svg.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-categories-communication.svg.json",
+  "artifact_path": "packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-categories-communication.svg.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-categories-communication.svg.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:ce09de305731e4debc7e37e510c2cc85841c71da7adcf3517bfb1a18fb636a02",
+  "content": "{\n  \"id\": \"xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-communication.svg\",\n  \"title\": \"Media / Projection / Relationship Categories / Communication\",\n  \"type\": \"media\",\n  \"subtype\": \"protocol_media_asset\",\n  \"importance\": 3,\n  \"summary\": \"media/projection/relationship-categories/communication.svg is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"media/projection/relationship-categories/communication.svg\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/communication.svg\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/media/projection/relationship-categories/communication.svg\",\n  \"content_id\": \"sha256:66e741a47619846dfa178885cddc666d164a433fc3d63527a4a853496a458d53\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/communication.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:66e741a47619846dfa178885cddc666d164a433fc3d63527a4a853496a458d53\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-categories-communication.svg.json",
+    "method": "archive",
+    "content_id": "sha256:ce09de305731e4debc7e37e510c2cc85841c71da7adcf3517bfb1a18fb636a02",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

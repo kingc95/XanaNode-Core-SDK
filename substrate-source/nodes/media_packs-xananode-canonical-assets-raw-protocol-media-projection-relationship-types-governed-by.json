@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-raw-protocol-media-projection-relationship-types-governed-by",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Media / Projection / Relationship Types / Governed By",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/governed_by.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/governed_by.svg",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/governed_by.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/governed_by.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:bbc67fea92ed2488bf7e186594ff3050c65a8e7f665bbf992e3d295b462f66f6",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/media/projection/relationship-types/governed_by.svg",
+    "method": "archive",
+    "content_id": "sha256:bbc67fea92ed2488bf7e186594ff3050c65a8e7f665bbf992e3d295b462f66f6",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-source-audio_drama",
+  "title": "Source subtype: audio drama",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "audio_drama is an allowed subtype of the source node type.",
+  "version": "0.3.0",
+  "registry_type": "audio_drama",
+  "registry_namespace": "xananode",
+  "parent_node_type": "source",
+  "relationships": []
+}

@@ -1,0 +1,9 @@
+{
+  "id": "example.researcher_a:person/researcher-a",
+  "title": "Researcher A",
+  "type": "person",
+  "importance": 3,
+  "summary": "The local actor responsible for assertions in federation example substrate A.",
+  "created_at": "2026-01-01T00:00:00Z",
+  "relationships": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-technology-language",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Technology Language",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-technology-language.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-technology-language.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-technology-language.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-technology-language.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:52f2a6d6fe21a3ab0d4a179f8d51552a734dbf529afa46001e23acc5ee6bf4d2",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-technology-language\",\n  \"title\": \"Technology subtype: language\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"language is an allowed subtype of the technology node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"language\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"technology\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-technology-language.json",
+    "method": "archive",
+    "content_id": "sha256:52f2a6d6fe21a3ab0d4a179f8d51552a734dbf529afa46001e23acc5ee6bf4d2",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

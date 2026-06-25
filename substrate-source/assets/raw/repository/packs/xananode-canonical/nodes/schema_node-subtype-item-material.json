@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-item-material",
+  "title": "Item subtype: material",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "material is an allowed subtype of the item node type.",
+  "version": "0.3.0",
+  "registry_type": "material",
+  "registry_namespace": "xananode",
+  "parent_node_type": "item",
+  "relationships": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-insufficient_evidence",
+  "title": "Insufficient evidence",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source indicates that the target lacks enough evidence for the asserted interpretation or status.",
+  "version": "0.5.0",
+  "registry_type": "insufficient_evidence",
+  "registry_namespace": "xananode",
+  "category": "uncertainty",
+  "inverse": "evidence_insufficient_for",
+  "color": "#d946ef",
+  "inverse_color": "#f5d0fe",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

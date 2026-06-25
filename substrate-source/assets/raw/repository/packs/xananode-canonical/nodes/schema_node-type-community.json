@@ -1,0 +1,39 @@
+{
+  "id": "xananode.canonical:schema/node-type-community",
+  "title": "Community",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A group organized around an identity, platform, shared work, practice, interest, or tradition.",
+  "version": "0.3.0",
+  "registry_type": "community",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "forum",
+    "professional",
+    "open_source",
+    "fan",
+    "research",
+    "local",
+    "online"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "website",
+    "people",
+    "projects",
+    "events"
+  ],
+  "color": {
+    "bg": "#fb923c",
+    "fg": "#201006",
+    "outline": "#ffe7d6"
+  },
+  "relationships": []
+}

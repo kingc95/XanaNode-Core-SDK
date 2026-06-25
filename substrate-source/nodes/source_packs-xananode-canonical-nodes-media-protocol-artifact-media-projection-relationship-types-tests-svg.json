@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-media-protocol-artifact-media-projection-relationship-types-tests-svg",
+  "title": "Packs / Xananode Canonical / Nodes / Media Protocol Artifact Media Projection Relationship Types Tests.Svg",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-types-tests.svg.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-types-tests.svg.json",
+  "artifact_path": "packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-types-tests.svg.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-types-tests.svg.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:5dbb2451a5b07b41c910c5e48c5e8b3dfb70bfb0dd314e60427770f107b0d6b9",
+  "content": "{\n  \"id\": \"xananode.canonical:media/protocol-artifact-media-projection-relationship-types-tests.svg\",\n  \"title\": \"Media / Projection / Relationship Types / Tests\",\n  \"type\": \"media\",\n  \"subtype\": \"protocol_media_asset\",\n  \"importance\": 3,\n  \"summary\": \"media/projection/relationship-types/tests.svg is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"media/projection/relationship-types/tests.svg\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/tests.svg\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/media/projection/relationship-types/tests.svg\",\n  \"content_id\": \"sha256:745781d0047f3ee4577cd4fe49c4d3373bb4cd3a6ed85a74af56ea5909bce078\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/tests.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:745781d0047f3ee4577cd4fe49c4d3373bb4cd3a6ed85a74af56ea5909bce078\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-types-tests.svg.json",
+    "method": "archive",
+    "content_id": "sha256:5dbb2451a5b07b41c910c5e48c5e8b3dfb70bfb0dd314e60427770f107b0d6b9",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

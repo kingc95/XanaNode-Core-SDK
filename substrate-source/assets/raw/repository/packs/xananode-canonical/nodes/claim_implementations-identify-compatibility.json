@@ -1,0 +1,10 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:claim/implementations-identify-compatibility",
+  "title": "Implementations Identify XanaNode Compatibility",
+  "type": "claim",
+  "subtype": "normative",
+  "status": "asserted",
+  "importance": 5,
+  "summary": "Implementations should identify themselves as XanaNode-compatible and reference the canonical specification without implying official ownership."
+}

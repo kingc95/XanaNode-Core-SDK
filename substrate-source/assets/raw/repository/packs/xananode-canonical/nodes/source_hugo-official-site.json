@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:source/hugo-official-site",
+  "title": "Hugo Official Site",
+  "type": "source",
+  "subtype": "official_site",
+  "importance": 3,
+  "summary": "The official website and documentation source for Hugo.",
+  "source_url": "https://gohugo.io/",
+  "rights_status": "external",
+  "relationships": []
+}

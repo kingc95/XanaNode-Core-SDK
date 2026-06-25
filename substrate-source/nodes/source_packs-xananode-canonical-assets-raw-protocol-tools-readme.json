@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-tools-readme",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Tools / README",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/tools/README.md is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/tools/README.md",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/tools/README.md",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/tools/README.md",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:0a0d8a1968acc33cae0944e7b1f26f18e97615bfef65fd1c2c6282947f6fcb7b",
+  "content": "# Tools\r\n\r\nThis directory contains repository maintenance tools.\r\n\r\n## Validator\r\n\r\nRun:\r\n\r\n```bash\r\npython -m pip install -r requirements-dev.txt\r\npython tools/validate.py\r\n```\r\n\r\nThe validator checks JSON Schema conformance for protocol artifacts and XanaNode-specific integrity rules such as declared relationship types, registered namespaces, and resolvable relationship endpoints.\r\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/tools/README.md",
+    "method": "archive",
+    "content_id": "sha256:0a0d8a1968acc33cae0944e7b1f26f18e97615bfef65fd1c2c6282947f6fcb7b",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

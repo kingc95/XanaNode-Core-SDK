@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-project-xananode-core-sdk",
+  "title": "Packs / Xananode Canonical / Nodes / Project Xananode Core Sdk",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/project_xananode-core-sdk.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/project_xananode-core-sdk.json",
+  "artifact_path": "packs/xananode-canonical/nodes/project_xananode-core-sdk.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/project_xananode-core-sdk.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:58a7da7b712d078a78bc8acd91747410dac086653aa6c8ad8bf76345116cfbf7",
+  "content": "{\n  \"id\": \"xananode.canonical:project/xananode-core-sdk\",\n  \"title\": \"XanaNode Core SDK\",\n  \"type\": \"project\",\n  \"subtype\": \"core-sdk\",\n  \"status\": \"active\",\n  \"importance\": 4,\n  \"summary\": \"Renderer-independent parser, validator, graph builder, fragment engine, pack composer, suggestion engine, and exporter for XanaNode substrates.\",\n  \"relationships\": [],\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Core-SDK\",\n  \"repository\": \"kingc95/XanaNode-Core-SDK\",\n  \"protocol_role\": \"reference-core-engine\",\n  \"software_version\": \"\",\n  \"build_metadata\": {\n    \"version\": \"0.1.0\",\n    \"repository\": \"kingc95/XanaNode-Core-SDK\",\n    \"generated_at\": \"2026-06-25T14:00:25.194Z\",\n    \"built_by\": \"@xananode/core\",\n    \"git_commit\": \"\",\n    \"git_branch\": \"\",\n    \"runtime\": \"node v24.16.0\",\n    \"platform\": \"win32/x64\",\n    \"dependencies\": [\n      {\n        \"name\": \"XanaNode Protocol\",\n        \"version\": \"\",\n        \"repository\": \"kingc95/XanaNode\",\n        \"relationship\": \"uses\"\n      },\n      {\n        \"name\": \"protocol schemas\",\n        \"relationship\": \"consumes\"\n      },\n      {\n        \"name\": \"node files\",\n        \"relationship\": \"consumes\"\n      },\n      {\n        \"name\": \"relationship files\",\n        \"relationship\": \"consumes\"\n      },\n      {\n        \"name\": \"substrate manifests\",\n        \"relationship\": \"consumes\"\n      },\n      {\n        \"name\": \"substrate packs\",\n        \"relationship\": \"consumes\"\n      }\n    ]\n  },\n  \"consumes\": [\n    \"protocol schemas\",\n    \"node files\",\n    \"relationship files\",\n    \"substrate manifests\",\n    \"substrate packs\"\n  ],\n  \"related_protocol_artifacts\": [\n    \"../schemas/substrate-manifest.schema.json\",\n    \"../schemas/substrate-node.schema.json\",\n    \"../schemas/substrate-relationships.schema.json\",\n    \"../schemas/xananode-node-types.v0.3.0.json\",\n    \"../schemas/xananode-relationship-types.v0.5.0.json\"\n  ]\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/project_xananode-core-sdk.json",
+    "method": "archive",
+    "content_id": "sha256:58a7da7b712d078a78bc8acd91747410dac086653aa6c8ad8bf76345116cfbf7",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

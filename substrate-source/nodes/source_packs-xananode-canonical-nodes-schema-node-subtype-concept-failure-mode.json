@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-concept-failure-mode",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Concept Failure Mode",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-concept-failure_mode.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-concept-failure_mode.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-concept-failure_mode.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-concept-failure_mode.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:2b274d269452bdaea98e4a92d6f93ecf1f38c35c8d95d73e78986fe208a97ed0",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-concept-failure_mode\",\n  \"title\": \"Concept subtype: failure mode\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"failure_mode is an allowed subtype of the concept node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"failure_mode\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"concept\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-concept-failure_mode.json",
+    "method": "archive",
+    "content_id": "sha256:2b274d269452bdaea98e4a92d6f93ecf1f38c35c8d95d73e78986fe208a97ed0",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

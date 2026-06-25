@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-studio-component-workspace-apis",
+  "title": "XanaNode Studio: Workspace APIs",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Studio consumes or depends on Workspace APIs.",
+  "component_of": "xananode.canonical:project/xananode-studio",
+  "relationships": []
+}

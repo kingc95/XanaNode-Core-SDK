@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-same_concept",
+  "title": "Same concept",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source and target represent the same concept across substrates, namespaces, versions, or local identifiers.",
+  "version": "0.5.0",
+  "registry_type": "same_concept",
+  "registry_namespace": "xananode",
+  "category": "identity",
+  "inverse": "same_concept",
+  "color": "#f472b6",
+  "inverse_color": "#fbcfe8",
+  "line_style": "double",
+  "inverse_line_style": "double",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": []
+}

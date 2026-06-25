@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-proposals-xnp-0011-studio-local-first-authoring",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Proposals / XNP 0011 Studio Local First Authoring",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0011-studio-local-first-authoring.md is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0011-studio-local-first-authoring.md",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0011-studio-local-first-authoring.md",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0011-studio-local-first-authoring.md",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:3cc4f574705261f5fcaf53eeb0152d530385a3cf13c4a7030edabb4cbc01a40e",
+  "content": "# XNP-0011: Studio Local-First Authoring\n\nStatus: Draft\n\n## Summary\n\nCaptures the Studio product direction as local-first Git-backed authoring for knowledge substrates.\n\n## Decision\n\nStudio should treat a substrate as a local Git repository and expose user-facing concepts before raw Git mechanics.\n\nAuthor-facing language:\n\n- save snapshot\n- draft path\n- bring changes together\n- propose changes\n- what changed\n- history\n\nThe Studio MVP should focus on opening substrate repos, editing nodes, adding relationships, validating, previewing with the Hugo implementation, saving snapshots, and publishing.\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0011-studio-local-first-authoring.md",
+    "method": "archive",
+    "content_id": "sha256:3cc4f574705261f5fcaf53eeb0152d530385a3cf13c4a7030edabb4cbc01a40e",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

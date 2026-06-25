@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-type-relationship",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Type Relationship",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-type-relationship.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-relationship.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-type-relationship.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-type-relationship.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:d6310afcb66f67221c4259e095070b132b89b3c0821d00c765ab94bd4a2abc43",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-relationship\",\n  \"title\": \"Relationship\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"A first-class edge treated as a node because the relationship itself has history, evidence, dispute, or explanation.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"relationship\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"friendship\",\n    \"influence\",\n    \"collaboration\",\n    \"citation\",\n    \"dispute\",\n    \"lineage\",\n    \"dependency\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"source_node\",\n    \"target_node\",\n    \"relationship_type\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"evidence\",\n    \"confidence\",\n    \"status\",\n    \"asserted_by\",\n    \"reviewed_by\"\n  ],\n  \"color\": {\n    \"bg\": \"#ec4899\",\n    \"fg\": \"#240812\",\n    \"outline\": \"#ffd8ea\"\n  },\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-relationship.json",
+    "method": "archive",
+    "content_id": "sha256:d6310afcb66f67221c4259e095070b132b89b3c0821d00c765ab94bd4a2abc43",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

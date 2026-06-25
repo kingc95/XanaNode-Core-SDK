@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/substrate-layout.schema.json",
+  "title": "XanaNode Substrate Layout Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "version", "description", "required_paths", "recognized_paths"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string" },
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "root_contract": { "type": "string" },
+    "required_paths": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/path_record" }
+    },
+    "recognized_paths": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/path_record" }
+    },
+    "authoring_paths": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/path_record" }
+    },
+    "archive_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "path_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "role"],
+      "properties": {
+        "path": { "type": "string" },
+        "role": { "type": "string" },
+        "required": { "type": "boolean" },
+        "kind": {
+          "type": "string",
+          "enum": ["file", "directory", "glob"]
+        },
+        "format": { "type": "string" },
+        "description": { "type": "string" },
+        "tools_must_preserve": { "type": "boolean" }
+      }
+    }
+  }
+}

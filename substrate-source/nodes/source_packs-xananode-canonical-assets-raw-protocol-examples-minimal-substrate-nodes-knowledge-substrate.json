@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-examples-minimal-substrate-nodes-knowledge-substrate",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Examples / Minimal Substrate / Nodes / Knowledge Substrate",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/knowledge-substrate.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/knowledge-substrate.json",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/knowledge-substrate.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/knowledge-substrate.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:79c21565b10614242fa81e17293dcbb4276151aa11b19ba9965e42e3ffbb7594",
+  "content": "{\n  \"id\": \"example.minimal:concept/knowledge-substrate\",\n  \"title\": \"Knowledge Substrate\",\n  \"type\": \"concept\",\n  \"importance\": 5,\n  \"summary\": \"A structure that determines how information relates, persists, and can be navigated.\",\n  \"relationships\": [\n    {\n      \"id\": \"example.minimal:rel/associative-trails-context-for-substrate\",\n      \"type\": \"related_to\",\n      \"source\": \"example.minimal:concept/associative-trails\",\n      \"direction\": \"incoming\"\n    },\n    {\n      \"id\": \"example.minimal:rel/claim-defines-concept\",\n      \"type\": \"defines\",\n      \"source\": \"example.minimal:claim/substrate-is-structure\",\n      \"direction\": \"incoming\"\n    },\n    {\n      \"id\": \"example.minimal:rel/concept-has-claim\",\n      \"type\": \"has_claim\",\n      \"target\": \"example.minimal:claim/substrate-is-structure\",\n      \"direction\": \"outgoing\"\n    },\n    {\n      \"id\": \"example.minimal:rel/trail-continues-to-concept\",\n      \"type\": \"continues_to\",\n      \"source\": \"example.minimal:claim/substrate-is-structure\",\n      \"direction\": \"incoming\"\n    },\n    {\n      \"id\": \"example.minimal:rel/substrate-has-primary-media\",\n      \"type\": \"has_primary_media\",\n      \"target\": \"example.minimal:media/xananode-icon\",\n      \"direction\": \"outgoing\"\n    }\n  ]\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/knowledge-substrate.json",
+    "method": "archive",
+    "content_id": "sha256:79c21565b10614242fa81e17293dcbb4276151aa11b19ba9965e42e3ffbb7594",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

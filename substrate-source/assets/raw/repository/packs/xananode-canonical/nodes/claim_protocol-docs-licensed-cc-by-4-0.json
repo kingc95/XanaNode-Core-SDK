@@ -1,0 +1,10 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:claim/protocol-docs-licensed-cc-by-4-0",
+  "title": "Protocol Docs Are Licensed CC-BY 4.0",
+  "type": "claim",
+  "subtype": "definition",
+  "status": "asserted",
+  "importance": 5,
+  "summary": "XanaNode protocol documentation is licensed under CC-BY 4.0 so the docs can be shared and adapted with attribution."
+}

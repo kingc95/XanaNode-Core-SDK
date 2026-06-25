@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:claim/canonical-assembles-federated-stack-layer-substrates",
+  "title": "The canonical substrate assembles federated stack-layer substrates",
+  "type": "claim",
+  "subtype": "implementation_claim",
+  "importance": 5,
+  "summary": "The canonical substrate is no longer only a monolithic description of XanaNode; it explicitly points to the real stack-layer substrate sources that make the system work.",
+  "content": "The canonical substrate should teach that the stack is composed, not merely listed. Its project nodes describe the layers, and its federated substrate source nodes point at the real repositories and substrate roots for those layers. That lets people inspect the stack as a working federation of independently authored and versioned parts instead of assuming the canonical bundle is only a flat merge.",
+  "relationships": []
+}

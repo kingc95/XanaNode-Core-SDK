@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-essay-critique",
+  "title": "Essay subtype: critique",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "critique is an allowed subtype of the essay node type.",
+  "version": "0.3.0",
+  "registry_type": "critique",
+  "registry_namespace": "xananode",
+  "parent_node_type": "essay",
+  "relationships": []
+}

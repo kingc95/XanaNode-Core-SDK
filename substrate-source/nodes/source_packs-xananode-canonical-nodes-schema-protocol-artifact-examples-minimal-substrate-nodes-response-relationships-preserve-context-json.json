@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-protocol-artifact-examples-minimal-substrate-nodes-response-relationships-preserve-context-json",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Protocol Artifact Examples Minimal Substrate Nodes Response Relationships Preserve Context.Json",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_protocol-artifact-examples-minimal-substrate-nodes-response-relationships-preserve-context.json.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-minimal-substrate-nodes-response-relationships-preserve-context.json.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_protocol-artifact-examples-minimal-substrate-nodes-response-relationships-preserve-context.json.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-minimal-substrate-nodes-response-relationships-preserve-context.json.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:002dafe62ff0ca681c388d923b5ef8e0a10ed1e12ab6c5a27c5449ff56591907",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/protocol-artifact-examples-minimal-substrate-nodes-response-relationships-preserve-context.json\",\n  \"title\": \"Examples / Minimal Substrate / Nodes / Response Relationships Preserve Context\",\n  \"type\": \"schema\",\n  \"subtype\": \"protocol_json_artifact\",\n  \"importance\": 3,\n  \"summary\": \"examples/minimal-substrate/nodes/response-relationships-preserve-context.json is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"examples/minimal-substrate/nodes/response-relationships-preserve-context.json\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/response-relationships-preserve-context.json\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"application/json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"Apache-2.0\",\n  \"relationships\": [],\n  \"content\": \"{\\n  \\\"id\\\": \\\"example.minimal:response/relationships-preserve-context\\\",\\n  \\\"title\\\": \\\"Relationships Preserve Context\\\",\\n  \\\"type\\\": \\\"response\\\",\\n  \\\"protocol_id\\\": \\\"example.minimal:response/relationships-preserve-context\\\",\\n  \\\"content_id\\\": \\\"sha256:example-response-relationships-preserve-context\\\",\\n  \\\"version_id\\\": \\\"git:HEAD:examples/minimal-substrate/nodes/response-relationships-preserve-context.json\\\",\\n  \\\"status\\\": \\\"active\\\",\\n  \\\"importance\\\": 4,\\n  \\\"summary\\\": \\\"A response that answers the example question by connecting relationship structure to preserved context.\\\",\\n  \\\"evidence_strength\\\": \\\"moderate\\\",\\n  \\\"review_status\\\": \\\"under_review\\\",\\n  \\\"relationships\\\": [\\n    {\\n      \\\"id\\\": \\\"example.minimal:rel/response-answers-question\\\",\\n      \\\"type\\\": \\\"answers\\\",\\n      \\\"target\\\": \\\"example.minimal:question/why-relationships-matter\\\",\\n      \\\"direction\\\": \\\"outgoing\\\"\\n    },\\n    {\\n      \\\"id\\\": \\\"example.minimal:rel/response-answered-in-communication\\\",\\n      \\\"type\\\": \\\"answered_in\\\",\\n      \\\"target\\\": \\\"example.minimal:communication/minimal-substrate-discussion\\\",\\n      \\\"direction\\\": \\\"outgoing\\\"\\n    },\\n    {\\n      \\\"id\\\": \\\"example.minimal:rel/response-supports-claim\\\",\\n      \\\"type\\\": \\\"supports\\\",\\n      \\\"target\\\": \\\"example.minimal:claim/substrate-is-structure\\\",\\n      \\\"direction\\\": \\\"outgoing\\\"\\n    }\\n  ]\\n}\\n\",\n  \"asset_path\": \"assets/raw/protocol/examples/minimal-substrate/nodes/response-relationships-preserve-context.json\",\n  \"content_id\": \"sha256:479c37d7a9e310ba81bdb5a8de649da83af99fce536d6719fc6ca03b18ae1131\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/response-relationships-preserve-context.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:479c37d7a9e310ba81bdb5a8de649da83af99fce536d6719fc6ca03b18ae1131\",\n    \"rights_status\": \"Apache-2.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-minimal-substrate-nodes-response-relationships-preserve-context.json.json",
+    "method": "archive",
+    "content_id": "sha256:002dafe62ff0ca681c388d923b5ef8e0a10ed1e12ab6c5a27c5449ff56591907",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

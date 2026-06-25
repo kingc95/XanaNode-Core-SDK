@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:question/who-made-xananode",
+  "title": "Who made XanaNode?",
+  "type": "question",
+  "subtype": "faq",
+  "importance": 5,
+  "summary": "XanaNode is authored by Christian Siefen. Built By Bots remains part of the project's historical lineage, but XanaNode.com is the long-term public home of the work.",
+  "content": "The canonical project substrate identifies Christian Siefen as the human author of XanaNode. It also preserves historical lineage records, including the temporary Built By Bots bridge period, the current XanaNode.com domain, the public repositories, branding, and support links. That provenance matters because people should be able to trace who authored a substrate, how the public identity evolved, and where project work now lives.",
+  "relationships": []
+}

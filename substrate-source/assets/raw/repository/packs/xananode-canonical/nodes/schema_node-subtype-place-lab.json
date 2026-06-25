@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-place-lab",
+  "title": "Place subtype: lab",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "lab is an allowed subtype of the place node type.",
+  "version": "0.3.0",
+  "registry_type": "lab",
+  "registry_namespace": "xananode",
+  "parent_node_type": "place",
+  "relationships": []
+}

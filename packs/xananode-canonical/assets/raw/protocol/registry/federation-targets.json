@@ -2,6 +2,22 @@
   "$schema": "./federation-targets.schema.json",
   "federation_targets": [
     {
+      "id": "xananode.protocol",
+      "name": "XanaNode Protocol Substrate",
+      "namespace": "xananode.protocol",
+      "description": "A substrate source built directly from the XanaNode Protocol repository, preserving schemas, registries, specs, governance, raw source files, and protocol-defining documents as first-class XanaNode records.",
+      "status": "canonical",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kingc95/XanaNode-Protocol.git",
+        "default_branch": "main",
+        "substrate_path": "substrate-source"
+      },
+      "recommended_mode": "mounted",
+      "licenses": ["CC-BY-4.0", "Apache-2.0"],
+      "homepage": "https://xananode.com/"
+    },
+    {
       "id": "xananode.canonical",
       "name": "XanaNode Canonical Substrate",
       "namespace": "xananode.canonical",
@@ -14,6 +30,86 @@
       },
       "recommended_mode": "mounted",
       "licenses": ["CC-BY-4.0", "Apache-2.0"],
+      "homepage": "https://xananode.com/"
+    },
+    {
+      "id": "xananode.core",
+      "name": "XanaNode Core SDK Substrate",
+      "namespace": "xananode.core",
+      "description": "A substrate source built directly from the XanaNode Core SDK repository, preserving reference code, schemas, registries, templates, tests, raw project documents, and executable-contract artifacts as first-class XanaNode records.",
+      "status": "official",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kingc95/XanaNode-Core-SDK.git",
+        "default_branch": "main",
+        "substrate_path": "substrate-source"
+      },
+      "recommended_mode": "mounted",
+      "licenses": ["Apache-2.0"],
+      "homepage": "https://xananode.com/"
+    },
+    {
+      "id": "xananode.workspace",
+      "name": "XanaNode Workspace Substrate",
+      "namespace": "xananode.workspace",
+      "description": "A substrate source built directly from the XanaNode Workspace repository, preserving the local-first workspace engine, CLI surface, templates, tests, raw project documents, and packaged executable artifacts as first-class XanaNode records.",
+      "status": "official",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kingc95/XanaNode-Workspace.git",
+        "default_branch": "main",
+        "substrate_path": "substrate-source"
+      },
+      "recommended_mode": "mounted",
+      "licenses": ["Apache-2.0"],
+      "homepage": "https://xananode.com/"
+    },
+    {
+      "id": "xananode.studio",
+      "name": "XanaNode Studio Substrate",
+      "namespace": "xananode.studio",
+      "description": "A substrate source built directly from the XanaNode Studio repository, preserving the Electron app, renderer code, preload and main-process logic, scripts, tests, and raw project documents as first-class XanaNode records.",
+      "status": "official",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kingc95/XanaNode-Studio.git",
+        "default_branch": "main",
+        "substrate_path": "substrate-source"
+      },
+      "recommended_mode": "mounted",
+      "licenses": ["Apache-2.0"],
+      "homepage": "https://xananode.com/"
+    },
+    {
+      "id": "xananode.mobile",
+      "name": "XanaNode Mobile Substrate",
+      "namespace": "xananode.mobile",
+      "description": "A substrate source built directly from the XanaNode Mobile repository, preserving the Android companion app, Compose screens, intake flows, mobile assets, verifier bridge scripts, and raw project documents as first-class XanaNode records.",
+      "status": "official",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kingc95/XanaNode-Mobile.git",
+        "default_branch": "main",
+        "substrate_path": "substrate-source"
+      },
+      "recommended_mode": "mounted",
+      "licenses": ["Apache-2.0"],
+      "homepage": "https://xananode.com/"
+    },
+    {
+      "id": "xananode.hugo",
+      "name": "XanaNode Hugo Theme Substrate",
+      "namespace": "xananode.hugo",
+      "description": "A substrate source built directly from the XanaNode Hugo repository, preserving the Hugo theme, static viewer assets, example site, layouts, build glue, and projection-facing documents as first-class XanaNode records.",
+      "status": "official",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kingc95/XanaNode-Hugo.git",
+        "default_branch": "main",
+        "substrate_path": "substrate-source"
+      },
+      "recommended_mode": "mounted",
+      "licenses": ["Apache-2.0"],
       "homepage": "https://xananode.com/"
     },
     {

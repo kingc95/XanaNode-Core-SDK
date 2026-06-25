@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-disputed-identity",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Disputed Identity",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-disputed_identity.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-disputed_identity.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-disputed_identity.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-disputed_identity.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:8ff06dfbbd756348c0312ebcd903952c37abd5e3b0ee001953ac1c4b98f0dd30",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-disputed_identity\",\n  \"title\": \"Disputed identity\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source and target have an identity relationship that is contested, ambiguous, or rejected by at least one substrate, contributor, or governance process.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"disputed_identity\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"identity\",\n  \"inverse\": \"disputed_identity\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#f472b6\",\n  \"inverse_color\": \"#fbcfe8\",\n  \"line_style\": \"double\",\n  \"inverse_line_style\": \"double\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-disputed_identity.json",
+    "method": "archive",
+    "content_id": "sha256:8ff06dfbbd756348c0312ebcd903952c37abd5e3b0ee001953ac1c4b98f0dd30",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

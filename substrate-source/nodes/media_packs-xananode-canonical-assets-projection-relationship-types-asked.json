@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-projection-relationship-types-asked",
+  "title": "Packs / Xananode Canonical / Assets / Projection / Relationship Types / Asked",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/projection/relationship-types/asked.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/relationship-types/asked.svg",
+  "artifact_path": "packs/xananode-canonical/assets/projection/relationship-types/asked.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/projection/relationship-types/asked.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:44fcf90854aa108decd927711479f2d193dcf987245874b402a72fb03973fa16",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/relationship-types/asked.svg",
+    "method": "archive",
+    "content_id": "sha256:44fcf90854aa108decd927711479f2d193dcf987245874b402a72fb03973fa16",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-demonstrated_by",
+  "title": "Demonstrated By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The demonstrated_by inverse relationship term derived from demonstrates.",
+  "version": "0.5.0",
+  "registry_type": "demonstrated_by",
+  "registry_namespace": "xananode",
+  "category": "evidence",
+  "inverse": "demonstrates",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#6ee7b7",
+  "inverse_color": "#10b981",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "xananode.canonical",
+  "name": "XanaNode Canonical Substrate",
+  "version": "0.1.0",
+  "namespace": "xananode.canonical",
+  "description": "The canonical XanaNode substrate for protocol vocabulary, project identity, governance, software stack records, source snapshots, branding, and self-referential examples.",
+  "schema_version": "xananode-core@0.5.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingc95/XanaNode-Canonical-Substrate.git",
+    "default_branch": "main"
+  },
+  "pack": {
+    "mode": "mounted",
+    "built_by": "@xananode/core",
+    "portable": true,
+    "built_at": "2026-06-25T14:00:25.494Z",
+    "build_metadata": {
+      "version": "0.1.0",
+      "git_commit": "",
+      "git_branch": "",
+      "repository": "kingc95/XanaNode-Core-SDK",
+      "generated_at": "2026-06-25T14:00:25.494Z",
+      "built_by": "@xananode/core",
+      "runtime": "node v24.16.0",
+      "platform": "win32/x64",
+      "dependencies": [
+        {
+          "name": "XanaNode Protocol",
+          "version": "",
+          "repository": "kingc95/XanaNode",
+          "relationship": "uses"
+        }
+      ]
+    }
+  },
+  "build_metadata": {
+    "version": "0.1.0",
+    "git_commit": "",
+    "git_branch": "",
+    "repository": "kingc95/XanaNode-Core-SDK",
+    "generated_at": "2026-06-25T14:00:25.360Z",
+    "built_by": "@xananode/core",
+    "runtime": "node v24.16.0",
+    "platform": "win32/x64",
+    "dependencies": [
+      {
+        "name": "XanaNode Protocol",
+        "version": "",
+        "repository": "kingc95/XanaNode",
+        "relationship": "uses"
+      }
+    ]
+  }
+}

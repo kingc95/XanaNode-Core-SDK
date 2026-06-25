@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-concept-compatibility-attribution",
+  "title": "Packs / Xananode Canonical / Nodes / Concept Compatibility Attribution",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/concept_compatibility-attribution.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_compatibility-attribution.json",
+  "artifact_path": "packs/xananode-canonical/nodes/concept_compatibility-attribution.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/concept_compatibility-attribution.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:0337215ab5b5d1f878f0b8308276eb0d880810492e7ab99dde656174dca05943",
+  "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:concept/compatibility-attribution\",\n  \"title\": \"Compatibility Attribution\",\n  \"type\": \"concept\",\n  \"subtype\": \"principle\",\n  \"importance\": 5,\n  \"summary\": \"The convention that implementations should identify themselves as XanaNode-compatible and point to the canonical specification without implying ownership or endorsement.\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_compatibility-attribution.json",
+    "method": "archive",
+    "content_id": "sha256:0337215ab5b5d1f878f0b8308276eb0d880810492e7ab99dde656174dca05943",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

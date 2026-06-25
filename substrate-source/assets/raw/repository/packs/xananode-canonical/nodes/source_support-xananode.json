@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:source/support-xananode",
+  "title": "Support XanaNode",
+  "type": "source",
+  "subtype": "support_page",
+  "importance": 4,
+  "summary": "A support link for people who want to help sustain authored knowledge substrate creation.",
+  "source_url": "https://github.com/sponsors/kingc95",
+  "rights_status": "external",
+  "relationships": []
+}

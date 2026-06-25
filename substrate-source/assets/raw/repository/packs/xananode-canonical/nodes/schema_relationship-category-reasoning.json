@@ -1,0 +1,16 @@
+{
+  "id": "xananode.canonical:schema/relationship-category-reasoning",
+  "title": "Reasoning Relationship Category",
+  "type": "schema",
+  "subtype": "relationship_category_schema",
+  "importance": 4,
+  "summary": "The reasoning category groups relationship types with related meaning.",
+  "version": "0.5.0",
+  "registry_type": "reasoning",
+  "registry_namespace": "xananode",
+  "relationships": [],
+  "color": "#818cf8",
+  "inverse_color": "#c7d2fe",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

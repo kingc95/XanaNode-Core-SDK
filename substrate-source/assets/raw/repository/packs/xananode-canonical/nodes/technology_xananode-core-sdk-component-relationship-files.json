@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-core-sdk-component-relationship-files",
+  "title": "XanaNode Core SDK: relationship files",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Core SDK consumes or depends on relationship files.",
+  "component_of": "xananode.canonical:project/xananode-core-sdk",
+  "relationships": []
+}

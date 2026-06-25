@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-related_to",
+  "title": "Related to",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is related to the target when no more specific relationship applies.",
+  "version": "0.5.0",
+  "registry_type": "related_to",
+  "registry_namespace": "xananode",
+  "category": "generic",
+  "inverse": "related_to",
+  "default_weight": 2,
+  "default_visibility": "background",
+  "relationships": [],
+  "color": "#94a3b8",
+  "inverse_color": "#cbd5e1",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "xananode.canonical:organization/built-by-bots",
+  "title": "Built By Bots",
+  "type": "organization",
+  "subtype": "company",
+  "importance": 4,
+  "summary": "A historical bridge identity recorded in XanaNode's lineage. It is preserved for provenance, but XanaNode's current and durable public identity lives at XanaNode.com under Christian Siefen's authorship.",
+  "relationships": []
+}

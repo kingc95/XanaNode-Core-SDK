@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-question-historical_question",
+  "title": "Question subtype: historical question",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "historical_question is an allowed subtype of the question node type.",
+  "version": "0.3.0",
+  "registry_type": "historical_question",
+  "registry_namespace": "xananode",
+  "parent_node_type": "question",
+  "relationships": []
+}

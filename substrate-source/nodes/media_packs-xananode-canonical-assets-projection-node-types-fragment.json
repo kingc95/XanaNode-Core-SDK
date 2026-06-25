@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-projection-node-types-fragment",
+  "title": "Packs / Xananode Canonical / Assets / Projection / Node Types / Fragment",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/projection/node-types/fragment.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/node-types/fragment.svg",
+  "artifact_path": "packs/xananode-canonical/assets/projection/node-types/fragment.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/projection/node-types/fragment.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:eb5b91b351962fc5eba96b1d2ae5128fc18d665501e61cf1a99c871bea619b94",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/node-types/fragment.svg",
+    "method": "archive",
+    "content_id": "sha256:eb5b91b351962fc5eba96b1d2ae5128fc18d665501e61cf1a99c871bea619b94",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-media-branding_icon",
+  "title": "Media subtype: branding icon",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "branding_icon is an allowed subtype of the media node type.",
+  "version": "0.3.0",
+  "registry_type": "branding_icon",
+  "registry_namespace": "xananode",
+  "parent_node_type": "media",
+  "relationships": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:schema/artifact-registry-namespaces",
+  "title": "Registry / Namespaces",
+  "type": "schema",
+  "subtype": "registry_artifact",
+  "importance": 4,
+  "summary": "registry/namespaces.json is preserved as a Core schema or registry artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/registry/namespaces.json",
+  "artifact_path": "registry/namespaces.json",
+  "asset_path": "assets/raw/repository/registry/namespaces.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:5b21957fb8bad9d46e428ccaaa888123654dc13ea7ed9c327ac68e13e762644d",
+  "content": "{\n  \"namespaces\": [\n    {\n      \"id\": \"xananode\",\n      \"name\": \"XanaNode Core\",\n      \"description\": \"Canonical namespace for core XanaNode node and relationship types.\",\n      \"schema\": \"../schemas/\"\n    },\n    {\n      \"id\": \"example.minimal\",\n      \"name\": \"Minimal Example Namespace\",\n      \"description\": \"Namespace used by the minimal example substrate.\",\n      \"example\": \"../examples/minimal-substrate/\"\n    },\n    {\n      \"id\": \"example.museum\",\n      \"name\": \"Museum Extension Example Namespace\",\n      \"description\": \"Namespace used by the custom extension example substrate.\",\n      \"example\": \"../examples/custom-extension-substrate/\"\n    },\n    {\n      \"id\": \"example.researcher_a\",\n      \"name\": \"Federation Example A Namespace\",\n      \"description\": \"Namespace used by the first independently authored federation example substrate.\",\n      \"example\": \"../examples/federation-example/substrate-a/\"\n    },\n    {\n      \"id\": \"example.researcher_b\",\n      \"name\": \"Federation Example B Namespace\",\n      \"description\": \"Namespace used by the second independently authored federation example substrate.\",\n      \"example\": \"../examples/federation-example/substrate-b/\"\n    },\n    {\n      \"id\": \"example.merge\",\n      \"name\": \"Federation Merge Report Example Namespace\",\n      \"description\": \"Namespace used for merge report and mapping records in the federation example.\",\n      \"example\": \"../examples/federation-example/\"\n    }\n  ]\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/registry/namespaces.json",
+    "method": "archive",
+    "content_id": "sha256:5b21957fb8bad9d46e428ccaaa888123654dc13ea7ed9c327ac68e13e762644d",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

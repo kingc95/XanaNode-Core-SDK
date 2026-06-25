@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-core-sdk-component-protocol-schemas",
+  "title": "XanaNode Core SDK: protocol schemas",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Core SDK consumes or depends on protocol schemas.",
+  "component_of": "xananode.canonical:project/xananode-core-sdk",
+  "relationships": []
+}

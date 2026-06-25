@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-collaborated_with",
+  "title": "Collaborated with",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source collaborated with the target.",
+  "version": "0.5.0",
+  "registry_type": "collaborated_with",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "collaborated_with",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fb7185",
+  "inverse_color": "#fecdd3",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted"
+}

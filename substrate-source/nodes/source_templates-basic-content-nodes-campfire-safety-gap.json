@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-templates-basic-content-nodes-campfire-safety-gap",
+  "title": "Templates / Basic / Content / Nodes / Campfire Safety Gap",
+  "type": "source",
+  "subtype": "example_substrate_template",
+  "importance": 3,
+  "summary": "templates/basic/content/nodes/campfire-safety-gap.md is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/templates/basic/content/nodes/campfire-safety-gap.md",
+  "artifact_path": "templates/basic/content/nodes/campfire-safety-gap.md",
+  "asset_path": "assets/raw/repository/templates/basic/content/nodes/campfire-safety-gap.md",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:15f410b3f0ce61957e379e109004f836899202cb54679206faf64bf3ed8cf560",
+  "content": "---\ntitle: What rules and fire conditions apply here?\ntype: knowledge_gap\nsubtype: safety\nsummary: The answer changes by place, season, weather, and local law.\ncreated_by: Example Author\nrelationships:\n  - type: context_for\n    target: example:question/how-to-make-a-campfire\n    summary: Local rules and conditions frame whether the answer can be safely used.\n---\n# What rules and fire conditions apply here?\n\nA complete answer needs local fire restrictions, current wind, drought conditions, and whether open flames are allowed.\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/templates/basic/content/nodes/campfire-safety-gap.md",
+    "method": "archive",
+    "content_id": "sha256:15f410b3f0ce61957e379e109004f836899202cb54679206faf64bf3ed8cf560",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

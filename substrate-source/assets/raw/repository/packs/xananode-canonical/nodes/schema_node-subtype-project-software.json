@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-project-software",
+  "title": "Project subtype: software",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "software is an allowed subtype of the project node type.",
+  "version": "0.3.0",
+  "registry_type": "software",
+  "registry_namespace": "xananode",
+  "parent_node_type": "project",
+  "relationships": []
+}

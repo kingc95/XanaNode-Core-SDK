@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-technology-model",
+  "title": "Technology subtype: model",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "model is an allowed subtype of the technology node type.",
+  "version": "0.3.0",
+  "registry_type": "model",
+  "registry_namespace": "xananode",
+  "parent_node_type": "technology",
+  "relationships": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-protocol-artifact-tools",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Protocol Artifact Tools",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_protocol-artifact-tools.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-tools.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_protocol-artifact-tools.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_protocol-artifact-tools.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:d33826bc763de422a71d78a624d6825296f95748b4fe42eec6e1585d3e824aa0",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/protocol-artifact-tools\",\n  \"title\": \"Protocol Tools\",\n  \"type\": \"schema\",\n  \"subtype\": \"protocol_artifact_group\",\n  \"importance\": 3,\n  \"summary\": \"Protocol files under tools/ preserved inside the canonical substrate.\",\n  \"artifact_path\": \"tools/\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/tools/\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-tools.json",
+    "method": "archive",
+    "content_id": "sha256:d33826bc763de422a71d78a624d6825296f95748b4fe42eec6e1585d3e824aa0",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

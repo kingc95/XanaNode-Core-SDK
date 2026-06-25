@@ -1,0 +1,12 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:source/cc0-1-0-public-domain-dedication",
+  "title": "CC0 1.0 Public Domain Dedication",
+  "type": "source",
+  "subtype": "license",
+  "importance": 3,
+  "summary": "A public-domain dedication used when authors want to waive copyright restrictions as fully as possible.",
+  "source_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "rights_status": "external",
+  "license": "CC0-1.0"
+}

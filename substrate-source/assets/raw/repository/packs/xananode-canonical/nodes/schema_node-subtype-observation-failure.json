@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-observation-failure",
+  "title": "Observation subtype: failure",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "failure is an allowed subtype of the observation node type.",
+  "version": "0.3.0",
+  "registry_type": "failure",
+  "registry_namespace": "xananode",
+  "parent_node_type": "observation",
+  "relationships": []
+}

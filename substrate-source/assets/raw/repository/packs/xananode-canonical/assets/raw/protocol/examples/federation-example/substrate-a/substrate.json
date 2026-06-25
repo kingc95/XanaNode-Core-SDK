@@ -1,0 +1,16 @@
+{
+  "id": "example.researcher_a",
+  "name": "Federation Example A",
+  "version": "0.1.0",
+  "namespace": "example.researcher_a",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingc95/xananode.git",
+    "default_branch": "main",
+    "path": "examples/federation-example/substrate-a"
+  },
+  "schema_version": "xananode-core@0.5.0",
+  "imports": [
+    "xananode:core"
+  ]
+}

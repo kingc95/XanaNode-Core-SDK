@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-trail-argument",
+  "title": "Trail subtype: argument",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "argument is an allowed subtype of the trail node type.",
+  "version": "0.3.0",
+  "registry_type": "argument",
+  "registry_namespace": "xananode",
+  "parent_node_type": "trail",
+  "relationships": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-used_as_primary_media_for",
+  "title": "Used As Primary Media For Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The used_as_primary_media_for inverse relationship term derived from has_primary_media.",
+  "version": "0.5.0",
+  "registry_type": "used_as_primary_media_for",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "has_primary_media",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fcd34d",
+  "inverse_color": "#f59e0b",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

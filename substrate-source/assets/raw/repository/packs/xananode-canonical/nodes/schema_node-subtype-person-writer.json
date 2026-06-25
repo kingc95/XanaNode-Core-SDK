@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-person-writer",
+  "title": "Person subtype: writer",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "writer is an allowed subtype of the person node type.",
+  "version": "0.3.0",
+  "registry_type": "writer",
+  "registry_namespace": "xananode",
+  "parent_node_type": "person",
+  "relationships": []
+}

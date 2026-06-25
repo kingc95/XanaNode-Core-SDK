@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-had_answer",
+  "title": "Had Answer Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The had_answer inverse relationship term derived from answered_in.",
+  "version": "0.5.0",
+  "registry_type": "had_answer",
+  "registry_namespace": "xananode",
+  "category": "communication",
+  "inverse": "answered_in",
+  "color": "#bae6fd",
+  "inverse_color": "#38bdf8",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

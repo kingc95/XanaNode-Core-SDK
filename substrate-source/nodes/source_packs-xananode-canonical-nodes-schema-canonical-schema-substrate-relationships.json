@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-canonical-schema-substrate-relationships",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Canonical Schema Substrate Relationships",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_canonical-schema-substrate-relationships.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-substrate-relationships.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_canonical-schema-substrate-relationships.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_canonical-schema-substrate-relationships.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:1638718df18cd1a706271ec11988f10545a4a4dceef1a494dfb31e25021bad8c",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schema-substrate-relationships\",\n  \"title\": \"Substrate Relationships Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"canonical_schema_record\",\n  \"importance\": 5,\n  \"summary\": \"Canonical schema registry entry for substrate-relationships.\",\n  \"registry_type\": \"substrate-relationships\",\n  \"version\": \"0.1.0\",\n  \"schema_path\": \"../schemas/substrate-relationships.schema.json\",\n  \"artifact_path\": \"\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-relationships.schema.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/substrate-relationships.schema.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:178c2c72ee97ee25ed46fc5d506224fc6e0cb8e39c90b7aa9874cdde390b0ca3\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-relationships.schema.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:f54850b79d92255a2ed8753086ec114a2bb425b0219e30f614072fbf117a53a2\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-substrate-relationships.json",
+    "method": "archive",
+    "content_id": "sha256:1638718df18cd1a706271ec11988f10545a4a4dceef1a494dfb31e25021bad8c",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

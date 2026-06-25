@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-superseded_by",
+  "title": "Superseded By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The superseded_by inverse relationship term derived from supersedes.",
+  "version": "0.5.0",
+  "registry_type": "superseded_by",
+  "registry_namespace": "xananode",
+  "category": "evolution",
+  "inverse": "supersedes",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#cbd5e1",
+  "inverse_color": "#64748b",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

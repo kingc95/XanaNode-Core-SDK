@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-media-protocol-artifact-media-images-favicon-ico",
+  "title": "Packs / Xananode Canonical / Nodes / Media Protocol Artifact Media Images Favicon.Ico",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/media_protocol-artifact-media-images-favicon.ico.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-images-favicon.ico.json",
+  "artifact_path": "packs/xananode-canonical/nodes/media_protocol-artifact-media-images-favicon.ico.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/media_protocol-artifact-media-images-favicon.ico.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:a5cc2b9320d53c6d367a7dac550fd18ab78d8d010087f96acc959296c9e8f51e",
+  "content": "{\n  \"id\": \"xananode.canonical:media/protocol-artifact-media-images-favicon.ico\",\n  \"title\": \"Media / Images / Favicon\",\n  \"type\": \"media\",\n  \"subtype\": \"protocol_media_asset\",\n  \"importance\": 3,\n  \"summary\": \"media/images/favicon.ico is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"media/images/favicon.ico\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/images/favicon.ico\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/x-icon\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/media/images/favicon.ico\",\n  \"content_id\": \"sha256:d831bab8ef316e4cb30b5e95e16e66662ecbfa3558dafa85db70f3c18eb194f8\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/images/favicon.ico\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:d831bab8ef316e4cb30b5e95e16e66662ecbfa3558dafa85db70f3c18eb194f8\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-images-favicon.ico.json",
+    "method": "archive",
+    "content_id": "sha256:a5cc2b9320d53c6d367a7dac550fd18ab78d8d010087f96acc959296c9e8f51e",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

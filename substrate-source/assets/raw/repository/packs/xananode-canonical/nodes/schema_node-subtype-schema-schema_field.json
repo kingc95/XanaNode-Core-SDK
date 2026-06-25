@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-schema-schema_field",
+  "title": "Schema subtype: schema field",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "schema_field is an allowed subtype of the schema node type.",
+  "version": "0.3.0",
+  "registry_type": "schema_field",
+  "registry_namespace": "xananode",
+  "parent_node_type": "schema",
+  "relationships": []
+}

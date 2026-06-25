@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-negotiated_with",
+  "title": "Negotiated with",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source negotiated with the target actor, group, or position.",
+  "version": "0.5.0",
+  "registry_type": "negotiated_with",
+  "registry_namespace": "xananode",
+  "category": "communication",
+  "inverse": "negotiated_with",
+  "color": "#38bdf8",
+  "inverse_color": "#bae6fd",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

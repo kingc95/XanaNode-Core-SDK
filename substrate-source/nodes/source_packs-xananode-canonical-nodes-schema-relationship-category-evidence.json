@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-category-evidence",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Category Evidence",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-category-evidence.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-evidence.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-category-evidence.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-category-evidence.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:46529479db0015e0f0465a2b24e3f476c12bdae653a1b15a1d1cd7127dc96953",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-category-evidence\",\n  \"title\": \"Evidence Relationship Category\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_category_schema\",\n  \"importance\": 4,\n  \"summary\": \"The evidence category groups relationship types with related meaning.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"evidence\",\n  \"registry_namespace\": \"xananode\",\n  \"relationships\": [],\n  \"color\": \"#10b981\",\n  \"inverse_color\": \"#6ee7b7\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-category-evidence.json",
+    "method": "archive",
+    "content_id": "sha256:46529479db0015e0f0465a2b24e3f476c12bdae653a1b15a1d1cd7127dc96953",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

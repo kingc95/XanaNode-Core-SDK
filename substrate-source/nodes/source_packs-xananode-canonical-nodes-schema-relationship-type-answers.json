@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-answers",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Answers",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-answers.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-answers.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-answers.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-answers.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:a5dc1e5d89f19a4ce241223776278d93a6fd46b1b2ecb7fd2cb71960196f6781",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-answers\",\n  \"title\": \"Answers\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source answers the target question or information request.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"answers\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"inquiry\",\n  \"inverse\": \"answered_by\",\n  \"color\": \"#2dd4bf\",\n  \"inverse_color\": \"#99f6e4\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 5,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-answers.json",
+    "method": "archive",
+    "content_id": "sha256:a5dc1e5d89f19a4ce241223776278d93a6fd46b1b2ecb7fd2cb71960196f6781",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

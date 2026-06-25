@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-source-trademark_policy",
+  "title": "Source subtype: trademark policy",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "trademark_policy is an allowed subtype of the source node type.",
+  "version": "0.3.0",
+  "registry_type": "trademark_policy",
+  "registry_namespace": "xananode",
+  "parent_node_type": "source",
+  "relationships": []
+}

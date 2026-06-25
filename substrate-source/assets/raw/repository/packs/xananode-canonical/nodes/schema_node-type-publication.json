@@ -1,0 +1,52 @@
+{
+  "id": "xananode.canonical:schema/node-type-publication",
+  "title": "Publication",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A released intellectual or creative work such as a book, article, paper, film, episode, or talk.",
+  "version": "0.3.0",
+  "registry_type": "publication",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "book",
+    "paper",
+    "article",
+    "film",
+    "episode",
+    "series",
+    "season",
+    "installment",
+    "trilogy",
+    "saga",
+    "omnibus",
+    "pilot",
+    "talk",
+    "adaptation",
+    "edition",
+    "reissue",
+    "podcast",
+    "webpage"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "author",
+    "publisher",
+    "year",
+    "source_url",
+    "license",
+    "rights_status"
+  ],
+  "color": {
+    "bg": "#a78bfa",
+    "fg": "#140f22",
+    "outline": "#ede3ff"
+  },
+  "relationships": []
+}

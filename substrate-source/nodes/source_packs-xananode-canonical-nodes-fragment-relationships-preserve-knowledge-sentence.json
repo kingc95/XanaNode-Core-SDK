@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-fragment-relationships-preserve-knowledge-sentence",
+  "title": "Packs / Xananode Canonical / Nodes / Fragment Relationships Preserve Knowledge Sentence",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/fragment_relationships-preserve-knowledge-sentence.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/fragment_relationships-preserve-knowledge-sentence.json",
+  "artifact_path": "packs/xananode-canonical/nodes/fragment_relationships-preserve-knowledge-sentence.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/fragment_relationships-preserve-knowledge-sentence.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:fcbdc290f0b56cbfd30527de62e9cef87cfc0f0654a3633a3ba214972791e782",
+  "content": "{\n  \"id\": \"xananode.canonical:fragment/relationships-preserve-knowledge-sentence\",\n  \"title\": \"Relationships Preserve Knowledge Sentence\",\n  \"type\": \"fragment\",\n  \"subtype\": \"sentence\",\n  \"importance\": 4,\n  \"summary\": \"Relationships preserve knowledge.\",\n  \"source_node\": \"xananode.canonical:claim/relationships-preserve-knowledge\",\n  \"source_content_id\": \"sha256:relationship-preservation-claim\",\n  \"source_version_id\": \"sha256:canonical-pack-v0-1-0\",\n  \"fragment_id\": \"0001\",\n  \"tumbler\": \"xananode.canonical:claim/relationships-preserve-knowledge@sha256:canonical-pack-v0-1-0#fragment/0001@sha256:relationship-preservation-sentence\",\n  \"selector\": {\n    \"type\": \"semantic-anchor\",\n    \"value\": \"tagline\"\n  },\n  \"content_id\": \"sha256:relationship-preservation-sentence\",\n  \"version_id\": \"sha256:canonical-pack-v0-1-0-fragment-0001\",\n  \"rights_status\": \"open-source\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/fragment_relationships-preserve-knowledge-sentence.json",
+    "method": "archive",
+    "content_id": "sha256:fcbdc290f0b56cbfd30527de62e9cef87cfc0f0654a3633a3ba214972791e782",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

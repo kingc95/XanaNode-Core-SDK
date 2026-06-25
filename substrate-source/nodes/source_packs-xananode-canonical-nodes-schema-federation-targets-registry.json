@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-federation-targets-registry",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Federation Targets Registry",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_federation-targets-registry.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_federation-targets-registry.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_federation-targets-registry.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_federation-targets-registry.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:ca600281f7fbfb0cf6c41bcff69d377579bcd383cdea04e14fea568f45b6f8ae",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/federation-targets-registry\",\n  \"title\": \"Federation Targets Registry\",\n  \"type\": \"schema\",\n  \"subtype\": \"governance_rule\",\n  \"importance\": 4,\n  \"summary\": \"The protocol registry of known substrate repositories, mounted substrate targets, and recommended federation entry points.\",\n  \"relationships\": [],\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/federation-targets.json\",\n  \"asset_path\": \"assets/raw/protocol/registry/federation-targets.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:d859aec5ab80bc7388b61c105bdc88465755e280652fd51c4bb9ea8165e66f38\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/federation-targets.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:d859aec5ab80bc7388b61c105bdc88465755e280652fd51c4bb9ea8165e66f38\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_federation-targets-registry.json",
+    "method": "archive",
+    "content_id": "sha256:ca600281f7fbfb0cf6c41bcff69d377579bcd383cdea04e14fea568f45b6f8ae",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

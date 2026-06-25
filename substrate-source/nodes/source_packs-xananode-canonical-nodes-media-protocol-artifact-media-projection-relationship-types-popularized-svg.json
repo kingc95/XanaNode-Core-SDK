@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-media-protocol-artifact-media-projection-relationship-types-popularized-svg",
+  "title": "Packs / Xananode Canonical / Nodes / Media Protocol Artifact Media Projection Relationship Types Popularized.Svg",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-types-popularized.svg.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-types-popularized.svg.json",
+  "artifact_path": "packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-types-popularized.svg.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-types-popularized.svg.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:7b7abe50c11296d548d73fb0e151b7f1c967973fb0ba91e3fbd5bbb660e03bae",
+  "content": "{\n  \"id\": \"xananode.canonical:media/protocol-artifact-media-projection-relationship-types-popularized.svg\",\n  \"title\": \"Media / Projection / Relationship Types / Popularized\",\n  \"type\": \"media\",\n  \"subtype\": \"protocol_media_asset\",\n  \"importance\": 3,\n  \"summary\": \"media/projection/relationship-types/popularized.svg is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"media/projection/relationship-types/popularized.svg\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/popularized.svg\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/media/projection/relationship-types/popularized.svg\",\n  \"content_id\": \"sha256:b703638f3444b51c08659e599ba8c8d4c560461860c23cb01ed3a8532bfc3a21\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/popularized.svg\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:b703638f3444b51c08659e599ba8c8d4c560461860c23cb01ed3a8532bfc3a21\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_protocol-artifact-media-projection-relationship-types-popularized.svg.json",
+    "method": "archive",
+    "content_id": "sha256:7b7abe50c11296d548d73fb0e151b7f1c967973fb0ba91e3fbd5bbb660e03bae",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

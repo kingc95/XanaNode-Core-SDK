@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-src-index",
+  "title": "Src / Index",
+  "type": "source",
+  "subtype": "reference_code",
+  "importance": 4,
+  "summary": "src/index.js is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/index.js",
+  "artifact_path": "src/index.js",
+  "asset_path": "assets/raw/repository/src/index.js",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/javascript",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:dc1a6db68480cafd15c5442b6c4b8428d230c46ca5f674d4ca106f5d5ba052a7",
+  "content": "export * from \"./errors.js\";\nexport * from \"./ids.js\";\nexport * from \"./frontmatter.js\";\nexport * from \"./markdown.js\";\nexport * from \"./fragments.js\";\nexport * from \"./graph.js\";\nexport * from \"./cleanup.js\";\nexport * from \"./projection.js\";\nexport * from \"./io.js\";\nexport * from \"./validate.js\";\nexport * from \"./suggestions.js\";\nexport * from \"./intake.js\";\nexport * from \"./packs.js\";\nexport * from \"./build.js\";\nexport * from \"./canonical-pack.js\";\nexport * from \"./init.js\";\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/index.js",
+    "method": "archive",
+    "content_id": "sha256:dc1a6db68480cafd15c5442b6c4b8428d230c46ca5f674d4ca106f5d5ba052a7",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-proposals-xnp-0005-transclusion",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Proposals / XNP 0005 Transclusion",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0005-transclusion.md is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0005-transclusion.md",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0005-transclusion.md",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0005-transclusion.md",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:398aa00de8a8e7b71ae9af6271f4c06d43c0546707b346c8ae299993e3f3e7a7",
+  "content": "# XNP-0005: Transclusion\r\n\r\nStatus: Experimental\r\n\r\n## Summary\r\n\r\nDefines inclusion by reference rather than copying.\r\n\r\nThe initial interoperable form uses a `transcludes` relationship from a consuming node to a fragment node with a stable `tumbler` address.\r\n\r\n## Motivation\r\n\r\nXanaNode aims to support independently authored knowledge substrates that can later interoperate. This proposal records the design expectations for transclusion so implementations can converge without requiring centralized control.\r\n\r\n## Requirements\r\n\r\n- Must remain human-readable.\r\n- Must remain machine-interpretable.\r\n- Must preserve provenance.\r\n- Must avoid destructive merging.\r\n- Must allow independent substrate ownership.\r\n\r\n## Open Questions\r\n\r\n- What is the smallest useful implementation?\r\n- Which parts are required for compatibility?\r\n- Which parts should remain optional or experimental?\r\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/proposals/XNP-0005-transclusion.md",
+    "method": "archive",
+    "content_id": "sha256:398aa00de8a8e7b71ae9af6271f4c06d43c0546707b346c8ae299993e3f3e7a7",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

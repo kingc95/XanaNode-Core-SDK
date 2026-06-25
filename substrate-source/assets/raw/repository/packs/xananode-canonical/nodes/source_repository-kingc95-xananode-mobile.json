@@ -1,0 +1,12 @@
+{
+  "id": "xananode.canonical:source/repository-kingc95-xananode-mobile",
+  "title": "XanaNode Mobile Repository",
+  "type": "source",
+  "subtype": "git_repository",
+  "importance": 4,
+  "summary": "Public Git repository for XanaNode Mobile.",
+  "source_url": "https://github.com/kingc95/XanaNode-Mobile",
+  "repository": "kingc95/XanaNode-Mobile",
+  "rights_status": "external",
+  "relationships": []
+}

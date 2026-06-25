@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-examples-federation-example-merge-report",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Examples / Federation Example / Merge Report",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/examples/federation-example/merge-report.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/federation-example/merge-report.json",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/examples/federation-example/merge-report.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/examples/federation-example/merge-report.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:5ef3669d327ba167955d42868fee5e3975fb15d7ecb786ea10d20b8cb3ebad50",
+  "content": "{\n  \"id\": \"example.merge:report/federation-example-001\",\n  \"status\": \"review-needed\",\n  \"generated_at\": \"2026-01-01T00:00:00Z\",\n  \"substrates\": [\n    \"example.researcher_a\",\n    \"example.researcher_b\"\n  ],\n  \"compatibility_level\": 4,\n  \"mappings\": [\n    {\n      \"id\": \"example.merge:mapping/knowledge-memory-substrate\",\n      \"source\": \"example.researcher_a:concept/knowledge-substrate\",\n      \"target\": \"example.researcher_b:concept/memory-substrate\",\n      \"type\": \"possible_match\",\n      \"confidence\": 0.78,\n      \"status\": \"review-needed\",\n      \"preserves_local_nodes\": true,\n      \"creates_relationships\": [\n        \"example.researcher_a:rel/knowledge-substrate-possible-match-memory-substrate\",\n        \"example.researcher_b:rel/memory-substrate-possible-match-knowledge-substrate\"\n      ],\n      \"rationale\": \"Both nodes describe substrate-like structures for preserving context and relationships, but one emphasizes knowledge objects while the other emphasizes memory over time.\"\n    }\n  ],\n  \"conflicts\": [\n    {\n      \"id\": \"example.merge:conflict/do-not-collapse-concepts\",\n      \"type\": \"identity_ambiguity\",\n      \"nodes\": [\n        \"example.researcher_a:concept/knowledge-substrate\",\n        \"example.researcher_b:concept/memory-substrate\"\n      ],\n      \"resolution\": \"preserve_both\",\n      \"summary\": \"The merge pass records a possible match but does not replace either local concept with a canonical node.\"\n    }\n  ],\n  \"warnings\": [\n    \"The two concepts are close but should not be automatically collapsed into a single canonical node.\"\n  ]\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/federation-example/merge-report.json",
+    "method": "archive",
+    "content_id": "sha256:5ef3669d327ba167955d42868fee5e3975fb15d7ecb786ea10d20b8cb3ebad50",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

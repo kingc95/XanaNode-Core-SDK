@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-xananode-hugo-repository",
+  "title": "Packs / Xananode Canonical / Nodes / Source Xananode Hugo Repository",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_xananode-hugo-repository.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_xananode-hugo-repository.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_xananode-hugo-repository.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_xananode-hugo-repository.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:b44bf7982b5f3d99d5864888bbda4e034b286cd13af352ca65db60ecc9faee8a",
+  "content": "{\n  \"id\": \"xananode.canonical:source/xananode-hugo-repository\",\n  \"title\": \"XanaNode Hugo Repository\",\n  \"type\": \"source\",\n  \"subtype\": \"git_repository\",\n  \"importance\": 5,\n  \"summary\": \"The public Hugo projection repository that renders XanaNode substrates as static readable pages and an interactive graph.\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Hugo\",\n  \"rights_status\": \"open-source\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_xananode-hugo-repository.json",
+    "method": "archive",
+    "content_id": "sha256:b44bf7982b5f3d99d5864888bbda4e034b286cd13af352ca65db60ecc9faee8a",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

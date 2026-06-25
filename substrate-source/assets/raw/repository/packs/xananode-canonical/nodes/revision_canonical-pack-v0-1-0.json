@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:revision/canonical-pack-v0-1-0",
+  "title": "Canonical Pack v0.1.0",
+  "type": "revision",
+  "subtype": "node_revision",
+  "importance": 3,
+  "summary": "The first Core-bundled revision of the canonical XanaNode pack.",
+  "revises": "xananode.canonical:concept/xananode",
+  "revision_id": "0.1.0",
+  "relationships": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-technology-xananode-studio-component-workspace-apis",
+  "title": "Packs / Xananode Canonical / Nodes / Technology Xananode Studio Component Workspace Apis",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/technology_xananode-studio-component-workspace-apis.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-studio-component-workspace-apis.json",
+  "artifact_path": "packs/xananode-canonical/nodes/technology_xananode-studio-component-workspace-apis.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/technology_xananode-studio-component-workspace-apis.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:225d348ce176d47787bf430e37f0786773222cf991cb6a4ac48cf4d0a0e09f0c",
+  "content": "{\n  \"id\": \"xananode.canonical:technology/xananode-studio-component-workspace-apis\",\n  \"title\": \"XanaNode Studio: Workspace APIs\",\n  \"type\": \"technology\",\n  \"subtype\": \"software_component\",\n  \"importance\": 3,\n  \"summary\": \"XanaNode Studio consumes or depends on Workspace APIs.\",\n  \"component_of\": \"xananode.canonical:project/xananode-studio\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/technology_xananode-studio-component-workspace-apis.json",
+    "method": "archive",
+    "content_id": "sha256:225d348ce176d47787bf430e37f0786773222cf991cb6a4ac48cf4d0a0e09f0c",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

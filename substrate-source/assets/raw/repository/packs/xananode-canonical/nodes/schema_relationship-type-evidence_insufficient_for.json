@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-evidence_insufficient_for",
+  "title": "Evidence Insufficient For Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The evidence_insufficient_for inverse relationship term derived from insufficient_evidence.",
+  "version": "0.5.0",
+  "registry_type": "evidence_insufficient_for",
+  "registry_namespace": "xananode",
+  "category": "uncertainty",
+  "inverse": "insufficient_evidence",
+  "color": "#f5d0fe",
+  "inverse_color": "#d946ef",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-concept-method",
+  "title": "Concept subtype: method",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "method is an allowed subtype of the concept node type.",
+  "version": "0.3.0",
+  "registry_type": "method",
+  "registry_namespace": "xananode",
+  "parent_node_type": "concept",
+  "relationships": []
+}

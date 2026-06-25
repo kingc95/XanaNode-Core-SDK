@@ -1,0 +1,9 @@
+{
+  "id": "xananode.canonical:observation/markdown-recreation-friction",
+  "title": "Markdown Recreation Friction",
+  "type": "observation",
+  "subtype": "failure",
+  "importance": 4,
+  "summary": "Forcing authors to recreate validated protocol nodes as Markdown creates duplicate governance surfaces and loses the benefit of portable substrate artifacts.",
+  "relationships": []
+}

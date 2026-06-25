@@ -1,0 +1,16 @@
+{
+  "id": "example.minimal:person/example-maintainer",
+  "title": "Example Maintainer",
+  "type": "person",
+  "importance": 3,
+  "summary": "The local actor responsible for asserting and curating the minimal example substrate.",
+  "created_at": "2026-01-01T00:00:00Z",
+  "relationships": [
+    {
+      "id": "example.minimal:rel/maintainer-created-intro-essay",
+      "type": "created",
+      "target": "example.minimal:essay/relationship-navigation-intro",
+      "direction": "outgoing"
+    }
+  ]
+}

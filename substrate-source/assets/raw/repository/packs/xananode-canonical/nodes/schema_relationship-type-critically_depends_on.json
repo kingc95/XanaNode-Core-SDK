@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-critically_depends_on",
+  "title": "Critically Depends On Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The critically_depends_on inverse relationship term derived from critical_to.",
+  "version": "0.5.0",
+  "registry_type": "critically_depends_on",
+  "registry_namespace": "xananode",
+  "category": "attention",
+  "inverse": "critical_to",
+  "color": "#fde68a",
+  "inverse_color": "#fbbf24",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": []
+}

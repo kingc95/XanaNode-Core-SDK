@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-type-claim",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Type Claim",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-type-claim.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-claim.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-type-claim.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-type-claim.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:af6a44c9d0d8233d10c27dd3e2d6c1129096ca21c4ec06565d4cb3d70fa21141",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-claim\",\n  \"title\": \"Claim\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"A specific assertion that can be supported, disputed, revised, deprecated, or rejected.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"claim\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"definition\",\n    \"historical\",\n    \"causal\",\n    \"interpretive\",\n    \"predictive\",\n    \"normative\",\n    \"comparative\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"status\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"confidence\",\n    \"claim_type\",\n    \"evidence\",\n    \"counterevidence\",\n    \"concepts\",\n    \"sources\"\n  ],\n  \"color\": {\n    \"bg\": \"#ff6b6b\",\n    \"fg\": \"#1a0000\",\n    \"outline\": \"#ffe0e0\"\n  },\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-claim.json",
+    "method": "archive",
+    "content_id": "sha256:af6a44c9d0d8233d10c27dd3e2d6c1129096ca21c4ec06565d4cb3d70fa21141",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

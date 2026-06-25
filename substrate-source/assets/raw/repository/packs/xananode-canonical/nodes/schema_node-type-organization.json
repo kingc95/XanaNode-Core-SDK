@@ -1,0 +1,40 @@
+{
+  "id": "xananode.canonical:schema/node-type-organization",
+  "title": "Organization",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A company, institution, agency, lab, school, collective, standards body, nonprofit, or group.",
+  "version": "0.3.0",
+  "registry_type": "organization",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "company",
+    "university",
+    "lab",
+    "agency",
+    "nonprofit",
+    "standards_body",
+    "publisher"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "website",
+    "founded",
+    "people",
+    "projects",
+    "technologies"
+  ],
+  "color": {
+    "bg": "#f0abfc",
+    "fg": "#1e1028",
+    "outline": "#fde8ff"
+  },
+  "relationships": []
+}

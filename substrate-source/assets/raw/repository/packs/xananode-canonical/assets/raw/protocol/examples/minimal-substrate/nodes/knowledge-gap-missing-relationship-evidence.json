@@ -1,0 +1,28 @@
+{
+  "id": "example.minimal:knowledge_gap/missing-relationship-evidence",
+  "title": "Missing Relationship Evidence",
+  "type": "knowledge_gap",
+  "protocol_id": "example.minimal:knowledge_gap/missing-relationship-evidence",
+  "content_id": "sha256:example-gap-missing-relationship-evidence",
+  "version_id": "git:HEAD:examples/minimal-substrate/nodes/knowledge-gap-missing-relationship-evidence.json",
+  "status": "open",
+  "importance": 4,
+  "summary": "The substrate should show when a claim needs more source evidence rather than hiding that absence.",
+  "uncertainty_level": "high",
+  "review_status": "needs_review",
+  "research_priority": 4,
+  "relationships": [
+    {
+      "id": "example.minimal:rel/question-raises-gap",
+      "type": "raises",
+      "source": "example.minimal:question/why-relationships-matter",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/gap-requires-source",
+      "type": "requires_source",
+      "target": "example.minimal:source/as-we-may-think",
+      "direction": "outgoing"
+    }
+  ]
+}

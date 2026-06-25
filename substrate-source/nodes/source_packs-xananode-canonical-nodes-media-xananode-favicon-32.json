@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-media-xananode-favicon-32",
+  "title": "Packs / Xananode Canonical / Nodes / Media Xananode Favicon 32",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/media_xananode-favicon-32.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_xananode-favicon-32.json",
+  "artifact_path": "packs/xananode-canonical/nodes/media_xananode-favicon-32.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/media_xananode-favicon-32.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:845552de516292d732dd2017735c4107dbe43ad0515cbac80f0930df067d0fe5",
+  "content": "{\n  \"id\": \"xananode.canonical:media/xananode-favicon-32\",\n  \"title\": \"XanaNode Favicon 32x32\",\n  \"type\": \"media\",\n  \"subtypes\": [\n    \"image\",\n    \"logo\",\n    \"favicon\"\n  ],\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/png\",\n  \"importance\": 4,\n  \"summary\": \"32 pixel PNG favicon for XanaNode projections.\",\n  \"alt\": \"XanaNode branding icon derived from the canonical XanaNode mark.\",\n  \"rights_status\": \"open-source\",\n  \"asset_path\": \"media/images/favicon-32x32.png\",\n  \"asset_role\": \"favicon\",\n  \"creator\": \"Christian Siefen\",\n  \"created_at\": \"2026-06-19T00:00:00.000Z\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_xananode-favicon-32.json",
+    "method": "archive",
+    "content_id": "sha256:845552de516292d732dd2017735c4107dbe43ad0515cbac80f0930df067d0fe5",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

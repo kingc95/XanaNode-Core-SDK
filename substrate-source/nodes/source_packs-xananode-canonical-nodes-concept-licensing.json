@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-concept-licensing",
+  "title": "Packs / Xananode Canonical / Nodes / Concept Licensing",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/concept_licensing.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_licensing.json",
+  "artifact_path": "packs/xananode-canonical/nodes/concept_licensing.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/concept_licensing.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:2dded8a8ddf5676ed5d2c902809d0ac285e46fb1db380a656b8578ef278da763",
+  "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:concept/licensing\",\n  \"title\": \"Licensing\",\n  \"type\": \"concept\",\n  \"subtype\": \"governance\",\n  \"importance\": 5,\n  \"summary\": \"The legal layer that describes how documents, schemas, code, media, and names may be copied, reused, attributed, modified, or governed.\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_licensing.json",
+    "method": "archive",
+    "content_id": "sha256:2dded8a8ddf5676ed5d2c902809d0ac285e46fb1db380a656b8578ef278da763",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

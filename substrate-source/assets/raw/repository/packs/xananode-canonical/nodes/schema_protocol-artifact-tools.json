@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-tools",
+  "title": "Protocol Tools",
+  "type": "schema",
+  "subtype": "protocol_artifact_group",
+  "importance": 3,
+  "summary": "Protocol files under tools/ preserved inside the canonical substrate.",
+  "artifact_path": "tools/",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/tools/",
+  "relationships": []
+}

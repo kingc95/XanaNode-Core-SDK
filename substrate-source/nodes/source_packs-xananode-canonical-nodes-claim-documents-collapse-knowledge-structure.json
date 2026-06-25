@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-claim-documents-collapse-knowledge-structure",
+  "title": "Packs / Xananode Canonical / Nodes / Claim Documents Collapse Knowledge Structure",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/claim_documents-collapse-knowledge-structure.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/claim_documents-collapse-knowledge-structure.json",
+  "artifact_path": "packs/xananode-canonical/nodes/claim_documents-collapse-knowledge-structure.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/claim_documents-collapse-knowledge-structure.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:64cf73e85a88d7e987ce2a2324cc5a9abd3a6192b5e2f30b0c4928ec7c7d5bc2",
+  "content": "{\n  \"id\": \"xananode.canonical:claim/documents-collapse-knowledge-structure\",\n  \"title\": \"Document boundaries collapse knowledge structure\",\n  \"type\": \"claim\",\n  \"subtype\": \"problem_statement\",\n  \"status\": \"asserted\",\n  \"importance\": 5,\n  \"summary\": \"When a document is treated as the main unit of knowledge, many of the relationships that give meaning to the material become implicit, hidden, or lost.\",\n  \"content\": \"A page, file, note, or database row can store information, but it does not automatically preserve why one idea supports another, where a quote came from, who disagreed, or what later changed. Those relationships usually live in a human reader's head or in conventions that a machine cannot reliably inspect.\\n\\nThat is why document-centric systems feel good for publication but weak for durable knowledge transfer. The information survives. The structure that made it useful often does not.\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/claim_documents-collapse-knowledge-structure.json",
+    "method": "archive",
+    "content_id": "sha256:64cf73e85a88d7e987ce2a2324cc5a9abd3a6192b5e2f30b0c4928ec7c7d5bc2",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

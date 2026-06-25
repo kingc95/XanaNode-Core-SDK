@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-protocol-artifact-examples-custom-extension-substrate-substrate-json",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Protocol Artifact Examples Custom Extension Substrate Substrate.Json",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_protocol-artifact-examples-custom-extension-substrate-substrate.json.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-custom-extension-substrate-substrate.json.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_protocol-artifact-examples-custom-extension-substrate-substrate.json.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-custom-extension-substrate-substrate.json.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:1ae001889339b0be7ed4d293b6d92e3cdeb91c64a6aea7a965b8c4977f8f894e",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/protocol-artifact-examples-custom-extension-substrate-substrate.json\",\n  \"title\": \"Examples / Custom Extension Substrate / Substrate\",\n  \"type\": \"schema\",\n  \"subtype\": \"protocol_json_artifact\",\n  \"importance\": 3,\n  \"summary\": \"examples/custom-extension-substrate/substrate.json is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"examples/custom-extension-substrate/substrate.json\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/custom-extension-substrate/substrate.json\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"application/json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"Apache-2.0\",\n  \"relationships\": [],\n  \"content\": \"{\\n  \\\"id\\\": \\\"example.museum\\\",\\n  \\\"name\\\": \\\"Museum Extension Substrate\\\",\\n  \\\"description\\\": \\\"Example of a XanaNode-compatible substrate with local schema extensions.\\\",\\n  \\\"version\\\": \\\"0.1.0\\\",\\n  \\\"namespace\\\": \\\"example.museum\\\",\\n  \\\"repository\\\": {\\n    \\\"type\\\": \\\"git\\\",\\n    \\\"url\\\": \\\"https://github.com/kingc95/xananode.git\\\",\\n    \\\"default_branch\\\": \\\"main\\\",\\n    \\\"path\\\": \\\"examples/custom-extension-substrate\\\"\\n  },\\n  \\\"schema_version\\\": \\\"xananode-core@0.5.0\\\",\\n  \\\"license\\\": \\\"CC-BY-4.0\\\",\\n  \\\"imports\\\": [\\n    \\\"xananode:core\\\"\\n  ],\\n  \\\"extensions\\\": [\\n    \\\"schemas/node-types.example.museum.json\\\",\\n    \\\"schemas/relationship-types.example.museum.json\\\"\\n  ]\\n}\\n\",\n  \"asset_path\": \"assets/raw/protocol/examples/custom-extension-substrate/substrate.json\",\n  \"content_id\": \"sha256:bf9f7c129d46186131cf5e9d8ea2d512cf290217b39455c7aece9ed69bb67101\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/custom-extension-substrate/substrate.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:bf9f7c129d46186131cf5e9d8ea2d512cf290217b39455c7aece9ed69bb67101\",\n    \"rights_status\": \"Apache-2.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-custom-extension-substrate-substrate.json.json",
+    "method": "archive",
+    "content_id": "sha256:1ae001889339b0be7ed4d293b6d92e3cdeb91c64a6aea7a965b8c4977f8f894e",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

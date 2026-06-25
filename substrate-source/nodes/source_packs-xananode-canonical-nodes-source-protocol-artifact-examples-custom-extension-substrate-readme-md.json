@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-protocol-artifact-examples-custom-extension-substrate-readme-md",
+  "title": "Packs / Xananode Canonical / Nodes / Source Protocol Artifact Examples Custom Extension Substrate Readme.Md",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_protocol-artifact-examples-custom-extension-substrate-readme.md.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_protocol-artifact-examples-custom-extension-substrate-readme.md.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_protocol-artifact-examples-custom-extension-substrate-readme.md.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_protocol-artifact-examples-custom-extension-substrate-readme.md.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:f00896bae4fd7db092c435629cab14bf7156549df4e24d2ef81d68295ce1b790",
+  "content": "{\n  \"id\": \"xananode.canonical:source/protocol-artifact-examples-custom-extension-substrate-readme.md\",\n  \"title\": \"Examples / Custom Extension Substrate / README\",\n  \"type\": \"source\",\n  \"subtype\": \"protocol_document\",\n  \"importance\": 3,\n  \"summary\": \"examples/custom-extension-substrate/README.md is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"examples/custom-extension-substrate/README.md\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/custom-extension-substrate/README.md\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"text/markdown\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"content\": \"# Custom Extension Substrate Example\\n\\nThis example demonstrates how a substrate can extend XanaNode Core without breaking interoperability.\\n\\nThe substrate defines a local namespace:\\n\\n```text\\nexample.museum\\n```\\n\\nIt adds:\\n\\n- a custom node type: `example.museum:artifact`\\n- a custom relationship type: `example.museum:curatorial_context_for`\\n\\nA reader that does not understand these custom types should still preserve them as declared, namespaced, versioned schema extensions. A reader that does understand them can validate and render them more precisely.\\n\",\n  \"asset_path\": \"assets/raw/protocol/examples/custom-extension-substrate/README.md\",\n  \"content_id\": \"sha256:d5c7d5b2a594d2d8ba0bd40c49cbbb94014a64f9876302981ce0615d244c553f\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/custom-extension-substrate/README.md\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:d5c7d5b2a594d2d8ba0bd40c49cbbb94014a64f9876302981ce0615d244c553f\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_protocol-artifact-examples-custom-extension-substrate-readme.md.json",
+    "method": "archive",
+    "content_id": "sha256:f00896bae4fd7db092c435629cab14bf7156549df4e24d2ef81d68295ce1b790",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

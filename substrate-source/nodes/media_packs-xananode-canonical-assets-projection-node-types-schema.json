@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-projection-node-types-schema",
+  "title": "Packs / Xananode Canonical / Assets / Projection / Node Types / Schema",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/projection/node-types/schema.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/node-types/schema.svg",
+  "artifact_path": "packs/xananode-canonical/assets/projection/node-types/schema.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/projection/node-types/schema.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:877fb779f17225428aabc670ede6e5c7fc9f7a825b0bbd44b2b7a78a6073c39d",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/node-types/schema.svg",
+    "method": "archive",
+    "content_id": "sha256:877fb779f17225428aabc670ede6e5c7fc9f7a825b0bbd44b2b7a78a6073c39d",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

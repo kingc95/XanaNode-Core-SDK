@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-contrasts_with",
+  "title": "Contrasts with",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is usefully contrasted with the target.",
+  "version": "0.5.0",
+  "registry_type": "contrasts_with",
+  "registry_namespace": "xananode",
+  "category": "comparison",
+  "inverse": "contrasts_with",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#a78bfa",
+  "inverse_color": "#ddd6fe",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

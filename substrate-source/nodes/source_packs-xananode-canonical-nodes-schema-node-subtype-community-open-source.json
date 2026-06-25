@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-community-open-source",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Community Open Source",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-community-open_source.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-community-open_source.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-community-open_source.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-community-open_source.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:d8ee22f02b4df5114381361ab7ce9d7f33de50808c98f75248376bf5b092f324",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-community-open_source\",\n  \"title\": \"Community subtype: open source\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"open_source is an allowed subtype of the community node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"open_source\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"community\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-community-open_source.json",
+    "method": "archive",
+    "content_id": "sha256:d8ee22f02b4df5114381361ab7ce9d7f33de50808c98f75248376bf5b092f324",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

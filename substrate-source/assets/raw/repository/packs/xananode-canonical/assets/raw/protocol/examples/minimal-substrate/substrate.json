@@ -1,0 +1,52 @@
+{
+  "id": "example.minimal",
+  "name": "Minimal XanaNode Substrate",
+  "description": "A tiny but complete XanaNode substrate showing that every meaningful node is connected through typed relationships, not only by a trail.",
+  "version": "0.2.0",
+  "namespace": "example.minimal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingc95/xananode.git",
+    "default_branch": "main",
+    "path": "examples/minimal-substrate"
+  },
+  "federation": {
+    "feed": "https://example.com/xananode/minimal/feed.json",
+    "merge_reports": "https://example.com/xananode/minimal/merge-reports/"
+  },
+  "trust": {
+    "signed": false,
+    "trust_scope": [
+      "local_substrate",
+      "assertion"
+    ]
+  },
+  "schema_version": "xananode-core@0.5.0",
+  "license": "CC0-1.0",
+  "branding": {
+    "brand_name": "XanaNode",
+    "tagline": "Relationships preserve knowledge",
+    "description": "Canonical XanaNode protocol branding used by protocol examples and downstream project tools.",
+    "primary_media": "example.minimal:media/xananode-icon",
+    "logo_media": "example.minimal:media/xananode-icon",
+    "icon_media": "example.minimal:media/xananode-icon",
+    "primary_color": "#55D6BE",
+    "accent_color": "#FF8C00",
+    "background_color": "#05070A",
+    "text_color": "#F8FAFC",
+    "source_node": "example.minimal:media/xananode-icon",
+    "rights_status": "open-source",
+    "license": "MIT",
+    "updated_at": "2026-06-19T00:00:00Z",
+    "reason": "Protocol branding is modeled as substrate metadata and media so changes to project identity can be preserved as knowledge."
+  },
+  "maintainers": [
+    {
+      "name": "Example Maintainer",
+      "url": "https://example.com"
+    }
+  ],
+  "imports": [
+    "xananode:core"
+  ]
+}

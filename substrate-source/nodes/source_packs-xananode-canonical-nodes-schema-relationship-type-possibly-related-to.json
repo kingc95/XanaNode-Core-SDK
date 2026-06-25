@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-possibly-related-to",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Possibly Related To",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-possibly_related_to.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-possibly_related_to.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-possibly_related_to.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-possibly_related_to.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:e8ec2524d64e19bab53f1322ca8c72b18f7752d108a2fb792ef357599a129de8",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-possibly_related_to\",\n  \"title\": \"Possibly related to\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source may be related to the target, but the specific relationship is not yet known or justified.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"possibly_related_to\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"discovery\",\n  \"inverse\": \"possibly_related_to\",\n  \"color\": \"#34d399\",\n  \"inverse_color\": \"#a7f3d0\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 2,\n  \"default_visibility\": \"background\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-possibly_related_to.json",
+    "method": "archive",
+    "content_id": "sha256:e8ec2524d64e19bab53f1322ca8c72b18f7752d108a2fb792ef357599a129de8",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-concept-content-license",
+  "title": "Packs / Xananode Canonical / Nodes / Concept Content License",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/concept_content-license.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_content-license.json",
+  "artifact_path": "packs/xananode-canonical/nodes/concept_content-license.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/concept_content-license.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:6d095eaf120d97bacce77b7bb5658b66c6eac38afa94fdffc4054baa32759fc6",
+  "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:concept/content-license\",\n  \"title\": \"Content License\",\n  \"type\": \"concept\",\n  \"subtype\": \"distinction\",\n  \"importance\": 4,\n  \"summary\": \"A license applied to authored text, documentation, examples, or explanatory material rather than executable reference code.\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/concept_content-license.json",
+    "method": "archive",
+    "content_id": "sha256:6d095eaf120d97bacce77b7bb5658b66c6eac38afa94fdffc4054baa32759fc6",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-inquiry_motivated_by",
+  "title": "Inquiry Motivated By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The inquiry_motivated_by inverse relationship term derived from motivates_inquiry.",
+  "version": "0.5.0",
+  "registry_type": "inquiry_motivated_by",
+  "registry_namespace": "xananode",
+  "category": "inquiry",
+  "inverse": "motivates_inquiry",
+  "color": "#99f6e4",
+  "inverse_color": "#2dd4bf",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

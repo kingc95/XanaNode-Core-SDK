@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-type-essay",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Type Essay",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-type-essay.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-essay.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-type-essay.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-type-essay.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:5b165f62b61489198eebe3eff94743c028c6249e5f87c9a23181c4633f0659c3",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-essay\",\n  \"title\": \"Essay\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"A human-authored argument that connects claims, sources, observations, and concepts.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"essay\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"argument\",\n    \"explainer\",\n    \"critique\",\n    \"manifesto\",\n    \"analysis\",\n    \"reflection\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"claims\",\n    \"concepts\",\n    \"people\",\n    \"sources\",\n    \"observations\"\n  ],\n  \"color\": {\n    \"bg\": \"#f59ec3\",\n    \"fg\": \"#1f1020\",\n    \"outline\": \"#ffe3f0\"\n  },\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-essay.json",
+    "method": "archive",
+    "content_id": "sha256:5b165f62b61489198eebe3eff94743c028c6249e5f87c9a23181c4633f0659c3",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

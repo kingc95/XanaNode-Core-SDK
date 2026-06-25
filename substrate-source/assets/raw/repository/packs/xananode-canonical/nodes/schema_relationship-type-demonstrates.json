@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-demonstrates",
+  "title": "Demonstrates",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source provides an example or demonstration of the target.",
+  "version": "0.5.0",
+  "registry_type": "demonstrates",
+  "registry_namespace": "xananode",
+  "category": "evidence",
+  "inverse": "demonstrated_by",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#10b981",
+  "inverse_color": "#6ee7b7",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

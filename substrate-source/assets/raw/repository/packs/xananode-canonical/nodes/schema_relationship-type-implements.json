@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-implements",
+  "title": "Implements",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source implements the target idea, technology, protocol, method, or concept.",
+  "version": "0.5.0",
+  "registry_type": "implements",
+  "registry_namespace": "xananode",
+  "category": "composition",
+  "inverse": "implemented_by",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#22c55e",
+  "inverse_color": "#86efac",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

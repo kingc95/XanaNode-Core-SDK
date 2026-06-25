@@ -1,0 +1,9 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:concept/compatibility-attribution",
+  "title": "Compatibility Attribution",
+  "type": "concept",
+  "subtype": "principle",
+  "importance": 5,
+  "summary": "The convention that implementations should identify themselves as XanaNode-compatible and point to the canonical specification without implying ownership or endorsement."
+}

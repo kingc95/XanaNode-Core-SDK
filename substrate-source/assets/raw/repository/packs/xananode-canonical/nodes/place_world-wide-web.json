@@ -1,0 +1,9 @@
+{
+  "id": "xananode.canonical:place/world-wide-web",
+  "title": "World Wide Web",
+  "type": "place",
+  "subtype": "online_space",
+  "importance": 3,
+  "summary": "The public networked space where XanaNode domains, repositories, documentation, and published substrates are reached.",
+  "relationships": []
+}

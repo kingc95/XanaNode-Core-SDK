@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-enabled-by",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Enabled By",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-enabled_by.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-enabled_by.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-enabled_by.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-enabled_by.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:63e9f3cdf5c55a633a08dbfeeb0eb030b25f22a7613c0aaeb968d411d7064690",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-enabled_by\",\n  \"title\": \"Enabled By Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The enabled_by inverse relationship term derived from enables.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"enabled_by\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"composition\",\n  \"inverse\": \"enables\",\n  \"derived_inverse\": true,\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": [],\n  \"color\": \"#86efac\",\n  \"inverse_color\": \"#22c55e\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-enabled_by.json",
+    "method": "archive",
+    "content_id": "sha256:63e9f3cdf5c55a633a08dbfeeb0eb030b25f22a7613c0aaeb968d411d7064690",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

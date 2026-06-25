@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-publication-xnp-0004-merge-validation",
+  "title": "Packs / Xananode Canonical / Nodes / Publication Xnp 0004 Merge Validation",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/publication_xnp-0004-merge-validation.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/publication_xnp-0004-merge-validation.json",
+  "artifact_path": "packs/xananode-canonical/nodes/publication_xnp-0004-merge-validation.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/publication_xnp-0004-merge-validation.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:e6093950087fb8c612e0ccf5d310a0380f0c2898c3cceec4d9bc5ca8f403f964",
+  "content": "{\n  \"id\": \"xananode.canonical:publication/xnp-0004-merge-validation\",\n  \"title\": \"XNP-0004 Merge Validation\",\n  \"type\": \"publication\",\n  \"subtype\": \"proposal\",\n  \"importance\": 4,\n  \"summary\": \"A protocol proposal describing merge validation for independently authored substrates.\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0004-merge-validation.md\",\n  \"rights_status\": \"open-source\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/proposals/XNP-0004-merge-validation.md\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:61c3fad6292685d0fbbefae2e8ac70b293cf323ae9fd118f71ebaf4119fb7119\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0004-merge-validation.md\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:ac9c6be63b59a84eb131b3e70907ae86c4a564cb5a0705c3e134893ffe93b924\",\n    \"rights_status\": \"open-source\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/publication_xnp-0004-merge-validation.json",
+    "method": "archive",
+    "content_id": "sha256:e6093950087fb8c612e0ccf5d310a0380f0c2898c3cceec4d9bc5ca8f403f964",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

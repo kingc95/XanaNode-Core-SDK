@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-protocol-artifact-registry-namespaces-json",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Protocol Artifact Registry Namespaces.Json",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_protocol-artifact-registry-namespaces.json.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-registry-namespaces.json.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_protocol-artifact-registry-namespaces.json.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_protocol-artifact-registry-namespaces.json.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:df1677acc1b39fb282773c5ce318999ce356a1c2cd99ac8d274c5f0297570c4d",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/protocol-artifact-registry-namespaces.json\",\n  \"title\": \"Registry / Namespaces\",\n  \"type\": \"schema\",\n  \"subtype\": \"protocol_json_artifact\",\n  \"importance\": 3,\n  \"summary\": \"registry/namespaces.json is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"registry/namespaces.json\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/namespaces.json\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"application/json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"Apache-2.0\",\n  \"relationships\": [],\n  \"content\": \"{\\n  \\\"namespaces\\\": [\\n    {\\n      \\\"id\\\": \\\"xananode\\\",\\n      \\\"name\\\": \\\"XanaNode Core\\\",\\n      \\\"description\\\": \\\"Canonical namespace for core XanaNode node and relationship types.\\\",\\n      \\\"schema\\\": \\\"../schemas/\\\"\\n    },\\n    {\\n      \\\"id\\\": \\\"xananode.canonical\\\",\\n      \\\"name\\\": \\\"XanaNode Canonical Substrate Namespace\\\",\\n      \\\"description\\\": \\\"Namespace used by the standalone canonical XanaNode substrate.\\\",\\n      \\\"federation_target\\\": \\\"xananode.canonical\\\"\\n    },\\n    {\\n      \\\"id\\\": \\\"xananode.alphabet\\\",\\n      \\\"name\\\": \\\"XanaNode Alphabet Example Namespace\\\",\\n      \\\"description\\\": \\\"Namespace used by the tiny alphabet substrate for federation, media, and trail testing.\\\",\\n      \\\"federation_target\\\": \\\"xananode.alphabet\\\"\\n    },\\n    {\\n      \\\"id\\\": \\\"example.minimal\\\",\\n      \\\"name\\\": \\\"Minimal Example Namespace\\\",\\n      \\\"description\\\": \\\"Namespace used by the minimal example substrate.\\\",\\n      \\\"example\\\": \\\"../examples/minimal-substrate/\\\"\\n    },\\n    {\\n      \\\"id\\\": \\\"example.museum\\\",\\n      \\\"name\\\": \\\"Museum Extension Example Namespace\\\",\\n      \\\"description\\\": \\\"Namespace used by the custom extension example substrate.\\\",\\n      \\\"example\\\": \\\"../examples/custom-extension-substrate/\\\"\\n    },\\n    {\\n      \\\"id\\\": \\\"example.researcher_a\\\",\\n      \\\"name\\\": \\\"Federation Example A Namespace\\\",\\n      \\\"description\\\": \\\"Namespace used by the first independently authored federation example substrate.\\\",\\n      \\\"example\\\": \\\"../examples/federation-example/substrate-a/\\\"\\n    },\\n    {\\n      \\\"id\\\": \\\"example.researcher_b\\\",\\n      \\\"name\\\": \\\"Federation Example B Namespace\\\",\\n      \\\"description\\\": \\\"Namespace used by the second independently authored federation example substrate.\\\",\\n      \\\"example\\\": \\\"../examples/federation-example/substrate-b/\\\"\\n    },\\n    {\\n      \\\"id\\\": \\\"example.merge\\\",\\n      \\\"name\\\": \\\"Federation Merge Report Example Namespace\\\",\\n      \\\"description\\\": \\\"Namespace used for merge report and mapping records in the federation example.\\\",\\n      \\\"example\\\": \\\"../examples/federation-example/\\\"\\n    }\\n  ]\\n}\\n\",\n  \"asset_path\": \"assets/raw/protocol/registry/namespaces.json\",\n  \"content_id\": \"sha256:1c70d6330e60e757cbf30eef1f6f1d0cc57a6993467bb7680e831ec4573ab7f6\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/namespaces.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:1c70d6330e60e757cbf30eef1f6f1d0cc57a6993467bb7680e831ec4573ab7f6\",\n    \"rights_status\": \"Apache-2.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-registry-namespaces.json.json",
+    "method": "archive",
+    "content_id": "sha256:df1677acc1b39fb282773c5ce318999ce356a1c2cd99ac8d274c5f0297570c4d",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

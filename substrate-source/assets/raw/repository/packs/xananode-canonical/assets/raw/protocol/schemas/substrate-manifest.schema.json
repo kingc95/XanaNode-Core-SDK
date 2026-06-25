@@ -1,0 +1,306 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/substrate-manifest.schema.json",
+  "title": "Substrate Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "version", "namespace", "repository"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "namespace": { "type": "string" },
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "url", "default_branch"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["git"]
+        },
+        "url": { "type": "string" },
+        "default_branch": { "type": "string" },
+        "path": { "type": "string" },
+        "commit": { "type": "string" }
+      }
+    },
+    "federation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "inbox": { "type": "string", "format": "uri" },
+        "outbox": { "type": "string", "format": "uri" },
+        "feed": { "type": "string", "format": "uri" },
+        "merge_reports": { "type": "string", "format": "uri" },
+        "mapping_endpoint": { "type": "string", "format": "uri" }
+      }
+    },
+    "trust": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "signed": { "type": "boolean" },
+        "signature": { "type": "string" },
+        "public_key": { "type": "string" },
+        "trust_scope": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["local_substrate", "imported_schema", "mapping", "assertion"]
+          }
+        }
+      }
+    },
+    "description": { "type": "string" },
+    "branding": {
+      "$ref": "#/$defs/branding"
+    },
+    "build_metadata": {
+      "$ref": "#/$defs/build_metadata"
+    },
+    "schema_version": { "type": "string" },
+    "license": { "type": "string" },
+    "sharing": {
+      "type": "object",
+      "description": "Substrate-level sharing policy. The default is shareable unless a node, trail, or explicit rule excludes records.",
+      "additionalProperties": false,
+      "properties": {
+        "default_shareable": {
+          "type": "boolean",
+          "description": "Whether nodes are shareable by default when they do not declare their own sharing rule."
+        },
+        "excluded_nodes": {
+          "type": "array",
+          "description": "Node ids that must not be included in shared exports or mounted public projections.",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "excluded_trails": {
+          "type": "array",
+          "description": "Trail node ids whose listed trail nodes should be excluded unless a node explicitly opts back in.",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "excluded_relationships": {
+          "type": "array",
+          "description": "Relationship ids that must not be included in shared exports or mounted public projections.",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "rules": {
+          "type": "array",
+          "description": "Named sharing rules for selectors a tool understands, such as type, subtype, tag, path, trail, or namespace.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["selector", "shareable"],
+            "properties": {
+              "selector": {
+                "type": "object",
+                "additionalProperties": true,
+                "description": "Selector interpreted by tools, commonly {type}, {subtype}, {tag}, {trail}, {path}, or {namespace}."
+              },
+              "shareable": { "type": "boolean" },
+              "scope": {
+                "type": "string",
+                "enum": ["public", "unlisted", "trusted", "private"]
+              },
+              "reason": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "maintainers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "imports": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "source", "mode"],
+            "properties": {
+              "id": { "type": "string" },
+              "source": { "type": "string" },
+              "mode": {
+                "type": "string",
+                "enum": ["mounted", "imported", "merged", "absorbed"]
+              },
+              "version": { "type": "string" },
+              "description": { "type": "string" },
+              "required": { "type": "boolean" },
+              "repository": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["git"]
+                  },
+                  "url": { "type": "string" },
+                  "branch": { "type": "string" },
+                  "commit": { "type": "string" },
+                  "archive": { "type": "string" }
+                }
+              },
+              "archive": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "media_type": { "type": "string" },
+                  "file": { "type": "string" },
+                  "sha256": { "type": "string" },
+                  "created_at": { "type": "string", "format": "date-time" }
+                }
+              },
+              "namespace_mappings": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["from", "to", "scope"],
+                  "properties": {
+                    "from": { "type": "string" },
+                    "to": { "type": "string" },
+                    "scope": {
+                      "type": "string",
+                      "enum": ["relationships", "all"]
+                    },
+                    "reason": { "type": "string" }
+                  }
+                }
+              },
+              "trust": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "signed": { "type": "boolean" },
+                  "signature": { "type": "string" },
+                  "public_key": { "type": "string" }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "pack": {
+      "type": "object",
+      "description": "Metadata used when this manifest describes a portable substrate pack rather than only a live authored substrate.",
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["mounted", "imported", "merged", "absorbed"]
+        },
+        "built_by": { "type": "string" },
+        "built_at": { "type": "string", "format": "date-time" },
+        "build_metadata": {
+          "$ref": "#/$defs/build_metadata"
+        },
+        "portable": { "type": "boolean" },
+        "archive_name": { "type": "string" },
+        "archive_media_type": { "type": "string" },
+        "source_manifests": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" },
+              "namespace": { "type": "string" },
+              "version": { "type": "string" },
+              "repository": { "type": "object" }
+            }
+          }
+        }
+      }
+    },
+    "extensions": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "branding": {
+      "type": "object",
+      "description": "Portable branding metadata for a substrate or pack. Branding assets should be represented as media nodes and referenced here by node id.",
+      "additionalProperties": false,
+      "properties": {
+        "brand_name": { "type": "string" },
+        "tagline": { "type": "string" },
+        "description": { "type": "string" },
+        "primary_media": { "type": "string" },
+        "logo_media": { "type": "string" },
+        "icon_media": { "type": "string" },
+        "primary_color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "accent_color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "background_color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "text_color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "source_node": { "type": "string" },
+        "rights_status": { "type": "string" },
+        "license": { "type": "string" },
+        "updated_at": { "type": "string", "format": "date-time" },
+        "reason": { "type": "string" }
+      }
+    },
+    "build_metadata": {
+      "type": "object",
+      "description": "Build and runtime provenance for generated substrates, packs, renderer output, and software-created artifacts.",
+      "additionalProperties": false,
+      "properties": {
+        "version": { "type": "string" },
+        "git_commit": { "type": "string" },
+        "git_branch": { "type": "string" },
+        "repository": { "type": "string" },
+        "built_at": { "type": "string", "format": "date-time" },
+        "compiled_at": { "type": "string", "format": "date-time" },
+        "generated_at": { "type": "string", "format": "date-time" },
+        "built_by": { "type": "string" },
+        "runtime": { "type": "string" },
+        "platform": { "type": "string" },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string" },
+              "version": { "type": "string" },
+              "repository": { "type": "string" },
+              "relationship": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

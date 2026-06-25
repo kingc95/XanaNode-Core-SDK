@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-question-research-question",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Question Research Question",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-question-research_question.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-question-research_question.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-question-research_question.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-question-research_question.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:4aae1d32fc97b3475a7abe91bb7cfdc6c411ca46d38f3b29e1dc071a6a09daf0",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-question-research_question\",\n  \"title\": \"Question subtype: research question\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"research_question is an allowed subtype of the question node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"research_question\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"question\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-question-research_question.json",
+    "method": "archive",
+    "content_id": "sha256:4aae1d32fc97b3475a7abe91bb7cfdc6c411ca46d38f3b29e1dc071a6a09daf0",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

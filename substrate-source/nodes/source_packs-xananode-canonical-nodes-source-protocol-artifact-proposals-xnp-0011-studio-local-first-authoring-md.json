@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-protocol-artifact-proposals-xnp-0011-studio-local-first-authoring-md",
+  "title": "Packs / Xananode Canonical / Nodes / Source Protocol Artifact Proposals Xnp 0011 Studio Local First Authoring.Md",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_protocol-artifact-proposals-xnp-0011-studio-local-first-authoring.md.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_protocol-artifact-proposals-xnp-0011-studio-local-first-authoring.md.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_protocol-artifact-proposals-xnp-0011-studio-local-first-authoring.md.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_protocol-artifact-proposals-xnp-0011-studio-local-first-authoring.md.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:e58acc40b89135195574f9467648777bcf4633f261aa0faa011079cb6fae8902",
+  "content": "{\n  \"id\": \"xananode.canonical:source/protocol-artifact-proposals-xnp-0011-studio-local-first-authoring.md\",\n  \"title\": \"Proposals / XNP 0011 Studio Local First Authoring\",\n  \"type\": \"source\",\n  \"subtype\": \"protocol_document\",\n  \"importance\": 3,\n  \"summary\": \"proposals/XNP-0011-studio-local-first-authoring.md is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"proposals/XNP-0011-studio-local-first-authoring.md\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0011-studio-local-first-authoring.md\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"text/markdown\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"CC-BY-4.0\",\n  \"relationships\": [],\n  \"content\": \"# XNP-0011: Studio Local-First Authoring\\n\\nStatus: Draft\\n\\n## Summary\\n\\nCaptures the Studio product direction as local-first Git-backed authoring for knowledge substrates.\\n\\n## Decision\\n\\nStudio should treat a substrate as a local Git repository and expose user-facing concepts before raw Git mechanics.\\n\\nAuthor-facing language:\\n\\n- save snapshot\\n- draft path\\n- bring changes together\\n- propose changes\\n- what changed\\n- history\\n\\nThe Studio MVP should focus on opening substrate repos, editing nodes, adding relationships, validating, previewing with the Hugo implementation, saving snapshots, and publishing.\\n\",\n  \"asset_path\": \"assets/raw/protocol/proposals/XNP-0011-studio-local-first-authoring.md\",\n  \"content_id\": \"sha256:3cc4f574705261f5fcaf53eeb0152d530385a3cf13c4a7030edabb4cbc01a40e\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0011-studio-local-first-authoring.md\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:3cc4f574705261f5fcaf53eeb0152d530385a3cf13c4a7030edabb4cbc01a40e\",\n    \"rights_status\": \"CC-BY-4.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_protocol-artifact-proposals-xnp-0011-studio-local-first-authoring.md.json",
+    "method": "archive",
+    "content_id": "sha256:e58acc40b89135195574f9467648777bcf4633f261aa0faa011079cb6fae8902",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

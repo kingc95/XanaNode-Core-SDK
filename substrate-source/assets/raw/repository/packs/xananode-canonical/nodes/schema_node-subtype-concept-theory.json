@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-concept-theory",
+  "title": "Concept subtype: theory",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "theory is an allowed subtype of the concept node type.",
+  "version": "0.3.0",
+  "registry_type": "theory",
+  "registry_namespace": "xananode",
+  "parent_node_type": "concept",
+  "relationships": []
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xananode.org/schemas/substrate-diff.schema.json",
+  "title": "Substrate Diff",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "base", "head", "changes"],
+  "properties": {
+    "id": { "type": "string" },
+    "base": { "type": "string" },
+    "head": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "changes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nodes", "relationships", "schemas", "fragments"],
+      "properties": {
+        "nodes": { "$ref": "#/$defs/changeSet" },
+        "relationships": { "$ref": "#/$defs/changeSet" },
+        "schemas": { "$ref": "#/$defs/changeSet" },
+        "fragments": { "$ref": "#/$defs/changeSet" }
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "summary"],
+        "properties": {
+          "type": { "type": "string" },
+          "nodes": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "resolution": { "type": "string" },
+          "summary": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "changeSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["added", "removed", "changed"],
+      "properties": {
+        "added": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "removed": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "changed": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

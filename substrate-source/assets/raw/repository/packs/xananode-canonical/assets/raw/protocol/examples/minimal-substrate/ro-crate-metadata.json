@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    "../../contexts/xananode.context.jsonld"
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Minimal XanaNode Substrate",
+      "license": "CC0-1.0",
+      "hasPart": [
+        {
+          "@id": "substrate.json"
+        },
+        {
+          "@id": "relationships.json"
+        },
+        {
+          "@id": "nodes/claim-substrate-structure.json"
+        },
+        {
+          "@id": "nodes/fragment-as-we-may-think-0004.json"
+        }
+      ]
+    }
+  ]
+}

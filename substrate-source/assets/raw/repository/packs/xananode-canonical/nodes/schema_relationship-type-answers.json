@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-answers",
+  "title": "Answers",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source answers the target question or information request.",
+  "version": "0.5.0",
+  "registry_type": "answers",
+  "registry_namespace": "xananode",
+  "category": "inquiry",
+  "inverse": "answered_by",
+  "color": "#2dd4bf",
+  "inverse_color": "#99f6e4",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": []
+}

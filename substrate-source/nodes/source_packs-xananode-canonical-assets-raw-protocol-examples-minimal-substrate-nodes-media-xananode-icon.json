@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-examples-minimal-substrate-nodes-media-xananode-icon",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Examples / Minimal Substrate / Nodes / Media Xananode Icon",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/media-xananode-icon.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/media-xananode-icon.json",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/media-xananode-icon.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/media-xananode-icon.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:dd583068751b1a3cf9dfed12fbd81a8878ba05c1aa87caf69e261e3aa8b9a1e0",
+  "content": "{\n  \"id\": \"example.minimal:media/xananode-icon\",\n  \"title\": \"XanaNode Icon\",\n  \"type\": \"media\",\n  \"subtype\": \"logo\",\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"importance\": 5,\n  \"summary\": \"The canonical XanaNode protocol icon used as a portable branding asset.\",\n  \"alt\": \"An abstract X-shaped network logo with a central node and blue and orange relationship lines connecting outer nodes.\",\n  \"asset_path\": \"assets/branding/xananode-icon.svg\",\n  \"asset_role\": \"primary_media\",\n  \"caption\": \"XanaNode protocol icon\",\n  \"creator\": \"Christian Siefen\",\n  \"created_date\": \"2026-06-16T00:00:00Z\",\n  \"source_name\": \"XanaNode Protocol\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode\",\n  \"license\": \"MIT\",\n  \"rights_status\": \"open-source\",\n  \"relationships\": [\n    {\n      \"id\": \"example.minimal:rel/substrate-has-primary-media\",\n      \"type\": \"has_primary_media\",\n      \"source\": \"example.minimal:concept/knowledge-substrate\",\n      \"direction\": \"incoming\"\n    }\n  ]\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/minimal-substrate/nodes/media-xananode-icon.json",
+    "method": "archive",
+    "content_id": "sha256:dd583068751b1a3cf9dfed12fbd81a8878ba05c1aa87caf69e261e3aa8b9a1e0",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

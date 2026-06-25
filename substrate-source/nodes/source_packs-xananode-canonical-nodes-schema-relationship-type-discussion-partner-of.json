@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-discussion-partner-of",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Discussion Partner Of",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-discussion_partner_of.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-discussion_partner_of.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-discussion_partner_of.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-discussion_partner_of.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:ab32d74bc07169fe1bf7b361a11e9d76dd19af55d7aae0a69f84ed59756ff19a",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-discussion_partner_of\",\n  \"title\": \"Discussion Partner Of Relationship Term\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 4,\n  \"summary\": \"The discussion_partner_of inverse relationship term derived from discussed_with.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"discussion_partner_of\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"communication\",\n  \"inverse\": \"discussed_with\",\n  \"color\": \"#bae6fd\",\n  \"inverse_color\": \"#38bdf8\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"derived_inverse\": true,\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-discussion_partner_of.json",
+    "method": "archive",
+    "content_id": "sha256:ab32d74bc07169fe1bf7b361a11e9d76dd19af55d7aae0a69f84ed59756ff19a",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

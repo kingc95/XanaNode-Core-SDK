@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-type-knowledge-gap",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Type Knowledge Gap",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-type-knowledge_gap.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-knowledge_gap.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-type-knowledge_gap.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-type-knowledge_gap.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:282dd78ae9f5cfe51d6a60e57664cb93c9a600f2a19fb04da290068430bf8409",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-knowledge_gap\",\n  \"title\": \"Knowledge Gap\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"A known absence, uncertainty, missing source, missing citation, lost document, unknown author, or unresolved area in a substrate.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"knowledge_gap\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"missing_source\",\n    \"missing_citation\",\n    \"unknown_author\",\n    \"lost_document\",\n    \"historical_uncertainty\",\n    \"incomplete_context\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"status\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"uncertainty_level\",\n    \"review_status\",\n    \"research_priority\",\n    \"requires_source\",\n    \"requires_context\",\n    \"questions\",\n    \"sources\"\n  ],\n  \"color\": {\n    \"bg\": \"#64748b\",\n    \"fg\": \"#f8fafc\",\n    \"outline\": \"#cbd5e1\"\n  },\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-knowledge_gap.json",
+    "method": "archive",
+    "content_id": "sha256:282dd78ae9f5cfe51d6a60e57664cb93c9a600f2a19fb04da290068430bf8409",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

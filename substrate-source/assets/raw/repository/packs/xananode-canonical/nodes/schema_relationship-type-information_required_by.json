@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-information_required_by",
+  "title": "Information Required By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The information_required_by inverse relationship term derived from requires_information.",
+  "version": "0.5.0",
+  "registry_type": "information_required_by",
+  "registry_namespace": "xananode",
+  "category": "knowledge_workflow",
+  "inverse": "requires_information",
+  "color": "#a5f3fc",
+  "inverse_color": "#06b6d4",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

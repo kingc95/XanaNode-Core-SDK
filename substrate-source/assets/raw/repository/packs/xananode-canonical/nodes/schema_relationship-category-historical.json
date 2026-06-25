@@ -1,0 +1,16 @@
+{
+  "id": "xananode.canonical:schema/relationship-category-historical",
+  "title": "Historical Relationship Category",
+  "type": "schema",
+  "subtype": "relationship_category_schema",
+  "importance": 4,
+  "summary": "The historical category groups relationship types with related meaning.",
+  "version": "0.5.0",
+  "registry_type": "historical",
+  "registry_namespace": "xananode",
+  "relationships": [],
+  "color": "#c084fc",
+  "inverse_color": "#e9d5ff",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

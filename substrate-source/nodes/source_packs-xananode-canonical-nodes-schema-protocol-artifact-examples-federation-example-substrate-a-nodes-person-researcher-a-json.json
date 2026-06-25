@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-protocol-artifact-examples-federation-example-substrate-a-nodes-person-researcher-a-json",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Protocol Artifact Examples Federation Example Substrate A Nodes Person Researcher A.Json",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_protocol-artifact-examples-federation-example-substrate-a-nodes-person-researcher-a.json.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-federation-example-substrate-a-nodes-person-researcher-a.json.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_protocol-artifact-examples-federation-example-substrate-a-nodes-person-researcher-a.json.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-federation-example-substrate-a-nodes-person-researcher-a.json.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:d9c2f27ff9ea83a4ea46a8847160d21a07294e63d9445a66e8c2b273ac60bba4",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/protocol-artifact-examples-federation-example-substrate-a-nodes-person-researcher-a.json\",\n  \"title\": \"Examples / Federation Example / Substrate A / Nodes / Person Researcher A\",\n  \"type\": \"schema\",\n  \"subtype\": \"protocol_json_artifact\",\n  \"importance\": 3,\n  \"summary\": \"examples/federation-example/substrate-a/nodes/person-researcher-a.json is preserved as a raw protocol artifact in the XanaNode canonical substrate.\",\n  \"artifact_path\": \"examples/federation-example/substrate-a/nodes/person-researcher-a.json\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/nodes/person-researcher-a.json\",\n  \"media_type\": \"document\",\n  \"mime_type\": \"application/json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"rights_status\": \"Apache-2.0\",\n  \"relationships\": [],\n  \"content\": \"{\\r\\n  \\\"id\\\": \\\"example.researcher_a:person/researcher-a\\\",\\r\\n  \\\"title\\\": \\\"Researcher A\\\",\\r\\n  \\\"type\\\": \\\"person\\\",\\r\\n  \\\"importance\\\": 3,\\r\\n  \\\"summary\\\": \\\"The local actor responsible for assertions in federation example substrate A.\\\",\\r\\n  \\\"created_at\\\": \\\"2026-01-01T00:00:00Z\\\",\\r\\n  \\\"relationships\\\": []\\r\\n}\\r\\n\",\n  \"asset_path\": \"assets/raw/protocol/examples/federation-example/substrate-a/nodes/person-researcher-a.json\",\n  \"content_id\": \"sha256:528b2178a8ec0b2106fe9fc138b9297242f8d720bd257634c6f40940cabff65a\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/nodes/person-researcher-a.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:528b2178a8ec0b2106fe9fc138b9297242f8d720bd257634c6f40940cabff65a\",\n    \"rights_status\": \"Apache-2.0\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_protocol-artifact-examples-federation-example-substrate-a-nodes-person-researcher-a.json.json",
+    "method": "archive",
+    "content_id": "sha256:d9c2f27ff9ea83a4ea46a8847160d21a07294e63d9445a66e8c2b273ac60bba4",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

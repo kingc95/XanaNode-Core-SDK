@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-xananode-kernel-for-human-thought-draft",
+  "title": "Packs / Xananode Canonical / Nodes / Source Xananode Kernel For Human Thought Draft",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_xananode-kernel-for-human-thought-draft.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_xananode-kernel-for-human-thought-draft.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_xananode-kernel-for-human-thought-draft.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_xananode-kernel-for-human-thought-draft.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:8a0fc6ce6961982783cd75fb856dc2e0dd1b728f322bc24cd590ae4ef6ef8083",
+  "content": "{\n  \"id\": \"xananode.canonical:source/xananode-kernel-for-human-thought-draft\",\n  \"title\": \"XanaNode As A Kernel For Human Thought Draft\",\n  \"type\": \"source\",\n  \"importance\": 4,\n  \"summary\": \"A raw authored comparison that frames XanaNode as an open foundational substrate layer for knowledge in the way Linux became an open foundational kernel for computing.\",\n  \"created_by\": \"xananode.canonical:person/christian-siefen\",\n  \"created_at\": \"2026-06-22T00:00:00.000Z\",\n  \"rights_status\": \"canonical-public\",\n  \"content_id\": \"sha256:xananode-kernel-for-human-thought-draft-source\",\n  \"version_id\": \"sha256:xananode-kernel-for-human-thought-draft-source-v1\",\n  \"content\": \"When Linus Torvalds created Linux, he did not build a flashy consumer application. He built an open foundational kernel, a plumbing layer that handles how a computer operates, manages memory, and talks to hardware. Because that plumbing was open, standard, and free, it became the invisible engine underneath Android phones, enterprise cloud servers, smart TVs, and supercomputers.\\n\\nXanaNode is trying to do the same thing for knowledge. It is not a notes app trying to trap attention inside one interface. It is a substrate protocol and stack layer meant to let knowledge move between tools without losing its structure.\\n\\nThe Core SDK plays the role of shared plumbing. It is renderer-independent and handles the baseline rules of structure, relationship typing, fragment tracking, validation, and export so every projection does not have to reinvent them.\\n\\nThe substrate and the projection are intentionally separated. In Linux, people interact through distributions such as Ubuntu, Fedora, or Red Hat while the kernel remains the underlying contract. In XanaNode, the same substrate can be viewed through Studio, Mobile, Hugo, or a future projection that does not exist yet. The tool is a lens over the data, not the data itself.\\n\\nThat separation matters because it prevents knowledge from being held hostage by one product. If a proprietary notes tool collapses, changes pricing, or drifts away from its users, the knowledge goes with it. XanaNode keeps the substrate local, protocol-shaped, and portable, so another compatible projection can pick it up and keep going.\\n\\nFederation is the ecosystem layer. Linux did not become important because one company owned all computation. It mattered because many independent actors could build on a common base. XanaNode aims for the same pattern with independently authored substrates that can mount, compare, and merge without surrendering provenance, lineage, disagreement, or ownership.\\n\\nThe point is not another app. The point is an open substrate ecosystem for durable human-to-machine knowledge transfer.\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_xananode-kernel-for-human-thought-draft.json",
+    "method": "archive",
+    "content_id": "sha256:8a0fc6ce6961982783cd75fb856dc2e0dd1b728f322bc24cd590ae4ef6ef8083",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

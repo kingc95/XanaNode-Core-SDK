@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-place-institution_site",
+  "title": "Place subtype: institution site",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "institution_site is an allowed subtype of the place node type.",
+  "version": "0.3.0",
+  "registry_type": "institution_site",
+  "registry_namespace": "xananode",
+  "parent_node_type": "place",
+  "relationships": []
+}

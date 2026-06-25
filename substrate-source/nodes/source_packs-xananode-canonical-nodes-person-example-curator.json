@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-person-example-curator",
+  "title": "Packs / Xananode Canonical / Nodes / Person Example Curator",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/person_example-curator.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/person_example-curator.json",
+  "artifact_path": "packs/xananode-canonical/nodes/person_example-curator.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/person_example-curator.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:e7f9be124f2021b41ea86e5751422df1752b0e30f5b49fbf086587bccb8ebe08",
+  "content": "{\n  \"id\": \"example.museum:person/example-curator\",\n  \"title\": \"Example Museum Curator\",\n  \"type\": \"person\",\n  \"importance\": 3,\n  \"summary\": \"The local actor responsible for curating and asserting the museum extension example.\",\n  \"created_at\": \"2026-01-01T00:00:00Z\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/person_example-curator.json",
+    "method": "archive",
+    "content_id": "sha256:e7f9be124f2021b41ea86e5751422df1752b0e30f5b49fbf086587bccb8ebe08",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

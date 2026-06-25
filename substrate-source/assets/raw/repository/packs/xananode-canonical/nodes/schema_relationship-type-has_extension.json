@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-has_extension",
+  "title": "Has Extension Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The has_extension inverse relationship term derived from extension_of.",
+  "version": "0.5.0",
+  "registry_type": "has_extension",
+  "registry_namespace": "xananode",
+  "category": "schema_mapping",
+  "inverse": "extension_of",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#a5f3fc",
+  "inverse_color": "#22d3ee",
+  "line_style": "double",
+  "inverse_line_style": "double"
+}

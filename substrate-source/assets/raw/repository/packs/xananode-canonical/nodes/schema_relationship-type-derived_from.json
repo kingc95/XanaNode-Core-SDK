@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-derived_from",
+  "title": "Derived from",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source descends from or is based on the target.",
+  "version": "0.5.0",
+  "registry_type": "derived_from",
+  "registry_namespace": "xananode",
+  "category": "lineage",
+  "inverse": "derived_into",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#8b5cf6",
+  "inverse_color": "#c4b5fd",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

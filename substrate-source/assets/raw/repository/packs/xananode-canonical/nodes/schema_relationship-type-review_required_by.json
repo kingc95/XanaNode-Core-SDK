@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-review_required_by",
+  "title": "Review Required By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The review_required_by inverse relationship term derived from requires_review.",
+  "version": "0.5.0",
+  "registry_type": "review_required_by",
+  "registry_namespace": "xananode",
+  "category": "knowledge_workflow",
+  "inverse": "requires_review",
+  "color": "#a5f3fc",
+  "inverse_color": "#06b6d4",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

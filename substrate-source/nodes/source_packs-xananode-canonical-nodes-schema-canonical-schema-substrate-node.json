@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-canonical-schema-substrate-node",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Canonical Schema Substrate Node",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_canonical-schema-substrate-node.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-substrate-node.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_canonical-schema-substrate-node.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_canonical-schema-substrate-node.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:201ca96fb8ec220557cea1584f58ab032969ad16d1664c52075fcbe44f42fefc",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/canonical-schema-substrate-node\",\n  \"title\": \"Substrate Node Schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"canonical_schema_record\",\n  \"importance\": 5,\n  \"summary\": \"Canonical schema registry entry for substrate-node.\",\n  \"registry_type\": \"substrate-node\",\n  \"version\": \"0.1.0\",\n  \"schema_path\": \"../schemas/substrate-node.schema.json\",\n  \"artifact_path\": \"\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-node.schema.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/substrate-node.schema.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:ccdc11cc758a71b7ec54db8aa9311ea9c22bddb59de1b6eb37fea51950a2e3f8\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-node.schema.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:ccdc11cc758a71b7ec54db8aa9311ea9c22bddb59de1b6eb37fea51950a2e3f8\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_canonical-schema-substrate-node.json",
+    "method": "archive",
+    "content_id": "sha256:201ca96fb8ec220557cea1584f58ab032969ad16d1664c52075fcbe44f42fefc",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

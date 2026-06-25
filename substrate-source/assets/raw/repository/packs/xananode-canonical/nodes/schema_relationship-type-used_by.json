@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-used_by",
+  "title": "Used By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The used_by inverse relationship term derived from uses.",
+  "version": "0.5.0",
+  "registry_type": "used_by",
+  "registry_namespace": "xananode",
+  "category": "composition",
+  "inverse": "uses",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#86efac",
+  "inverse_color": "#22c55e",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

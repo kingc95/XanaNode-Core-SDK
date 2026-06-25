@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-mit-license",
+  "title": "Packs / Xananode Canonical / Nodes / Source Mit License",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_mit-license.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_mit-license.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_mit-license.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_mit-license.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:8618f1c92dd61296612c3d2b65e1a329bfaebe7ea898fc61f8a94f1e37afeb11",
+  "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:source/mit-license\",\n  \"title\": \"MIT License\",\n  \"type\": \"source\",\n  \"subtype\": \"license\",\n  \"importance\": 3,\n  \"summary\": \"A widely used permissive open source license included as a comparative licensing concept.\",\n  \"source_url\": \"https://opensource.org/license/mit/\",\n  \"rights_status\": \"external\",\n  \"license\": \"MIT\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_mit-license.json",
+    "method": "archive",
+    "content_id": "sha256:8618f1c92dd61296612c3d2b65e1a329bfaebe7ea898fc61f8a94f1e37afeb11",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

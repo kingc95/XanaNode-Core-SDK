@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-type-registry",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Type Registry",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-type-registry.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-registry.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-type-registry.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-type-registry.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:70807e91ad60cd934c1696157af7da638c966daad47ace61b0beb45588538589",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-registry\",\n  \"title\": \"Node Type Registry\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The canonical registry of current XanaNode node types, subtypes, visual treatment hints, and frontmatter recommendations.\",\n  \"version\": \"0.3.0\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-node-types.v0.3.0.json\",\n  \"relationships\": [],\n  \"asset_path\": \"assets/raw/protocol/schemas/xananode-node-types.v0.3.0.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:8b0e0470cf4f12b43772a8dddf27df56d6689abf9772d36b5693360230469fbc\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-node-types.v0.3.0.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:d8a0628460ba11797103ffac6634d3201df91fee54f49d9d9911283fc32e8ec1\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-registry.json",
+    "method": "archive",
+    "content_id": "sha256:70807e91ad60cd934c1696157af7da638c966daad47ace61b0beb45588538589",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

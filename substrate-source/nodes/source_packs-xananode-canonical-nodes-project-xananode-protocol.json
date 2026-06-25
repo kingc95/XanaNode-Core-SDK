@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-project-xananode-protocol",
+  "title": "Packs / Xananode Canonical / Nodes / Project Xananode Protocol",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/project_xananode-protocol.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/project_xananode-protocol.json",
+  "artifact_path": "packs/xananode-canonical/nodes/project_xananode-protocol.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/project_xananode-protocol.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:7ae40a95d0afe6f0eae15210b2729bb239ab060934aefe6b2ab8d9e069ea17e4",
+  "content": "{\n  \"id\": \"xananode.canonical:project/xananode-protocol\",\n  \"title\": \"XanaNode Protocol\",\n  \"type\": \"project\",\n  \"subtypes\": [\n    \"standard\",\n    \"protocol\"\n  ],\n  \"status\": \"active\",\n  \"importance\": 4,\n  \"summary\": \"Canonical XanaNode protocol repository containing schemas, registries, specs, governance, examples, branding, and proposals.\",\n  \"relationships\": [],\n  \"subtype\": \"protocol\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode\",\n  \"repository\": \"kingc95/XanaNode\",\n  \"protocol_role\": \"schema-and-governance-source\",\n  \"software_version\": \"\",\n  \"build_metadata\": {\n    \"version\": \"\",\n    \"repository\": \"kingc95/XanaNode\",\n    \"generated_at\": \"2026-06-25T14:00:25.114Z\",\n    \"built_by\": \"@xananode/core\",\n    \"git_commit\": \"\",\n    \"git_branch\": \"\",\n    \"dependencies\": []\n  },\n  \"consumes\": [],\n  \"related_protocol_artifacts\": [\n    \"../schemas/\",\n    \"../registry/\",\n    \"../specs/\",\n    \"../governance/\",\n    \"../examples/minimal-substrate/\"\n  ]\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/project_xananode-protocol.json",
+    "method": "archive",
+    "content_id": "sha256:7ae40a95d0afe6f0eae15210b2729bb239ab060934aefe6b2ab8d9e069ea17e4",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

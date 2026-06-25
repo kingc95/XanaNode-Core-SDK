@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-repository-kingc95-xananode-core-sdk",
+  "title": "Packs / Xananode Canonical / Nodes / Source Repository Kingc95 Xananode Core Sdk",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_repository-kingc95-xananode-core-sdk.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_repository-kingc95-xananode-core-sdk.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_repository-kingc95-xananode-core-sdk.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_repository-kingc95-xananode-core-sdk.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:97160381a2a9c7d41f395acdda6cbfa662a2573acc9565ffe8bd89eff96ebd7b",
+  "content": "{\n  \"id\": \"xananode.canonical:source/repository-kingc95-xananode-core-sdk\",\n  \"title\": \"XanaNode Core SDK Repository\",\n  \"type\": \"source\",\n  \"subtype\": \"git_repository\",\n  \"importance\": 4,\n  \"summary\": \"Public Git repository for XanaNode Core SDK.\",\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Core-SDK\",\n  \"repository\": \"kingc95/XanaNode-Core-SDK\",\n  \"rights_status\": \"external\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_repository-kingc95-xananode-core-sdk.json",
+    "method": "archive",
+    "content_id": "sha256:97160381a2a9c7d41f395acdda6cbfa662a2573acc9565ffe8bd89eff96ebd7b",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

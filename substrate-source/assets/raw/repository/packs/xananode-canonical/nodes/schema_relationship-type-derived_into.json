@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-derived_into",
+  "title": "Derived Into Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The derived_into inverse relationship term derived from derived_from.",
+  "version": "0.5.0",
+  "registry_type": "derived_into",
+  "registry_namespace": "xananode",
+  "category": "lineage",
+  "inverse": "derived_from",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#c4b5fd",
+  "inverse_color": "#8b5cf6",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

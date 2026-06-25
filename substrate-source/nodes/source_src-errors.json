@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-src-errors",
+  "title": "Src / Errors",
+  "type": "source",
+  "subtype": "reference_code",
+  "importance": 4,
+  "summary": "src/errors.js is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/errors.js",
+  "artifact_path": "src/errors.js",
+  "asset_path": "assets/raw/repository/src/errors.js",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/javascript",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:771ba0c10fa0703e17ed6dc601567099437771fc4a1c1a31214c54c4fbcd7f92",
+  "content": "export class XanaNodeError extends Error {\n  constructor(message, details = {}) {\n    super(message);\n    this.name = \"XanaNodeError\";\n    this.details = details;\n  }\n}\n\nexport class ValidationError extends XanaNodeError {\n  constructor(message, details = {}) {\n    super(message, details);\n    this.name = \"ValidationError\";\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/src/errors.js",
+    "method": "archive",
+    "content_id": "sha256:771ba0c10fa0703e17ed6dc601567099437771fc4a1c1a31214c54c4fbcd7f92",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

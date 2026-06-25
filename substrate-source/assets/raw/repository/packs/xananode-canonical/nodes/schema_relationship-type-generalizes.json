@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-generalizes",
+  "title": "Generalizes",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is a more general abstraction of the target.",
+  "version": "0.5.0",
+  "registry_type": "generalizes",
+  "registry_namespace": "xananode",
+  "category": "cognition",
+  "inverse": "specialized_by",
+  "color": "#7c3aed",
+  "inverse_color": "#ddd6fe",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

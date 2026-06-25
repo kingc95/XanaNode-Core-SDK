@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-publication-article",
+  "title": "Publication subtype: article",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "article is an allowed subtype of the publication node type.",
+  "version": "0.3.0",
+  "registry_type": "article",
+  "registry_namespace": "xananode",
+  "parent_node_type": "publication",
+  "relationships": []
+}

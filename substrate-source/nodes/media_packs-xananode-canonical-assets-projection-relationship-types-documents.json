@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-projection-relationship-types-documents",
+  "title": "Packs / Xananode Canonical / Assets / Projection / Relationship Types / Documents",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/projection/relationship-types/documents.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/relationship-types/documents.svg",
+  "artifact_path": "packs/xananode-canonical/assets/projection/relationship-types/documents.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/projection/relationship-types/documents.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:2b40a60dcd79b10c896fe258ee04cf5d4ab0c0d2e87f7a5c3363785e3ae4ae21",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/relationship-types/documents.svg",
+    "method": "archive",
+    "content_id": "sha256:2b40a60dcd79b10c896fe258ee04cf5d4ab0c0d2e87f7a5c3363785e3ae4ae21",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

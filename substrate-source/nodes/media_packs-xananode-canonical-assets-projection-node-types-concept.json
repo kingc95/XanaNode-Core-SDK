@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-projection-node-types-concept",
+  "title": "Packs / Xananode Canonical / Assets / Projection / Node Types / Concept",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/projection/node-types/concept.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/node-types/concept.svg",
+  "artifact_path": "packs/xananode-canonical/assets/projection/node-types/concept.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/projection/node-types/concept.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:7a9ef9db1e2d4e380920c5ca8e4b716f9a87ec1ef0b24cdfb0b1a47762ec8152",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/node-types/concept.svg",
+    "method": "archive",
+    "content_id": "sha256:7a9ef9db1e2d4e380920c5ca8e4b716f9a87ec1ef0b24cdfb0b1a47762ec8152",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

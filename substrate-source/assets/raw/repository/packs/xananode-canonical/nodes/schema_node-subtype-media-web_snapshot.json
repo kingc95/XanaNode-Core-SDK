@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-media-web_snapshot",
+  "title": "Media subtype: web snapshot",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "web_snapshot is an allowed subtype of the media node type.",
+  "version": "0.3.0",
+  "registry_type": "web_snapshot",
+  "registry_namespace": "xananode",
+  "parent_node_type": "media",
+  "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-response-review_response",
+  "title": "Response subtype: review response",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "review_response is an allowed subtype of the response node type.",
+  "version": "0.3.0",
+  "registry_type": "review_response",
+  "registry_namespace": "xananode",
+  "parent_node_type": "response",
+  "relationships": []
+}

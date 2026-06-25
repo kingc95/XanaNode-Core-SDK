@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-not_answered_by",
+  "title": "Not Answered By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The not_answered_by inverse relationship term derived from fails_to_answer.",
+  "version": "0.5.0",
+  "registry_type": "not_answered_by",
+  "registry_namespace": "xananode",
+  "category": "inquiry",
+  "inverse": "fails_to_answer",
+  "color": "#99f6e4",
+  "inverse_color": "#2dd4bf",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

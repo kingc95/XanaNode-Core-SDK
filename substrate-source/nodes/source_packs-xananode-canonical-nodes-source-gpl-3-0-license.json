@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-gpl-3-0-license",
+  "title": "Packs / Xananode Canonical / Nodes / Source Gpl 3 0 License",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_gpl-3-0-license.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_gpl-3-0-license.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_gpl-3-0-license.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_gpl-3-0-license.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:604b2edf7e8803eca3d5408d31984f56211c9faa9e9267a0f95a8d81c82643b1",
+  "content": "{\n  \"relationships\": [],\n  \"id\": \"xananode.canonical:source/gpl-3-0-license\",\n  \"title\": \"GNU General Public License 3.0\",\n  \"type\": \"source\",\n  \"subtype\": \"license\",\n  \"importance\": 3,\n  \"summary\": \"A strong copyleft open source license included as a comparative licensing concept.\",\n  \"source_url\": \"https://www.gnu.org/licenses/gpl-3.0.en.html\",\n  \"rights_status\": \"external\",\n  \"license\": \"GPL-3.0\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_gpl-3-0-license.json",
+    "method": "archive",
+    "content_id": "sha256:604b2edf7e8803eca3d5408d31984f56211c9faa9e9267a0f95a8d81c82643b1",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

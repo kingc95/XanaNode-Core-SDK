@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-knowledge_gap-missing_source",
+  "title": "Knowledge Gap subtype: missing source",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "missing_source is an allowed subtype of the knowledge_gap node type.",
+  "version": "0.3.0",
+  "registry_type": "missing_source",
+  "registry_namespace": "xananode",
+  "parent_node_type": "knowledge_gap",
+  "relationships": []
+}

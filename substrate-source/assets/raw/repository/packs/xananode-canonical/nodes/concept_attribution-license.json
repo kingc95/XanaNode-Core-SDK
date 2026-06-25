@@ -1,0 +1,9 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:concept/attribution-license",
+  "title": "Attribution License",
+  "type": "concept",
+  "subtype": "distinction",
+  "importance": 4,
+  "summary": "A license pattern that allows reuse while requiring credit to the original author or project."
+}

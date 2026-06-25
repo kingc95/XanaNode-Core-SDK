@@ -1,0 +1,10 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:claim/xananode-name-and-logo-are-trademarked",
+  "title": "XanaNode Name And Logo Are Trademarked",
+  "type": "claim",
+  "subtype": "definition",
+  "status": "asserted",
+  "importance": 5,
+  "summary": "The XanaNode name, logo, and related brand assets are governed as trademarks even when protocol docs and code are openly licensed."
+}

@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-licensed_under",
+  "title": "licensed under",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source artifact, content, code, schema, media, or substrate is distributed under the target license.",
+  "version": "0.5.0",
+  "registry_type": "licensed_under",
+  "registry_namespace": "xananode",
+  "category": "governance",
+  "inverse": "license_for",
+  "color": "#eab308",
+  "inverse_color": "#fde047",
+  "line_style": "double",
+  "inverse_line_style": "dashed",
+  "relationships": [],
+  "default_weight": 4,
+  "default_visibility": "secondary"
+}

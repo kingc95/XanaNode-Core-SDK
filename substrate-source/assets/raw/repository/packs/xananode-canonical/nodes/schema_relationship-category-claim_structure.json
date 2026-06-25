@@ -1,0 +1,16 @@
+{
+  "id": "xananode.canonical:schema/relationship-category-claim_structure",
+  "title": "Claim Structure Relationship Category",
+  "type": "schema",
+  "subtype": "relationship_category_schema",
+  "importance": 4,
+  "summary": "The claim_structure category groups relationship types with related meaning.",
+  "version": "0.5.0",
+  "registry_type": "claim_structure",
+  "registry_namespace": "xananode",
+  "relationships": [],
+  "color": "#f43f5e",
+  "inverse_color": "#fda4af",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

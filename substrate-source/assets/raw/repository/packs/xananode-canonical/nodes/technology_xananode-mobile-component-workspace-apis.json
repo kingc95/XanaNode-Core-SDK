@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-mobile-component-workspace-apis",
+  "title": "XanaNode Mobile: Workspace APIs",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Mobile consumes or depends on Workspace APIs.",
+  "component_of": "xananode.canonical:project/xananode-mobile",
+  "relationships": []
+}

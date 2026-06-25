@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-had_question",
+  "title": "Had Question Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The had_question inverse relationship term derived from asked_in.",
+  "version": "0.5.0",
+  "registry_type": "had_question",
+  "registry_namespace": "xananode",
+  "category": "communication",
+  "inverse": "asked_in",
+  "color": "#bae6fd",
+  "inverse_color": "#38bdf8",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

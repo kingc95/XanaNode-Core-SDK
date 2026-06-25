@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-question-diagnostic_question",
+  "title": "Question subtype: diagnostic question",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "diagnostic_question is an allowed subtype of the question node type.",
+  "version": "0.3.0",
+  "registry_type": "diagnostic_question",
+  "registry_namespace": "xananode",
+  "parent_node_type": "question",
+  "relationships": []
+}

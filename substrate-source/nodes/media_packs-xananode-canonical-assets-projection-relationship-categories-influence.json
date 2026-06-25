@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-projection-relationship-categories-influence",
+  "title": "Packs / Xananode Canonical / Assets / Projection / Relationship Categories / Influence",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/projection/relationship-categories/influence.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/relationship-categories/influence.svg",
+  "artifact_path": "packs/xananode-canonical/assets/projection/relationship-categories/influence.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/projection/relationship-categories/influence.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:44e285f16a10892334ba4b157dcfc178dbae37624249b4d97acee438426d1ef4",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/relationship-categories/influence.svg",
+    "method": "archive",
+    "content_id": "sha256:44e285f16a10892334ba4b157dcfc178dbae37624249b4d97acee438426d1ef4",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

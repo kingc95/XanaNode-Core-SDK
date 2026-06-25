@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-fragment-xananode-kernel-thought-0004",
+  "title": "Packs / Xananode Canonical / Nodes / Fragment Xananode Kernel Thought 0004",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/fragment_xananode-kernel-thought-0004.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/fragment_xananode-kernel-thought-0004.json",
+  "artifact_path": "packs/xananode-canonical/nodes/fragment_xananode-kernel-thought-0004.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/fragment_xananode-kernel-thought-0004.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:aee0f408585b71fc90ed34872f8dbf932a9afc1f5a25a550662a28cea52f365b",
+  "content": "{\n  \"id\": \"xananode.canonical:fragment/xananode-kernel-thought-0004\",\n  \"title\": \"XanaNode Kernel Thought Fragment 0004\",\n  \"type\": \"fragment\",\n  \"subtype\": \"paragraph\",\n  \"importance\": 4,\n  \"summary\": \"The federation and ecosystem argument.\",\n  \"source_node\": \"xananode.canonical:source/xananode-kernel-for-human-thought-draft\",\n  \"source_content_id\": \"sha256:xananode-kernel-for-human-thought-draft-source\",\n  \"source_version_id\": \"sha256:xananode-kernel-for-human-thought-draft-source-v1\",\n  \"fragment_id\": \"0004\",\n  \"tumbler\": \"xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0004@sha256:xananode-kernel-thought-fragment-0004\",\n  \"selector\": {\n    \"type\": \"semantic-anchor\",\n    \"value\": \"federation-over-monopolies\"\n  },\n  \"content_id\": \"sha256:xananode-kernel-thought-fragment-0004\",\n  \"version_id\": \"sha256:xananode-kernel-thought-fragment-0004-v1\",\n  \"rights_status\": \"canonical-public\",\n  \"content\": \"Federation is the ecosystem layer. Linux did not become important because one company owned all computation. It mattered because many independent actors could build on a common base. XanaNode aims for the same pattern with independently authored substrates that can mount, compare, and merge without surrendering provenance, lineage, disagreement, or ownership.\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/fragment_xananode-kernel-thought-0004.json",
+    "method": "archive",
+    "content_id": "sha256:aee0f408585b71fc90ed34872f8dbf932a9afc1f5a25a550662a28cea52f365b",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

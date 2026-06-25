@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-links-readme",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Links / README",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/links/README.md is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/links/README.md",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/links/README.md",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/links/README.md",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:191b421bd80b857eff3d38c7e61c3168b097a664d50cbb8e6f317cf4af8df9a7",
+  "content": "# Links\n\nThis directory points to external implementations, tools, and related projects.\n\nThe protocol repository should not contain every renderer or app.\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/links/README.md",
+    "method": "archive",
+    "content_id": "sha256:191b421bd80b857eff3d38c7e61c3168b097a664d50cbb8e6f317cf4af8df9a7",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

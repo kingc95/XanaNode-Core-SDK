@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-media-xananode-icon",
+  "title": "Packs / Xananode Canonical / Nodes / Media Xananode Icon",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/media_xananode-icon.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_xananode-icon.json",
+  "artifact_path": "packs/xananode-canonical/nodes/media_xananode-icon.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/media_xananode-icon.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:c4975f476986022676fbcf88567f2fde89d9f000b551f1861d48febf788e7bc9",
+  "content": "{\n  \"id\": \"xananode.canonical:media/xananode-icon\",\n  \"title\": \"XanaNode Icon\",\n  \"type\": \"media\",\n  \"subtypes\": [\n    \"image\",\n    \"logo\"\n  ],\n  \"media_type\": \"image\",\n  \"mime_type\": \"image/svg+xml\",\n  \"importance\": 5,\n  \"summary\": \"The XanaNode project icon used as primary media for XanaNode nodes and projection branding.\",\n  \"alt\": \"A connected node mark with orange and blue paths crossing around a bright central node.\",\n  \"rights_status\": \"open-source\",\n  \"asset_path\": \"media/images/xananode-icon.svg\",\n  \"asset_role\": \"primary_media\",\n  \"creator\": \"Christian Siefen\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/media_xananode-icon.json",
+    "method": "archive",
+    "content_id": "sha256:c4975f476986022676fbcf88567f2fde89d9f000b551f1861d48febf788e7bc9",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

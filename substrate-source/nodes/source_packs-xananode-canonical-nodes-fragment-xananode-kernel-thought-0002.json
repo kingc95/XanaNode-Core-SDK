@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-fragment-xananode-kernel-thought-0002",
+  "title": "Packs / Xananode Canonical / Nodes / Fragment Xananode Kernel Thought 0002",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/fragment_xananode-kernel-thought-0002.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/fragment_xananode-kernel-thought-0002.json",
+  "artifact_path": "packs/xananode-canonical/nodes/fragment_xananode-kernel-thought-0002.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/fragment_xananode-kernel-thought-0002.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:ea1e49f3380f7dfc1fbe80bbd6f6349a66c56a2f988b01632632fb12ad6e53b4",
+  "content": "{\n  \"id\": \"xananode.canonical:fragment/xananode-kernel-thought-0002\",\n  \"title\": \"XanaNode Kernel Thought Fragment 0002\",\n  \"type\": \"fragment\",\n  \"subtype\": \"paragraph\",\n  \"importance\": 4,\n  \"summary\": \"The distributions-versus-projections comparison.\",\n  \"source_node\": \"xananode.canonical:source/xananode-kernel-for-human-thought-draft\",\n  \"source_content_id\": \"sha256:xananode-kernel-for-human-thought-draft-source\",\n  \"source_version_id\": \"sha256:xananode-kernel-for-human-thought-draft-source-v1\",\n  \"fragment_id\": \"0002\",\n  \"tumbler\": \"xananode.canonical:source/xananode-kernel-for-human-thought-draft@sha256:xananode-kernel-for-human-thought-draft-source-v1#fragment/0002@sha256:xananode-kernel-thought-fragment-0002\",\n  \"selector\": {\n    \"type\": \"semantic-anchor\",\n    \"value\": \"distributions-vs-projections\"\n  },\n  \"content_id\": \"sha256:xananode-kernel-thought-fragment-0002\",\n  \"version_id\": \"sha256:xananode-kernel-thought-fragment-0002-v1\",\n  \"rights_status\": \"canonical-public\",\n  \"content\": \"The substrate and the projection are intentionally separated. In Linux, people interact through distributions such as Ubuntu, Fedora, or Red Hat while the kernel remains the underlying contract. In XanaNode, the same substrate can be viewed through Studio, Mobile, Hugo, or a future projection that does not exist yet. The tool is a lens over the data, not the data itself.\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/fragment_xananode-kernel-thought-0002.json",
+    "method": "archive",
+    "content_id": "sha256:ea1e49f3380f7dfc1fbe80bbd6f6349a66c56a2f988b01632632fb12ad6e53b4",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

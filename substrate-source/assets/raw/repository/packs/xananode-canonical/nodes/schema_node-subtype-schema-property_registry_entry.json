@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-schema-property_registry_entry",
+  "title": "Schema subtype: property registry entry",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "property_registry_entry is an allowed subtype of the schema node type.",
+  "version": "0.3.0",
+  "registry_type": "property_registry_entry",
+  "registry_namespace": "xananode",
+  "parent_node_type": "schema",
+  "relationships": []
+}

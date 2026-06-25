@@ -1,0 +1,10 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:claim/schemas-validators-reference-code-apache-2-0",
+  "title": "Schemas, Validators, And Reference Code Are Apache-2.0",
+  "type": "claim",
+  "subtype": "definition",
+  "status": "asserted",
+  "importance": 5,
+  "summary": "XanaNode schemas, validators, tooling, and reference implementation code are licensed under Apache-2.0 for broad adoption."
+}

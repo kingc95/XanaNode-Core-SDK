@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-organization-hugo-authors",
+  "title": "Packs / Xananode Canonical / Nodes / Organization Hugo Authors",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/organization_hugo-authors.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/organization_hugo-authors.json",
+  "artifact_path": "packs/xananode-canonical/nodes/organization_hugo-authors.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/organization_hugo-authors.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:751359a5d725c38a6aa3ef75467f18e8ce91a737771a0563efb6fbac036f66c2",
+  "content": "{\n  \"id\": \"xananode.canonical:organization/hugo-authors\",\n  \"title\": \"Hugo Authors\",\n  \"type\": \"organization\",\n  \"subtype\": \"open_source\",\n  \"importance\": 3,\n  \"summary\": \"The open source project community responsible for Hugo.\",\n  \"source_url\": \"https://github.com/gohugoio/hugo\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/organization_hugo-authors.json",
+    "method": "archive",
+    "content_id": "sha256:751359a5d725c38a6aa3ef75467f18e8ce91a737771a0563efb6fbac036f66c2",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

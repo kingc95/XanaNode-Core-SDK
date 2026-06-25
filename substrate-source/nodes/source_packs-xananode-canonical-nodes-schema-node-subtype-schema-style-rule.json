@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-schema-style-rule",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Schema Style Rule",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-schema-style_rule.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-schema-style_rule.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-schema-style_rule.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-schema-style_rule.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:b4a06678280aa576ac494b1c8667b5fbdb5d037815d97bd83691ec419e23f61e",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-schema-style_rule\",\n  \"title\": \"Schema subtype: style rule\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"style_rule is an allowed subtype of the schema node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"style_rule\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"schema\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-schema-style_rule.json",
+    "method": "archive",
+    "content_id": "sha256:b4a06678280aa576ac494b1c8667b5fbdb5d037815d97bd83691ec419e23f61e",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

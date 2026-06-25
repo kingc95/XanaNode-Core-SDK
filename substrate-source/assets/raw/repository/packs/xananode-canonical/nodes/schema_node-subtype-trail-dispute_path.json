@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-trail-dispute_path",
+  "title": "Trail subtype: dispute path",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "dispute_path is an allowed subtype of the trail node type.",
+  "version": "0.3.0",
+  "registry_type": "dispute_path",
+  "registry_namespace": "xananode",
+  "parent_node_type": "trail",
+  "relationships": []
+}

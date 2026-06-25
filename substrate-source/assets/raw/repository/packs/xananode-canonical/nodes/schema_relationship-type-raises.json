@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-raises",
+  "title": "Raises",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source raises, surfaces, or implies the target question, problem, or knowledge gap.",
+  "version": "0.5.0",
+  "registry_type": "raises",
+  "registry_namespace": "xananode",
+  "category": "inquiry",
+  "inverse": "raised_by",
+  "color": "#2dd4bf",
+  "inverse_color": "#99f6e4",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

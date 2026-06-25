@@ -1,0 +1,47 @@
+{
+  "id": "xananode.canonical:schema/property-measurement_si",
+  "title": "SI measurement",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A quantified physical or conceptual measurement expressed in SI-compatible units.",
+  "registry_type": "measurement_si",
+  "category": "quantity",
+  "aliases": [
+    "measurement",
+    "quantity",
+    "metric_value"
+  ],
+  "applies_to": [],
+  "unit_system": "SI",
+  "value_schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "value",
+      "unit"
+    ],
+    "properties": {
+      "value": {
+        "type": "number"
+      },
+      "unit": {
+        "type": "string"
+      },
+      "quantity_kind": {
+        "type": "string"
+      },
+      "uncertainty": {
+        "type": "number"
+      }
+    }
+  },
+  "examples": [
+    {
+      "value": 1.82,
+      "unit": "m",
+      "quantity_kind": "height"
+    }
+  ],
+  "relationships": []
+}

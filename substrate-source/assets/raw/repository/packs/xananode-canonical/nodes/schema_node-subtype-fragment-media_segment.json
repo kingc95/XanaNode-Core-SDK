@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-fragment-media_segment",
+  "title": "Fragment subtype: media segment",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 3,
+  "summary": "media_segment is an allowed subtype of the fragment node type.",
+  "version": "0.3.0",
+  "registry_type": "media_segment",
+  "registry_namespace": "xananode",
+  "parent_node_type": "fragment",
+  "relationships": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "example.minimal:trail/start-here",
+  "title": "Start Here",
+  "type": "trail",
+  "importance": 5,
+  "summary": "A short curated route introducing the substrate through source, claim, supporting context, and concept.",
+  "nodes": [
+    "example.minimal:source/as-we-may-think",
+    "example.minimal:concept/associative-trails",
+    "example.minimal:claim/substrate-is-structure",
+    "example.minimal:concept/knowledge-substrate"
+  ],
+  "relationships": [
+    {
+      "id": "example.minimal:rel/trail-starts-with-source",
+      "type": "starts_with",
+      "target": "example.minimal:source/as-we-may-think",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/trail-includes-associative-trails",
+      "type": "features",
+      "target": "example.minimal:concept/associative-trails",
+      "direction": "outgoing"
+    }
+  ]
+}

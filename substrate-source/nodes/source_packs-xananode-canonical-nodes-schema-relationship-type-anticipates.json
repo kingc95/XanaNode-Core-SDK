@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-anticipates",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Anticipates",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-anticipates.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-anticipates.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-anticipates.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-anticipates.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:0bbfb2ba20cee78688eb2a945654704b384d3c468192b983594db825ae2acbc8",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-anticipates\",\n  \"title\": \"Anticipates\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source foreshadows or historically precedes the target without direct causation.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"anticipates\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"historical\",\n  \"inverse\": \"anticipated_by\",\n  \"default_weight\": 3,\n  \"default_visibility\": \"secondary\",\n  \"relationships\": [],\n  \"color\": \"#c084fc\",\n  \"inverse_color\": \"#e9d5ff\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\"\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-anticipates.json",
+    "method": "archive",
+    "content_id": "sha256:0bbfb2ba20cee78688eb2a945654704b384d3c468192b983594db825ae2acbc8",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

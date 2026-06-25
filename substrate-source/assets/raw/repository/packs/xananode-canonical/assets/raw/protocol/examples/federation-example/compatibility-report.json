@@ -1,0 +1,5 @@
+{
+  "status": "merge-candidate",
+  "compatibility_level": 4,
+  "details": "Both federation example substrates declare manifests, namespaces, stable node IDs, core relationship types, and non-destructive possible-match mappings."
+}

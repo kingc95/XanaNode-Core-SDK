@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-relationship-collaboration",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Relationship Collaboration",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-relationship-collaboration.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-relationship-collaboration.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-relationship-collaboration.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-relationship-collaboration.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:68c203f648075dad6049d278cacc260e25a4a40d196dc09b81e47e5ffc7a85c2",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-relationship-collaboration\",\n  \"title\": \"Relationship subtype: collaboration\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"collaboration is an allowed subtype of the relationship node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"collaboration\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"relationship\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-relationship-collaboration.json",
+    "method": "archive",
+    "content_id": "sha256:68c203f648075dad6049d278cacc260e25a4a40d196dc09b81e47e5ffc7a85c2",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

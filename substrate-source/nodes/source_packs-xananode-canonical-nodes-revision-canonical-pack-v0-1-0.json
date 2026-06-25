@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-revision-canonical-pack-v0-1-0",
+  "title": "Packs / Xananode Canonical / Nodes / Revision Canonical Pack V0 1 0",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/revision_canonical-pack-v0-1-0.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/revision_canonical-pack-v0-1-0.json",
+  "artifact_path": "packs/xananode-canonical/nodes/revision_canonical-pack-v0-1-0.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/revision_canonical-pack-v0-1-0.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:4a4ac91ffe96167382be2a8bed5bb4f69b5a060a7cf095118fbda5ed7f465de7",
+  "content": "{\n  \"id\": \"xananode.canonical:revision/canonical-pack-v0-1-0\",\n  \"title\": \"Canonical Pack v0.1.0\",\n  \"type\": \"revision\",\n  \"subtype\": \"node_revision\",\n  \"importance\": 3,\n  \"summary\": \"The first Core-bundled revision of the canonical XanaNode pack.\",\n  \"revises\": \"xananode.canonical:concept/xananode\",\n  \"revision_id\": \"0.1.0\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/revision_canonical-pack-v0-1-0.json",
+    "method": "archive",
+    "content_id": "sha256:4a4ac91ffe96167382be2a8bed5bb4f69b5a060a7cf095118fbda5ed7f465de7",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

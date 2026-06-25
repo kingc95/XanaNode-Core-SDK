@@ -1,0 +1,40 @@
+{
+  "id": "xananode.canonical:schema/node-type-technology",
+  "title": "Technology",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A tool, protocol, model, platform, architecture, method, or technical system.",
+  "version": "0.3.0",
+  "registry_type": "technology",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "protocol",
+    "language",
+    "model",
+    "platform",
+    "architecture",
+    "tool",
+    "format",
+    "algorithm"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "projects",
+    "organizations",
+    "sources",
+    "concepts"
+  ],
+  "color": {
+    "bg": "#06b6d4",
+    "fg": "#04131a",
+    "outline": "#d9fbff"
+  },
+  "relationships": []
+}

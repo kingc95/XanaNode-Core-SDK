@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-reported_to",
+  "title": "Reported to",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source reported information, status, or evidence to the target actor, system, or audience.",
+  "version": "0.5.0",
+  "registry_type": "reported_to",
+  "registry_namespace": "xananode",
+  "category": "communication",
+  "inverse": "received_report_from",
+  "color": "#38bdf8",
+  "inverse_color": "#bae6fd",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

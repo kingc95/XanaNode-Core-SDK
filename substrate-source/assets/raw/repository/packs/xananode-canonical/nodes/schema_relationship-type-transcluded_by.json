@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-transcluded_by",
+  "title": "Transcluded By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The transcluded_by inverse relationship term derived from transcludes.",
+  "version": "0.5.0",
+  "registry_type": "transcluded_by",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "transcludes",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#fcd34d",
+  "inverse_color": "#f59e0b",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

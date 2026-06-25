@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-publication-adaptation",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Publication Adaptation",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-publication-adaptation.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-publication-adaptation.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-publication-adaptation.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-publication-adaptation.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:8b2fc0b0f1ed0ccc25c2c7590db62532d8c589e96db3d5319fc8ab663be32561",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-publication-adaptation\",\n  \"title\": \"Publication subtype: adaptation\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"adaptation is an allowed subtype of the publication node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"adaptation\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"publication\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-publication-adaptation.json",
+    "method": "archive",
+    "content_id": "sha256:8b2fc0b0f1ed0ccc25c2c7590db62532d8c589e96db3d5319fc8ab663be32561",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

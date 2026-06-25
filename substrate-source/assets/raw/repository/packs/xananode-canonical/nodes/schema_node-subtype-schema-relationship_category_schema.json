@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-schema-relationship_category_schema",
+  "title": "Schema subtype: relationship category schema",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "relationship_category_schema is an allowed subtype of the schema node type.",
+  "version": "0.3.0",
+  "registry_type": "relationship_category_schema",
+  "registry_namespace": "xananode",
+  "parent_node_type": "schema",
+  "relationships": []
+}

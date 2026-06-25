@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-communication-broadcast",
+  "title": "Communication subtype: broadcast",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "broadcast is an allowed subtype of the communication node type.",
+  "version": "0.3.0",
+  "registry_type": "broadcast",
+  "registry_namespace": "xananode",
+  "parent_node_type": "communication",
+  "relationships": []
+}

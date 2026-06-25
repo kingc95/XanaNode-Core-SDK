@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-supersedes",
+  "title": "Supersedes",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source replaces the target.",
+  "version": "0.5.0",
+  "registry_type": "supersedes",
+  "registry_namespace": "xananode",
+  "category": "evolution",
+  "inverse": "superseded_by",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#64748b",
+  "inverse_color": "#cbd5e1",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

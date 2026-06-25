@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-person-christian-siefen",
+  "title": "Packs / Xananode Canonical / Nodes / Person Christian Siefen",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/person_christian-siefen.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/person_christian-siefen.json",
+  "artifact_path": "packs/xananode-canonical/nodes/person_christian-siefen.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/person_christian-siefen.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:01e3e307ab455ee1a67ee70dc207d1bcbb969d8557f6238679f69118faa569c9",
+  "content": "{\n  \"id\": \"xananode.canonical:person/christian-siefen\",\n  \"title\": \"Christian Siefen\",\n  \"type\": \"person\",\n  \"subtypes\": [\n    \"founder\",\n    \"author\"\n  ],\n  \"importance\": 5,\n  \"summary\": \"The personally identified author and maintainer of the canonical XanaNode substrate.\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/person_christian-siefen.json",
+    "method": "archive",
+    "content_id": "sha256:01e3e307ab455ee1a67ee70dc207d1bcbb969d8557f6238679f69118faa569c9",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

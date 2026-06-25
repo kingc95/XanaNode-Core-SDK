@@ -1,0 +1,46 @@
+{
+  "id": "example.minimal:source/as-we-may-think",
+  "title": "As We May Think",
+  "type": "source",
+  "protocol_id": "example.minimal:source/as-we-may-think",
+  "content_id": "sha256:example-as-we-may-think-source",
+  "version_id": "git:8e47e70:examples/minimal-substrate/nodes/source-as-we-may-think.json",
+  "importance": 5,
+  "summary": "Vannevar Bush's 1945 essay describing associative trails and the problem of navigating expanding scientific knowledge.",
+  "author": "Vannevar Bush",
+  "year": 1945,
+  "source_url": "https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/",
+  "rights_status": "copyrighted",
+  "relationships": [
+    {
+      "id": "example.minimal:rel/source-supports-claim",
+      "type": "supports",
+      "target": "example.minimal:claim/substrate-is-structure",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/source-discusses-associative-trails",
+      "type": "discusses",
+      "target": "example.minimal:concept/associative-trails",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/trail-starts-with-source",
+      "type": "starts_with",
+      "source": "example.minimal:trail/start-here",
+      "direction": "incoming"
+    },
+    {
+      "id": "example.minimal:rel/trail-continues-to-claim",
+      "type": "continues_to",
+      "target": "example.minimal:claim/substrate-is-structure",
+      "direction": "outgoing"
+    },
+    {
+      "id": "example.minimal:rel/fragment-derived-from-source",
+      "type": "derived_from",
+      "source": "example.minimal:fragment/as-we-may-think-0004",
+      "direction": "incoming"
+    }
+  ]
+}

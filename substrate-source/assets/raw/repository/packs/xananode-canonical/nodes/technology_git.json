@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/git",
+  "title": "Git",
+  "type": "technology",
+  "subtype": "tool",
+  "importance": 4,
+  "summary": "The distributed version control system used to preserve substrate history, protocol revisions, repositories, and deployment workflows.",
+  "source_url": "https://git-scm.com/",
+  "relationships": []
+}

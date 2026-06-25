@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-adapted_from",
+  "title": "Adapted from",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is an adaptation, reworking, or new presentation of the target work.",
+  "version": "0.5.0",
+  "registry_type": "adapted_from",
+  "registry_namespace": "xananode",
+  "category": "revision",
+  "inverse": "adapted_into",
+  "color": "#fb923c",
+  "inverse_color": "#fdba74",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-raises",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Raises",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-raises.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-raises.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-raises.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-raises.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:3cdb0c5f0ea940e1da426e86cfe04f186f3e6fdc1d60f2297252e72adbff4f84",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-raises\",\n  \"title\": \"Raises\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source raises, surfaces, or implies the target question, problem, or knowledge gap.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"raises\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"inquiry\",\n  \"inverse\": \"raised_by\",\n  \"color\": \"#2dd4bf\",\n  \"inverse_color\": \"#99f6e4\",\n  \"line_style\": \"dashed\",\n  \"inverse_line_style\": \"solid\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-raises.json",
+    "method": "archive",
+    "content_id": "sha256:3cdb0c5f0ea940e1da426e86cfe04f186f3e6fdc1d60f2297252e72adbff4f84",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-claim-historical",
+  "title": "Claim subtype: historical",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "historical is an allowed subtype of the claim node type.",
+  "version": "0.3.0",
+  "registry_type": "historical",
+  "registry_namespace": "xananode",
+  "parent_node_type": "claim",
+  "relationships": []
+}

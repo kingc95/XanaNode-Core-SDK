@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-known-implementations-registry",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Known Implementations Registry",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_known-implementations-registry.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_known-implementations-registry.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_known-implementations-registry.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_known-implementations-registry.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:acc9000c5de38a713de6791c3028ae5702a42607ae2b4d613c26831cc7ece0b0",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/known-implementations-registry\",\n  \"title\": \"Known Implementations Registry\",\n  \"type\": \"schema\",\n  \"subtype\": \"governance_rule\",\n  \"importance\": 4,\n  \"summary\": \"The protocol registry of tools, renderers, validators, and substrates that declare XanaNode compatibility.\",\n  \"relationships\": [],\n  \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/known-implementations.json\",\n  \"asset_path\": \"assets/raw/protocol/registry/known-implementations.json\",\n  \"asset_role\": \"canonical_raw_source\",\n  \"content_id\": \"sha256:b5356bb3586e0758db7ece62321b614d525d9d900f5ec68fd9b6f957183dc5a0\",\n  \"source_snapshot\": {\n    \"captured_at\": \"2026-06-25T14:00:25.360Z\",\n    \"source_url\": \"https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/known-implementations.json\",\n    \"method\": \"archive\",\n    \"content_id\": \"sha256:40fad1a6f4f139207a09fe8c98c74b734a6706a21352f8fa8180a139800d58dd\",\n    \"rights_status\": \"canonical-public\",\n    \"tool\": \"@xananode/core\"\n  }\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_known-implementations-registry.json",
+    "method": "archive",
+    "content_id": "sha256:acc9000c5de38a713de6791c3028ae5702a42607ae2b4d613c26831cc7ece0b0",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

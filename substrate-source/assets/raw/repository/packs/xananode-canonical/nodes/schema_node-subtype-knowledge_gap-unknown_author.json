@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-knowledge_gap-unknown_author",
+  "title": "Knowledge Gap subtype: unknown author",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "unknown_author is an allowed subtype of the knowledge_gap node type.",
+  "version": "0.3.0",
+  "registry_type": "unknown_author",
+  "registry_namespace": "xananode",
+  "parent_node_type": "knowledge_gap",
+  "relationships": []
+}

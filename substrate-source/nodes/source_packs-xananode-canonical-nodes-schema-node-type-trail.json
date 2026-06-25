@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-type-trail",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Type Trail",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-type-trail.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-trail.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-type-trail.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-type-trail.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:b6483ea08880c54a83164959409c846c54a3796c0e6820b88e4f46782f51c8b9",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-type-trail\",\n  \"title\": \"Trail\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"A curated route through the graph.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"trail\",\n  \"registry_namespace\": \"xananode\",\n  \"allowed_subtypes\": [\n    \"introductory\",\n    \"historical\",\n    \"argument\",\n    \"evidence_path\",\n    \"teaching_path\",\n    \"dispute_path\"\n  ],\n  \"required_frontmatter\": [\n    \"title\",\n    \"type\",\n    \"importance\",\n    \"summary\",\n    \"nodes\",\n    \"relationships\"\n  ],\n  \"recommended_frontmatter\": [\n    \"concepts\",\n    \"people\",\n    \"sources\",\n    \"claims\"\n  ],\n  \"color\": {\n    \"bg\": \"#fb8500\",\n    \"fg\": \"#241100\",\n    \"outline\": \"#ffe3be\"\n  },\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-type-trail.json",
+    "method": "archive",
+    "content_id": "sha256:b6483ea08880c54a83164959409c846c54a3796c0e6820b88e4f46782f51c8b9",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

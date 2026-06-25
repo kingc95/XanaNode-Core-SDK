@@ -1,0 +1,41 @@
+{
+  "id": "xananode.canonical:schema/node-type-response",
+  "title": "Response",
+  "type": "schema",
+  "subtype": "node_type_schema",
+  "importance": 5,
+  "summary": "A reply, answer, rebuttal, clarification, or follow-up that responds to a question, communication, claim, or prior response.",
+  "version": "0.3.0",
+  "registry_type": "response",
+  "registry_namespace": "xananode",
+  "allowed_subtypes": [
+    "answer",
+    "reply",
+    "rebuttal",
+    "clarification",
+    "follow_up",
+    "comment",
+    "review_response"
+  ],
+  "required_frontmatter": [
+    "title",
+    "type",
+    "importance",
+    "summary",
+    "relationships"
+  ],
+  "recommended_frontmatter": [
+    "provided_by",
+    "answered_question",
+    "communication",
+    "confidence",
+    "review_status",
+    "sources"
+  ],
+  "color": {
+    "bg": "#7dd3fc",
+    "fg": "#03131f",
+    "outline": "#e0f2fe"
+  },
+  "relationships": []
+}

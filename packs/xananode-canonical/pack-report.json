@@ -2,45 +2,9 @@
   "id": "xananode.canonical",
   "namespace": "xananode.canonical",
   "sources": [],
-  "nodes": 1062,
-  "relationships": 2243,
+  "nodes": 1079,
+  "relationships": 2290,
   "warnings": [
-    {
-      "kind": "duplicate_node_id",
-      "id": "xananode.canonical:essay/what-is-xananode",
-      "kept": "nodes.json",
-      "ignored": "nodes/essay_what-is-xananode.json"
-    },
-    {
-      "kind": "duplicate_node_id",
-      "id": "xananode.canonical:question/why-does-xananode-exist",
-      "kept": "nodes.json",
-      "ignored": "nodes/question_why-does-xananode-exist.json"
-    },
-    {
-      "kind": "duplicate_node_id",
-      "id": "xananode.canonical:essay/what-is-xananode",
-      "kept": "nodes/essay_what-is-xananode.json",
-      "ignored": "substrate-bundle.json"
-    },
-    {
-      "kind": "duplicate_node_id",
-      "id": "xananode.canonical:question/why-does-xananode-exist",
-      "kept": "nodes/question_why-does-xananode-exist.json",
-      "ignored": "substrate-bundle.json"
-    },
-    {
-      "kind": "duplicate_node_id",
-      "id": "xananode.canonical:essay/what-is-xananode",
-      "kept": "nodes/essay_what-is-xananode.json",
-      "ignored": "substrate-bundle.jsonl"
-    },
-    {
-      "kind": "duplicate_node_id",
-      "id": "xananode.canonical:question/why-does-xananode-exist",
-      "kept": "nodes/question_why-does-xananode-exist.json",
-      "ignored": "substrate-bundle.jsonl"
-    },
     {
       "kind": "unknown_node_type",
       "node": "example.museum:artifact/memex-illustration",
@@ -1555,6 +1519,12 @@
       "content_id": "sha256:a37a134ff539525456dada8cbafc182f812a50589f3de0358aac77de47cc6928"
     },
     {
+      "node": "xananode.canonical:schema/federation-targets-registry",
+      "source": "registry/federation-targets.json",
+      "asset_path": "assets/raw/protocol/registry/federation-targets.json",
+      "content_id": "sha256:d859aec5ab80bc7388b61c105bdc88465755e280652fd51c4bb9ea8165e66f38"
+    },
+    {
       "node": "xananode.canonical:schema/known-implementations-registry",
       "source": "registry/known-implementations.json",
       "asset_path": "assets/raw/protocol/registry/known-implementations.json",
@@ -1834,7 +1804,7 @@
       "node": "xananode.canonical:schema/protocol-artifact-registry-federation-targets.json",
       "source": "registry/federation-targets.json",
       "asset_path": "assets/raw/protocol/registry/federation-targets.json",
-      "content_id": "sha256:47588339d23c94870e505c11d9ca57388ba0e87c0ee318e8001d6ec403317795"
+      "content_id": "sha256:d859aec5ab80bc7388b61c105bdc88465755e280652fd51c4bb9ea8165e66f38"
     },
     {
       "node": "xananode.canonical:schema/protocol-artifact-registry-federation-targets.schema.json",
@@ -1954,7 +1924,7 @@
       "node": "xananode.canonical:schema/protocol-artifact-schemas-xananode-relationship-types.v0.5.0.json",
       "source": "schemas/xananode-relationship-types.v0.5.0.json",
       "asset_path": "assets/raw/protocol/schemas/xananode-relationship-types.v0.5.0.json",
-      "content_id": "sha256:d3c1f953a10a32e569eab8d60056ce44111ccbf8c736ab84396b28880c0d96d5"
+      "content_id": "sha256:fcf685c11c5df923dd51fc09a31566ec5d27f9b76ef3a0a542b7bb7b8b65f17b"
     },
     {
       "node": "xananode.canonical:schema/protocol-artifact-schemas-xananode-substrate-layout.v0.1.0.json",
@@ -1972,7 +1942,7 @@
       "node": "xananode.canonical:schema/relationship-type-registry",
       "source": "schemas/xananode-relationship-types.v0.5.0.json",
       "asset_path": "assets/raw/protocol/schemas/xananode-relationship-types.v0.5.0.json",
-      "content_id": "sha256:d3c1f953a10a32e569eab8d60056ce44111ccbf8c736ab84396b28880c0d96d5"
+      "content_id": "sha256:fcf685c11c5df923dd51fc09a31566ec5d27f9b76ef3a0a542b7bb7b8b65f17b"
     },
     {
       "node": "xananode.canonical:schema/ro-crate-metadata-schema",
@@ -2185,10 +2155,16 @@
       "content_id": "sha256:3cc4f574705261f5fcaf53eeb0152d530385a3cf13c4a7030edabb4cbc01a40e"
     },
     {
+      "node": "xananode.canonical:source/protocol-artifact-proposals-xnp-0012-executable-tool-contract.md",
+      "source": "proposals/XNP-0012-executable-tool-contract.md",
+      "asset_path": "assets/raw/protocol/proposals/XNP-0012-executable-tool-contract.md",
+      "content_id": "sha256:e7645ce8343d094dd4d5138f31b237e2160f111bfe0f9f7fd6ebcb4f6e4637e7"
+    },
+    {
       "node": "xananode.canonical:source/protocol-artifact-readme.md",
       "source": "README.md",
       "asset_path": "assets/raw/protocol/README.md",
-      "content_id": "sha256:55ad8a45690d836e06e69f869a9e7987a4e87dded7cbdae65256e3522e6f3816"
+      "content_id": "sha256:838fd3df9a1b5ec9bf1a23558cbf1140d8dbbc417420e7ce9e2046ac857702c0"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-registry-readme.md",
@@ -2266,7 +2242,7 @@
       "node": "xananode.canonical:source/protocol-artifact-specs-substrates.md",
       "source": "specs/substrates.md",
       "asset_path": "assets/raw/protocol/specs/substrates.md",
-      "content_id": "sha256:4ca150a762846959669526ec851aa3c4a639cab54f9e642e7f495f01db0b33e4"
+      "content_id": "sha256:357554c3c6d1473c1c6f0fd5c91bbb2858ade5f61ee83ac194b9229ed9a03a90"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-specs-transclusion.md",
@@ -3699,9 +3675,14 @@
       "content_id": "sha256:3cc4f574705261f5fcaf53eeb0152d530385a3cf13c4a7030edabb4cbc01a40e"
     },
     {
+      "source": "proposals/XNP-0012-executable-tool-contract.md",
+      "asset_path": "assets/raw/protocol/proposals/XNP-0012-executable-tool-contract.md",
+      "content_id": "sha256:e7645ce8343d094dd4d5138f31b237e2160f111bfe0f9f7fd6ebcb4f6e4637e7"
+    },
+    {
       "source": "README.md",
       "asset_path": "assets/raw/protocol/README.md",
-      "content_id": "sha256:55ad8a45690d836e06e69f869a9e7987a4e87dded7cbdae65256e3522e6f3816"
+      "content_id": "sha256:838fd3df9a1b5ec9bf1a23558cbf1140d8dbbc417420e7ce9e2046ac857702c0"
     },
     {
       "source": "registry/canonical-schemas.json",
@@ -3711,7 +3692,7 @@
     {
       "source": "registry/federation-targets.json",
       "asset_path": "assets/raw/protocol/registry/federation-targets.json",
-      "content_id": "sha256:47588339d23c94870e505c11d9ca57388ba0e87c0ee318e8001d6ec403317795"
+      "content_id": "sha256:d859aec5ab80bc7388b61c105bdc88465755e280652fd51c4bb9ea8165e66f38"
     },
     {
       "source": "registry/federation-targets.schema.json",
@@ -3821,7 +3802,7 @@
     {
       "source": "schemas/xananode-relationship-types.v0.5.0.json",
       "asset_path": "assets/raw/protocol/schemas/xananode-relationship-types.v0.5.0.json",
-      "content_id": "sha256:d3c1f953a10a32e569eab8d60056ce44111ccbf8c736ab84396b28880c0d96d5"
+      "content_id": "sha256:fcf685c11c5df923dd51fc09a31566ec5d27f9b76ef3a0a542b7bb7b8b65f17b"
     },
     {
       "source": "schemas/xananode-substrate-layout.v0.1.0.json",
@@ -3881,7 +3862,7 @@
     {
       "source": "specs/substrates.md",
       "asset_path": "assets/raw/protocol/specs/substrates.md",
-      "content_id": "sha256:4ca150a762846959669526ec851aa3c4a639cab54f9e642e7f495f01db0b33e4"
+      "content_id": "sha256:357554c3c6d1473c1c6f0fd5c91bbb2858ade5f61ee83ac194b9229ed9a03a90"
     },
     {
       "source": "specs/transclusion.md",
@@ -4894,20 +4875,20 @@
   "source_assets": [],
   "duplicate_assets": [],
   "asset_conflicts": [],
-  "generated_at": "2026-06-22T10:33:27.001Z",
+  "generated_at": "2026-06-25T14:22:39.906Z",
   "build_metadata": {
     "version": "0.1.0",
-    "git_commit": "79fe4688d8dc354555740af6a24f708ca5bbc7ee",
+    "git_commit": "b29928be095f94f10f92a365015a5a471d0ba825",
     "git_branch": "main",
     "repository": "kingc95/XanaNode-Core-SDK",
-    "generated_at": "2026-06-22T10:33:27.001Z",
+    "generated_at": "2026-06-25T14:22:39.906Z",
     "built_by": "@xananode/core",
     "runtime": "node v24.16.0",
     "platform": "win32/x64",
     "dependencies": [
       {
         "name": "XanaNode Protocol",
-        "version": "",
+        "version": "9973dcf",
         "repository": "kingc95/XanaNode",
         "relationship": "uses"
       }

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-node-subtype-schema-node-subtype-schema",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Node Subtype Schema Node Subtype Schema",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_node-subtype-schema-node_subtype_schema.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-schema-node_subtype_schema.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_node-subtype-schema-node_subtype_schema.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_node-subtype-schema-node_subtype_schema.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:ceefb4c93d296d09af544a258762a25892918ce7caed80469c99bf161c6d141a",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/node-subtype-schema-node_subtype_schema\",\n  \"title\": \"Schema subtype: node subtype schema\",\n  \"type\": \"schema\",\n  \"subtype\": \"node_subtype_schema\",\n  \"importance\": 4,\n  \"summary\": \"node_subtype_schema is an allowed subtype of the schema node type.\",\n  \"version\": \"0.3.0\",\n  \"registry_type\": \"node_subtype_schema\",\n  \"registry_namespace\": \"xananode\",\n  \"parent_node_type\": \"schema\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_node-subtype-schema-node_subtype_schema.json",
+    "method": "archive",
+    "content_id": "sha256:ceefb4c93d296d09af544a258762a25892918ce7caed80469c99bf161c6d141a",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

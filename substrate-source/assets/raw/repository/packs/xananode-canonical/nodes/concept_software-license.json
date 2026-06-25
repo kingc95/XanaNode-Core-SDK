@@ -1,0 +1,9 @@
+{
+  "relationships": [],
+  "id": "xananode.canonical:concept/software-license",
+  "title": "Software License",
+  "type": "concept",
+  "subtype": "distinction",
+  "importance": 4,
+  "summary": "A license applied to source code, validators, tooling, schemas, and implementation artifacts."
+}

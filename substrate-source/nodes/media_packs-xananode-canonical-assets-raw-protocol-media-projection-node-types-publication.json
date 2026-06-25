@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-raw-protocol-media-projection-node-types-publication",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Media / Projection / Node Types / Publication",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/media/projection/node-types/publication.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/media/projection/node-types/publication.svg",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/media/projection/node-types/publication.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/media/projection/node-types/publication.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:26fe6612db3dbc2cc72d554285fed30795d8a47e65aede9a3b2063a11052194e",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/media/projection/node-types/publication.svg",
+    "method": "archive",
+    "content_id": "sha256:26fe6612db3dbc2cc72d554285fed30795d8a47e65aede9a3b2063a11052194e",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

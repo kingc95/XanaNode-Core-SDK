@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-support-xananode",
+  "title": "Packs / Xananode Canonical / Nodes / Source Support Xananode",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_support-xananode.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_support-xananode.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_support-xananode.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_support-xananode.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:bde559eef831319bf56611e012b3a4d69155ea71d5c3c49d78b17466a9d5f4ad",
+  "content": "{\n  \"id\": \"xananode.canonical:source/support-xananode\",\n  \"title\": \"Support XanaNode\",\n  \"type\": \"source\",\n  \"subtype\": \"support_page\",\n  \"importance\": 4,\n  \"summary\": \"A support link for people who want to help sustain authored knowledge substrate creation.\",\n  \"source_url\": \"https://github.com/sponsors/kingc95\",\n  \"rights_status\": \"external\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_support-xananode.json",
+    "method": "archive",
+    "content_id": "sha256:bde559eef831319bf56611e012b3a4d69155ea71d5c3c49d78b17466a9d5f4ad",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

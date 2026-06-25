@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-anticipated_by",
+  "title": "Anticipated By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The anticipated_by inverse relationship term derived from anticipated.",
+  "version": "0.5.0",
+  "registry_type": "anticipated_by",
+  "registry_namespace": "xananode",
+  "category": "influence",
+  "inverse": "anticipated",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#99f6e4",
+  "inverse_color": "#14b8a6",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

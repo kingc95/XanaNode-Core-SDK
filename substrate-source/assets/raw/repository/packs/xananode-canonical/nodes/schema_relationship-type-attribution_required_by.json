@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-attribution_required_by",
+  "title": "Attribution Required By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The attribution_required_by inverse relationship term derived from requires_attribution.",
+  "version": "0.5.0",
+  "registry_type": "attribution_required_by",
+  "registry_namespace": "xananode",
+  "category": "governance",
+  "inverse": "requires_attribution",
+  "color": "#fde047",
+  "inverse_color": "#eab308",
+  "line_style": "dashed",
+  "inverse_line_style": "double",
+  "derived_inverse": true,
+  "relationships": [],
+  "default_weight": 4,
+  "default_visibility": "secondary"
+}

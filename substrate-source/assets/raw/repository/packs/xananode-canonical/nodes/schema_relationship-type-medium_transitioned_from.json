@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-medium_transitioned_from",
+  "title": "Medium transitioned from",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is the earlier medium form from which the target transitioned.",
+  "version": "0.5.0",
+  "registry_type": "medium_transitioned_from",
+  "registry_namespace": "xananode",
+  "category": "evolution",
+  "inverse": "medium_transition",
+  "color": "#99f6e4",
+  "inverse_color": "#14b8a6",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

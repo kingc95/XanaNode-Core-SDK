@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:technology/xananode-hugo-theme-component-relationship-files",
+  "title": "XanaNode Hugo Theme: relationship files",
+  "type": "technology",
+  "subtype": "software_component",
+  "importance": 3,
+  "summary": "XanaNode Hugo Theme consumes or depends on relationship files.",
+  "component_of": "xananode.canonical:project/xananode-hugo-theme",
+  "relationships": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "xananode.core:media/artifact-packs-xananode-canonical-assets-projection-relationship-types-approved",
+  "title": "Packs / Xananode Canonical / Assets / Projection / Relationship Types / Approved",
+  "type": "media",
+  "subtype": "core_media_asset",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/projection/relationship-types/approved.svg is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/relationship-types/approved.svg",
+  "artifact_path": "packs/xananode-canonical/assets/projection/relationship-types/approved.svg",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/projection/relationship-types/approved.svg",
+  "asset_role": "repository_source",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:a77ae3047e46832ab43f2e8e40d1d9d3a40c4abd4fe3d16b35e9acc4b3b88341",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/projection/relationship-types/approved.svg",
+    "method": "archive",
+    "content_id": "sha256:a77ae3047e46832ab43f2e8e40d1d9d3a40c4abd4fe3d16b35e9acc4b3b88341",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

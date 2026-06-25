@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-source-xananode-com-domain",
+  "title": "Packs / Xananode Canonical / Nodes / Source Xananode Com Domain",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/source_xananode-com-domain.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_xananode-com-domain.json",
+  "artifact_path": "packs/xananode-canonical/nodes/source_xananode-com-domain.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/source_xananode-com-domain.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:1e5c2644f6f84bfe423264bbd37958a68d6ef8c2537782e7734dbfbfd8cfc836",
+  "content": "{\n  \"id\": \"xananode.canonical:source/xananode-com-domain\",\n  \"title\": \"XanaNode.com\",\n  \"type\": \"source\",\n  \"subtypes\": [\n    \"website\",\n    \"official_site\"\n  ],\n  \"importance\": 5,\n  \"summary\": \"The stable long-term public home of the canonical XanaNode projection. XanaNode.org and XanaNode.net are project-owned aliases that resolve here to avoid fragmentation and SEO conflict.\",\n  \"source_url\": \"https://xananode.com/\",\n  \"rights_status\": \"canonical-public\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/source_xananode-com-domain.json",
+    "method": "archive",
+    "content_id": "sha256:1e5c2644f6f84bfe423264bbd37958a68d6ef8c2537782e7734dbfbfd8cfc836",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

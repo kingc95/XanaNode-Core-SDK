@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-examples-custom-extension-substrate-nodes-readme",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Examples / Custom Extension Substrate / Nodes / README",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/nodes/README.md is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/nodes/README.md",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/nodes/README.md",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/nodes/README.md",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:80cc6078d13b081f0b35d49e1c5c2e61575a9985faacedaa7ee8b0efb052d61c",
+  "content": "# Nodes\n\nThis directory contains both canonical XanaNode nodes and local extension nodes.\n\nThe file `memex-illustration.json` uses the custom node type:\n\n```text\nexample.museum:artifact\n```\n\nBecause the type is namespaced and declared in `schemas/`, other substrates can preserve it even when they do not natively support museum artifacts.\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/nodes/README.md",
+    "method": "archive",
+    "content_id": "sha256:80cc6078d13b081f0b35d49e1c5c2e61575a9985faacedaa7ee8b0efb052d61c",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

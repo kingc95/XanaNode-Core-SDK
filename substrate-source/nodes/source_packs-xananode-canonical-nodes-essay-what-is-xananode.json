@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-essay-what-is-xananode",
+  "title": "Packs / Xananode Canonical / Nodes / Essay What Is Xananode",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/essay_what-is-xananode.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/essay_what-is-xananode.json",
+  "artifact_path": "packs/xananode-canonical/nodes/essay_what-is-xananode.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/essay_what-is-xananode.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:6e06c5ede5842eb09088d29db2d817fe2235eadc88f7c706e7a4bbf8400e16e7",
+  "content": "{\n  \"id\": \"xananode.canonical:essay/what-is-xananode\",\n  \"title\": \"What Is XanaNode?\",\n  \"type\": \"essay\",\n  \"subtype\": \"explainer\",\n  \"importance\": 5,\n  \"summary\": \"An explanation of XanaNode as a layered protocol, not a single viewer, website, repository, or graph visualization.\",\n  \"content\": \"XanaNode is a layered protocol and working stack for knowledge substrates. It is not the website, not the graph alone, not the Hugo projection, and not a single repository.\\n\\nAt the bottom, the protocol defines the shared rules: canonical schemas, registries, artifact contracts, validation expectations, and governance conventions. Core reads and writes those protocol records. Workspace manages substrate folders, bundles, and federation intake. Studio and Mobile are authoring tools built on top of that substrate model. Hugo is one projection layer that renders the same underlying substrate as a public static site.\\n\\nThat layering matters because the knowledge should remain usable even when one projection changes. A substrate can be moved to another tool, shared as a `.substrate` bundle, mounted from a registry target, or rendered through a different projection without rewriting its meaning from scratch.\\n\\nXanaNode is also an explicit answer to a three-part computing failure: document boundaries collapse knowledge structure, copied excerpts lose durable lineage, and local-first tools without a shared substrate protocol still do not federate cleanly. The protocol tries to solve that by keeping relationships first-class, making fragments addressable, preserving raw assets and provenance, and separating the substrate from any one projection layer.\\n\\nThe canonical XanaNode substrate is intentionally self-referential. It carries its own schemas, artifacts, sources, branding, project nodes, implementation links, and explanatory trails so the stack can demonstrate the thing it claims to provide.\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/essay_what-is-xananode.json",
+    "method": "archive",
+    "content_id": "sha256:6e06c5ede5842eb09088d29db2d817fe2235eadc88f7c706e7a4bbf8400e16e7",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

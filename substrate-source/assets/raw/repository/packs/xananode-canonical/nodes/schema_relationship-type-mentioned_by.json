@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-mentioned_by",
+  "title": "Mentioned By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The mentioned_by inverse relationship term derived from mentions.",
+  "version": "0.5.0",
+  "registry_type": "mentioned_by",
+  "registry_namespace": "xananode",
+  "category": "citation",
+  "inverse": "mentions",
+  "derived_inverse": true,
+  "default_weight": 2,
+  "default_visibility": "background",
+  "relationships": [],
+  "color": "#bae6fd",
+  "inverse_color": "#38bdf8",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted"
+}

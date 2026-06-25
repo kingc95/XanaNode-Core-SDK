@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-assets-raw-protocol-examples-custom-extension-substrate-relationships",
+  "title": "Packs / Xananode Canonical / Assets / Raw / Protocol / Examples / Custom Extension Substrate / Relationships",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/relationships.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/relationships.json",
+  "artifact_path": "packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/relationships.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/relationships.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:54e8e87ba09b669be846143c9aeecfb512ace6248c32b3d8f359bd220d5db61b",
+  "content": "{\r\n  \"relationships\": [\r\n    {\r\n      \"id\": \"example.museum:rel/artifact-represents-concept\",\r\n      \"source\": \"example.museum:artifact/memex-illustration\",\r\n      \"target\": \"example.museum:concept/memex\",\r\n      \"type\": \"represents\",\r\n      \"weight\": 4,\r\n      \"visibility\": \"primary\",\r\n      \"asserted_by\": \"example.museum:person/example-curator\",\r\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\r\n      \"confidence\": \"curatorial\",\r\n      \"summary\": \"The exhibit illustration is used as a representative artifact for the Memex concept.\"\r\n    },\r\n    {\r\n      \"id\": \"example.museum:rel/artifact-context\",\r\n      \"source\": \"example.museum:artifact/memex-illustration\",\r\n      \"target\": \"example.museum:concept/memex\",\r\n      \"type\": \"example.museum:curatorial_context_for\",\r\n      \"weight\": 3,\r\n      \"visibility\": \"secondary\",\r\n      \"asserted_by\": \"example.museum:person/example-curator\",\r\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\r\n      \"confidence\": \"curatorial\",\r\n      \"summary\": \"The artifact provides curatorial framing for how the Memex concept is presented in the exhibit.\"\r\n    }\r\n  ]\r\n}\r\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/assets/raw/protocol/examples/custom-extension-substrate/relationships.json",
+    "method": "archive",
+    "content_id": "sha256:54e8e87ba09b669be846143c9aeecfb512ace6248c32b3d8f359bd220d5db61b",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

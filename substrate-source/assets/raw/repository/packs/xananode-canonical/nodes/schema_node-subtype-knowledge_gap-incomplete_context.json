@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-knowledge_gap-incomplete_context",
+  "title": "Knowledge Gap subtype: incomplete context",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "incomplete_context is an allowed subtype of the knowledge_gap node type.",
+  "version": "0.3.0",
+  "registry_type": "incomplete_context",
+  "registry_namespace": "xananode",
+  "parent_node_type": "knowledge_gap",
+  "relationships": []
+}

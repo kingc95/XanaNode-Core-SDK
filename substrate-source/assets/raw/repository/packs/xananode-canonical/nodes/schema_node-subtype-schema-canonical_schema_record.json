@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-schema-canonical_schema_record",
+  "title": "Schema subtype: canonical schema record",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "canonical_schema_record is an allowed subtype of the schema node type.",
+  "version": "0.3.0",
+  "registry_type": "canonical_schema_record",
+  "registry_namespace": "xananode",
+  "parent_node_type": "schema",
+  "relationships": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-quoted_by",
+  "title": "Quoted By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The quoted_by inverse relationship term derived from quotes.",
+  "version": "0.5.0",
+  "registry_type": "quoted_by",
+  "registry_namespace": "xananode",
+  "category": "citation",
+  "inverse": "quotes",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#bae6fd",
+  "inverse_color": "#38bdf8",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted"
+}

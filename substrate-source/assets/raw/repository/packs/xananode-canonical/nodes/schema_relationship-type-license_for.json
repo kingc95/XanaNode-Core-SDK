@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-license_for",
+  "title": "License For Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The license_for inverse relationship term derived from licensed_under.",
+  "version": "0.5.0",
+  "registry_type": "license_for",
+  "registry_namespace": "xananode",
+  "category": "governance",
+  "inverse": "licensed_under",
+  "color": "#fde047",
+  "inverse_color": "#eab308",
+  "line_style": "dashed",
+  "inverse_line_style": "double",
+  "derived_inverse": true,
+  "relationships": [],
+  "default_weight": 4,
+  "default_visibility": "secondary"
+}

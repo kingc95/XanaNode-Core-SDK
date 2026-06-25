@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-essay-analysis",
+  "title": "Essay subtype: analysis",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "analysis is an allowed subtype of the essay node type.",
+  "version": "0.3.0",
+  "registry_type": "analysis",
+  "registry_namespace": "xananode",
+  "parent_node_type": "essay",
+  "relationships": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-evidence_for",
+  "title": "Evidence for",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is evidence for the target claim or relationship.",
+  "version": "0.5.0",
+  "registry_type": "evidence_for",
+  "registry_namespace": "xananode",
+  "category": "evidence",
+  "inverse": "has_evidence",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#10b981",
+  "inverse_color": "#6ee7b7",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

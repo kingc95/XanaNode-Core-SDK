@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-has_context",
+  "title": "Has Context Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The has_context inverse relationship term derived from context_for.",
+  "version": "0.5.0",
+  "registry_type": "has_context",
+  "registry_namespace": "xananode",
+  "category": "explanation",
+  "inverse": "context_for",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#bfdbfe",
+  "inverse_color": "#60a5fa",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}

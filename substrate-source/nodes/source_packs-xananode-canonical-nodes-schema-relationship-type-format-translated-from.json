@@ -1,0 +1,26 @@
+{
+  "id": "xananode.core:source/artifact-packs-xananode-canonical-nodes-schema-relationship-type-format-translated-from",
+  "title": "Packs / Xananode Canonical / Nodes / Schema Relationship Type Format Translated From",
+  "type": "source",
+  "subtype": "project_document",
+  "importance": 3,
+  "summary": "packs/xananode-canonical/nodes/schema_relationship-type-format_translated_from.json is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.",
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-format_translated_from.json",
+  "artifact_path": "packs/xananode-canonical/nodes/schema_relationship-type-format_translated_from.json",
+  "asset_path": "assets/raw/repository/packs/xananode-canonical/nodes/schema_relationship-type-format_translated_from.json",
+  "asset_role": "repository_source",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content_id": "sha256:ffb4d50c8966333b7fe2a33400f4aaf1ef4561a7572502c9a15e442db83ec304",
+  "content": "{\n  \"id\": \"xananode.canonical:schema/relationship-type-format_translated_from\",\n  \"title\": \"Format translated from\",\n  \"type\": \"schema\",\n  \"subtype\": \"relationship_type_schema\",\n  \"importance\": 5,\n  \"summary\": \"The source preserves the target content while changing format, medium, or presentation layer.\",\n  \"version\": \"0.5.0\",\n  \"registry_type\": \"format_translated_from\",\n  \"registry_namespace\": \"xananode\",\n  \"category\": \"representation\",\n  \"inverse\": \"format_translated_into\",\n  \"color\": \"#8b5cf6\",\n  \"inverse_color\": \"#c4b5fd\",\n  \"line_style\": \"solid\",\n  \"inverse_line_style\": \"dashed\",\n  \"default_weight\": 4,\n  \"default_visibility\": \"primary\",\n  \"relationships\": []\n}\n",
+  "source_snapshot": {
+    "captured_at": "2026-06-25T14:22:34.827Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/nodes/schema_relationship-type-format_translated_from.json",
+    "method": "archive",
+    "content_id": "sha256:ffb4d50c8966333b7fe2a33400f4aaf1ef4561a7572502c9a15e442db83ec304",
+    "rights_status": "Apache-2.0",
+    "tool": "xananode-core/tools/build-substrate-source.mjs"
+  },
+  "relationships": []
+}

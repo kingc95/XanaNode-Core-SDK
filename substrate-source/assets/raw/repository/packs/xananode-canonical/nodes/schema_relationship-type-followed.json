@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-followed",
+  "title": "Followed Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The followed inverse relationship term derived from preceded.",
+  "version": "0.5.0",
+  "registry_type": "followed",
+  "registry_namespace": "xananode",
+  "category": "temporal",
+  "inverse": "preceded",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#d9f99d",
+  "inverse_color": "#a3e635",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

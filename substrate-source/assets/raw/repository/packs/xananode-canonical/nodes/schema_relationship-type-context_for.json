@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-context_for",
+  "title": "Context for",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source provides essential background or framing that makes the target intelligible.",
+  "version": "0.5.0",
+  "registry_type": "context_for",
+  "registry_namespace": "xananode",
+  "category": "explanation",
+  "inverse": "has_context",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": [],
+  "color": "#60a5fa",
+  "inverse_color": "#bfdbfe",
+  "line_style": "solid",
+  "inverse_line_style": "dashed"
+}

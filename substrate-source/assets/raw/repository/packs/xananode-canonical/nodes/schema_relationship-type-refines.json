@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-refines",
+  "title": "Refines",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source refines, sharpens, or improves the target.",
+  "version": "0.5.0",
+  "registry_type": "refines",
+  "registry_namespace": "xananode",
+  "category": "evolution",
+  "inverse": "refined_by",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": [],
+  "color": "#64748b",
+  "inverse_color": "#cbd5e1",
+  "line_style": "dashed",
+  "inverse_line_style": "solid"
+}
