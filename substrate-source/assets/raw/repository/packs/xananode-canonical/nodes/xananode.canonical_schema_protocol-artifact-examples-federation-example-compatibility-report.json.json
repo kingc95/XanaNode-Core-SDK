@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/federation-example/compatibility-report.json",
   "content_id": "sha256:13c556257221045ff9276bf42f1e3ff8bcad2cf3333838d23d5a5ebbef803491",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/compatibility-report.json",
     "method": "archive",
     "content_id": "sha256:13c556257221045ff9276bf42f1e3ff8bcad2cf3333838d23d5a5ebbef803491",

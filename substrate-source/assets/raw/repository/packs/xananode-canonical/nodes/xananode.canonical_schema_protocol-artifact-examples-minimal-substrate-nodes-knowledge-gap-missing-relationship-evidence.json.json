@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/knowledge-gap-missing-relationship-evidence.json",
   "content_id": "sha256:55c8bd14ef562b0a3a7276f0f794a6246213f39023579fbeb72356a6a14bc159",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/knowledge-gap-missing-relationship-evidence.json",
     "method": "archive",
     "content_id": "sha256:55c8bd14ef562b0a3a7276f0f794a6246213f39023579fbeb72356a6a14bc159",

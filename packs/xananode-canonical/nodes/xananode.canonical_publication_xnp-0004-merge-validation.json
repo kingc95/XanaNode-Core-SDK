@@ -12,7 +12,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:61c3fad6292685d0fbbefae2e8ac70b293cf323ae9fd118f71ebaf4119fb7119",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0004-merge-validation.md",
     "method": "archive",
     "content_id": "sha256:ac9c6be63b59a84eb131b3e70907ae86c4a564cb5a0705c3e134893ffe93b924",

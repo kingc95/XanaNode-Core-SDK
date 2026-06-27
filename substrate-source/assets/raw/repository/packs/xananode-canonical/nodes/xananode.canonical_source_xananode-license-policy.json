@@ -13,7 +13,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:730989736d8ebdbea699937dc93e8b36d8210445b6774cf142ec626cbab06559",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/LICENSE.md",
     "method": "archive",
     "content_id": "sha256:598ffb99d5fa073d173bb68528457d2be19f719872f9e4d36874dfa45d97bbba",

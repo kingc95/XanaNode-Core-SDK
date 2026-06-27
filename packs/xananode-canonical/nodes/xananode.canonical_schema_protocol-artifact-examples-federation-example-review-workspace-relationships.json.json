@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/relationships.json",
   "content_id": "sha256:3486d3be732725580995ef8046a8c0bc05dc1a812fe0473fb2af906d96f8c9e2",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/relationships.json",
     "method": "archive",
     "content_id": "sha256:3486d3be732725580995ef8046a8c0bc05dc1a812fe0473fb2af906d96f8c9e2",

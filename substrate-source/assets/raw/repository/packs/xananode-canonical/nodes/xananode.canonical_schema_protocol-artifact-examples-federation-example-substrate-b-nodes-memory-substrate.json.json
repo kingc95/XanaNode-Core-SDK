@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/federation-example/substrate-b/nodes/memory-substrate.json",
   "content_id": "sha256:cebdfc6609bcd32591521e46b11490f859c66b97729461ccc00185c111ec6c8f",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/nodes/memory-substrate.json",
     "method": "archive",
     "content_id": "sha256:40ef6943fe330dcfbc0a27ac6f0ebce4341f378663bcaf682d8cdb1436ecef4f",

@@ -11,7 +11,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:29692b67dac1b35358415342911b209f19dc590371a9f332da0bff548ac44f66",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json",
     "method": "archive",
     "content_id": "sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df",

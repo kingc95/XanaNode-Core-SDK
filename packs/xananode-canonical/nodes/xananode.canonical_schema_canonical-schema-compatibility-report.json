@@ -15,7 +15,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:cebce9e3ddbe9349982bdb25881dddc7a0ecbf03bd1f7cbaec5bf318c5789b28",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/compatibility-report.schema.json",
     "method": "archive",
     "content_id": "sha256:be8ea01644e2468dd965bc7704f0ae3a7ece61943eb4f8b96de4167115297762",

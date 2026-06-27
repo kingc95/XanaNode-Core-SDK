@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/media-xananode-icon.json",
   "content_id": "sha256:1c2fe98217121fba87b290567625828ed483edc5e5158159b5138e6f1cd709a0",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/media-xananode-icon.json",
     "method": "archive",
     "content_id": "sha256:dd583068751b1a3cf9dfed12fbd81a8878ba05c1aa87caf69e261e3aa8b9a1e0",

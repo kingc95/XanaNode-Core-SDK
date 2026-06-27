@@ -15,7 +15,7 @@
   "content_id": "sha256:a0e1c68ae07d72ee631ab37aee421fd21a5003f968adab7ea7296199ddd24ea6",
   "content": "{\r\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\r\n  \"$id\": \"https://xananode.org/schemas/namespace.schema.json\",\r\n  \"title\": \"Namespace Descriptor\",\r\n  \"type\": \"object\",\r\n  \"additionalProperties\": false,\r\n  \"required\": [\"prefix\", \"uri\"],\r\n  \"properties\": {\r\n    \"prefix\": { \"type\": \"string\" },\r\n    \"uri\": { \"type\": \"string\", \"format\": \"uri\" },\r\n    \"owner\": { \"type\": \"string\" },\r\n    \"description\": { \"type\": \"string\" }\r\n  }\r\n}\r\n",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:44.386Z",
+    "captured_at": "2026-06-27T16:35:32.292Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/schemas/namespace.schema.json",
     "method": "archive",
     "content_id": "sha256:a0e1c68ae07d72ee631ab37aee421fd21a5003f968adab7ea7296199ddd24ea6",

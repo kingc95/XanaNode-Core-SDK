@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/source-as-we-may-think.json",
   "content_id": "sha256:9c0490addf8c560dd86fbf76056b7d9c05847d58466ff454c373a4255fcc14e3",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/source-as-we-may-think.json",
     "method": "archive",
     "content_id": "sha256:9c0490addf8c560dd86fbf76056b7d9c05847d58466ff454c373a4255fcc14e3",

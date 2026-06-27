@@ -12,7 +12,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:ccdc11cc758a71b7ec54db8aa9311ea9c22bddb59de1b6eb37fea51950a2e3f8",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-node.schema.json",
     "method": "archive",
     "content_id": "sha256:bf220b30d78d74ca1b5fd5477497f93720e2d7d92aae2e1493ec64dd948e0ad0",

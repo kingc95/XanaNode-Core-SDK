@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/schemas/substrate-diff.schema.json",
   "content_id": "sha256:18ab06e82d3dd8718900b8e06704585d8d38e8b5af725d2241e6da19f1358ab5",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-diff.schema.json",
     "method": "archive",
     "content_id": "sha256:18ab06e82d3dd8718900b8e06704585d8d38e8b5af725d2241e6da19f1358ab5",

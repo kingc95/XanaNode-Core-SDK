@@ -15,7 +15,7 @@
   "content_id": "sha256:49d8c9ec029824e1addfa3e87dac8d50ecc85c0742071a42835f438c542372bf",
   "content": "---\ntitle: A campfire needs a safe location.\ntype: claim\nsummary: The fire site should be legal, clear of hazards, sheltered from spreading, and easy to extinguish.\ncreated_by: Example Author\nrelationships:\n  - type: supports\n    target: example:response/campfire-basic-answer\n    summary: A safe location supports the basic campfire answer.\n---\n# A campfire needs a safe location.\n\nA fire is not just a flame. It is a relationship between weather, ground, fuel, people, and responsibility.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:44.386Z",
+    "captured_at": "2026-06-27T16:35:32.292Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/templates/basic/content/nodes/campfire-safe-location.md",
     "method": "archive",
     "content_id": "sha256:49d8c9ec029824e1addfa3e87dac8d50ecc85c0742071a42835f438c542372bf",

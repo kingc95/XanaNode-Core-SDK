@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/registry/federation-targets.json",
   "content_id": "sha256:3ac90a9afcfafb3e6b6bc447040ada8da71eeb883b4adeb6063627d2cea0d623",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/federation-targets.json",
     "method": "archive",
     "content_id": "sha256:b91e7d8b531ac3a9905b9ba70335a791ea44f7212e93d987c3224e6cf32678fe",

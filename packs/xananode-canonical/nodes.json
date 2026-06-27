@@ -970,7 +970,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/assets/branding/xananode-icon.svg",
       "content_id": "sha256:d7b60a3f9a05156041dae523790d3465e7909a54425dfbeea3e112eace5f9c9a",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/assets/branding/xananode-icon.svg",
         "method": "archive",
         "content_id": "sha256:d7b60a3f9a05156041dae523790d3465e7909a54425dfbeea3e112eace5f9c9a",
@@ -995,7 +995,7 @@
       "asset_path": "assets/raw/protocol/media/images/xananode-icon.svg",
       "content_id": "sha256:d7b60a3f9a05156041dae523790d3465e7909a54425dfbeea3e112eace5f9c9a",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/images/xananode-icon.svg",
         "method": "archive",
         "content_id": "sha256:d7b60a3f9a05156041dae523790d3465e7909a54425dfbeea3e112eace5f9c9a",
@@ -1019,7 +1019,7 @@
       "relationships": [],
       "content_id": "sha256:ab2291c41d6f70bba95d03bc06f834c37ee43e5beeaeb979a83c11cd59463d4b",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/attention.svg",
         "method": "archive",
         "content_id": "sha256:ab2291c41d6f70bba95d03bc06f834c37ee43e5beeaeb979a83c11cd59463d4b",
@@ -1043,7 +1043,7 @@
       "relationships": [],
       "content_id": "sha256:42c87e278f7fa80d7d697169eb9d5b1083c6c96c3c92c5ef64911839809ab8fc",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/causation.svg",
         "method": "archive",
         "content_id": "sha256:42c87e278f7fa80d7d697169eb9d5b1083c6c96c3c92c5ef64911839809ab8fc",
@@ -1067,7 +1067,7 @@
       "relationships": [],
       "content_id": "sha256:681bac3266c7644084fb1a81c10db18b1f4e9a58befba8c9e9dfed6cca551553",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/citation.svg",
         "method": "archive",
         "content_id": "sha256:681bac3266c7644084fb1a81c10db18b1f4e9a58befba8c9e9dfed6cca551553",
@@ -1091,7 +1091,7 @@
       "relationships": [],
       "content_id": "sha256:b87755995f16a1d47d4fbe7d85a05c70d439b4dadcdbac4244c747e47d493c60",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/claim_structure.svg",
         "method": "archive",
         "content_id": "sha256:b87755995f16a1d47d4fbe7d85a05c70d439b4dadcdbac4244c747e47d493c60",
@@ -1115,7 +1115,7 @@
       "relationships": [],
       "content_id": "sha256:ec7f476ff2ce5c1871869a2d08d7bb00f553982a0d6d1379f054c4fe9dc18d7d",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/cognition.svg",
         "method": "archive",
         "content_id": "sha256:ec7f476ff2ce5c1871869a2d08d7bb00f553982a0d6d1379f054c4fe9dc18d7d",
@@ -1139,7 +1139,7 @@
       "relationships": [],
       "content_id": "sha256:66e741a47619846dfa178885cddc666d164a433fc3d63527a4a853496a458d53",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/communication.svg",
         "method": "archive",
         "content_id": "sha256:66e741a47619846dfa178885cddc666d164a433fc3d63527a4a853496a458d53",
@@ -1163,7 +1163,7 @@
       "relationships": [],
       "content_id": "sha256:bcedb00c6c51b708b49f42a4470c0d0db7b7eb8f6b5c123a4111fb05f0f061f9",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/comparison.svg",
         "method": "archive",
         "content_id": "sha256:bcedb00c6c51b708b49f42a4470c0d0db7b7eb8f6b5c123a4111fb05f0f061f9",
@@ -1187,7 +1187,7 @@
       "relationships": [],
       "content_id": "sha256:78ef038784d1d147cf90f6bb7130d87b267d20749c9b6c853301150e50ea4a04",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/composition.svg",
         "method": "archive",
         "content_id": "sha256:78ef038784d1d147cf90f6bb7130d87b267d20749c9b6c853301150e50ea4a04",
@@ -1211,7 +1211,7 @@
       "relationships": [],
       "content_id": "sha256:589b076490c1020527a425c130fffbad29826b135feed40404a0a865de17875d",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/creation.svg",
         "method": "archive",
         "content_id": "sha256:589b076490c1020527a425c130fffbad29826b135feed40404a0a865de17875d",
@@ -1235,7 +1235,7 @@
       "relationships": [],
       "content_id": "sha256:a89c48fa6a2a57cbfe6ab8525f7aed6c374f5300f4475600bc22c9a7569fc2f9",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/definition.svg",
         "method": "archive",
         "content_id": "sha256:a89c48fa6a2a57cbfe6ab8525f7aed6c374f5300f4475600bc22c9a7569fc2f9",
@@ -1259,7 +1259,7 @@
       "relationships": [],
       "content_id": "sha256:6386db239ccd3bb475cf9340fdca205d364f17f4234459fdad986e44881cfb3d",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/discovery.svg",
         "method": "archive",
         "content_id": "sha256:6386db239ccd3bb475cf9340fdca205d364f17f4234459fdad986e44881cfb3d",
@@ -1283,7 +1283,7 @@
       "relationships": [],
       "content_id": "sha256:382d60a2b9db0b0ef79dc921ea0134b87507654196616a9bd7524b9a14621284",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/evidence.svg",
         "method": "archive",
         "content_id": "sha256:382d60a2b9db0b0ef79dc921ea0134b87507654196616a9bd7524b9a14621284",
@@ -1307,7 +1307,7 @@
       "relationships": [],
       "content_id": "sha256:0f99fd8d00596d67f3d7fd7a66567dcb1db8654e0a242a0b81825aacde74312d",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/evolution.svg",
         "method": "archive",
         "content_id": "sha256:0f99fd8d00596d67f3d7fd7a66567dcb1db8654e0a242a0b81825aacde74312d",
@@ -1331,7 +1331,7 @@
       "relationships": [],
       "content_id": "sha256:4e4874d5199141421f5a5d7b171ebb98658441850c3dac004c0049372537f1d3",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/explanation.svg",
         "method": "archive",
         "content_id": "sha256:4e4874d5199141421f5a5d7b171ebb98658441850c3dac004c0049372537f1d3",
@@ -1355,7 +1355,7 @@
       "relationships": [],
       "content_id": "sha256:d22523074324202aad28e67e42be570b6ef53148946d897d4db9066c9f3b8139",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/generic.svg",
         "method": "archive",
         "content_id": "sha256:d22523074324202aad28e67e42be570b6ef53148946d897d4db9066c9f3b8139",
@@ -1379,7 +1379,7 @@
       "relationships": [],
       "content_id": "sha256:1017913454ae9bf485b575abca9137209a171394f496237f319d6988058ffa65",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/governance.svg",
         "method": "archive",
         "content_id": "sha256:1017913454ae9bf485b575abca9137209a171394f496237f319d6988058ffa65",
@@ -1403,7 +1403,7 @@
       "relationships": [],
       "content_id": "sha256:47978fb173aa6b107882b1cafc6d6a092130d378046fa6ee75198ea553201a55",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/historical.svg",
         "method": "archive",
         "content_id": "sha256:47978fb173aa6b107882b1cafc6d6a092130d378046fa6ee75198ea553201a55",
@@ -1427,7 +1427,7 @@
       "relationships": [],
       "content_id": "sha256:14fe95355a5344504ea807e841227b05567b7a54432e44848e33fc241f43359f",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/identity.svg",
         "method": "archive",
         "content_id": "sha256:14fe95355a5344504ea807e841227b05567b7a54432e44848e33fc241f43359f",
@@ -1451,7 +1451,7 @@
       "relationships": [],
       "content_id": "sha256:44e285f16a10892334ba4b157dcfc178dbae37624249b4d97acee438426d1ef4",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/influence.svg",
         "method": "archive",
         "content_id": "sha256:44e285f16a10892334ba4b157dcfc178dbae37624249b4d97acee438426d1ef4",
@@ -1475,7 +1475,7 @@
       "relationships": [],
       "content_id": "sha256:ba97bd418a55852a7624eb0481845cfd09b4742e0879ee1b6af8d88eb934c317",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/inquiry.svg",
         "method": "archive",
         "content_id": "sha256:ba97bd418a55852a7624eb0481845cfd09b4742e0879ee1b6af8d88eb934c317",
@@ -1499,7 +1499,7 @@
       "relationships": [],
       "content_id": "sha256:ffef22f26185d4179018afbfc0f85e218594d74c75decaf89088946fc013d487",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/knowledge_workflow.svg",
         "method": "archive",
         "content_id": "sha256:ffef22f26185d4179018afbfc0f85e218594d74c75decaf89088946fc013d487",
@@ -1523,7 +1523,7 @@
       "relationships": [],
       "content_id": "sha256:0bf1c4f6f900f8942f0ae8d9f2fd53d1b499ba6d85f2e2b22630cef4cd537ba3",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/lineage.svg",
         "method": "archive",
         "content_id": "sha256:0bf1c4f6f900f8942f0ae8d9f2fd53d1b499ba6d85f2e2b22630cef4cd537ba3",
@@ -1547,7 +1547,7 @@
       "relationships": [],
       "content_id": "sha256:035daac2e43e737037a266583ba1095dbed6de2ada71b40a19716d59d476ac6a",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/location.svg",
         "method": "archive",
         "content_id": "sha256:035daac2e43e737037a266583ba1095dbed6de2ada71b40a19716d59d476ac6a",
@@ -1571,7 +1571,7 @@
       "relationships": [],
       "content_id": "sha256:75b23545383f1f68f83900d707c769890d1a5bd201c7cb32085128f57d25bb35",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/participation.svg",
         "method": "archive",
         "content_id": "sha256:75b23545383f1f68f83900d707c769890d1a5bd201c7cb32085128f57d25bb35",
@@ -1595,7 +1595,7 @@
       "relationships": [],
       "content_id": "sha256:d21516c17ad8638796a0c9027a621f7a3455dd446772fa026591d89b646a7dde",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/reasoning.svg",
         "method": "archive",
         "content_id": "sha256:d21516c17ad8638796a0c9027a621f7a3455dd446772fa026591d89b646a7dde",
@@ -1619,7 +1619,7 @@
       "relationships": [],
       "content_id": "sha256:7b5afa794a1484247ccd19111ff810bea06bfd1b3f8bfe88d92dd1ad145a1359",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/representation.svg",
         "method": "archive",
         "content_id": "sha256:7b5afa794a1484247ccd19111ff810bea06bfd1b3f8bfe88d92dd1ad145a1359",
@@ -1643,7 +1643,7 @@
       "relationships": [],
       "content_id": "sha256:d87f0cf0457e32b99c9a692191e4aa027e4c6d5da6e8b26af2885fab8ece44ed",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/research_workflow.svg",
         "method": "archive",
         "content_id": "sha256:d87f0cf0457e32b99c9a692191e4aa027e4c6d5da6e8b26af2885fab8ece44ed",
@@ -1667,7 +1667,7 @@
       "relationships": [],
       "content_id": "sha256:ecd2224f73ec84fb820b2e6c4018963ef55ef16d9d080d745ef3d3cac0ec8312",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/revision.svg",
         "method": "archive",
         "content_id": "sha256:ecd2224f73ec84fb820b2e6c4018963ef55ef16d9d080d745ef3d3cac0ec8312",
@@ -1691,7 +1691,7 @@
       "relationships": [],
       "content_id": "sha256:d3f7a8726e99426f288cc65101c86f554c991b65a2cb53bae1179de4d2eed7db",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/schema_mapping.svg",
         "method": "archive",
         "content_id": "sha256:d3f7a8726e99426f288cc65101c86f554c991b65a2cb53bae1179de4d2eed7db",
@@ -1715,7 +1715,7 @@
       "relationships": [],
       "content_id": "sha256:8c2d79b7aeb182f6554e74dbcc2598a4aa1d39c0f75fd9c6836956f4d1cd986e",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/social.svg",
         "method": "archive",
         "content_id": "sha256:8c2d79b7aeb182f6554e74dbcc2598a4aa1d39c0f75fd9c6836956f4d1cd986e",
@@ -1739,7 +1739,7 @@
       "relationships": [],
       "content_id": "sha256:ba47c9bd720072a19d36ead5dbbffeee32836c0811f8fb286f7c608336d108cd",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/temporal.svg",
         "method": "archive",
         "content_id": "sha256:ba47c9bd720072a19d36ead5dbbffeee32836c0811f8fb286f7c608336d108cd",
@@ -1763,7 +1763,7 @@
       "relationships": [],
       "content_id": "sha256:aed34d9069335b325a5d2caa1c4ee3823a9f4b09f9f7a85cd62a031df8a19ba1",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/uncertainty.svg",
         "method": "archive",
         "content_id": "sha256:aed34d9069335b325a5d2caa1c4ee3823a9f4b09f9f7a85cd62a031df8a19ba1",
@@ -1994,16 +1994,16 @@
       "build_metadata": {
         "version": "0.1.0",
         "repository": "kingc95/XanaNode-Core-SDK",
-        "generated_at": "2026-06-27T07:05:45.707Z",
+        "generated_at": "2026-06-27T16:35:32.829Z",
         "built_by": "@xananode/core",
-        "git_commit": "08ee42fc795dbb2fea499196f3bc4851c2ebca4d",
+        "git_commit": "3fee9f71070c162706ef622b652db8a3c7768031",
         "git_branch": "main",
         "runtime": "node v24.16.0",
         "platform": "win32/x64",
         "dependencies": [
           {
             "name": "XanaNode Protocol",
-            "version": "2157f16",
+            "version": "0cc604c",
             "repository": "kingc95/XanaNode",
             "relationship": "uses"
           },
@@ -2061,7 +2061,7 @@
       "build_metadata": {
         "version": "",
         "repository": "kingc95/xananode-hugo",
-        "generated_at": "2026-06-27T07:05:45.828Z",
+        "generated_at": "2026-06-27T16:35:32.959Z",
         "built_by": "@xananode/core",
         "dependencies": [
           {
@@ -2110,7 +2110,7 @@
       "build_metadata": {
         "version": "",
         "repository": "kingc95/XanaNode-Mobile",
-        "generated_at": "2026-06-27T07:05:45.829Z",
+        "generated_at": "2026-06-27T16:35:32.959Z",
         "built_by": "@xananode/core",
         "dependencies": [
           {
@@ -2171,9 +2171,9 @@
       "build_metadata": {
         "version": "",
         "repository": "kingc95/XanaNode",
-        "generated_at": "2026-06-27T07:05:45.508Z",
+        "generated_at": "2026-06-27T16:35:32.765Z",
         "built_by": "@xananode/core",
-        "git_commit": "2157f16df0944df0e4ba101458dc967a2abeb0cb",
+        "git_commit": "0cc604ced94bcbf4a3d157791ab21273f2b0491d",
         "git_branch": "main",
         "dependencies": []
       },
@@ -2201,7 +2201,7 @@
       "build_metadata": {
         "version": "",
         "repository": "kingc95/XanaNode-Studio",
-        "generated_at": "2026-06-27T07:05:45.828Z",
+        "generated_at": "2026-06-27T16:35:32.959Z",
         "built_by": "@xananode/core",
         "dependencies": [
           {
@@ -2251,7 +2251,7 @@
       "build_metadata": {
         "version": "",
         "repository": "kingc95/XanaNode-Workspace",
-        "generated_at": "2026-06-27T07:05:45.828Z",
+        "generated_at": "2026-06-27T16:35:32.959Z",
         "built_by": "@xananode/core",
         "dependencies": [
           {
@@ -2303,7 +2303,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:61c3fad6292685d0fbbefae2e8ac70b293cf323ae9fd118f71ebaf4119fb7119",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0004-merge-validation.md",
         "method": "archive",
         "content_id": "sha256:ac9c6be63b59a84eb131b3e70907ae86c4a564cb5a0705c3e134893ffe93b924",
@@ -2401,7 +2401,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:07fcccc692a4452209d854f0b8a6652d045f65f7a471724fd7c3a9f189dc1576",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/author-profile.schema.json",
         "method": "archive",
         "content_id": "sha256:49c7adcf28e6ce6855771bbcd88cb364fed8dde4f0a242c77d05c6cb2a7081e1",
@@ -2426,7 +2426,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:cebce9e3ddbe9349982bdb25881dddc7a0ecbf03bd1f7cbaec5bf318c5789b28",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/compatibility-report.schema.json",
         "method": "archive",
         "content_id": "sha256:be8ea01644e2468dd965bc7704f0ae3a7ece61943eb4f8b96de4167115297762",
@@ -2451,7 +2451,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:b5800fe6bbc0f5d5f01b936462cb2d4c7b69b2ff7b3268b0bb96f907a140c17a",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/merge-report.schema.json",
         "method": "archive",
         "content_id": "sha256:1db233199589a5ec082d4d74814d0e8225bd53d7a0a968962c88db692ee58665",
@@ -2476,7 +2476,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:867b2bbc4f242f013a98a174b6e4d2a738cf6df34c43fd431b551ec980ed576a",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/nanopublication.schema.json",
         "method": "archive",
         "content_id": "sha256:e39ee3b6c2fe4d069450c7b45d0fdeddcb7be0af88f35d436d4a4aab54d8285d",
@@ -2501,7 +2501,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:29692b67dac1b35358415342911b209f19dc590371a9f332da0bff548ac44f66",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json",
         "method": "archive",
         "content_id": "sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df",
@@ -2526,7 +2526,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:82b8269890a6469a83d597b5d2132aea5f1e790b37dd379b5dd96fc7fb904485",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-diff.schema.json",
         "method": "archive",
         "content_id": "sha256:18ab06e82d3dd8718900b8e06704585d8d38e8b5af725d2241e6da19f1358ab5",
@@ -2551,7 +2551,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:ed1bb5aa0ff4ec9b6f4c4bed4ac2e25883e96dcd586a1b4a5e74c1b78e80cb48",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-manifest.schema.json",
         "method": "archive",
         "content_id": "sha256:70f06fa47eb996155b18c459e50ee9389d1d1501557f3320364fe06100acc592",
@@ -2576,7 +2576,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:ccdc11cc758a71b7ec54db8aa9311ea9c22bddb59de1b6eb37fea51950a2e3f8",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-node.schema.json",
         "method": "archive",
         "content_id": "sha256:bf220b30d78d74ca1b5fd5477497f93720e2d7d92aae2e1493ec64dd948e0ad0",
@@ -2601,7 +2601,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:178c2c72ee97ee25ed46fc5d506224fc6e0cb8e39c90b7aa9874cdde390b0ca3",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-relationships.schema.json",
         "method": "archive",
         "content_id": "sha256:f54850b79d92255a2ed8753086ec114a2bb425b0219e30f614072fbf117a53a2",
@@ -2626,7 +2626,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:80c9c2e6e1c8b81b3e018a555fe9ed0493de0b29ce230968ee28286ad336f2ca",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-node-types.schema.v0.3.0.json",
         "method": "archive",
         "content_id": "sha256:6f038080085a297c4d44de43617dc8ac621c433b28c63a1b4aa8d67e10c3ec5b",
@@ -2651,7 +2651,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:5200668eff49a37c9e0af11bfd09a709c17c65f93e1777b7e72dbc75c703411e",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/property-registry.schema.json",
         "method": "archive",
         "content_id": "sha256:74c45259c0200a27c9f879511c8557b33da3b9b6c2f5c34a14c219c89c91a216",
@@ -2676,7 +2676,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:32aa53969c9cc55a7f258202c9910e7639bafb4a114abb93e2ca67e8b556c3c3",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.schema.v0.5.0.json",
         "method": "archive",
         "content_id": "sha256:05cca697d1cc06aa94c11fce8b0237e051ca4416e3f31eebf32a473e5e5e150d",
@@ -2697,7 +2697,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:8ba16cdc4c3f9ca018f355e27def3477683ccd30d8c47dfa0ea87a4b54229371",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/canonical-schemas.json",
         "method": "archive",
         "content_id": "sha256:a37a134ff539525456dada8cbafc182f812a50589f3de0358aac77de47cc6928",
@@ -2718,7 +2718,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:d859aec5ab80bc7388b61c105bdc88465755e280652fd51c4bb9ea8165e66f38",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/federation-targets.json",
         "method": "archive",
         "content_id": "sha256:b91e7d8b531ac3a9905b9ba70335a791ea44f7212e93d987c3224e6cf32678fe",
@@ -2739,7 +2739,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:b5356bb3586e0758db7ece62321b614d525d9d900f5ec68fd9b6f957183dc5a0",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/known-implementations.json",
         "method": "archive",
         "content_id": "sha256:40fad1a6f4f139207a09fe8c98c74b734a6706a21352f8fa8180a139800d58dd",
@@ -2808,7 +2808,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:76f2024eac0e5745584032f8adfd62594f7a2ba1798ecd9b391f27f355462d11",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/namespaces.json",
         "method": "archive",
         "content_id": "sha256:c07fdb60dfa9ba3d66252db44fcb076ee0cc655c5fd8f3f92c69ae4a32d86c43",
@@ -2829,7 +2829,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:a0e1c68ae07d72ee631ab37aee421fd21a5003f968adab7ea7296199ddd24ea6",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/namespace.schema.json",
         "method": "archive",
         "content_id": "sha256:a0e1c68ae07d72ee631ab37aee421fd21a5003f968adab7ea7296199ddd24ea6",
@@ -6680,7 +6680,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:8b0e0470cf4f12b43772a8dddf27df56d6689abf9772d36b5693360230469fbc",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-node-types.v0.3.0.json",
         "method": "archive",
         "content_id": "sha256:d8a0628460ba11797103ffac6634d3201df91fee54f49d9d9911283fc32e8ec1",
@@ -7241,7 +7241,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:a60b4ba549d97566097ddf2c8be5aef179120dff261e3485d0640c56a21bcd4f",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-property-registry.v0.1.0.json",
         "method": "archive",
         "content_id": "sha256:09c0306032e01170c92bfa0bc044c0983e980b68e8bd88b3e8c9f37110acf39b",
@@ -7263,7 +7263,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:5200668eff49a37c9e0af11bfd09a709c17c65f93e1777b7e72dbc75c703411e",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/property-registry.schema.json",
         "method": "archive",
         "content_id": "sha256:74c45259c0200a27c9f879511c8557b33da3b9b6c2f5c34a14c219c89c91a216",
@@ -7300,7 +7300,7 @@
       "asset_path": "assets/raw/protocol/contexts/xananode.context.jsonld",
       "content_id": "sha256:8192a5d5477e28549cb66d77aed71019e071084fd92f9163e0f57d3dc5608a9f",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/contexts/xananode.context.jsonld",
         "method": "archive",
         "content_id": "sha256:8192a5d5477e28549cb66d77aed71019e071084fd92f9163e0f57d3dc5608a9f",
@@ -7337,7 +7337,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/compatibility-report.json",
       "content_id": "sha256:13c556257221045ff9276bf42f1e3ff8bcad2cf3333838d23d5a5ebbef803491",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/compatibility-report.json",
         "method": "archive",
         "content_id": "sha256:13c556257221045ff9276bf42f1e3ff8bcad2cf3333838d23d5a5ebbef803491",
@@ -7363,7 +7363,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/merge-report.json",
       "content_id": "sha256:5ef3669d327ba167955d42868fee5e3975fb15d7ecb786ea10d20b8cb3ebad50",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/merge-report.json",
         "method": "archive",
         "content_id": "sha256:5ef3669d327ba167955d42868fee5e3975fb15d7ecb786ea10d20b8cb3ebad50",
@@ -7389,7 +7389,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/federation-review-proof.json",
       "content_id": "sha256:6f209e02c599d6fd7042d4985e33cd27fbeb04533aea088e059f27b30ea88263",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/federation-review-proof.json",
         "method": "archive",
         "content_id": "sha256:6f209e02c599d6fd7042d4985e33cd27fbeb04533aea088e059f27b30ea88263",
@@ -7415,7 +7415,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/knowledge-substrate.json",
       "content_id": "sha256:80f366bf254f94ec152db8ab38e79ac2c5afaa75450a782b269237076454ceac",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/knowledge-substrate.json",
         "method": "archive",
         "content_id": "sha256:80f366bf254f94ec152db8ab38e79ac2c5afaa75450a782b269237076454ceac",
@@ -7441,7 +7441,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/memory-substrate.json",
       "content_id": "sha256:deeee5b2de2a247eb195e8737cf6bca85783dde01c669164f4dd0ed4d45d2dba",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/memory-substrate.json",
         "method": "archive",
         "content_id": "sha256:deeee5b2de2a247eb195e8737cf6bca85783dde01c669164f4dd0ed4d45d2dba",
@@ -7467,7 +7467,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/non-destructive-merge-review.json",
       "content_id": "sha256:8ba0ca1f2020b131895ff030638a5ed07e4ef111433cdce14c2e0a6687a4373a",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/non-destructive-merge-review.json",
         "method": "archive",
         "content_id": "sha256:8ba0ca1f2020b131895ff030638a5ed07e4ef111433cdce14c2e0a6687a4373a",
@@ -7493,7 +7493,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/person-researcher-a.json",
       "content_id": "sha256:38357a82fba476fd09cbb10dc0599789d07298959c125b4393d35b3ea67eed8c",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/person-researcher-a.json",
         "method": "archive",
         "content_id": "sha256:38357a82fba476fd09cbb10dc0599789d07298959c125b4393d35b3ea67eed8c",
@@ -7519,7 +7519,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/person-researcher-b.json",
       "content_id": "sha256:4c3a0ed24483293e21b257d73c47759c224b7e0b5207690cf3e75343ab410f82",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/person-researcher-b.json",
         "method": "archive",
         "content_id": "sha256:4c3a0ed24483293e21b257d73c47759c224b7e0b5207690cf3e75343ab410f82",
@@ -7545,7 +7545,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/relationships.json",
       "content_id": "sha256:3486d3be732725580995ef8046a8c0bc05dc1a812fe0473fb2af906d96f8c9e2",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/relationships.json",
         "method": "archive",
         "content_id": "sha256:3486d3be732725580995ef8046a8c0bc05dc1a812fe0473fb2af906d96f8c9e2",
@@ -7571,7 +7571,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/substrate.json",
       "content_id": "sha256:a4da50a7d01373f32f20ebd89c0aba37b4cdac9d352714ad3f9d2d5e44021657",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/substrate.json",
         "method": "archive",
         "content_id": "sha256:a4da50a7d01373f32f20ebd89c0aba37b4cdac9d352714ad3f9d2d5e44021657",
@@ -7597,7 +7597,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-a/nodes/knowledge-substrate.json",
       "content_id": "sha256:78fadbd40cf835f382f300d127a05e356c3b48b97f591cc35a6520b391dcdc9f",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/nodes/knowledge-substrate.json",
         "method": "archive",
         "content_id": "sha256:bd793aebde5c4c792aea47ee820c99e430b3275c65c19e5691a3dfbbe199e389",
@@ -7623,7 +7623,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-a/nodes/person-researcher-a.json",
       "content_id": "sha256:528b2178a8ec0b2106fe9fc138b9297242f8d720bd257634c6f40940cabff65a",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/nodes/person-researcher-a.json",
         "method": "archive",
         "content_id": "sha256:528b2178a8ec0b2106fe9fc138b9297242f8d720bd257634c6f40940cabff65a",
@@ -7649,7 +7649,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-a/relationships.json",
       "content_id": "sha256:31a3ca9034fc485d42dccc11e26149c325abf8589af45ebf834a7ee948ec0d34",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/relationships.json",
         "method": "archive",
         "content_id": "sha256:31a3ca9034fc485d42dccc11e26149c325abf8589af45ebf834a7ee948ec0d34",
@@ -7675,7 +7675,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-a/substrate.json",
       "content_id": "sha256:de367242547736608a9b0f558025436ff6069df1c1f2d66019c4882823970489",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/substrate.json",
         "method": "archive",
         "content_id": "sha256:de367242547736608a9b0f558025436ff6069df1c1f2d66019c4882823970489",
@@ -7701,7 +7701,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-b/nodes/memory-substrate.json",
       "content_id": "sha256:cebdfc6609bcd32591521e46b11490f859c66b97729461ccc00185c111ec6c8f",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/nodes/memory-substrate.json",
         "method": "archive",
         "content_id": "sha256:40ef6943fe330dcfbc0a27ac6f0ebce4341f378663bcaf682d8cdb1436ecef4f",
@@ -7727,7 +7727,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-b/nodes/person-researcher-b.json",
       "content_id": "sha256:d7988858eaeb7bc3979438cc40946e9b2ecf24e7bf32c34a23012f09bd35d1a3",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/nodes/person-researcher-b.json",
         "method": "archive",
         "content_id": "sha256:d7988858eaeb7bc3979438cc40946e9b2ecf24e7bf32c34a23012f09bd35d1a3",
@@ -7753,7 +7753,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-b/relationships.json",
       "content_id": "sha256:2644bf38596caf93aedf0defef25783e67cb98c46461044420a3615f7eb89f59",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/relationships.json",
         "method": "archive",
         "content_id": "sha256:2644bf38596caf93aedf0defef25783e67cb98c46461044420a3615f7eb89f59",
@@ -7779,7 +7779,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-b/substrate.json",
       "content_id": "sha256:166915a43577436c9afb2eca49172383db2979efc6d69ce3c9454aff42ef1f69",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/substrate.json",
         "method": "archive",
         "content_id": "sha256:166915a43577436c9afb2eca49172383db2979efc6d69ce3c9454aff42ef1f69",
@@ -7805,7 +7805,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-diff.json",
       "content_id": "sha256:b171629889cb8036138939eff5b98f5f1e147d0ae91adb26b028240874dcb78c",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-diff.json",
         "method": "archive",
         "content_id": "sha256:b171629889cb8036138939eff5b98f5f1e147d0ae91adb26b028240874dcb78c",
@@ -7842,7 +7842,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/author-profile.json",
       "content_id": "sha256:9663891d09582c1e5af0dedae6f811ea5aae883eae0e77137b3a451f07cdbae7",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/author-profile.json",
         "method": "archive",
         "content_id": "sha256:9663891d09582c1e5af0dedae6f811ea5aae883eae0e77137b3a451f07cdbae7",
@@ -7868,7 +7868,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nanopublication-substrate-claim.json",
       "content_id": "sha256:058c8e5604416d884b81cc589203ede8660a57b6101a043e087624e7ccd38734",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nanopublication-substrate-claim.json",
         "method": "archive",
         "content_id": "sha256:058c8e5604416d884b81cc589203ede8660a57b6101a043e087624e7ccd38734",
@@ -7894,7 +7894,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/claim-substrate-structure.json",
       "content_id": "sha256:7b9d489e6aac06aef0478a6840bc6170722be070ea63e0093b821095587e6709",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/claim-substrate-structure.json",
         "method": "archive",
         "content_id": "sha256:7b9d489e6aac06aef0478a6840bc6170722be070ea63e0093b821095587e6709",
@@ -7920,7 +7920,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/communication-minimal-substrate-discussion.json",
       "content_id": "sha256:bb6e0530e574686ed2d8453dd097106a65aab1b17aaafbf814006edd0d32496e",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/communication-minimal-substrate-discussion.json",
         "method": "archive",
         "content_id": "sha256:bb6e0530e574686ed2d8453dd097106a65aab1b17aaafbf814006edd0d32496e",
@@ -7946,7 +7946,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/concept-associative-trails.json",
       "content_id": "sha256:595ae22c4675a02b7ca801761cdfa6bd868d012cc96419a66461a25c7a4c112f",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/concept-associative-trails.json",
         "method": "archive",
         "content_id": "sha256:595ae22c4675a02b7ca801761cdfa6bd868d012cc96419a66461a25c7a4c112f",
@@ -7972,7 +7972,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/essay-relationship-navigation-intro.json",
       "content_id": "sha256:856046f01bcc3f0e55af54cebf0ea1922165140262c99a36c2912603d9f74af6",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/essay-relationship-navigation-intro.json",
         "method": "archive",
         "content_id": "sha256:856046f01bcc3f0e55af54cebf0ea1922165140262c99a36c2912603d9f74af6",
@@ -7998,7 +7998,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/fragment-as-we-may-think-0004.json",
       "content_id": "sha256:f0c4f8b1ac22a733c1893242413d6970f5f2734f15f7a66bd09cb8bccc8116fe",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/fragment-as-we-may-think-0004.json",
         "method": "archive",
         "content_id": "sha256:f0c4f8b1ac22a733c1893242413d6970f5f2734f15f7a66bd09cb8bccc8116fe",
@@ -8024,7 +8024,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/knowledge-gap-missing-relationship-evidence.json",
       "content_id": "sha256:55c8bd14ef562b0a3a7276f0f794a6246213f39023579fbeb72356a6a14bc159",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/knowledge-gap-missing-relationship-evidence.json",
         "method": "archive",
         "content_id": "sha256:55c8bd14ef562b0a3a7276f0f794a6246213f39023579fbeb72356a6a14bc159",
@@ -8050,7 +8050,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/knowledge-substrate.json",
       "content_id": "sha256:79c21565b10614242fa81e17293dcbb4276151aa11b19ba9965e42e3ffbb7594",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/knowledge-substrate.json",
         "method": "archive",
         "content_id": "sha256:79c21565b10614242fa81e17293dcbb4276151aa11b19ba9965e42e3ffbb7594",
@@ -8076,7 +8076,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/media-xananode-icon.json",
       "content_id": "sha256:1c2fe98217121fba87b290567625828ed483edc5e5158159b5138e6f1cd709a0",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/media-xananode-icon.json",
         "method": "archive",
         "content_id": "sha256:dd583068751b1a3cf9dfed12fbd81a8878ba05c1aa87caf69e261e3aa8b9a1e0",
@@ -8102,7 +8102,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/person-example-maintainer.json",
       "content_id": "sha256:a2ee929f0385650182710c527877012c60020bd5d5ec200bce9596c58b9ae974",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/person-example-maintainer.json",
         "method": "archive",
         "content_id": "sha256:a2ee929f0385650182710c527877012c60020bd5d5ec200bce9596c58b9ae974",
@@ -8128,7 +8128,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/question-why-relationships-matter.json",
       "content_id": "sha256:cb8c7af6d5c7504af1471ecf6c2bd7b4351b32a84440aea754b0ed7e42f22cb4",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/question-why-relationships-matter.json",
         "method": "archive",
         "content_id": "sha256:cb8c7af6d5c7504af1471ecf6c2bd7b4351b32a84440aea754b0ed7e42f22cb4",
@@ -8154,7 +8154,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/response-relationships-preserve-context.json",
       "content_id": "sha256:479c37d7a9e310ba81bdb5a8de649da83af99fce536d6719fc6ca03b18ae1131",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/response-relationships-preserve-context.json",
         "method": "archive",
         "content_id": "sha256:479c37d7a9e310ba81bdb5a8de649da83af99fce536d6719fc6ca03b18ae1131",
@@ -8180,7 +8180,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/source-as-we-may-think.json",
       "content_id": "sha256:9c0490addf8c560dd86fbf76056b7d9c05847d58466ff454c373a4255fcc14e3",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/source-as-we-may-think.json",
         "method": "archive",
         "content_id": "sha256:9c0490addf8c560dd86fbf76056b7d9c05847d58466ff454c373a4255fcc14e3",
@@ -8206,7 +8206,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/trail-start-here.json",
       "content_id": "sha256:355ac323837b0ceb2c247e652a3f0f563c1ff64473e365be5b50af1114298ace",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/trail-start-here.json",
         "method": "archive",
         "content_id": "sha256:355ac323837b0ceb2c247e652a3f0f563c1ff64473e365be5b50af1114298ace",
@@ -8232,7 +8232,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/relationships.json",
       "content_id": "sha256:c61676a7fd8e82bd034f80ab28fdef5eefd0d4cbc7c205c3d510ad601076c290",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/relationships.json",
         "method": "archive",
         "content_id": "sha256:c61676a7fd8e82bd034f80ab28fdef5eefd0d4cbc7c205c3d510ad601076c290",
@@ -8258,7 +8258,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/ro-crate-metadata.json",
       "content_id": "sha256:91de93fab24f24bcc6e3b8e5b0bc9a488a2475383b5f4be37e587b23d161ea44",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/ro-crate-metadata.json",
         "method": "archive",
         "content_id": "sha256:91de93fab24f24bcc6e3b8e5b0bc9a488a2475383b5f4be37e587b23d161ea44",
@@ -8284,7 +8284,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/substrate.json",
       "content_id": "sha256:7e022016422780a1d6564862972483fa0f7db8b491fc294fafd09edf4c73a6ac",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/substrate.json",
         "method": "archive",
         "content_id": "sha256:7e022016422780a1d6564862972483fa0f7db8b491fc294fafd09edf4c73a6ac",
@@ -8343,7 +8343,7 @@
       "asset_path": "assets/raw/protocol/registry/canonical-schemas.json",
       "content_id": "sha256:a37a134ff539525456dada8cbafc182f812a50589f3de0358aac77de47cc6928",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/canonical-schemas.json",
         "method": "archive",
         "content_id": "sha256:a37a134ff539525456dada8cbafc182f812a50589f3de0358aac77de47cc6928",
@@ -8369,7 +8369,7 @@
       "asset_path": "assets/raw/protocol/registry/federation-targets.json",
       "content_id": "sha256:3ac90a9afcfafb3e6b6bc447040ada8da71eeb883b4adeb6063627d2cea0d623",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/federation-targets.json",
         "method": "archive",
         "content_id": "sha256:b91e7d8b531ac3a9905b9ba70335a791ea44f7212e93d987c3224e6cf32678fe",
@@ -8395,7 +8395,7 @@
       "asset_path": "assets/raw/protocol/registry/federation-targets.schema.json",
       "content_id": "sha256:7b360af2b0aec0db05e2f411fe2d14b8d12629ac4dab85c87240daf5c0e1c1ed",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/federation-targets.schema.json",
         "method": "archive",
         "content_id": "sha256:7b360af2b0aec0db05e2f411fe2d14b8d12629ac4dab85c87240daf5c0e1c1ed",
@@ -8421,7 +8421,7 @@
       "asset_path": "assets/raw/protocol/registry/known-implementations.json",
       "content_id": "sha256:e233016a166e0ff27e45fc46dc706567dfb0814f747c6d9cbd549fc915bc56ae",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/known-implementations.json",
         "method": "archive",
         "content_id": "sha256:40fad1a6f4f139207a09fe8c98c74b734a6706a21352f8fa8180a139800d58dd",
@@ -8447,7 +8447,7 @@
       "asset_path": "assets/raw/protocol/registry/namespaces.json",
       "content_id": "sha256:1c70d6330e60e757cbf30eef1f6f1d0cc57a6993467bb7680e831ec4573ab7f6",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/namespaces.json",
         "method": "archive",
         "content_id": "sha256:c07fdb60dfa9ba3d66252db44fcb076ee0cc655c5fd8f3f92c69ae4a32d86c43",
@@ -8491,7 +8491,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:07fcccc692a4452209d854f0b8a6652d045f65f7a471724fd7c3a9f189dc1576",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/author-profile.schema.json",
         "method": "archive",
         "content_id": "sha256:49c7adcf28e6ce6855771bbcd88cb364fed8dde4f0a242c77d05c6cb2a7081e1",
@@ -8521,7 +8521,7 @@
       "asset_path": "assets/raw/protocol/schemas/compatibility-report.schema.json",
       "content_id": "sha256:be8ea01644e2468dd965bc7704f0ae3a7ece61943eb4f8b96de4167115297762",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/compatibility-report.schema.json",
         "method": "archive",
         "content_id": "sha256:be8ea01644e2468dd965bc7704f0ae3a7ece61943eb4f8b96de4167115297762",
@@ -8547,7 +8547,7 @@
       "asset_path": "assets/raw/protocol/schemas/merge-report.schema.json",
       "content_id": "sha256:1db233199589a5ec082d4d74814d0e8225bd53d7a0a968962c88db692ee58665",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/merge-report.schema.json",
         "method": "archive",
         "content_id": "sha256:1db233199589a5ec082d4d74814d0e8225bd53d7a0a968962c88db692ee58665",
@@ -8573,7 +8573,7 @@
       "asset_path": "assets/raw/protocol/schemas/namespace.schema.json",
       "content_id": "sha256:a0e1c68ae07d72ee631ab37aee421fd21a5003f968adab7ea7296199ddd24ea6",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/namespace.schema.json",
         "method": "archive",
         "content_id": "sha256:a0e1c68ae07d72ee631ab37aee421fd21a5003f968adab7ea7296199ddd24ea6",
@@ -8599,7 +8599,7 @@
       "asset_path": "assets/raw/protocol/schemas/nanopublication.schema.json",
       "content_id": "sha256:e39ee3b6c2fe4d069450c7b45d0fdeddcb7be0af88f35d436d4a4aab54d8285d",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/nanopublication.schema.json",
         "method": "archive",
         "content_id": "sha256:e39ee3b6c2fe4d069450c7b45d0fdeddcb7be0af88f35d436d4a4aab54d8285d",
@@ -8625,7 +8625,7 @@
       "asset_path": "assets/raw/protocol/schemas/property-registry.schema.json",
       "content_id": "sha256:74c45259c0200a27c9f879511c8557b33da3b9b6c2f5c34a14c219c89c91a216",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/property-registry.schema.json",
         "method": "archive",
         "content_id": "sha256:74c45259c0200a27c9f879511c8557b33da3b9b6c2f5c34a14c219c89c91a216",
@@ -8651,7 +8651,7 @@
       "asset_path": "assets/raw/protocol/schemas/ro-crate-metadata.schema.json",
       "content_id": "sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json",
         "method": "archive",
         "content_id": "sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df",
@@ -8677,7 +8677,7 @@
       "asset_path": "assets/raw/protocol/schemas/substrate-diff.schema.json",
       "content_id": "sha256:18ab06e82d3dd8718900b8e06704585d8d38e8b5af725d2241e6da19f1358ab5",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-diff.schema.json",
         "method": "archive",
         "content_id": "sha256:18ab06e82d3dd8718900b8e06704585d8d38e8b5af725d2241e6da19f1358ab5",
@@ -8703,7 +8703,7 @@
       "asset_path": "assets/raw/protocol/schemas/substrate-layout.schema.json",
       "content_id": "sha256:ab0a1a5afbc0a6b211d7bff74e5f5dd247e024e939356a484d988674eb452ab6",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-layout.schema.json",
         "method": "archive",
         "content_id": "sha256:eca5e7dff19bc8232847cfe23ce5909e62b3358a0bc8538203476eb6fd59a078",
@@ -8725,7 +8725,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:ed1bb5aa0ff4ec9b6f4c4bed4ac2e25883e96dcd586a1b4a5e74c1b78e80cb48",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-manifest.schema.json",
         "method": "archive",
         "content_id": "sha256:70f06fa47eb996155b18c459e50ee9389d1d1501557f3320364fe06100acc592",
@@ -8751,7 +8751,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:ccdc11cc758a71b7ec54db8aa9311ea9c22bddb59de1b6eb37fea51950a2e3f8",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-node.schema.json",
         "method": "archive",
         "content_id": "sha256:bf220b30d78d74ca1b5fd5477497f93720e2d7d92aae2e1493ec64dd948e0ad0",
@@ -8777,7 +8777,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:178c2c72ee97ee25ed46fc5d506224fc6e0cb8e39c90b7aa9874cdde390b0ca3",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-relationships.schema.json",
         "method": "archive",
         "content_id": "sha256:f54850b79d92255a2ed8753086ec114a2bb425b0219e30f614072fbf117a53a2",
@@ -8807,7 +8807,7 @@
       "asset_path": "assets/raw/protocol/schemas/xananode-node-types.schema.v0.3.0.json",
       "content_id": "sha256:6f038080085a297c4d44de43617dc8ac621c433b28c63a1b4aa8d67e10c3ec5b",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-node-types.schema.v0.3.0.json",
         "method": "archive",
         "content_id": "sha256:6f038080085a297c4d44de43617dc8ac621c433b28c63a1b4aa8d67e10c3ec5b",
@@ -8829,7 +8829,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:8b0e0470cf4f12b43772a8dddf27df56d6689abf9772d36b5693360230469fbc",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-node-types.v0.3.0.json",
         "method": "archive",
         "content_id": "sha256:d8a0628460ba11797103ffac6634d3201df91fee54f49d9d9911283fc32e8ec1",
@@ -8859,7 +8859,7 @@
       "asset_path": "assets/raw/protocol/schemas/xananode-property-registry.v0.1.0.json",
       "content_id": "sha256:09c0306032e01170c92bfa0bc044c0983e980b68e8bd88b3e8c9f37110acf39b",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-property-registry.v0.1.0.json",
         "method": "archive",
         "content_id": "sha256:09c0306032e01170c92bfa0bc044c0983e980b68e8bd88b3e8c9f37110acf39b",
@@ -8885,7 +8885,7 @@
       "asset_path": "assets/raw/protocol/schemas/xananode-relationship-types.schema.v0.5.0.json",
       "content_id": "sha256:05cca697d1cc06aa94c11fce8b0237e051ca4416e3f31eebf32a473e5e5e150d",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.schema.v0.5.0.json",
         "method": "archive",
         "content_id": "sha256:05cca697d1cc06aa94c11fce8b0237e051ca4416e3f31eebf32a473e5e5e150d",
@@ -8907,7 +8907,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:742483160148d05ff915f24373167cd0945583946de853bd80486297301ed3a3",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.v0.5.0.json",
         "method": "archive",
         "content_id": "sha256:fcf685c11c5df923dd51fc09a31566ec5d27f9b76ef3a0a542b7bb7b8b65f17b",
@@ -8937,7 +8937,7 @@
       "asset_path": "assets/raw/protocol/schemas/xananode-substrate-layout.v0.1.0.json",
       "content_id": "sha256:0ef1a5307ba2e725c2ee4be1e3f4e7d40f8250695b38d1d9ef76b4801b02460b",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-substrate-layout.v0.1.0.json",
         "method": "archive",
         "content_id": "sha256:0ef1a5307ba2e725c2ee4be1e3f4e7d40f8250695b38d1d9ef76b4801b02460b",
@@ -13389,7 +13389,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:742483160148d05ff915f24373167cd0945583946de853bd80486297301ed3a3",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.v0.5.0.json",
         "method": "archive",
         "content_id": "sha256:fcf685c11c5df923dd51fc09a31566ec5d27f9b76ef3a0a542b7bb7b8b65f17b",
@@ -14552,7 +14552,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:29692b67dac1b35358415342911b209f19dc590371a9f332da0bff548ac44f66",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json",
         "method": "archive",
         "content_id": "sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df",
@@ -14842,7 +14842,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/README.md",
       "content_id": "sha256:2189af21476cb584b5115b722863a872ca3cee3645e28966d617cdb02747b603",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/README.md",
         "method": "archive",
         "content_id": "sha256:374ef31120c43c6748b888265d3213caaea8420668f76e850887bd401e7c7eb2",
@@ -14868,7 +14868,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/README.md",
       "content_id": "sha256:c87b1eda9dae756819033542c0979ef41f1b54bd61f17340433b330d12c8228a",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/README.md",
         "method": "archive",
         "content_id": "sha256:c87b1eda9dae756819033542c0979ef41f1b54bd61f17340433b330d12c8228a",
@@ -14894,7 +14894,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-a/README.md",
       "content_id": "sha256:d9db627e558abdc967856811b9642bcd16013587100ec7b9bbcb19ef194e3e73",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/README.md",
         "method": "archive",
         "content_id": "sha256:d9db627e558abdc967856811b9642bcd16013587100ec7b9bbcb19ef194e3e73",
@@ -14920,7 +14920,7 @@
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-b/README.md",
       "content_id": "sha256:9d25cf80b0060d07e5f1aba0886559e0c790ca0f03e01ad4c9da74e63f2162ec",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/README.md",
         "method": "archive",
         "content_id": "sha256:9d25cf80b0060d07e5f1aba0886559e0c790ca0f03e01ad4c9da74e63f2162ec",
@@ -14946,7 +14946,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/README.md",
       "content_id": "sha256:0df202afb3b63430208f540dfbe058aa491476a214441ceb6f9a380c42782897",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/README.md",
         "method": "archive",
         "content_id": "sha256:0df202afb3b63430208f540dfbe058aa491476a214441ceb6f9a380c42782897",
@@ -14972,7 +14972,7 @@
       "asset_path": "assets/raw/protocol/examples/minimal-substrate/README.md",
       "content_id": "sha256:f79ef045ea95cdee1511be66dca29b3ae6b3d944b98f3d9fb6645e8c9216a6b8",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/README.md",
         "method": "archive",
         "content_id": "sha256:f79ef045ea95cdee1511be66dca29b3ae6b3d944b98f3d9fb6645e8c9216a6b8",
@@ -14998,7 +14998,7 @@
       "asset_path": "assets/raw/protocol/examples/README.md",
       "content_id": "sha256:acf9a69904b1b6a8d1ed3e301347ee4f7f261c5daee9dfc01628a6cc5a08a76d",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/README.md",
         "method": "archive",
         "content_id": "sha256:06ecf825c7fb006ddd5df353c152e3c00aa0c47bb498ecee1f60f11068139a80",
@@ -15024,7 +15024,7 @@
       "asset_path": "assets/raw/protocol/governance/canonical-type-policy.md",
       "content_id": "sha256:52aec3764ac7edef089f6dbd4782dd902dce04e2c5d388d5fceaaa62c24ad9ad",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/canonical-type-policy.md",
         "method": "archive",
         "content_id": "sha256:52aec3764ac7edef089f6dbd4782dd902dce04e2c5d388d5fceaaa62c24ad9ad",
@@ -15050,7 +15050,7 @@
       "asset_path": "assets/raw/protocol/governance/dispute-resolution.md",
       "content_id": "sha256:ce5f64b3bd7d9d47b1314a3431aa0d9195482f3c73a3ed87c32f0b6b2d6bce2d",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/dispute-resolution.md",
         "method": "archive",
         "content_id": "sha256:ce5f64b3bd7d9d47b1314a3431aa0d9195482f3c73a3ed87c32f0b6b2d6bce2d",
@@ -15076,7 +15076,7 @@
       "asset_path": "assets/raw/protocol/governance/federation-rules.md",
       "content_id": "sha256:a9f33cdd2a8eea27097f01a0dedfbb1659a81c2f3bb4094053f3544cd703fd23",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/federation-rules.md",
         "method": "archive",
         "content_id": "sha256:a9f33cdd2a8eea27097f01a0dedfbb1659a81c2f3bb4094053f3544cd703fd23",
@@ -15102,7 +15102,7 @@
       "asset_path": "assets/raw/protocol/governance/moderation-model.md",
       "content_id": "sha256:ed7db2a6ee2c8ab204059c8835ebcff1d326372271771931af8c684691a13bb2",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/moderation-model.md",
         "method": "archive",
         "content_id": "sha256:ed7db2a6ee2c8ab204059c8835ebcff1d326372271771931af8c684691a13bb2",
@@ -15128,7 +15128,7 @@
       "asset_path": "assets/raw/protocol/governance/README.md",
       "content_id": "sha256:00b02bc523d88ae79002e06dd68847fb67cdd3f05a94b775edfe7c67cbb64bc5",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/README.md",
         "method": "archive",
         "content_id": "sha256:00b02bc523d88ae79002e06dd68847fb67cdd3f05a94b775edfe7c67cbb64bc5",
@@ -15154,7 +15154,7 @@
       "asset_path": "assets/raw/protocol/governance/schema-extension-rules.md",
       "content_id": "sha256:faf22ba3636ce404d1ceee0e1829c44a87a9b44859eb00bbaec4c0935ee565ab",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/schema-extension-rules.md",
         "method": "archive",
         "content_id": "sha256:faf22ba3636ce404d1ceee0e1829c44a87a9b44859eb00bbaec4c0935ee565ab",
@@ -15180,7 +15180,7 @@
       "asset_path": "assets/raw/protocol/governance/versioning-policy.md",
       "content_id": "sha256:64cb4a5db286236b931f23c09d99ea99e00319efea5e9dbe4cd850c1f331eb96",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/versioning-policy.md",
         "method": "archive",
         "content_id": "sha256:64cb4a5db286236b931f23c09d99ea99e00319efea5e9dbe4cd850c1f331eb96",
@@ -15206,7 +15206,7 @@
       "asset_path": "assets/raw/protocol/LICENSE.md",
       "content_id": "sha256:598ffb99d5fa073d173bb68528457d2be19f719872f9e4d36874dfa45d97bbba",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/LICENSE.md",
         "method": "archive",
         "content_id": "sha256:598ffb99d5fa073d173bb68528457d2be19f719872f9e4d36874dfa45d97bbba",
@@ -15232,7 +15232,7 @@
       "asset_path": "assets/raw/protocol/NOTICE",
       "content_id": "sha256:2907040b4f64c3a0dc983bbb463bf5ec35975fdc1c22a455d5905e6d8648c609",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/NOTICE",
         "method": "archive",
         "content_id": "sha256:2907040b4f64c3a0dc983bbb463bf5ec35975fdc1c22a455d5905e6d8648c609",
@@ -15258,7 +15258,7 @@
       "asset_path": "assets/raw/protocol/proposals/README.md",
       "content_id": "sha256:2247432bc955a1cb08c44001def4fe58ec5889aabe10da14f80902cd3a9a8e5a",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/README.md",
         "method": "archive",
         "content_id": "sha256:2247432bc955a1cb08c44001def4fe58ec5889aabe10da14f80902cd3a9a8e5a",
@@ -15284,7 +15284,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0001-namespaces.md",
       "content_id": "sha256:7412974fb68c130d03039ab1a1c6977dc326c910411b6b596a9ac58044d3c327",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0001-namespaces.md",
         "method": "archive",
         "content_id": "sha256:7412974fb68c130d03039ab1a1c6977dc326c910411b6b596a9ac58044d3c327",
@@ -15310,7 +15310,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0002-extension-schemas.md",
       "content_id": "sha256:bf584f00d740397bc7beb74007795b6b1db93b5ae2a1e4abf2346cde97d1a3d8",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0002-extension-schemas.md",
         "method": "archive",
         "content_id": "sha256:bf584f00d740397bc7beb74007795b6b1db93b5ae2a1e4abf2346cde97d1a3d8",
@@ -15336,7 +15336,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0003-federation.md",
       "content_id": "sha256:7035b9786c3ac12d422e03816982fa606b0688253b5105caf97addfd85f9d8b8",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0003-federation.md",
         "method": "archive",
         "content_id": "sha256:7035b9786c3ac12d422e03816982fa606b0688253b5105caf97addfd85f9d8b8",
@@ -15362,7 +15362,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0004-merge-validation.md",
       "content_id": "sha256:ac9c6be63b59a84eb131b3e70907ae86c4a564cb5a0705c3e134893ffe93b924",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0004-merge-validation.md",
         "method": "archive",
         "content_id": "sha256:ac9c6be63b59a84eb131b3e70907ae86c4a564cb5a0705c3e134893ffe93b924",
@@ -15388,7 +15388,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0005-transclusion.md",
       "content_id": "sha256:398aa00de8a8e7b71ae9af6271f4c06d43c0546707b346c8ae299993e3f3e7a7",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0005-transclusion.md",
         "method": "archive",
         "content_id": "sha256:398aa00de8a8e7b71ae9af6271f4c06d43c0546707b346c8ae299993e3f3e7a7",
@@ -15414,7 +15414,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0006-tumbler-addressing.md",
       "content_id": "sha256:a8625f3aae9404ea63bf5474f066ffc532b9166afb38462c03a7f27b8a5eed82",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0006-tumbler-addressing.md",
         "method": "archive",
         "content_id": "sha256:a8625f3aae9404ea63bf5474f066ffc532b9166afb38462c03a7f27b8a5eed82",
@@ -15440,7 +15440,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0007-git-backed-substrates.md",
       "content_id": "sha256:b24c29fbe0a89e6b6d6ba67997a6e674e4fe5ba2811bdf4f858255aedb295c6d",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0007-git-backed-substrates.md",
         "method": "archive",
         "content_id": "sha256:b24c29fbe0a89e6b6d6ba67997a6e674e4fe5ba2811bdf4f858255aedb295c6d",
@@ -15466,7 +15466,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0008-derived-inverse-relationships.md",
       "content_id": "sha256:acc4170400d597124486a22325d0f5e31c16d5f39f536a9265dbefc4783d262f",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0008-derived-inverse-relationships.md",
         "method": "archive",
         "content_id": "sha256:acc4170400d597124486a22325d0f5e31c16d5f39f536a9265dbefc4783d262f",
@@ -15492,7 +15492,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0009-standards-alignment.md",
       "content_id": "sha256:c7e019264ebe4e77fee11f412a2e13a7c55315be5987025ff0c4ddacebf67b40",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0009-standards-alignment.md",
         "method": "archive",
         "content_id": "sha256:c7e019264ebe4e77fee11f412a2e13a7c55315be5987025ff0c4ddacebf67b40",
@@ -15518,7 +15518,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0010-federation-discovery-and-trust.md",
       "content_id": "sha256:7cdebf803484c1de623f59f7a931dd35d7a569c259bfe601bac65e70c6ebe2de",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0010-federation-discovery-and-trust.md",
         "method": "archive",
         "content_id": "sha256:7cdebf803484c1de623f59f7a931dd35d7a569c259bfe601bac65e70c6ebe2de",
@@ -15544,7 +15544,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0011-studio-local-first-authoring.md",
       "content_id": "sha256:3cc4f574705261f5fcaf53eeb0152d530385a3cf13c4a7030edabb4cbc01a40e",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0011-studio-local-first-authoring.md",
         "method": "archive",
         "content_id": "sha256:3cc4f574705261f5fcaf53eeb0152d530385a3cf13c4a7030edabb4cbc01a40e",
@@ -15570,7 +15570,7 @@
       "asset_path": "assets/raw/protocol/proposals/XNP-0012-executable-tool-contract.md",
       "content_id": "sha256:e7645ce8343d094dd4d5138f31b237e2160f111bfe0f9f7fd6ebcb4f6e4637e7",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0012-executable-tool-contract.md",
         "method": "archive",
         "content_id": "sha256:e7645ce8343d094dd4d5138f31b237e2160f111bfe0f9f7fd6ebcb4f6e4637e7",
@@ -15596,7 +15596,7 @@
       "asset_path": "assets/raw/protocol/README.md",
       "content_id": "sha256:f098ae56c4c3b8a81bb8c32c54c91b31d2daa5de9ff9eae1bb305a6663c7427d",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/README.md",
         "method": "archive",
         "content_id": "sha256:8919a8ff5ccf5bdedfd48979f12344c62d34df03199aa98b31139ac0dd86a894",
@@ -15622,7 +15622,7 @@
       "asset_path": "assets/raw/protocol/registry/README.md",
       "content_id": "sha256:2e57be35097a7f0fba2619f97a5839dca73f3b4ca5ea472523f147a9e6108e74",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/README.md",
         "method": "archive",
         "content_id": "sha256:2e57be35097a7f0fba2619f97a5839dca73f3b4ca5ea472523f147a9e6108e74",
@@ -15648,7 +15648,7 @@
       "asset_path": "assets/raw/protocol/schemas/README.md",
       "content_id": "sha256:dd085f93c87166a671d409a35823ebe52037ba0055fa6e63bc81e5ed2ba81481",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/README.md",
         "method": "archive",
         "content_id": "sha256:dd085f93c87166a671d409a35823ebe52037ba0055fa6e63bc81e5ed2ba81481",
@@ -15674,7 +15674,7 @@
       "asset_path": "assets/raw/protocol/specs/compatibility-levels.md",
       "content_id": "sha256:9e8e8ee8beaf1a7d1f3fc872d4c60dc17a7c7713c737009b85da5a3bdd38cc29",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/compatibility-levels.md",
         "method": "archive",
         "content_id": "sha256:9e8e8ee8beaf1a7d1f3fc872d4c60dc17a7c7713c737009b85da5a3bdd38cc29",
@@ -15700,7 +15700,7 @@
       "asset_path": "assets/raw/protocol/specs/federation.md",
       "content_id": "sha256:a197a48cf7aba6a0a0cc1a75587edfedeca59676283ee3039710eaddc23bbd6f",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/federation.md",
         "method": "archive",
         "content_id": "sha256:a197a48cf7aba6a0a0cc1a75587edfedeca59676283ee3039710eaddc23bbd6f",
@@ -15726,7 +15726,7 @@
       "asset_path": "assets/raw/protocol/specs/implementation-compatibility.md",
       "content_id": "sha256:ae0a610b3ab7207f0daa026baa104b1b95aaf85b96634b0fdf44a738a6b7de09",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/implementation-compatibility.md",
         "method": "archive",
         "content_id": "sha256:ae0a610b3ab7207f0daa026baa104b1b95aaf85b96634b0fdf44a738a6b7de09",
@@ -15752,7 +15752,7 @@
       "asset_path": "assets/raw/protocol/specs/interoperability.md",
       "content_id": "sha256:ee9ccb3e98730c558dff0e2adc272bce9055430542e634e77524dfef8fd79a1e",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/interoperability.md",
         "method": "archive",
         "content_id": "sha256:ee9ccb3e98730c558dff0e2adc272bce9055430542e634e77524dfef8fd79a1e",
@@ -15778,7 +15778,7 @@
       "asset_path": "assets/raw/protocol/specs/merge-validation.md",
       "content_id": "sha256:bc771268de15b40321daa2a8c7f5432a7882d31f2931b59403c48e14a8636676",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/merge-validation.md",
         "method": "archive",
         "content_id": "sha256:bc771268de15b40321daa2a8c7f5432a7882d31f2931b59403c48e14a8636676",
@@ -15804,7 +15804,7 @@
       "asset_path": "assets/raw/protocol/specs/namespaces.md",
       "content_id": "sha256:ba8fec7ddf921b1f75b58104e07b8710f97a77bc53d40cdc1c2c99a030d18beb",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/namespaces.md",
         "method": "archive",
         "content_id": "sha256:0d580444753d0982d4d36eedda0d56b4e2aa1a7d3cb5a30624fefd78a6d8bdd1",
@@ -15830,7 +15830,7 @@
       "asset_path": "assets/raw/protocol/specs/nodes.md",
       "content_id": "sha256:258b7a00b5e128d3db5ab717a20581e9f8cefcdc4b09543ae136cf87d4e2e21e",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/nodes.md",
         "method": "archive",
         "content_id": "sha256:f22ce8e959055a61328e00558a49bfb9a544efef91b34920c1201e42442b005a",
@@ -15856,7 +15856,7 @@
       "asset_path": "assets/raw/protocol/specs/README.md",
       "content_id": "sha256:a7d0d63d0cd4d091260eec44895c930d06278ba1dbcbaf0816770033ed2bea28",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/README.md",
         "method": "archive",
         "content_id": "sha256:a7d0d63d0cd4d091260eec44895c930d06278ba1dbcbaf0816770033ed2bea28",
@@ -15882,7 +15882,7 @@
       "asset_path": "assets/raw/protocol/specs/relationships.md",
       "content_id": "sha256:a7326e802d258a20e3567cdb6aa9e4de9b0b85fa86686c9f3ba8e075651bb4bc",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/relationships.md",
         "method": "archive",
         "content_id": "sha256:a7326e802d258a20e3567cdb6aa9e4de9b0b85fa86686c9f3ba8e075651bb4bc",
@@ -15908,7 +15908,7 @@
       "asset_path": "assets/raw/protocol/specs/studio.md",
       "content_id": "sha256:9e041388f1da9c6b3c40048f3850d7bb61482f4939b25681e2fadc7f05aa8df6",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/studio.md",
         "method": "archive",
         "content_id": "sha256:9e041388f1da9c6b3c40048f3850d7bb61482f4939b25681e2fadc7f05aa8df6",
@@ -15934,7 +15934,7 @@
       "asset_path": "assets/raw/protocol/specs/substrates.md",
       "content_id": "sha256:bd7d3ad22ad8554a7033d1a123af3e22488c63d922e1c96de26e518875c9c720",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/substrates.md",
         "method": "archive",
         "content_id": "sha256:0cf27280943b355ef7068466b27e0416dc7bdf66977afc68088241abb19c778a",
@@ -15960,7 +15960,7 @@
       "asset_path": "assets/raw/protocol/specs/transclusion.md",
       "content_id": "sha256:b35e2c6a656a9f86ab4eb33096d1fce982a9ec24af53d9723da7d8db56dd523c",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/transclusion.md",
         "method": "archive",
         "content_id": "sha256:a589820115ef0554c82f4fd41f6d50d4635f8204c745aba95ffbec24631794cc",
@@ -15986,7 +15986,7 @@
       "asset_path": "assets/raw/protocol/specs/tumbler-addressing.md",
       "content_id": "sha256:5b621f0f1c8861b7a852efb7d128070bc8b8569a6325e7a067a1b90854c6bd65",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/tumbler-addressing.md",
         "method": "archive",
         "content_id": "sha256:5b2d89d2734577c4d07e02c7a9b7fcaa173484c7351f89ff7159c07547222047",
@@ -16012,7 +16012,7 @@
       "asset_path": "assets/raw/protocol/specs/xananode-core.md",
       "content_id": "sha256:dde21bd72733f48e0092eaccad02e9debdf7cb0ebdcbed436cb2367f5e53e23b",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/xananode-core.md",
         "method": "archive",
         "content_id": "sha256:dde21bd72733f48e0092eaccad02e9debdf7cb0ebdcbed436cb2367f5e53e23b",
@@ -16038,7 +16038,7 @@
       "asset_path": "assets/raw/protocol/TRADEMARK.md",
       "content_id": "sha256:920cc1e4e4719f3383ec0c50e4eafba89f848b730b4d297b3a22ab576edde81c",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/TRADEMARK.md",
         "method": "archive",
         "content_id": "sha256:920cc1e4e4719f3383ec0c50e4eafba89f848b730b4d297b3a22ab576edde81c",
@@ -16183,7 +16183,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:730989736d8ebdbea699937dc93e8b36d8210445b6774cf142ec626cbab06559",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/LICENSE.md",
         "method": "archive",
         "content_id": "sha256:598ffb99d5fa073d173bb68528457d2be19f719872f9e4d36874dfa45d97bbba",
@@ -16220,7 +16220,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:1850f40f00f33219995203591d667ea18834867070f691c07018fbbd04e3cd46",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/NOTICE",
         "method": "archive",
         "content_id": "sha256:2907040b4f64c3a0dc983bbb463bf5ec35975fdc1c22a455d5905e6d8648c609",
@@ -16257,7 +16257,7 @@
       "asset_role": "canonical_raw_source",
       "content_id": "sha256:daf662fca1d1ec595a2302e4edc28559e3398b243ece831c36d3b7807590626f",
       "source_snapshot": {
-        "captured_at": "2026-06-27T07:05:45.885Z",
+        "captured_at": "2026-06-27T16:35:32.999Z",
         "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/TRADEMARK.md",
         "method": "archive",
         "content_id": "sha256:920cc1e4e4719f3383ec0c50e4eafba89f848b730b4d297b3a22ab576edde81c",

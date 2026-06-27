@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/person-researcher-b.json",
   "content_id": "sha256:4c3a0ed24483293e21b257d73c47759c224b7e0b5207690cf3e75343ab410f82",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/person-researcher-b.json",
     "method": "archive",
     "content_id": "sha256:4c3a0ed24483293e21b257d73c47759c224b7e0b5207690cf3e75343ab410f82",

@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/federation-review-proof.json",
   "content_id": "sha256:6f209e02c599d6fd7042d4985e33cd27fbeb04533aea088e059f27b30ea88263",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:45.885Z",
+    "captured_at": "2026-06-27T16:35:32.999Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/federation-review-proof.json",
     "method": "archive",
     "content_id": "sha256:6f209e02c599d6fd7042d4985e33cd27fbeb04533aea088e059f27b30ea88263",

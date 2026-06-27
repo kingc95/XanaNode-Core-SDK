@@ -15,7 +15,7 @@
   "content_id": "sha256:d894219fab4832aabec1303f7561e3eec6822c38373e63b6153555db686df27c",
   "content": "---\ntitle: Start Here\ntype: trail\nsummary: A short starter trail through an everyday question, answer, evidence gap, and supporting claims.\ncreated_by: Example Author\nrelationships:\n  - type: starts_with\n    target: example:question/how-to-make-a-campfire\n    summary: The starter trail begins with an ordinary practical question.\n  - type: continues_to\n    target: example:response/campfire-basic-answer\n    summary: The trail continues from inquiry to answer.\n---\n# Start Here\n\nBegin with a practical question, then connect it to an answer, supporting claims, and the information still needed before acting.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-27T07:05:44.386Z",
+    "captured_at": "2026-06-27T16:35:32.292Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/templates/basic/content/nodes/start-here.md",
     "method": "archive",
     "content_id": "sha256:d894219fab4832aabec1303f7561e3eec6822c38373e63b6153555db686df27c",
