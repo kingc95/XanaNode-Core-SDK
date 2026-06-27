@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-minimal-substrate-nodes-concept-associative-trails.json",
+  "title": "Examples / Minimal Substrate / Nodes / Concept Associative Trails",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "A node record from examples/minimal-substrate.",
+  "artifact_path": "examples/minimal-substrate/nodes/concept-associative-trails.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/concept-associative-trails.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.minimal:concept/associative-trails\",\n  \"title\": \"Associative Trails\",\n  \"type\": \"concept\",\n  \"importance\": 4,\n  \"summary\": \"A way of navigating knowledge by following meaningful associations rather than only linear order or hierarchy.\",\n  \"relationships\": [\n    {\n      \"id\": \"example.minimal:rel/source-discusses-associative-trails\",\n      \"type\": \"discusses\",\n      \"source\": \"example.minimal:source/as-we-may-think\",\n      \"direction\": \"incoming\"\n    },\n    {\n      \"id\": \"example.minimal:rel/associative-trails-context-for-substrate\",\n      \"type\": \"related_to\",\n      \"target\": \"example.minimal:concept/knowledge-substrate\",\n      \"direction\": \"outgoing\"\n    },\n    {\n      \"id\": \"example.minimal:rel/trail-includes-associative-trails\",\n      \"type\": \"features\",\n      \"source\": \"example.minimal:trail/start-here\",\n      \"direction\": \"incoming\"\n    }\n  ]\n}\n",
+  "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/concept-associative-trails.json",
+  "content_id": "sha256:595ae22c4675a02b7ca801761cdfa6bd868d012cc96419a66461a25c7a4c112f",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/concept-associative-trails.json",
+    "method": "archive",
+    "content_id": "sha256:595ae22c4675a02b7ca801761cdfa6bd868d012cc96419a66461a25c7a4c112f",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

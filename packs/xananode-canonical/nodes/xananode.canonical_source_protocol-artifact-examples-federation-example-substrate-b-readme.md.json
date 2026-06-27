@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-examples-federation-example-substrate-b-readme.md",
+  "title": "Examples / Federation Example / Substrate B / README",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "The README for Examples / Federation Example / Substrate B.",
+  "artifact_path": "examples/federation-example/substrate-b/README.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/README.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# substrate-b\n\nAn independently authored substrate using namespace `example.researcher_b`.\n\nThis substrate intentionally overlaps with the other example substrate without using identical node IDs.\n",
+  "asset_path": "assets/raw/protocol/examples/federation-example/substrate-b/README.md",
+  "content_id": "sha256:9d25cf80b0060d07e5f1aba0886559e0c790ca0f03e01ad4c9da74e63f2162ec",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/README.md",
+    "method": "archive",
+    "content_id": "sha256:9d25cf80b0060d07e5f1aba0886559e0c790ca0f03e01ad4c9da74e63f2162ec",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

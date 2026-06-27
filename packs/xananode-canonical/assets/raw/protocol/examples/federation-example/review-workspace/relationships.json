@@ -1,0 +1,82 @@
+{
+  "relationships": [
+    {
+      "id": "example.researcher_a:rel/knowledge-substrate-possible-match-memory-substrate",
+      "source": "example.researcher_a:concept/knowledge-substrate",
+      "target": "example.researcher_b:concept/memory-substrate",
+      "type": "possible_match",
+      "weight": 3,
+      "visibility": "secondary",
+      "external": true,
+      "target_substrate": "example.researcher_b",
+      "asserted_by": "example.researcher_a:person/researcher-a",
+      "asserted_at": "2026-01-01T00:00:00Z",
+      "confidence": "0.78",
+      "summary": "Researcher A marks Researcher B's memory-substrate concept as a possible match without collapsing identity."
+    },
+    {
+      "id": "example.researcher_b:rel/memory-substrate-possible-match-knowledge-substrate",
+      "source": "example.researcher_b:concept/memory-substrate",
+      "target": "example.researcher_a:concept/knowledge-substrate",
+      "type": "possible_match",
+      "weight": 3,
+      "visibility": "secondary",
+      "external": true,
+      "target_substrate": "example.researcher_a",
+      "asserted_by": "example.researcher_b:person/researcher-b",
+      "asserted_at": "2026-01-01T00:00:00Z",
+      "confidence": "0.78",
+      "summary": "Researcher B returns the possible-match mapping instead of declaring a final identity merge."
+    },
+    {
+      "id": "example.merge:rel/federation-review-proof-starts-with-knowledge-substrate",
+      "source": "example.merge:trail/federation-review-proof",
+      "target": "example.researcher_a:concept/knowledge-substrate",
+      "type": "starts_with",
+      "weight": 4,
+      "visibility": "primary",
+      "asserted_at": "2026-01-01T00:00:00Z",
+      "summary": "The review trail begins with Researcher A's local concept."
+    },
+    {
+      "id": "example.merge:rel/knowledge-substrate-continues-to-memory-substrate",
+      "source": "example.researcher_a:concept/knowledge-substrate",
+      "target": "example.researcher_b:concept/memory-substrate",
+      "type": "continues_to",
+      "weight": 3,
+      "visibility": "secondary",
+      "asserted_at": "2026-01-01T00:00:00Z",
+      "summary": "The review path moves from the first local concept to the second without erasing either one."
+    },
+    {
+      "id": "example.merge:rel/memory-substrate-continues-to-non-destructive-merge-review",
+      "source": "example.researcher_b:concept/memory-substrate",
+      "target": "example.merge:concept/non-destructive-merge-review",
+      "type": "continues_to",
+      "weight": 3,
+      "visibility": "secondary",
+      "asserted_at": "2026-01-01T00:00:00Z",
+      "summary": "The review path ends at the rule that both nodes stay distinct until an author approves a deeper merge."
+    },
+    {
+      "id": "example.merge:rel/non-destructive-merge-review-explains-knowledge-substrate",
+      "source": "example.merge:concept/non-destructive-merge-review",
+      "target": "example.researcher_a:concept/knowledge-substrate",
+      "type": "explains",
+      "weight": 2,
+      "visibility": "secondary",
+      "asserted_at": "2026-01-01T00:00:00Z",
+      "summary": "The merge-review rule explains why Researcher A's local concept remains intact."
+    },
+    {
+      "id": "example.merge:rel/non-destructive-merge-review-explains-memory-substrate",
+      "source": "example.merge:concept/non-destructive-merge-review",
+      "target": "example.researcher_b:concept/memory-substrate",
+      "type": "explains",
+      "weight": 2,
+      "visibility": "secondary",
+      "asserted_at": "2026-01-01T00:00:00Z",
+      "summary": "The merge-review rule explains why Researcher B's local concept remains intact."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-schemas-ro-crate-metadata.schema.json",
+  "title": "Schemas / RO-Crate Metadata Schema",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 4,
+  "summary": "The JSON Schema for the ro crate metadata.",
+  "artifact_path": "schemas/ro-crate-metadata.schema.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"https://xananode.org/schemas/ro-crate-metadata.schema.json\",\n  \"title\": \"XanaNode RO-Crate Companion Metadata\",\n  \"type\": \"object\",\n  \"additionalProperties\": true,\n  \"required\": [\"@context\", \"@graph\"],\n  \"properties\": {\n    \"@context\": {},\n    \"@graph\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"object\" }\n    }\n  }\n}\n",
+  "asset_path": "assets/raw/protocol/schemas/ro-crate-metadata.schema.json",
+  "content_id": "sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/ro-crate-metadata.schema.json",
+    "method": "archive",
+    "content_id": "sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

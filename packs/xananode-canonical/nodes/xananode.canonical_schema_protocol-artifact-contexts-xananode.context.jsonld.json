@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-contexts-xananode.context.jsonld",
+  "title": "Contexts / XanaNode Context",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "The JSON-LD context that maps XanaNode terms into linked-data form.",
+  "artifact_path": "contexts/xananode.context.jsonld",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/contexts/xananode.context.jsonld",
+  "media_type": "document",
+  "mime_type": "application/ld+json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "{\n  \"@context\": {\n    \"xana\": \"https://xananode.org/terms/\",\n    \"prov\": \"http://www.w3.org/ns/prov#\",\n    \"oa\": \"http://www.w3.org/ns/oa#\",\n    \"schema\": \"https://schema.org/\",\n    \"id\": \"@id\",\n    \"type\": \"@type\",\n    \"title\": \"schema:name\",\n    \"summary\": \"schema:description\",\n    \"created_by\": {\n      \"@id\": \"prov:wasAttributedTo\",\n      \"@type\": \"@id\"\n    },\n    \"created_at\": {\n      \"@id\": \"prov:generatedAtTime\",\n      \"@type\": \"schema:DateTime\"\n    },\n    \"updated_at\": {\n      \"@id\": \"prov:invalidatedAtTime\",\n      \"@type\": \"schema:DateTime\"\n    },\n    \"asserted_by\": {\n      \"@id\": \"xana:assertedBy\",\n      \"@type\": \"@id\"\n    },\n    \"asserted_at\": {\n      \"@id\": \"xana:assertedAt\",\n      \"@type\": \"schema:DateTime\"\n    },\n    \"source_node\": {\n      \"@id\": \"xana:sourceNode\",\n      \"@type\": \"@id\"\n    },\n    \"fragment_id\": \"xana:fragmentId\",\n    \"tumbler\": \"xana:tumbler\",\n    \"selector\": \"oa:hasSelector\",\n    \"content_id\": \"xana:contentId\",\n    \"version_id\": \"xana:versionId\",\n    \"source_content_id\": \"xana:sourceContentId\",\n    \"source_version_id\": \"xana:sourceVersionId\",\n    \"relationships\": \"xana:relationships\",\n    \"evidence\": {\n      \"@id\": \"xana:evidence\",\n      \"@type\": \"@id\"\n    }\n  }\n}\n",
+  "asset_path": "assets/raw/protocol/contexts/xananode.context.jsonld",
+  "content_id": "sha256:8192a5d5477e28549cb66d77aed71019e071084fd92f9163e0f57d3dc5608a9f",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/contexts/xananode.context.jsonld",
+    "method": "archive",
+    "content_id": "sha256:8192a5d5477e28549cb66d77aed71019e071084fd92f9163e0f57d3dc5608a9f",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

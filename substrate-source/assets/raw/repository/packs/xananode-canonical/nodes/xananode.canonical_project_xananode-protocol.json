@@ -1,0 +1,35 @@
+{
+  "id": "xananode.canonical:project/xananode-protocol",
+  "title": "XanaNode Protocol",
+  "type": "project",
+  "subtypes": [
+    "standard",
+    "protocol"
+  ],
+  "status": "active",
+  "importance": 4,
+  "summary": "Canonical XanaNode protocol repository containing schemas, registries, specs, governance, examples, branding, and proposals.",
+  "relationships": [],
+  "subtype": "protocol",
+  "source_url": "https://github.com/kingc95/XanaNode",
+  "repository": "kingc95/XanaNode",
+  "protocol_role": "schema-and-governance-source",
+  "software_version": "",
+  "build_metadata": {
+    "version": "",
+    "repository": "kingc95/XanaNode",
+    "generated_at": "2026-06-27T07:05:45.508Z",
+    "built_by": "@xananode/core",
+    "git_commit": "2157f16df0944df0e4ba101458dc967a2abeb0cb",
+    "git_branch": "main",
+    "dependencies": []
+  },
+  "consumes": [],
+  "related_protocol_artifacts": [
+    "../schemas/",
+    "../registry/",
+    "../specs/",
+    "../governance/",
+    "../examples/minimal-substrate/"
+  ]
+}

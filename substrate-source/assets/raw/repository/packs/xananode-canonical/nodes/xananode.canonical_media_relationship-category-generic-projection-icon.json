@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-category-generic-projection-icon",
+  "title": "generic Relationship Category Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-categories/generic.svg",
+  "asset_role": "relationship_category_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/generic.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the generic relationship category.",
+  "relationships": [],
+  "content_id": "sha256:d22523074324202aad28e67e42be570b6ef53148946d897d4db9066c9f3b8139",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/generic.svg",
+    "method": "archive",
+    "content_id": "sha256:d22523074324202aad28e67e42be570b6ef53148946d897d4db9066c9f3b8139",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-root",
+  "title": "Protocol Root Files",
+  "type": "schema",
+  "subtype": "protocol_artifact_group",
+  "importance": 3,
+  "summary": "The root protocol files shipped with XanaNode, including the main overview and legal policy files.",
+  "artifact_path": "",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/",
+  "relationships": []
+}

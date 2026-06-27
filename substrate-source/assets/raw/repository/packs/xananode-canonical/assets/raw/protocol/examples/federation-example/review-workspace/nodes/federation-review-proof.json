@@ -1,0 +1,8 @@
+{
+  "id": "example.merge:trail/federation-review-proof",
+  "title": "Federation Review Proof",
+  "type": "trail",
+  "importance": 4,
+  "summary": "A short trail showing that mounted overlap can stay visible and reviewable without forcing a final merge.",
+  "relationships": []
+}

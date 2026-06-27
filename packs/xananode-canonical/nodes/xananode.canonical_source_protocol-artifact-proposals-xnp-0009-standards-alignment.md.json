@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-proposals-xnp-0009-standards-alignment.md",
+  "title": "Proposals / XNP 0009 Standards Alignment",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "A XanaNode proposal covering XNP 0009 Standards Alignment.",
+  "artifact_path": "proposals/XNP-0009-standards-alignment.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0009-standards-alignment.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# XNP-0009: Standards Alignment Profiles\n\nStatus: Accepted\n\n## Summary\n\nDefines optional interoperability profiles for JSON-LD, Web Annotation selectors, PROV-O, content IDs, RO-Crate, and nanopublication-style claim packages.\n\n## Decision\n\nXanaNode keeps its native artifacts simple, but provides mappings and companion profiles for standards-aware tools.\n\nAccepted profiles:\n\n- JSON-LD context\n- Web Annotation selector names\n- PROV-O provenance mapping\n- optional content IDs and version IDs\n- RO-Crate-compatible preservation metadata\n- nanopublication-like claim packaging\n\nThese profiles are optional for basic substrates but recommended for archival, scholarly, legal, scientific, and federated deployments.\n",
+  "asset_path": "assets/raw/protocol/proposals/XNP-0009-standards-alignment.md",
+  "content_id": "sha256:c7e019264ebe4e77fee11f412a2e13a7c55315be5987025ff0c4ddacebf67b40",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0009-standards-alignment.md",
+    "method": "archive",
+    "content_id": "sha256:c7e019264ebe4e77fee11f412a2e13a7c55315be5987025ff0c4ddacebf67b40",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

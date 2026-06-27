@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-relationships.json",
+  "title": "Examples / Federation Example / Review Workspace / Relationships",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "The relationship list for Examples / Federation Example / Review Workspace.",
+  "artifact_path": "examples/federation-example/review-workspace/relationships.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/relationships.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"relationships\": [\n    {\n      \"id\": \"example.researcher_a:rel/knowledge-substrate-possible-match-memory-substrate\",\n      \"source\": \"example.researcher_a:concept/knowledge-substrate\",\n      \"target\": \"example.researcher_b:concept/memory-substrate\",\n      \"type\": \"possible_match\",\n      \"weight\": 3,\n      \"visibility\": \"secondary\",\n      \"external\": true,\n      \"target_substrate\": \"example.researcher_b\",\n      \"asserted_by\": \"example.researcher_a:person/researcher-a\",\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\n      \"confidence\": \"0.78\",\n      \"summary\": \"Researcher A marks Researcher B's memory-substrate concept as a possible match without collapsing identity.\"\n    },\n    {\n      \"id\": \"example.researcher_b:rel/memory-substrate-possible-match-knowledge-substrate\",\n      \"source\": \"example.researcher_b:concept/memory-substrate\",\n      \"target\": \"example.researcher_a:concept/knowledge-substrate\",\n      \"type\": \"possible_match\",\n      \"weight\": 3,\n      \"visibility\": \"secondary\",\n      \"external\": true,\n      \"target_substrate\": \"example.researcher_a\",\n      \"asserted_by\": \"example.researcher_b:person/researcher-b\",\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\n      \"confidence\": \"0.78\",\n      \"summary\": \"Researcher B returns the possible-match mapping instead of declaring a final identity merge.\"\n    },\n    {\n      \"id\": \"example.merge:rel/federation-review-proof-starts-with-knowledge-substrate\",\n      \"source\": \"example.merge:trail/federation-review-proof\",\n      \"target\": \"example.researcher_a:concept/knowledge-substrate\",\n      \"type\": \"starts_with\",\n      \"weight\": 4,\n      \"visibility\": \"primary\",\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\n      \"summary\": \"The review trail begins with Researcher A's local concept.\"\n    },\n    {\n      \"id\": \"example.merge:rel/knowledge-substrate-continues-to-memory-substrate\",\n      \"source\": \"example.researcher_a:concept/knowledge-substrate\",\n      \"target\": \"example.researcher_b:concept/memory-substrate\",\n      \"type\": \"continues_to\",\n      \"weight\": 3,\n      \"visibility\": \"secondary\",\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\n      \"summary\": \"The review path moves from the first local concept to the second without erasing either one.\"\n    },\n    {\n      \"id\": \"example.merge:rel/memory-substrate-continues-to-non-destructive-merge-review\",\n      \"source\": \"example.researcher_b:concept/memory-substrate\",\n      \"target\": \"example.merge:concept/non-destructive-merge-review\",\n      \"type\": \"continues_to\",\n      \"weight\": 3,\n      \"visibility\": \"secondary\",\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\n      \"summary\": \"The review path ends at the rule that both nodes stay distinct until an author approves a deeper merge.\"\n    },\n    {\n      \"id\": \"example.merge:rel/non-destructive-merge-review-explains-knowledge-substrate\",\n      \"source\": \"example.merge:concept/non-destructive-merge-review\",\n      \"target\": \"example.researcher_a:concept/knowledge-substrate\",\n      \"type\": \"explains\",\n      \"weight\": 2,\n      \"visibility\": \"secondary\",\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\n      \"summary\": \"The merge-review rule explains why Researcher A's local concept remains intact.\"\n    },\n    {\n      \"id\": \"example.merge:rel/non-destructive-merge-review-explains-memory-substrate\",\n      \"source\": \"example.merge:concept/non-destructive-merge-review\",\n      \"target\": \"example.researcher_b:concept/memory-substrate\",\n      \"type\": \"explains\",\n      \"weight\": 2,\n      \"visibility\": \"secondary\",\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\n      \"summary\": \"The merge-review rule explains why Researcher B's local concept remains intact.\"\n    }\n  ]\n}\n",
+  "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/relationships.json",
+  "content_id": "sha256:3486d3be732725580995ef8046a8c0bc05dc1a812fe0473fb2af906d96f8c9e2",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/relationships.json",
+    "method": "archive",
+    "content_id": "sha256:3486d3be732725580995ef8046a8c0bc05dc1a812fe0473fb2af906d96f8c9e2",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/namespace-registry",
+  "title": "Namespace Registry",
+  "type": "schema",
+  "subtype": "governance_rule",
+  "importance": 5,
+  "summary": "The protocol registry of known namespace identifiers, owners, and extension vocabularies.",
+  "relationships": [],
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/namespaces.json",
+  "asset_path": "assets/raw/protocol/registry/namespaces.json",
+  "asset_role": "canonical_raw_source",
+  "content_id": "sha256:76f2024eac0e5745584032f8adfd62594f7a2ba1798ecd9b391f27f355462d11",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/namespaces.json",
+    "method": "archive",
+    "content_id": "sha256:c07fdb60dfa9ba3d66252db44fcb076ee0cc655c5fd8f3f92c69ae4a32d86c43",
+    "rights_status": "canonical-public",
+    "tool": "@xananode/core"
+  }
+}

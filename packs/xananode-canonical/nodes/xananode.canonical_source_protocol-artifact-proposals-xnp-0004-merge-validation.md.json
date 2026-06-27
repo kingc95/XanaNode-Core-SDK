@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-proposals-xnp-0004-merge-validation.md",
+  "title": "Proposals / XNP 0004 Merge Validation",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "A XanaNode proposal covering XNP 0004 Merge Validation.",
+  "artifact_path": "proposals/XNP-0004-merge-validation.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0004-merge-validation.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# XNP-0004: Merge Validation\n\nStatus: Draft\n\n## Summary\n\nDefines merge reports and compatibility checks.\n\n## Motivation\n\nXanaNode aims to support independently authored knowledge substrates that can later interoperate. This proposal records the design expectations for merge validation so implementations can converge without requiring centralized control.\n\n## Requirements\n\n- Must remain human-readable.\n- Must remain machine-interpretable.\n- Must preserve provenance.\n- Must avoid destructive merging.\n- Must allow independent substrate ownership.\n\n## Open Questions\n\n- What is the smallest useful implementation?\n- Which parts are required for compatibility?\n- Which parts should remain optional or experimental?\n",
+  "asset_path": "assets/raw/protocol/proposals/XNP-0004-merge-validation.md",
+  "content_id": "sha256:ac9c6be63b59a84eb131b3e70907ae86c4a564cb5a0705c3e134893ffe93b924",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0004-merge-validation.md",
+    "method": "archive",
+    "content_id": "sha256:ac9c6be63b59a84eb131b3e70907ae86c4a564cb5a0705c3e134893ffe93b924",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

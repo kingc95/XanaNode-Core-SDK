@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-federation-example-merge-report.json",
+  "title": "Examples / Federation Example / Merge Report",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "The merge report for the federation example.",
+  "artifact_path": "examples/federation-example/merge-report.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/merge-report.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.merge:report/federation-example-001\",\n  \"status\": \"review-needed\",\n  \"generated_at\": \"2026-01-01T00:00:00Z\",\n  \"substrates\": [\n    \"example.researcher_a\",\n    \"example.researcher_b\"\n  ],\n  \"compatibility_level\": 4,\n  \"mappings\": [\n    {\n      \"id\": \"example.merge:mapping/knowledge-memory-substrate\",\n      \"source\": \"example.researcher_a:concept/knowledge-substrate\",\n      \"target\": \"example.researcher_b:concept/memory-substrate\",\n      \"type\": \"possible_match\",\n      \"confidence\": 0.78,\n      \"status\": \"review-needed\",\n      \"preserves_local_nodes\": true,\n      \"creates_relationships\": [\n        \"example.researcher_a:rel/knowledge-substrate-possible-match-memory-substrate\",\n        \"example.researcher_b:rel/memory-substrate-possible-match-knowledge-substrate\"\n      ],\n      \"rationale\": \"Both nodes describe substrate-like structures for preserving context and relationships, but one emphasizes knowledge objects while the other emphasizes memory over time.\"\n    }\n  ],\n  \"conflicts\": [\n    {\n      \"id\": \"example.merge:conflict/do-not-collapse-concepts\",\n      \"type\": \"identity_ambiguity\",\n      \"nodes\": [\n        \"example.researcher_a:concept/knowledge-substrate\",\n        \"example.researcher_b:concept/memory-substrate\"\n      ],\n      \"resolution\": \"preserve_both\",\n      \"summary\": \"The merge pass records a possible match but does not replace either local concept with a canonical node.\"\n    }\n  ],\n  \"warnings\": [\n    \"The two concepts are close but should not be automatically collapsed into a single canonical node.\"\n  ]\n}\n",
+  "asset_path": "assets/raw/protocol/examples/federation-example/merge-report.json",
+  "content_id": "sha256:5ef3669d327ba167955d42868fee5e3975fb15d7ecb786ea10d20b8cb3ebad50",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/merge-report.json",
+    "method": "archive",
+    "content_id": "sha256:5ef3669d327ba167955d42868fee5e3975fb15d7ecb786ea10d20b8cb3ebad50",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

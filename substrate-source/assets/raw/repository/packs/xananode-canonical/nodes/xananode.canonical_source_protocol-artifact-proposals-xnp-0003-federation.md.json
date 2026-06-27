@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-proposals-xnp-0003-federation.md",
+  "title": "Proposals / XNP 0003 Federation",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "A XanaNode proposal covering XNP 0003 Federation.",
+  "artifact_path": "proposals/XNP-0003-federation.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0003-federation.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# XNP-0003: Federation\n\nStatus: Draft\n\n## Summary\n\nDefines how independently authored substrates can be analyzed together.\n\n## Motivation\n\nXanaNode aims to support independently authored knowledge substrates that can later interoperate. This proposal records the design expectations for federation so implementations can converge without requiring centralized control.\n\n## Requirements\n\n- Must remain human-readable.\n- Must remain machine-interpretable.\n- Must preserve provenance.\n- Must avoid destructive merging.\n- Must allow independent substrate ownership.\n\n## Open Questions\n\n- What is the smallest useful implementation?\n- Which parts are required for compatibility?\n- Which parts should remain optional or experimental?\n",
+  "asset_path": "assets/raw/protocol/proposals/XNP-0003-federation.md",
+  "content_id": "sha256:7035b9786c3ac12d422e03816982fa606b0688253b5105caf97addfd85f9d8b8",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0003-federation.md",
+    "method": "archive",
+    "content_id": "sha256:7035b9786c3ac12d422e03816982fa606b0688253b5105caf97addfd85f9d8b8",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-specs-interoperability.md",
+  "title": "Specs / Interoperability",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 4,
+  "summary": "A protocol specification covering Interoperability.",
+  "artifact_path": "specs/interoperability.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/interoperability.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# Interoperability Profiles\n\nXanaNode keeps its author-facing JSON simple, but it should map cleanly to established standards.\n\n## JSON-LD\n\nThe canonical JSON-LD context lives at [../contexts/xananode.context.jsonld](../contexts/xananode.context.jsonld).\n\nImplementations should use the context when exporting nodes, relationships, fragments, and substrate packages into Linked Data environments.\n\n## Web Annotation Selectors\n\nFragment selectors should use Web Annotation selector names where possible:\n\n- `TextQuoteSelector`\n- `TextPositionSelector`\n- `FragmentSelector`\n- `CssSelector`\n- `XPathSelector`\n- `RangeSelector`\n\nThe older `semantic-anchor` selector remains acceptable for human-authored stable anchors.\n\n## PROV-O\n\nXanaNode provenance fields map to PROV-O concepts:\n\n- nodes and relationship assertions are `prov:Entity`\n- people, organizations, projects, and external actors are `prov:Agent`\n- creation, assertion, review, import, and publication are `prov:Activity`\n- `created_by` maps to `prov:wasAttributedTo`\n- `created_at` maps to `prov:generatedAtTime`\n- `derived_from` maps to derivation provenance\n\n## Content IDs\n\nHuman-readable protocol IDs remain the stable author-facing identifiers. Implementations may add immutable content identifiers:\n\n- `protocol_id`: stable XanaNode ID\n- `content_id`: immutable hash or CID-like identity for the content\n- `version_id`: version identity such as a Git commit/path reference\n\nContent IDs should not replace protocol IDs. They support verification, fixity, and preservation.\n\n## Preservation Packages\n\nSubstrates may include RO-Crate-compatible companion metadata named `ro-crate-metadata.json`. This metadata should describe the substrate package, schema references, rights, authorship, fixity, and dependencies.\n\n## Nanopublication Profile\n\nHigh-value claim nodes may be exported in a nanopublication-like package separating:\n\n- assertion\n- provenance\n- publication information\n\nThis is optional but useful for scholarly, legal, scientific, and archival substrates.\n",
+  "asset_path": "assets/raw/protocol/specs/interoperability.md",
+  "content_id": "sha256:ee9ccb3e98730c558dff0e2adc272bce9055430542e634e77524dfef8fd79a1e",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/interoperability.md",
+    "method": "archive",
+    "content_id": "sha256:ee9ccb3e98730c558dff0e2adc272bce9055430542e634e77524dfef8fd79a1e",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

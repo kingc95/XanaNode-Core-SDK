@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-minimal-substrate-nanopublication-substrate-claim.json",
+  "title": "Examples / Minimal Substrate / Nanopublication Substrate Claim",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "An example protocol artifact used by Examples / Minimal Substrate / Nanopublication Substrate Claim.",
+  "artifact_path": "examples/minimal-substrate/nanopublication-substrate-claim.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nanopublication-substrate-claim.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.minimal:nanopub/substrate-is-structure\",\n  \"claim\": \"example.minimal:claim/substrate-is-structure\",\n  \"assertion\": {\n    \"summary\": \"A knowledge substrate is structure, not just information.\",\n    \"relationships\": [\n      \"example.minimal:rel/source-supports-claim\",\n      \"example.minimal:rel/claim-defines-concept\"\n    ]\n  },\n  \"provenance\": {\n    \"asserted_by\": \"example.minimal:person/example-maintainer\",\n    \"asserted_at\": \"2026-01-01T00:00:00Z\",\n    \"evidence\": [\n      \"example.minimal:source/as-we-may-think\"\n    ]\n  },\n  \"publication_info\": {\n    \"published_by\": \"example.minimal\",\n    \"published_at\": \"2026-01-01T00:00:00Z\",\n    \"license\": \"CC0-1.0\",\n    \"content_id\": \"sha256:example-nanopub-substrate-is-structure\"\n  }\n}\n",
+  "asset_path": "assets/raw/protocol/examples/minimal-substrate/nanopublication-substrate-claim.json",
+  "content_id": "sha256:058c8e5604416d884b81cc589203ede8660a57b6101a043e087624e7ccd38734",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nanopublication-substrate-claim.json",
+    "method": "archive",
+    "content_id": "sha256:058c8e5604416d884b81cc589203ede8660a57b6101a043e087624e7ccd38734",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

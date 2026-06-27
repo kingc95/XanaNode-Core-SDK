@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-nodes-federation-review-proof.json",
+  "title": "Examples / Federation Example / Review Workspace / Nodes / Federation Review Proof",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "A node record from examples/federation-example/review-workspace.",
+  "artifact_path": "examples/federation-example/review-workspace/nodes/federation-review-proof.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/federation-review-proof.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.merge:trail/federation-review-proof\",\n  \"title\": \"Federation Review Proof\",\n  \"type\": \"trail\",\n  \"importance\": 4,\n  \"summary\": \"A short trail showing that mounted overlap can stay visible and reviewable without forcing a final merge.\",\n  \"relationships\": []\n}\n",
+  "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/federation-review-proof.json",
+  "content_id": "sha256:6f209e02c599d6fd7042d4985e33cd27fbeb04533aea088e059f27b30ea88263",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/federation-review-proof.json",
+    "method": "archive",
+    "content_id": "sha256:6f209e02c599d6fd7042d4985e33cd27fbeb04533aea088e059f27b30ea88263",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

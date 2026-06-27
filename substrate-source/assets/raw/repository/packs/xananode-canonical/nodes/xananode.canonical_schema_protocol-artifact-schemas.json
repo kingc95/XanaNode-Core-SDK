@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-schemas",
+  "title": "Protocol Schemas",
+  "type": "schema",
+  "subtype": "protocol_artifact_group",
+  "importance": 3,
+  "summary": "The canonical schemas and machine-readable validation artifacts published by the XanaNode protocol.",
+  "artifact_path": "schemas/",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/",
+  "relationships": []
+}

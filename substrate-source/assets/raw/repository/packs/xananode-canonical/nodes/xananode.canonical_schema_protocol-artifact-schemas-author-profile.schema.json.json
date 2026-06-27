@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-schemas-author-profile.schema.json",
+  "title": "Schemas / Author Profile Schema",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 4,
+  "summary": "The JSON Schema for the author profile.",
+  "artifact_path": "schemas/author-profile.schema.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/author-profile.schema.json",
+  "relationships": [],
+  "asset_path": "assets/raw/protocol/schemas/author-profile.schema.json",
+  "asset_role": "canonical_raw_source",
+  "content_id": "sha256:07fcccc692a4452209d854f0b8a6652d045f65f7a471724fd7c3a9f189dc1576",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/author-profile.schema.json",
+    "method": "archive",
+    "content_id": "sha256:49c7adcf28e6ce6855771bbcd88cb364fed8dde4f0a242c77d05c6cb2a7081e1",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  },
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"https://xananode.org/schemas/author-profile.schema.json\",\n  \"title\": \"Author Profile\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\"id\", \"name\"],\n  \"properties\": {\n    \"id\": { \"type\": \"string\" },\n    \"name\": { \"type\": \"string\" },\n    \"orcid\": { \"type\": \"string\" },\n    \"github\": { \"type\": \"string\" },\n    \"website\": { \"type\": \"string\", \"format\": \"uri\" },\n    \"branding\": {\n      \"$ref\": \"#/$defs/branding\"\n    },\n    \"public_key\": { \"type\": \"string\" },\n    \"default_rights\": { \"type\": \"string\" },\n    \"default_license\": { \"type\": \"string\" },\n    \"default_role\": { \"type\": \"string\" }\n  },\n  \"$defs\": {\n    \"branding\": {\n      \"type\": \"object\",\n      \"description\": \"Portable branding metadata for an author, organization, substrate, pack, or projection. Branding is knowledge provenance, not renderer-only decoration.\",\n      \"additionalProperties\": false,\n      \"properties\": {\n        \"brand_name\": { \"type\": \"string\" },\n        \"tagline\": { \"type\": \"string\" },\n        \"description\": { \"type\": \"string\" },\n        \"primary_media\": { \"type\": \"string\" },\n        \"logo_media\": { \"type\": \"string\" },\n        \"icon_media\": { \"type\": \"string\" },\n        \"primary_color\": {\n          \"type\": \"string\",\n          \"pattern\": \"^#[0-9A-Fa-f]{6}$\"\n        },\n        \"accent_color\": {\n          \"type\": \"string\",\n          \"pattern\": \"^#[0-9A-Fa-f]{6}$\"\n        },\n        \"background_color\": {\n          \"type\": \"string\",\n          \"pattern\": \"^#[0-9A-Fa-f]{6}$\"\n        },\n        \"text_color\": {\n          \"type\": \"string\",\n          \"pattern\": \"^#[0-9A-Fa-f]{6}$\"\n        },\n        \"source_node\": { \"type\": \"string\" },\n        \"rights_status\": { \"type\": \"string\" },\n        \"license\": { \"type\": \"string\" },\n        \"updated_at\": { \"type\": \"string\", \"format\": \"date-time\" },\n        \"reason\": { \"type\": \"string\" }\n      }\n    }\n  }\n}\n"
+}

@@ -2,20 +2,9 @@
   "id": "xananode.canonical",
   "namespace": "xananode.canonical",
   "sources": [],
-  "nodes": 1079,
-  "relationships": 2290,
-  "warnings": [
-    {
-      "kind": "unknown_node_type",
-      "node": "example.museum:artifact/memex-illustration",
-      "type": "example.museum:artifact"
-    },
-    {
-      "kind": "unknown_relationship_type",
-      "relationship": "example.museum:rel/artifact-context",
-      "type": "example.museum:curatorial_context_for"
-    }
-  ],
+  "nodes": 868,
+  "relationships": 1883,
+  "warnings": [],
   "duplicate_collapses": [],
   "raw_sources": [
     {
@@ -25,1222 +14,10 @@
       "content_id": "sha256:d7b60a3f9a05156041dae523790d3465e7909a54425dfbeea3e112eace5f9c9a"
     },
     {
-      "node": "xananode.canonical:media/protocol-artifact-media-images-android-chrome-192x192.png",
-      "source": "media/images/android-chrome-192x192.png",
-      "asset_path": "assets/raw/protocol/media/images/android-chrome-192x192.png",
-      "content_id": "sha256:ff2ed35182f3e09a1c13fe6a8a1a0d5a78ba7a94f8fed8fed684c4d593379406"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-images-android-chrome-512x512.png",
-      "source": "media/images/android-chrome-512x512.png",
-      "asset_path": "assets/raw/protocol/media/images/android-chrome-512x512.png",
-      "content_id": "sha256:cc9ab8b3a3e5b1fbb572f34c0593a4fd9e4553779468d60db30c114516a8914f"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-images-apple-touch-icon.png",
-      "source": "media/images/apple-touch-icon.png",
-      "asset_path": "assets/raw/protocol/media/images/apple-touch-icon.png",
-      "content_id": "sha256:3deb001bb0ed7e95906e0d439141b93d45e983ffb670291998963ebd36cc5f06"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-images-favicon-16x16.png",
-      "source": "media/images/favicon-16x16.png",
-      "asset_path": "assets/raw/protocol/media/images/favicon-16x16.png",
-      "content_id": "sha256:c9f5d2c0ff1678050ef5a0ff229073e2c8d4100962f051b824397136814e4c1b"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-images-favicon-32x32.png",
-      "source": "media/images/favicon-32x32.png",
-      "asset_path": "assets/raw/protocol/media/images/favicon-32x32.png",
-      "content_id": "sha256:992a74cb0dbc5a68c7d36a4e11cb83e4e374ee586b3187901e73bd9d93c01c71"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-images-favicon.ico",
-      "source": "media/images/favicon.ico",
-      "asset_path": "assets/raw/protocol/media/images/favicon.ico",
-      "content_id": "sha256:d831bab8ef316e4cb30b5e95e16e66662ecbfa3558dafa85db70f3c18eb194f8"
-    },
-    {
       "node": "xananode.canonical:media/protocol-artifact-media-images-xananode-icon.svg",
       "source": "media/images/xananode-icon.svg",
       "asset_path": "assets/raw/protocol/media/images/xananode-icon.svg",
       "content_id": "sha256:d7b60a3f9a05156041dae523790d3465e7909a54425dfbeea3e112eace5f9c9a"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-claim.svg",
-      "source": "media/projection/node-types/claim.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/claim.svg",
-      "content_id": "sha256:163c94033a1e48602e426df6cd07a734d45443ab6e67e2f7b14e47c940aadac5"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-communication.svg",
-      "source": "media/projection/node-types/communication.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/communication.svg",
-      "content_id": "sha256:382ceb1ebe0137508636940d0d1e0f6373e190363dc6a6c14406433a8341d2d8"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-community.svg",
-      "source": "media/projection/node-types/community.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/community.svg",
-      "content_id": "sha256:25798ad89a7275a534eb2ca2934d9e1b98d6b876e612c06a97d9ecd51a16ff30"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-concept.svg",
-      "source": "media/projection/node-types/concept.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/concept.svg",
-      "content_id": "sha256:7a9ef9db1e2d4e380920c5ca8e4b716f9a87ec1ef0b24cdfb0b1a47762ec8152"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-essay.svg",
-      "source": "media/projection/node-types/essay.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/essay.svg",
-      "content_id": "sha256:ba02c1af9532218d1ba0c01fb5d3824820004027f589cf14c8f072642c07a1d9"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-event.svg",
-      "source": "media/projection/node-types/event.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/event.svg",
-      "content_id": "sha256:821724b7a2ee8d2d36d151d2ffb238cd2c0117eefe18b7aabb08d2ee1b982241"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-fragment.svg",
-      "source": "media/projection/node-types/fragment.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/fragment.svg",
-      "content_id": "sha256:eb5b91b351962fc5eba96b1d2ae5128fc18d665501e61cf1a99c871bea619b94"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-hypothesis.svg",
-      "source": "media/projection/node-types/hypothesis.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/hypothesis.svg",
-      "content_id": "sha256:37546443b3c8835912c2e77cdf41f72358ad3a1319480359e5ef7f74c37dcf73"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-item.svg",
-      "source": "media/projection/node-types/item.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/item.svg",
-      "content_id": "sha256:5d2a7ada33b46025a3b52e7209312b46959d10b298694d81da0cc9fbb45285f2"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-knowledge_gap.svg",
-      "source": "media/projection/node-types/knowledge_gap.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/knowledge_gap.svg",
-      "content_id": "sha256:6f6e3a7ab6fb6481c2c6687d3b6aa61e9ba4f596c80ac5b120fc8ea58d215401"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-media.svg",
-      "source": "media/projection/node-types/media.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/media.svg",
-      "content_id": "sha256:4e9b2aeadf0bcff94944cf601636e84e985666db6889c1ed30a4a7886b92b05e"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-observation.svg",
-      "source": "media/projection/node-types/observation.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/observation.svg",
-      "content_id": "sha256:b9abadff9f24e8951750d5d7a47acbc161dd7de52339b080364540b32f37e42c"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-organization.svg",
-      "source": "media/projection/node-types/organization.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/organization.svg",
-      "content_id": "sha256:c1a9c594e2ad76e5295e57204b8d1f25e417e3505f5532688b95f0b0ad2e8790"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-person.svg",
-      "source": "media/projection/node-types/person.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/person.svg",
-      "content_id": "sha256:5475293392e2f9907d2817729e0d8d3283cabd7b4920394a822fbc049c090e7f"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-place.svg",
-      "source": "media/projection/node-types/place.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/place.svg",
-      "content_id": "sha256:e25710ae51afda721810b386306056c3b8487f52ba5e944b11b7ca7bfd0ade47"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-problem.svg",
-      "source": "media/projection/node-types/problem.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/problem.svg",
-      "content_id": "sha256:fadea0ca8e07f68bbf27a02144941cfda42765e849ed2c910d66c8d11724abf8"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-project.svg",
-      "source": "media/projection/node-types/project.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/project.svg",
-      "content_id": "sha256:324baef2516346ebdc166aeb884732cb22f1b03881ebb718b8a165068530886d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-publication.svg",
-      "source": "media/projection/node-types/publication.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/publication.svg",
-      "content_id": "sha256:26fe6612db3dbc2cc72d554285fed30795d8a47e65aede9a3b2063a11052194e"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-question.svg",
-      "source": "media/projection/node-types/question.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/question.svg",
-      "content_id": "sha256:423bf4ce6fba2d5c5474c4b7dfd76c92ef547ee0238ef0278e9b97e77245f425"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-relationship.svg",
-      "source": "media/projection/node-types/relationship.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/relationship.svg",
-      "content_id": "sha256:c6f172ec61d9926aa6ba90fbbf8b60d3be4e345190afafa5843fc67237ee0506"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-response.svg",
-      "source": "media/projection/node-types/response.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/response.svg",
-      "content_id": "sha256:10c2d0181fec2eef6c1cacbba01e926ce7ca0ac8cf303567ca01e4496e7ca75d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-revision.svg",
-      "source": "media/projection/node-types/revision.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/revision.svg",
-      "content_id": "sha256:f75278bfb706f4667a7f69259ed4b70779ac497815126f03b3844970b782fa17"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-schema.svg",
-      "source": "media/projection/node-types/schema.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/schema.svg",
-      "content_id": "sha256:877fb779f17225428aabc670ede6e5c7fc9f7a825b0bbd44b2b7a78a6073c39d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-source.svg",
-      "source": "media/projection/node-types/source.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/source.svg",
-      "content_id": "sha256:7fdb3aa6b0e8aa91cb37dc3318eaa8c3c9cd534a234798c79d207b42ff3c21bf"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-technology.svg",
-      "source": "media/projection/node-types/technology.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/technology.svg",
-      "content_id": "sha256:fba27205f83d807e11b844b75fbc8f45748ae0014b89fc3f7428bda394f5c57c"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-node-types-trail.svg",
-      "source": "media/projection/node-types/trail.svg",
-      "asset_path": "assets/raw/protocol/media/projection/node-types/trail.svg",
-      "content_id": "sha256:7b7ee676908e329202fd0e385b2068acfdde55624a719df3ad3a1417fb19bb65"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-attention.svg",
-      "source": "media/projection/relationship-categories/attention.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/attention.svg",
-      "content_id": "sha256:ab2291c41d6f70bba95d03bc06f834c37ee43e5beeaeb979a83c11cd59463d4b"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-causation.svg",
-      "source": "media/projection/relationship-categories/causation.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/causation.svg",
-      "content_id": "sha256:42c87e278f7fa80d7d697169eb9d5b1083c6c96c3c92c5ef64911839809ab8fc"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-citation.svg",
-      "source": "media/projection/relationship-categories/citation.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/citation.svg",
-      "content_id": "sha256:681bac3266c7644084fb1a81c10db18b1f4e9a58befba8c9e9dfed6cca551553"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-claim_structure.svg",
-      "source": "media/projection/relationship-categories/claim_structure.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/claim_structure.svg",
-      "content_id": "sha256:b87755995f16a1d47d4fbe7d85a05c70d439b4dadcdbac4244c747e47d493c60"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-cognition.svg",
-      "source": "media/projection/relationship-categories/cognition.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/cognition.svg",
-      "content_id": "sha256:ec7f476ff2ce5c1871869a2d08d7bb00f553982a0d6d1379f054c4fe9dc18d7d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-communication.svg",
-      "source": "media/projection/relationship-categories/communication.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/communication.svg",
-      "content_id": "sha256:66e741a47619846dfa178885cddc666d164a433fc3d63527a4a853496a458d53"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-comparison.svg",
-      "source": "media/projection/relationship-categories/comparison.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/comparison.svg",
-      "content_id": "sha256:bcedb00c6c51b708b49f42a4470c0d0db7b7eb8f6b5c123a4111fb05f0f061f9"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-composition.svg",
-      "source": "media/projection/relationship-categories/composition.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/composition.svg",
-      "content_id": "sha256:78ef038784d1d147cf90f6bb7130d87b267d20749c9b6c853301150e50ea4a04"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-creation.svg",
-      "source": "media/projection/relationship-categories/creation.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/creation.svg",
-      "content_id": "sha256:589b076490c1020527a425c130fffbad29826b135feed40404a0a865de17875d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-definition.svg",
-      "source": "media/projection/relationship-categories/definition.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/definition.svg",
-      "content_id": "sha256:a89c48fa6a2a57cbfe6ab8525f7aed6c374f5300f4475600bc22c9a7569fc2f9"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-discovery.svg",
-      "source": "media/projection/relationship-categories/discovery.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/discovery.svg",
-      "content_id": "sha256:6386db239ccd3bb475cf9340fdca205d364f17f4234459fdad986e44881cfb3d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-evidence.svg",
-      "source": "media/projection/relationship-categories/evidence.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/evidence.svg",
-      "content_id": "sha256:382d60a2b9db0b0ef79dc921ea0134b87507654196616a9bd7524b9a14621284"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-evolution.svg",
-      "source": "media/projection/relationship-categories/evolution.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/evolution.svg",
-      "content_id": "sha256:0f99fd8d00596d67f3d7fd7a66567dcb1db8654e0a242a0b81825aacde74312d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-explanation.svg",
-      "source": "media/projection/relationship-categories/explanation.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/explanation.svg",
-      "content_id": "sha256:4e4874d5199141421f5a5d7b171ebb98658441850c3dac004c0049372537f1d3"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-generic.svg",
-      "source": "media/projection/relationship-categories/generic.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/generic.svg",
-      "content_id": "sha256:d22523074324202aad28e67e42be570b6ef53148946d897d4db9066c9f3b8139"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-governance.svg",
-      "source": "media/projection/relationship-categories/governance.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/governance.svg",
-      "content_id": "sha256:1017913454ae9bf485b575abca9137209a171394f496237f319d6988058ffa65"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-historical.svg",
-      "source": "media/projection/relationship-categories/historical.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/historical.svg",
-      "content_id": "sha256:47978fb173aa6b107882b1cafc6d6a092130d378046fa6ee75198ea553201a55"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-identity.svg",
-      "source": "media/projection/relationship-categories/identity.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/identity.svg",
-      "content_id": "sha256:14fe95355a5344504ea807e841227b05567b7a54432e44848e33fc241f43359f"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-influence.svg",
-      "source": "media/projection/relationship-categories/influence.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/influence.svg",
-      "content_id": "sha256:44e285f16a10892334ba4b157dcfc178dbae37624249b4d97acee438426d1ef4"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-inquiry.svg",
-      "source": "media/projection/relationship-categories/inquiry.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/inquiry.svg",
-      "content_id": "sha256:ba97bd418a55852a7624eb0481845cfd09b4742e0879ee1b6af8d88eb934c317"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-knowledge_workflow.svg",
-      "source": "media/projection/relationship-categories/knowledge_workflow.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/knowledge_workflow.svg",
-      "content_id": "sha256:ffef22f26185d4179018afbfc0f85e218594d74c75decaf89088946fc013d487"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-lineage.svg",
-      "source": "media/projection/relationship-categories/lineage.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/lineage.svg",
-      "content_id": "sha256:0bf1c4f6f900f8942f0ae8d9f2fd53d1b499ba6d85f2e2b22630cef4cd537ba3"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-location.svg",
-      "source": "media/projection/relationship-categories/location.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/location.svg",
-      "content_id": "sha256:035daac2e43e737037a266583ba1095dbed6de2ada71b40a19716d59d476ac6a"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-participation.svg",
-      "source": "media/projection/relationship-categories/participation.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/participation.svg",
-      "content_id": "sha256:75b23545383f1f68f83900d707c769890d1a5bd201c7cb32085128f57d25bb35"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-reasoning.svg",
-      "source": "media/projection/relationship-categories/reasoning.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/reasoning.svg",
-      "content_id": "sha256:d21516c17ad8638796a0c9027a621f7a3455dd446772fa026591d89b646a7dde"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-representation.svg",
-      "source": "media/projection/relationship-categories/representation.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/representation.svg",
-      "content_id": "sha256:7b5afa794a1484247ccd19111ff810bea06bfd1b3f8bfe88d92dd1ad145a1359"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-research_workflow.svg",
-      "source": "media/projection/relationship-categories/research_workflow.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/research_workflow.svg",
-      "content_id": "sha256:d87f0cf0457e32b99c9a692191e4aa027e4c6d5da6e8b26af2885fab8ece44ed"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-revision.svg",
-      "source": "media/projection/relationship-categories/revision.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/revision.svg",
-      "content_id": "sha256:ecd2224f73ec84fb820b2e6c4018963ef55ef16d9d080d745ef3d3cac0ec8312"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-schema_mapping.svg",
-      "source": "media/projection/relationship-categories/schema_mapping.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/schema_mapping.svg",
-      "content_id": "sha256:d3f7a8726e99426f288cc65101c86f554c991b65a2cb53bae1179de4d2eed7db"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-social.svg",
-      "source": "media/projection/relationship-categories/social.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/social.svg",
-      "content_id": "sha256:8c2d79b7aeb182f6554e74dbcc2598a4aa1d39c0f75fd9c6836956f4d1cd986e"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-temporal.svg",
-      "source": "media/projection/relationship-categories/temporal.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/temporal.svg",
-      "content_id": "sha256:ba47c9bd720072a19d36ead5dbbffeee32836c0811f8fb286f7c608336d108cd"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-categories-uncertainty.svg",
-      "source": "media/projection/relationship-categories/uncertainty.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-categories/uncertainty.svg",
-      "content_id": "sha256:aed34d9069335b325a5d2caa1c4ee3823a9f4b09f9f7a85cd62a031df8a19ba1"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-abstraction_of.svg",
-      "source": "media/projection/relationship-types/abstraction_of.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/abstraction_of.svg",
-      "content_id": "sha256:702f8ab5c4f1ca26bd8611172c7122f3b404d09a224aab7706ddf633ca056af8"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-adapted_from.svg",
-      "source": "media/projection/relationship-types/adapted_from.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/adapted_from.svg",
-      "content_id": "sha256:0c1b33cd6f9b7d57f492978f212b4dd570ad22a38d5886e696dfbf9de381d094"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-adapted_into.svg",
-      "source": "media/projection/relationship-types/adapted_into.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/adapted_into.svg",
-      "content_id": "sha256:fcd1e933f7b6877ba8af370be088d5b5bc8090a77def0e9c328489478470686a"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-alias_of.svg",
-      "source": "media/projection/relationship-types/alias_of.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/alias_of.svg",
-      "content_id": "sha256:6d9f7bf92532ba0904cddf5171882e74515e3b91e6e55c759f749930f235d53c"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-alternative_to.svg",
-      "source": "media/projection/relationship-types/alternative_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/alternative_to.svg",
-      "content_id": "sha256:a79c50e9409855f7f6e4783b12f4010cf1cace56f781493910756efdab6bae3c"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-analogous_to.svg",
-      "source": "media/projection/relationship-types/analogous_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/analogous_to.svg",
-      "content_id": "sha256:0d3574d78d309942d1ea5e682afb700de044dc994453889c93119e05aecdff01"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-announced.svg",
-      "source": "media/projection/relationship-types/announced.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/announced.svg",
-      "content_id": "sha256:418cca1ac46dd37c6547892e5485ff7107a6f555bf1bb326e053953164cc397e"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-answered_in.svg",
-      "source": "media/projection/relationship-types/answered_in.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/answered_in.svg",
-      "content_id": "sha256:dbf889ac9dc18b6ae4ec9ac82a388748ffd75b03c019e4d0c22728829e36ca70"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-answers.svg",
-      "source": "media/projection/relationship-types/answers.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/answers.svg",
-      "content_id": "sha256:c1225d985a3b090cb74d1b948db6c7f6122e79f25c11fb8325de26049525670c"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-anticipated.svg",
-      "source": "media/projection/relationship-types/anticipated.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/anticipated.svg",
-      "content_id": "sha256:fcd9957a7d6828996ebc593e32ef3e5c75ef9b2a56fcc13645c26a4e2721727a"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-anticipates.svg",
-      "source": "media/projection/relationship-types/anticipates.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/anticipates.svg",
-      "content_id": "sha256:17e3bf6b0d325f6bf604b4c40241e6fa7ff704e4bd8495a8eabf6f9c8bd7b143"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-appears_in.svg",
-      "source": "media/projection/relationship-types/appears_in.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/appears_in.svg",
-      "content_id": "sha256:196037cad8cacba57a717c4b5e5184300e293dad200193194e6c15b4b8e40653"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-approved.svg",
-      "source": "media/projection/relationship-types/approved.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/approved.svg",
-      "content_id": "sha256:a77ae3047e46832ab43f2e8e40d1d9d3a40c4abd4fe3d16b35e9acc4b3b88341"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-arrives_at.svg",
-      "source": "media/projection/relationship-types/arrives_at.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/arrives_at.svg",
-      "content_id": "sha256:cedf4cffe33b588d9163020d79275612dd0db4a2c3efe4d4d6158e620ef47b44"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-asked_in.svg",
-      "source": "media/projection/relationship-types/asked_in.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/asked_in.svg",
-      "content_id": "sha256:2b3d39a826da1ab5ce73bbf5ebef3d3a25ce78b3df0a76d17622aad792bab56c"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-asked.svg",
-      "source": "media/projection/relationship-types/asked.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/asked.svg",
-      "content_id": "sha256:44fcf90854aa108decd927711479f2d193dcf987245874b402a72fb03973fa16"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-assembled_from.svg",
-      "source": "media/projection/relationship-types/assembled_from.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/assembled_from.svg",
-      "content_id": "sha256:d53b1bcab02667a66aaa4734cd1ae16bde226f87611a470919cb4866dd0add42"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-authored.svg",
-      "source": "media/projection/relationship-types/authored.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/authored.svg",
-      "content_id": "sha256:0856c9f19d9dbce8600407cdc075120e52810923bc04481dd5898da59dbffc11"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-broadcast_to.svg",
-      "source": "media/projection/relationship-types/broadcast_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/broadcast_to.svg",
-      "content_id": "sha256:a0aa78b76672255b1f9315094f8a2642c1255afb9aac966221404f17e0ed3a26"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-broader_than.svg",
-      "source": "media/projection/relationship-types/broader_than.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/broader_than.svg",
-      "content_id": "sha256:636aa6b66ba6a5b5ec36d00272276410bfaaa615e2089aea1ac5c6a192817489"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-cites.svg",
-      "source": "media/projection/relationship-types/cites.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/cites.svg",
-      "content_id": "sha256:6cd3f51b08a9e27e3bce74f5c0d6253d06ca1473308441d8e7818fcedc87c108"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-clarifies.svg",
-      "source": "media/projection/relationship-types/clarifies.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/clarifies.svg",
-      "content_id": "sha256:da88267b156becc111be411c9c2f2fdf82d61dfe0f52e0b936dce1023d86cb1c"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-co_authored_with.svg",
-      "source": "media/projection/relationship-types/co_authored_with.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/co_authored_with.svg",
-      "content_id": "sha256:2c5aadd750259d53af776d482bbecec446ee29c54494709084d22e118387d5b7"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-coined.svg",
-      "source": "media/projection/relationship-types/coined.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/coined.svg",
-      "content_id": "sha256:1c4a36556ac6216515ffdf04146588452dff1a4d57dbb2a05050a4e0c95b17f3"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-collaborated_with.svg",
-      "source": "media/projection/relationship-types/collaborated_with.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/collaborated_with.svg",
-      "content_id": "sha256:b615aa9ece644548739aad41cf8b2d35d19a893c9c646d94600145de8fa7e712"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-communicated_to.svg",
-      "source": "media/projection/relationship-types/communicated_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/communicated_to.svg",
-      "content_id": "sha256:150d040bda6e64e69e43fe7f1e45f73fe09c20bcbbc0b112504dc79e03de4309"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-compatible_with.svg",
-      "source": "media/projection/relationship-types/compatible_with.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/compatible_with.svg",
-      "content_id": "sha256:c25683c0ea24f7051175ae6135f3fb1507a8d40d3cc21f9467aa652cf467e9db"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-contains.svg",
-      "source": "media/projection/relationship-types/contains.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/contains.svg",
-      "content_id": "sha256:9f5773ec7c3e60eb81df11903456e962e93750cf3634131000cfbed3275820f9"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-contemporary_of.svg",
-      "source": "media/projection/relationship-types/contemporary_of.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/contemporary_of.svg",
-      "content_id": "sha256:019ad8cc049fb42e1561d65c1126f20e35505a715b1289df74b4b76acb7c28cc"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-context_for.svg",
-      "source": "media/projection/relationship-types/context_for.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/context_for.svg",
-      "content_id": "sha256:4e8e294cc2902f2a78a44d0fb803d02e7455fc511843b58542821001670d2bc2"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-continues_to.svg",
-      "source": "media/projection/relationship-types/continues_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/continues_to.svg",
-      "content_id": "sha256:94d1c88f3abcb80d7e7b7d5e53aefffce37ff5e4f44185e9fd256a2f2a10b8a6"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-contradicts.svg",
-      "source": "media/projection/relationship-types/contradicts.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/contradicts.svg",
-      "content_id": "sha256:ad9f5b8ed07350afca3a7c67414ea4d74604143303f74d792cfba5e7c5b75948"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-contrasts_with.svg",
-      "source": "media/projection/relationship-types/contrasts_with.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/contrasts_with.svg",
-      "content_id": "sha256:2900a6ef8eb35e07e1af0af4d300b60b0168aacc1df97ec094898a3db3eeec28"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-created.svg",
-      "source": "media/projection/relationship-types/created.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/created.svg",
-      "content_id": "sha256:368e5cd8cfbb3916ef066d3431c4cc13b4f2ee4b264dda87023fb5f6a4b91dbb"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-critical_to.svg",
-      "source": "media/projection/relationship-types/critical_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/critical_to.svg",
-      "content_id": "sha256:e1c72f5a716f5ea29bc0aa52912ecb77c9650435d88f99ef4a93dae74f131f4d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-debated_with.svg",
-      "source": "media/projection/relationship-types/debated_with.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/debated_with.svg",
-      "content_id": "sha256:c6505d2bb78745efbd2767b3a4326048db14a51dcfa85f496e2b1c9cc510ef25"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-deep_links_to.svg",
-      "source": "media/projection/relationship-types/deep_links_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/deep_links_to.svg",
-      "content_id": "sha256:be1bc5528476e4f9365a97c09430a2a6c657d68b58c3170233cde4ca8c0ee52b"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-defines.svg",
-      "source": "media/projection/relationship-types/defines.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/defines.svg",
-      "content_id": "sha256:f7454e52c76557bea5296140df300dbef2536f4183dbacababea9ce430c9bcc6"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-demonstrates.svg",
-      "source": "media/projection/relationship-types/demonstrates.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/demonstrates.svg",
-      "content_id": "sha256:7f303649a3356e4f94ed511deb690cd3a40559903d566920c0caede923a87cc3"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-depends_on.svg",
-      "source": "media/projection/relationship-types/depends_on.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/depends_on.svg",
-      "content_id": "sha256:e3789887cd09457a4915d1cbb6fcb75f60630bbc950bbd379f930f7d1d731938"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-depicts.svg",
-      "source": "media/projection/relationship-types/depicts.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/depicts.svg",
-      "content_id": "sha256:99ab089f63f868042066dca7c16fd7c51a0faa9a990f61e8a0b8032cc7bdc8db"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-derived_from.svg",
-      "source": "media/projection/relationship-types/derived_from.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/derived_from.svg",
-      "content_id": "sha256:06aa42f660a438166bc1b538920d7c8db846217c3812803521865ed2311b6968"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-discussed_with.svg",
-      "source": "media/projection/relationship-types/discussed_with.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/discussed_with.svg",
-      "content_id": "sha256:2e593c92d30609d3b91ff87c9e2bb49d46bd4213775e574ec1690006e503a901"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-discusses.svg",
-      "source": "media/projection/relationship-types/discusses.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/discusses.svg",
-      "content_id": "sha256:fa7b22b1ea900fc7d656d203ac65fc00d1a6ea89e9a9a489265661c72d048b01"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-disputed_identity.svg",
-      "source": "media/projection/relationship-types/disputed_identity.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/disputed_identity.svg",
-      "content_id": "sha256:89ae70191eb853c364afd182449b293890ae69135a79e0864354d2113208020a"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-disputes.svg",
-      "source": "media/projection/relationship-types/disputes.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/disputes.svg",
-      "content_id": "sha256:f1a4bd437167dec0a89476905ebb77fd24df829caf15ed2ab68ff76b4f87e2d6"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-documents.svg",
-      "source": "media/projection/relationship-types/documents.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/documents.svg",
-      "content_id": "sha256:2b40a60dcd79b10c896fe258ee04cf5d4ab0c0d2e87f7a5c3363785e3ae4ae21"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-enables.svg",
-      "source": "media/projection/relationship-types/enables.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/enables.svg",
-      "content_id": "sha256:9146bc9b1e5f7286677d2f476eb79eab8d6003f71fb6770e8be2e9e89a946985"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-equivalent_to.svg",
-      "source": "media/projection/relationship-types/equivalent_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/equivalent_to.svg",
-      "content_id": "sha256:ac1bbfc48552124d1fb00268eac43c33b8f5f033e9ef21d8a37528973a6f99aa"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-evidence_for.svg",
-      "source": "media/projection/relationship-types/evidence_for.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/evidence_for.svg",
-      "content_id": "sha256:ed64c628891597f26a314095a4f14e2b0984685007371d9a7a3eb5c287a6559d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-example_of.svg",
-      "source": "media/projection/relationship-types/example_of.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/example_of.svg",
-      "content_id": "sha256:7f0515afde900dcb2c43517f2995ebe8982e42c406b86a13981fa1a2e4521352"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-explains.svg",
-      "source": "media/projection/relationship-types/explains.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/explains.svg",
-      "content_id": "sha256:bee7a9b4b059feb078bb344d8123b632b7baafab490b0496ed0529ec34c3cc67"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-extends.svg",
-      "source": "media/projection/relationship-types/extends.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/extends.svg",
-      "content_id": "sha256:cdb482d42f2f078564fbdfd2eb2d41f00373805944504d4c2b38788de5232ef0"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-extension_of.svg",
-      "source": "media/projection/relationship-types/extension_of.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/extension_of.svg",
-      "content_id": "sha256:e5508a59aee179e4d401e9ad9582300d36b055793e9cd2ac9fec552e933a0ab0"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-fails_to_answer.svg",
-      "source": "media/projection/relationship-types/fails_to_answer.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/fails_to_answer.svg",
-      "content_id": "sha256:80a96addb3d1c0699955f19b8795cedeed1a0c119ca83c42fda11a7c02a5586c"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-falsifies.svg",
-      "source": "media/projection/relationship-types/falsifies.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/falsifies.svg",
-      "content_id": "sha256:fcf8a4443382c07cac155cf57c97c6ecd8436d7e14682ac86ccc1fc1fc20d52b"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-features.svg",
-      "source": "media/projection/relationship-types/features.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/features.svg",
-      "content_id": "sha256:52af32679e39cc019fd4985886f6838dc1d7e87de96facaebf12453d18828426"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-format_translated_from.svg",
-      "source": "media/projection/relationship-types/format_translated_from.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/format_translated_from.svg",
-      "content_id": "sha256:cad1274eb3f38f28ea65b5a3993eba587c0b4992e9ed5f0180120d01492ebd4a"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-format_translated_into.svg",
-      "source": "media/projection/relationship-types/format_translated_into.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/format_translated_into.svg",
-      "content_id": "sha256:aeb83dec999ce981201302cfeb396089d3b9f824ca30877924d06fee72337a56"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-frequently_misunderstood.svg",
-      "source": "media/projection/relationship-types/frequently_misunderstood.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/frequently_misunderstood.svg",
-      "content_id": "sha256:5031e942f58d656fe2ea51886de1c12878a4e324464d03ecc73f21f4f64332b1"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-friend_of.svg",
-      "source": "media/projection/relationship-types/friend_of.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/friend_of.svg",
-      "content_id": "sha256:597f8bd678774cdef4fec5c378aacda6513359663dcd6417bef07d9ab1a1e964"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-generalizes.svg",
-      "source": "media/projection/relationship-types/generalizes.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/generalizes.svg",
-      "content_id": "sha256:5866ffff3dd7c0d0ef707410718a7da06636c32fc340ac2732dbbe7e51e89b74"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-generated.svg",
-      "source": "media/projection/relationship-types/generated.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/generated.svg",
-      "content_id": "sha256:5bbd1d40f55206ea974590b13003237316c54244cfe61e3a785dcf8753ce052d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-governed_by.svg",
-      "source": "media/projection/relationship-types/governed_by.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/governed_by.svg",
-      "content_id": "sha256:bbc67fea92ed2488bf7e186594ff3050c65a8e7f665bbf992e3d295b462f66f6"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-has_claim.svg",
-      "source": "media/projection/relationship-types/has_claim.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/has_claim.svg",
-      "content_id": "sha256:7832ea0298a245c0787afce0bbee7b7ec4a7345af1ca10b554fe4a88a5422e2b"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-has_primary_media.svg",
-      "source": "media/projection/relationship-types/has_primary_media.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/has_primary_media.svg",
-      "content_id": "sha256:f9313ace219cb2f7f622ded47f4154f2af0340eccbc06b75c805ee4e880090ce"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-high_risk_for.svg",
-      "source": "media/projection/relationship-types/high_risk_for.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/high_risk_for.svg",
-      "content_id": "sha256:9ee550d1d28b6e397a2046bad84eb42cc11f66910ad545943adff5ee75448f0f"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-identified.svg",
-      "source": "media/projection/relationship-types/identified.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/identified.svg",
-      "content_id": "sha256:1254afdcc5c584b4f132d6a64b1e34ba751d341fb935ceff1e59372444a1e5b7"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-implements.svg",
-      "source": "media/projection/relationship-types/implements.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/implements.svg",
-      "content_id": "sha256:937ef657b04fc0a3935530511d22575cab23b14289843f3d1cd52bfca5110b2e"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-important_for.svg",
-      "source": "media/projection/relationship-types/important_for.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/important_for.svg",
-      "content_id": "sha256:4f78597a47704e3346eb13fb8646425c9c7edb03f981cf56afb8442257ec07ad"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-includes.svg",
-      "source": "media/projection/relationship-types/includes.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/includes.svg",
-      "content_id": "sha256:84ae834f812e465da1bb8248707e752cf9a45060571166e0a6b99aededdfeb10"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-influenced.svg",
-      "source": "media/projection/relationship-types/influenced.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/influenced.svg",
-      "content_id": "sha256:821d22612a8958683f7c8d538a3ddcc41ab335bc0a7adf1aaf3af59ef03fb0a3"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-ingredient_of.svg",
-      "source": "media/projection/relationship-types/ingredient_of.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/ingredient_of.svg",
-      "content_id": "sha256:c40f3d2601eeb1628361838303c37e009400edf503f23d8641af51c2e6d7262a"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-insufficient_evidence.svg",
-      "source": "media/projection/relationship-types/insufficient_evidence.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/insufficient_evidence.svg",
-      "content_id": "sha256:283ce6849025948b73900a59360d4c9eb6d5eba6b898d40d1465d61c14bf4dd8"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-interviewed.svg",
-      "source": "media/projection/relationship-types/interviewed.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/interviewed.svg",
-      "content_id": "sha256:25f74e31f31fa9ecb87e78e3d2e4c99211cdeb67fda6c30f45be227584c634d0"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-introduced_in.svg",
-      "source": "media/projection/relationship-types/introduced_in.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/introduced_in.svg",
-      "content_id": "sha256:825c22b0d28040259ea9f782106dc98bf5504705ce0dc8379480f38f8aeaf3fb"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-introduced.svg",
-      "source": "media/projection/relationship-types/introduced.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/introduced.svg",
-      "content_id": "sha256:57718ca3f23c9f059ea667c4e32e7764348d83e051680089316ba66bfac98266"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-investigates.svg",
-      "source": "media/projection/relationship-types/investigates.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/investigates.svg",
-      "content_id": "sha256:f111eb932fc43c54b0f2412563864fecc58fa7302aca3f539e038ab276edd8db"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-licensed_under.svg",
-      "source": "media/projection/relationship-types/licensed_under.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/licensed_under.svg",
-      "content_id": "sha256:517a2e9e1738947991fbc649843bcbbe7d49b5f8337903d44e7b60dd65944740"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-made_of.svg",
-      "source": "media/projection/relationship-types/made_of.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/made_of.svg",
-      "content_id": "sha256:61cc470dc7581f59520e5f7a14bff4eeb384d21dc8b24fd3bc9979fff5f17647"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-maps_to.svg",
-      "source": "media/projection/relationship-types/maps_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/maps_to.svg",
-      "content_id": "sha256:fec744d35d05d8000f2a67b2fa86bfb57ee7c6851d5ae221c5935b5942ff7e0b"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-medium_transition.svg",
-      "source": "media/projection/relationship-types/medium_transition.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/medium_transition.svg",
-      "content_id": "sha256:4454a4502e92807230544323fc4c23122c12d99adece309614f10081b7f8a303"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-medium_transitioned_from.svg",
-      "source": "media/projection/relationship-types/medium_transitioned_from.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/medium_transitioned_from.svg",
-      "content_id": "sha256:b978f06dacfbc71a667de7c4c317493e9ac950f9394f3fd8b36851c0c36d9efc"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-memorializes.svg",
-      "source": "media/projection/relationship-types/memorializes.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/memorializes.svg",
-      "content_id": "sha256:d7c2f08651a325f5323e524ef42d1d2bc0428f3b3d1022c4ab5f68e80761b6ff"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-mentions.svg",
-      "source": "media/projection/relationship-types/mentions.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/mentions.svg",
-      "content_id": "sha256:327bb650b20f229497ade775d8f4837560724a850ba7c3afc4c81f5b93ec0cd4"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-motivated_by.svg",
-      "source": "media/projection/relationship-types/motivated_by.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/motivated_by.svg",
-      "content_id": "sha256:4968ae93f9d853e53efea7e8901e2ba9be0cd45c64d515933017493e1851a58d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-motivates_inquiry.svg",
-      "source": "media/projection/relationship-types/motivates_inquiry.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/motivates_inquiry.svg",
-      "content_id": "sha256:f0808e040974566b49e8de48eb6a145aff7022c2668fd0e1c4f2ff006210481b"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-negotiated_with.svg",
-      "source": "media/projection/relationship-types/negotiated_with.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/negotiated_with.svg",
-      "content_id": "sha256:176808d1ee4f9d70240705e37113832649f1dc8207a3bc9246411d194923f24d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-occurred_at.svg",
-      "source": "media/projection/relationship-types/occurred_at.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/occurred_at.svg",
-      "content_id": "sha256:2c5b25ca8661dc9e588320654ddbfb7bdbddf99e2f3f726c468e886e2ae4f016"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-overlooked_by.svg",
-      "source": "media/projection/relationship-types/overlooked_by.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/overlooked_by.svg",
-      "content_id": "sha256:1255db01a5efbbeab2980b8a004ac458d6521a5cdca29197b460268535aa2bc6"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-parallel_to.svg",
-      "source": "media/projection/relationship-types/parallel_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/parallel_to.svg",
-      "content_id": "sha256:a9b50e1031f216f15fdc93461e44b57d8e301c706b94b3ae94296a1fc75d9018"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-partially_answers.svg",
-      "source": "media/projection/relationship-types/partially_answers.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/partially_answers.svg",
-      "content_id": "sha256:c54c0b4ed397b5615f8b76a2968c41e881902fb4b95b6fb6ec3c7e3dfd23ffe9"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-participated_in.svg",
-      "source": "media/projection/relationship-types/participated_in.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/participated_in.svg",
-      "content_id": "sha256:e5a99152d614ae5764cb99cfb5fe42d0a6fbb5fdadf7c10381962bda246ecc99"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-popularized.svg",
-      "source": "media/projection/relationship-types/popularized.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/popularized.svg",
-      "content_id": "sha256:b703638f3444b51c08659e599ba8c8d4c560461860c23cb01ed3a8532bfc3a21"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-possible_match.svg",
-      "source": "media/projection/relationship-types/possible_match.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/possible_match.svg",
-      "content_id": "sha256:735837cdd1948c7917ff245294440871f6e2912e51404d87b01e0dae297c9d25"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-possibly_related_to.svg",
-      "source": "media/projection/relationship-types/possibly_related_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/possibly_related_to.svg",
-      "content_id": "sha256:492bbd4ea0c63175171ac077706fd45564e7c4dd798e994b6f8c3749525b2351"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-preceded.svg",
-      "source": "media/projection/relationship-types/preceded.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/preceded.svg",
-      "content_id": "sha256:a2dd2c88cf994db7780a008f170b9449966731a42aa1753979f70ffcfdd55717"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-presented_to.svg",
-      "source": "media/projection/relationship-types/presented_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/presented_to.svg",
-      "content_id": "sha256:a87f1e5f3844d15bb154880ca2bd10f7155d11ff777a2b0b335ac078f13883c9"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-presented.svg",
-      "source": "media/projection/relationship-types/presented.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/presented.svg",
-      "content_id": "sha256:0cf4feb4d61932d2706bc676685a16b6b29f6dbf9e53fbca58675a21bfbf510f"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-preserves.svg",
-      "source": "media/projection/relationship-types/preserves.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/preserves.svg",
-      "content_id": "sha256:0c0735421d7b9af0ea654ac76b4d83260c573dd7aae20bb947131616d3d72255"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-proposed.svg",
-      "source": "media/projection/relationship-types/proposed.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/proposed.svg",
-      "content_id": "sha256:a44e58ff7646daed41c4ec9d5f2a17c00a45dad9dd10f8c9069a5c51d6cb8a97"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-quotes.svg",
-      "source": "media/projection/relationship-types/quotes.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/quotes.svg",
-      "content_id": "sha256:b0a290faed667dfa4447a0f773c62bbf9ba8b734b550da9177162e22e4826a0b"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-raises.svg",
-      "source": "media/projection/relationship-types/raises.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/raises.svg",
-      "content_id": "sha256:d6f9cb22f89754b988442396e998f3353a83373636c46f963cc839089dcb91ea"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-refines.svg",
-      "source": "media/projection/relationship-types/refines.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/refines.svg",
-      "content_id": "sha256:a9cd515f38a2e428aee3d05f5b6d58b1ea4fdc155298b9f1f3db71c9633ce431"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-related_to.svg",
-      "source": "media/projection/relationship-types/related_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/related_to.svg",
-      "content_id": "sha256:d4ee637c86b45e22c77418976f45bb6ac30402ab309edbb96d5f7113c146f4c5"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-replied_to.svg",
-      "source": "media/projection/relationship-types/replied_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/replied_to.svg",
-      "content_id": "sha256:62541c2f3382610c1c7e4ac1d18bf60783b9b7e6a9bfa29e1788e7de694dc4d9"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-reported_to.svg",
-      "source": "media/projection/relationship-types/reported_to.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/reported_to.svg",
-      "content_id": "sha256:8b0d87c9ef22ba5694d4a85ada326e64ce2158a84fd93497182493850fdb3dcc"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-represents.svg",
-      "source": "media/projection/relationship-types/represents.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/represents.svg",
-      "content_id": "sha256:474d6a0429c92f2536c259f901372f8b148279326c509b7699f4da3854b46c13"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-requires_attribution.svg",
-      "source": "media/projection/relationship-types/requires_attribution.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/requires_attribution.svg",
-      "content_id": "sha256:66030b4e1cdcbfbb3ca67dd1b0d8ff36de31c972d40767cc824cb913367896a0"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-requires_context.svg",
-      "source": "media/projection/relationship-types/requires_context.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/requires_context.svg",
-      "content_id": "sha256:a688ed5b544d7abb0ce12e1d0081203c0258b06e41a94327b58ea679b685a73a"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-requires_information.svg",
-      "source": "media/projection/relationship-types/requires_information.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/requires_information.svg",
-      "content_id": "sha256:2523c42c0804d12632b05b7c3d98c7d0d5bd1762d87b7dd3a9e14c77577b1378"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-requires_review.svg",
-      "source": "media/projection/relationship-types/requires_review.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/requires_review.svg",
-      "content_id": "sha256:ae0a88250fc8c9c19c407ff737ad54670b41972320104150496c8faa990dfa4a"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-requires_source.svg",
-      "source": "media/projection/relationship-types/requires_source.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/requires_source.svg",
-      "content_id": "sha256:4fe11c8e15903b39a79b8a82cd38683d5ad4a1987e3849c9d55091cb42c1c04f"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-requires_validation.svg",
-      "source": "media/projection/relationship-types/requires_validation.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/requires_validation.svg",
-      "content_id": "sha256:c7f1e63bc5df50fd493868277f9db21e76c2513b48e0de7fa83effcd4c9aca3e"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-requires.svg",
-      "source": "media/projection/relationship-types/requires.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/requires.svg",
-      "content_id": "sha256:95d12fadbe59f083c21a16c8fde6fa480fac10b6f32f47e10ef43e82d8440cbb"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-resonates_with.svg",
-      "source": "media/projection/relationship-types/resonates_with.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/resonates_with.svg",
-      "content_id": "sha256:3641999f4d7cedbbbe14e9bd4247f7055e2e356925f38d7d69d5b2d0efc2a8f0"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-results_from.svg",
-      "source": "media/projection/relationship-types/results_from.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/results_from.svg",
-      "content_id": "sha256:5b4b0acdeac852de1a8fd744a1bea0d86eeebd0b507a9786e03a3c173e22094b"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-same_concept.svg",
-      "source": "media/projection/relationship-types/same_concept.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/same_concept.svg",
-      "content_id": "sha256:58f93865e02d57ca4531553d7e7ebff77a1d101105c7130c76f1887b250d78e7"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-same_entity.svg",
-      "source": "media/projection/relationship-types/same_entity.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/same_entity.svg",
-      "content_id": "sha256:b86e504799941393f7387560a128c9e9b3f2bb9f3ba78d63a0e0eae14c8662dc"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-same_person.svg",
-      "source": "media/projection/relationship-types/same_person.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/same_person.svg",
-      "content_id": "sha256:e74843b30ada0fcb4566eff39ff48d6de80cd860c1d5c030b8a139a426137197"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-same_source.svg",
-      "source": "media/projection/relationship-types/same_source.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/same_source.svg",
-      "content_id": "sha256:477baf5fc920f8acbfe728c7f881a61816ef21495d6d008833286128833ea189"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-shapes.svg",
-      "source": "media/projection/relationship-types/shapes.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/shapes.svg",
-      "content_id": "sha256:152ce321fd096de987529c003dcc8c50ef8a88cf6f8fbaedbbbe7550c380147e"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-shares_pattern_with.svg",
-      "source": "media/projection/relationship-types/shares_pattern_with.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/shares_pattern_with.svg",
-      "content_id": "sha256:bfb61de752309d6455771ac5afef8181bce9b137907b0ce21b80daf9f48f9c69"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-specializes.svg",
-      "source": "media/projection/relationship-types/specializes.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/specializes.svg",
-      "content_id": "sha256:005e19c6e4897d4fe6773812522329642a9b6bd382acbfc6692c5731410bae02"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-speculative.svg",
-      "source": "media/projection/relationship-types/speculative.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/speculative.svg",
-      "content_id": "sha256:e4b56cb32105f22f6f46a86e938d1ec1bb50962e0ef147c5e36b61e7a19841f0"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-spoke_at.svg",
-      "source": "media/projection/relationship-types/spoke_at.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/spoke_at.svg",
-      "content_id": "sha256:e09c0820cc7ca0c86645e5a68b08266322e279a5f2621c1afea0d83c68f2ff0a"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-starts_with.svg",
-      "source": "media/projection/relationship-types/starts_with.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/starts_with.svg",
-      "content_id": "sha256:ef33d5c773f7276e884e03d63d54d894f9ac23829d232c038898280eb95cf997"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-supersedes.svg",
-      "source": "media/projection/relationship-types/supersedes.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/supersedes.svg",
-      "content_id": "sha256:d647c40203d9258788ed148da20e81b1f16cb45f3cf28197f42eb9aeeb82ff49"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-supports.svg",
-      "source": "media/projection/relationship-types/supports.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/supports.svg",
-      "content_id": "sha256:847372637200d7cb82b322001f653d965574073054937612a5a96e9ec794a49c"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-tests.svg",
-      "source": "media/projection/relationship-types/tests.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/tests.svg",
-      "content_id": "sha256:745781d0047f3ee4577cd4fe49c4d3373bb4cd3a6ed85a74af56ea5909bce078"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-threatens.svg",
-      "source": "media/projection/relationship-types/threatens.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/threatens.svg",
-      "content_id": "sha256:3c523e1ab0dc63d7aa674869bd1fdb529fb14b1dd211874a600310ec20b17e82"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-trademarked_by.svg",
-      "source": "media/projection/relationship-types/trademarked_by.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/trademarked_by.svg",
-      "content_id": "sha256:ea1398b272190fe0417a6f6d7d5f034ecefb0daa68db347485a443abc8185e5f"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-trained_on.svg",
-      "source": "media/projection/relationship-types/trained_on.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/trained_on.svg",
-      "content_id": "sha256:1dc55d5df9413383ca6f001ee558a8998352af2a7a46697007a2159da8440913"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-transcludes.svg",
-      "source": "media/projection/relationship-types/transcludes.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/transcludes.svg",
-      "content_id": "sha256:e4d8acb52451b01f168e98103e96b76f6baca3c6ec97b983dc50f772f013c96b"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-under_review.svg",
-      "source": "media/projection/relationship-types/under_review.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/under_review.svg",
-      "content_id": "sha256:9436d3411fafdb3581511a0fe50859def86b8409bece189318a1c9a401656359"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-unresolved.svg",
-      "source": "media/projection/relationship-types/unresolved.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/unresolved.svg",
-      "content_id": "sha256:cbe1d4d19c940334cf45f92ac2f98d1b4d8d6745b80d3417ef4096dc142fa757"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-uses.svg",
-      "source": "media/projection/relationship-types/uses.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/uses.svg",
-      "content_id": "sha256:ab21c50099571720a8a9d0bc4ec96886f7cfc1b5be1fdb412cca5fb04f5f3c7d"
-    },
-    {
-      "node": "xananode.canonical:media/protocol-artifact-media-projection-relationship-types-validates.svg",
-      "source": "media/projection/relationship-types/validates.svg",
-      "asset_path": "assets/raw/protocol/media/projection/relationship-types/validates.svg",
-      "content_id": "sha256:c0848b7dbe307516c9a3cbb12a069b66c72f30d6df0d464187700b082332126e"
     },
     {
       "node": "xananode.canonical:media/relationship-category-attention-projection-icon",
@@ -1486,7 +263,7 @@
       "node": "xananode.canonical:schema/canonical-schema-substrate-node",
       "source": "schemas/substrate-node.schema.json",
       "asset_path": "assets/raw/protocol/schemas/substrate-node.schema.json",
-      "content_id": "sha256:ccdc11cc758a71b7ec54db8aa9311ea9c22bddb59de1b6eb37fea51950a2e3f8"
+      "content_id": "sha256:bf220b30d78d74ca1b5fd5477497f93720e2d7d92aae2e1493ec64dd948e0ad0"
     },
     {
       "node": "xananode.canonical:schema/canonical-schema-substrate-relationships",
@@ -1522,7 +299,7 @@
       "node": "xananode.canonical:schema/federation-targets-registry",
       "source": "registry/federation-targets.json",
       "asset_path": "assets/raw/protocol/registry/federation-targets.json",
-      "content_id": "sha256:d859aec5ab80bc7388b61c105bdc88465755e280652fd51c4bb9ea8165e66f38"
+      "content_id": "sha256:b91e7d8b531ac3a9905b9ba70335a791ea44f7212e93d987c3224e6cf32678fe"
     },
     {
       "node": "xananode.canonical:schema/known-implementations-registry",
@@ -1534,7 +311,7 @@
       "node": "xananode.canonical:schema/namespace-registry",
       "source": "registry/namespaces.json",
       "asset_path": "assets/raw/protocol/registry/namespaces.json",
-      "content_id": "sha256:1c70d6330e60e757cbf30eef1f6f1d0cc57a6993467bb7680e831ec4573ab7f6"
+      "content_id": "sha256:c07fdb60dfa9ba3d66252db44fcb076ee0cc655c5fd8f3f92c69ae4a32d86c43"
     },
     {
       "node": "xananode.canonical:schema/namespace-schema",
@@ -1567,48 +344,6 @@
       "content_id": "sha256:8192a5d5477e28549cb66d77aed71019e071084fd92f9163e0f57d3dc5608a9f"
     },
     {
-      "node": "xananode.canonical:schema/protocol-artifact-examples-custom-extension-substrate-nodes-memex-concept.json",
-      "source": "examples/custom-extension-substrate/nodes/memex-concept.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/nodes/memex-concept.json",
-      "content_id": "sha256:ad0018ea1219df4d54a78fcad727d8b4beab6110329558f1949241c0ce3407bf"
-    },
-    {
-      "node": "xananode.canonical:schema/protocol-artifact-examples-custom-extension-substrate-nodes-memex-illustration.json",
-      "source": "examples/custom-extension-substrate/nodes/memex-illustration.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/nodes/memex-illustration.json",
-      "content_id": "sha256:fe8d0bf783d999143bb55128e44dfe30d83a3955de67bf5f448d9095db43eb12"
-    },
-    {
-      "node": "xananode.canonical:schema/protocol-artifact-examples-custom-extension-substrate-nodes-person-example-curator.json",
-      "source": "examples/custom-extension-substrate/nodes/person-example-curator.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/nodes/person-example-curator.json",
-      "content_id": "sha256:c5705906b5ab478c070504428e8aa2fbec1bce513d04687ca1a6e6f6976fc1f3"
-    },
-    {
-      "node": "xananode.canonical:schema/protocol-artifact-examples-custom-extension-substrate-relationships.json",
-      "source": "examples/custom-extension-substrate/relationships.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/relationships.json",
-      "content_id": "sha256:54e8e87ba09b669be846143c9aeecfb512ace6248c32b3d8f359bd220d5db61b"
-    },
-    {
-      "node": "xananode.canonical:schema/protocol-artifact-examples-custom-extension-substrate-schemas-node-types.example.museum.json",
-      "source": "examples/custom-extension-substrate/schemas/node-types.example.museum.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/schemas/node-types.example.museum.json",
-      "content_id": "sha256:b40b9196f1e71396032f2e5630628d0ee5cc5ae2917ed534bc36ffb3607055b4"
-    },
-    {
-      "node": "xananode.canonical:schema/protocol-artifact-examples-custom-extension-substrate-schemas-relationship-types.example.museum.json",
-      "source": "examples/custom-extension-substrate/schemas/relationship-types.example.museum.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/schemas/relationship-types.example.museum.json",
-      "content_id": "sha256:833eb73b7c3455a6e99a39e9c52f3ab27f499430f8daa1f29043a2aecd3d87a4"
-    },
-    {
-      "node": "xananode.canonical:schema/protocol-artifact-examples-custom-extension-substrate-substrate.json",
-      "source": "examples/custom-extension-substrate/substrate.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/substrate.json",
-      "content_id": "sha256:bf9f7c129d46186131cf5e9d8ea2d512cf290217b39455c7aece9ed69bb67101"
-    },
-    {
       "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-compatibility-report.json",
       "source": "examples/federation-example/compatibility-report.json",
       "asset_path": "assets/raw/protocol/examples/federation-example/compatibility-report.json",
@@ -1621,10 +356,58 @@
       "content_id": "sha256:5ef3669d327ba167955d42868fee5e3975fb15d7ecb786ea10d20b8cb3ebad50"
     },
     {
+      "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-nodes-federation-review-proof.json",
+      "source": "examples/federation-example/review-workspace/nodes/federation-review-proof.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/federation-review-proof.json",
+      "content_id": "sha256:6f209e02c599d6fd7042d4985e33cd27fbeb04533aea088e059f27b30ea88263"
+    },
+    {
+      "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-nodes-knowledge-substrate.json",
+      "source": "examples/federation-example/review-workspace/nodes/knowledge-substrate.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/knowledge-substrate.json",
+      "content_id": "sha256:80f366bf254f94ec152db8ab38e79ac2c5afaa75450a782b269237076454ceac"
+    },
+    {
+      "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-nodes-memory-substrate.json",
+      "source": "examples/federation-example/review-workspace/nodes/memory-substrate.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/memory-substrate.json",
+      "content_id": "sha256:deeee5b2de2a247eb195e8737cf6bca85783dde01c669164f4dd0ed4d45d2dba"
+    },
+    {
+      "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-nodes-non-destructive-merge-review.json",
+      "source": "examples/federation-example/review-workspace/nodes/non-destructive-merge-review.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/non-destructive-merge-review.json",
+      "content_id": "sha256:8ba0ca1f2020b131895ff030638a5ed07e4ef111433cdce14c2e0a6687a4373a"
+    },
+    {
+      "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-nodes-person-researcher-a.json",
+      "source": "examples/federation-example/review-workspace/nodes/person-researcher-a.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/person-researcher-a.json",
+      "content_id": "sha256:38357a82fba476fd09cbb10dc0599789d07298959c125b4393d35b3ea67eed8c"
+    },
+    {
+      "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-nodes-person-researcher-b.json",
+      "source": "examples/federation-example/review-workspace/nodes/person-researcher-b.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/person-researcher-b.json",
+      "content_id": "sha256:4c3a0ed24483293e21b257d73c47759c224b7e0b5207690cf3e75343ab410f82"
+    },
+    {
+      "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-relationships.json",
+      "source": "examples/federation-example/review-workspace/relationships.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/relationships.json",
+      "content_id": "sha256:3486d3be732725580995ef8046a8c0bc05dc1a812fe0473fb2af906d96f8c9e2"
+    },
+    {
+      "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-substrate.json",
+      "source": "examples/federation-example/review-workspace/substrate.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/substrate.json",
+      "content_id": "sha256:a4da50a7d01373f32f20ebd89c0aba37b4cdac9d352714ad3f9d2d5e44021657"
+    },
+    {
       "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-substrate-a-nodes-knowledge-substrate.json",
       "source": "examples/federation-example/substrate-a/nodes/knowledge-substrate.json",
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-a/nodes/knowledge-substrate.json",
-      "content_id": "sha256:78fadbd40cf835f382f300d127a05e356c3b48b97f591cc35a6520b391dcdc9f"
+      "content_id": "sha256:bd793aebde5c4c792aea47ee820c99e430b3275c65c19e5691a3dfbbe199e389"
     },
     {
       "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-substrate-a-nodes-person-researcher-a.json",
@@ -1648,7 +431,7 @@
       "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-substrate-b-nodes-memory-substrate.json",
       "source": "examples/federation-example/substrate-b/nodes/memory-substrate.json",
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-b/nodes/memory-substrate.json",
-      "content_id": "sha256:cebdfc6609bcd32591521e46b11490f859c66b97729461ccc00185c111ec6c8f"
+      "content_id": "sha256:40ef6943fe330dcfbc0a27ac6f0ebce4341f378663bcaf682d8cdb1436ecef4f"
     },
     {
       "node": "xananode.canonical:schema/protocol-artifact-examples-federation-example-substrate-b-nodes-person-researcher-b.json",
@@ -1783,18 +566,6 @@
       "content_id": "sha256:7e022016422780a1d6564862972483fa0f7db8b491fc294fafd09edf4c73a6ac"
     },
     {
-      "node": "xananode.canonical:schema/protocol-artifact-media-images-xananode-icon.svg",
-      "source": "media/images/xananode-icon.svg",
-      "asset_path": "assets/raw/protocol/media/images/xananode-icon.svg",
-      "content_id": "sha256:d7b60a3f9a05156041dae523790d3465e7909a54425dfbeea3e112eace5f9c9a"
-    },
-    {
-      "node": "xananode.canonical:schema/protocol-artifact-media-web-manifests-site.webmanifest",
-      "source": "media/web-manifests/site.webmanifest",
-      "asset_path": "assets/raw/protocol/media/web-manifests/site.webmanifest",
-      "content_id": "sha256:7a9e07ce1f7386689917602ddc5a75750ad842e605ff764f67173529c181bf04"
-    },
-    {
       "node": "xananode.canonical:schema/protocol-artifact-registry-canonical-schemas.json",
       "source": "registry/canonical-schemas.json",
       "asset_path": "assets/raw/protocol/registry/canonical-schemas.json",
@@ -1804,7 +575,7 @@
       "node": "xananode.canonical:schema/protocol-artifact-registry-federation-targets.json",
       "source": "registry/federation-targets.json",
       "asset_path": "assets/raw/protocol/registry/federation-targets.json",
-      "content_id": "sha256:d859aec5ab80bc7388b61c105bdc88465755e280652fd51c4bb9ea8165e66f38"
+      "content_id": "sha256:b91e7d8b531ac3a9905b9ba70335a791ea44f7212e93d987c3224e6cf32678fe"
     },
     {
       "node": "xananode.canonical:schema/protocol-artifact-registry-federation-targets.schema.json",
@@ -1822,7 +593,7 @@
       "node": "xananode.canonical:schema/protocol-artifact-registry-namespaces.json",
       "source": "registry/namespaces.json",
       "asset_path": "assets/raw/protocol/registry/namespaces.json",
-      "content_id": "sha256:1c70d6330e60e757cbf30eef1f6f1d0cc57a6993467bb7680e831ec4573ab7f6"
+      "content_id": "sha256:c07fdb60dfa9ba3d66252db44fcb076ee0cc655c5fd8f3f92c69ae4a32d86c43"
     },
     {
       "node": "xananode.canonical:schema/protocol-artifact-schemas-author-profile.schema.json",
@@ -1888,7 +659,7 @@
       "node": "xananode.canonical:schema/protocol-artifact-schemas-substrate-node.schema.json",
       "source": "schemas/substrate-node.schema.json",
       "asset_path": "assets/raw/protocol/schemas/substrate-node.schema.json",
-      "content_id": "sha256:ccdc11cc758a71b7ec54db8aa9311ea9c22bddb59de1b6eb37fea51950a2e3f8"
+      "content_id": "sha256:bf220b30d78d74ca1b5fd5477497f93720e2d7d92aae2e1493ec64dd948e0ad0"
     },
     {
       "node": "xananode.canonical:schema/protocol-artifact-schemas-substrate-relationships.schema.json",
@@ -1933,12 +704,6 @@
       "content_id": "sha256:0ef1a5307ba2e725c2ee4be1e3f4e7d40f8250695b38d1d9ef76b4801b02460b"
     },
     {
-      "node": "xananode.canonical:schema/protocol-artifact-specs-implementation-compatibility.md",
-      "source": "specs/implementation-compatibility.md",
-      "asset_path": "assets/raw/protocol/specs/implementation-compatibility.md",
-      "content_id": "sha256:ae0a610b3ab7207f0daa026baa104b1b95aaf85b96634b0fdf44a738a6b7de09"
-    },
-    {
       "node": "xananode.canonical:schema/relationship-type-registry",
       "source": "schemas/xananode-relationship-types.v0.5.0.json",
       "asset_path": "assets/raw/protocol/schemas/xananode-relationship-types.v0.5.0.json",
@@ -1951,28 +716,16 @@
       "content_id": "sha256:03fdce6d70b6263728eefba0e97bbea6b441e310a33760af0786ec44812465df"
     },
     {
-      "node": "xananode.canonical:source/protocol-artifact-examples-custom-extension-substrate-nodes-readme.md",
-      "source": "examples/custom-extension-substrate/nodes/README.md",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/nodes/README.md",
-      "content_id": "sha256:80cc6078d13b081f0b35d49e1c5c2e61575a9985faacedaa7ee8b0efb052d61c"
-    },
-    {
-      "node": "xananode.canonical:source/protocol-artifact-examples-custom-extension-substrate-readme.md",
-      "source": "examples/custom-extension-substrate/README.md",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/README.md",
-      "content_id": "sha256:d5c7d5b2a594d2d8ba0bd40c49cbbb94014a64f9876302981ce0615d244c553f"
-    },
-    {
-      "node": "xananode.canonical:source/protocol-artifact-examples-custom-extension-substrate-schemas-readme.md",
-      "source": "examples/custom-extension-substrate/schemas/README.md",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/schemas/README.md",
-      "content_id": "sha256:6b0984ace202d0a34d559a74809ac0630103f49ad6a33107115c17586a3cd4ec"
-    },
-    {
       "node": "xananode.canonical:source/protocol-artifact-examples-federation-example-readme.md",
       "source": "examples/federation-example/README.md",
       "asset_path": "assets/raw/protocol/examples/federation-example/README.md",
-      "content_id": "sha256:2189af21476cb584b5115b722863a872ca3cee3645e28966d617cdb02747b603"
+      "content_id": "sha256:374ef31120c43c6748b888265d3213caaea8420668f76e850887bd401e7c7eb2"
+    },
+    {
+      "node": "xananode.canonical:source/protocol-artifact-examples-federation-example-review-workspace-readme.md",
+      "source": "examples/federation-example/review-workspace/README.md",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/README.md",
+      "content_id": "sha256:c87b1eda9dae756819033542c0979ef41f1b54bd61f17340433b330d12c8228a"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-examples-federation-example-substrate-a-readme.md",
@@ -2002,7 +755,7 @@
       "node": "xananode.canonical:source/protocol-artifact-examples-readme.md",
       "source": "examples/README.md",
       "asset_path": "assets/raw/protocol/examples/README.md",
-      "content_id": "sha256:acf9a69904b1b6a8d1ed3e301347ee4f7f261c5daee9dfc01628a6cc5a08a76d"
+      "content_id": "sha256:06ecf825c7fb006ddd5df353c152e3c00aa0c47bb498ecee1f60f11068139a80"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-governance-canonical-type-policy.md",
@@ -2051,30 +804,6 @@
       "source": "LICENSE.md",
       "asset_path": "assets/raw/protocol/LICENSE.md",
       "content_id": "sha256:598ffb99d5fa073d173bb68528457d2be19f719872f9e4d36874dfa45d97bbba"
-    },
-    {
-      "node": "xananode.canonical:source/protocol-artifact-links-implementations.md",
-      "source": "links/implementations.md",
-      "asset_path": "assets/raw/protocol/links/implementations.md",
-      "content_id": "sha256:a61de77104e14dcefecc266347fce5166fe98c50dc5c9140be3de529ade9578e"
-    },
-    {
-      "node": "xananode.canonical:source/protocol-artifact-links-readme.md",
-      "source": "links/README.md",
-      "asset_path": "assets/raw/protocol/links/README.md",
-      "content_id": "sha256:191b421bd80b857eff3d38c7e61c3168b097a664d50cbb8e6f317cf4af8df9a7"
-    },
-    {
-      "node": "xananode.canonical:source/protocol-artifact-links-related-projects.md",
-      "source": "links/related-projects.md",
-      "asset_path": "assets/raw/protocol/links/related-projects.md",
-      "content_id": "sha256:c18a86ca95c0a1324bae7f6f453883ca7c102cd28266a775713ea468b48d7dd2"
-    },
-    {
-      "node": "xananode.canonical:source/protocol-artifact-links-tools.md",
-      "source": "links/tools.md",
-      "asset_path": "assets/raw/protocol/links/tools.md",
-      "content_id": "sha256:aac2d030f5e3b4eb0b711cf93077972dc350be7153a7d670f4810b2819fc3e31"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-notice",
@@ -2164,7 +893,7 @@
       "node": "xananode.canonical:source/protocol-artifact-readme.md",
       "source": "README.md",
       "asset_path": "assets/raw/protocol/README.md",
-      "content_id": "sha256:838fd3df9a1b5ec9bf1a23558cbf1140d8dbbc417420e7ce9e2046ac857702c0"
+      "content_id": "sha256:8919a8ff5ccf5bdedfd48979f12344c62d34df03199aa98b31139ac0dd86a894"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-registry-readme.md",
@@ -2212,13 +941,13 @@
       "node": "xananode.canonical:source/protocol-artifact-specs-namespaces.md",
       "source": "specs/namespaces.md",
       "asset_path": "assets/raw/protocol/specs/namespaces.md",
-      "content_id": "sha256:ba8fec7ddf921b1f75b58104e07b8710f97a77bc53d40cdc1c2c99a030d18beb"
+      "content_id": "sha256:0d580444753d0982d4d36eedda0d56b4e2aa1a7d3cb5a30624fefd78a6d8bdd1"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-specs-nodes.md",
       "source": "specs/nodes.md",
       "asset_path": "assets/raw/protocol/specs/nodes.md",
-      "content_id": "sha256:258b7a00b5e128d3db5ab717a20581e9f8cefcdc4b09543ae136cf87d4e2e21e"
+      "content_id": "sha256:f22ce8e959055a61328e00558a49bfb9a544efef91b34920c1201e42442b005a"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-specs-readme.md",
@@ -2242,31 +971,25 @@
       "node": "xananode.canonical:source/protocol-artifact-specs-substrates.md",
       "source": "specs/substrates.md",
       "asset_path": "assets/raw/protocol/specs/substrates.md",
-      "content_id": "sha256:357554c3c6d1473c1c6f0fd5c91bbb2858ade5f61ee83ac194b9229ed9a03a90"
+      "content_id": "sha256:0cf27280943b355ef7068466b27e0416dc7bdf66977afc68088241abb19c778a"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-specs-transclusion.md",
       "source": "specs/transclusion.md",
       "asset_path": "assets/raw/protocol/specs/transclusion.md",
-      "content_id": "sha256:b35e2c6a656a9f86ab4eb33096d1fce982a9ec24af53d9723da7d8db56dd523c"
+      "content_id": "sha256:a589820115ef0554c82f4fd41f6d50d4635f8204c745aba95ffbec24631794cc"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-specs-tumbler-addressing.md",
       "source": "specs/tumbler-addressing.md",
       "asset_path": "assets/raw/protocol/specs/tumbler-addressing.md",
-      "content_id": "sha256:5b621f0f1c8861b7a852efb7d128070bc8b8569a6325e7a067a1b90854c6bd65"
+      "content_id": "sha256:5b2d89d2734577c4d07e02c7a9b7fcaa173484c7351f89ff7159c07547222047"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-specs-xananode-core.md",
       "source": "specs/xananode-core.md",
       "asset_path": "assets/raw/protocol/specs/xananode-core.md",
       "content_id": "sha256:dde21bd72733f48e0092eaccad02e9debdf7cb0ebdcbed436cb2367f5e53e23b"
-    },
-    {
-      "node": "xananode.canonical:source/protocol-artifact-tools-readme.md",
-      "source": "tools/README.md",
-      "asset_path": "assets/raw/protocol/tools/README.md",
-      "content_id": "sha256:0a0d8a1968acc33cae0944e7b1f26f18e97615bfef65fd1c2c6282947f6fcb7b"
     },
     {
       "node": "xananode.canonical:source/protocol-artifact-trademark.md",
@@ -2300,56 +1023,6 @@
       "content_id": "sha256:8192a5d5477e28549cb66d77aed71019e071084fd92f9163e0f57d3dc5608a9f"
     },
     {
-      "source": "examples/custom-extension-substrate/nodes/memex-concept.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/nodes/memex-concept.json",
-      "content_id": "sha256:ad0018ea1219df4d54a78fcad727d8b4beab6110329558f1949241c0ce3407bf"
-    },
-    {
-      "source": "examples/custom-extension-substrate/nodes/memex-illustration.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/nodes/memex-illustration.json",
-      "content_id": "sha256:fe8d0bf783d999143bb55128e44dfe30d83a3955de67bf5f448d9095db43eb12"
-    },
-    {
-      "source": "examples/custom-extension-substrate/nodes/person-example-curator.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/nodes/person-example-curator.json",
-      "content_id": "sha256:c5705906b5ab478c070504428e8aa2fbec1bce513d04687ca1a6e6f6976fc1f3"
-    },
-    {
-      "source": "examples/custom-extension-substrate/nodes/README.md",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/nodes/README.md",
-      "content_id": "sha256:80cc6078d13b081f0b35d49e1c5c2e61575a9985faacedaa7ee8b0efb052d61c"
-    },
-    {
-      "source": "examples/custom-extension-substrate/README.md",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/README.md",
-      "content_id": "sha256:d5c7d5b2a594d2d8ba0bd40c49cbbb94014a64f9876302981ce0615d244c553f"
-    },
-    {
-      "source": "examples/custom-extension-substrate/relationships.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/relationships.json",
-      "content_id": "sha256:54e8e87ba09b669be846143c9aeecfb512ace6248c32b3d8f359bd220d5db61b"
-    },
-    {
-      "source": "examples/custom-extension-substrate/schemas/node-types.example.museum.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/schemas/node-types.example.museum.json",
-      "content_id": "sha256:b40b9196f1e71396032f2e5630628d0ee5cc5ae2917ed534bc36ffb3607055b4"
-    },
-    {
-      "source": "examples/custom-extension-substrate/schemas/README.md",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/schemas/README.md",
-      "content_id": "sha256:6b0984ace202d0a34d559a74809ac0630103f49ad6a33107115c17586a3cd4ec"
-    },
-    {
-      "source": "examples/custom-extension-substrate/schemas/relationship-types.example.museum.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/schemas/relationship-types.example.museum.json",
-      "content_id": "sha256:833eb73b7c3455a6e99a39e9c52f3ab27f499430f8daa1f29043a2aecd3d87a4"
-    },
-    {
-      "source": "examples/custom-extension-substrate/substrate.json",
-      "asset_path": "assets/raw/protocol/examples/custom-extension-substrate/substrate.json",
-      "content_id": "sha256:bf9f7c129d46186131cf5e9d8ea2d512cf290217b39455c7aece9ed69bb67101"
-    },
-    {
       "source": "examples/federation-example/compatibility-report.json",
       "asset_path": "assets/raw/protocol/examples/federation-example/compatibility-report.json",
       "content_id": "sha256:13c556257221045ff9276bf42f1e3ff8bcad2cf3333838d23d5a5ebbef803491"
@@ -2362,12 +1035,57 @@
     {
       "source": "examples/federation-example/README.md",
       "asset_path": "assets/raw/protocol/examples/federation-example/README.md",
-      "content_id": "sha256:2189af21476cb584b5115b722863a872ca3cee3645e28966d617cdb02747b603"
+      "content_id": "sha256:374ef31120c43c6748b888265d3213caaea8420668f76e850887bd401e7c7eb2"
+    },
+    {
+      "source": "examples/federation-example/review-workspace/nodes/federation-review-proof.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/federation-review-proof.json",
+      "content_id": "sha256:6f209e02c599d6fd7042d4985e33cd27fbeb04533aea088e059f27b30ea88263"
+    },
+    {
+      "source": "examples/federation-example/review-workspace/nodes/knowledge-substrate.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/knowledge-substrate.json",
+      "content_id": "sha256:80f366bf254f94ec152db8ab38e79ac2c5afaa75450a782b269237076454ceac"
+    },
+    {
+      "source": "examples/federation-example/review-workspace/nodes/memory-substrate.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/memory-substrate.json",
+      "content_id": "sha256:deeee5b2de2a247eb195e8737cf6bca85783dde01c669164f4dd0ed4d45d2dba"
+    },
+    {
+      "source": "examples/federation-example/review-workspace/nodes/non-destructive-merge-review.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/non-destructive-merge-review.json",
+      "content_id": "sha256:8ba0ca1f2020b131895ff030638a5ed07e4ef111433cdce14c2e0a6687a4373a"
+    },
+    {
+      "source": "examples/federation-example/review-workspace/nodes/person-researcher-a.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/person-researcher-a.json",
+      "content_id": "sha256:38357a82fba476fd09cbb10dc0599789d07298959c125b4393d35b3ea67eed8c"
+    },
+    {
+      "source": "examples/federation-example/review-workspace/nodes/person-researcher-b.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/person-researcher-b.json",
+      "content_id": "sha256:4c3a0ed24483293e21b257d73c47759c224b7e0b5207690cf3e75343ab410f82"
+    },
+    {
+      "source": "examples/federation-example/review-workspace/README.md",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/README.md",
+      "content_id": "sha256:c87b1eda9dae756819033542c0979ef41f1b54bd61f17340433b330d12c8228a"
+    },
+    {
+      "source": "examples/federation-example/review-workspace/relationships.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/relationships.json",
+      "content_id": "sha256:3486d3be732725580995ef8046a8c0bc05dc1a812fe0473fb2af906d96f8c9e2"
+    },
+    {
+      "source": "examples/federation-example/review-workspace/substrate.json",
+      "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/substrate.json",
+      "content_id": "sha256:a4da50a7d01373f32f20ebd89c0aba37b4cdac9d352714ad3f9d2d5e44021657"
     },
     {
       "source": "examples/federation-example/substrate-a/nodes/knowledge-substrate.json",
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-a/nodes/knowledge-substrate.json",
-      "content_id": "sha256:78fadbd40cf835f382f300d127a05e356c3b48b97f591cc35a6520b391dcdc9f"
+      "content_id": "sha256:bd793aebde5c4c792aea47ee820c99e430b3275c65c19e5691a3dfbbe199e389"
     },
     {
       "source": "examples/federation-example/substrate-a/nodes/person-researcher-a.json",
@@ -2392,7 +1110,7 @@
     {
       "source": "examples/federation-example/substrate-b/nodes/memory-substrate.json",
       "asset_path": "assets/raw/protocol/examples/federation-example/substrate-b/nodes/memory-substrate.json",
-      "content_id": "sha256:cebdfc6609bcd32591521e46b11490f859c66b97729461ccc00185c111ec6c8f"
+      "content_id": "sha256:40ef6943fe330dcfbc0a27ac6f0ebce4341f378663bcaf682d8cdb1436ecef4f"
     },
     {
       "source": "examples/federation-example/substrate-b/nodes/person-researcher-b.json",
@@ -2527,7 +1245,7 @@
     {
       "source": "examples/README.md",
       "asset_path": "assets/raw/protocol/examples/README.md",
-      "content_id": "sha256:acf9a69904b1b6a8d1ed3e301347ee4f7f261c5daee9dfc01628a6cc5a08a76d"
+      "content_id": "sha256:06ecf825c7fb006ddd5df353c152e3c00aa0c47bb498ecee1f60f11068139a80"
     },
     {
       "source": "governance/canonical-type-policy.md",
@@ -3682,7 +2400,7 @@
     {
       "source": "README.md",
       "asset_path": "assets/raw/protocol/README.md",
-      "content_id": "sha256:838fd3df9a1b5ec9bf1a23558cbf1140d8dbbc417420e7ce9e2046ac857702c0"
+      "content_id": "sha256:8919a8ff5ccf5bdedfd48979f12344c62d34df03199aa98b31139ac0dd86a894"
     },
     {
       "source": "registry/canonical-schemas.json",
@@ -3692,7 +2410,7 @@
     {
       "source": "registry/federation-targets.json",
       "asset_path": "assets/raw/protocol/registry/federation-targets.json",
-      "content_id": "sha256:d859aec5ab80bc7388b61c105bdc88465755e280652fd51c4bb9ea8165e66f38"
+      "content_id": "sha256:b91e7d8b531ac3a9905b9ba70335a791ea44f7212e93d987c3224e6cf32678fe"
     },
     {
       "source": "registry/federation-targets.schema.json",
@@ -3707,7 +2425,7 @@
     {
       "source": "registry/namespaces.json",
       "asset_path": "assets/raw/protocol/registry/namespaces.json",
-      "content_id": "sha256:1c70d6330e60e757cbf30eef1f6f1d0cc57a6993467bb7680e831ec4573ab7f6"
+      "content_id": "sha256:c07fdb60dfa9ba3d66252db44fcb076ee0cc655c5fd8f3f92c69ae4a32d86c43"
     },
     {
       "source": "registry/README.md",
@@ -3772,7 +2490,7 @@
     {
       "source": "schemas/substrate-node.schema.json",
       "asset_path": "assets/raw/protocol/schemas/substrate-node.schema.json",
-      "content_id": "sha256:ccdc11cc758a71b7ec54db8aa9311ea9c22bddb59de1b6eb37fea51950a2e3f8"
+      "content_id": "sha256:bf220b30d78d74ca1b5fd5477497f93720e2d7d92aae2e1493ec64dd948e0ad0"
     },
     {
       "source": "schemas/substrate-relationships.schema.json",
@@ -3837,12 +2555,12 @@
     {
       "source": "specs/namespaces.md",
       "asset_path": "assets/raw/protocol/specs/namespaces.md",
-      "content_id": "sha256:ba8fec7ddf921b1f75b58104e07b8710f97a77bc53d40cdc1c2c99a030d18beb"
+      "content_id": "sha256:0d580444753d0982d4d36eedda0d56b4e2aa1a7d3cb5a30624fefd78a6d8bdd1"
     },
     {
       "source": "specs/nodes.md",
       "asset_path": "assets/raw/protocol/specs/nodes.md",
-      "content_id": "sha256:258b7a00b5e128d3db5ab717a20581e9f8cefcdc4b09543ae136cf87d4e2e21e"
+      "content_id": "sha256:f22ce8e959055a61328e00558a49bfb9a544efef91b34920c1201e42442b005a"
     },
     {
       "source": "specs/README.md",
@@ -3862,17 +2580,17 @@
     {
       "source": "specs/substrates.md",
       "asset_path": "assets/raw/protocol/specs/substrates.md",
-      "content_id": "sha256:357554c3c6d1473c1c6f0fd5c91bbb2858ade5f61ee83ac194b9229ed9a03a90"
+      "content_id": "sha256:0cf27280943b355ef7068466b27e0416dc7bdf66977afc68088241abb19c778a"
     },
     {
       "source": "specs/transclusion.md",
       "asset_path": "assets/raw/protocol/specs/transclusion.md",
-      "content_id": "sha256:b35e2c6a656a9f86ab4eb33096d1fce982a9ec24af53d9723da7d8db56dd523c"
+      "content_id": "sha256:a589820115ef0554c82f4fd41f6d50d4635f8204c745aba95ffbec24631794cc"
     },
     {
       "source": "specs/tumbler-addressing.md",
       "asset_path": "assets/raw/protocol/specs/tumbler-addressing.md",
-      "content_id": "sha256:5b621f0f1c8861b7a852efb7d128070bc8b8569a6325e7a067a1b90854c6bd65"
+      "content_id": "sha256:5b2d89d2734577c4d07e02c7a9b7fcaa173484c7351f89ff7159c07547222047"
     },
     {
       "source": "specs/xananode-core.md",
@@ -4875,20 +3593,20 @@
   "source_assets": [],
   "duplicate_assets": [],
   "asset_conflicts": [],
-  "generated_at": "2026-06-25T14:24:48.048Z",
+  "generated_at": "2026-06-27T07:05:45.885Z",
   "build_metadata": {
     "version": "0.1.0",
-    "git_commit": "01d960de44614fe25110d6e9adfa5fb99834b9bf",
+    "git_commit": "08ee42fc795dbb2fea499196f3bc4851c2ebca4d",
     "git_branch": "main",
     "repository": "kingc95/XanaNode-Core-SDK",
-    "generated_at": "2026-06-25T14:24:48.048Z",
+    "generated_at": "2026-06-27T07:05:45.885Z",
     "built_by": "@xananode/core",
     "runtime": "node v24.16.0",
     "platform": "win32/x64",
     "dependencies": [
       {
         "name": "XanaNode Protocol",
-        "version": "9e8bf84",
+        "version": "2157f16",
         "repository": "kingc95/XanaNode",
         "relationship": "uses"
       }

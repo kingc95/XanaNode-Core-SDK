@@ -52,4 +52,42 @@ example.minimal:source/as-we-may-think@git:8e47e70:examples/minimal-substrate/no
 
 Unversioned node addresses are stable identities. Versioned node and fragment tumblers are fixed references to an exact historical chunk. A transclusion should use the versioned fragment tumbler, not the floating node identity.
 
+## Selector Granularity
+
+The tumbler gives the durable address. The selector explains how the chunk was found inside the source.
+
+Across the protocol, selectors are allowed to be more granular than a paragraph block:
+
+- `TextQuoteSelector` for an exact quoted span with optional prefix/suffix context
+- `TextPositionSelector` for character offsets inside a source version
+- `RangeSelector` for generic start/end ranges
+- `FragmentSelector` for a stable local fragment id
+- `MediaFragmentSelector` or `TimecodeRangeSelector` for audio/video segments, image regions, or other media-native chunking
+
+For time-based media, the current interoperable shape is:
+
+```json
+{
+  "type": "TimecodeRangeSelector",
+  "unit": "ms",
+  "start_ms": 12340,
+  "end_ms": 18750,
+  "start_timecode": "00:00:12.340",
+  "end_timecode": "00:00:18.750"
+}
+```
+
+For text or structured documents, the selector may instead use:
+
+```json
+{
+  "type": "RangeSelector",
+  "unit": "word",
+  "start": 120,
+  "end": 135
+}
+```
+
+That means XanaNode's equivalent of "start at this exact word" is not a different address family. It is the same fragment tumbler plus a selector precise enough to identify the span within that specific source version.
+
 This profile is intentionally small. Future versions may add richer selectors, byte ranges, media regions, and additional revision systems without invalidating these base addresses.

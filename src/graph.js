@@ -33,13 +33,20 @@ export function normalizeRelationship(raw = {}, context = {}) {
 
 export function relationshipsFromNode(node, indexOffset = 0) {
   const namespace = node.namespace || "local";
-  return asArray(node.data?.relationships).map((relationship, index) => normalizeRelationship(relationship, {
-    namespace,
-    sourceId: node.id,
-    sourceProtocolId: node.protocolId,
-    index: index + indexOffset,
-    createdBy: node.data?.created_by
-  }));
+  return asArray(node.data?.relationships)
+    .filter((relationship) => {
+      if (!relationship || typeof relationship !== "object") return false;
+      if (relationship.direction === "incoming") return false;
+      if (relationship.direction === "outgoing" && !relationship.target) return false;
+      return true;
+    })
+    .map((relationship, index) => normalizeRelationship(relationship, {
+      namespace,
+      sourceId: node.id,
+      sourceProtocolId: node.protocolId,
+      index: index + indexOffset,
+      createdBy: node.data?.created_by
+    }));
 }
 
 export function buildAdjacency(nodes, relationships) {
@@ -59,7 +66,17 @@ export function nodeToProtocolRecord(node, relationships = []) {
   const incoming = relationships.filter((relationship) => relationship.target === node.protocolId);
   const trailNodes = asArray(node.data?.nodes).filter(Boolean);
   const trailBranches = asArray(node.data?.branches).filter(Boolean);
+  const preservedFields = { ...(node.data || {}) };
+  delete preservedFields.id;
+  delete preservedFields.protocol_id;
+  delete preservedFields.relationships;
+  delete preservedFields.title;
+  delete preservedFields.type;
+  delete preservedFields.summary;
+  delete preservedFields.content;
+  delete preservedFields.body;
   return omitUndefined({
+    ...preservedFields,
     id: node.protocolId,
     protocol_id: node.protocolId,
     content_id: node.content_id,

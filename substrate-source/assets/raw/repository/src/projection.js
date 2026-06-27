@@ -94,15 +94,20 @@ export function buildGraphProjection(nodes = [], relationships = [], options = {
     if (!sourceRef || !targetRef || !source || !target) continue;
     rawEdges.push({ sourceRef, targetRef, source, target, type: relationship.type || "related_to" });
   }
+  const enrichedEdges = enrichProjectionEdges(graphNodes, rawEdges.map((edge) => ({
+    source: edge.sourceRef,
+    target: edge.targetRef,
+    type: edge.type
+  })));
 
   const visibleRefs = new Set();
   if (currentRef) visibleRefs.add(currentRef);
-  for (const edge of rawEdges) {
-    if (edge.sourceRef === currentRef) visibleRefs.add(edge.targetRef);
-    if (edge.targetRef === currentRef) visibleRefs.add(edge.sourceRef);
+  for (const edge of enrichedEdges) {
+    if (edge.source === currentRef) visibleRefs.add(edge.target);
+    if (edge.target === currentRef) visibleRefs.add(edge.source);
   }
 
-  const hasCurrentEdges = rawEdges.some((edge) => edge.sourceRef === currentRef || edge.targetRef === currentRef);
+  const hasCurrentEdges = enrichedEdges.some((edge) => edge.source === currentRef || edge.target === currentRef);
   const useOverviewLayout = !currentRef || !hasCurrentEdges;
   let visibleNodes = [...visibleRefs].map((ref) => byRef.get(ref)).filter(Boolean);
   if (useOverviewLayout) {
@@ -126,13 +131,13 @@ export function buildGraphProjection(nodes = [], relationships = [], options = {
     for (const ref of nodeRefs(node.source)) arrangedByRef.set(ref, node);
   }
 
-  const edges = rawEdges
+  const edges = enrichedEdges
     .map((edge, index) => {
-      const source = arrangedByRef.get(edge.sourceRef);
-      const target = arrangedByRef.get(edge.targetRef);
+      const source = arrangedByRef.get(edge.source);
+      const target = arrangedByRef.get(edge.target);
       if (!source || !target || source.key === target.key) return null;
       return {
-        key: `${edge.sourceRef}-${edge.type}-${edge.targetRef}-${index}`,
+        key: `${edge.source}-${edge.type}-${edge.target}-${index}`,
         source,
         target,
         type: edge.type,
@@ -211,6 +216,9 @@ export function projectionNodeHasMedia(node = {}) {
     data.image ||
     data.icon ||
     data.thumbnail ||
+    data.asset ||
+    data.asset_path ||
+    (data.media_type && (data.file || data.url || data.asset || data.asset_path)) ||
     (data.type === "media" && (data.file || data.url))
   );
 }
@@ -261,7 +269,7 @@ export function buildHopNeighborhood(nodes = [], edges = [], options = {}) {
   };
   const settings = depthSettings[Math.min(4, maxDepth)] || depthSettings[2];
   const byId = new Map(nodes.map((node) => [node.id, node]));
-  const eligibleEdges = dedupeProjectionEdges(edges)
+  const eligibleEdges = enrichProjectionEdges(nodes, edges)
     .filter((edge) => edgeFilter(edge))
     .map((edge) => ({ ...edge, score: edgeScore(edge) }))
     .sort((a, b) => Number(b.score || 0) - Number(a.score || 0));
@@ -314,7 +322,8 @@ export function findProjectionRoute(edges = [], fromId = "", toId = "", options 
   const maxDepth = Math.max(1, Number(options.maxDepth || 6));
   const edgeFilter = typeof options.edgeFilter === "function" ? options.edgeFilter : () => true;
   const adjacency = new Map();
-  for (const edge of dedupeProjectionEdges(edges).filter(edgeFilter)) {
+  const nodes = Array.isArray(options.nodes) ? options.nodes : [];
+  for (const edge of enrichProjectionEdges(nodes, edges).filter(edgeFilter)) {
     if (!edge.source || !edge.target) continue;
     if (!adjacency.has(edge.source)) adjacency.set(edge.source, []);
     if (!adjacency.has(edge.target)) adjacency.set(edge.target, []);
@@ -548,6 +557,120 @@ function nodeRelationships(node) {
     ...relationship,
     target: relationship.target || relationship.to || relationship.node || relationship.id
   }));
+}
+
+function enrichProjectionEdges(nodes = [], edges = []) {
+  const deduped = dedupeProjectionEdges(pruneFlattenedTrailEdges(nodes, edges));
+  const seen = new Set(deduped.map((edge) => `${normalizeNodeRef(edge.source)}::${edge.type || "related_to"}::${normalizeNodeRef(edge.target)}`));
+  const synthetic = synthesizeTrailProjectionEdges(nodes, seen);
+  return [...deduped, ...synthetic];
+}
+
+function pruneFlattenedTrailEdges(nodes = [], edges = []) {
+  const trailSequences = new Map();
+  for (const node of nodes) {
+    const trailRef = primaryNodeRef(node);
+    const sequence = trailNodeSequence(node);
+    if (!trailRef || !sequence.length) continue;
+    trailSequences.set(trailRef, {
+      first: sequence[0],
+      sequence: new Set(sequence)
+    });
+  }
+
+  return edges.filter((edge) => {
+    const sourceRef = normalizeNodeRef(edge?.source);
+    const targetRef = normalizeNodeRef(edge?.target);
+    const type = edge?.type || "related_to";
+    const trail = trailSequences.get(sourceRef);
+    if (!trail || !targetRef) return true;
+    if (type === "starts_with") return targetRef === trail.first;
+    if (type === "continues_to" && trail.sequence.has(targetRef)) return false;
+    return true;
+  });
+}
+
+function synthesizeTrailProjectionEdges(nodes = [], seen = new Set()) {
+  const nodeRefSet = new Set();
+  nodes.forEach((node) => {
+    nodeRefs(node).forEach((ref) => nodeRefSet.add(ref));
+  });
+
+  const syntheticEdges = [];
+  for (const node of nodes) {
+    const trailRef = primaryNodeRef(node);
+    if (!trailRef) continue;
+    const sequence = trailNodeSequence(node).filter((ref) => nodeRefSet.has(ref));
+    if (!sequence.length) continue;
+
+    addSyntheticEdge(syntheticEdges, seen, trailRef, sequence[0], "starts_with");
+    for (let index = 1; index < sequence.length; index += 1) {
+      addSyntheticEdge(syntheticEdges, seen, sequence[index - 1], sequence[index], "continues_to");
+    }
+
+    for (const branch of trailBranchEdges(node, nodeRefSet)) {
+      addSyntheticEdge(syntheticEdges, seen, branch.source, branch.target, branch.type || "continues_to");
+    }
+  }
+  return syntheticEdges;
+}
+
+function addSyntheticEdge(edges, seen, source, target, type) {
+  const sourceRef = normalizeNodeRef(source);
+  const targetRef = normalizeNodeRef(target);
+  if (!sourceRef || !targetRef || sourceRef === targetRef) return;
+  const key = `${sourceRef}::${type || "related_to"}::${targetRef}`;
+  if (seen.has(key)) return;
+  seen.add(key);
+  edges.push({
+    source: sourceRef,
+    target: targetRef,
+    type: type || "related_to",
+    origin: "trail",
+    weight: 6,
+    visibility: "primary"
+  });
+}
+
+function trailNodeSequence(node) {
+  const candidates = [
+    node?.trail_nodes,
+    node?.frontMatter?.trail_nodes,
+    node?.frontMatter?.nodes,
+    node?.data?.trail_nodes,
+    node?.data?.nodes
+  ];
+  const sequence = candidates.find(Array.isArray) || [];
+  return sequence.map(normalizeNodeRef).filter(Boolean);
+}
+
+function trailBranchEdges(node, nodeRefSet = new Set()) {
+  const branches = [
+    node?.trail_branches,
+    node?.frontMatter?.trail_branches,
+    node?.frontMatter?.branches,
+    node?.data?.trail_branches,
+    node?.data?.branches
+  ].find(Array.isArray) || [];
+
+  const edges = [];
+  for (const branch of branches) {
+    const after = normalizeNodeRef(branch?.after);
+    if (!after || !nodeRefSet.has(after)) continue;
+    const choices = Array.isArray(branch?.choices) ? branch.choices : [];
+    for (const choice of choices) {
+      const choiceNodes = Array.isArray(choice?.nodes) ? choice.nodes.map(normalizeNodeRef).filter(Boolean) : [];
+      if (!choiceNodes.length) continue;
+      if (nodeRefSet.has(choiceNodes[0])) {
+        edges.push({ source: after, target: choiceNodes[0], type: "continues_to" });
+      }
+      for (let index = 1; index < choiceNodes.length; index += 1) {
+        if (!nodeRefSet.has(choiceNodes[index - 1]) || !nodeRefSet.has(choiceNodes[index])) continue;
+        edges.push({ source: choiceNodes[index - 1], target: choiceNodes[index], type: "continues_to" });
+      }
+    }
+  }
+  return edges;
 }
 
 function nodeRefs(node) {

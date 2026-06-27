@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-federation-example-substrate-a-substrate.json",
+  "title": "Examples / Federation Example / Substrate A / Substrate",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "The substrate manifest for federation example substrate A.",
+  "artifact_path": "examples/federation-example/substrate-a/substrate.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/substrate.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.researcher_a\",\n  \"name\": \"Federation Example A\",\n  \"version\": \"0.1.0\",\n  \"namespace\": \"example.researcher_a\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/kingc95/xananode.git\",\n    \"default_branch\": \"main\",\n    \"path\": \"examples/federation-example/substrate-a\"\n  },\n  \"schema_version\": \"xananode-core@0.5.0\",\n  \"imports\": [\n    \"xananode:core\"\n  ]\n}\n",
+  "asset_path": "assets/raw/protocol/examples/federation-example/substrate-a/substrate.json",
+  "content_id": "sha256:de367242547736608a9b0f558025436ff6069df1c1f2d66019c4882823970489",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/substrate.json",
+    "method": "archive",
+    "content_id": "sha256:de367242547736608a9b0f558025436ff6069df1c1f2d66019c4882823970489",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

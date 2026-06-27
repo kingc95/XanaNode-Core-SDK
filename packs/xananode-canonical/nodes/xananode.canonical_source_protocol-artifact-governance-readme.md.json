@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-governance-readme.md",
+  "title": "Governance / README",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "A governance document covering README.",
+  "artifact_path": "governance/README.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/README.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# XanaNode Governance\n\nXanaNode governance defines how the protocol evolves while allowing independent substrates to remain sovereign.\n\nThe governance model is intentionally minimal:\n\n1. Maintain a small stable core.\n2. Allow namespaced extensions.\n3. Preserve disagreement rather than deleting it.\n4. Treat mappings, disputes, and merge results as knowledge.\n5. Avoid centralizing truth in one moderation team.\n\nGovernance applies to the protocol repository. It does not dictate how every independent substrate must moderate its own content.\n",
+  "asset_path": "assets/raw/protocol/governance/README.md",
+  "content_id": "sha256:00b02bc523d88ae79002e06dd68847fb67cdd3f05a94b775edfe7c67cbb64bc5",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/README.md",
+    "method": "archive",
+    "content_id": "sha256:00b02bc523d88ae79002e06dd68847fb67cdd3f05a94b775edfe7c67cbb64bc5",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-schemas-property-registry.schema.json",
+  "title": "Schemas / Property Registry Schema",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 4,
+  "summary": "The JSON Schema for the property registry.",
+  "artifact_path": "schemas/property-registry.schema.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/property-registry.schema.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"https://xananode.org/schemas/property-registry.schema.json\",\n  \"title\": \"XanaNode Property Registry\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\"id\", \"version\", \"property_registry\"],\n  \"properties\": {\n    \"$schema\": { \"type\": \"string\" },\n    \"id\": {\n      \"type\": \"string\",\n      \"pattern\": \"^[a-z][a-z0-9_-]*(\\\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*$\"\n    },\n    \"version\": { \"type\": \"string\" },\n    \"description\": { \"type\": \"string\" },\n    \"property_registry\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"additionalProperties\": false,\n        \"required\": [\"id\", \"label\", \"category\", \"value_schema\"],\n        \"properties\": {\n          \"id\": {\n            \"type\": \"string\",\n            \"pattern\": \"^([a-z][a-z0-9_-]*(\\\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$\"\n          },\n          \"label\": { \"type\": \"string\" },\n          \"description\": { \"type\": \"string\" },\n          \"category\": {\n            \"type\": \"string\",\n            \"enum\": [\n              \"identity\",\n              \"time\",\n              \"space\",\n              \"quantity\",\n              \"money\",\n              \"classification\",\n              \"reference\",\n              \"epistemology\",\n              \"workflow\",\n              \"attention\",\n              \"communication\"\n            ]\n          },\n          \"aliases\": {\n            \"type\": \"array\",\n            \"items\": { \"type\": \"string\" },\n            \"uniqueItems\": true\n          },\n          \"applies_to\": {\n            \"type\": \"array\",\n            \"items\": { \"type\": \"string\" },\n            \"uniqueItems\": true\n          },\n          \"canonical_unit\": { \"type\": \"string\" },\n          \"unit_system\": {\n            \"type\": \"string\",\n            \"enum\": [\"SI\", \"ISO-4217\", \"ISO-8601\", \"WGS84\", \"none\"]\n          },\n          \"value_schema\": {\n            \"type\": \"object\",\n            \"description\": \"JSON Schema fragment for validating this property value.\"\n          },\n          \"examples\": {\n            \"type\": \"array\",\n            \"items\": true\n          }\n        }\n      }\n    }\n  }\n}\n",
+  "asset_path": "assets/raw/protocol/schemas/property-registry.schema.json",
+  "content_id": "sha256:74c45259c0200a27c9f879511c8557b33da3b9b6c2f5c34a14c219c89c91a216",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/property-registry.schema.json",
+    "method": "archive",
+    "content_id": "sha256:74c45259c0200a27c9f879511c8557b33da3b9b6c2f5c34a14c219c89c91a216",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

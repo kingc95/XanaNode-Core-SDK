@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-specs-transclusion.md",
+  "title": "Specs / Transclusion",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 4,
+  "summary": "A protocol specification covering Transclusion.",
+  "artifact_path": "specs/transclusion.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/transclusion.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# Transclusion\r\n\r\nTransclusion is inclusion by reference rather than duplication.\r\n\r\nIn XanaNode, transclusion should preserve:\r\n\r\n- source identity\r\n- attribution\r\n- version lineage\r\n- fragment address\r\n- rights metadata\r\n\r\nThe relationship type `transcludes` describes transclusion at the graph level. A viewer may derive the inverse view `transcluded_by` when looking from the fragment back to the consuming node.\n\r\nThe minimal interoperable form is:\r\n\r\n- a source node, such as `source/as-we-may-think`\r\n- a fragment node with `source_node`, `source_version_id`, `source_content_id`, `fragment_id`, `content_id`, `version_id`, `tumbler`, and `selector`\n- a consuming node, such as an essay or trail\r\n- a `transcludes` relationship from the consuming node to the fragment node\r\n\r\nThe `transcludes` relationship should carry the same versioned fragment `tumbler` used by the fragment node. This makes the transclusion point to a specific source version and fragment version rather than to a floating latest passage.\n\nSelectors may point to more than paragraph-like text. A transcluded fragment can identify:\n\n- an exact text quote\n- a word or character range\n- a page or region selection in a document\n- an audio or video time span\n- an image region or other media-native chunk\n\nThe durable rule is the same in every case:\n\n1. the consuming node points to a fragment node\n2. the fragment node preserves the versioned tumbler\n3. the selector carries the chunking detail for that source version\n\nThis is how XanaNode gets closer to the Nelson-style goal of reusing a precise span rather than only whole files or whole paragraphs.\n\nWhen a person pastes quoted material into an official XanaNode tool, the best-case authoring flow is not \"paste now, maybe relink later.\" The tool should prefer to create or reuse a fragment, record the `transcludes` relationship immediately, and preserve the source directionality at the moment of reuse.\n\nImplementations may begin with practical fragment references before attempting full Project Xanadu-style transclusion.\n",
+  "asset_path": "assets/raw/protocol/specs/transclusion.md",
+  "content_id": "sha256:b35e2c6a656a9f86ab4eb33096d1fce982a9ec24af53d9723da7d8db56dd523c",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/transclusion.md",
+    "method": "archive",
+    "content_id": "sha256:a589820115ef0554c82f4fd41f6d50d4635f8204c745aba95ffbec24631794cc",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

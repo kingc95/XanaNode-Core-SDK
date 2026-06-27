@@ -1,0 +1,25 @@
+{
+  "id": "xananode.canonical:schema/canonical-schema-xananode-relationship-types",
+  "title": "XanaNode Relationship Types Schema",
+  "type": "schema",
+  "subtype": "canonical_schema_record",
+  "importance": 5,
+  "summary": "Canonical schema registry entry for xananode-relationship-types.",
+  "registry_type": "xananode-relationship-types",
+  "version": "0.5.0",
+  "schema_path": "../schemas/xananode-relationship-types.schema.v0.5.0.json",
+  "artifact_path": "../schemas/xananode-relationship-types.v0.5.0.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.schema.v0.5.0.json",
+  "relationships": [],
+  "asset_path": "assets/raw/protocol/schemas/xananode-relationship-types.schema.v0.5.0.json",
+  "asset_role": "canonical_raw_source",
+  "content_id": "sha256:32aa53969c9cc55a7f258202c9910e7639bafb4a114abb93e2ca67e8b556c3c3",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.schema.v0.5.0.json",
+    "method": "archive",
+    "content_id": "sha256:05cca697d1cc06aa94c11fce8b0237e051ca4416e3f31eebf32a473e5e5e150d",
+    "rights_status": "canonical-public",
+    "tool": "@xananode/core"
+  }
+}

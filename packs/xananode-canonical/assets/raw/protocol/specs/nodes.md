@@ -149,7 +149,11 @@ assets/
       metadata.json
 ```
 
-Source page previews, Open Graph images, screenshots, transcripts, and archived copies should be captured as media nodes with provenance. The external `source_url` remains the live source. The media node records the captured representation and its rights status.
+Source page previews, Open Graph images, screenshots, transcripts, and archived copies must preserve provenance, but they do not always require a second node. Use these rules:
+
+- if the captured file is itself the cited knowledge object, model it as one `source` node that may also carry the `media` facet, `media_type`, `mime_type`, `asset_path`, and related provenance fields
+- if the captured file is a distinct representation of another source object, use a separate `media` node and relate it back to the source with the appropriate relationship and provenance
+- if a renderer only needs the file as a projection aid and the file has no independent semantic role, keep it as an attached asset instead of elevating it to a new node
 
 ## Type And Subtype Projection Media
 
@@ -169,7 +173,7 @@ The canonical fields are:
 }
 ```
 
-When a substrate or pack includes the actual icon file, it should also include a `media` node for that file. The media node should use `asset_role: "node_type_projection_icon"` or `asset_role: "node_subtype_projection_icon"`, carry `asset_path`, `media_type`, `mime_type`, `alt`, `rights_status`, and provenance, and connect to the schema/type node when that type is represented as a node.
+When a substrate or pack includes the actual icon file, the icon file must be preserved as an asset. It only needs its own `media` node when the icon is being discussed, governed, versioned, cited, or otherwise treated as a knowledge object in its own right. Otherwise the schema/type node may simply reference the asset through its projection metadata.
 
 Official XanaNode projections use this order for a node's center mark:
 

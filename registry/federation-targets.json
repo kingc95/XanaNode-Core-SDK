@@ -5,7 +5,7 @@
       "id": "xananode.protocol",
       "name": "XanaNode Protocol Substrate",
       "namespace": "xananode.protocol",
-      "description": "A substrate source built directly from the XanaNode Protocol repository, preserving schemas, registries, specs, governance, raw source files, and protocol-defining documents as first-class XanaNode records.",
+      "description": "A substrate source built directly from the XanaNode Protocol repository, preserving the protocol's schemas, registries, specs, governance artifacts, and canonical documents while carrying lower-level repository files as attached assets when they do not deserve independent node status.",
       "status": "canonical",
       "repository": {
         "type": "git",
@@ -36,7 +36,7 @@
       "id": "xananode.core",
       "name": "XanaNode Core SDK Substrate",
       "namespace": "xananode.core",
-      "description": "A substrate source built directly from the XanaNode Core SDK repository, preserving reference code, schemas, registries, templates, tests, raw project documents, and executable-contract artifacts as first-class XanaNode records.",
+      "description": "A substrate source built directly from the XanaNode Core SDK repository, preserving its implementation identity, schemas, registries, templates, executable-contract artifacts, and key documents while carrying lower-level repository files as attached assets unless they have independent semantic weight.",
       "status": "official",
       "repository": {
         "type": "git",
@@ -52,7 +52,7 @@
       "id": "xananode.workspace",
       "name": "XanaNode Workspace Substrate",
       "namespace": "xananode.workspace",
-      "description": "A substrate source built directly from the XanaNode Workspace repository, preserving the local-first workspace engine, CLI surface, templates, tests, raw project documents, and packaged executable artifacts as first-class XanaNode records.",
+      "description": "A substrate source built directly from the XanaNode Workspace repository, preserving the workspace engine, CLI surface, templates, packaged executable artifacts, and key documents while carrying lower-level repository files as attached assets unless they merit their own nodes.",
       "status": "official",
       "repository": {
         "type": "git",
@@ -68,7 +68,7 @@
       "id": "xananode.studio",
       "name": "XanaNode Studio Substrate",
       "namespace": "xananode.studio",
-      "description": "A substrate source built directly from the XanaNode Studio repository, preserving the Electron app, renderer code, preload and main-process logic, scripts, tests, and raw project documents as first-class XanaNode records.",
+      "description": "A substrate source built directly from the XanaNode Studio repository, preserving the Studio application identity, major authoring artifacts, and key documents while carrying lower-level implementation files as attached assets unless they are independently citable or governable.",
       "status": "official",
       "repository": {
         "type": "git",
@@ -84,7 +84,7 @@
       "id": "xananode.mobile",
       "name": "XanaNode Mobile Substrate",
       "namespace": "xananode.mobile",
-      "description": "A substrate source built directly from the XanaNode Mobile repository, preserving the Android companion app, Compose screens, intake flows, mobile assets, verifier bridge scripts, and raw project documents as first-class XanaNode records.",
+      "description": "A substrate source built directly from the XanaNode Mobile repository, preserving the mobile application's identity, capture workflows, and key documents while carrying lower-level implementation files as attached assets unless they have independent semantic weight.",
       "status": "official",
       "repository": {
         "type": "git",
@@ -100,7 +100,7 @@
       "id": "xananode.hugo",
       "name": "XanaNode Hugo Theme Substrate",
       "namespace": "xananode.hugo",
-      "description": "A substrate source built directly from the XanaNode Hugo repository, preserving the Hugo theme, static viewer assets, example site, layouts, build glue, and projection-facing documents as first-class XanaNode records.",
+      "description": "A substrate source built directly from the XanaNode Hugo repository, preserving the Hugo projection layer's identity, projection-facing documents, and key theme artifacts while carrying lower-level implementation files as attached assets unless they deserve their own nodes.",
       "status": "official",
       "repository": {
         "type": "git",

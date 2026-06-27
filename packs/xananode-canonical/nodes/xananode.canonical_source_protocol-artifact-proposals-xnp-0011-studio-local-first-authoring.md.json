@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-proposals-xnp-0011-studio-local-first-authoring.md",
+  "title": "Proposals / XNP 0011 Studio Local First Authoring",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "A XanaNode proposal covering XNP 0011 Studio Local First Authoring.",
+  "artifact_path": "proposals/XNP-0011-studio-local-first-authoring.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0011-studio-local-first-authoring.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# XNP-0011: Studio Local-First Authoring\n\nStatus: Draft\n\n## Summary\n\nCaptures the Studio product direction as local-first Git-backed authoring for knowledge substrates.\n\n## Decision\n\nStudio should treat a substrate as a local Git repository and expose user-facing concepts before raw Git mechanics.\n\nAuthor-facing language:\n\n- save snapshot\n- draft path\n- bring changes together\n- propose changes\n- what changed\n- history\n\nThe Studio MVP should focus on opening substrate repos, editing nodes, adding relationships, validating, previewing with the Hugo implementation, saving snapshots, and publishing.\n",
+  "asset_path": "assets/raw/protocol/proposals/XNP-0011-studio-local-first-authoring.md",
+  "content_id": "sha256:3cc4f574705261f5fcaf53eeb0152d530385a3cf13c4a7030edabb4cbc01a40e",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0011-studio-local-first-authoring.md",
+    "method": "archive",
+    "content_id": "sha256:3cc4f574705261f5fcaf53eeb0152d530385a3cf13c4a7030edabb4cbc01a40e",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

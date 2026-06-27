@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-minimal-substrate-substrate.json",
+  "title": "Examples / Minimal Substrate / Substrate",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "The substrate manifest for the minimal substrate example.",
+  "artifact_path": "examples/minimal-substrate/substrate.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/substrate.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.minimal\",\n  \"name\": \"Minimal XanaNode Substrate\",\n  \"description\": \"A tiny but complete XanaNode substrate showing that every meaningful node is connected through typed relationships, not only by a trail.\",\n  \"version\": \"0.2.0\",\n  \"namespace\": \"example.minimal\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/kingc95/xananode.git\",\n    \"default_branch\": \"main\",\n    \"path\": \"examples/minimal-substrate\"\n  },\n  \"federation\": {\n    \"feed\": \"https://example.com/xananode/minimal/feed.json\",\n    \"merge_reports\": \"https://example.com/xananode/minimal/merge-reports/\"\n  },\n  \"trust\": {\n    \"signed\": false,\n    \"trust_scope\": [\n      \"local_substrate\",\n      \"assertion\"\n    ]\n  },\n  \"schema_version\": \"xananode-core@0.5.0\",\n  \"license\": \"CC0-1.0\",\n  \"branding\": {\n    \"brand_name\": \"XanaNode\",\n    \"tagline\": \"Relationships preserve knowledge\",\n    \"description\": \"Canonical XanaNode protocol branding used by protocol examples and downstream project tools.\",\n    \"primary_media\": \"example.minimal:media/xananode-icon\",\n    \"logo_media\": \"example.minimal:media/xananode-icon\",\n    \"icon_media\": \"example.minimal:media/xananode-icon\",\n    \"primary_color\": \"#55D6BE\",\n    \"accent_color\": \"#FF8C00\",\n    \"background_color\": \"#05070A\",\n    \"text_color\": \"#F8FAFC\",\n    \"source_node\": \"example.minimal:media/xananode-icon\",\n    \"rights_status\": \"open-source\",\n    \"license\": \"MIT\",\n    \"updated_at\": \"2026-06-19T00:00:00Z\",\n    \"reason\": \"Protocol branding is modeled as substrate metadata and media so changes to project identity can be preserved as knowledge.\"\n  },\n  \"maintainers\": [\n    {\n      \"name\": \"Example Maintainer\",\n      \"url\": \"https://example.com\"\n    }\n  ],\n  \"imports\": [\n    \"xananode:core\"\n  ]\n}\n",
+  "asset_path": "assets/raw/protocol/examples/minimal-substrate/substrate.json",
+  "content_id": "sha256:7e022016422780a1d6564862972483fa0f7db8b491fc294fafd09edf4c73a6ac",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/substrate.json",
+    "method": "archive",
+    "content_id": "sha256:7e022016422780a1d6564862972483fa0f7db8b491fc294fafd09edf4c73a6ac",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

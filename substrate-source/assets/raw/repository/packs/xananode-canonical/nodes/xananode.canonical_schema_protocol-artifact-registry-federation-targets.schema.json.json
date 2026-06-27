@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-registry-federation-targets.schema.json",
+  "title": "Registry / Federation Targets Schema",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "A registry artifact covering Federation Targets Schema.",
+  "artifact_path": "registry/federation-targets.schema.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/federation-targets.schema.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"https://xananode.org/registry/federation-targets.schema.json\",\n  \"title\": \"XanaNode Federation Targets Registry\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\"federation_targets\"],\n  \"properties\": {\n    \"federation_targets\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"additionalProperties\": false,\n        \"required\": [\"id\", \"name\", \"namespace\", \"repository\"],\n        \"properties\": {\n          \"id\": { \"type\": \"string\" },\n          \"name\": { \"type\": \"string\" },\n          \"namespace\": { \"type\": \"string\" },\n          \"description\": { \"type\": \"string\" },\n          \"status\": {\n            \"type\": \"string\",\n            \"enum\": [\"canonical\", \"community\", \"example\", \"experimental\", \"archived\"]\n          },\n          \"repository\": {\n            \"type\": \"object\",\n            \"additionalProperties\": false,\n            \"required\": [\"type\", \"url\", \"default_branch\"],\n            \"properties\": {\n              \"type\": {\n                \"type\": \"string\",\n                \"enum\": [\"git\"]\n              },\n              \"url\": { \"type\": \"string\" },\n              \"default_branch\": { \"type\": \"string\" },\n              \"substrate_path\": { \"type\": \"string\" }\n            }\n          },\n          \"recommended_mode\": {\n            \"type\": \"string\",\n            \"enum\": [\"mounted\", \"imported\", \"merged\", \"absorbed\"]\n          },\n          \"licenses\": {\n            \"type\": \"array\",\n            \"items\": { \"type\": \"string\" }\n          },\n          \"homepage\": { \"type\": \"string\", \"format\": \"uri\" }\n        }\n      }\n    }\n  }\n}\n",
+  "asset_path": "assets/raw/protocol/registry/federation-targets.schema.json",
+  "content_id": "sha256:7b360af2b0aec0db05e2f411fe2d14b8d12629ac4dab85c87240daf5c0e1c1ed",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/federation-targets.schema.json",
+    "method": "archive",
+    "content_id": "sha256:7b360af2b0aec0db05e2f411fe2d14b8d12629ac4dab85c87240daf5c0e1c1ed",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

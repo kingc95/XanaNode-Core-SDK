@@ -205,7 +205,9 @@
             "FragmentSelector",
             "CssSelector",
             "XPathSelector",
-            "RangeSelector"
+            "RangeSelector",
+            "MediaFragmentSelector",
+            "TimecodeRangeSelector"
           ]
         },
         "value": { "type": "string" },
@@ -213,7 +215,12 @@
         "prefix": { "type": "string" },
         "suffix": { "type": "string" },
         "start": { "type": "integer" },
-        "end": { "type": "integer" }
+        "end": { "type": "integer" },
+        "unit": { "type": "string" },
+        "start_timecode": { "type": "string" },
+        "end_timecode": { "type": "string" },
+        "start_ms": { "type": "integer" },
+        "end_ms": { "type": "integer" }
       }
     },
     "relationships": {

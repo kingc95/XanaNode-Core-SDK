@@ -4,6 +4,10 @@
   "type": "concept",
   "importance": 4,
   "summary": "A structure for preserving relationships among knowledge objects.",
+  "aliases": [
+    "Memory Substrate",
+    "Relationship-Preserving Knowledge Structure"
+  ],
   "relationships": [
     {
       "id": "example.researcher_a:rel/knowledge-substrate-possible-match-memory-substrate",

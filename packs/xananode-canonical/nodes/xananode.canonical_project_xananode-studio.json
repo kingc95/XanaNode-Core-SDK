@@ -1,0 +1,49 @@
+{
+  "id": "xananode.canonical:project/xananode-studio",
+  "title": "XanaNode Studio",
+  "type": "project",
+  "subtype": "desktop-authoring-application",
+  "importance": 4,
+  "summary": "Electron authoring workbench for creating nodes, editing protocol metadata, navigating graph context, and previewing projection layers.",
+  "status": "active",
+  "source_url": "https://github.com/kingc95/XanaNode-Studio",
+  "repository": "kingc95/XanaNode-Studio",
+  "protocol_role": "desktop-authoring-interface",
+  "software_version": "",
+  "build_metadata": {
+    "version": "",
+    "repository": "kingc95/XanaNode-Studio",
+    "generated_at": "2026-06-27T07:05:45.828Z",
+    "built_by": "@xananode/core",
+    "dependencies": [
+      {
+        "name": "Workspace APIs",
+        "relationship": "consumes"
+      },
+      {
+        "name": "Core SDK APIs",
+        "relationship": "consumes"
+      },
+      {
+        "name": "protocol registries",
+        "relationship": "consumes"
+      },
+      {
+        "name": "protocol branding",
+        "relationship": "consumes"
+      }
+    ]
+  },
+  "consumes": [
+    "Workspace APIs",
+    "Core SDK APIs",
+    "protocol registries",
+    "protocol branding"
+  ],
+  "related_protocol_artifacts": [
+    "../schemas/xananode-node-types.v0.3.0.json",
+    "../schemas/xananode-relationship-types.v0.5.0.json",
+    "../media/images/xananode-icon.svg"
+  ],
+  "relationships": []
+}

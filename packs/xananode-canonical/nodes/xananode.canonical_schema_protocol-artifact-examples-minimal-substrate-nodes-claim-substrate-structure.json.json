@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-minimal-substrate-nodes-claim-substrate-structure.json",
+  "title": "Examples / Minimal Substrate / Nodes / Claim Substrate Structure",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "A node record from examples/minimal-substrate.",
+  "artifact_path": "examples/minimal-substrate/nodes/claim-substrate-structure.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/claim-substrate-structure.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.minimal:claim/substrate-is-structure\",\n  \"title\": \"A knowledge substrate is structure, not just information\",\n  \"type\": \"claim\",\n  \"protocol_id\": \"example.minimal:claim/substrate-is-structure\",\n  \"content_id\": \"sha256:example-substrate-structure-claim\",\n  \"version_id\": \"git:HEAD:examples/minimal-substrate/nodes/claim-substrate-structure.json\",\n  \"status\": \"active\",\n  \"importance\": 5,\n  \"summary\": \"The same information arranged through different relationships can produce different epistemic capabilities.\",\n  \"confidence\": \"interpretive\",\n  \"relationships\": [\n    {\n      \"id\": \"example.minimal:rel/source-supports-claim\",\n      \"type\": \"supports\",\n      \"source\": \"example.minimal:source/as-we-may-think\",\n      \"direction\": \"incoming\"\n    },\n    {\n      \"id\": \"example.minimal:rel/claim-defines-concept\",\n      \"type\": \"defines\",\n      \"target\": \"example.minimal:concept/knowledge-substrate\",\n      \"direction\": \"outgoing\"\n    },\n    {\n      \"id\": \"example.minimal:rel/concept-has-claim\",\n      \"type\": \"has_claim\",\n      \"source\": \"example.minimal:concept/knowledge-substrate\",\n      \"direction\": \"incoming\"\n    },\n    {\n      \"id\": \"example.minimal:rel/trail-continues-to-claim\",\n      \"type\": \"continues_to\",\n      \"source\": \"example.minimal:source/as-we-may-think\",\n      \"direction\": \"incoming\"\n    },\n    {\n      \"id\": \"example.minimal:rel/trail-continues-to-concept\",\n      \"type\": \"continues_to\",\n      \"target\": \"example.minimal:concept/knowledge-substrate\",\n      \"direction\": \"outgoing\"\n    }\n  ]\n}\n",
+  "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/claim-substrate-structure.json",
+  "content_id": "sha256:7b9d489e6aac06aef0478a6840bc6170722be070ea63e0093b821095587e6709",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/claim-substrate-structure.json",
+    "method": "archive",
+    "content_id": "sha256:7b9d489e6aac06aef0478a6840bc6170722be070ea63e0093b821095587e6709",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

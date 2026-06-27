@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:concept/addressable-fragment-selectors",
+  "title": "Addressable Fragment Selectors",
+  "type": "concept",
+  "subtype": "method",
+  "importance": 5,
+  "summary": "Selectors carry the precise in-source chunking detail for a fragment, while the tumbler preserves the durable address of the exact source version and fragment version.",
+  "content": "A XanaNode fragment is not limited to a paragraph block. The same tumbler model can point to a quoted sentence, a character range, a word range, a page region, an image region, or an audio/video time span.\n\nThe durable identity comes from the versioned fragment tumbler. The selector explains how the implementation found or preserved that exact span inside the source version. That is how XanaNode gets closer to Nelson's finer-grained reuse model without inventing a separate address family for each medium.",
+  "relationships": []
+}

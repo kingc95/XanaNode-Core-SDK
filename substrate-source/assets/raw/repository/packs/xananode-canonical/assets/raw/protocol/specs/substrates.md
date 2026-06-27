@@ -167,7 +167,26 @@ Substrate builders must:
 
 Substrate consumers must resolve `asset_path` relative to the source substrate root for mounted substrates and relative to the receiving substrate root for imported or merged assets after an explicit copy step.
 
-Live source URLs and captured media are different objects. A `source` node may point to `https://example.com`. A related `media` node with `subtype: "web_snapshot"` may carry a screenshot or Open Graph image captured from that URL. This lets renderers show rich previews while preserving source identity, capture time, rights, and provenance.
+## Artifact Promotion Governance
+
+Portable substrates should preserve important local files, but tools must distinguish between preserving a file and promoting that file into its own node.
+
+A raw repository or workspace file should be promoted to its own node when it has independent semantic weight inside the substrate, for example when it is:
+
+- a protocol, schema, registry, compatibility, or governance artifact
+- a citable spec, proposal, policy, source document, or canonical example
+- a report, bundle, manifest, or machine-facing artifact that other tools may need to inspect directly
+- a file whose contents are meaningfully discussed, reviewed, disputed, transcluded, or traversed as part of the graph
+
+A raw file should usually remain an attached asset instead of becoming its own node when it mainly serves as:
+
+- implementation support
+- build or packaging glue
+- test scaffolding
+- projection inventory such as icons, thumbnails, sprites, static screenshots, or generated output
+- provenance attached to a higher-level source, media, schema, project, or substrate node
+
+Live source URLs and captured media are often related, but not always separate objects. A `source` node may point to `https://example.com` and also carry a local captured file when the captured file is the actual evidentiary object being cited in the substrate. Use a separate `media` node only when the capture is a distinct representation, derivative, preview, depiction, or auxiliary asset rather than the source object itself.
 
 When two mounted substrates carry the same literal file, tools should preserve provenance from both substrates instead of blindly copying both files forever. Permanent federation or merge may keep one canonical media node, record duplicate-file evidence in the merge report, and use transclusion or media relationships from the other substrate back to the retained file. That keeps the file lineage visible without multiplying identical bytes.
 

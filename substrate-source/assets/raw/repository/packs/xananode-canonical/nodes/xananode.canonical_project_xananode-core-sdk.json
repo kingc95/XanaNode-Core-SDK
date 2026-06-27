@@ -1,0 +1,66 @@
+{
+  "id": "xananode.canonical:project/xananode-core-sdk",
+  "title": "XanaNode Core SDK",
+  "type": "project",
+  "subtype": "core-sdk",
+  "status": "active",
+  "importance": 4,
+  "summary": "Renderer-independent parser, validator, graph builder, fragment engine, pack composer, suggestion engine, and exporter for XanaNode substrates.",
+  "relationships": [],
+  "source_url": "https://github.com/kingc95/XanaNode-Core-SDK",
+  "repository": "kingc95/XanaNode-Core-SDK",
+  "protocol_role": "reference-core-engine",
+  "software_version": "",
+  "build_metadata": {
+    "version": "0.1.0",
+    "repository": "kingc95/XanaNode-Core-SDK",
+    "generated_at": "2026-06-27T07:05:45.707Z",
+    "built_by": "@xananode/core",
+    "git_commit": "08ee42fc795dbb2fea499196f3bc4851c2ebca4d",
+    "git_branch": "main",
+    "runtime": "node v24.16.0",
+    "platform": "win32/x64",
+    "dependencies": [
+      {
+        "name": "XanaNode Protocol",
+        "version": "2157f16",
+        "repository": "kingc95/XanaNode",
+        "relationship": "uses"
+      },
+      {
+        "name": "protocol schemas",
+        "relationship": "consumes"
+      },
+      {
+        "name": "node files",
+        "relationship": "consumes"
+      },
+      {
+        "name": "relationship files",
+        "relationship": "consumes"
+      },
+      {
+        "name": "substrate manifests",
+        "relationship": "consumes"
+      },
+      {
+        "name": "substrate packs",
+        "relationship": "consumes"
+      }
+    ]
+  },
+  "consumes": [
+    "protocol schemas",
+    "node files",
+    "relationship files",
+    "substrate manifests",
+    "substrate packs"
+  ],
+  "related_protocol_artifacts": [
+    "../schemas/substrate-manifest.schema.json",
+    "../schemas/substrate-node.schema.json",
+    "../schemas/substrate-relationships.schema.json",
+    "../schemas/xananode-node-types.v0.3.0.json",
+    "../schemas/xananode-relationship-types.v0.5.0.json"
+  ]
+}

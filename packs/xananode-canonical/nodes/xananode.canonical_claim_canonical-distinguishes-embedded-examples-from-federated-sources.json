@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:claim/canonical-distinguishes-embedded-examples-from-federated-sources",
+  "title": "The canonical substrate distinguishes embedded examples from federated sources",
+  "type": "claim",
+  "subtype": "clarification_claim",
+  "importance": 5,
+  "summary": "Embedded teaching namespaces inside the canonical bundle are different from the real stack-layer substrate sources represented as federation targets.",
+  "content": "The canonical bundle contains several kinds of composition at once. Namespaces such as example.minimal, example.researcher_a, and example.researcher_b are embedded inside the bundle for teaching, testing, and portable inspection. By contrast, the Protocol, Core, Workspace, Studio, Mobile, and Hugo substrate entries point to real independently versioned substrate sources. That distinction matters because it tells readers what is bundled here and what exists as its own substrate outside the bundle.",
+  "relationships": []
+}

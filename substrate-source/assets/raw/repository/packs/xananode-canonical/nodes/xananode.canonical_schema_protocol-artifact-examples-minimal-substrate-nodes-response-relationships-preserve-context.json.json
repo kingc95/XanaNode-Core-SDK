@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-minimal-substrate-nodes-response-relationships-preserve-context.json",
+  "title": "Examples / Minimal Substrate / Nodes / Response Relationships Preserve Context",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "A node record from examples/minimal-substrate.",
+  "artifact_path": "examples/minimal-substrate/nodes/response-relationships-preserve-context.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/response-relationships-preserve-context.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.minimal:response/relationships-preserve-context\",\n  \"title\": \"Relationships Preserve Context\",\n  \"type\": \"response\",\n  \"protocol_id\": \"example.minimal:response/relationships-preserve-context\",\n  \"content_id\": \"sha256:example-response-relationships-preserve-context\",\n  \"version_id\": \"git:HEAD:examples/minimal-substrate/nodes/response-relationships-preserve-context.json\",\n  \"status\": \"active\",\n  \"importance\": 4,\n  \"summary\": \"A response that answers the example question by connecting relationship structure to preserved context.\",\n  \"evidence_strength\": \"moderate\",\n  \"review_status\": \"under_review\",\n  \"relationships\": [\n    {\n      \"id\": \"example.minimal:rel/response-answers-question\",\n      \"type\": \"answers\",\n      \"target\": \"example.minimal:question/why-relationships-matter\",\n      \"direction\": \"outgoing\"\n    },\n    {\n      \"id\": \"example.minimal:rel/response-answered-in-communication\",\n      \"type\": \"answered_in\",\n      \"target\": \"example.minimal:communication/minimal-substrate-discussion\",\n      \"direction\": \"outgoing\"\n    },\n    {\n      \"id\": \"example.minimal:rel/response-supports-claim\",\n      \"type\": \"supports\",\n      \"target\": \"example.minimal:claim/substrate-is-structure\",\n      \"direction\": \"outgoing\"\n    }\n  ]\n}\n",
+  "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/response-relationships-preserve-context.json",
+  "content_id": "sha256:479c37d7a9e310ba81bdb5a8de649da83af99fce536d6719fc6ca03b18ae1131",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/response-relationships-preserve-context.json",
+    "method": "archive",
+    "content_id": "sha256:479c37d7a9e310ba81bdb5a8de649da83af99fce536d6719fc6ca03b18ae1131",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

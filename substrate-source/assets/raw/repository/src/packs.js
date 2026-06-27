@@ -11,10 +11,19 @@ function asArray(value) {
   return Array.isArray(value) ? value : [value];
 }
 
+const IGNORED_PACK_DIRS = new Set([
+  "assets",
+  "dist",
+  "node_modules",
+  "public",
+  "resources",
+  ".git"
+]);
+
 function walkJsonFiles(rootDir, files = []) {
   if (!fs.existsSync(rootDir)) return files;
   for (const entry of fs.readdirSync(rootDir, { withFileTypes: true })) {
-    if (["node_modules", "public", "resources", ".git"].includes(entry.name)) continue;
+    if (IGNORED_PACK_DIRS.has(entry.name)) continue;
     const fullPath = path.join(rootDir, entry.name);
     if (entry.isDirectory()) walkJsonFiles(fullPath, files);
     else if (entry.isFile() && entry.name.endsWith(".json")) files.push(fullPath);
@@ -353,7 +362,7 @@ export function loadSubstratePack(rootDir, options = {}) {
   function walkJsonAndJsonl(currentDir) {
     if (!fs.existsSync(currentDir)) return;
     for (const entry of fs.readdirSync(currentDir, { withFileTypes: true })) {
-      if (["node_modules", "public", "resources", ".git"].includes(entry.name)) continue;
+      if (IGNORED_PACK_DIRS.has(entry.name)) continue;
       const fullPath = path.join(currentDir, entry.name);
       if (entry.isDirectory()) {
         walkJsonAndJsonl(fullPath);

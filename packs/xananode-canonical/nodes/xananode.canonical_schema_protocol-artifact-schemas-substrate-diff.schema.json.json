@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-schemas-substrate-diff.schema.json",
+  "title": "Schemas / Substrate Diff Schema",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 4,
+  "summary": "The JSON Schema for the substrate diff.",
+  "artifact_path": "schemas/substrate-diff.schema.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-diff.schema.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"https://xananode.org/schemas/substrate-diff.schema.json\",\n  \"title\": \"Substrate Diff\",\n  \"type\": \"object\",\n  \"additionalProperties\": false,\n  \"required\": [\"id\", \"base\", \"head\", \"changes\"],\n  \"properties\": {\n    \"id\": { \"type\": \"string\" },\n    \"base\": { \"type\": \"string\" },\n    \"head\": { \"type\": \"string\" },\n    \"generated_at\": { \"type\": \"string\", \"format\": \"date-time\" },\n    \"changes\": {\n      \"type\": \"object\",\n      \"additionalProperties\": false,\n      \"required\": [\"nodes\", \"relationships\", \"schemas\", \"fragments\"],\n      \"properties\": {\n        \"nodes\": { \"$ref\": \"#/$defs/changeSet\" },\n        \"relationships\": { \"$ref\": \"#/$defs/changeSet\" },\n        \"schemas\": { \"$ref\": \"#/$defs/changeSet\" },\n        \"fragments\": { \"$ref\": \"#/$defs/changeSet\" }\n      }\n    },\n    \"conflicts\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"additionalProperties\": false,\n        \"required\": [\"type\", \"summary\"],\n        \"properties\": {\n          \"type\": { \"type\": \"string\" },\n          \"nodes\": {\n            \"type\": \"array\",\n            \"items\": { \"type\": \"string\" }\n          },\n          \"resolution\": { \"type\": \"string\" },\n          \"summary\": { \"type\": \"string\" }\n        }\n      }\n    }\n  },\n  \"$defs\": {\n    \"changeSet\": {\n      \"type\": \"object\",\n      \"additionalProperties\": false,\n      \"required\": [\"added\", \"removed\", \"changed\"],\n      \"properties\": {\n        \"added\": {\n          \"type\": \"array\",\n          \"items\": { \"type\": \"string\" }\n        },\n        \"removed\": {\n          \"type\": \"array\",\n          \"items\": { \"type\": \"string\" }\n        },\n        \"changed\": {\n          \"type\": \"array\",\n          \"items\": { \"type\": \"string\" }\n        }\n      }\n    }\n  }\n}\n",
+  "asset_path": "assets/raw/protocol/schemas/substrate-diff.schema.json",
+  "content_id": "sha256:18ab06e82d3dd8718900b8e06704585d8d38e8b5af725d2241e6da19f1358ab5",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-diff.schema.json",
+    "method": "archive",
+    "content_id": "sha256:18ab06e82d3dd8718900b8e06704585d8d38e8b5af725d2241e6da19f1358ab5",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

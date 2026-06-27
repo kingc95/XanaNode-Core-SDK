@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-minimal-substrate-author-profile.json",
+  "title": "Examples / Minimal Substrate / Author Profile",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "The example author profile used by the minimal substrate fixture.",
+  "artifact_path": "examples/minimal-substrate/author-profile.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/author-profile.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.minimal:person/example-maintainer\",\n  \"name\": \"Example Maintainer\",\n  \"github\": \"example-maintainer\",\n  \"website\": \"https://example.com\",\n  \"branding\": {\n    \"brand_name\": \"Example Maintainer\",\n    \"tagline\": \"Example substrate author\",\n    \"primary_media\": \"example.minimal:media/xananode-icon\",\n    \"icon_media\": \"example.minimal:media/xananode-icon\",\n    \"primary_color\": \"#55D6BE\",\n    \"accent_color\": \"#FF8C00\",\n    \"rights_status\": \"open-example\",\n    \"license\": \"CC0-1.0\",\n    \"reason\": \"Author profiles may carry portable branding that tools can apply to authored substrates.\"\n  },\n  \"default_rights\": \"open-example\",\n  \"default_license\": \"CC0-1.0\",\n  \"default_role\": \"maintainer\"\n}\n",
+  "asset_path": "assets/raw/protocol/examples/minimal-substrate/author-profile.json",
+  "content_id": "sha256:9663891d09582c1e5af0dedae6f811ea5aae883eae0e77137b3a451f07cdbae7",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/author-profile.json",
+    "method": "archive",
+    "content_id": "sha256:9663891d09582c1e5af0dedae6f811ea5aae883eae0e77137b3a451f07cdbae7",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

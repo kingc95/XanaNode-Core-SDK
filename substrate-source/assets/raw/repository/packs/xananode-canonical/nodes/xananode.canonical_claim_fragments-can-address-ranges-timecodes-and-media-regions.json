@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:claim/fragments-can-address-ranges-timecodes-and-media-regions",
+  "title": "Fragments can address ranges, timecodes, and media regions",
+  "type": "claim",
+  "subtype": "definition",
+  "importance": 5,
+  "summary": "XanaNode fragments can point to granular spans such as quoted text, word ranges, timecoded audio/video segments, and other media-native chunks, not only paragraph blocks.",
+  "content": "The protocol already separates durable addressing from extraction detail. The tumbler identifies the exact fragment and source version. The selector describes how to locate the chunk inside that source version. That lets a fragment represent a quoted sentence, a word or character range, a page region, or a timecoded media segment while preserving one interoperable transclusion model.",
+  "relationships": []
+}

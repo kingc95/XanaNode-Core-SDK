@@ -1,0 +1,54 @@
+{
+  "id": "xananode.canonical:project/xananode-workspace",
+  "title": "XanaNode Workspace",
+  "type": "project",
+  "subtype": "workspace-engine",
+  "status": "active",
+  "importance": 4,
+  "summary": "Local-first workspace engine for creating, opening, validating, building, importing, and snapshotting XanaNode substrates.",
+  "relationships": [],
+  "source_url": "https://github.com/kingc95/XanaNode-Workspace",
+  "repository": "kingc95/XanaNode-Workspace",
+  "protocol_role": "local-first-workspace-layer",
+  "software_version": "",
+  "build_metadata": {
+    "version": "",
+    "repository": "kingc95/XanaNode-Workspace",
+    "generated_at": "2026-06-27T07:05:45.828Z",
+    "built_by": "@xananode/core",
+    "dependencies": [
+      {
+        "name": "Core SDK APIs",
+        "relationship": "consumes"
+      },
+      {
+        "name": "substrate manifests",
+        "relationship": "consumes"
+      },
+      {
+        "name": "node files",
+        "relationship": "consumes"
+      },
+      {
+        "name": "relationship files",
+        "relationship": "consumes"
+      },
+      {
+        "name": "author profiles",
+        "relationship": "consumes"
+      }
+    ]
+  },
+  "consumes": [
+    "Core SDK APIs",
+    "substrate manifests",
+    "node files",
+    "relationship files",
+    "author profiles"
+  ],
+  "related_protocol_artifacts": [
+    "../schemas/author-profile.schema.json",
+    "../schemas/substrate-manifest.schema.json",
+    "../schemas/substrate-node.schema.json"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "xananode.canonical:schema/canonical-schema-compatibility-report",
+  "title": "Compatibility Report Schema",
+  "type": "schema",
+  "subtype": "canonical_schema_record",
+  "importance": 4,
+  "summary": "Canonical schema registry entry for compatibility-report.",
+  "registry_type": "compatibility-report",
+  "version": "0.1.0",
+  "schema_path": "../schemas/compatibility-report.schema.json",
+  "artifact_path": "",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/compatibility-report.schema.json",
+  "relationships": [],
+  "asset_path": "assets/raw/protocol/schemas/compatibility-report.schema.json",
+  "asset_role": "canonical_raw_source",
+  "content_id": "sha256:cebce9e3ddbe9349982bdb25881dddc7a0ecbf03bd1f7cbaec5bf318c5789b28",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/compatibility-report.schema.json",
+    "method": "archive",
+    "content_id": "sha256:be8ea01644e2468dd965bc7704f0ae3a7ece61943eb4f8b96de4167115297762",
+    "rights_status": "canonical-public",
+    "tool": "@xananode/core"
+  }
+}

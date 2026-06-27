@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-category-participation-projection-icon",
+  "title": "participation Relationship Category Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-categories/participation.svg",
+  "asset_role": "relationship_category_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/participation.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the participation relationship category.",
+  "relationships": [],
+  "content_id": "sha256:75b23545383f1f68f83900d707c769890d1a5bd201c7cb32085128f57d25bb35",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-categories/participation.svg",
+    "method": "archive",
+    "content_id": "sha256:75b23545383f1f68f83900d707c769890d1a5bd201c7cb32085128f57d25bb35",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

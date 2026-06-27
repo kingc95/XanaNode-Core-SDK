@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-specs-readme.md",
+  "title": "Specs / README",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 4,
+  "summary": "A protocol specification covering README.",
+  "artifact_path": "specs/README.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/README.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# Specs\r\n\r\nThis directory contains the normative protocol definitions for XanaNode.\r\n\r\nThe spec set should be read alongside the versioned registries in [schemas/](../schemas), especially the core node and relationship registries.\r\n\r\nKey documents:\r\n\r\n- [xananode-core.md](xananode-core.md)\r\n- [substrates.md](substrates.md)\r\n- [nodes.md](nodes.md)\r\n- [relationships.md](relationships.md)\r\n- [namespaces.md](namespaces.md)\r\n- [federation.md](federation.md)\r\n- [merge-validation.md](merge-validation.md)\r\n- [transclusion.md](transclusion.md)\r\n- [tumbler-addressing.md](tumbler-addressing.md)\n- [compatibility-levels.md](compatibility-levels.md)\n- [interoperability.md](interoperability.md)\n- [studio.md](studio.md)\n- [implementation-compatibility.md](implementation-compatibility.md)\n\nThe current core registry files are versioned and define the protocol vocabulary used throughout the repository.\n",
+  "asset_path": "assets/raw/protocol/specs/README.md",
+  "content_id": "sha256:a7d0d63d0cd4d091260eec44895c930d06278ba1dbcbaf0816770033ed2bea28",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/README.md",
+    "method": "archive",
+    "content_id": "sha256:a7d0d63d0cd4d091260eec44895c930d06278ba1dbcbaf0816770033ed2bea28",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

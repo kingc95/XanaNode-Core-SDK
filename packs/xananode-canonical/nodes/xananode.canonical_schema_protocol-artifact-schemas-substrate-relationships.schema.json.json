@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-schemas-substrate-relationships.schema.json",
+  "title": "Schemas / Substrate Relationships Schema",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 4,
+  "summary": "The JSON Schema for the substrate relationships.",
+  "artifact_path": "schemas/substrate-relationships.schema.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-relationships.schema.json",
+  "relationships": [],
+  "asset_path": "assets/raw/protocol/schemas/substrate-relationships.schema.json",
+  "asset_role": "canonical_raw_source",
+  "content_id": "sha256:178c2c72ee97ee25ed46fc5d506224fc6e0cb8e39c90b7aa9874cdde390b0ca3",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-relationships.schema.json",
+    "method": "archive",
+    "content_id": "sha256:f54850b79d92255a2ed8753086ec114a2bb425b0219e30f614072fbf117a53a2",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  },
+  "media_type": "document",
+  "mime_type": "application/json",
+  "rights_status": "Apache-2.0",
+  "content": "{\r\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\r\n  \"$id\": \"https://xananode.org/schemas/substrate-relationships.schema.json\",\r\n  \"title\": \"Substrate Relationship List\",\r\n  \"type\": \"object\",\r\n  \"additionalProperties\": false,\r\n  \"required\": [\"relationships\"],\r\n  \"properties\": {\r\n    \"relationships\": {\r\n      \"type\": \"array\",\r\n      \"items\": {\r\n        \"type\": \"object\",\r\n        \"additionalProperties\": false,\r\n        \"required\": [\"id\", \"source\", \"target\", \"type\", \"summary\"],\r\n        \"properties\": {\r\n          \"id\": { \"type\": \"string\" },\r\n          \"source\": { \"type\": \"string\" },\r\n          \"target\": { \"type\": \"string\" },\r\n          \"type\": {\r\n            \"type\": \"string\",\r\n            \"pattern\": \"^([a-z][a-z0-9_-]*(\\\\.[a-z][a-z0-9_-]*)*:)?[a-z][a-z0-9_-]*$\"\r\n          },\r\n          \"weight\": {\r\n            \"type\": \"integer\",\r\n            \"minimum\": 1,\r\n            \"maximum\": 5\r\n          },\r\n          \"visibility\": {\r\n            \"type\": \"string\",\r\n            \"enum\": [\"primary\", \"secondary\", \"background\"]\r\n          },\r\n          \"summary\": { \"type\": \"string\" },\n          \"asserted_by\": { \"type\": \"string\" },\n          \"asserted_at\": { \"type\": \"string\", \"format\": \"date-time\" },\n          \"valid_from\": { \"type\": \"string\", \"format\": \"date-time\" },\n          \"valid_to\": { \"type\": \"string\", \"format\": \"date-time\" },\n          \"confidence\": { \"type\": \"string\" },\n          \"content_id\": { \"type\": \"string\" },\n          \"version_id\": { \"type\": \"string\" },\n          \"signature\": { \"type\": \"string\" },\n          \"tumbler\": {\n            \"type\": \"string\",\n            \"pattern\": \"^[a-z][a-z0-9_-]*(\\\\.[a-z][a-z0-9_-]*)*:[a-z][a-z0-9_-]*/[^\\\\s#@]+(@[^\\\\s#]+)?(#fragment/[A-Za-z0-9._-]+(@[^\\\\s#]+)?)?$\"\n          },\n          \"evidence\": {\r\n            \"type\": \"array\",\r\n            \"items\": { \"type\": \"string\" }\r\n          },\r\n          \"external\": { \"type\": \"boolean\" },\r\n          \"target_substrate\": { \"type\": \"string\" }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n"
+}

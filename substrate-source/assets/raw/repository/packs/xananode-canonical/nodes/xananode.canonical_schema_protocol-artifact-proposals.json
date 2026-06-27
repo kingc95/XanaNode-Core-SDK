@@ -1,0 +1,11 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-proposals",
+  "title": "Protocol Proposals",
+  "type": "schema",
+  "subtype": "protocol_artifact_group",
+  "importance": 3,
+  "summary": "The proposal records for protocol changes, experiments, and accepted design decisions.",
+  "artifact_path": "proposals/",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/",
+  "relationships": []
+}

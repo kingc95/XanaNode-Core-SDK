@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-proposals-xnp-0007-git-backed-substrates.md",
+  "title": "Proposals / XNP 0007 Git Backed Substrates",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "A XanaNode proposal covering XNP 0007 Git Backed Substrates.",
+  "artifact_path": "proposals/XNP-0007-git-backed-substrates.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0007-git-backed-substrates.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# XNP-0007: Git-Backed Substrates\n\nStatus: Accepted\n\n## Summary\n\nDefines Git as the required versioning and history layer for production XanaNode substrates.\n\n## Decision\n\nEach production substrate is a Git repository. The substrate manifest must include a `repository` block describing the Git remote and default branch.\n\nGit provides:\n\n- revision history\n- branching\n- review\n- merge\n- synchronization\n- rollback\n\nXanaNode provides:\n\n- node and relationship artifacts\n- schema validation\n- provenance fields\n- merge and compatibility reports\n- federation semantics\n\n## Rationale\n\nXanaNode should not reinvent distributed version control. Git already provides the substrate-level history model that knowledge authors need, while XanaNode adds knowledge-specific structure on top.\n\nUser-facing tools may rename Git concepts for approachability, such as \"save snapshot\" for commit or \"draft path\" for branch, but the underlying substrate history remains Git.\n",
+  "asset_path": "assets/raw/protocol/proposals/XNP-0007-git-backed-substrates.md",
+  "content_id": "sha256:b24c29fbe0a89e6b6d6ba67997a6e674e4fe5ba2811bdf4f858255aedb295c6d",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/proposals/XNP-0007-git-backed-substrates.md",
+    "method": "archive",
+    "content_id": "sha256:b24c29fbe0a89e6b6d6ba67997a6e674e4fe5ba2811bdf4f858255aedb295c6d",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

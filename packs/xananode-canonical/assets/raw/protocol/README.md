@@ -43,6 +43,8 @@ It is not a note-taking application.
 
 It is a protocol for knowledge substrates and the rules that let them move, federate, and be projected without losing their structure.
 
+Fragments are not limited to paragraph chunks. The protocol's fragment/tumbler model can also describe quoted spans, character or word ranges, page regions, and time-based media segments. The stable address is the tumbler; the selector carries the granular "where inside this source version" detail.
+
 ---
 
 ## The Core Problem
@@ -199,6 +201,36 @@ Examples:
 Each substrate remains independently owned and moderated.
 
 There is no requirement for a central authority.
+
+## Repository Files, Assets, And Knowledge Objects
+
+XanaNode does not treat every file in a Git repository as equally worthy of becoming its own node.
+
+Portable substrates should preserve important local files, but preservation and elevation are different actions:
+
+* **Preserve as an attached asset** when the file is implementation support, packaging glue, projection inventory, test scaffolding, or another file whose meaning is already carried by a higher-level node.
+* **Promote to a first-class node** when the file is itself a knowledge-bearing object that should be citable, discussable, governable, reviewable, or traversable on its own.
+
+A raw repository file generally deserves its own node when one or more of these are true:
+
+* it defines protocol, schema, registry, compatibility, or governance behavior
+* it is an independently citable specification, proposal, policy, source document, or canonical example
+* it is itself a portable substrate/report/registry artifact that other tools may inspect directly
+* authors are likely to discuss its contents semantically, not merely acknowledge that the file exists
+
+A raw repository file should usually remain an attached asset, snapshot, or supporting file when:
+
+* it exists mainly to make another node render, build, test, package, or execute
+* it is one item in a large projection-asset inventory such as icons, thumbnails, static images, or generated output
+* it is better modeled as provenance on a higher-level source, media, project, schema, or substrate node
+
+This rule also applies to source/media modeling. A file does not need two separate nodes just because it is both readable and visual.
+
+* If the knowledge object being cited is the file itself, prefer one `source` node.
+* If that same node carries a local image, PDF, audio, video, or other file, it may also carry the `media` facet and related `media_type` fields.
+* Use a separate `media` node only when the media object is distinct from the source object it previews, documents, depicts, or was derived from.
+
+The practical goal is simple: preserve the bytes, but only promote the files that carry real semantic weight.
 
 ---
 

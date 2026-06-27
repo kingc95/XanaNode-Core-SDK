@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-minimal-substrate-nodes-fragment-as-we-may-think-0004.json",
+  "title": "Examples / Minimal Substrate / Nodes / Fragment As We May Think 0004",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "A node record from examples/minimal-substrate.",
+  "artifact_path": "examples/minimal-substrate/nodes/fragment-as-we-may-think-0004.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/fragment-as-we-may-think-0004.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\r\n  \"id\": \"example.minimal:fragment/as-we-may-think-0004\",\r\n  \"title\": \"As We May Think Fragment 0004\",\r\n  \"type\": \"fragment\",\n  \"protocol_id\": \"example.minimal:fragment/as-we-may-think-0004\",\n  \"content_id\": \"sha256:example-as-we-may-think-fragment-0004\",\n  \"version_id\": \"sha256:example-as-we-may-think-fragment-0004\",\n  \"importance\": 4,\r\n  \"summary\": \"An addressable fragment of the source used to demonstrate stable fragment references and transclusion.\",\n  \"source_node\": \"example.minimal:source/as-we-may-think\",\n  \"source_content_id\": \"sha256:example-as-we-may-think-source\",\n  \"source_version_id\": \"git:8e47e70:examples/minimal-substrate/nodes/source-as-we-may-think.json\",\n  \"fragment_id\": \"0004\",\n  \"tumbler\": \"example.minimal:source/as-we-may-think@git:8e47e70:examples/minimal-substrate/nodes/source-as-we-may-think.json#fragment/0004@sha256:example-as-we-may-think-fragment-0004\",\n  \"selector\": {\n    \"type\": \"TextQuoteSelector\",\n    \"value\": \"associative-trails-discussion\",\n    \"exact\": \"associative trails\"\n  },\n  \"rights_status\": \"copyrighted\",\r\n  \"created_by\": \"example.minimal:person/example-maintainer\",\r\n  \"created_at\": \"2026-01-01T00:00:00Z\",\r\n  \"relationships\": [\r\n    {\r\n      \"id\": \"example.minimal:rel/fragment-derived-from-source\",\r\n      \"type\": \"derived_from\",\r\n      \"target\": \"example.minimal:source/as-we-may-think\",\r\n      \"direction\": \"outgoing\"\r\n    },\r\n    {\r\n      \"id\": \"example.minimal:rel/essay-transcludes-fragment\",\r\n      \"type\": \"transcludes\",\n      \"source\": \"example.minimal:essay/relationship-navigation-intro\",\r\n      \"direction\": \"incoming\"\r\n    }\r\n  ]\r\n}\r\n",
+  "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/fragment-as-we-may-think-0004.json",
+  "content_id": "sha256:f0c4f8b1ac22a733c1893242413d6970f5f2734f15f7a66bd09cb8bccc8116fe",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/fragment-as-we-may-think-0004.json",
+    "method": "archive",
+    "content_id": "sha256:f0c4f8b1ac22a733c1893242413d6970f5f2734f15f7a66bd09cb8bccc8116fe",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-governance-versioning-policy.md",
+  "title": "Governance / Versioning Policy",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "A governance document covering Versioning Policy.",
+  "artifact_path": "governance/versioning-policy.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/versioning-policy.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# Versioning Policy\n\nXanaNode protocol files use semantic versioning where practical.\n\n- Patch versions fix wording or validation mistakes.\n- Minor versions add compatible types, fields, or examples.\n- Major versions change compatibility expectations.\n\nSchemas should be versioned independently from individual substrates.\n\nSubstrates should declare which core schema version they target.\n\nSubstrate history should be tracked in Git. Protocol version fields describe schema compatibility; Git commits describe concrete substrate revisions.\n\nExample:\n\n```json\n{\n  \"schema_version\": \"xananode-core@0.5.0\"\n}\n```\n\nBreaking changes should go through the proposal process.\n",
+  "asset_path": "assets/raw/protocol/governance/versioning-policy.md",
+  "content_id": "sha256:64cb4a5db286236b931f23c09d99ea99e00319efea5e9dbe4cd850c1f331eb96",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/governance/versioning-policy.md",
+    "method": "archive",
+    "content_id": "sha256:64cb4a5db286236b931f23c09d99ea99e00319efea5e9dbe4cd850c1f331eb96",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

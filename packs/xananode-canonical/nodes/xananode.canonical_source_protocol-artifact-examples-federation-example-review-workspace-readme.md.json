@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-examples-federation-example-review-workspace-readme.md",
+  "title": "Examples / Federation Example / Review Workspace / README",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "The README for Examples / Federation Example / Review Workspace.",
+  "artifact_path": "examples/federation-example/review-workspace/README.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/README.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# Federation Review Workspace\n\nThis example is the temporary review view a XanaNode tool can expose after mounting both federation example substrates together.\n\n- It keeps `example.researcher_a:concept/knowledge-substrate` and `example.researcher_b:concept/memory-substrate` as separate nodes.\n- It makes their `possible_match` overlap visible instead of silently collapsing them.\n- It adds a short trail and review concept so the mounted result can be opened as a real substrate, not only read as reports.\n\nThis is not the only possible review projection. It is one valid example of the non-destructive merge state that sits between \"independently authored substrates\" and \"human-approved permanent merge.\"\n",
+  "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/README.md",
+  "content_id": "sha256:c87b1eda9dae756819033542c0979ef41f1b54bd61f17340433b330d12c8228a",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/README.md",
+    "method": "archive",
+    "content_id": "sha256:c87b1eda9dae756819033542c0979ef41f1b54bd61f17340433b330d12c8228a",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

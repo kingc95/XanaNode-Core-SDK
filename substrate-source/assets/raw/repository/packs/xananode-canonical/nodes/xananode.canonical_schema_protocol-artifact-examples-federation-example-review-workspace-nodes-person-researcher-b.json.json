@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-nodes-person-researcher-b.json",
+  "title": "Examples / Federation Example / Review Workspace / Nodes / Person Researcher B",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "A node record from examples/federation-example/review-workspace.",
+  "artifact_path": "examples/federation-example/review-workspace/nodes/person-researcher-b.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/person-researcher-b.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.researcher_b:person/researcher-b\",\n  \"title\": \"Researcher B\",\n  \"type\": \"person\",\n  \"importance\": 3,\n  \"summary\": \"The local actor responsible for assertions in federation example substrate B.\",\n  \"created_at\": \"2026-01-01T00:00:00Z\",\n  \"relationships\": []\n}\n",
+  "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/nodes/person-researcher-b.json",
+  "content_id": "sha256:4c3a0ed24483293e21b257d73c47759c224b7e0b5207690cf3e75343ab410f82",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/nodes/person-researcher-b.json",
+    "method": "archive",
+    "content_id": "sha256:4c3a0ed24483293e21b257d73c47759c224b7e0b5207690cf3e75343ab410f82",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:concept/non-destructive-merge-review",
+  "title": "Non-Destructive Merge Review",
+  "type": "concept",
+  "subtype": "federation_pattern",
+  "importance": 5,
+  "summary": "A federation pass should surface overlap, compatibility, and candidate mappings without silently collapsing distinct local nodes.",
+  "content": "XanaNode merge behavior is review-first. A federation pass can detect overlap, record possible matches, score compatibility, and show a structural diff without pretending two authors meant exactly the same thing. That is why merge reports, compatibility reports, and diffs are protocol artifacts in their own right: they let tools expose the overlap before any permanent collapse or absorption happens.",
+  "relationships": []
+}

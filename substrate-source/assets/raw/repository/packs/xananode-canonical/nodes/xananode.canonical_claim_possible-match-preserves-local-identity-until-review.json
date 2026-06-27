@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:claim/possible-match-preserves-local-identity-until-review",
+  "title": "A possible match preserves local identity until review",
+  "type": "claim",
+  "subtype": "federation_claim",
+  "importance": 5,
+  "summary": "Overlap can be recorded as a possible match while both local concepts remain intact pending human review.",
+  "content": "Knowledge Substrate and Memory Substrate are similar enough to map but not safe to collapse automatically. The merge report records a possible match, the compatibility report says the two substrates can be analyzed together, and the diff records the added nodes and relationships. None of those artifacts overwrites either author's local node. That is the intended merge posture.",
+  "relationships": []
+}

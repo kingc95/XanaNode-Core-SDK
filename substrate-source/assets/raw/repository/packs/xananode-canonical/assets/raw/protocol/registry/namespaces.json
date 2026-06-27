@@ -25,12 +25,6 @@
       "example": "../examples/minimal-substrate/"
     },
     {
-      "id": "example.museum",
-      "name": "Museum Extension Example Namespace",
-      "description": "Namespace used by the custom extension example substrate.",
-      "example": "../examples/custom-extension-substrate/"
-    },
-    {
       "id": "example.researcher_a",
       "name": "Federation Example A Namespace",
       "description": "Namespace used by the first independently authored federation example substrate.",

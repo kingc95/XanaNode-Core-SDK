@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-examples-readme.md",
+  "title": "Examples / README",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "The README for Examples.",
+  "artifact_path": "examples/README.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/README.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# XanaNode Examples\n\nThese examples are protocol examples, not full applications.\n\nThey show how a substrate can declare a namespace, define nodes, create typed relationships, and produce a federation merge report.\n\n## Examples\n\n- `minimal-substrate/` - the smallest useful XanaNode substrate.\n- `federation-example/` - two independently authored substrates plus a merge report.\n\nThe examples intentionally use JSON files instead of a specific CMS, static-site generator, database, or graph renderer. Implementations may store the same structures in Markdown front matter, a database, RDF, graph stores, or other formats.\n",
+  "asset_path": "assets/raw/protocol/examples/README.md",
+  "content_id": "sha256:acf9a69904b1b6a8d1ed3e301347ee4f7f261c5daee9dfc01628a6cc5a08a76d",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/README.md",
+    "method": "archive",
+    "content_id": "sha256:06ecf825c7fb006ddd5df353c152e3c00aa0c47bb498ecee1f60f11068139a80",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

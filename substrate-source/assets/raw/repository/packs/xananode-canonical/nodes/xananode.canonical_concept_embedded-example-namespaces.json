@@ -1,0 +1,10 @@
+{
+  "id": "xananode.canonical:concept/embedded-example-namespaces",
+  "title": "Embedded Example Namespaces",
+  "type": "concept",
+  "subtype": "composition_pattern",
+  "importance": 4,
+  "summary": "The canonical substrate carries small embedded teaching namespaces directly inside its own bundle without pretending they are live mounted external substrates.",
+  "content": "The canonical substrate includes preserved namespaced records from example.minimal, example.researcher_a, and example.researcher_b. They are embedded so readers and tools can inspect small substrate structure and federation patterns in one portable bundle. That is different from the real stack-layer substrate sources, which are represented as independently versioned federation targets.",
+  "relationships": []
+}

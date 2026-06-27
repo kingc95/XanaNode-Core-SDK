@@ -4,7 +4,7 @@ This directory is a generated snapshot copied from the sibling canonical substra
 
 - Source of truth: `../XanaNode-Canonical-Substrate`
 - Namespace: `xananode.canonical`
-- Refreshed at: `2026-06-25T14:22:43.061Z`
+- Refreshed at: `2026-06-27T07:05:50.167Z`
 
 Do not edit this fixture directly.
 

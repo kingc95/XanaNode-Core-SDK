@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-specs-tumbler-addressing.md",
+  "title": "Specs / Tumbler Addressing",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 4,
+  "summary": "A protocol specification covering Tumbler Addressing.",
+  "artifact_path": "specs/tumbler-addressing.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/tumbler-addressing.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# Tumbler Addressing\r\n\r\nTumbler addressing refers to persistent, location-independent addressing of knowledge objects and fragments.\r\n\r\nThe goal is to address a thing even if:\r\n\r\n- files move\r\n- folders change\r\n- URLs change\r\n- renderers change\r\n- the substrate is mirrored or federated\r\n\r\nXanaNode begins with stable node IDs and a minimal fragment addressing profile.\r\n\r\n## Address Profile\r\n\r\nNode addresses use:\r\n\r\n```text\r\n<namespace>:<node-kind>/<local-id>\r\n```\r\n\r\nVersioned node addresses add an immutable version identity:\n\n```text\n<namespace>:<node-kind>/<local-id>@<version-id>\n```\n\nFragment addresses append a fragment selector and must preserve both the source node version and the fragment version:\n\n```text\n<namespace>:<node-kind>/<local-id>@<source-version-id>#fragment/<fragment-id>@<fragment-version-id>\n```\n\r\nRules:\r\n\r\n- `namespace` is a registered namespace such as `xananode` or `example.minimal`.\r\n- `node-kind` is the node type family used in the substrate path, such as `source`, `claim`, `concept`, `essay`, or `fragment`.\r\n- `local-id` is stable within the namespace.\n- `source-version-id` identifies the exact source node version being addressed, such as a Git commit/path identity or immutable content ID.\n- `fragment-id` is stable within the addressed node.\n- `fragment-version-id` identifies the exact fragment extraction/version, usually a content hash or generated fragment revision ID.\n- Fragment nodes must store `source_node`, `source_version_id`, `source_content_id`, `fragment_id`, `content_id`, `version_id`, and `tumbler`.\n- A `tumbler` field must preserve the full versioned node or fragment address when a record depends on persistent addressing.\n\r\nExamples:\r\n\r\n```text\r\nexample.minimal:concept/knowledge-substrate\nexample.minimal:source/as-we-may-think@git:8e47e70:examples/minimal-substrate/nodes/source-as-we-may-think.json#fragment/0004@sha256:example-as-we-may-think-fragment-0004\n```\n\nUnversioned node addresses are stable identities. Versioned node and fragment tumblers are fixed references to an exact historical chunk. A transclusion should use the versioned fragment tumbler, not the floating node identity.\n\n## Selector Granularity\n\nThe tumbler gives the durable address. The selector explains how the chunk was found inside the source.\n\nAcross the protocol, selectors are allowed to be more granular than a paragraph block:\n\n- `TextQuoteSelector` for an exact quoted span with optional prefix/suffix context\n- `TextPositionSelector` for character offsets inside a source version\n- `RangeSelector` for generic start/end ranges\n- `FragmentSelector` for a stable local fragment id\n- `MediaFragmentSelector` or `TimecodeRangeSelector` for audio/video segments, image regions, or other media-native chunking\n\nFor time-based media, the current interoperable shape is:\n\n```json\n{\n  \"type\": \"TimecodeRangeSelector\",\n  \"unit\": \"ms\",\n  \"start_ms\": 12340,\n  \"end_ms\": 18750,\n  \"start_timecode\": \"00:00:12.340\",\n  \"end_timecode\": \"00:00:18.750\"\n}\n```\n\nFor text or structured documents, the selector may instead use:\n\n```json\n{\n  \"type\": \"RangeSelector\",\n  \"unit\": \"word\",\n  \"start\": 120,\n  \"end\": 135\n}\n```\n\nThat means XanaNode's equivalent of \"start at this exact word\" is not a different address family. It is the same fragment tumbler plus a selector precise enough to identify the span within that specific source version.\n\nThis profile is intentionally small. Future versions may add richer selectors, byte ranges, media regions, and additional revision systems without invalidating these base addresses.\n",
+  "asset_path": "assets/raw/protocol/specs/tumbler-addressing.md",
+  "content_id": "sha256:5b621f0f1c8861b7a852efb7d128070bc8b8569a6325e7a067a1b90854c6bd65",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/tumbler-addressing.md",
+    "method": "archive",
+    "content_id": "sha256:5b2d89d2734577c4d07e02c7a9b7fcaa173484c7351f89ff7159c07547222047",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

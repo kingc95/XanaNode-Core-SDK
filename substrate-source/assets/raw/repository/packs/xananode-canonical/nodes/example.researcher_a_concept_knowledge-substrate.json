@@ -1,0 +1,12 @@
+{
+  "id": "example.researcher_a:concept/knowledge-substrate",
+  "title": "Knowledge Substrate",
+  "type": "concept",
+  "importance": 4,
+  "summary": "A structure for preserving relationships among knowledge objects.",
+  "aliases": [
+    "Memory Substrate",
+    "Relationship-Preserving Knowledge Structure"
+  ],
+  "relationships": []
+}

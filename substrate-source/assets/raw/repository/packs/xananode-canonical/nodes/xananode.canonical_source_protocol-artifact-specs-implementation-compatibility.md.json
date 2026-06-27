@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-specs-implementation-compatibility.md",
+  "title": "Specs / Implementation Compatibility",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 4,
+  "summary": "A protocol specification covering Implementation Compatibility.",
+  "artifact_path": "specs/implementation-compatibility.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/implementation-compatibility.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# Implementation Compatibility\n\nAn implementation may describe itself as XanaNode-compatible when it validates, emits, imports, or projects XanaNode protocol artifacts according to the canonical specification and registries.\n\nImplementations should identify themselves clearly and reference the canonical specification:\n\n```text\nThis project is a XanaNode-compatible implementation.\nCanonical specification: https://github.com/kingc95/XanaNode\n```\n\nIf the implementation supports only part of the protocol, it should say so:\n\n```text\nThis project is a partial XanaNode-compatible renderer for mounted substrate packs.\n```\n\nImplementations should not imply they are the canonical XanaNode project unless they are maintained as part of the canonical project. Compatibility means interoperability, not ownership.\n\nRecommended metadata:\n\n```json\n{\n  \"implements\": \"xananode-protocol\",\n  \"compatibility\": \"xananode-compatible\",\n  \"specification\": \"https://github.com/kingc95/XanaNode\",\n  \"supported_artifacts\": [\"substrate.json\", \"nodes.json\", \"relationships.json\"]\n}\n```\n\nThis convention supports legal attribution, community attribution, brand recognition, and independent federation.\n\n",
+  "asset_path": "assets/raw/protocol/specs/implementation-compatibility.md",
+  "content_id": "sha256:ae0a610b3ab7207f0daa026baa104b1b95aaf85b96634b0fdf44a738a6b7de09",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/specs/implementation-compatibility.md",
+    "method": "archive",
+    "content_id": "sha256:ae0a610b3ab7207f0daa026baa104b1b95aaf85b96634b0fdf44a738a6b7de09",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

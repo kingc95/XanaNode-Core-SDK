@@ -337,16 +337,17 @@ export function analyzeSubstrateIntake(substrate = {}, incoming = {}, options = 
     const incomingId = protocolIdForNode(incomingNode);
     const incomingTerms = nodeComparisonTerms(incomingNode);
     for (const existing of existingTerms) {
-      const score = incomingId && incomingId === existing.id ? 1 : overlapScore(incomingTerms, existing.terms);
+      const exactIdMatch = Boolean(incomingId && incomingId === existing.id);
+      const score = exactIdMatch ? 1 : overlapScore(incomingTerms, existing.terms);
       if (score >= (options.mergeCandidateThreshold || 0.78)) {
         mergeCandidates.push({
-          kind: score === 1 ? "same_id" : "possible_same_entity",
+          kind: exactIdMatch ? "same_id" : "possible_same_entity",
           existing: existing.id,
           incoming: incomingId,
           existing_title: existing.node.title,
           incoming_title: incomingNode.title,
           confidence: score,
-          reason: score === 1
+          reason: exactIdMatch
             ? "Incoming node has the same protocol id as an existing node."
             : "Incoming node title or alias closely matches an existing node."
         });

@@ -4,6 +4,10 @@
   "type": "concept",
   "importance": 4,
   "summary": "A system for preserving context, lineage, and navigable memory over time.",
+  "aliases": [
+    "Knowledge Substrate",
+    "Relationship-Preserving Memory Structure"
+  ],
   "relationships": [
     {
       "id": "example.researcher_b:rel/memory-substrate-possible-match-knowledge-substrate",

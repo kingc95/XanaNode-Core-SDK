@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-federation-example-review-workspace-substrate.json",
+  "title": "Examples / Federation Example / Review Workspace / Substrate",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "The substrate manifest for the federation review workspace.",
+  "artifact_path": "examples/federation-example/review-workspace/substrate.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/substrate.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\n  \"id\": \"example.merge\",\n  \"name\": \"Federation Review Workspace\",\n  \"version\": \"0.1.0\",\n  \"namespace\": \"example.merge\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/kingc95/xananode.git\",\n    \"default_branch\": \"main\",\n    \"path\": \"examples/federation-example/review-workspace\"\n  },\n  \"schema_version\": \"xananode-core@0.5.0\",\n  \"imports\": [\n    \"xananode:core\"\n  ]\n}\n",
+  "asset_path": "assets/raw/protocol/examples/federation-example/review-workspace/substrate.json",
+  "content_id": "sha256:a4da50a7d01373f32f20ebd89c0aba37b4cdac9d352714ad3f9d2d5e44021657",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/review-workspace/substrate.json",
+    "method": "archive",
+    "content_id": "sha256:a4da50a7d01373f32f20ebd89c0aba37b4cdac9d352714ad3f9d2d5e44021657",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

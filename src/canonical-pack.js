@@ -14,6 +14,34 @@ const schemaRoot = path.join(packageRoot, "schemas");
 const registryRoot = path.join(packageRoot, "registry");
 const protocolRoot = path.join(packageRoot, "vendor", "xananode-protocol");
 const assertedAt = "2026-06-19T00:00:00.000Z";
+const staleSyntheticRelationshipIds = new Set([
+  "xananode.canonical:rel/claim-fragments-can-address-ranges-timecodes-and-media-regions-responds_to-claim-copy-paste-breaks-lineage",
+  "xananode.canonical:rel/project-xananode-hugo-theme-uses-source-protocol-artifact-examples-minimal-substrate-artifact-3",
+  "xananode.canonical:rel/project-xananode-protocol-uses-source-protocol-artifact-examples-minimal-substrate-artifact-4",
+  "xananode.canonical:rel/project-xananode-protocol-uses-source-protocol-artifact-governance-artifact-3",
+  "xananode.canonical:rel/project-xananode-protocol-uses-source-protocol-artifact-registry-artifact-1",
+  "xananode.canonical:rel/project-xananode-protocol-uses-source-protocol-artifact-schemas-artifact-0",
+  "xananode.canonical:rel/project-xananode-protocol-uses-source-protocol-artifact-specs-artifact-2"
+]);
+
+function isSuppressedExampleRecord(record) {
+  const values = [
+    record?.id,
+    record?.source,
+    record?.target,
+    record?.artifact_path,
+    record?.source_url,
+    record?.summary
+  ].map((value) => String(value || ""));
+  return values.some((value) =>
+    value.startsWith("example.museum:")
+    || value.includes("example.museum")
+    || value.includes("custom-extension-substrate")
+    || value.includes("Museum Extension Example Namespace")
+    || value.includes("node-types.example.museum.json")
+    || value.includes("relationship-types.example.museum.json")
+  );
+}
 
 function asArray(value) {
   if (value === undefined || value === null) return [];
@@ -22,7 +50,7 @@ function asArray(value) {
 
 function safeNodeFileName(node) {
   const id = String(node.id || node.protocol_id || node.title || "node");
-  return `${id.replace(/^[^:]+:/, "").replace(/[^A-Za-z0-9_.-]+/g, "_")}.json`;
+  return `${id.replace(/[^A-Za-z0-9_.-]+/g, "_")}.json`;
 }
 
 function cleanBundledRecord(record) {
@@ -38,21 +66,34 @@ function isGeneratedCanonicalSyntheticRecord(record) {
     || id.startsWith("xananode.canonical:question/")
     || id.startsWith("xananode.canonical:rel/question-")
     || id === "xananode.canonical:concept/self-federating-stack"
+    || id === "xananode.canonical:concept/addressable-fragment-selectors"
     || id === "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates"
     || id === "xananode.canonical:claim/canonical-assembles-federated-stack-layer-substrates"
+    || id === "xananode.canonical:claim/fragments-can-address-ranges-timecodes-and-media-regions"
+    || id === "xananode.canonical:concept/non-destructive-merge-review"
+    || id === "xananode.canonical:claim/possible-match-preserves-local-identity-until-review"
+    || id === "xananode.canonical:trail/federation-merge-proof"
     || id === "xananode.canonical:trail/federated-stack-proof"
     || source === "xananode.canonical:concept/self-federating-stack"
+    || source === "xananode.canonical:concept/addressable-fragment-selectors"
     || source === "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates"
     || source === "xananode.canonical:claim/canonical-assembles-federated-stack-layer-substrates"
+    || source === "xananode.canonical:claim/fragments-can-address-ranges-timecodes-and-media-regions"
+    || source === "xananode.canonical:concept/non-destructive-merge-review"
+    || source === "xananode.canonical:claim/possible-match-preserves-local-identity-until-review"
+    || source === "xananode.canonical:trail/federation-merge-proof"
     || source === "xananode.canonical:trail/federated-stack-proof"
     || id.includes("-publishes-source-federated-substrate-")
-    || target === "xananode.canonical:concept/federated-knowledge-substrates";
+    || id === "xananode.canonical:rel/claim-fragments-can-address-ranges-timecodes-and-media-regions-responds_to-claim-copy-paste-breaks-lineage";
 }
 
 function duplicatePreference(node) {
   const id = String(node?.id || "");
   const subtype = String(node?.subtype || "");
+  const type = String(node?.type || "");
   if (subtype === "canonical_schema_record") return 80;
+  if (id.includes("protocol-artifact-") && type === "media") return 78;
+  if (id.includes("protocol-artifact-") && type === "source") return 76;
   if (id.includes(":source/repository-")) return 75;
   if (subtype === "git_repository") return 70;
   if (subtype === "validation_rule") return 45;
@@ -62,7 +103,11 @@ function duplicatePreference(node) {
 function duplicateIdentityKey(node) {
   const title = String(node?.title || "").trim().toLowerCase();
   const type = String(node?.type || "").trim().toLowerCase();
+  const artifactPath = String(node?.artifact_path || "").trim().toLowerCase();
   if (!title || !type) return "";
+  if (artifactPath && String(node?.id || "").includes("protocol-artifact-")) {
+    return `protocol-artifact::${artifactPath}`;
+  }
   if (type === "schema" && String(node?.source_url || "").includes("github.com/kingc95/XanaNode-Protocol/blob/main/")) {
     return `${type}::${title}`;
   }
@@ -464,18 +509,190 @@ function protocolRawFileKind(relativePath) {
   };
 }
 
+function protocolArtifactReferenceId(relativePath) {
+  const clean = String(relativePath || "").replace(/\\/g, "/").replace(/^\.\.\//, "").replace(/\/+$/, "");
+  if (!clean) return "";
+  const ext = path.extname(clean).toLowerCase();
+  if (!ext) {
+    return `xananode.canonical:schema/protocol-artifact-${registrySlug(clean)}`;
+  }
+  const kind = protocolRawFileKind(clean);
+  return `xananode.canonical:${kind.type}/protocol-artifact-${registrySlug(clean)}`;
+}
+
+function shouldElevateProtocolRawFileToNode(relativePath) {
+  const clean = String(relativePath || "").replace(/\\/g, "/");
+  if (["README.md", "LICENSE.md", "NOTICE", "TRADEMARK.md"].includes(clean)) return true;
+  if (
+    clean.startsWith("contexts/") ||
+    clean.startsWith("examples/") ||
+    clean.startsWith("governance/") ||
+    clean.startsWith("proposals/") ||
+    clean.startsWith("registry/") ||
+    clean.startsWith("schemas/") ||
+    clean.startsWith("specs/")
+  ) {
+    return true;
+  }
+  if (clean === "media/images/xananode-icon.svg") return true;
+  return false;
+}
+
 function protocolRawFileTitle(relativePath) {
   const clean = String(relativePath || "").replace(/\\/g, "/");
   if (clean === "README.md") return "XanaNode Protocol README";
   if (clean === "LICENSE.md") return "XanaNode Protocol License";
   if (clean === "TRADEMARK.md") return "XanaNode Trademark Policy";
   if (clean === "NOTICE") return "XanaNode Protocol Notice";
-  const withoutExt = clean.replace(/\.[^.]+$/, "");
-  return withoutExt
+  return clean
     .split("/")
     .filter(Boolean)
-    .map((part) => part.replace(/[-_]+/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase()))
+    .map((part) => {
+      let label = part;
+      const versionMatch = label.match(/\.v(\d+\.\d+\.\d+)(?=\.|$)/i);
+      const versionLabel = versionMatch ? ` v${versionMatch[1]}` : "";
+      label = label.replace(/\.schema\.json$/i, " Schema");
+      label = label.replace(/\.context\.jsonld$/i, " Context");
+      label = label.replace(/\.v\d+\.\d+\.\d+(?=\.|$)/i, "");
+      label = label.replace(/\.jsonld$/i, "");
+      label = label.replace(/\.json$/i, "");
+      label = label.replace(/\.md$/i, "");
+      label = label.replace(/[._-]+/g, " ");
+      label = label.replace(/\bXananode\b/g, "XanaNode");
+      label = label.replace(/\bJsonld\b/g, "JSON-LD");
+      label = label.replace(/\bReadme\b/g, "README");
+      label = label.replace(/\bRo Crate\b/g, "RO-Crate");
+      label = label.replace(/\bXml\b/g, "XML");
+      label = label.replace(/\bJson\b/g, "JSON");
+      label = label.replace(/\bLd\b/g, "LD");
+      label = label.replace(/\s+/g, " ").trim();
+      label = label.replace(/\b\w/g, (letter) => letter.toUpperCase());
+      label = label.replace(/\bReadme\b/g, "README");
+      label = label.replace(/\bJson\b/g, "JSON");
+      label = label.replace(/\bLd\b/g, "LD");
+      label = label.replace(/\bXml\b/g, "XML");
+      label = label.replace(/\bRo Crate\b/g, "RO-Crate");
+      label = label.replace(/\bXananode\b/g, "XanaNode");
+      return `${label}${versionLabel}`.trim();
+    })
     .join(" / ");
+}
+
+function canonicalSchemaTitle(schemaId) {
+  let label = String(schemaId || "")
+    .replace(/[._-]+/g, " ")
+    .trim()
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+  label = label.replace(/\bXananode\b/g, "XanaNode");
+  label = label.replace(/\bJsonld\b/g, "JSON-LD");
+  label = label.replace(/\bJson\b/g, "JSON");
+  label = label.replace(/\bLd\b/g, "LD");
+  return `${label} Schema`;
+}
+
+function protocolRawFileSummary(relativePath) {
+  const clean = String(relativePath || "").replace(/\\/g, "/");
+  const title = protocolRawFileTitle(clean);
+  const ext = path.extname(clean).toLowerCase();
+  const basename = clean.split("/").at(-1) || clean;
+  const titleLeaf = title.split(" / ").at(-1) || title;
+
+  if (clean === "README.md") return "The main human-readable overview of the XanaNode protocol.";
+  if (clean === "LICENSE.md") return "The license document describing how XanaNode protocol materials may be used and shared.";
+  if (clean === "TRADEMARK.md") return "The trademark policy describing how the XanaNode name and logo may be referenced.";
+  if (clean === "NOTICE") return "The notice file summarizing protocol copyright, licensing, and trademark attribution.";
+  if (clean === "contexts/xananode.context.jsonld") return "The JSON-LD context that maps XanaNode terms into linked-data form.";
+  if (clean === "media/images/xananode-icon.svg") return "The canonical XanaNode icon asset used across official projections and tools.";
+
+  if (clean.startsWith("examples/")) {
+    if (clean.endsWith("/README.md")) return `The README for ${title.replace(" / README", "")}.`;
+    if (clean.endsWith("substrate-a/substrate.json")) return "The substrate manifest for federation example substrate A.";
+    if (clean.endsWith("substrate-b/substrate.json")) return "The substrate manifest for federation example substrate B.";
+    if (clean.endsWith("review-workspace/substrate.json")) return "The substrate manifest for the federation review workspace.";
+    if (clean.endsWith("minimal-substrate/substrate.json")) return "The substrate manifest for the minimal substrate example.";
+    if (clean.endsWith("/substrate.json")) return `The substrate manifest for ${title.replace(" / Substrate", "")}.`;
+    if (clean.endsWith("/relationships.json")) return `The relationship list for ${title.replace(" / Relationships", "")}.`;
+    if (clean.includes("/nodes/") && ext === ".json") return `A node record from ${clean.split("/nodes/")[0]}.`;
+    if (clean.endsWith("compatibility-report.json")) return "The compatibility report for the federation example.";
+    if (clean.endsWith("merge-report.json")) return "The merge report for the federation example.";
+    if (clean.endsWith("substrate-diff.json")) return "The structural diff produced by comparing the federation example substrates.";
+    if (clean.endsWith("author-profile.json")) return "The example author profile used by the minimal substrate fixture.";
+    if (clean.endsWith("ro-crate-metadata.json")) return "The RO-Crate companion metadata for the minimal substrate example.";
+    return `An example protocol artifact used by ${title.replace(/\s+\/\s+/g, " / ")}.`;
+  }
+
+  if (clean.startsWith("schemas/")) {
+    if (clean.includes(".schema.")) {
+      if (/\.schema\.v\d+\.\d+\.\d+\.json$/i.test(basename)) {
+        return `The JSON Schema for ${titleLeaf}.`;
+      }
+      const schemaName = basename
+        .replace(/\.schema\.json$/i, "")
+        .replace(/[-_]+/g, " ")
+        .trim()
+        .toLowerCase();
+      return `The JSON Schema for the ${schemaName}.`;
+    }
+    return `A canonical schema or registry artifact published as ${titleLeaf}.`;
+  }
+
+  if (clean.startsWith("specs/")) {
+    return `A protocol specification covering ${titleLeaf}.`;
+  }
+
+  if (clean.startsWith("proposals/")) {
+    return `A XanaNode proposal covering ${titleLeaf}.`;
+  }
+
+  if (clean.startsWith("governance/")) {
+    return `A governance document covering ${titleLeaf}.`;
+  }
+
+  if (clean.startsWith("registry/")) {
+    return `A registry artifact covering ${titleLeaf}.`;
+  }
+
+  if (ext === ".json" || ext === ".jsonld" || ext === ".webmanifest") {
+    return `A machine-readable protocol artifact published as ${title}.`;
+  }
+
+  return `A protocol source artifact published as ${title}.`;
+}
+
+function protocolArtifactGroupSummary(group) {
+  const clean = String(group || "").replace(/\\/g, "/").replace(/\/+$/, "");
+  if (!clean || clean === "root") {
+    return "The root protocol files shipped with XanaNode, including the main overview and legal policy files.";
+  }
+  if (clean === "contexts") return "The linked-data context files published by the XanaNode protocol.";
+  if (clean === "examples") return "The bundled protocol examples used to teach substrate structure, federation, and review behavior.";
+  if (clean === "governance") return "The governance documents that define how the protocol evolves and how disputes, extensions, and versioning are handled.";
+  if (clean === "proposals") return "The proposal records for protocol changes, experiments, and accepted design decisions.";
+  if (clean === "registry") return "The registry artifacts that list namespaces, canonical schemas, federation targets, and known implementations.";
+  if (clean === "schemas") return "The canonical schemas and machine-readable validation artifacts published by the XanaNode protocol.";
+  if (clean === "specs") return "The protocol specifications describing substrate behavior, interoperability, federation, and compatibility.";
+  return `The protocol artifacts published under ${clean}/.`;
+}
+
+function protocolRawFileDocumentsSummary(relativePath) {
+  const clean = String(relativePath || "").replace(/\\/g, "/");
+  const title = protocolRawFileTitle(clean);
+
+  if (clean === "README.md") return "The main protocol README belongs to the published XanaNode artifact set.";
+  if (clean === "LICENSE.md") return "The protocol license belongs to the published XanaNode artifact set.";
+  if (clean === "TRADEMARK.md") return "The trademark policy belongs to the published XanaNode artifact set.";
+  if (clean === "NOTICE") return "The protocol notice file belongs to the published XanaNode artifact set.";
+
+  if (clean.startsWith("schemas/")) return `${title} belongs to the published XanaNode schema set.`;
+  if (clean.startsWith("specs/")) return `${title} belongs to the published XanaNode specification set.`;
+  if (clean.startsWith("governance/")) return `${title} belongs to the published XanaNode governance set.`;
+  if (clean.startsWith("proposals/")) return `${title} belongs to the published XanaNode proposal set.`;
+  if (clean.startsWith("registry/")) return `${title} belongs to the published XanaNode registry set.`;
+  if (clean.startsWith("examples/")) return `${title} belongs to the published XanaNode example set.`;
+  if (clean.startsWith("contexts/")) return `${title} belongs to the published XanaNode linked-data context set.`;
+  if (clean.startsWith("media/")) return `${title} belongs to the published XanaNode protocol media set.`;
+
+  return `${title} belongs to the published XanaNode protocol artifact set.`;
 }
 
 function readProtocolRawText(relativePath) {
@@ -957,7 +1174,7 @@ function buildProtocolMetadataRegistryNodes() {
       const nodeId = `xananode.canonical:schema/canonical-schema-${registrySlug(item.id)}`;
       nodes.push({
         id: nodeId,
-        title: `${String(item.id).replaceAll("-", " ")} Schema`.replace(/\b\w/g, (char) => char.toUpperCase()),
+        title: canonicalSchemaTitle(item.id),
         type: "schema",
         subtype: "canonical_schema_record",
         importance: item.id.includes("xananode") || item.id.startsWith("substrate") ? 5 : 4,
@@ -1127,18 +1344,9 @@ function buildSoftwareStackNodes(options = {}) {
 
     for (const [index, artifact] of (item.related_protocol_artifacts || []).entries()) {
       const artifactPath = String(artifact || "").replace(/^\.\.\//, "");
-      const artifactId = `xananode.canonical:schema/protocol-artifact-${registrySlug(artifactPath)}`;
-      nodes.push({
-        id: artifactId,
-        title: artifactPath || "Protocol artifact",
-        type: "schema",
-        subtype: "protocol_artifact",
-        importance: artifactPath.includes("schemas/") ? 4 : 3,
-        summary: `${item.name} references the protocol artifact ${artifactPath}.`,
-        artifact_path: artifactPath,
-        source_url: protocolSourceUrl(artifactPath),
-        relationships: []
-      });
+      if (!shouldElevateProtocolRawFileToNode(artifactPath)) continue;
+      const artifactId = protocolArtifactReferenceId(artifactPath);
+      if (!artifactId) continue;
       relationships.push(schemaRegistryRelationship(
         projectId,
         artifactId,
@@ -1233,8 +1441,8 @@ function buildStackFederationNodes() {
       type: "concept",
       subtype: "composition_pattern",
       importance: 4,
-      summary: "The canonical substrate carries several teaching/example namespaces directly inside its own bundle without pretending they are all live mounted external substrates.",
-      content: "The canonical substrate includes preserved namespaced records from example.minimal, example.museum, example.researcher_a, and example.researcher_b. These examples are embedded as part of the canonical teaching bundle so readers and tools can inspect federation patterns, extension patterns, claims, sources, trails, and possible-match mappings in one portable substrate. That is different from the real stack-layer substrate sources, which are represented as independently versioned federation targets.",
+      summary: "The canonical substrate carries small embedded teaching namespaces directly inside its own bundle without pretending they are live mounted external substrates.",
+      content: "The canonical substrate includes preserved namespaced records from example.minimal, example.researcher_a, and example.researcher_b. They are embedded so readers and tools can inspect small substrate structure and federation patterns in one portable bundle. That is different from the real stack-layer substrate sources, which are represented as independently versioned federation targets.",
       relationships: []
     },
     {
@@ -1243,8 +1451,18 @@ function buildStackFederationNodes() {
       type: "concept",
       subtype: "architecture_pattern",
       importance: 5,
-      summary: "The XanaNode stack demonstrates federation by treating its own major layers as independently versioned substrates that can still interoperate as one system.",
-      content: "XanaNode is not only a protocol with external federation examples. The stack itself is federated. Protocol, Core, Workspace, Studio, Mobile, Hugo, Canonical, Alphabet, and Lineage are all represented as distinct substrates or substrate targets with their own namespace, repository, transport shape, and governance path. The canonical bundle also carries embedded example namespaces for teaching and testing, but those are not the same thing as the real stack-layer substrate sources. Together, these two patterns show that each layer can stand on its own while the layers can still be mounted, compared, validated, projected, and carried together without collapsing into one monolithic blob.",
+      summary: "The XanaNode stack is federated because its major layers are represented as independently versioned substrates that can still interoperate as one system.",
+      content: "The stack itself is federated. Protocol, Core, Workspace, Studio, Mobile, Hugo, Canonical, Alphabet, and Lineage are all represented as distinct substrates or substrate targets with their own namespace, repository, transport shape, and governance path. The canonical bundle also carries embedded teaching namespaces for inspection and testing, but those are not the same thing as the real stack-layer substrate sources. Together, these patterns show that each layer can stand on its own while the layers can still be mounted, compared, validated, projected, and carried together without collapsing into one monolithic blob.",
+      relationships: []
+    },
+    {
+      id: "xananode.canonical:concept/addressable-fragment-selectors",
+      title: "Addressable Fragment Selectors",
+      type: "concept",
+      subtype: "method",
+      importance: 5,
+      summary: "Selectors carry the precise in-source chunking detail for a fragment, while the tumbler preserves the durable address of the exact source version and fragment version.",
+      content: "A XanaNode fragment is not limited to a paragraph block. The same tumbler model can point to a quoted sentence, a character range, a word range, a page region, an image region, or an audio/video time span.\n\nThe durable identity comes from the versioned fragment tumbler. The selector explains how the implementation found or preserved that exact span inside the source version. That is how XanaNode gets closer to Nelson's finer-grained reuse model without inventing a separate address family for each medium.",
       relationships: []
     },
     {
@@ -1253,7 +1471,7 @@ function buildStackFederationNodes() {
       type: "claim",
       subtype: "architectural_claim",
       importance: 5,
-      summary: "The major XanaNode layers are published as their own substrate sources, so the stack demonstrates federation by example rather than only by description.",
+      summary: "The major XanaNode layers are published as their own substrate sources, so the stack records federation in live substrate targets rather than only describing it in prose.",
       content: "Protocol, Core, Workspace, Studio, Mobile, and Hugo each publish or point to their own substrate source. The canonical substrate can therefore link to real substrate targets for the stack, not only to prose about the stack. This is a stronger proof than a diagram alone because each layer is addressable, versionable, and independently federatable.",
       relationships: []
     },
@@ -1273,8 +1491,38 @@ function buildStackFederationNodes() {
       type: "claim",
       subtype: "clarification_claim",
       importance: 5,
-      summary: "Example namespaces inside the canonical bundle are carried as embedded teaching records, while stack-layer substrate sources are represented as real federation targets.",
-      content: "The canonical bundle contains several kinds of composition at once. Example namespaces such as example.minimal, example.museum, example.researcher_a, and example.researcher_b are embedded inside the bundle for teaching, testing, and portable demonstration. By contrast, the Protocol, Core, Workspace, Studio, Mobile, and Hugo substrate entries point to real independently versioned substrate sources. That distinction matters because it tells readers what is bundled here and what exists as its own substrate outside the bundle.",
+      summary: "Embedded teaching namespaces inside the canonical bundle are different from the real stack-layer substrate sources represented as federation targets.",
+      content: "The canonical bundle contains several kinds of composition at once. Namespaces such as example.minimal, example.researcher_a, and example.researcher_b are embedded inside the bundle for teaching, testing, and portable inspection. By contrast, the Protocol, Core, Workspace, Studio, Mobile, and Hugo substrate entries point to real independently versioned substrate sources. That distinction matters because it tells readers what is bundled here and what exists as its own substrate outside the bundle.",
+      relationships: []
+    },
+    {
+      id: "xananode.canonical:claim/fragments-can-address-ranges-timecodes-and-media-regions",
+      title: "Fragments can address ranges, timecodes, and media regions",
+      type: "claim",
+      subtype: "definition",
+      importance: 5,
+      summary: "XanaNode fragments can point to granular spans such as quoted text, word ranges, timecoded audio/video segments, and other media-native chunks, not only paragraph blocks.",
+      content: "The protocol already separates durable addressing from extraction detail. The tumbler identifies the exact fragment and source version. The selector describes how to locate the chunk inside that source version. That lets a fragment represent a quoted sentence, a word or character range, a page region, or a timecoded media segment while preserving one interoperable transclusion model.",
+      relationships: []
+    },
+    {
+      id: "xananode.canonical:concept/non-destructive-merge-review",
+      title: "Non-Destructive Merge Review",
+      type: "concept",
+      subtype: "federation_pattern",
+      importance: 5,
+      summary: "A federation pass should surface overlap, compatibility, and candidate mappings without silently collapsing distinct local nodes.",
+      content: "XanaNode merge behavior is review-first. A federation pass can detect overlap, record possible matches, score compatibility, and show a structural diff without pretending two authors meant exactly the same thing. That is why merge reports, compatibility reports, and diffs are protocol artifacts in their own right: they let tools expose the overlap before any permanent collapse or absorption happens.",
+      relationships: []
+    },
+    {
+      id: "xananode.canonical:claim/possible-match-preserves-local-identity-until-review",
+      title: "A possible match preserves local identity until review",
+      type: "claim",
+      subtype: "federation_claim",
+      importance: 5,
+      summary: "Overlap can be recorded as a possible match while both local concepts remain intact pending human review.",
+      content: "Knowledge Substrate and Memory Substrate are similar enough to map but not safe to collapse automatically. The merge report records a possible match, the compatibility report says the two substrates can be analyzed together, and the diff records the added nodes and relationships. None of those artifacts overwrites either author's local node. That is the intended merge posture.",
       relationships: []
     },
     {
@@ -1285,6 +1533,72 @@ function buildStackFederationNodes() {
       importance: 5,
       summary: "A short trail showing that the XanaNode stack proves federation by publishing its own layers as interoperable substrates.",
       content: "Follow the stack from the protocol substrate into Core, then outward into Workspace, Studio, Mobile, and Hugo. The canonical substrate points to each real layer as a federated substrate source, while also carrying embedded example namespaces that teach the same federation patterns in a portable local bundle. Together these show that the stack is not one giant opaque application. It is a federation of layers that remain interoperable without surrendering identity.",
+      nodes: [
+        "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates",
+        "xananode.canonical:source/federated-substrate-xananode.protocol",
+        "xananode.canonical:source/federated-substrate-xananode.core"
+      ],
+      branches: [
+        {
+          after: "xananode.canonical:source/federated-substrate-xananode.core",
+          prompt: "Which downstream route do you want to follow from Core?",
+          choices: [
+            {
+              label: "Desktop authoring route",
+              summary: "Follow Core through Workspace into Studio and back to the canonical substrate.",
+              nodes: [
+                "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates",
+                "xananode.canonical:source/federated-substrate-xananode.protocol",
+                "xananode.canonical:source/federated-substrate-xananode.core",
+                "xananode.canonical:source/federated-substrate-xananode.workspace",
+                "xananode.canonical:source/federated-substrate-xananode.studio",
+                "xananode.canonical:source/federated-substrate-xananode.canonical"
+              ]
+            },
+            {
+              label: "Mobile capture route",
+              summary: "Follow Core through Workspace into Mobile and back to the canonical substrate.",
+              nodes: [
+                "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates",
+                "xananode.canonical:source/federated-substrate-xananode.protocol",
+                "xananode.canonical:source/federated-substrate-xananode.core",
+                "xananode.canonical:source/federated-substrate-xananode.workspace",
+                "xananode.canonical:source/federated-substrate-xananode.mobile",
+                "xananode.canonical:source/federated-substrate-xananode.canonical"
+              ]
+            },
+            {
+              label: "Public projection route",
+              summary: "Follow Core into Hugo and then to the canonical public projection.",
+              nodes: [
+                "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates",
+                "xananode.canonical:source/federated-substrate-xananode.protocol",
+                "xananode.canonical:source/federated-substrate-xananode.core",
+                "xananode.canonical:source/federated-substrate-xananode.hugo",
+                "xananode.canonical:source/federated-substrate-xananode.canonical"
+              ]
+            }
+          ]
+        }
+      ],
+      relationships: []
+    },
+    {
+      id: "xananode.canonical:trail/federation-merge-proof",
+      title: "Federation Merge Proof",
+      type: "trail",
+      subtype: "evidence_path",
+      importance: 5,
+      summary: "A short trail showing how XanaNode records overlap between two substrates without flattening their differences.",
+      content: "This trail walks through the federation example itself. Start with the two local concepts, follow the possible-match overlap, then inspect the merge report, compatibility report, and diff. The important point is that the protocol does not force one concept to replace the other. It makes the overlap explicit, reviewable, and preservable.",
+      nodes: [
+        "example.researcher_a:concept/knowledge-substrate",
+        "example.researcher_b:concept/memory-substrate",
+        "xananode.canonical:claim/possible-match-preserves-local-identity-until-review",
+        "xananode.canonical:schema/protocol-artifact-examples-federation-example-merge-report.json",
+        "xananode.canonical:schema/protocol-artifact-examples-federation-example-compatibility-report.json",
+        "xananode.canonical:schema/protocol-artifact-examples-federation-example-substrate-diff.json"
+      ],
       relationships: []
     }
   ];
@@ -1307,6 +1621,42 @@ function buildStackFederationNodes() {
       "xananode.canonical:concept/substrate-projection-layer",
       "supports",
       "The self-federating stack concept supports the idea that projection layers are only one part of a wider substrate ecosystem."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:concept/addressable-fragment-selectors",
+      "xananode.canonical:concept/xananode",
+      "explains",
+      "Addressable fragment selectors explain how XanaNode supports fine-grained reuse across many media."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:concept/non-destructive-merge-review",
+      "xananode.canonical:concept/self-federating-stack",
+      "explains",
+      "Non-destructive merge review explains how a self-federating stack can compare and combine substrates without forced collapse."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:claim/fragments-can-address-ranges-timecodes-and-media-regions",
+      "xananode.canonical:concept/addressable-fragment-selectors",
+      "supports",
+      "This claim supports the fragment selector concept."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:claim/possible-match-preserves-local-identity-until-review",
+      "xananode.canonical:concept/non-destructive-merge-review",
+      "supports",
+      "This claim supports the concept of non-destructive merge review."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:claim/possible-match-preserves-local-identity-until-review",
+      "xananode.canonical:concept/self-federating-stack",
+      "supports",
+      "This claim supports the broader self-federating stack concept."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:claim/fragments-can-address-ranges-timecodes-and-media-regions",
+      "xananode.canonical:claim/copy-paste-breaks-lineage",
+      "explains",
+      "Fine-grained fragment addressing helps explain one answer to the copy-paste lineage problem."
     ),
     schemaRegistryRelationship(
       "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates",
@@ -1361,6 +1711,48 @@ function buildStackFederationNodes() {
       "xananode.canonical:concept/embedded-example-namespaces",
       "supports",
       "The trail also supports the concept of embedded example namespaces."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:trail/federation-merge-proof",
+      "xananode.canonical:concept/non-destructive-merge-review",
+      "explains",
+      "The trail explains the idea of non-destructive merge review."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:trail/federation-merge-proof",
+      "xananode.canonical:claim/possible-match-preserves-local-identity-until-review",
+      "starts_with",
+      "The trail begins with the claim that possible matches preserve local identity until review."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:trail/federation-merge-proof",
+      "example.researcher_a:concept/knowledge-substrate",
+      "continues_to",
+      "The trail continues into Researcher A's local concept."
+    ),
+    schemaRegistryRelationship(
+      "example.researcher_a:concept/knowledge-substrate",
+      "example.researcher_b:concept/memory-substrate",
+      "possible_match",
+      "The federation example records a possible match between the two local concepts without collapsing them."
+    ),
+    schemaRegistryRelationship(
+      "example.researcher_b:concept/memory-substrate",
+      "xananode.canonical:schema/protocol-artifact-examples-federation-example-merge-report.json",
+      "documents",
+      "The merge report records the reviewable mapping between the two local concepts."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:schema/protocol-artifact-examples-federation-example-merge-report.json",
+      "xananode.canonical:schema/protocol-artifact-examples-federation-example-compatibility-report.json",
+      "continues_to",
+      "The merge review continues from the merge report to the compatibility report."
+    ),
+    schemaRegistryRelationship(
+      "xananode.canonical:schema/protocol-artifact-examples-federation-example-compatibility-report.json",
+      "xananode.canonical:schema/protocol-artifact-examples-federation-example-substrate-diff.json",
+      "continues_to",
+      "The merge review continues from the compatibility report to the structural diff."
     ),
     schemaRegistryRelationship(
       "xananode.canonical:trail/federated-stack-proof",
@@ -1438,13 +1830,7 @@ function buildStackFederationNodes() {
       "example.minimal:trail/start-here",
       "xananode.canonical:concept/embedded-example-namespaces",
       "demonstrates",
-      "The minimal example namespace demonstrates how a small teaching substrate can live inside the canonical bundle."
-    ),
-    schemaRegistryRelationship(
-      "example.museum:concept/memex",
-      "xananode.canonical:concept/embedded-example-namespaces",
-      "demonstrates",
-      "The museum example namespace demonstrates how extension-specific records can be embedded in the canonical bundle."
+      "The embedded minimal namespace records a small teaching substrate inside the canonical bundle."
     ),
     schemaRegistryRelationship(
       "example.researcher_a:concept/knowledge-substrate",
@@ -1585,6 +1971,7 @@ function buildProtocolRawFileNodes() {
   const files = listProtocolRawFiles();
 
   for (const relativePath of files) {
+    if (!shouldElevateProtocolRawFileToNode(relativePath)) continue;
     const top = relativePath.includes("/") ? relativePath.split("/")[0] : "root";
     const groupId = top === "root"
       ? "xananode.canonical:schema/protocol-artifact-root"
@@ -1597,9 +1984,7 @@ function buildProtocolRawFileNodes() {
         type: "schema",
         subtype: "protocol_artifact_group",
         importance: 3,
-        summary: top === "root"
-          ? "Root-level XanaNode protocol source files preserved inside the canonical substrate."
-          : `Protocol files under ${top}/ preserved inside the canonical substrate.`,
+        summary: protocolArtifactGroupSummary(top),
         artifact_path: top === "root" ? "" : `${top}/`,
         source_url: top === "root" ? protocolSourceUrl("") : protocolSourceUrl(`${top}/`),
         relationships: []
@@ -1608,7 +1993,9 @@ function buildProtocolRawFileNodes() {
         "xananode.canonical:concept/protocol-artifacts",
         groupId,
         "contains",
-        `Protocol Artifacts contains the ${top === "root" ? "root file" : top} artifact group.`,
+        top === "root"
+          ? "Protocol Artifacts includes the root protocol files group."
+          : `Protocol Artifacts includes the ${top} artifact group.`,
         `raw-group-${registrySlug(top)}`
       ));
     }
@@ -1622,7 +2009,7 @@ function buildProtocolRawFileNodes() {
       type: kind.type,
       subtype: kind.subtype,
       importance: relativePath === "README.md" || relativePath.startsWith("schemas/") || relativePath.startsWith("specs/") ? 4 : 3,
-      summary: `${relativePath} is preserved as a raw protocol artifact in the XanaNode canonical substrate.`,
+      summary: protocolRawFileSummary(relativePath),
       artifact_path: relativePath,
       source_url: protocolSourceUrl(relativePath),
       media_type: kind.media_type,
@@ -1639,14 +2026,14 @@ function buildProtocolRawFileNodes() {
       groupId,
       nodeId,
       "contains",
-      `${protocolRawFileTitle(top)} contains ${relativePath}.`,
+      `${top === "root" ? "Protocol Root Files" : `Protocol ${protocolRawFileTitle(top)}`} includes ${protocolRawFileTitle(relativePath)}.`,
       `raw-file-${registrySlug(relativePath)}`
     ));
     relationships.push(schemaRegistryRelationship(
       nodeId,
       "xananode.canonical:concept/protocol-artifacts",
       "documents",
-      `${relativePath} documents the XanaNode protocol artifact set.`,
+      protocolRawFileDocumentsSummary(relativePath),
       `raw-file-docs-${registrySlug(relativePath)}`
     ));
   }
@@ -1665,9 +2052,19 @@ function buildProtocolDigitalTwinNodes(options = {}) {
     buildCanonicalFaqNodes(),
     buildProtocolRawFileNodes()
   ];
+  const nodes = parts.flatMap((part) => part.nodes);
+  const relationships = parts.flatMap((part) => part.relationships);
+  const removedIds = new Set(
+    nodes
+      .filter((node) => {
+        const artifactPath = String(node?.artifact_path || "");
+        return artifactPath && String(node?.id || "").includes("protocol-artifact-") && !shouldElevateProtocolRawFileToNode(artifactPath);
+      })
+      .map((node) => node.id)
+  );
   return {
-    nodes: parts.flatMap((part) => part.nodes),
-    relationships: parts.flatMap((part) => part.relationships)
+    nodes: nodes.filter((node) => !removedIds.has(node.id)),
+    relationships: relationships.filter((relationship) => !removedIds.has(relationship.source) && !removedIds.has(relationship.target))
   };
 }
 
@@ -1768,6 +2165,15 @@ function cleanPackOutputDirectory(outDir) {
   }
 }
 
+function isSuppressedProtocolArtifactNode(node) {
+  const artifactPath = String(node?.artifact_path || "");
+  return Boolean(
+    artifactPath &&
+    String(node?.id || "").includes("protocol-artifact-") &&
+    !shouldElevateProtocolRawFileToNode(artifactPath)
+  );
+}
+
 export function getBundledCanonicalPackRoot() {
   return bundledCanonicalPackRoot;
 }
@@ -1777,12 +2183,47 @@ export function buildBundledCanonicalPack(options = {}) {
     pack: { id: "xananode.canonical", mode: "mounted" }
   });
   const registryTypes = buildProtocolDigitalTwinNodes(options);
+  const cleanedLoadedNodes = loaded.nodes
+    .map(cleanBundledRecord)
+    .filter((node) => !isGeneratedCanonicalSyntheticRecord(node) && !isSuppressedExampleRecord(node));
+  const preferredProtocolArtifactPaths = new Set(
+    cleanedLoadedNodes
+      .filter((node) => String(node?.id || "").includes("protocol-artifact-"))
+      .filter((node) => {
+        const type = String(node?.type || "");
+        return type === "media" || type === "source";
+      })
+      .map((node) => String(node?.artifact_path || ""))
+      .filter(Boolean)
+  );
+  const suppressedLoadedNodeIds = new Set(
+    cleanedLoadedNodes
+      .filter((node) => {
+        if (isSuppressedProtocolArtifactNode(node)) return true;
+        return (
+          String(node?.type || "") === "schema" &&
+          String(node?.id || "").includes("protocol-artifact-") &&
+          preferredProtocolArtifactPaths.has(String(node?.artifact_path || ""))
+        );
+      })
+      .map((node) => node.id)
+  );
   const nodesById = new Map();
   const relationshipsById = new Map();
-  for (const node of [...loaded.nodes.map(cleanBundledRecord).filter((node) => !isGeneratedCanonicalSyntheticRecord(node)), ...registryTypes.nodes]) {
+  for (const node of [
+    ...cleanedLoadedNodes
+      .filter((node) => !suppressedLoadedNodeIds.has(node.id)),
+    ...registryTypes.nodes
+  ]) {
     nodesById.set(node.id, mergeNodeRecord(nodesById.get(node.id), node));
   }
-  for (const relationship of [...loaded.relationships.map(cleanBundledRecord).filter((relationship) => !isGeneratedCanonicalSyntheticRecord(relationship)), ...registryTypes.relationships]) {
+  for (const relationship of [
+    ...loaded.relationships
+      .map(cleanBundledRecord)
+      .filter((relationship) => !isGeneratedCanonicalSyntheticRecord(relationship) && !isSuppressedExampleRecord(relationship))
+      .filter((relationship) => !suppressedLoadedNodeIds.has(relationship.source) && !suppressedLoadedNodeIds.has(relationship.target)),
+    ...registryTypes.relationships
+  ]) {
     relationshipsById.set(relationship.id, relationship);
   }
   const collapsed = collapseDuplicateCanonicalNodes(
@@ -1790,7 +2231,9 @@ export function buildBundledCanonicalPack(options = {}) {
     [...relationshipsById.values()]
   );
   const nodes = collapsed.nodes.sort((a, b) => String(a.id).localeCompare(String(b.id)));
-  const relationships = collapsed.relationships.sort((a, b) => String(a.id).localeCompare(String(b.id)));
+  const relationships = collapsed.relationships
+    .filter((relationship) => !staleSyntheticRelationshipIds.has(relationship.id))
+    .sort((a, b) => String(a.id).localeCompare(String(b.id)));
   const manifest = {
     ...loaded.manifest,
     ...(options.id ? { id: options.id } : {}),
@@ -1801,14 +2244,17 @@ export function buildBundledCanonicalPack(options = {}) {
     ...(options.repositoryUrl ? { repository: { type: "git", url: options.repositoryUrl, default_branch: options.defaultBranch || "main" } } : {}),
     build_metadata: coreBuildMetadata(options),
     pack: {
-      ...(loaded.manifest.pack || {}),
+      ...(loaded.manifest?.pack || {}),
       built_by: "@xananode/core",
       built_at: buildTimestamp(options),
       build_metadata: coreBuildMetadata(options)
     }
   };
   const validation = validateSubstrateArtifacts({ manifest, protocolNodes: nodes, relationships }, options);
-  const warnings = [...loaded.warnings, ...validation.warnings];
+  const warnings = [...loaded.warnings, ...validation.warnings].filter((warning) => {
+    const relationshipId = String(warning?.relationship || "");
+    return !staleSyntheticRelationshipIds.has(relationshipId);
+  });
   if (loaded.errors.length) warnings.push(...loaded.errors.map((error) => ({ kind: "pack_error", ...error })));
 
   return {

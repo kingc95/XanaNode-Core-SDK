@@ -1,0 +1,28 @@
+{
+  "id": "example.minimal:media/xananode-icon",
+  "title": "XanaNode Icon",
+  "type": "media",
+  "subtype": "logo",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "importance": 5,
+  "summary": "The canonical XanaNode protocol icon used as a portable branding asset.",
+  "alt": "An abstract X-shaped network logo with a central node and blue and orange relationship lines connecting outer nodes.",
+  "asset_path": "assets/branding/xananode-icon.svg",
+  "asset_role": "primary_media",
+  "caption": "XanaNode protocol icon",
+  "creator": "Christian Siefen",
+  "created_date": "2026-06-16T00:00:00Z",
+  "source_name": "XanaNode Protocol",
+  "source_url": "https://github.com/kingc95/XanaNode",
+  "license": "MIT",
+  "rights_status": "open-source",
+  "relationships": [
+    {
+      "id": "example.minimal:rel/substrate-has-primary-media",
+      "type": "has_primary_media",
+      "source": "example.minimal:concept/knowledge-substrate",
+      "direction": "incoming"
+    }
+  ]
+}

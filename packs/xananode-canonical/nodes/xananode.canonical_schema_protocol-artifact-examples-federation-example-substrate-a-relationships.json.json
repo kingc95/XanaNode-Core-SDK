@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/protocol-artifact-examples-federation-example-substrate-a-relationships.json",
+  "title": "Examples / Federation Example / Substrate A / Relationships",
+  "type": "schema",
+  "subtype": "protocol_json_artifact",
+  "importance": 3,
+  "summary": "The relationship list for Examples / Federation Example / Substrate A.",
+  "artifact_path": "examples/federation-example/substrate-a/relationships.json",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/relationships.json",
+  "media_type": "document",
+  "mime_type": "application/json",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "Apache-2.0",
+  "relationships": [],
+  "content": "{\r\n  \"relationships\": [\r\n    {\r\n      \"id\": \"example.researcher_a:rel/knowledge-substrate-possible-match-memory-substrate\",\r\n      \"source\": \"example.researcher_a:concept/knowledge-substrate\",\r\n      \"target\": \"example.researcher_b:concept/memory-substrate\",\r\n      \"type\": \"possible_match\",\r\n      \"weight\": 3,\r\n      \"visibility\": \"secondary\",\r\n      \"external\": true,\r\n      \"target_substrate\": \"example.researcher_b\",\r\n      \"asserted_by\": \"example.researcher_a:person/researcher-a\",\r\n      \"asserted_at\": \"2026-01-01T00:00:00Z\",\r\n      \"confidence\": \"0.78\",\r\n      \"summary\": \"Researcher A marks Researcher B's memory-substrate concept as a possible match, not an automatic identity merge.\"\r\n    }\r\n  ]\r\n}\r\n",
+  "asset_path": "assets/raw/protocol/examples/federation-example/substrate-a/relationships.json",
+  "content_id": "sha256:31a3ca9034fc485d42dccc11e26149c325abf8589af45ebf834a7ee948ec0d34",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-a/relationships.json",
+    "method": "archive",
+    "content_id": "sha256:31a3ca9034fc485d42dccc11e26149c325abf8589af45ebf834a7ee948ec0d34",
+    "rights_status": "Apache-2.0",
+    "tool": "@xananode/core"
+  }
+}

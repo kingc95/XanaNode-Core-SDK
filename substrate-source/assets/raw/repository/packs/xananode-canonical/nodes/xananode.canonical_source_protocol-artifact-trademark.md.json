@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:source/protocol-artifact-trademark.md",
+  "title": "XanaNode Trademark Policy",
+  "type": "source",
+  "subtype": "protocol_document",
+  "importance": 3,
+  "summary": "The trademark policy describing how the XanaNode name and logo may be referenced.",
+  "artifact_path": "TRADEMARK.md",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/TRADEMARK.md",
+  "media_type": "document",
+  "mime_type": "text/markdown",
+  "asset_role": "canonical_raw_source",
+  "rights_status": "CC-BY-4.0",
+  "relationships": [],
+  "content": "# XanaNode Trademark Policy\n\nThe XanaNode name, XanaNode logo, and related brand assets identify the canonical XanaNode protocol and project.\n\nYou may use the name XanaNode to make accurate factual statements, such as:\n\n- \"implements the XanaNode protocol\"\n- \"XanaNode-compatible\"\n- \"built with XanaNode schemas\"\n- \"uses XanaNode Core\"\n\nYou may not use the XanaNode name or logo in a way that implies endorsement, official status, or control by the XanaNode project unless that relationship is true.\n\nImplementations should identify themselves as independently authored unless they are maintained by the XanaNode project. For example:\n\n> ExampleApp is an independent XanaNode-compatible implementation.\n\nModified logos, confusingly similar marks, and product names that imply ownership of XanaNode itself are not permitted without permission.\n\n",
+  "asset_path": "assets/raw/protocol/TRADEMARK.md",
+  "content_id": "sha256:920cc1e4e4719f3383ec0c50e4eafba89f848b730b4d297b3a22ab576edde81c",
+  "source_snapshot": {
+    "captured_at": "2026-06-27T07:05:45.885Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/TRADEMARK.md",
+    "method": "archive",
+    "content_id": "sha256:920cc1e4e4719f3383ec0c50e4eafba89f848b730b4d297b3a22ab576edde81c",
+    "rights_status": "CC-BY-4.0",
+    "tool": "@xananode/core"
+  }
+}

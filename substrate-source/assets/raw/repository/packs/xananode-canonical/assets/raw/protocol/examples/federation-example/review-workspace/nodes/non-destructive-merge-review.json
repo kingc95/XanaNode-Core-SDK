@@ -1,0 +1,8 @@
+{
+  "id": "example.merge:concept/non-destructive-merge-review",
+  "title": "Non-Destructive Merge Review",
+  "type": "concept",
+  "importance": 4,
+  "summary": "A review state where overlapping nodes are mounted together, compared, and kept distinct until a human approves stronger identity claims.",
+  "relationships": []
+}

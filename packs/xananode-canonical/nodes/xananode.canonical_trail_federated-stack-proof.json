@@ -1,0 +1,58 @@
+{
+  "id": "xananode.canonical:trail/federated-stack-proof",
+  "title": "Federated Stack Proof",
+  "type": "trail",
+  "subtype": "evidence_path",
+  "importance": 5,
+  "summary": "A short trail showing that the XanaNode stack proves federation by publishing its own layers as interoperable substrates.",
+  "content": "Follow the stack from the protocol substrate into Core, then outward into Workspace, Studio, Mobile, and Hugo. The canonical substrate points to each real layer as a federated substrate source, while also carrying embedded example namespaces that teach the same federation patterns in a portable local bundle. Together these show that the stack is not one giant opaque application. It is a federation of layers that remain interoperable without surrendering identity.",
+  "nodes": [
+    "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates",
+    "xananode.canonical:source/federated-substrate-xananode.protocol",
+    "xananode.canonical:source/federated-substrate-xananode.core"
+  ],
+  "branches": [
+    {
+      "after": "xananode.canonical:source/federated-substrate-xananode.core",
+      "prompt": "Which downstream route do you want to follow from Core?",
+      "choices": [
+        {
+          "label": "Desktop authoring route",
+          "summary": "Follow Core through Workspace into Studio and back to the canonical substrate.",
+          "nodes": [
+            "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates",
+            "xananode.canonical:source/federated-substrate-xananode.protocol",
+            "xananode.canonical:source/federated-substrate-xananode.core",
+            "xananode.canonical:source/federated-substrate-xananode.workspace",
+            "xananode.canonical:source/federated-substrate-xananode.studio",
+            "xananode.canonical:source/federated-substrate-xananode.canonical"
+          ]
+        },
+        {
+          "label": "Mobile capture route",
+          "summary": "Follow Core through Workspace into Mobile and back to the canonical substrate.",
+          "nodes": [
+            "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates",
+            "xananode.canonical:source/federated-substrate-xananode.protocol",
+            "xananode.canonical:source/federated-substrate-xananode.core",
+            "xananode.canonical:source/federated-substrate-xananode.workspace",
+            "xananode.canonical:source/federated-substrate-xananode.mobile",
+            "xananode.canonical:source/federated-substrate-xananode.canonical"
+          ]
+        },
+        {
+          "label": "Public projection route",
+          "summary": "Follow Core into Hugo and then to the canonical public projection.",
+          "nodes": [
+            "xananode.canonical:claim/stack-demonstrates-federation-through-layer-substrates",
+            "xananode.canonical:source/federated-substrate-xananode.protocol",
+            "xananode.canonical:source/federated-substrate-xananode.core",
+            "xananode.canonical:source/federated-substrate-xananode.hugo",
+            "xananode.canonical:source/federated-substrate-xananode.canonical"
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": []
+}

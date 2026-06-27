@@ -8,7 +8,7 @@ Examples:
 
 ```text
 xananode:claim
-example.museum:artifact
+example.merge:report/federation-example-001
 example.researcher_a:concept/knowledge-substrate
 ```
 

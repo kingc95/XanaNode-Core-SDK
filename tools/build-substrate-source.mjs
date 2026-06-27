@@ -118,6 +118,35 @@ function nodeKindFor(relativePath) {
   };
 }
 
+function shouldElevateRepositoryFileToNode(relativePath) {
+  const clean = safeAssetRelativePath(relativePath);
+  if (clean === "README.md" || clean === "LICENSE" || clean === "package.json") return true;
+  if (
+    clean.startsWith("schemas/") ||
+    clean.startsWith("registry/") ||
+    clean.startsWith("templates/")
+  ) {
+    return true;
+  }
+  if (clean.startsWith("packs/")) {
+    const parts = clean.split("/");
+    const fileName = parts.at(-1) || "";
+    const directPackArtifact = parts.length === 3 && new Set([
+      "substrate.json",
+      "nodes.json",
+      "relationships.json",
+      "substrate-bundle.json",
+      "substrate-bundle.jsonl",
+      "pack-report.json",
+      "README.md",
+      "BUNDLED-FIXTURE.md"
+    ]).has(fileName);
+    if (directPackArtifact) return true;
+  }
+  if (clean === "media/images/xananode-icon.svg") return true;
+  return false;
+}
+
 function titleFor(relativePath) {
   const clean = safeAssetRelativePath(relativePath);
   if (clean === "README.md") return "XanaNode Core SDK README";
@@ -133,9 +162,9 @@ function titleFor(relativePath) {
 
 function summaryFor(relativePath, kind) {
   const clean = safeAssetRelativePath(relativePath);
-  if (kind.type === "schema") return `${clean} is preserved as a Core schema or registry artifact in the XanaNode Core SDK substrate.`;
-  if (kind.type === "media") return `${clean} is preserved as a Core media or branding asset in the XanaNode Core SDK substrate.`;
-  return `${clean} is preserved as a raw Core SDK source artifact in the XanaNode Core SDK substrate.`;
+  if (kind.type === "schema") return `${clean} is elevated as a first-class Core schema or registry artifact in the XanaNode Core SDK substrate.`;
+  if (kind.type === "media") return `${clean} is elevated as a first-class Core branding or media artifact in the XanaNode Core SDK substrate.`;
+  return `${clean} is elevated as a first-class Core SDK artifact in the XanaNode Core SDK substrate.`;
 }
 
 function listRepositoryFiles(dir = coreRoot) {
@@ -180,7 +209,7 @@ export function buildCoreSubstrateSource(outDir = defaultOutDir) {
     name: "XanaNode Core SDK Substrate",
     version,
     namespace: "xananode.core",
-    description: "A substrate source built directly from the XanaNode Core SDK repository, preserving reference code, schemas, registries, templates, tests, raw project documents, and executable-contract artifacts as first-class XanaNode records.",
+    description: "A substrate source built directly from the XanaNode Core SDK repository, preserving implementation identity, schemas, registries, templates, canonical pack artifacts, and key documents as first-class nodes while carrying lower-level repository files as attached assets when they do not deserve independent node status.",
     schema_version: "xananode-core@0.5.0",
     repository: {
       type: "git",
@@ -281,13 +310,14 @@ export function buildCoreSubstrateSource(outDir = defaultOutDir) {
 
   for (const relativePath of listRepositoryFiles()) {
     const sourcePath = path.join(coreRoot, relativePath);
-    const kind = nodeKindFor(relativePath);
-    const localSlug = slug(relativePath.replace(/\.[^.]+$/, "")) || "artifact";
-    const nodeId = `xananode.core:${kind.type}/artifact-${localSlug}`;
     const assetPath = `assets/raw/repository/${safeAssetRelativePath(relativePath)}`;
     const assetTarget = path.join(outDir, assetPath);
     fs.mkdirSync(path.dirname(assetTarget), { recursive: true });
     fs.copyFileSync(sourcePath, assetTarget);
+    if (!shouldElevateRepositoryFileToNode(relativePath)) continue;
+    const kind = nodeKindFor(relativePath);
+    const localSlug = slug(relativePath.replace(/\.[^.]+$/, "")) || "artifact";
+    const nodeId = `xananode.core:${kind.type}/artifact-${localSlug}`;
     const content = readTextIfPossible(sourcePath);
     const contentId = sha256File(sourcePath);
 
@@ -301,7 +331,7 @@ export function buildCoreSubstrateSource(outDir = defaultOutDir) {
       source_url: sourceUrl(relativePath),
       artifact_path: relativePath,
       asset_path: assetPath,
-      asset_role: "repository_source",
+      asset_role: "repository_snapshot",
       media_type: kind.media_type,
       mime_type: kind.mime_type,
       rights_status: "Apache-2.0",

@@ -1,0 +1,15 @@
+{
+  "id": "xananode.canonical:person/christian-siefen",
+  "title": "Christian Siefen",
+  "type": "person",
+  "subtypes": [
+    "founder",
+    "author"
+  ],
+  "importance": 5,
+  "summary": "Author of XanaNode and maintainer of its canonical substrate, carrying the project from the Douglas Adams and Hyperland lineage toward a durable knowledge protocol.",
+  "content": "Christian Siefen is the human author of XanaNode and the maintainer of its canonical substrate.\n\nThis project did not begin as a detached software exercise. It comes out of the older human-augmentation lineage carried through Vannevar Bush, Douglas Engelbart, Ted Nelson, and the way Douglas Adams made that problem feel vivid and public through Hyperland and the broader Hitchhiker's worldview of interconnected meaning.\n\nXanaNode is where that line of thought becomes an implemented protocol and working stack. The goal is not only to publish documents about knowledge, but to preserve the relationships, provenance, lineage, disagreement, fragments, and raw assets that make knowledge durable when it moves between tools and people.\n\nXanaNode.com is the stable public home of that work. The GitHub profile at kingc95 is the public development surface where the protocol, Core SDK, Workspace, Studio, Mobile, Hugo, and related substrate repositories continue to evolve.",
+  "homepage": "https://xananode.com/",
+  "github_profile": "https://github.com/kingc95",
+  "relationships": []
+}
