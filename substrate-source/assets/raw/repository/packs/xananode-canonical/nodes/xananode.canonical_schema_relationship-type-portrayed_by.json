@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-portrayed_by",
+  "title": "Portrayed By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The portrayed_by inverse relationship term derived from portrays.",
+  "version": "0.5.1",
+  "registry_type": "portrayed_by",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "portrays",
+  "color": "#fcd34d",
+  "inverse_color": "#f59e0b",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "xananode.canonical:schema/property-communication_pattern",
+  "title": "Communication pattern",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The semantic pattern of a communication beyond participant count.",
+  "registry_type": "communication_pattern",
+  "category": "communication",
+  "aliases": [
+    "interaction_pattern",
+    "discourse_pattern"
+  ],
+  "applies_to": [
+    "communication",
+    "event",
+    "publication",
+    "source"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string",
+    "enum": [
+      "dialogue",
+      "broadcast",
+      "collection",
+      "coordination",
+      "negotiation",
+      "debate",
+      "consensus",
+      "instruction",
+      "query_response",
+      "publication"
+    ]
+  },
+  "examples": [
+    "query_response"
+  ],
+  "relationships": []
+}

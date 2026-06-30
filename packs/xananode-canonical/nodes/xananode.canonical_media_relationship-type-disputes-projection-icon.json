@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-disputes-projection-icon",
+  "title": "Disputes Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/disputes.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/disputes.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the disputes relationship type.",
+  "relationships": [],
+  "content_id": "sha256:f1a4bd437167dec0a89476905ebb77fd24df829caf15ed2ab68ff76b4f87e2d6",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/disputes.svg",
+    "method": "archive",
+    "content_id": "sha256:f1a4bd437167dec0a89476905ebb77fd24df829caf15ed2ab68ff76b4f87e2d6",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

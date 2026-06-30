@@ -4,6 +4,7 @@ import { loadJsonNodes, loadJsonRelationships, loadManifest, loadMarkdownNodes, 
 import { buildFragments, findXanaReferences } from "./fragments.js";
 import { relationshipsFromNode, normalizeRelationship, nodeToProtocolRecord } from "./graph.js";
 import { omitUndefined, relationshipIdFor } from "./ids.js";
+import { deriveKinshipRelationships } from "./kinship.js";
 import { applySuggestionActions, buildReviewSuggestions } from "./suggestions.js";
 import { validateSubstrateArtifacts } from "./validate.js";
 
@@ -82,11 +83,20 @@ function deriveSubstrateStructures(nodes, namespace, externalRelationships = [])
     });
   }
 
-  const relationships = [
+  const baseRelationships = [
     ...authoredRelationships,
     ...externalRelationships.map((relationship, index) => normalizeRelationship(relationship, { namespace, index: authoredRelationships.length + index })),
     ...fragmentDerivedRelationships,
     ...transclusionRelationships
+  ];
+  const baseProtocolNodes = [
+    ...nodes.map((node) => nodeToProtocolRecord(node, baseRelationships)),
+    ...authoredFragmentNodes
+  ];
+  const kinshipRelationships = deriveKinshipRelationships(baseProtocolNodes, baseRelationships, namespace);
+  const relationships = [
+    ...baseRelationships,
+    ...kinshipRelationships
   ];
   const protocolNodes = [
     ...nodes.map((node) => nodeToProtocolRecord(node, relationships)),

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source physical item or system was assembled from the target parts, components, or ingredients.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "assembled_from",
   "registry_namespace": "xananode",
   "category": "composition",

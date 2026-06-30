@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source needs additional context to be interpreted responsibly.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "requires_context",
   "registry_namespace": "xananode",
   "category": "knowledge_workflow",

@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-broader_than-projection-icon",
+  "title": "Broader than Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/broader_than.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/broader_than.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the broader_than relationship type.",
+  "relationships": [],
+  "content_id": "sha256:636aa6b66ba6a5b5ec36d00272276410bfaaa615e2089aea1ac5c6a192817489",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/broader_than.svg",
+    "method": "archive",
+    "content_id": "sha256:636aa6b66ba6a5b5ec36d00272276410bfaaa615e2089aea1ac5c6a192817489",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

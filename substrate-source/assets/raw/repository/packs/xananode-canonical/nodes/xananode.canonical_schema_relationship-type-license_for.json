@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The license_for inverse relationship term derived from licensed_under.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "license_for",
   "registry_namespace": "xananode",
   "category": "governance",

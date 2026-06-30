@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source tests the target hypothesis, claim, method, or prediction.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "tests",
   "registry_namespace": "xananode",
   "category": "research_workflow",

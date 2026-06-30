@@ -1,0 +1,29 @@
+{
+  "id": "xananode.canonical:schema/property-death_date",
+  "title": "Death date",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "Calendar date on which a person or entity ended.",
+  "registry_type": "death_date",
+  "category": "time",
+  "aliases": [
+    "died",
+    "date_of_death",
+    "closed_date"
+  ],
+  "applies_to": [
+    "person",
+    "organization",
+    "project"
+  ],
+  "unit_system": "ISO-8601",
+  "value_schema": {
+    "type": "string",
+    "format": "date"
+  },
+  "examples": [
+    "2001-05-11"
+  ],
+  "relationships": []
+}

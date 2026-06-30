@@ -1,0 +1,34 @@
+{
+  "id": "xananode.canonical:schema/property-communication_model",
+  "title": "Communication model",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The participant topology of a communication.",
+  "registry_type": "communication_model",
+  "category": "communication",
+  "aliases": [
+    "communication_topology",
+    "topology"
+  ],
+  "applies_to": [
+    "communication",
+    "event",
+    "publication",
+    "source"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string",
+    "enum": [
+      "one_to_one",
+      "one_to_many",
+      "many_to_one",
+      "many_to_many"
+    ]
+  },
+  "examples": [
+    "many_to_many"
+  ],
+  "relationships": []
+}

@@ -18,7 +18,8 @@
         "artist",
         "founder",
         "scientist",
-        "programmer"
+        "programmer",
+        "fictional_character"
       ],
       "required_frontmatter": [
         "title",
@@ -35,6 +36,50 @@
         "sources",
         "projects",
         "events"
+      ],
+      "editable_fields": [
+        {
+          "key": "gender",
+          "label": "Gender",
+          "value_kind": "enum",
+          "help": "Use this when it matters to the record or to kinship inference. Leave it blank when unknown, irrelevant, or not yours to assert.",
+          "options": [
+            { "value": "female", "label": "Female" },
+            { "value": "male", "label": "Male" },
+            { "value": "nonbinary", "label": "Nonbinary" },
+            { "value": "unknown", "label": "Unknown" }
+          ]
+        },
+        {
+          "key": "birth_date",
+          "label": "Birth date",
+          "value_kind": "date",
+          "help": "A human-readable or machine-readable birth date for this person."
+        },
+        {
+          "key": "death_date",
+          "label": "Death date",
+          "value_kind": "date",
+          "help": "A human-readable or machine-readable death date for this person."
+        },
+        {
+          "key": "nationality",
+          "label": "Nationality",
+          "value_kind": "string",
+          "help": "Useful when it helps disambiguate identity or historical context."
+        },
+        {
+          "key": "occupation",
+          "label": "Occupation",
+          "value_kind": "string",
+          "help": "A short role label such as writer, engineer, or teacher."
+        },
+        {
+          "key": "aliases",
+          "label": "Aliases",
+          "value_kind": "string_list",
+          "help": "Other names, spellings, or handles for this person."
+        }
       ],
       "namespace": "xananode",
       "id": "xananode:person",
@@ -186,6 +231,44 @@
         "license",
         "rights_status"
       ],
+      "editable_fields": [
+        {
+          "key": "author",
+          "label": "Author",
+          "value_kind": "string",
+          "help": "The credited human or organizational author of the source."
+        },
+        {
+          "key": "year",
+          "label": "Year",
+          "value_kind": "string",
+          "help": "The publication year or best-known year for this source."
+        },
+        {
+          "key": "source_url",
+          "label": "Source URL",
+          "value_kind": "url",
+          "help": "The primary online location for this source when one exists."
+        },
+        {
+          "key": "archive_url",
+          "label": "Archive URL",
+          "value_kind": "url",
+          "help": "A preserved or alternate online location for this source."
+        },
+        {
+          "key": "license",
+          "label": "License",
+          "value_kind": "string",
+          "help": "The license or reuse terms that apply to this source."
+        },
+        {
+          "key": "rights_status",
+          "label": "Rights status",
+          "value_kind": "string",
+          "help": "A short description of rights, restrictions, or ownership status."
+        }
+      ],
       "namespace": "xananode",
       "id": "xananode:source",
       "core": true,
@@ -332,6 +415,50 @@
         "license_url",
         "depicts"
       ],
+      "editable_fields": [
+        {
+          "key": "creator",
+          "label": "Creator",
+          "value_kind": "string",
+          "help": "The credited creator of the media item."
+        },
+        {
+          "key": "created_date",
+          "label": "Created date",
+          "value_kind": "date",
+          "help": "The creation or publication date for this media item."
+        },
+        {
+          "key": "source_url",
+          "label": "Source URL",
+          "value_kind": "url",
+          "help": "The source page or origin URL for this media item."
+        },
+        {
+          "key": "asset_path",
+          "label": "Asset path",
+          "value_kind": "string",
+          "help": "The local substrate asset path when this media is bundled."
+        },
+        {
+          "key": "mime_type",
+          "label": "MIME type",
+          "value_kind": "string",
+          "help": "The MIME type used by projections and downstream tools."
+        },
+        {
+          "key": "license",
+          "label": "License",
+          "value_kind": "string",
+          "help": "The license or reuse terms that apply to this media item."
+        },
+        {
+          "key": "rights_status",
+          "label": "Rights status",
+          "value_kind": "string",
+          "help": "A compact statement of the reuse or ownership state for this media item, such as external, copyrighted, canonical-public, or trademarked."
+        }
+      ],
       "namespace": "xananode",
       "id": "xananode:media",
       "core": true,
@@ -395,6 +522,124 @@
       }
     },
     {
+      "type": "organism",
+      "label": "Organism",
+      "color": {
+        "bg": "#8fd19e",
+        "fg": "#0a1a0f",
+        "outline": "#e6ffea"
+      },
+      "purpose": "A non-human living thing, biological specimen, species, breed, cultivar, or taxonomic record whose identity matters beyond a generic physical item.",
+      "allowed_subtypes": [
+        "animal",
+        "plant",
+        "fungus",
+        "microbe",
+        "specimen",
+        "species",
+        "genus",
+        "family",
+        "breed",
+        "cultivar",
+        "extinct_species",
+        "fictional_species"
+      ],
+      "required_frontmatter": [
+        "title",
+        "type",
+        "importance",
+        "summary",
+        "relationships"
+      ],
+      "recommended_frontmatter": [
+        "scientific_name",
+        "common_name",
+        "taxon_rank",
+        "biological_sex",
+        "life_stage",
+        "habitat",
+        "conservation_status",
+        "parent_taxon",
+        "primary_media",
+        "source"
+      ],
+      "editable_fields": [
+        {
+          "key": "scientific_name",
+          "label": "Scientific name",
+          "value_kind": "string",
+          "help": "The formal biological or taxonomic name when known."
+        },
+        {
+          "key": "common_name",
+          "label": "Common name",
+          "value_kind": "string",
+          "help": "A vernacular or everyday name for this organism or taxon."
+        },
+        {
+          "key": "taxon_rank",
+          "label": "Taxon rank",
+          "value_kind": "enum",
+          "options": [
+            "individual",
+            "specimen",
+            "species",
+            "genus",
+            "family",
+            "order",
+            "class",
+            "phylum",
+            "kingdom",
+            "clade",
+            "breed",
+            "cultivar"
+          ],
+          "help": "The taxonomic or classification rank represented by this node."
+        },
+        {
+          "key": "biological_sex",
+          "label": "Biological sex",
+          "value_kind": "enum",
+          "options": [
+            "female",
+            "male",
+            "hermaphroditic",
+            "asexual",
+            "unknown"
+          ],
+          "help": "The biological sex when it matters to the record or lineage."
+        },
+        {
+          "key": "life_stage",
+          "label": "Life stage",
+          "value_kind": "string",
+          "help": "The developmental stage or life phase represented by this organism."
+        },
+        {
+          "key": "habitat",
+          "label": "Habitat",
+          "value_kind": "string",
+          "help": "The environment, range, or habitat associated with this organism or taxon."
+        },
+        {
+          "key": "conservation_status",
+          "label": "Conservation status",
+          "value_kind": "string",
+          "help": "A conservation or rarity status such as least_concern, endangered, or extinct."
+        }
+      ],
+      "namespace": "xananode",
+      "id": "xananode:organism",
+      "core": true,
+      "extends": null,
+      "projection": {
+        "icon": "organism",
+        "icon_label": "O",
+        "asset_path": "assets/projection/node-types/organism.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/organism/{subtype}.svg"
+      }
+    },
+    {
       "type": "event",
       "label": "Event",
       "color": {
@@ -410,7 +655,9 @@
         "meeting",
         "release",
         "incident",
-        "historical_event"
+        "historical_event",
+        "performance",
+        "fictional_event"
       ],
       "required_frontmatter": [
         "title",
@@ -455,7 +702,8 @@
         "institution_site",
         "online_space",
         "country",
-        "region"
+        "region",
+        "fictional_place"
       ],
       "required_frontmatter": [
         "title",
@@ -498,7 +746,8 @@
         "agency",
         "nonprofit",
         "standards_body",
-        "publisher"
+        "publisher",
+        "fictional_organization"
       ],
       "required_frontmatter": [
         "title",

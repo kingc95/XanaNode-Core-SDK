@@ -15,7 +15,8 @@
     "institution_site",
     "online_space",
     "country",
-    "region"
+    "region",
+    "fictional_place"
   ],
   "required_frontmatter": [
     "title",

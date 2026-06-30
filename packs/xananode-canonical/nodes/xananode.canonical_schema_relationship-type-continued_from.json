@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The continued_from inverse relationship term derived from continues_to.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "continued_from",
   "registry_namespace": "xananode",
   "category": "temporal",

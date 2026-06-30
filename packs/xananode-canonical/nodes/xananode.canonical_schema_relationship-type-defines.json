@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source gives the defining explanation of the target.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "defines",
   "registry_namespace": "xananode",
   "category": "definition",

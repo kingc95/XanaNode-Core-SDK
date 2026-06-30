@@ -15,10 +15,10 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:80c9c2e6e1c8b81b3e018a555fe9ed0493de0b29ce230968ee28286ad336f2ca",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.999Z",
+    "captured_at": "2026-06-30T05:09:31.104Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-node-types.schema.v0.3.0.json",
     "method": "archive",
-    "content_id": "sha256:6f038080085a297c4d44de43617dc8ac621c433b28c63a1b4aa8d67e10c3ec5b",
+    "content_id": "sha256:d5e8252cda5cadde9ec710e1eb8608bbc69f0bbe48b2615576783febdbf07afe",
     "rights_status": "canonical-public",
     "tool": "@xananode/core"
   }

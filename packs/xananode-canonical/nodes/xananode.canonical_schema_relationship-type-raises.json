@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source raises, surfaces, or implies the target question, problem, or knowledge gap.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "raises",
   "registry_namespace": "xananode",
   "category": "inquiry",

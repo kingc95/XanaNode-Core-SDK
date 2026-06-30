@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-claim-projection-icon",
+  "title": "Claim Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/claim.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/claim.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the claim node type.",
+  "relationships": [],
+  "content_id": "sha256:163c94033a1e48602e426df6cd07a734d45443ab6e67e2f7b14e47c940aadac5",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/claim.svg",
+    "method": "archive",
+    "content_id": "sha256:163c94033a1e48602e426df6cd07a734d45443ab6e67e2f7b14e47c940aadac5",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

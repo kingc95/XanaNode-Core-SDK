@@ -1,0 +1,27 @@
+{
+  "id": "xananode.canonical:schema/property-archive_url",
+  "title": "Archive URL",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A preserved or alternate online location for a source.",
+  "registry_type": "archive_url",
+  "category": "reference",
+  "aliases": [
+    "snapshot_url",
+    "mirror_url"
+  ],
+  "applies_to": [
+    "source",
+    "media"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string",
+    "format": "uri"
+  },
+  "examples": [
+    "https://web.archive.org/web/20260101000000/https://example.com/"
+  ],
+  "relationships": []
+}

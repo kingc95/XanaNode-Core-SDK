@@ -11,10 +11,10 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:a60b4ba549d97566097ddf2c8be5aef179120dff261e3485d0640c56a21bcd4f",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.999Z",
+    "captured_at": "2026-06-30T05:09:31.104Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-property-registry.v0.1.0.json",
     "method": "archive",
-    "content_id": "sha256:09c0306032e01170c92bfa0bc044c0983e980b68e8bd88b3e8c9f37110acf39b",
+    "content_id": "sha256:e2e04473fc51138e1ccbd51463541b66c7b3dd47c1237f46accd43bdda005232",
     "rights_status": "canonical-public",
     "tool": "@xananode/core"
   }

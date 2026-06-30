@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source developed alongside or resembles the target without necessarily descending from it.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "parallel_to",
   "registry_namespace": "xananode",
   "category": "comparison",

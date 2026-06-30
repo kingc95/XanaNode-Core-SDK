@@ -123,6 +123,105 @@ export function nodeToProtocolRecord(node, relationships = []) {
   });
 }
 
+export function createRelationshipNodeRecord({
+  relationship = {},
+  sourceNode = {},
+  targetNode = {},
+  namespace = "local",
+  title,
+  summary,
+  body = "",
+  relativeFile = "",
+  relationships,
+  evidence,
+  confidence,
+  status,
+  reviewStatus,
+  evidenceStrength,
+  assertedBy,
+  assertedAt,
+  reviewedBy,
+  importance = 4,
+  subtype
+} = {}) {
+  const source = relationship.source || sourceNode.protocolId || sourceNode.protocol_id || sourceNode.id;
+  const target = relationship.target || targetNode.protocolId || targetNode.protocol_id || targetNode.id;
+  const relationshipType = relationship.relationship_type || relationship.type || "related_to";
+  const sourceTitle = sourceNode.title || sourceNode.name || source || "Source";
+  const targetTitle = targetNode.title || targetNode.name || target || "Target";
+  const localId = relationship.id || `${source || "source"}-${relationshipType}-${target || "target"}`;
+  const nextTitle = title || relationship.title || `${sourceTitle} ${relationshipType.replace(/_/g, " ")} ${targetTitle}`;
+  const nextSummary = summary || relationship.summary || `A first-class relationship between ${sourceTitle} and ${targetTitle}.`;
+  const hasExplicitRelationships = Object.prototype.hasOwnProperty.call(arguments[0] || {}, "relationships");
+  const nextRelationships = hasExplicitRelationships
+    ? asArray(relationships)
+    : asArray(relationship.relationships).length
+      ? asArray(relationship.relationships)
+      : [
+          omitUndefined({
+            type: "related_to",
+            target: source,
+            summary: `Connect this relationship node back to its source node: ${sourceTitle}.`,
+            direction: "outgoing"
+          }),
+          omitUndefined({
+            type: "related_to",
+            target: target,
+            summary: `Connect this relationship node back to its target node: ${targetTitle}.`,
+            direction: "outgoing"
+          })
+        ];
+
+  return createNodeRecord({
+    data: omitUndefined({
+      ...relationship,
+      id: localId,
+      title: nextTitle,
+      type: "relationship",
+      subtype: subtype || relationship.subtype,
+      importance,
+      summary: nextSummary,
+      source_node: source,
+      target_node: target,
+      relationship_type: relationshipType,
+      relationships: nextRelationships,
+      evidence: asArray(evidence ?? relationship.evidence),
+      confidence: confidence ?? relationship.confidence,
+      status: status ?? relationship.status,
+      review_status: reviewStatus ?? relationship.review_status,
+      evidence_strength: evidenceStrength ?? relationship.evidence_strength,
+      asserted_by: assertedBy ?? relationship.asserted_by,
+      asserted_at: assertedAt ?? relationship.asserted_at,
+      reviewed_by: reviewedBy ?? relationship.reviewed_by
+    }),
+    body,
+    relativeFile,
+    namespace
+  });
+}
+
+export function relationshipNodeToRelationshipRecord(node, context = {}) {
+  const data = node?.data || {};
+  const source = data.source_node || context.source || context.sourceNode || node?.source_node;
+  const target = data.target_node || context.target || context.targetNode || node?.target_node;
+  const relationshipType = data.relationship_type || context.relationshipType || data.subtype || "related_to";
+  return omitUndefined({
+    id: context.id || data.source_relationship_id || relationshipIdFor(context.namespace || node?.namespace || "local", source, relationshipType, target, context.index || 0),
+    source,
+    target,
+    type: relationshipType,
+    summary: context.summary || data.summary || node?.summary || "",
+    weight: context.weight ?? data.weight ?? 1,
+    visibility: context.visibility ?? data.visibility ?? "secondary",
+    confidence: context.confidence ?? data.confidence,
+    asserted_by: context.asserted_by ?? data.asserted_by,
+    asserted_at: context.asserted_at ?? data.asserted_at,
+    evidence: asArray(context.evidence ?? data.evidence),
+    review_status: context.review_status ?? data.review_status,
+    evidence_strength: context.evidence_strength ?? data.evidence_strength
+  });
+}
+
 export function createNodeRecord({ data = {}, body = "", relativeFile = "", namespace = "local" }) {
   const id = slugify(data.id || data.slug || data.title || relativeFile.replace(/\.[^.]+$/, ""), "node");
   const type = data.type || "concept";

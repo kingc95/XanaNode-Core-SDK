@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-trained_on-projection-icon",
+  "title": "Trained on Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/trained_on.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/trained_on.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the trained_on relationship type.",
+  "relationships": [],
+  "content_id": "sha256:1dc55d5df9413383ca6f001ee558a8998352af2a7a46697007a2159da8440913",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/trained_on.svg",
+    "method": "archive",
+    "content_id": "sha256:1dc55d5df9413383ca6f001ee558a8998352af2a7a46697007a2159da8440913",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

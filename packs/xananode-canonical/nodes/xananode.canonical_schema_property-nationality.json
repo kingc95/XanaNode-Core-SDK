@@ -1,0 +1,25 @@
+{
+  "id": "xananode.canonical:schema/property-nationality",
+  "title": "Nationality",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A nationality or national affiliation when it helps identify or contextualize a person.",
+  "registry_type": "nationality",
+  "category": "identity",
+  "aliases": [
+    "citizenship",
+    "national_affiliation"
+  ],
+  "applies_to": [
+    "person"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "British"
+  ],
+  "relationships": []
+}

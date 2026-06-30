@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source generated, produced, or caused the target artifact, claim, response, or knowledge object.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "generated",
   "registry_namespace": "xananode",
   "category": "causation",

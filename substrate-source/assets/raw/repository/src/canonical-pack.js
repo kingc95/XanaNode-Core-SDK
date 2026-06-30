@@ -775,6 +775,25 @@ function projectionAssetSourcePath(assetPath = "") {
   return fs.existsSync(sourcePath) ? sourcePath : "";
 }
 
+function protocolArtifactRightsStatus(relativePath = "") {
+  const clean = String(relativePath || "").replaceAll("\\", "/");
+  if (
+    clean === "media/images/xananode-icon.svg" ||
+    clean === "examples/minimal-substrate/assets/branding/xananode-icon.svg" ||
+    clean === "media/images/favicon-16x16.png" ||
+    clean === "media/images/favicon-32x32.png" ||
+    clean === "media/images/favicon.ico" ||
+    clean === "media/images/apple-touch-icon.png" ||
+    clean === "media/images/android-chrome-192x192.png" ||
+    clean === "media/images/android-chrome-512x512.png"
+  ) {
+    return "trademarked - see TRADEMARK.md for permissions and reuse restrictions";
+  }
+  return clean.startsWith("schemas/") || clean.startsWith("tools/") || clean.endsWith(".json")
+    ? "Apache-2.0"
+    : "CC-BY-4.0";
+}
+
 function projectionMediaNode(kind, value, title, assetPath, assetRole, summary) {
   const sourcePath = projectionAssetSourcePath(assetPath);
   return {
@@ -2015,9 +2034,7 @@ function buildProtocolRawFileNodes() {
       media_type: kind.media_type,
       mime_type: kind.mime_type,
       asset_role: "canonical_raw_source",
-      rights_status: relativePath.startsWith("schemas/") || relativePath.startsWith("tools/") || relativePath.endsWith(".json")
-        ? "Apache-2.0"
-        : "CC-BY-4.0",
+      rights_status: protocolArtifactRightsStatus(relativePath),
       relationships: []
     };
     if (rawText) node.content = rawText;

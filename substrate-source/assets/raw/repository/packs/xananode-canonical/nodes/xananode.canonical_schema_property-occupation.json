@@ -1,0 +1,25 @@
+{
+  "id": "xananode.canonical:schema/property-occupation",
+  "title": "Occupation",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A short role label for a person's work or calling.",
+  "registry_type": "occupation",
+  "category": "identity",
+  "aliases": [
+    "profession",
+    "role"
+  ],
+  "applies_to": [
+    "person"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "Writer"
+  ],
+  "relationships": []
+}

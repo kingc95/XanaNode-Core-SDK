@@ -1,0 +1,40 @@
+{
+  "id": "xananode.canonical:schema/property-aliases",
+  "title": "Aliases",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "Other names, spellings, handles, or variant titles for the same node.",
+  "registry_type": "aliases",
+  "category": "identity",
+  "aliases": [
+    "alternate_names",
+    "aka"
+  ],
+  "applies_to": [
+    "person",
+    "concept",
+    "source",
+    "organization",
+    "project",
+    "technology",
+    "publication",
+    "place",
+    "media"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "array",
+    "items": {
+      "type": "string"
+    },
+    "uniqueItems": true
+  },
+  "examples": [
+    [
+      "H2G2",
+      "The Hitchhiker's Guide to the Galaxy"
+    ]
+  ],
+  "relationships": []
+}

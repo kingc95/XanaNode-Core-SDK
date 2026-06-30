@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source foreshadows or historically precedes the target without direct causation.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "anticipates",
   "registry_namespace": "xananode",
   "category": "historical",

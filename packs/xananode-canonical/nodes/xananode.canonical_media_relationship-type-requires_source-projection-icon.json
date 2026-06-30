@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-requires_source-projection-icon",
+  "title": "Requires source Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/requires_source.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/requires_source.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the requires_source relationship type.",
+  "relationships": [],
+  "content_id": "sha256:4fe11c8e15903b39a79b8a82cd38683d5ad4a1987e3849c9d55091cb42c1c04f",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/requires_source.svg",
+    "method": "archive",
+    "content_id": "sha256:4fe11c8e15903b39a79b8a82cd38683d5ad4a1987e3849c9d55091cb42c1c04f",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

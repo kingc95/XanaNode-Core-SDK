@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-approved-projection-icon",
+  "title": "Approved Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/approved.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/approved.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the approved relationship type.",
+  "relationships": [],
+  "content_id": "sha256:a77ae3047e46832ab43f2e8e40d1d9d3a40c4abd4fe3d16b35e9acc4b3b88341",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/approved.svg",
+    "method": "archive",
+    "content_id": "sha256:a77ae3047e46832ab43f2e8e40d1d9d3a40c4abd4fe3d16b35e9acc4b3b88341",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

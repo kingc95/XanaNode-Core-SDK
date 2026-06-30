@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source descends from or is based on the target.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "derived_from",
   "registry_namespace": "xananode",
   "category": "lineage",

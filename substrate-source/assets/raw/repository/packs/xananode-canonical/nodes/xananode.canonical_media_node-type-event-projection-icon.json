@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-event-projection-icon",
+  "title": "Event Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/event.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/event.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the event node type.",
+  "relationships": [],
+  "content_id": "sha256:821724b7a2ee8d2d36d151d2ffb238cd2c0117eefe18b7aabb08d2ee1b982241",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/event.svg",
+    "method": "archive",
+    "content_id": "sha256:821724b7a2ee8d2d36d151d2ffb238cd2c0117eefe18b7aabb08d2ee1b982241",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

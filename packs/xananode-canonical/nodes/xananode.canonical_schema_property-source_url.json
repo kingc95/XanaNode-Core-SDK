@@ -1,0 +1,29 @@
+{
+  "id": "xananode.canonical:schema/property-source_url",
+  "title": "Source URL",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The primary online location for a source, media item, or referenceable record.",
+  "registry_type": "source_url",
+  "category": "reference",
+  "aliases": [
+    "url",
+    "canonical_url",
+    "origin_url"
+  ],
+  "applies_to": [
+    "source",
+    "media",
+    "schema"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string",
+    "format": "uri"
+  },
+  "examples": [
+    "https://xananode.com/"
+  ],
+  "relationships": []
+}

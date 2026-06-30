@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source and target have an identity relationship that is contested, ambiguous, or rejected by at least one substrate, contributor, or governance process.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "disputed_identity",
   "registry_namespace": "xananode",
   "category": "identity",

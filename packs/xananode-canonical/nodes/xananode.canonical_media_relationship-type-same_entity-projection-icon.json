@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-same_entity-projection-icon",
+  "title": "Same entity Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/same_entity.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/same_entity.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the same_entity relationship type.",
+  "relationships": [],
+  "content_id": "sha256:b86e504799941393f7387560a128c9e9b3f2bb9f3ba78d63a0e0eae14c8662dc",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/same_entity.svg",
+    "method": "archive",
+    "content_id": "sha256:b86e504799941393f7387560a128c9e9b3f2bb9f3ba78d63a0e0eae14c8662dc",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

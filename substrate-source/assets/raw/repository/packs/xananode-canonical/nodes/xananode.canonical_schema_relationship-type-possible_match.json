@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source may represent the same entity, concept, claim, source, or fragment as the target, but the match has not been confirmed.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "possible_match",
   "registry_namespace": "xananode",
   "category": "identity",

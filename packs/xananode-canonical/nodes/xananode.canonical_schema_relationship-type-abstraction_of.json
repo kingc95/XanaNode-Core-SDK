@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source abstracts away details from the target while preserving a relevant structure.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "abstraction_of",
   "registry_namespace": "xananode",
   "category": "cognition",

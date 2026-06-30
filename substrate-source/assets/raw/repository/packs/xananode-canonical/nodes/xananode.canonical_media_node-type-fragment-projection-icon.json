@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-fragment-projection-icon",
+  "title": "Fragment Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/fragment.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/fragment.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the fragment node type.",
+  "relationships": [],
+  "content_id": "sha256:eb5b91b351962fc5eba96b1d2ae5128fc18d665501e61cf1a99c871bea619b94",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/fragment.svg",
+    "method": "archive",
+    "content_id": "sha256:eb5b91b351962fc5eba96b1d2ae5128fc18d665501e61cf1a99c871bea619b94",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

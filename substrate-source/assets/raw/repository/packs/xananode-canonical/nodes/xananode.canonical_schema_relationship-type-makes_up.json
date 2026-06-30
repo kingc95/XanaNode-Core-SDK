@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The makes_up inverse relationship term derived from made_of.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "makes_up",
   "registry_namespace": "xananode",
   "category": "composition",

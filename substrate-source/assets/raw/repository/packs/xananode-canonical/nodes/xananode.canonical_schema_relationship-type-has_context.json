@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The has_context inverse relationship term derived from context_for.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "has_context",
   "registry_namespace": "xananode",
   "category": "explanation",

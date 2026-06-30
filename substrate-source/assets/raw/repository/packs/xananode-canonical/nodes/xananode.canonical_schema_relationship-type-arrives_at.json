@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source reasoning, argument, or inquiry leads to the target conclusion or position.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "arrives_at",
   "registry_namespace": "xananode",
   "category": "reasoning",

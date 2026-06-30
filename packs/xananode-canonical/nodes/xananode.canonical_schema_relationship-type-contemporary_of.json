@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source existed or worked during the same relevant period as the target.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "contemporary_of",
   "registry_namespace": "xananode",
   "category": "temporal",

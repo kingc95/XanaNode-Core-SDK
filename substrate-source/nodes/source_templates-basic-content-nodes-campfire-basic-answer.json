@@ -15,7 +15,7 @@
   "content_id": "sha256:c06c15e795d796d315fe6da544eead9771b179738f3bb461e02a8758bc9af328",
   "content": "---\ntitle: A small fire starts with tinder, kindling, fuel, airflow, and a safe place.\ntype: response\nsubtype: answer\nsummary: Build a safe fire lay, light tinder, add kindling, then feed larger fuel slowly.\ncreated_by: Example Author\nrelationships:\n  - type: answers\n    target: example:question/how-to-make-a-campfire\n    summary: This response answers the starter question at a basic level.\n  - type: requires\n    target: example:claim/campfire-safe-location\n    summary: The answer depends on choosing a safe fire site.\n  - type: requires\n    target: example:claim/dry-tinder-and-kindling\n    summary: The answer depends on small, dry ignition material.\nfragments:\n  - id: definition\n    label: Answer\n    text: A small campfire starts with dry tinder, kindling, fuel, airflow, and a safe place.\n    selector:\n      type: TextQuoteSelector\n      exact: A small campfire starts with dry tinder, kindling, fuel, airflow, and a safe place.\n---\n# A small fire starts with tinder, kindling, fuel, airflow, and a safe place.\n\nA small campfire starts with dry tinder, kindling, fuel, airflow, and a safe place. Clear the area, keep water nearby, make a small tinder bundle, add kindling loosely enough for air to move, and only add larger fuel after the flame is stable.\n",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.292Z",
+    "captured_at": "2026-06-30T05:09:29.991Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/templates/basic/content/nodes/campfire-basic-answer.md",
     "method": "archive",
     "content_id": "sha256:c06c15e795d796d315fe6da544eead9771b179738f3bb461e02a8758bc9af328",

@@ -1,0 +1,49 @@
+{
+  "id": "xananode.canonical:schema/property-summary",
+  "title": "Summary",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A short human sentence that explains why a node exists and what it means.",
+  "registry_type": "summary",
+  "category": "communication",
+  "aliases": [
+    "abstract",
+    "description_short"
+  ],
+  "applies_to": [
+    "person",
+    "concept",
+    "claim",
+    "question",
+    "hypothesis",
+    "problem",
+    "knowledge_gap",
+    "communication",
+    "response",
+    "source",
+    "observation",
+    "essay",
+    "media",
+    "event",
+    "place",
+    "organization",
+    "project",
+    "technology",
+    "publication",
+    "community",
+    "relationship",
+    "revision",
+    "trail",
+    "schema",
+    "fragment"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "Writer and technologist who helped popularize hypertext ideas."
+  ],
+  "relationships": []
+}

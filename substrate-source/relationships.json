@@ -6,7 +6,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "The repository documents and carries the Core SDK project.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/core-project-implements-protocol",
@@ -14,7 +14,7 @@
       "target": "xananode.protocol:project/xananode-protocol",
       "type": "implements",
       "summary": "The Core SDK implements the XanaNode protocol.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/core-project-uses-protocol-substrate",
@@ -22,7 +22,7 @@
       "target": "xananode.protocol:source/repository-xananode-protocol",
       "type": "uses",
       "summary": "The Core SDK consumes protocol schemas, registries, and docs from the protocol repository.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/core-cli-supports-core-project",
@@ -30,7 +30,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "supports",
       "summary": "The Core CLI is the machine-facing executable surface of the Core SDK.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-license",
@@ -38,7 +38,7 @@
       "target": "xananode.core:source/artifact-license",
       "type": "contains",
       "summary": "The Core SDK repository contains LICENSE.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-media-images-xananode-icon",
@@ -46,7 +46,7 @@
       "target": "xananode.core:media/artifact-media-images-xananode-icon",
       "type": "contains",
       "summary": "The Core SDK repository contains media/images/xananode-icon.svg.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-package",
@@ -54,7 +54,7 @@
       "target": "xananode.core:source/artifact-package",
       "type": "contains",
       "summary": "The Core SDK repository contains package.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-packs-xananode-canonical-bundled-fixture",
@@ -62,7 +62,7 @@
       "target": "xananode.core:source/artifact-packs-xananode-canonical-bundled-fixture",
       "type": "contains",
       "summary": "The Core SDK repository contains packs/xananode-canonical/BUNDLED-FIXTURE.md.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-packs-xananode-canonical-nodes",
@@ -70,7 +70,7 @@
       "target": "xananode.core:source/artifact-packs-xananode-canonical-nodes",
       "type": "contains",
       "summary": "The Core SDK repository contains packs/xananode-canonical/nodes.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-packs-xananode-canonical-pack-report",
@@ -78,7 +78,7 @@
       "target": "xananode.core:source/artifact-packs-xananode-canonical-pack-report",
       "type": "contains",
       "summary": "The Core SDK repository contains packs/xananode-canonical/pack-report.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-packs-xananode-canonical-readme",
@@ -86,7 +86,7 @@
       "target": "xananode.core:source/artifact-packs-xananode-canonical-readme",
       "type": "contains",
       "summary": "The Core SDK repository contains packs/xananode-canonical/README.md.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-packs-xananode-canonical-relationships",
@@ -94,7 +94,7 @@
       "target": "xananode.core:source/artifact-packs-xananode-canonical-relationships",
       "type": "contains",
       "summary": "The Core SDK repository contains packs/xananode-canonical/relationships.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-packs-xananode-canonical-substrate-bundle",
@@ -102,7 +102,7 @@
       "target": "xananode.core:source/artifact-packs-xananode-canonical-substrate-bundle",
       "type": "contains",
       "summary": "The Core SDK repository contains packs/xananode-canonical/substrate-bundle.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-packs-xananode-canonical-substrate",
@@ -110,7 +110,7 @@
       "target": "xananode.core:source/artifact-packs-xananode-canonical-substrate",
       "type": "contains",
       "summary": "The Core SDK repository contains packs/xananode-canonical/substrate.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-readme",
@@ -118,7 +118,7 @@
       "target": "xananode.core:source/artifact-readme",
       "type": "contains",
       "summary": "The Core SDK repository contains README.md.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-registry-canonical-schemas",
@@ -126,7 +126,7 @@
       "target": "xananode.core:schema/artifact-registry-canonical-schemas",
       "type": "contains",
       "summary": "The Core SDK repository contains registry/canonical-schemas.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/registry-canonical-schemas-documents-core-project",
@@ -134,7 +134,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Registry / Canonical Schemas documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-registry-federation-targets",
@@ -142,7 +142,7 @@
       "target": "xananode.core:schema/artifact-registry-federation-targets",
       "type": "contains",
       "summary": "The Core SDK repository contains registry/federation-targets.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/registry-federation-targets-documents-core-project",
@@ -150,7 +150,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Registry / Federation Targets documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-registry-federation-targets-schema",
@@ -158,7 +158,7 @@
       "target": "xananode.core:schema/artifact-registry-federation-targets-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains registry/federation-targets.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/registry-federation-targets-schema-documents-core-project",
@@ -166,7 +166,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Registry / Federation Targets.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-registry-known-implementations",
@@ -174,7 +174,7 @@
       "target": "xananode.core:schema/artifact-registry-known-implementations",
       "type": "contains",
       "summary": "The Core SDK repository contains registry/known-implementations.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/registry-known-implementations-documents-core-project",
@@ -182,7 +182,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Registry / Known Implementations documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-registry-namespaces",
@@ -190,7 +190,7 @@
       "target": "xananode.core:schema/artifact-registry-namespaces",
       "type": "contains",
       "summary": "The Core SDK repository contains registry/namespaces.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/registry-namespaces-documents-core-project",
@@ -198,7 +198,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Registry / Namespaces documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-author-profile-schema",
@@ -206,7 +206,7 @@
       "target": "xananode.core:schema/artifact-schemas-author-profile-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/author-profile.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-author-profile-schema-documents-core-project",
@@ -214,7 +214,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Author Profile.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-compatibility-report-schema",
@@ -222,7 +222,7 @@
       "target": "xananode.core:schema/artifact-schemas-compatibility-report-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/compatibility-report.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-compatibility-report-schema-documents-core-project",
@@ -230,7 +230,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Compatibility Report.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-merge-report-schema",
@@ -238,7 +238,7 @@
       "target": "xananode.core:schema/artifact-schemas-merge-report-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/merge-report.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-merge-report-schema-documents-core-project",
@@ -246,7 +246,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Merge Report.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-namespace-schema",
@@ -254,7 +254,7 @@
       "target": "xananode.core:schema/artifact-schemas-namespace-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/namespace.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-namespace-schema-documents-core-project",
@@ -262,7 +262,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Namespace.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-nanopublication-schema",
@@ -270,7 +270,7 @@
       "target": "xananode.core:schema/artifact-schemas-nanopublication-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/nanopublication.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-nanopublication-schema-documents-core-project",
@@ -278,7 +278,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Nanopublication.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-property-registry-schema",
@@ -286,7 +286,7 @@
       "target": "xananode.core:schema/artifact-schemas-property-registry-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/property-registry.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-property-registry-schema-documents-core-project",
@@ -294,7 +294,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Property Registry.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-ro-crate-metadata-schema",
@@ -302,7 +302,7 @@
       "target": "xananode.core:schema/artifact-schemas-ro-crate-metadata-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/ro-crate-metadata.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-ro-crate-metadata-schema-documents-core-project",
@@ -310,7 +310,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Ro Crate Metadata.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-substrate-diff-schema",
@@ -318,7 +318,7 @@
       "target": "xananode.core:schema/artifact-schemas-substrate-diff-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/substrate-diff.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-substrate-diff-schema-documents-core-project",
@@ -326,7 +326,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Substrate Diff.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-substrate-layout-schema",
@@ -334,7 +334,7 @@
       "target": "xananode.core:schema/artifact-schemas-substrate-layout-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/substrate-layout.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-substrate-layout-schema-documents-core-project",
@@ -342,7 +342,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Substrate Layout.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-substrate-manifest-schema",
@@ -350,7 +350,7 @@
       "target": "xananode.core:schema/artifact-schemas-substrate-manifest-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/substrate-manifest.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-substrate-manifest-schema-documents-core-project",
@@ -358,7 +358,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Substrate Manifest.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-substrate-node-schema",
@@ -366,7 +366,7 @@
       "target": "xananode.core:schema/artifact-schemas-substrate-node-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/substrate-node.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-substrate-node-schema-documents-core-project",
@@ -374,7 +374,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Substrate Node.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-substrate-relationships-schema",
@@ -382,7 +382,7 @@
       "target": "xananode.core:schema/artifact-schemas-substrate-relationships-schema",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/substrate-relationships.schema.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-substrate-relationships-schema-documents-core-project",
@@ -390,7 +390,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Substrate Relationships.Schema documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-xananode-node-types-schema-v0-3-0",
@@ -398,7 +398,7 @@
       "target": "xananode.core:schema/artifact-schemas-xananode-node-types-schema-v0-3-0",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/xananode-node-types.schema.v0.3.0.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-xananode-node-types-schema-v0-3-0-documents-core-project",
@@ -406,7 +406,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Xananode Node Types.Schema.V0.3.0 documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-xananode-node-types-v0-3-0",
@@ -414,7 +414,7 @@
       "target": "xananode.core:schema/artifact-schemas-xananode-node-types-v0-3-0",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/xananode-node-types.v0.3.0.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-xananode-node-types-v0-3-0-documents-core-project",
@@ -422,7 +422,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Xananode Node Types.V0.3.0 documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-xananode-property-registry-v0-1-0",
@@ -430,7 +430,7 @@
       "target": "xananode.core:schema/artifact-schemas-xananode-property-registry-v0-1-0",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/xananode-property-registry.v0.1.0.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-xananode-property-registry-v0-1-0-documents-core-project",
@@ -438,7 +438,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Xananode Property Registry.V0.1.0 documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-xananode-relationship-types-schema-v0-5-0",
@@ -446,7 +446,7 @@
       "target": "xananode.core:schema/artifact-schemas-xananode-relationship-types-schema-v0-5-0",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/xananode-relationship-types.schema.v0.5.0.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-xananode-relationship-types-schema-v0-5-0-documents-core-project",
@@ -454,7 +454,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Xananode Relationship Types.Schema.V0.5.0 documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-xananode-relationship-types-v0-5-0",
@@ -462,7 +462,7 @@
       "target": "xananode.core:schema/artifact-schemas-xananode-relationship-types-v0-5-0",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/xananode-relationship-types.v0.5.0.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-xananode-relationship-types-v0-5-0-documents-core-project",
@@ -470,7 +470,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Xananode Relationship Types.V0.5.0 documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-schemas-xananode-substrate-layout-v0-1-0",
@@ -478,7 +478,7 @@
       "target": "xananode.core:schema/artifact-schemas-xananode-substrate-layout-v0-1-0",
       "type": "contains",
       "summary": "The Core SDK repository contains schemas/xananode-substrate-layout.v0.1.0.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/schemas-xananode-substrate-layout-v0-1-0-documents-core-project",
@@ -486,7 +486,7 @@
       "target": "xananode.core:project/xananode-core-sdk",
       "type": "documents",
       "summary": "Schemas / Xananode Substrate Layout.V0.1.0 documents or constrains the Core SDK behavior.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-templates-basic-content-nodes-campfire-basic-answer",
@@ -494,7 +494,7 @@
       "target": "xananode.core:source/artifact-templates-basic-content-nodes-campfire-basic-answer",
       "type": "contains",
       "summary": "The Core SDK repository contains templates/basic/content/nodes/campfire-basic-answer.md.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-templates-basic-content-nodes-campfire-safe-location",
@@ -502,7 +502,7 @@
       "target": "xananode.core:source/artifact-templates-basic-content-nodes-campfire-safe-location",
       "type": "contains",
       "summary": "The Core SDK repository contains templates/basic/content/nodes/campfire-safe-location.md.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-templates-basic-content-nodes-campfire-safety-gap",
@@ -510,7 +510,7 @@
       "target": "xananode.core:source/artifact-templates-basic-content-nodes-campfire-safety-gap",
       "type": "contains",
       "summary": "The Core SDK repository contains templates/basic/content/nodes/campfire-safety-gap.md.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-templates-basic-content-nodes-dry-tinder-and-kindling",
@@ -518,7 +518,7 @@
       "target": "xananode.core:source/artifact-templates-basic-content-nodes-dry-tinder-and-kindling",
       "type": "contains",
       "summary": "The Core SDK repository contains templates/basic/content/nodes/dry-tinder-and-kindling.md.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-templates-basic-content-nodes-how-to-make-a-campfire",
@@ -526,7 +526,7 @@
       "target": "xananode.core:source/artifact-templates-basic-content-nodes-how-to-make-a-campfire",
       "type": "contains",
       "summary": "The Core SDK repository contains templates/basic/content/nodes/how-to-make-a-campfire.md.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-templates-basic-content-nodes-start-here",
@@ -534,7 +534,7 @@
       "target": "xananode.core:source/artifact-templates-basic-content-nodes-start-here",
       "type": "contains",
       "summary": "The Core SDK repository contains templates/basic/content/nodes/start-here.md.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     },
     {
       "id": "xananode.core:rel/repository-contains-templates-basic-substrate",
@@ -542,7 +542,7 @@
       "target": "xananode.core:source/artifact-templates-basic-substrate",
       "type": "contains",
       "summary": "The Core SDK repository contains templates/basic/substrate.json.",
-      "asserted_at": "2026-06-27T16:35:32.292Z"
+      "asserted_at": "2026-06-30T05:09:29.991Z"
     }
   ]
 }

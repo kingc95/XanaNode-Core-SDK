@@ -374,7 +374,34 @@ export function loadSubstratePack(rootDir, options = {}) {
   }
   walkJsonAndJsonl(rootDir);
 
-  for (const filePath of (output.__jsonFiles || []).sort()) {
+  const discoveredJsonFiles = (output.__jsonFiles || []).sort();
+  const relativeJsonFiles = discoveredJsonFiles.map((filePath) => path.relative(rootDir, filePath).replace(/\\/g, "/"));
+  const hasPerNodeFiles = relativeJsonFiles.some((relativePath) => relativePath.startsWith("nodes/") && relativePath.endsWith(".json"));
+  const hasNodesList = relativeJsonFiles.includes("nodes.json");
+  const hasRelationshipsList = relativeJsonFiles.includes("relationships.json");
+  const hasManifest = relativeJsonFiles.includes("substrate.json");
+  const hasSplitArtifacts = hasPerNodeFiles || hasNodesList || hasRelationshipsList || hasManifest;
+  const skippedFiles = new Set();
+
+  if (hasSplitArtifacts) {
+    for (const filePath of discoveredJsonFiles) {
+      const relativePath = path.relative(rootDir, filePath).replace(/\\/g, "/");
+      if (path.basename(relativePath) === "pack-report.json") {
+        skippedFiles.add(filePath);
+        continue;
+      }
+      if (path.basename(relativePath) === "substrate-bundle.json") {
+        skippedFiles.add(filePath);
+        continue;
+      }
+      if (hasPerNodeFiles && relativePath === "nodes.json") {
+        skippedFiles.add(filePath);
+      }
+    }
+  }
+
+  for (const filePath of discoveredJsonFiles) {
+    if (skippedFiles.has(filePath)) continue;
     try {
       const value = JSON.parse(fs.readFileSync(filePath, "utf8"));
       if (path.basename(filePath) === "substrate.json" && isPlainObject(value)) {
@@ -392,6 +419,7 @@ export function loadSubstratePack(rootDir, options = {}) {
   delete output.__jsonFiles;
 
   for (const filePath of jsonlFiles.sort()) {
+    if (hasSplitArtifacts && path.basename(filePath) === "substrate-bundle.jsonl") continue;
     try {
       collectJsonlArtifact(fs.readFileSync(filePath, "utf8"), filePath, rootDir, pack, output);
     } catch (error) {

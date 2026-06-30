@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-licensed_under-projection-icon",
+  "title": "licensed under Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/licensed_under.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/licensed_under.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the licensed_under relationship type.",
+  "relationships": [],
+  "content_id": "sha256:517a2e9e1738947991fbc649843bcbbe7d49b5f8337903d44e7b60dd65944740",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/licensed_under.svg",
+    "method": "archive",
+    "content_id": "sha256:517a2e9e1738947991fbc649843bcbbe7d49b5f8337903d44e7b60dd65944740",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

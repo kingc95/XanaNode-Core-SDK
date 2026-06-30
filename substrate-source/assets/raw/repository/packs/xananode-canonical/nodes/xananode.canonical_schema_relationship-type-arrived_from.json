@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The arrived_from inverse relationship term derived from arrives_at.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "arrived_from",
   "registry_namespace": "xananode",
   "category": "reasoning",

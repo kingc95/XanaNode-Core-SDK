@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
-import { analyzeSubstrateIntake, analyzeTextIntake, buildBundledCanonicalPack, buildGraphProjection, buildHopNeighborhood, buildSearchPlan, buildSubstrate, buildViewerGraphModel, createProjectionRegistry, describeViewerGraphDensity, loadSubstratePack, normalizePackReference, pickNextViewerTourNode, relationshipsFromProjectionNodes, selectViewerLabeledNodes, writeCanonicalPack, writeSubstrateArtifacts } from "../src/index.js";
+import { advanceViewerPlaybackState, analyzeSubstrateIntake, analyzeTextIntake, buildBundledCanonicalPack, buildGraphProjection, buildHopNeighborhood, buildSearchPlan, buildSubstrate, buildViewerGraphModel, buildViewerSearchState, createProjectionRegistry, createViewerTourSession, describeViewerGraphDensity, getViewerTimedDwellMs, getViewerTrailNodeIds, loadSubstratePack, normalizePackReference, pickNextViewerTourNode, rememberViewerTourVisit, relationshipsFromProjectionNodes, selectViewerLabeledNodes, writeCanonicalPack, writeSubstrateArtifacts } from "../src/index.js";
 
 test("builds bundled example substrate", async () => {
   const root = path.resolve("templates/basic");
@@ -198,6 +198,18 @@ test("hop neighborhoods include neighbors of direct neighbors at depth two", () 
   );
 });
 
+test("trail helpers follow chained continues_to edges from the lead node", () => {
+  const trail = { id: "trail", title: "Trail", type: "trail" };
+  const ids = getViewerTrailNodeIds(trail, {
+    allEdges: [
+      { source: "trail", target: "one", type: "starts_with" },
+      { source: "one", target: "two", type: "continues_to" },
+      { source: "two", target: "three", type: "continues_to" }
+    ]
+  });
+  assert.deepEqual(ids, ["one", "two", "three"]);
+});
+
 test("viewer search plans strip conversational lead-ins", () => {
   const plan = buildSearchPlan("Who is Vannevar Bush and why does he matter?");
   assert.equal(plan.raw, "Who is Vannevar Bush and why does he matter?");
@@ -259,6 +271,56 @@ test("viewer tour picker prefers nearby fresh nodes", () => {
 
   assert.equal(choice.nextId, "fresh-near");
   assert.equal(choice.nextIndex, 0);
+});
+
+test("viewer timed dwell helper clamps and normalizes seconds", () => {
+  assert.equal(getViewerTimedDwellMs({ timedSeconds: 9 }), 9000);
+  assert.equal(getViewerTimedDwellMs({ timedSeconds: 1 }), 3000);
+  assert.equal(getViewerTimedDwellMs({ timedSeconds: 999 }), 120000);
+});
+
+test("viewer search state reports pending and live matches", () => {
+  const pending = buildViewerSearchState([{ id: "x:concept/memex", title: "Memex", type: "concept" }], "me");
+  assert.equal(pending.pending, true);
+  assert.match(pending.meta, /Keep typing/i);
+
+  const ready = buildViewerSearchState([{ id: "x:concept/memex", title: "Memex", type: "concept" }], "memex");
+  assert.equal(ready.ready, true);
+  assert.equal(ready.results.length, 1);
+  assert.match(ready.meta, /match/i);
+});
+
+test("viewer playback helpers keep tour visit state and advance trail playback", () => {
+  const trailNode = {
+    id: "x:trail/start-here",
+    type: "trail",
+    nodes: ["x:concept/one", "x:concept/two", "x:concept/three"]
+  };
+  const session = createViewerTourSession({
+    focusId: "x:trail/start-here",
+    trailNode
+  });
+  assert.deepEqual(session.tourVisited, ["x:trail/start-here"]);
+  assert.equal(session.activeTrail.nodes[0], "x:concept/one");
+
+  const visit = rememberViewerTourVisit("x:concept/one", {
+    tourVisited: session.tourVisited,
+    tourRecent: session.tourRecent,
+    visibleCount: 12
+  });
+  assert.equal(visit.tourRecent.at(-1), "x:concept/one");
+
+  const advance = advanceViewerPlaybackState({
+    tourActive: true,
+    activeTrail: session.activeTrail,
+    focusId: "x:trail/start-here",
+    tourRecent: visit.tourRecent,
+    tourVisited: visit.tourVisited,
+    tourIndex: 0,
+    nodes: []
+  });
+  assert.equal(advance.kind, "node");
+  assert.equal(advance.nextId, "x:concept/one");
 });
 
 test("viewer density helpers mark dense graphs and preserve useful labels", () => {

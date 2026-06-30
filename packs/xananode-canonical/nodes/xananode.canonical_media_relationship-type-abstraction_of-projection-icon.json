@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-abstraction_of-projection-icon",
+  "title": "Abstraction of Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/abstraction_of.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/abstraction_of.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the abstraction_of relationship type.",
+  "relationships": [],
+  "content_id": "sha256:702f8ab5c4f1ca26bd8611172c7122f3b404d09a224aab7706ddf633ca056af8",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/abstraction_of.svg",
+    "method": "archive",
+    "content_id": "sha256:702f8ab5c4f1ca26bd8611172c7122f3b404d09a224aab7706ddf633ca056af8",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -15,7 +15,8 @@
     "agency",
     "nonprofit",
     "standards_body",
-    "publisher"
+    "publisher",
+    "fictional_organization"
   ],
   "required_frontmatter": [
     "title",

@@ -15,7 +15,7 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:b5800fe6bbc0f5d5f01b936462cb2d4c7b69b2ff7b3268b0bb96f907a140c17a",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.999Z",
+    "captured_at": "2026-06-30T05:09:31.104Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/merge-report.schema.json",
     "method": "archive",
     "content_id": "sha256:1db233199589a5ec082d4d74814d0e8225bd53d7a0a968962c88db692ee58665",

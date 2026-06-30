@@ -1,0 +1,26 @@
+{
+  "id": "xananode.canonical:schema/property-media_type",
+  "title": "Media type",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The media-specific subtype class used for rendering or intake decisions.",
+  "registry_type": "media_type",
+  "category": "classification",
+  "aliases": [
+    "asset_type",
+    "visual_type"
+  ],
+  "applies_to": [
+    "media",
+    "source"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "image"
+  ],
+  "relationships": []
+}

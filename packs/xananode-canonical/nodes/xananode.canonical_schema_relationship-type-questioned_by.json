@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-questioned_by",
+  "title": "Questioned By Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The questioned_by inverse relationship term derived from questions.",
+  "version": "0.5.1",
+  "registry_type": "questioned_by",
+  "registry_namespace": "xananode",
+  "category": "inquiry",
+  "inverse": "questions",
+  "color": "#99f6e4",
+  "inverse_color": "#2dd4bf",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

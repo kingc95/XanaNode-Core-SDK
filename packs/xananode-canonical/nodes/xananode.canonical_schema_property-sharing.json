@@ -1,0 +1,67 @@
+{
+  "id": "xananode.canonical:schema/property-sharing",
+  "title": "Sharing scope",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The export and sharing intent for a node, including whether it should stay local or ship with a substrate.",
+  "registry_type": "sharing",
+  "category": "workflow",
+  "aliases": [
+    "sharing_scope",
+    "export_scope",
+    "privacy_scope"
+  ],
+  "applies_to": [
+    "person",
+    "concept",
+    "claim",
+    "question",
+    "hypothesis",
+    "problem",
+    "knowledge_gap",
+    "communication",
+    "response",
+    "source",
+    "observation",
+    "essay",
+    "media",
+    "event",
+    "place",
+    "organization",
+    "project",
+    "technology",
+    "publication",
+    "community",
+    "relationship",
+    "revision",
+    "trail",
+    "schema",
+    "fragment"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+      "scope": {
+        "type": "string",
+        "enum": [
+          "public",
+          "private",
+          "restricted"
+        ]
+      },
+      "shareable": {
+        "type": "boolean"
+      }
+    }
+  },
+  "examples": [
+    {
+      "scope": "private",
+      "shareable": false
+    }
+  ],
+  "relationships": []
+}

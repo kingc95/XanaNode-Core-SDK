@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source system or model was trained on the target dataset, corpus, or collection.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "trained_on",
   "registry_namespace": "xananode",
   "category": "composition",

@@ -15,7 +15,7 @@
   "content_id": "sha256:c0d771e261b8e041b93c3c6f49c9af75b455e8cb9da56a8a5757b0f83a52d09a",
   "content": "{\n  \"namespaces\": [\n    {\n      \"id\": \"xananode\",\n      \"name\": \"XanaNode Core\",\n      \"description\": \"Canonical namespace for core XanaNode node and relationship types.\",\n      \"schema\": \"../schemas/\"\n    },\n    {\n      \"id\": \"example.minimal\",\n      \"name\": \"Minimal Example Namespace\",\n      \"description\": \"Namespace used by the minimal example substrate.\",\n      \"example\": \"../examples/minimal-substrate/\"\n    },\n    {\n      \"id\": \"example.researcher_a\",\n      \"name\": \"Federation Example A Namespace\",\n      \"description\": \"Namespace used by the first independently authored federation example substrate.\",\n      \"example\": \"../examples/federation-example/substrate-a/\"\n    },\n    {\n      \"id\": \"example.researcher_b\",\n      \"name\": \"Federation Example B Namespace\",\n      \"description\": \"Namespace used by the second independently authored federation example substrate.\",\n      \"example\": \"../examples/federation-example/substrate-b/\"\n    },\n    {\n      \"id\": \"example.merge\",\n      \"name\": \"Federation Merge Report Example Namespace\",\n      \"description\": \"Namespace used for merge report and mapping records in the federation example.\",\n      \"example\": \"../examples/federation-example/\"\n    }\n  ]\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.292Z",
+    "captured_at": "2026-06-30T05:09:29.991Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/registry/namespaces.json",
     "method": "archive",
     "content_id": "sha256:c0d771e261b8e041b93c3c6f49c9af75b455e8cb9da56a8a5757b0f83a52d09a",

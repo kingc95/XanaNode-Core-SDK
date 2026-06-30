@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-media-projection-icon",
+  "title": "Media Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/media.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/media.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the media node type.",
+  "relationships": [],
+  "content_id": "sha256:4e9b2aeadf0bcff94944cf601636e84e985666db6889c1ed30a4a7886b92b05e",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/media.svg",
+    "method": "archive",
+    "content_id": "sha256:4e9b2aeadf0bcff94944cf601636e84e985666db6889c1ed30a4a7886b92b05e",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-half_sibling_of",
+  "title": "Half sibling of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source and target share one biological parent but not both.",
+  "version": "0.5.1",
+  "registry_type": "half_sibling_of",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "half_sibling_of",
+  "color": "#fb7185",
+  "inverse_color": "#fecdd3",
+  "line_style": "dashed",
+  "inverse_line_style": "dashed",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

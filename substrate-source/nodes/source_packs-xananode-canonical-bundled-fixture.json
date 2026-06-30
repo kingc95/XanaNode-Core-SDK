@@ -12,13 +12,13 @@
   "media_type": "document",
   "mime_type": "text/markdown",
   "rights_status": "Apache-2.0",
-  "content_id": "sha256:e5a232842397a6cc8ea451e988caeb7d7e42dae04981239ac6e8a79e8c19cef3",
-  "content": "# Bundled Core Fixture\n\nThis directory is a generated snapshot copied from the sibling canonical substrate repository.\n\n- Source of truth: `../XanaNode-Canonical-Substrate`\n- Namespace: `xananode.canonical`\n- Refreshed at: `2026-06-27T16:35:37.019Z`\n\nDo not edit this fixture directly.\n\nEdit the canonical substrate in the public `XanaNode-Canonical-Substrate` repo, then refresh this bundled Core fixture from the workspace root:\n\n```powershell\nnpm run substrates:build\n```\n\nOr refresh just this fixture:\n\n```powershell\nnpm run canonical:sync-core-fixture\n```\n",
+  "content_id": "sha256:72e278f3146f18e6f20ee30bca4fe16262738ce47551d151e90b7feb1ef7fd1b",
+  "content": "# Bundled Core Fixture\n\nThis directory is a generated snapshot copied from the sibling canonical substrate repository.\n\n- Source of truth: `../XanaNode-Canonical-Substrate`\n- Namespace: `xananode.canonical`\n- Refreshed at: `2026-06-30T05:09:38.766Z`\n\nDo not edit this fixture directly.\n\nEdit the canonical substrate in the public `XanaNode-Canonical-Substrate` repo, then refresh this bundled Core fixture from the workspace root:\n\n```powershell\nnpm run substrates:build\n```\n\nOr refresh just this fixture:\n\n```powershell\nnpm run canonical:sync-core-fixture\n```\n",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.292Z",
+    "captured_at": "2026-06-30T05:09:29.991Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/packs/xananode-canonical/BUNDLED-FIXTURE.md",
     "method": "archive",
-    "content_id": "sha256:e5a232842397a6cc8ea451e988caeb7d7e42dae04981239ac6e8a79e8c19cef3",
+    "content_id": "sha256:72e278f3146f18e6f20ee30bca4fe16262738ce47551d151e90b7feb1ef7fd1b",
     "rights_status": "Apache-2.0",
     "tool": "xananode-core/tools/build-substrate-source.mjs"
   },

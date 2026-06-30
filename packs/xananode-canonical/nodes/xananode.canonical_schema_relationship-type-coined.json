@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source coined the target term.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "coined",
   "registry_namespace": "xananode",
   "category": "creation",

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The featured_in inverse relationship term derived from features.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "featured_in",
   "registry_namespace": "xananode",
   "category": "participation",

@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "relationship_types": [
     {
       "type": "abstraction_of",
@@ -16,7 +16,13 @@
       "color": "#7c3aed",
       "inverse_color": "#ddd6fe",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "abstraction_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/abstraction_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/cognition.svg"
+      }
     },
     {
       "type": "alias_of",
@@ -33,7 +39,82 @@
       "color": "#f59e0b",
       "inverse_color": "#fcd34d",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "alias_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/alias_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
+    },
+    {
+      "type": "appears_as",
+      "label": "Appears as",
+      "category": "representation",
+      "meaning": "The source appears as the target character, persona, disguise, role, or presentation.",
+      "inverse": "appearance_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:appears_as",
+      "core": true,
+      "extends": null,
+      "color": "#f59e0b",
+      "inverse_color": "#fcd34d",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "appears_as",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/depicts.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
+    },
+    {
+      "type": "costumed_as",
+      "label": "Costumed as",
+      "category": "representation",
+      "meaning": "The source is in costume as the target character, role, or persona.",
+      "inverse": "costume_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:costumed_as",
+      "core": true,
+      "extends": null,
+      "color": "#ec4899",
+      "inverse_color": "#f9a8d4",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "costumed_as",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/depicts.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
+    },
+    {
+      "type": "styled_as",
+      "label": "Styled as",
+      "category": "representation",
+      "meaning": "The source is styled to resemble the target fashion, outfit, or aesthetic.",
+      "inverse": "style_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:styled_as",
+      "core": true,
+      "extends": null,
+      "color": "#8b5cf6",
+      "inverse_color": "#c4b5fd",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "styled_as",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/depicts.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
     },
     {
       "type": "alternative_to",
@@ -50,7 +131,13 @@
       "color": "#a78bfa",
       "inverse_color": "#ddd6fe",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "alternative_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/alternative_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/comparison.svg"
+      }
     },
     {
       "type": "analogous_to",
@@ -67,7 +154,13 @@
       "color": "#7c3aed",
       "inverse_color": "#ddd6fe",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "analogous_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/analogous_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/cognition.svg"
+      }
     },
     {
       "type": "announced",
@@ -84,7 +177,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "announced",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/announced.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "type": "answered_in",
@@ -101,7 +200,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "answered_in",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/answered_in.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "type": "answers",
@@ -118,7 +223,13 @@
       "color": "#2dd4bf",
       "inverse_color": "#99f6e4",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "answers",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/answers.svg",
+        "category_asset_path": "assets/projection/relationship-categories/inquiry.svg"
+      }
     },
     {
       "type": "anticipated",
@@ -135,7 +246,13 @@
       "color": "#14b8a6",
       "inverse_color": "#99f6e4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "anticipated",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/anticipated.svg",
+        "category_asset_path": "assets/projection/relationship-categories/influence.svg"
+      }
     },
     {
       "type": "anticipates",
@@ -152,7 +269,13 @@
       "color": "#c084fc",
       "inverse_color": "#e9d5ff",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "anticipates",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/anticipates.svg",
+        "category_asset_path": "assets/projection/relationship-categories/historical.svg"
+      }
     },
     {
       "type": "appears_in",
@@ -169,7 +292,13 @@
       "color": "#ec4899",
       "inverse_color": "#f9a8d4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "appears_in",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/appears_in.svg",
+        "category_asset_path": "assets/projection/relationship-categories/participation.svg"
+      }
     },
     {
       "type": "approved",
@@ -186,7 +315,13 @@
       "color": "#eab308",
       "inverse_color": "#fde047",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "approved",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/approved.svg",
+        "category_asset_path": "assets/projection/relationship-categories/governance.svg"
+      }
     },
     {
       "type": "arrives_at",
@@ -203,7 +338,13 @@
       "color": "#818cf8",
       "inverse_color": "#c7d2fe",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "arrives_at",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/arrives_at.svg",
+        "category_asset_path": "assets/projection/relationship-categories/reasoning.svg"
+      }
     },
     {
       "type": "asked",
@@ -220,7 +361,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "asked",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/asked.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "type": "asked_in",
@@ -237,7 +384,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "asked_in",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/asked_in.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "type": "authored",
@@ -254,7 +407,13 @@
       "color": "#fb923c",
       "inverse_color": "#fed7aa",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "authored",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/authored.svg",
+        "category_asset_path": "assets/projection/relationship-categories/creation.svg"
+      }
     },
     {
       "type": "broadcast_to",
@@ -271,7 +430,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "broadcast_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/broadcast_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -288,7 +453,13 @@
       "color": "#22d3ee",
       "inverse_color": "#a5f3fc",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "broader_than",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/broader_than.svg",
+        "category_asset_path": "assets/projection/relationship-categories/schema_mapping.svg"
+      }
     },
     {
       "type": "cites",
@@ -305,7 +476,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "cites",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/cites.svg",
+        "category_asset_path": "assets/projection/relationship-categories/citation.svg"
+      }
     },
     {
       "type": "clarifies",
@@ -322,7 +499,13 @@
       "color": "#60a5fa",
       "inverse_color": "#bfdbfe",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "clarifies",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/clarifies.svg",
+        "category_asset_path": "assets/projection/relationship-categories/explanation.svg"
+      }
     },
     {
       "type": "coined",
@@ -339,7 +522,13 @@
       "color": "#fb923c",
       "inverse_color": "#fed7aa",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "coined",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/coined.svg",
+        "category_asset_path": "assets/projection/relationship-categories/creation.svg"
+      }
     },
     {
       "type": "collaborated_with",
@@ -356,7 +545,13 @@
       "color": "#fb7185",
       "inverse_color": "#fecdd3",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "collaborated_with",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/collaborated_with.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
     },
     {
       "type": "communicated_to",
@@ -373,7 +568,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "communicated_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/communicated_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -390,7 +591,13 @@
       "color": "#22d3ee",
       "inverse_color": "#a5f3fc",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "compatible_with",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/compatible_with.svg",
+        "category_asset_path": "assets/projection/relationship-categories/schema_mapping.svg"
+      }
     },
     {
       "type": "contains",
@@ -407,7 +614,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "contains",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/contains.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "made_of",
@@ -424,7 +637,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "made_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/made_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "assembled_from",
@@ -441,7 +660,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "assembled_from",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/assembled_from.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "ingredient_of",
@@ -458,7 +683,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "ingredient_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/ingredient_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "contemporary_of",
@@ -475,7 +706,13 @@
       "color": "#a3e635",
       "inverse_color": "#d9f99d",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "contemporary_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/contemporary_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/temporal.svg"
+      }
     },
     {
       "type": "context_for",
@@ -492,7 +729,13 @@
       "color": "#60a5fa",
       "inverse_color": "#bfdbfe",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "context_for",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/context_for.svg",
+        "category_asset_path": "assets/projection/relationship-categories/explanation.svg"
+      }
     },
     {
       "type": "continues_to",
@@ -509,7 +752,13 @@
       "color": "#a3e635",
       "inverse_color": "#d9f99d",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "continues_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/continues_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/temporal.svg"
+      }
     },
     {
       "type": "contradicts",
@@ -526,7 +775,13 @@
       "color": "#10b981",
       "inverse_color": "#6ee7b7",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "contradicts",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/contradicts.svg",
+        "category_asset_path": "assets/projection/relationship-categories/evidence.svg"
+      }
     },
     {
       "type": "contrasts_with",
@@ -543,7 +798,13 @@
       "color": "#a78bfa",
       "inverse_color": "#ddd6fe",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "contrasts_with",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/contrasts_with.svg",
+        "category_asset_path": "assets/projection/relationship-categories/comparison.svg"
+      }
     },
     {
       "type": "created",
@@ -560,7 +821,13 @@
       "color": "#fb923c",
       "inverse_color": "#fed7aa",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "created",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/created.svg",
+        "category_asset_path": "assets/projection/relationship-categories/creation.svg"
+      }
     },
     {
       "type": "critical_to",
@@ -577,7 +844,13 @@
       "color": "#fbbf24",
       "inverse_color": "#fde68a",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "critical_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/critical_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/attention.svg"
+      }
     },
     {
       "type": "debated_with",
@@ -594,7 +867,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "debated_with",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/debated_with.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "type": "deep_links_to",
@@ -611,7 +890,13 @@
       "color": "#f59e0b",
       "inverse_color": "#fcd34d",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "deep_links_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/deep_links_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
     },
     {
       "type": "defines",
@@ -628,7 +913,13 @@
       "color": "#facc15",
       "inverse_color": "#fde68a",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "defines",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/defines.svg",
+        "category_asset_path": "assets/projection/relationship-categories/definition.svg"
+      }
     },
     {
       "type": "demonstrates",
@@ -645,7 +936,13 @@
       "color": "#10b981",
       "inverse_color": "#6ee7b7",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "demonstrates",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/demonstrates.svg",
+        "category_asset_path": "assets/projection/relationship-categories/evidence.svg"
+      }
     },
     {
       "type": "depends_on",
@@ -662,7 +959,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "depends_on",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/depends_on.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "depicts",
@@ -679,7 +982,36 @@
       "color": "#f59e0b",
       "inverse_color": "#fcd34d",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "depicts",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/depicts.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
+    },
+    {
+      "type": "portrays",
+      "label": "Portrays",
+      "category": "representation",
+      "meaning": "The source person performs or portrays the target fictional character, role, or persona.",
+      "inverse": "portrayed_by",
+      "default_weight": 5,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:portrays",
+      "core": true,
+      "extends": null,
+      "color": "#f59e0b",
+      "inverse_color": "#fcd34d",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "portrays",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/depicts.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
     },
     {
       "type": "derived_from",
@@ -696,7 +1028,13 @@
       "color": "#8b5cf6",
       "inverse_color": "#c4b5fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "derived_from",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/derived_from.svg",
+        "category_asset_path": "assets/projection/relationship-categories/lineage.svg"
+      }
     },
     {
       "type": "discussed_with",
@@ -713,7 +1051,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "discussed_with",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/discussed_with.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "type": "discusses",
@@ -730,7 +1074,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "discusses",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/discusses.svg",
+        "category_asset_path": "assets/projection/relationship-categories/citation.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -747,7 +1097,13 @@
       "color": "#f472b6",
       "inverse_color": "#fbcfe8",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "disputed_identity",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/disputed_identity.svg",
+        "category_asset_path": "assets/projection/relationship-categories/identity.svg"
+      }
     },
     {
       "type": "disputes",
@@ -764,7 +1120,13 @@
       "color": "#eab308",
       "inverse_color": "#fde047",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "disputes",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/disputes.svg",
+        "category_asset_path": "assets/projection/relationship-categories/governance.svg"
+      }
     },
     {
       "type": "documents",
@@ -781,7 +1143,13 @@
       "color": "#10b981",
       "inverse_color": "#6ee7b7",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "documents",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/documents.svg",
+        "category_asset_path": "assets/projection/relationship-categories/evidence.svg"
+      }
     },
     {
       "type": "enables",
@@ -798,7 +1166,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "enables",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/enables.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "equivalent_to",
@@ -815,7 +1189,13 @@
       "color": "#a78bfa",
       "inverse_color": "#ddd6fe",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "equivalent_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/equivalent_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/comparison.svg"
+      }
     },
     {
       "type": "evidence_for",
@@ -832,7 +1212,13 @@
       "color": "#10b981",
       "inverse_color": "#6ee7b7",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "evidence_for",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/evidence_for.svg",
+        "category_asset_path": "assets/projection/relationship-categories/evidence.svg"
+      }
     },
     {
       "type": "example_of",
@@ -849,7 +1235,13 @@
       "color": "#7c3aed",
       "inverse_color": "#ddd6fe",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "example_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/example_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/cognition.svg"
+      }
     },
     {
       "type": "explains",
@@ -866,7 +1258,13 @@
       "color": "#60a5fa",
       "inverse_color": "#bfdbfe",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "explains",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/explains.svg",
+        "category_asset_path": "assets/projection/relationship-categories/explanation.svg"
+      }
     },
     {
       "type": "extends",
@@ -883,7 +1281,13 @@
       "color": "#8b5cf6",
       "inverse_color": "#c4b5fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "extends",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/extends.svg",
+        "category_asset_path": "assets/projection/relationship-categories/lineage.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -900,7 +1304,13 @@
       "color": "#22d3ee",
       "inverse_color": "#a5f3fc",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "extension_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/extension_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/schema_mapping.svg"
+      }
     },
     {
       "type": "fails_to_answer",
@@ -917,7 +1327,13 @@
       "color": "#2dd4bf",
       "inverse_color": "#99f6e4",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "fails_to_answer",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/fails_to_answer.svg",
+        "category_asset_path": "assets/projection/relationship-categories/inquiry.svg"
+      }
     },
     {
       "type": "falsifies",
@@ -934,7 +1350,13 @@
       "color": "#0ea5e9",
       "inverse_color": "#7dd3fc",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "falsifies",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/falsifies.svg",
+        "category_asset_path": "assets/projection/relationship-categories/research_workflow.svg"
+      }
     },
     {
       "type": "features",
@@ -951,7 +1373,13 @@
       "color": "#ec4899",
       "inverse_color": "#f9a8d4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "features",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/features.svg",
+        "category_asset_path": "assets/projection/relationship-categories/participation.svg"
+      }
     },
     {
       "type": "frequently_misunderstood",
@@ -968,7 +1396,13 @@
       "color": "#fbbf24",
       "inverse_color": "#fde68a",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "frequently_misunderstood",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/frequently_misunderstood.svg",
+        "category_asset_path": "assets/projection/relationship-categories/attention.svg"
+      }
     },
     {
       "type": "friend_of",
@@ -985,7 +1419,13 @@
       "color": "#fb7185",
       "inverse_color": "#fecdd3",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "friend_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/friend_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
     },
     {
       "type": "generalizes",
@@ -1002,7 +1442,13 @@
       "color": "#7c3aed",
       "inverse_color": "#ddd6fe",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "generalizes",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/generalizes.svg",
+        "category_asset_path": "assets/projection/relationship-categories/cognition.svg"
+      }
     },
     {
       "type": "generated",
@@ -1019,7 +1465,13 @@
       "color": "#f97316",
       "inverse_color": "#fdba74",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "generated",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/generated.svg",
+        "category_asset_path": "assets/projection/relationship-categories/causation.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -1036,7 +1488,13 @@
       "default_weight": 4,
       "default_visibility": "secondary",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "governed_by",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/governed_by.svg",
+        "category_asset_path": "assets/projection/relationship-categories/governance.svg"
+      }
     },
     {
       "type": "has_claim",
@@ -1053,7 +1511,13 @@
       "color": "#f43f5e",
       "inverse_color": "#fda4af",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "has_claim",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/has_claim.svg",
+        "category_asset_path": "assets/projection/relationship-categories/claim_structure.svg"
+      }
     },
     {
       "type": "has_primary_media",
@@ -1070,7 +1534,13 @@
       "color": "#f59e0b",
       "inverse_color": "#fcd34d",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "has_primary_media",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/has_primary_media.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
     },
     {
       "type": "high_risk_for",
@@ -1087,7 +1557,13 @@
       "color": "#fbbf24",
       "inverse_color": "#fde68a",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "high_risk_for",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/high_risk_for.svg",
+        "category_asset_path": "assets/projection/relationship-categories/attention.svg"
+      }
     },
     {
       "type": "identified",
@@ -1104,7 +1580,13 @@
       "color": "#fb923c",
       "inverse_color": "#fed7aa",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "identified",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/identified.svg",
+        "category_asset_path": "assets/projection/relationship-categories/creation.svg"
+      }
     },
     {
       "type": "implements",
@@ -1121,7 +1603,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "implements",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/implements.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "important_for",
@@ -1138,7 +1626,13 @@
       "color": "#fbbf24",
       "inverse_color": "#fde68a",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "important_for",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/important_for.svg",
+        "category_asset_path": "assets/projection/relationship-categories/attention.svg"
+      }
     },
     {
       "type": "includes",
@@ -1155,7 +1649,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "includes",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/includes.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "influenced",
@@ -1172,7 +1672,13 @@
       "color": "#14b8a6",
       "inverse_color": "#99f6e4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "influenced",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/influenced.svg",
+        "category_asset_path": "assets/projection/relationship-categories/influence.svg"
+      }
     },
     {
       "type": "insufficient_evidence",
@@ -1189,7 +1695,13 @@
       "color": "#d946ef",
       "inverse_color": "#f5d0fe",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "insufficient_evidence",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/insufficient_evidence.svg",
+        "category_asset_path": "assets/projection/relationship-categories/uncertainty.svg"
+      }
     },
     {
       "type": "interviewed",
@@ -1206,7 +1718,13 @@
       "color": "#fb7185",
       "inverse_color": "#fecdd3",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "interviewed",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/interviewed.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
     },
     {
       "type": "introduced",
@@ -1223,7 +1741,13 @@
       "color": "#fb923c",
       "inverse_color": "#fed7aa",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "introduced",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/introduced.svg",
+        "category_asset_path": "assets/projection/relationship-categories/creation.svg"
+      }
     },
     {
       "type": "introduced_in",
@@ -1240,7 +1764,13 @@
       "color": "#ec4899",
       "inverse_color": "#f9a8d4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "introduced_in",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/introduced_in.svg",
+        "category_asset_path": "assets/projection/relationship-categories/participation.svg"
+      }
     },
     {
       "type": "investigates",
@@ -1257,7 +1787,13 @@
       "color": "#2dd4bf",
       "inverse_color": "#99f6e4",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "investigates",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/investigates.svg",
+        "category_asset_path": "assets/projection/relationship-categories/inquiry.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -1274,7 +1810,13 @@
       "default_weight": 4,
       "default_visibility": "secondary",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "licensed_under",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/licensed_under.svg",
+        "category_asset_path": "assets/projection/relationship-categories/governance.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -1291,7 +1833,13 @@
       "color": "#22d3ee",
       "inverse_color": "#a5f3fc",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "maps_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/maps_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/schema_mapping.svg"
+      }
     },
     {
       "type": "memorializes",
@@ -1308,7 +1856,13 @@
       "color": "#fb7185",
       "inverse_color": "#fecdd3",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "memorializes",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/memorializes.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
     },
     {
       "type": "mentions",
@@ -1325,7 +1879,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "mentions",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/mentions.svg",
+        "category_asset_path": "assets/projection/relationship-categories/citation.svg"
+      }
     },
     {
       "type": "motivated_by",
@@ -1342,7 +1902,13 @@
       "color": "#f97316",
       "inverse_color": "#fdba74",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "motivated_by",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/motivated_by.svg",
+        "category_asset_path": "assets/projection/relationship-categories/causation.svg"
+      }
     },
     {
       "type": "motivates_inquiry",
@@ -1359,7 +1925,13 @@
       "color": "#2dd4bf",
       "inverse_color": "#99f6e4",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "motivates_inquiry",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/motivates_inquiry.svg",
+        "category_asset_path": "assets/projection/relationship-categories/inquiry.svg"
+      }
     },
     {
       "type": "negotiated_with",
@@ -1376,7 +1948,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "negotiated_with",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/negotiated_with.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "type": "occurred_at",
@@ -1393,7 +1971,82 @@
       "color": "#84cc16",
       "inverse_color": "#bef264",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "occurred_at",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/occurred_at.svg",
+        "category_asset_path": "assets/projection/relationship-categories/location.svg"
+      }
+    },
+    {
+      "type": "located_in",
+      "label": "Located in",
+      "category": "location",
+      "meaning": "The source entity, record, or activity is situated in the target place.",
+      "inverse": "location_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:located_in",
+      "core": true,
+      "extends": null,
+      "color": "#84cc16",
+      "inverse_color": "#bef264",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "located_in",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/located_in.svg",
+        "category_asset_path": "assets/projection/relationship-categories/location.svg"
+      }
+    },
+    {
+      "type": "headquartered_in",
+      "label": "Headquartered in",
+      "category": "location",
+      "meaning": "The source organization has its headquarters in the target place.",
+      "inverse": "headquarters_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:headquartered_in",
+      "core": true,
+      "extends": null,
+      "color": "#84cc16",
+      "inverse_color": "#bef264",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "headquartered_in",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/headquartered_in.svg",
+        "category_asset_path": "assets/projection/relationship-categories/location.svg"
+      }
+    },
+    {
+      "type": "based_in",
+      "label": "Based in",
+      "category": "location",
+      "meaning": "The source person, project, or organization is principally based in the target place.",
+      "inverse": "base_of",
+      "default_weight": 3,
+      "default_visibility": "secondary",
+      "namespace": "xananode",
+      "id": "xananode:based_in",
+      "core": true,
+      "extends": null,
+      "color": "#84cc16",
+      "inverse_color": "#bef264",
+      "line_style": "dotted",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "based_in",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/based_in.svg",
+        "category_asset_path": "assets/projection/relationship-categories/location.svg"
+      }
     },
     {
       "type": "overlooked_by",
@@ -1410,7 +2063,13 @@
       "color": "#fbbf24",
       "inverse_color": "#fde68a",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "overlooked_by",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/overlooked_by.svg",
+        "category_asset_path": "assets/projection/relationship-categories/attention.svg"
+      }
     },
     {
       "type": "parallel_to",
@@ -1427,7 +2086,13 @@
       "color": "#a78bfa",
       "inverse_color": "#ddd6fe",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "parallel_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/parallel_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/comparison.svg"
+      }
     },
     {
       "type": "partially_answers",
@@ -1444,7 +2109,36 @@
       "color": "#2dd4bf",
       "inverse_color": "#99f6e4",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "partially_answers",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/partially_answers.svg",
+        "category_asset_path": "assets/projection/relationship-categories/inquiry.svg"
+      }
+    },
+    {
+      "type": "questions",
+      "label": "Questions",
+      "category": "inquiry",
+      "meaning": "The source questions, challenges, or casts doubt on the target claim, hypothesis, answer, method, or interpretation.",
+      "inverse": "questioned_by",
+      "default_weight": 3,
+      "default_visibility": "secondary",
+      "namespace": "xananode",
+      "id": "xananode:questions",
+      "core": true,
+      "extends": null,
+      "color": "#2dd4bf",
+      "inverse_color": "#99f6e4",
+      "line_style": "dashed",
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "questions",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/questions.svg",
+        "category_asset_path": "assets/projection/relationship-categories/inquiry.svg"
+      }
     },
     {
       "type": "participated_in",
@@ -1461,7 +2155,13 @@
       "color": "#ec4899",
       "inverse_color": "#f9a8d4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "participated_in",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/participated_in.svg",
+        "category_asset_path": "assets/projection/relationship-categories/participation.svg"
+      }
     },
     {
       "type": "popularized",
@@ -1478,7 +2178,13 @@
       "color": "#14b8a6",
       "inverse_color": "#99f6e4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "popularized",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/popularized.svg",
+        "category_asset_path": "assets/projection/relationship-categories/influence.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -1495,7 +2201,13 @@
       "color": "#f472b6",
       "inverse_color": "#fbcfe8",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "possible_match",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/possible_match.svg",
+        "category_asset_path": "assets/projection/relationship-categories/identity.svg"
+      }
     },
     {
       "type": "possibly_related_to",
@@ -1512,7 +2224,13 @@
       "color": "#34d399",
       "inverse_color": "#a7f3d0",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "possibly_related_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/possibly_related_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/discovery.svg"
+      }
     },
     {
       "type": "preceded",
@@ -1529,7 +2247,13 @@
       "color": "#a3e635",
       "inverse_color": "#d9f99d",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "preceded",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/preceded.svg",
+        "category_asset_path": "assets/projection/relationship-categories/temporal.svg"
+      }
     },
     {
       "type": "presented",
@@ -1546,7 +2270,13 @@
       "color": "#ec4899",
       "inverse_color": "#f9a8d4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "presented",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/presented.svg",
+        "category_asset_path": "assets/projection/relationship-categories/participation.svg"
+      }
     },
     {
       "type": "presented_to",
@@ -1563,7 +2293,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "presented_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/presented_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "type": "preserves",
@@ -1580,7 +2316,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "preserves",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/preserves.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "proposed",
@@ -1597,7 +2339,13 @@
       "color": "#fb923c",
       "inverse_color": "#fed7aa",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "proposed",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/proposed.svg",
+        "category_asset_path": "assets/projection/relationship-categories/creation.svg"
+      }
     },
     {
       "type": "quotes",
@@ -1614,7 +2362,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "quotes",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/quotes.svg",
+        "category_asset_path": "assets/projection/relationship-categories/citation.svg"
+      }
     },
     {
       "type": "raises",
@@ -1631,7 +2385,13 @@
       "color": "#2dd4bf",
       "inverse_color": "#99f6e4",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "raises",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/raises.svg",
+        "category_asset_path": "assets/projection/relationship-categories/inquiry.svg"
+      }
     },
     {
       "type": "refines",
@@ -1648,7 +2408,13 @@
       "color": "#64748b",
       "inverse_color": "#cbd5e1",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "refines",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/refines.svg",
+        "category_asset_path": "assets/projection/relationship-categories/evolution.svg"
+      }
     },
     {
       "type": "related_to",
@@ -1665,7 +2431,13 @@
       "color": "#94a3b8",
       "inverse_color": "#cbd5e1",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "related_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/related_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/generic.svg"
+      }
     },
     {
       "type": "replied_to",
@@ -1682,7 +2454,36 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "replied_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/replied_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
+    },
+    {
+      "type": "responds_to",
+      "label": "Responds to",
+      "category": "communication",
+      "meaning": "The source responds to the target communication, question, claim, observation, or prior response.",
+      "inverse": "responded_to_by",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:responds_to",
+      "core": true,
+      "extends": null,
+      "color": "#38bdf8",
+      "inverse_color": "#bae6fd",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "responds_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/responds_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "type": "reported_to",
@@ -1699,7 +2500,13 @@
       "color": "#38bdf8",
       "inverse_color": "#bae6fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "reported_to",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/reported_to.svg",
+        "category_asset_path": "assets/projection/relationship-categories/communication.svg"
+      }
     },
     {
       "type": "represents",
@@ -1716,7 +2523,13 @@
       "color": "#f59e0b",
       "inverse_color": "#fcd34d",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "represents",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/represents.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
     },
     {
       "type": "requires",
@@ -1733,7 +2546,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "requires",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/requires.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -1750,7 +2569,13 @@
       "default_weight": 4,
       "default_visibility": "secondary",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "requires_attribution",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/requires_attribution.svg",
+        "category_asset_path": "assets/projection/relationship-categories/governance.svg"
+      }
     },
     {
       "type": "requires_context",
@@ -1767,7 +2592,13 @@
       "color": "#06b6d4",
       "inverse_color": "#a5f3fc",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "requires_context",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/requires_context.svg",
+        "category_asset_path": "assets/projection/relationship-categories/knowledge_workflow.svg"
+      }
     },
     {
       "type": "requires_information",
@@ -1784,7 +2615,13 @@
       "color": "#06b6d4",
       "inverse_color": "#a5f3fc",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "requires_information",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/requires_information.svg",
+        "category_asset_path": "assets/projection/relationship-categories/knowledge_workflow.svg"
+      }
     },
     {
       "type": "requires_review",
@@ -1801,7 +2638,13 @@
       "color": "#06b6d4",
       "inverse_color": "#a5f3fc",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "requires_review",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/requires_review.svg",
+        "category_asset_path": "assets/projection/relationship-categories/knowledge_workflow.svg"
+      }
     },
     {
       "type": "requires_source",
@@ -1818,7 +2661,13 @@
       "color": "#06b6d4",
       "inverse_color": "#a5f3fc",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "requires_source",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/requires_source.svg",
+        "category_asset_path": "assets/projection/relationship-categories/knowledge_workflow.svg"
+      }
     },
     {
       "type": "requires_validation",
@@ -1835,7 +2684,13 @@
       "color": "#06b6d4",
       "inverse_color": "#a5f3fc",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "requires_validation",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/requires_validation.svg",
+        "category_asset_path": "assets/projection/relationship-categories/knowledge_workflow.svg"
+      }
     },
     {
       "type": "resonates_with",
@@ -1852,7 +2707,13 @@
       "color": "#7c3aed",
       "inverse_color": "#ddd6fe",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "resonates_with",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/resonates_with.svg",
+        "category_asset_path": "assets/projection/relationship-categories/cognition.svg"
+      }
     },
     {
       "type": "results_from",
@@ -1869,7 +2730,13 @@
       "color": "#f97316",
       "inverse_color": "#fdba74",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "results_from",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/results_from.svg",
+        "category_asset_path": "assets/projection/relationship-categories/causation.svg"
+      }
     },
     {
       "type": "same_concept",
@@ -1886,7 +2753,13 @@
       "color": "#f472b6",
       "inverse_color": "#fbcfe8",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "same_concept",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/same_concept.svg",
+        "category_asset_path": "assets/projection/relationship-categories/identity.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -1903,7 +2776,13 @@
       "color": "#f472b6",
       "inverse_color": "#fbcfe8",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "same_entity",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/same_entity.svg",
+        "category_asset_path": "assets/projection/relationship-categories/identity.svg"
+      }
     },
     {
       "type": "same_person",
@@ -1920,7 +2799,13 @@
       "color": "#f472b6",
       "inverse_color": "#fbcfe8",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "same_person",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/same_person.svg",
+        "category_asset_path": "assets/projection/relationship-categories/identity.svg"
+      }
     },
     {
       "type": "same_source",
@@ -1937,7 +2822,13 @@
       "color": "#f472b6",
       "inverse_color": "#fbcfe8",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "same_source",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/same_source.svg",
+        "category_asset_path": "assets/projection/relationship-categories/identity.svg"
+      }
     },
     {
       "type": "shapes",
@@ -1954,7 +2845,13 @@
       "color": "#14b8a6",
       "inverse_color": "#99f6e4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "shapes",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/shapes.svg",
+        "category_asset_path": "assets/projection/relationship-categories/influence.svg"
+      }
     },
     {
       "type": "shares_pattern_with",
@@ -1971,7 +2868,13 @@
       "color": "#34d399",
       "inverse_color": "#a7f3d0",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "shares_pattern_with",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/shares_pattern_with.svg",
+        "category_asset_path": "assets/projection/relationship-categories/discovery.svg"
+      }
     },
     {
       "type": "specializes",
@@ -1988,7 +2891,13 @@
       "color": "#7c3aed",
       "inverse_color": "#ddd6fe",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "specializes",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/specializes.svg",
+        "category_asset_path": "assets/projection/relationship-categories/cognition.svg"
+      }
     },
     {
       "type": "speculative",
@@ -2005,7 +2914,13 @@
       "color": "#d946ef",
       "inverse_color": "#f5d0fe",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "speculative",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/speculative.svg",
+        "category_asset_path": "assets/projection/relationship-categories/uncertainty.svg"
+      }
     },
     {
       "type": "spoke_at",
@@ -2022,7 +2937,13 @@
       "color": "#ec4899",
       "inverse_color": "#f9a8d4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "spoke_at",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/spoke_at.svg",
+        "category_asset_path": "assets/projection/relationship-categories/participation.svg"
+      }
     },
     {
       "type": "starts_with",
@@ -2039,7 +2960,13 @@
       "color": "#a3e635",
       "inverse_color": "#d9f99d",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "starts_with",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/starts_with.svg",
+        "category_asset_path": "assets/projection/relationship-categories/temporal.svg"
+      }
     },
     {
       "type": "supersedes",
@@ -2056,7 +2983,13 @@
       "color": "#64748b",
       "inverse_color": "#cbd5e1",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "supersedes",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/supersedes.svg",
+        "category_asset_path": "assets/projection/relationship-categories/evolution.svg"
+      }
     },
     {
       "type": "supports",
@@ -2073,7 +3006,13 @@
       "color": "#10b981",
       "inverse_color": "#6ee7b7",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "supports",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/supports.svg",
+        "category_asset_path": "assets/projection/relationship-categories/evidence.svg"
+      }
     },
     {
       "type": "tests",
@@ -2090,7 +3029,13 @@
       "color": "#0ea5e9",
       "inverse_color": "#7dd3fc",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "tests",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/tests.svg",
+        "category_asset_path": "assets/projection/relationship-categories/research_workflow.svg"
+      }
     },
     {
       "type": "threatens",
@@ -2107,7 +3052,13 @@
       "color": "#eab308",
       "inverse_color": "#fde047",
       "line_style": "double",
-      "inverse_line_style": "double"
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "threatens",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/threatens.svg",
+        "category_asset_path": "assets/projection/relationship-categories/governance.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -2124,7 +3075,13 @@
       "default_weight": 4,
       "default_visibility": "secondary",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "trademarked_by",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/trademarked_by.svg",
+        "category_asset_path": "assets/projection/relationship-categories/governance.svg"
+      }
     },
     {
       "type": "trained_on",
@@ -2141,7 +3098,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "trained_on",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/trained_on.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "transcludes",
@@ -2158,7 +3121,13 @@
       "color": "#f59e0b",
       "inverse_color": "#fcd34d",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "transcludes",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/transcludes.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
     },
     {
       "type": "under_review",
@@ -2175,7 +3144,13 @@
       "color": "#d946ef",
       "inverse_color": "#f5d0fe",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "under_review",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/under_review.svg",
+        "category_asset_path": "assets/projection/relationship-categories/uncertainty.svg"
+      }
     },
     {
       "type": "unresolved",
@@ -2192,7 +3167,13 @@
       "color": "#d946ef",
       "inverse_color": "#f5d0fe",
       "line_style": "dotted",
-      "inverse_line_style": "dotted"
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "unresolved",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/unresolved.svg",
+        "category_asset_path": "assets/projection/relationship-categories/uncertainty.svg"
+      }
     },
     {
       "type": "uses",
@@ -2209,7 +3190,13 @@
       "color": "#22c55e",
       "inverse_color": "#86efac",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "uses",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/uses.svg",
+        "category_asset_path": "assets/projection/relationship-categories/composition.svg"
+      }
     },
     {
       "type": "validates",
@@ -2226,7 +3213,13 @@
       "color": "#0ea5e9",
       "inverse_color": "#7dd3fc",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "validates",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/validates.svg",
+        "category_asset_path": "assets/projection/relationship-categories/research_workflow.svg"
+      }
     },
     {
       "type": "co_authored_with",
@@ -2243,7 +3236,13 @@
       "color": "#0ea5e9",
       "inverse_color": "#7dd3fc",
       "line_style": "solid",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "co_authored_with",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/co_authored_with.svg",
+        "category_asset_path": "assets/projection/relationship-categories/creation.svg"
+      }
     },
     {
       "type": "adapted_from",
@@ -2260,7 +3259,13 @@
       "color": "#fb923c",
       "inverse_color": "#fdba74",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "adapted_from",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/adapted_from.svg",
+        "category_asset_path": "assets/projection/relationship-categories/revision.svg"
+      }
     },
     {
       "type": "adapted_into",
@@ -2277,7 +3282,13 @@
       "color": "#fdba74",
       "inverse_color": "#fb923c",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "adapted_into",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/adapted_into.svg",
+        "category_asset_path": "assets/projection/relationship-categories/revision.svg"
+      }
     },
     {
       "type": "format_translated_from",
@@ -2294,7 +3305,13 @@
       "color": "#8b5cf6",
       "inverse_color": "#c4b5fd",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "format_translated_from",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/format_translated_from.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
     },
     {
       "type": "format_translated_into",
@@ -2311,7 +3328,703 @@
       "color": "#c4b5fd",
       "inverse_color": "#8b5cf6",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "format_translated_into",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/format_translated_into.svg",
+        "category_asset_path": "assets/projection/relationship-categories/representation.svg"
+      }
+    },
+    {
+      "type": "parent_of",
+      "label": "Parent of",
+      "category": "social",
+      "meaning": "The source is the parent of the target.",
+      "inverse": "child_of",
+      "default_weight": 5,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:parent_of",
+      "core": true,
+      "extends": null,
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "parent_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/parent_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "mother_of",
+      "label": "Mother of",
+      "category": "social",
+      "meaning": "The source is the mother of the target.",
+      "inverse": "child_of",
+      "default_weight": 5,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:mother_of",
+      "core": true,
+      "extends": "parent_of",
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "mother_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/mother_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "father_of",
+      "label": "Father of",
+      "category": "social",
+      "meaning": "The source is the father of the target.",
+      "inverse": "child_of",
+      "default_weight": 5,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:father_of",
+      "core": true,
+      "extends": "parent_of",
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "father_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/father_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "child_of",
+      "label": "Child of",
+      "category": "social",
+      "meaning": "The source is the child of the target.",
+      "inverse": "parent_of",
+      "default_weight": 5,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:child_of",
+      "core": true,
+      "extends": null,
+      "color": "#fecdd3",
+      "inverse_color": "#fb7185",
+      "line_style": "dashed",
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "child_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/child_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "son_of",
+      "label": "Son of",
+      "category": "social",
+      "meaning": "The source is the son of the target.",
+      "inverse": "parent_of",
+      "default_weight": 5,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:son_of",
+      "core": true,
+      "extends": "child_of",
+      "color": "#fecdd3",
+      "inverse_color": "#fb7185",
+      "line_style": "dashed",
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "son_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/son_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "daughter_of",
+      "label": "Daughter of",
+      "category": "social",
+      "meaning": "The source is the daughter of the target.",
+      "inverse": "parent_of",
+      "default_weight": 5,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:daughter_of",
+      "core": true,
+      "extends": "child_of",
+      "color": "#fecdd3",
+      "inverse_color": "#fb7185",
+      "line_style": "dashed",
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "daughter_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/daughter_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "sibling_of",
+      "label": "Sibling of",
+      "category": "social",
+      "meaning": "The source is the sibling of the target.",
+      "inverse": "sibling_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:sibling_of",
+      "core": true,
+      "extends": null,
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "dotted",
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "sibling_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/sibling_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "brother_of",
+      "label": "Brother of",
+      "category": "social",
+      "meaning": "The source is the brother of the target.",
+      "inverse": "sibling_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:brother_of",
+      "core": true,
+      "extends": "sibling_of",
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "dotted",
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "brother_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/brother_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "sister_of",
+      "label": "Sister of",
+      "category": "social",
+      "meaning": "The source is the sister of the target.",
+      "inverse": "sibling_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:sister_of",
+      "core": true,
+      "extends": "sibling_of",
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "dotted",
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "sister_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/sister_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "half_sibling_of",
+      "label": "Half sibling of",
+      "category": "social",
+      "meaning": "The source and target share one biological parent but not both.",
+      "inverse": "half_sibling_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:half_sibling_of",
+      "core": true,
+      "extends": "sibling_of",
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "dashed",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "half_sibling_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/half_sibling_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "step_parent_of",
+      "label": "Step parent of",
+      "category": "social",
+      "meaning": "The source is the step-parent of the target.",
+      "inverse": "step_child_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:step_parent_of",
+      "core": true,
+      "extends": null,
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "double",
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "step_parent_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/step_parent_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "step_mother_of",
+      "label": "Step mother of",
+      "category": "social",
+      "meaning": "The source is the step-mother of the target.",
+      "inverse": "step_child_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:step_mother_of",
+      "core": true,
+      "extends": "step_parent_of",
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "double",
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "step_mother_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/step_mother_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "step_father_of",
+      "label": "Step father of",
+      "category": "social",
+      "meaning": "The source is the step-father of the target.",
+      "inverse": "step_child_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:step_father_of",
+      "core": true,
+      "extends": "step_parent_of",
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "double",
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "step_father_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/step_father_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "step_child_of",
+      "label": "Step child of",
+      "category": "social",
+      "meaning": "The source is the step-child of the target.",
+      "inverse": "step_parent_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:step_child_of",
+      "core": true,
+      "extends": null,
+      "color": "#fecdd3",
+      "inverse_color": "#fb7185",
+      "line_style": "double",
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "step_child_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/step_child_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "step_son_of",
+      "label": "Step son of",
+      "category": "social",
+      "meaning": "The source is the step-son of the target.",
+      "inverse": "step_parent_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:step_son_of",
+      "core": true,
+      "extends": "step_child_of",
+      "color": "#fecdd3",
+      "inverse_color": "#fb7185",
+      "line_style": "double",
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "step_son_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/step_son_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "step_daughter_of",
+      "label": "Step daughter of",
+      "category": "social",
+      "meaning": "The source is the step-daughter of the target.",
+      "inverse": "step_parent_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:step_daughter_of",
+      "core": true,
+      "extends": "step_child_of",
+      "color": "#fecdd3",
+      "inverse_color": "#fb7185",
+      "line_style": "double",
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "step_daughter_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/step_daughter_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "step_sibling_of",
+      "label": "Step sibling of",
+      "category": "social",
+      "meaning": "The source is the step-sibling of the target.",
+      "inverse": "step_sibling_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:step_sibling_of",
+      "core": true,
+      "extends": "sibling_of",
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "double",
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "step_sibling_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/step_sibling_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "grandparent_of",
+      "label": "Grandparent of",
+      "category": "social",
+      "meaning": "The source is the grandparent of the target.",
+      "inverse": "grandchild_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:grandparent_of",
+      "core": true,
+      "extends": null,
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "grandparent_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/grandparent_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "grandmother_of",
+      "label": "Grandmother of",
+      "category": "social",
+      "meaning": "The source is the grandmother of the target.",
+      "inverse": "grandchild_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:grandmother_of",
+      "core": true,
+      "extends": "grandparent_of",
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "grandmother_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/grandmother_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "grandfather_of",
+      "label": "Grandfather of",
+      "category": "social",
+      "meaning": "The source is the grandfather of the target.",
+      "inverse": "grandchild_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:grandfather_of",
+      "core": true,
+      "extends": "grandparent_of",
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "solid",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "grandfather_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/grandfather_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "grandchild_of",
+      "label": "Grandchild of",
+      "category": "social",
+      "meaning": "The source is the grandchild of the target.",
+      "inverse": "grandparent_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:grandchild_of",
+      "core": true,
+      "extends": null,
+      "color": "#fecdd3",
+      "inverse_color": "#fb7185",
+      "line_style": "dashed",
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "grandchild_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/grandchild_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "aunt_of",
+      "label": "Aunt of",
+      "category": "social",
+      "meaning": "The source is the aunt of the target.",
+      "inverse": "niece_or_nephew_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:aunt_of",
+      "core": true,
+      "extends": null,
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "dotted",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "aunt_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/aunt_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "uncle_of",
+      "label": "Uncle of",
+      "category": "social",
+      "meaning": "The source is the uncle of the target.",
+      "inverse": "niece_or_nephew_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:uncle_of",
+      "core": true,
+      "extends": null,
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "dotted",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "uncle_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/uncle_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "aunt_or_uncle_of",
+      "label": "Aunt or uncle of",
+      "category": "social",
+      "meaning": "The source is the aunt or uncle of the target when the gendered form is unknown or intentionally not specified.",
+      "inverse": "niece_or_nephew_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:aunt_or_uncle_of",
+      "core": true,
+      "extends": null,
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "dashed",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "aunt_or_uncle_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/aunt_or_uncle_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "niece_of",
+      "label": "Niece of",
+      "category": "social",
+      "meaning": "The source is the niece of the target.",
+      "inverse": "aunt_or_uncle_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:niece_of",
+      "core": true,
+      "extends": null,
+      "color": "#fecdd3",
+      "inverse_color": "#fb7185",
+      "line_style": "dashed",
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "niece_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/niece_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "nephew_of",
+      "label": "Nephew of",
+      "category": "social",
+      "meaning": "The source is the nephew of the target.",
+      "inverse": "aunt_or_uncle_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:nephew_of",
+      "core": true,
+      "extends": null,
+      "color": "#fecdd3",
+      "inverse_color": "#fb7185",
+      "line_style": "dashed",
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "nephew_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/nephew_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "niece_or_nephew_of",
+      "label": "Niece or nephew of",
+      "category": "social",
+      "meaning": "The source is the niece or nephew of the target when the gendered form is unknown or intentionally not specified.",
+      "inverse": "aunt_or_uncle_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:niece_or_nephew_of",
+      "core": true,
+      "extends": null,
+      "color": "#fecdd3",
+      "inverse_color": "#fb7185",
+      "line_style": "dashed",
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "niece_or_nephew_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/niece_or_nephew_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "cousin_of",
+      "label": "Cousin of",
+      "category": "social",
+      "meaning": "The source is the cousin of the target.",
+      "inverse": "cousin_of",
+      "default_weight": 3,
+      "default_visibility": "secondary",
+      "namespace": "xananode",
+      "id": "xananode:cousin_of",
+      "core": true,
+      "extends": null,
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "dotted",
+      "inverse_line_style": "dotted",
+      "projection": {
+        "icon": "cousin_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/cousin_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "spouse_of",
+      "label": "Spouse of",
+      "category": "social",
+      "meaning": "The source is the spouse of the target.",
+      "inverse": "spouse_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:spouse_of",
+      "core": true,
+      "extends": null,
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "double",
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "spouse_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/spouse_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
+    },
+    {
+      "type": "partner_of",
+      "label": "Partner of",
+      "category": "social",
+      "meaning": "The source is the life partner, spouse, or comparable committed partner of the target.",
+      "inverse": "partner_of",
+      "default_weight": 4,
+      "default_visibility": "primary",
+      "namespace": "xananode",
+      "id": "xananode:partner_of",
+      "core": true,
+      "extends": null,
+      "color": "#fb7185",
+      "inverse_color": "#fecdd3",
+      "line_style": "double",
+      "inverse_line_style": "double",
+      "projection": {
+        "icon": "partner_of",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/partner_of.svg",
+        "category_asset_path": "assets/projection/relationship-categories/social.svg"
+      }
     },
     {
       "type": "medium_transition",
@@ -2328,7 +4041,13 @@
       "color": "#14b8a6",
       "inverse_color": "#99f6e4",
       "line_style": "solid",
-      "inverse_line_style": "dashed"
+      "inverse_line_style": "dashed",
+      "projection": {
+        "icon": "medium_transition",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/medium_transition.svg",
+        "category_asset_path": "assets/projection/relationship-categories/evolution.svg"
+      }
     },
     {
       "type": "medium_transitioned_from",
@@ -2345,7 +4064,17 @@
       "color": "#99f6e4",
       "inverse_color": "#14b8a6",
       "line_style": "dashed",
-      "inverse_line_style": "solid"
+      "inverse_line_style": "solid",
+      "projection": {
+        "icon": "medium_transitioned_from",
+        "icon_label": "->",
+        "asset_path": "assets/projection/relationship-types/medium_transitioned_from.svg",
+        "category_asset_path": "assets/projection/relationship-categories/evolution.svg"
+      }
     }
-  ]
+  ],
+  "media_conventions": {
+    "relationship_type_asset_path_template": "assets/projection/relationship-types/{type}.svg",
+    "relationship_category_asset_path_template": "assets/projection/relationship-categories/{category}.svg"
+  }
 }

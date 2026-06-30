@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-step_child_of",
+  "title": "Step child of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is the step-child of the target.",
+  "version": "0.5.1",
+  "registry_type": "step_child_of",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "step_parent_of",
+  "color": "#fecdd3",
+  "inverse_color": "#fb7185",
+  "line_style": "double",
+  "inverse_line_style": "double",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

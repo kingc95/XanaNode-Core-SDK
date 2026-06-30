@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-appearance_of",
+  "title": "Appearance Of Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The appearance_of inverse relationship term derived from appears_as.",
+  "version": "0.5.1",
+  "registry_type": "appearance_of",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "appears_as",
+  "color": "#fcd34d",
+  "inverse_color": "#f59e0b",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

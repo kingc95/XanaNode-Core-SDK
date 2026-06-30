@@ -6,6 +6,12 @@ import addFormats from "ajv-formats";
 import { ValidationError } from "./errors.js";
 
 const packageRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const localSchemaDir = path.join(packageRoot, "schemas");
+const vendoredProtocolSchemaDir = path.join(packageRoot, "vendor", "xananode-protocol", "schemas");
+
+function defaultSchemaDir() {
+  return fs.existsSync(vendoredProtocolSchemaDir) ? vendoredProtocolSchemaDir : localSchemaDir;
+}
 
 export function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -44,7 +50,7 @@ export function validateWithSchema(value, schema, label = "value") {
 }
 
 export function validateSubstrateArtifacts(substrate, options = {}) {
-  const schemaDir = options.schemaDir || path.join(packageRoot, "schemas");
+  const schemaDir = options.schemaDir || defaultSchemaDir();
   const schemas = loadBundledSchemas(schemaDir);
   const errors = [];
   const warnings = [];

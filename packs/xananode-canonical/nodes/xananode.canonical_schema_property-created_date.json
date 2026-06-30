@@ -1,0 +1,27 @@
+{
+  "id": "xananode.canonical:schema/property-created_date",
+  "title": "Created date",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The date on which a media item or source asset was originally created.",
+  "registry_type": "created_date",
+  "category": "time",
+  "aliases": [
+    "creation_date",
+    "captured_date"
+  ],
+  "applies_to": [
+    "media",
+    "source"
+  ],
+  "unit_system": "ISO-8601",
+  "value_schema": {
+    "type": "string",
+    "format": "date"
+  },
+  "examples": [
+    "2010-04-16"
+  ],
+  "relationships": []
+}

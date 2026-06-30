@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-assembled_from-projection-icon",
+  "title": "Assembled from Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/assembled_from.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/assembled_from.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the assembled_from relationship type.",
+  "relationships": [],
+  "content_id": "sha256:d53b1bcab02667a66aaa4734cd1ae16bde226f87611a470919cb4866dd0add42",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/assembled_from.svg",
+    "method": "archive",
+    "content_id": "sha256:d53b1bcab02667a66aaa4734cd1ae16bde226f87611a470919cb4866dd0add42",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

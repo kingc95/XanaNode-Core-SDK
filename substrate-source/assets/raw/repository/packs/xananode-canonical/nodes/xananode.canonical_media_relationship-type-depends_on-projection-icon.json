@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-depends_on-projection-icon",
+  "title": "Depends on Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/depends_on.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/depends_on.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the depends_on relationship type.",
+  "relationships": [],
+  "content_id": "sha256:e3789887cd09457a4915d1cbb6fcb75f60630bbc950bbd379f930f7d1d731938",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/depends_on.svg",
+    "method": "archive",
+    "content_id": "sha256:e3789887cd09457a4915d1cbb6fcb75f60630bbc950bbd379f930f7d1d731938",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

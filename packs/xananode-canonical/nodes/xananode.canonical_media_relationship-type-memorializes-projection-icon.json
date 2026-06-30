@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-memorializes-projection-icon",
+  "title": "Memorializes Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/memorializes.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/memorializes.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the memorializes relationship type.",
+  "relationships": [],
+  "content_id": "sha256:d7c2f08651a325f5323e524ef42d1d2bc0428f3b3d1022c4ab5f68e80761b6ff",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/memorializes.svg",
+    "method": "archive",
+    "content_id": "sha256:d7c2f08651a325f5323e524ef42d1d2bc0428f3b3d1022c4ab5f68e80761b6ff",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The reviewed_under inverse relationship term derived from under_review.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "reviewed_under",
   "registry_namespace": "xananode",
   "category": "uncertainty",

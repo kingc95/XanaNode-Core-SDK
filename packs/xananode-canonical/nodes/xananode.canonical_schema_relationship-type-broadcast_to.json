@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source communication, publication, event, or actor broadcast the target content or message to an audience.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "broadcast_to",
   "registry_namespace": "xananode",
   "category": "communication",

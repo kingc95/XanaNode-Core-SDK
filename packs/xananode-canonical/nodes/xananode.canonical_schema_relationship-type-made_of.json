@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source physical item or structure is made of the target material or substance.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "made_of",
   "registry_namespace": "xananode",
   "category": "composition",

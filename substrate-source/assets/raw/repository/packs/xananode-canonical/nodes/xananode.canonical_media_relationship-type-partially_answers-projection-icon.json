@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-partially_answers-projection-icon",
+  "title": "Partially answers Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/partially_answers.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/partially_answers.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the partially_answers relationship type.",
+  "relationships": [],
+  "content_id": "sha256:c54c0b4ed397b5615f8b76a2968c41e881902fb4b95b6fb6ec3c7e3dfd23ffe9",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/partially_answers.svg",
+    "method": "archive",
+    "content_id": "sha256:c54c0b4ed397b5615f8b76a2968c41e881902fb4b95b6fb6ec3c7e3dfd23ffe9",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

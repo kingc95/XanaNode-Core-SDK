@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-costume_of",
+  "title": "Costume Of Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The costume_of inverse relationship term derived from costumed_as.",
+  "version": "0.5.1",
+  "registry_type": "costume_of",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "costumed_as",
+  "color": "#f9a8d4",
+  "inverse_color": "#ec4899",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

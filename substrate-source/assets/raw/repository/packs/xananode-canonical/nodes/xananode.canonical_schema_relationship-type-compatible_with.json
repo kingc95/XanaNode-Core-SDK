@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source schema, substrate, type, field, or relationship can interoperate with the target without destructive conversion.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "compatible_with",
   "registry_namespace": "xananode",
   "category": "schema_mapping",

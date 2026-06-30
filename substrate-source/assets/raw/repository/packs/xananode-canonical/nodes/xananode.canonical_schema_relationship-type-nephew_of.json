@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-nephew_of",
+  "title": "Nephew of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is the nephew of the target.",
+  "version": "0.5.1",
+  "registry_type": "nephew_of",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "aunt_or_uncle_of",
+  "color": "#fecdd3",
+  "inverse_color": "#fb7185",
+  "line_style": "dashed",
+  "inverse_line_style": "dotted",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

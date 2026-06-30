@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-communication-projection-icon",
+  "title": "Communication Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/communication.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/communication.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the communication node type.",
+  "relationships": [],
+  "content_id": "sha256:382ceb1ebe0137508636940d0d1e0f6373e190363dc6a6c14406433a8341d2d8",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/communication.svg",
+    "method": "archive",
+    "content_id": "sha256:382ceb1ebe0137508636940d0d1e0f6373e190363dc6a6c14406433a8341d2d8",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

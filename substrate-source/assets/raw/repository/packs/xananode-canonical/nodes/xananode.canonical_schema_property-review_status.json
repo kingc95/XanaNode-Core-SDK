@@ -1,0 +1,38 @@
+{
+  "id": "xananode.canonical:schema/property-review_status",
+  "title": "Review status",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The current review state for a node, relationship, pack, claim, or suggested merge.",
+  "registry_type": "review_status",
+  "category": "workflow",
+  "aliases": [
+    "validation_status",
+    "curation_status"
+  ],
+  "applies_to": [
+    "claim",
+    "question",
+    "hypothesis",
+    "knowledge_gap",
+    "relationship",
+    "source"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string",
+    "enum": [
+      "draft",
+      "needs_review",
+      "under_review",
+      "approved",
+      "rejected",
+      "deprecated"
+    ]
+  },
+  "examples": [
+    "needs_review"
+  ],
+  "relationships": []
+}

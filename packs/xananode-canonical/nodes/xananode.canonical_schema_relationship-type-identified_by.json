@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The identified_by inverse relationship term derived from identified.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "identified_by",
   "registry_namespace": "xananode",
   "category": "creation",

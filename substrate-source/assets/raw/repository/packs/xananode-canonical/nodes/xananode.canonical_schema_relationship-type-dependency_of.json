@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The dependency_of inverse relationship term derived from depends_on.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "dependency_of",
   "registry_namespace": "xananode",
   "category": "composition",

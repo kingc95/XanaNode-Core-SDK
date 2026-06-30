@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-deep_links_to-projection-icon",
+  "title": "Deep links to Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/deep_links_to.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/deep_links_to.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the deep_links_to relationship type.",
+  "relationships": [],
+  "content_id": "sha256:be1bc5528476e4f9365a97c09430a2a6c657d68b58c3170233cde4ca8c0ee52b",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/deep_links_to.svg",
+    "method": "archive",
+    "content_id": "sha256:be1bc5528476e4f9365a97c09430a2a6c657d68b58c3170233cde4ca8c0ee52b",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

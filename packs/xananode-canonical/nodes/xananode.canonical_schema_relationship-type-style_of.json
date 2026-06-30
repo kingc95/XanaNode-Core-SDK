@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-style_of",
+  "title": "Style Of Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The style_of inverse relationship term derived from styled_as.",
+  "version": "0.5.1",
+  "registry_type": "style_of",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "styled_as",
+  "color": "#c4b5fd",
+  "inverse_color": "#8b5cf6",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

@@ -2,4 +2,5 @@ node_modules/
 tmp-example-public/
 dist/
 public/
+tmp-xananode-canonical-pack/
 .env

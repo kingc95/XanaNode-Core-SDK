@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source preserves the target content while changing format, medium, or presentation layer.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "format_translated_from",
   "registry_namespace": "xananode",
   "category": "representation",

@@ -1,0 +1,28 @@
+{
+  "id": "xananode.canonical:schema/property-license",
+  "title": "License",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The declared license for a source, media asset, schema, or code artifact.",
+  "registry_type": "license",
+  "category": "reference",
+  "aliases": [
+    "license_name"
+  ],
+  "applies_to": [
+    "source",
+    "media",
+    "schema",
+    "project",
+    "technology"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "CC-BY 4.0"
+  ],
+  "relationships": []
+}

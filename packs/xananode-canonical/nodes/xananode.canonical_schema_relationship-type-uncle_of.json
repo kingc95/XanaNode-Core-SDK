@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-uncle_of",
+  "title": "Uncle of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is the uncle of the target.",
+  "version": "0.5.1",
+  "registry_type": "uncle_of",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "niece_or_nephew_of",
+  "color": "#fb7185",
+  "inverse_color": "#fecdd3",
+  "line_style": "dotted",
+  "inverse_line_style": "dashed",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

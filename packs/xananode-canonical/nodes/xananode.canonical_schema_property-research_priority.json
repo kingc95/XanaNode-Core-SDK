@@ -1,0 +1,31 @@
+{
+  "id": "xananode.canonical:schema/property-research_priority",
+  "title": "Research priority",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A priority signal for deciding which inquiry, problem, or knowledge gap deserves attention first.",
+  "registry_type": "research_priority",
+  "category": "attention",
+  "aliases": [
+    "priority",
+    "attention_priority"
+  ],
+  "applies_to": [
+    "question",
+    "problem",
+    "knowledge_gap",
+    "claim",
+    "hypothesis"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 5
+  },
+  "examples": [
+    5
+  ],
+  "relationships": []
+}

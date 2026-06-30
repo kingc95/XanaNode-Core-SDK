@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-cousin_of",
+  "title": "Cousin of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is the cousin of the target.",
+  "version": "0.5.1",
+  "registry_type": "cousin_of",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "cousin_of",
+  "color": "#fb7185",
+  "inverse_color": "#fecdd3",
+  "line_style": "dotted",
+  "inverse_line_style": "dotted",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

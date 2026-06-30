@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-community-projection-icon",
+  "title": "Community Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/community.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/community.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the community node type.",
+  "relationships": [],
+  "content_id": "sha256:25798ad89a7275a534eb2ca2934d9e1b98d6b876e612c06a97d9ecd51a16ff30",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/community.svg",
+    "method": "archive",
+    "content_id": "sha256:25798ad89a7275a534eb2ca2934d9e1b98d6b876e612c06a97d9ecd51a16ff30",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-speculative-projection-icon",
+  "title": "Speculative Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/speculative.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/speculative.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the speculative relationship type.",
+  "relationships": [],
+  "content_id": "sha256:e4b56cb32105f22f6f46a86e938d1ec1bb50962e0ef147c5e36b61e7a19841f0",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/speculative.svg",
+    "method": "archive",
+    "content_id": "sha256:e4b56cb32105f22f6f46a86e938d1ec1bb50962e0ef147c5e36b61e7a19841f0",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

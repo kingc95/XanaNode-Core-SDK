@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-base_of",
+  "title": "Base Of Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The base_of inverse relationship term derived from based_in.",
+  "version": "0.5.1",
+  "registry_type": "base_of",
+  "registry_namespace": "xananode",
+  "category": "location",
+  "inverse": "based_in",
+  "color": "#bef264",
+  "inverse_color": "#84cc16",
+  "line_style": "dashed",
+  "inverse_line_style": "dotted",
+  "derived_inverse": true,
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

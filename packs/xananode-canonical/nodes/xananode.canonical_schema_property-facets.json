@@ -1,0 +1,55 @@
+{
+  "id": "xananode.canonical:schema/property-facets",
+  "title": "Facets",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "Secondary roles that help a node behave like more than one kind of thing without duplicating it.",
+  "registry_type": "facets",
+  "category": "classification",
+  "aliases": [
+    "secondary_roles"
+  ],
+  "applies_to": [
+    "person",
+    "concept",
+    "claim",
+    "question",
+    "hypothesis",
+    "problem",
+    "knowledge_gap",
+    "communication",
+    "response",
+    "source",
+    "observation",
+    "essay",
+    "media",
+    "event",
+    "place",
+    "organization",
+    "project",
+    "technology",
+    "publication",
+    "community",
+    "relationship",
+    "revision",
+    "trail",
+    "schema",
+    "fragment"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "array",
+    "items": {
+      "type": "string"
+    },
+    "uniqueItems": true
+  },
+  "examples": [
+    [
+      "source",
+      "claim"
+    ]
+  ],
+  "relationships": []
+}

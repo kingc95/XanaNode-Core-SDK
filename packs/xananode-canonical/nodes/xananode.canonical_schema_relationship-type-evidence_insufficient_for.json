@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The evidence_insufficient_for inverse relationship term derived from insufficient_evidence.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "evidence_insufficient_for",
   "registry_namespace": "xananode",
   "category": "uncertainty",

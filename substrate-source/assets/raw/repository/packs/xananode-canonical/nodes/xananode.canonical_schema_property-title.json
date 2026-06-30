@@ -1,0 +1,49 @@
+{
+  "id": "xananode.canonical:schema/property-title",
+  "title": "Title",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The primary human-readable title for a node.",
+  "registry_type": "title",
+  "category": "classification",
+  "aliases": [
+    "name",
+    "headline"
+  ],
+  "applies_to": [
+    "person",
+    "concept",
+    "claim",
+    "question",
+    "hypothesis",
+    "problem",
+    "knowledge_gap",
+    "communication",
+    "response",
+    "source",
+    "observation",
+    "essay",
+    "media",
+    "event",
+    "place",
+    "organization",
+    "project",
+    "technology",
+    "publication",
+    "community",
+    "relationship",
+    "revision",
+    "trail",
+    "schema",
+    "fragment"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "Douglas Adams"
+  ],
+  "relationships": []
+}

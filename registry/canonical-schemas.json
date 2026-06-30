@@ -8,7 +8,7 @@
     },
     {
       "id": "xananode-relationship-types",
-      "version": "0.5.0",
+      "version": "0.5.1",
       "path": "../schemas/xananode-relationship-types.v0.5.0.json",
       "schema": "../schemas/xananode-relationship-types.schema.v0.5.0.json"
     },

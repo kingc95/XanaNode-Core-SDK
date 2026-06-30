@@ -1,0 +1,38 @@
+{
+  "id": "xananode.canonical:schema/property-uncertainty_level",
+  "title": "Uncertainty level",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A normalized level describing how uncertain a node, relationship, answer, or interpretation remains.",
+  "registry_type": "uncertainty_level",
+  "category": "epistemology",
+  "aliases": [
+    "certainty_level",
+    "unknown_level",
+    "confidence_gap"
+  ],
+  "applies_to": [
+    "claim",
+    "question",
+    "hypothesis",
+    "knowledge_gap",
+    "relationship",
+    "response"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string",
+    "enum": [
+      "unknown",
+      "low",
+      "medium",
+      "high",
+      "unresolved"
+    ]
+  },
+  "examples": [
+    "high"
+  ],
+  "relationships": []
+}

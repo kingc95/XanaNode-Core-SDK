@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source sequence, work, or argument begins with the target.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "starts_with",
   "registry_namespace": "xananode",
   "category": "temporal",

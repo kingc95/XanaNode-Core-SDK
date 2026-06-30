@@ -93,6 +93,61 @@
               "type": "string"
             }
           },
+          "editable_fields": {
+            "type": "array",
+            "description": "Optional editor-facing field definitions that projections and authoring tools can use to render structured inputs for this node type.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "key",
+                "label",
+                "value_kind"
+              ],
+              "properties": {
+                "key": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "value_kind": {
+                  "type": "string",
+                  "enum": [
+                    "string",
+                    "string_list",
+                    "enum",
+                    "date",
+                    "url",
+                    "boolean",
+                    "number"
+                  ]
+                },
+                "help": {
+                  "type": "string"
+                },
+                "options": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "value",
+                      "label"
+                    ],
+                    "properties": {
+                      "value": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "color": {
             "type": "object",
             "additionalProperties": false,

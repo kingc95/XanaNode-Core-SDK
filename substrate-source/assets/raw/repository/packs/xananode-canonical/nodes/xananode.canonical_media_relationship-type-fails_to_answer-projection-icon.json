@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-fails_to_answer-projection-icon",
+  "title": "Fails to answer Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/fails_to_answer.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/fails_to_answer.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the fails_to_answer relationship type.",
+  "relationships": [],
+  "content_id": "sha256:80a96addb3d1c0699955f19b8795cedeed1a0c119ca83c42fda11a7c02a5586c",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/fails_to_answer.svg",
+    "method": "archive",
+    "content_id": "sha256:80a96addb3d1c0699955f19b8795cedeed1a0c119ca83c42fda11a7c02a5586c",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

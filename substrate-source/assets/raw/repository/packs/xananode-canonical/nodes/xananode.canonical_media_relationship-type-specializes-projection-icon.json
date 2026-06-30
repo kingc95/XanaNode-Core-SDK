@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-specializes-projection-icon",
+  "title": "Specializes Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/specializes.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/specializes.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the specializes relationship type.",
+  "relationships": [],
+  "content_id": "sha256:005e19c6e4897d4fe6773812522329642a9b6bd382acbfc6692c5731410bae02",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/specializes.svg",
+    "method": "archive",
+    "content_id": "sha256:005e19c6e4897d4fe6773812522329642a9b6bd382acbfc6692c5731410bae02",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

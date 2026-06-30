@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/contexts/xananode.context.jsonld",
   "content_id": "sha256:8192a5d5477e28549cb66d77aed71019e071084fd92f9163e0f57d3dc5608a9f",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.999Z",
+    "captured_at": "2026-06-30T05:09:31.104Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/contexts/xananode.context.jsonld",
     "method": "archive",
     "content_id": "sha256:8192a5d5477e28549cb66d77aed71019e071084fd92f9163e0f57d3dc5608a9f",

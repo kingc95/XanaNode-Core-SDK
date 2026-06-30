@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The received_report_from inverse relationship term derived from reported_to.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "received_report_from",
   "registry_namespace": "xananode",
   "category": "communication",

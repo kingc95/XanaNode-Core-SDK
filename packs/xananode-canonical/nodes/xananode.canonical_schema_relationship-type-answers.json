@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source answers the target question or information request.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "answers",
   "registry_namespace": "xananode",
   "category": "inquiry",

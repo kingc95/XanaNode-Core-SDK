@@ -1,0 +1,27 @@
+{
+  "id": "xananode.canonical:schema/property-creator",
+  "title": "Creator",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The credited creator of a media item or asset-backed record.",
+  "registry_type": "creator",
+  "category": "reference",
+  "aliases": [
+    "artist",
+    "photographer",
+    "maker"
+  ],
+  "applies_to": [
+    "media",
+    "source"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "Michael Hughes"
+  ],
+  "relationships": []
+}

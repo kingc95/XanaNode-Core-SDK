@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-place-fictional_place",
+  "title": "Place subtype: fictional place",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "fictional_place is an allowed subtype of the place node type.",
+  "version": "0.3.0",
+  "registry_type": "fictional_place",
+  "registry_namespace": "xananode",
+  "parent_node_type": "place",
+  "relationships": []
+}

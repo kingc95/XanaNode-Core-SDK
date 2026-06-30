@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-made_of-projection-icon",
+  "title": "Made of Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/made_of.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/made_of.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the made_of relationship type.",
+  "relationships": [],
+  "content_id": "sha256:61cc470dc7581f59520e5f7a14bff4eeb384d21dc8b24fd3bc9979fff5f17647",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/made_of.svg",
+    "method": "archive",
+    "content_id": "sha256:61cc470dc7581f59520e5f7a14bff4eeb384d21dc8b24fd3bc9979fff5f17647",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

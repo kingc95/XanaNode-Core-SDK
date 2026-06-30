@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-source-projection-icon",
+  "title": "Source Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/source.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/source.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the source node type.",
+  "relationships": [],
+  "content_id": "sha256:7fdb3aa6b0e8aa91cb37dc3318eaa8c3c9cd534a234798c79d207b42ff3c21bf",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/source.svg",
+    "method": "archive",
+    "content_id": "sha256:7fdb3aa6b0e8aa91cb37dc3318eaa8c3c9cd534a234798c79d207b42ff3c21bf",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

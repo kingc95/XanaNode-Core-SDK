@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-requires_attribution-projection-icon",
+  "title": "requires attribution Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/requires_attribution.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/requires_attribution.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the requires_attribution relationship type.",
+  "relationships": [],
+  "content_id": "sha256:66030b4e1cdcbfbb3ca67dd1b0d8ff36de31c972d40767cc824cb913367896a0",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/requires_attribution.svg",
+    "method": "archive",
+    "content_id": "sha256:66030b4e1cdcbfbb3ca67dd1b0d8ff36de31c972d40767cc824cb913367896a0",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

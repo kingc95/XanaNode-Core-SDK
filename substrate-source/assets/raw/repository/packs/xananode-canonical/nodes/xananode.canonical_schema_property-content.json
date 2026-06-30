@@ -1,0 +1,49 @@
+{
+  "id": "xananode.canonical:schema/property-content",
+  "title": "Content",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The authored prose, note text, or long-form body content for a node.",
+  "registry_type": "content",
+  "category": "communication",
+  "aliases": [
+    "body",
+    "authored_text",
+    "markdown"
+  ],
+  "applies_to": [
+    "concept",
+    "claim",
+    "question",
+    "hypothesis",
+    "problem",
+    "knowledge_gap",
+    "communication",
+    "response",
+    "source",
+    "observation",
+    "essay",
+    "media",
+    "event",
+    "place",
+    "organization",
+    "project",
+    "technology",
+    "publication",
+    "community",
+    "relationship",
+    "revision",
+    "trail",
+    "schema",
+    "fragment"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "Begin with a practical question, then connect it to sources, claims, and unanswered gaps."
+  ],
+  "relationships": []
+}

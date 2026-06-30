@@ -16,7 +16,8 @@
     "artist",
     "founder",
     "scientist",
-    "programmer"
+    "programmer",
+    "fictional_character"
   ],
   "required_frontmatter": [
     "title",

@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-demonstrates-projection-icon",
+  "title": "Demonstrates Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/demonstrates.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/demonstrates.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the demonstrates relationship type.",
+  "relationships": [],
+  "content_id": "sha256:7f303649a3356e4f94ed511deb690cd3a40559903d566920c0caede923a87cc3",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/demonstrates.svg",
+    "method": "archive",
+    "content_id": "sha256:7f303649a3356e4f94ed511deb690cd3a40559903d566920c0caede923a87cc3",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

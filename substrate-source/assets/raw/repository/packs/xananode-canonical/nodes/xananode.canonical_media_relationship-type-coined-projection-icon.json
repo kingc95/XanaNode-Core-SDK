@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-coined-projection-icon",
+  "title": "Coined Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/coined.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/coined.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the coined relationship type.",
+  "relationships": [],
+  "content_id": "sha256:1c4a36556ac6216515ffdf04146588452dff1a4d57dbb2a05050a4e0c95b17f3",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/coined.svg",
+    "method": "archive",
+    "content_id": "sha256:1c4a36556ac6216515ffdf04146588452dff1a4d57dbb2a05050a4e0c95b17f3",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

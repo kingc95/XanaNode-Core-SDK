@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-revision-projection-icon",
+  "title": "Revision Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/revision.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/revision.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the revision node type.",
+  "relationships": [],
+  "content_id": "sha256:f75278bfb706f4667a7f69259ed4b70779ac497815126f03b3844970b782fa17",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/revision.svg",
+    "method": "archive",
+    "content_id": "sha256:f75278bfb706f4667a7f69259ed4b70779ac497815126f03b3844970b782fa17",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

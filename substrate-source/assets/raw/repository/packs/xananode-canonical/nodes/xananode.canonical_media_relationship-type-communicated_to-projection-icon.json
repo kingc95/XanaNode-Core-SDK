@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-communicated_to-projection-icon",
+  "title": "Communicated to Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/communicated_to.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/communicated_to.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the communicated_to relationship type.",
+  "relationships": [],
+  "content_id": "sha256:150d040bda6e64e69e43fe7f1e45f73fe09c20bcbbc0b112504dc79e03de4309",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/communicated_to.svg",
+    "method": "archive",
+    "content_id": "sha256:150d040bda6e64e69e43fe7f1e45f73fe09c20bcbbc0b112504dc79e03de4309",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -11,10 +11,10 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:8ba16cdc4c3f9ca018f355e27def3477683ccd30d8c47dfa0ea87a4b54229371",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.999Z",
+    "captured_at": "2026-06-30T05:09:31.104Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/registry/canonical-schemas.json",
     "method": "archive",
-    "content_id": "sha256:a37a134ff539525456dada8cbafc182f812a50589f3de0358aac77de47cc6928",
+    "content_id": "sha256:e3ab2c3bb83377f8f7963e60e5b33d0337144db5f83da7c27cc40e393e83c3e6",
     "rights_status": "canonical-public",
     "tool": "@xananode/core"
   }

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The supported_by inverse relationship term derived from supports.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "supported_by",
   "registry_namespace": "xananode",
   "category": "evidence",

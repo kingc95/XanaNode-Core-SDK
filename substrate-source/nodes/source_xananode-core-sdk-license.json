@@ -15,7 +15,7 @@
   "content_id": "sha256:ba2c2bd72c4928a745e5f1123a9a3945a6ed849a9ca11f506159873ba8affddb",
   "content": "SPDX-License-Identifier: Apache-2.0\n\nXanaNode Core SDK reference implementation code, schemas, validators, and generated protocol artifacts are licensed under the Apache License, Version 2.0.\n\nSee: https://www.apache.org/licenses/LICENSE-2.0\n\nThe XanaNode name and logo are trademarks of the XanaNode project. This license does not grant trademark rights.\n\n",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.292Z",
+    "captured_at": "2026-06-30T05:09:29.991Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/LICENSE",
     "method": "archive",
     "content_id": "sha256:ba2c2bd72c4928a745e5f1123a9a3945a6ed849a9ca11f506159873ba8affddb",

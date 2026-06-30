@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The deep_linked_from inverse relationship term derived from deep_links_to.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "deep_linked_from",
   "registry_namespace": "xananode",
   "category": "representation",

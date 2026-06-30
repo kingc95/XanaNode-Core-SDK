@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-portrays",
+  "title": "Portrays",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source person performs or portrays the target fictional character, role, or persona.",
+  "version": "0.5.1",
+  "registry_type": "portrays",
+  "registry_namespace": "xananode",
+  "category": "representation",
+  "inverse": "portrayed_by",
+  "color": "#f59e0b",
+  "inverse_color": "#fcd34d",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": []
+}

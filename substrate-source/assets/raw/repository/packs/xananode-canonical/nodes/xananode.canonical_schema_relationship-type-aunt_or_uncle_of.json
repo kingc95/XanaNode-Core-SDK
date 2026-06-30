@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-aunt_or_uncle_of",
+  "title": "Aunt or uncle of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is the aunt or uncle of the target when the gendered form is unknown or intentionally not specified.",
+  "version": "0.5.1",
+  "registry_type": "aunt_or_uncle_of",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "niece_or_nephew_of",
+  "color": "#fb7185",
+  "inverse_color": "#fecdd3",
+  "line_style": "dashed",
+  "inverse_line_style": "dashed",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

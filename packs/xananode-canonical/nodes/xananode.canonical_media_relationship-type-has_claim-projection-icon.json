@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-has_claim-projection-icon",
+  "title": "Has claim Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/has_claim.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/has_claim.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the has_claim relationship type.",
+  "relationships": [],
+  "content_id": "sha256:7832ea0298a245c0787afce0bbee7b7ec4a7345af1ca10b554fe4a88a5422e2b",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/has_claim.svg",
+    "method": "archive",
+    "content_id": "sha256:7832ea0298a245c0787afce0bbee7b7ec4a7345af1ca10b554fe4a88a5422e2b",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source negotiated with the target actor, group, or position.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "negotiated_with",
   "registry_namespace": "xananode",
   "category": "communication",

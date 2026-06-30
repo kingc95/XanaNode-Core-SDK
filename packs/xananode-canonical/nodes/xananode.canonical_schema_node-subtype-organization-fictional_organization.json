@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-organization-fictional_organization",
+  "title": "Organization subtype: fictional organization",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "fictional_organization is an allowed subtype of the organization node type.",
+  "version": "0.3.0",
+  "registry_type": "fictional_organization",
+  "registry_namespace": "xananode",
+  "parent_node_type": "organization",
+  "relationships": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-authored-projection-icon",
+  "title": "Authored Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/authored.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/authored.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the authored relationship type.",
+  "relationships": [],
+  "content_id": "sha256:0856c9f19d9dbce8600407cdc075120e52810923bc04481dd5898da59dbffc11",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/authored.svg",
+    "method": "archive",
+    "content_id": "sha256:0856c9f19d9dbce8600407cdc075120e52810923bc04481dd5898da59dbffc11",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

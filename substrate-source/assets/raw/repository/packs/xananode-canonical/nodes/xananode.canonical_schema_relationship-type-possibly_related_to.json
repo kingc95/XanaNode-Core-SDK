@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source may be related to the target, but the specific relationship is not yet known or justified.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "possibly_related_to",
   "registry_namespace": "xananode",
   "category": "discovery",

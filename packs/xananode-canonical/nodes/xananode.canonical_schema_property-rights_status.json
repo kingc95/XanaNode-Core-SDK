@@ -1,0 +1,29 @@
+{
+  "id": "xananode.canonical:schema/property-rights_status",
+  "title": "Rights status",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A compact statement of the reuse or ownership status for a source or asset.",
+  "registry_type": "rights_status",
+  "category": "reference",
+  "aliases": [
+    "rights",
+    "copyright_status"
+  ],
+  "applies_to": [
+    "source",
+    "media",
+    "schema",
+    "project",
+    "technology"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "external"
+  ],
+  "relationships": []
+}

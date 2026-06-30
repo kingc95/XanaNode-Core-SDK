@@ -1,0 +1,21 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-location_of",
+  "title": "Location Of Relationship Term",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 4,
+  "summary": "The location_of inverse relationship term derived from located_in.",
+  "version": "0.5.1",
+  "registry_type": "location_of",
+  "registry_namespace": "xananode",
+  "category": "location",
+  "inverse": "located_in",
+  "color": "#bef264",
+  "inverse_color": "#84cc16",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "derived_inverse": true,
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

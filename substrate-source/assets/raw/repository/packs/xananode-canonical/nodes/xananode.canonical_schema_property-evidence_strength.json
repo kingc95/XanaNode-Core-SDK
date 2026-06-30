@@ -1,0 +1,36 @@
+{
+  "id": "xananode.canonical:schema/property-evidence_strength",
+  "title": "Evidence strength",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A compact assessment of the strength of evidence available for a claim, hypothesis, answer, or relationship.",
+  "registry_type": "evidence_strength",
+  "category": "epistemology",
+  "aliases": [
+    "support_strength",
+    "evidence_quality"
+  ],
+  "applies_to": [
+    "claim",
+    "hypothesis",
+    "response",
+    "relationship"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string",
+    "enum": [
+      "none",
+      "weak",
+      "moderate",
+      "strong",
+      "decisive",
+      "contested"
+    ]
+  },
+  "examples": [
+    "moderate"
+  ],
+  "relationships": []
+}

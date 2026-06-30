@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-possible_match-projection-icon",
+  "title": "Possible match Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/possible_match.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/possible_match.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the possible_match relationship type.",
+  "relationships": [],
+  "content_id": "sha256:735837cdd1948c7917ff245294440871f6e2912e51404d87b01e0dae297c9d25",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/possible_match.svg",
+    "method": "archive",
+    "content_id": "sha256:735837cdd1948c7917ff245294440871f6e2912e51404d87b01e0dae297c9d25",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

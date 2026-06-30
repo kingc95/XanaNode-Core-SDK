@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source is related to the target when no more specific relationship applies.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "related_to",
   "registry_namespace": "xananode",
   "category": "generic",

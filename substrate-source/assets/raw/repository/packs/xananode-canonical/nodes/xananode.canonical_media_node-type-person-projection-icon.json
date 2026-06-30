@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-person-projection-icon",
+  "title": "Person Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/person.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/person.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the person node type.",
+  "relationships": [],
+  "content_id": "sha256:5475293392e2f9907d2817729e0d8d3283cabd7b4920394a822fbc049c090e7f",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/person.svg",
+    "method": "archive",
+    "content_id": "sha256:5475293392e2f9907d2817729e0d8d3283cabd7b4920394a822fbc049c090e7f",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-mother_of",
+  "title": "Mother of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is the mother of the target.",
+  "version": "0.5.1",
+  "registry_type": "mother_of",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "child_of",
+  "color": "#fb7185",
+  "inverse_color": "#fecdd3",
+  "line_style": "solid",
+  "inverse_line_style": "dashed",
+  "default_weight": 5,
+  "default_visibility": "primary",
+  "relationships": []
+}

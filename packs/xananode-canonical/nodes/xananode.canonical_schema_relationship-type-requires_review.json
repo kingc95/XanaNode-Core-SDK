@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source needs human, institutional, or automated review before it should be trusted or merged.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "requires_review",
   "registry_namespace": "xananode",
   "category": "knowledge_workflow",

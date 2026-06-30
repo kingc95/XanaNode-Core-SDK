@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source marks the target as unresolved, unsettled, or not yet answerable.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "unresolved",
   "registry_namespace": "xananode",
   "category": "uncertainty",

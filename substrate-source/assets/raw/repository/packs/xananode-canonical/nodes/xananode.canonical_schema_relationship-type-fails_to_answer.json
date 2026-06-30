@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source explicitly does not answer the target question, or demonstrates that an attempted answer is inadequate.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "fails_to_answer",
   "registry_namespace": "xananode",
   "category": "inquiry",

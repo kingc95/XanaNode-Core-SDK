@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source needs schema, evidence, reproducibility, or process validation.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "requires_validation",
   "registry_namespace": "xananode",
   "category": "knowledge_workflow",

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The used_as_primary_media_for inverse relationship term derived from has_primary_media.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "used_as_primary_media_for",
   "registry_namespace": "xananode",
   "category": "representation",

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source presented, hosted, narrated, or publicly introduced the target work, program, or media object.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "presented",
   "registry_namespace": "xananode",
   "category": "participation",

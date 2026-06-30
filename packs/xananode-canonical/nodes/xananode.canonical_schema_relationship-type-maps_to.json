@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source schema type, field, node, or relationship maps to the target schema type, field, node, or relationship for interoperability.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "maps_to",
   "registry_namespace": "xananode",
   "category": "schema_mapping",

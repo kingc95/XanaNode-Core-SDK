@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source discussed the target topic, claim, problem, or source with another participant or group.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "discussed_with",
   "registry_namespace": "xananode",
   "category": "communication",

@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-governed_by-projection-icon",
+  "title": "governed by Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/governed_by.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/governed_by.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the governed_by relationship type.",
+  "relationships": [],
+  "content_id": "sha256:bbc67fea92ed2488bf7e186594ff3050c65a8e7f665bbf992e3d295b462f66f6",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/governed_by.svg",
+    "method": "archive",
+    "content_id": "sha256:bbc67fea92ed2488bf7e186594ff3050c65a8e7f665bbf992e3d295b462f66f6",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

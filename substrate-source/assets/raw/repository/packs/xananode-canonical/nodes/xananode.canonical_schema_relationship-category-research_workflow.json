@@ -5,7 +5,7 @@
   "subtype": "relationship_category_schema",
   "importance": 4,
   "summary": "The research_workflow category groups relationship types with related meaning.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "research_workflow",
   "registry_namespace": "xananode",
   "color": "#0ea5e9",

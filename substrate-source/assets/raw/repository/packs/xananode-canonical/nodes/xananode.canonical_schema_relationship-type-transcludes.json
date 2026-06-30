@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source includes a specific versioned fragment of the target by reference rather than copying it, preserving identity, attribution, and revision lineage.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "transcludes",
   "registry_namespace": "xananode",
   "category": "representation",

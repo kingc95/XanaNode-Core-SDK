@@ -1,0 +1,27 @@
+{
+  "id": "xananode.canonical:schema/property-asset_path",
+  "title": "Asset path",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The substrate-relative path to a bundled raw asset.",
+  "registry_type": "asset_path",
+  "category": "reference",
+  "aliases": [
+    "file_path",
+    "bundle_path"
+  ],
+  "applies_to": [
+    "media",
+    "source",
+    "schema"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "assets/media/douglas-adams.jpg"
+  ],
+  "relationships": []
+}

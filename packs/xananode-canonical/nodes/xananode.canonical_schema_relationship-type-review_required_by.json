@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The review_required_by inverse relationship term derived from requires_review.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "review_required_by",
   "registry_namespace": "xananode",
   "category": "knowledge_workflow",

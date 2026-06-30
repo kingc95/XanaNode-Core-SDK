@@ -15,7 +15,7 @@
   "content_id": "sha256:8d19d267a1d6254c17c100301cbbba91d24da3e13c48c664f2b301d3d267424b",
   "content": "{\n  \"id\": \"example-substrate\",\n  \"name\": \"Example Substrate\",\n  \"version\": \"0.1.0\",\n  \"namespace\": \"example\",\n  \"schema_version\": \"xananode-core@0.5.0\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"local\",\n    \"default_branch\": \"main\"\n  },\n  \"imports\": [\"xananode:core\"],\n  \"extensions\": [],\n  \"maintainers\": [{ \"name\": \"Example Author\" }]\n}\n",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.292Z",
+    "captured_at": "2026-06-30T05:09:29.991Z",
     "source_url": "https://github.com/kingc95/XanaNode-Core-SDK/blob/main/templates/basic/substrate.json",
     "method": "archive",
     "content_id": "sha256:8d19d267a1d6254c17c100301cbbba91d24da3e13c48c664f2b301d3d267424b",

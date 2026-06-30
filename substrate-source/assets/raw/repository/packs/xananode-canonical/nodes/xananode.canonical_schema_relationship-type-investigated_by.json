@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The investigated_by inverse relationship term derived from investigates.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "investigated_by",
   "registry_namespace": "xananode",
   "category": "inquiry",

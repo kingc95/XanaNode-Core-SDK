@@ -35,8 +35,7 @@
     "background_color": "#05070A",
     "text_color": "#F8FAFC",
     "source_node": "example.minimal:media/xananode-icon",
-    "rights_status": "open-source",
-    "license": "MIT",
+    "rights_status": "trademarked - see TRADEMARK.md for permissions and reuse restrictions",
     "updated_at": "2026-06-19T00:00:00Z",
     "reason": "Protocol branding is modeled as substrate metadata and media so changes to project identity can be preserved as knowledge."
   },

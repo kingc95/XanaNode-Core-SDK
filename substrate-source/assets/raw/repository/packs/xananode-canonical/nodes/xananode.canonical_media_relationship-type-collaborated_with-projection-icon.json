@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-collaborated_with-projection-icon",
+  "title": "Collaborated with Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/collaborated_with.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/collaborated_with.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the collaborated_with relationship type.",
+  "relationships": [],
+  "content_id": "sha256:b615aa9ece644548739aad41cf8b2d35d19a893c9c646d94600145de8fa7e712",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/collaborated_with.svg",
+    "method": "archive",
+    "content_id": "sha256:b615aa9ece644548739aad41cf8b2d35d19a893c9c646d94600145de8fa7e712",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

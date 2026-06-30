@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source marks a shift from the target through a different medium, presentation mode, or publication form.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "medium_transition",
   "registry_namespace": "xananode",
   "category": "evolution",

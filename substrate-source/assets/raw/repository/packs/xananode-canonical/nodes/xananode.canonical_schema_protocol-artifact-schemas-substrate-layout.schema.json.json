@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/schemas/substrate-layout.schema.json",
   "content_id": "sha256:ab0a1a5afbc0a6b211d7bff74e5f5dd247e024e939356a484d988674eb452ab6",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.999Z",
+    "captured_at": "2026-06-30T05:09:31.104Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/substrate-layout.schema.json",
     "method": "archive",
     "content_id": "sha256:eca5e7dff19bc8232847cfe23ce5909e62b3358a0bc8538203476eb6fd59a078",

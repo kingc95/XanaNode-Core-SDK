@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-enables-projection-icon",
+  "title": "Enables Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/enables.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/enables.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the enables relationship type.",
+  "relationships": [],
+  "content_id": "sha256:9146bc9b1e5f7286677d2f476eb79eab8d6003f71fb6770e8be2e9e89a946985",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/enables.svg",
+    "method": "archive",
+    "content_id": "sha256:9146bc9b1e5f7286677d2f476eb79eab8d6003f71fb6770e8be2e9e89a946985",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

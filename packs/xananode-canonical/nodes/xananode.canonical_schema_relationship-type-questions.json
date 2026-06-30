@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-questions",
+  "title": "Questions",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source questions, challenges, or casts doubt on the target claim, hypothesis, answer, method, or interpretation.",
+  "version": "0.5.1",
+  "registry_type": "questions",
+  "registry_namespace": "xananode",
+  "category": "inquiry",
+  "inverse": "questioned_by",
+  "color": "#2dd4bf",
+  "inverse_color": "#99f6e4",
+  "line_style": "dashed",
+  "inverse_line_style": "solid",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

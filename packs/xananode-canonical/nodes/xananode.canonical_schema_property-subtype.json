@@ -1,0 +1,48 @@
+{
+  "id": "xananode.canonical:schema/property-subtype",
+  "title": "Subtype",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The primary narrower classification inside a node's main type.",
+  "registry_type": "subtype",
+  "category": "classification",
+  "aliases": [
+    "primary_subtype"
+  ],
+  "applies_to": [
+    "person",
+    "concept",
+    "claim",
+    "question",
+    "hypothesis",
+    "problem",
+    "knowledge_gap",
+    "communication",
+    "response",
+    "source",
+    "observation",
+    "essay",
+    "media",
+    "event",
+    "place",
+    "organization",
+    "project",
+    "technology",
+    "publication",
+    "community",
+    "relationship",
+    "revision",
+    "trail",
+    "schema",
+    "fragment"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "writer"
+  ],
+  "relationships": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-documents-projection-icon",
+  "title": "Documents Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/documents.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/documents.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the documents relationship type.",
+  "relationships": [],
+  "content_id": "sha256:2b40a60dcd79b10c896fe258ee04cf5d4ab0c0d2e87f7a5c3363785e3ae4ae21",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/documents.svg",
+    "method": "archive",
+    "content_id": "sha256:2b40a60dcd79b10c896fe258ee04cf5d4ab0c0d2e87f7a5c3363785e3ae4ae21",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

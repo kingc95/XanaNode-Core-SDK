@@ -12,10 +12,10 @@
   "asset_role": "canonical_raw_source",
   "content_id": "sha256:742483160148d05ff915f24373167cd0945583946de853bd80486297301ed3a3",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.999Z",
+    "captured_at": "2026-06-30T05:09:31.104Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/schemas/xananode-relationship-types.v0.5.0.json",
     "method": "archive",
-    "content_id": "sha256:fcf685c11c5df923dd51fc09a31566ec5d27f9b76ef3a0a542b7bb7b8b65f17b",
+    "content_id": "sha256:65d345b02b5d1859c2a59dbc88339973653e32d80fd2feb0156ecc377ab0b1a1",
     "rights_status": "canonical-public",
     "tool": "@xananode/core"
   }

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source node uses the target media node as its primary representative image or icon.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "has_primary_media",
   "registry_namespace": "xananode",
   "category": "representation",

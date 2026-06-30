@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The used_by inverse relationship term derived from uses.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "used_by",
   "registry_namespace": "xananode",
   "category": "composition",

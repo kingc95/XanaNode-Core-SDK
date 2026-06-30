@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-partner_of",
+  "title": "Partner of",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source is the life partner, spouse, or comparable committed partner of the target.",
+  "version": "0.5.1",
+  "registry_type": "partner_of",
+  "registry_namespace": "xananode",
+  "category": "social",
+  "inverse": "partner_of",
+  "color": "#fb7185",
+  "inverse_color": "#fecdd3",
+  "line_style": "double",
+  "inverse_line_style": "double",
+  "default_weight": 4,
+  "default_visibility": "primary",
+  "relationships": []
+}

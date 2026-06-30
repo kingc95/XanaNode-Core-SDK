@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-has_primary_media-projection-icon",
+  "title": "Has primary media Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/has_primary_media.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/has_primary_media.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the has_primary_media relationship type.",
+  "relationships": [],
+  "content_id": "sha256:f9313ace219cb2f7f622ded47f4154f2af0340eccbc06b75c805ee4e880090ce",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/has_primary_media.svg",
+    "method": "archive",
+    "content_id": "sha256:f9313ace219cb2f7f622ded47f4154f2af0340eccbc06b75c805ee4e880090ce",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

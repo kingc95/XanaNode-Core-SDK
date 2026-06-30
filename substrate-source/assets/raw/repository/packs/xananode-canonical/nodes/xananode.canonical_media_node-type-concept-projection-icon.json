@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-concept-projection-icon",
+  "title": "Concept Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/concept.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/concept.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the concept node type.",
+  "relationships": [],
+  "content_id": "sha256:7a9ef9db1e2d4e380920c5ca8e4b716f9a87ec1ef0b24cdfb0b1a47762ec8152",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/concept.svg",
+    "method": "archive",
+    "content_id": "sha256:7a9ef9db1e2d4e380920c5ca8e4b716f9a87ec1ef0b24cdfb0b1a47762ec8152",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

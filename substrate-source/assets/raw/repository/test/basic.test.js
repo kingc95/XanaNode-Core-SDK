@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
-import { analyzeSubstrateIntake, analyzeTextIntake, buildBundledCanonicalPack, buildGraphProjection, buildSubstrate, createProjectionRegistry, loadSubstratePack, normalizePackReference, relationshipsFromProjectionNodes, writeCanonicalPack, writeSubstrateArtifacts } from "../src/index.js";
+import { advanceViewerPlaybackState, analyzeSubstrateIntake, analyzeTextIntake, buildBundledCanonicalPack, buildGraphProjection, buildHopNeighborhood, buildSearchPlan, buildSubstrate, buildViewerGraphModel, buildViewerSearchState, createProjectionRegistry, createViewerTourSession, describeViewerGraphDensity, getViewerTimedDwellMs, getViewerTrailNodeIds, loadSubstratePack, normalizePackReference, pickNextViewerTourNode, rememberViewerTourVisit, relationshipsFromProjectionNodes, selectViewerLabeledNodes, writeCanonicalPack, writeSubstrateArtifacts } from "../src/index.js";
 
 test("builds bundled example substrate", async () => {
   const root = path.resolve("templates/basic");
@@ -24,6 +24,106 @@ test("builds bundled example substrate", async () => {
   assert.ok(authoredFragment.source_version_id.startsWith("sha256:"));
   assert.match(authoredFragment.tumbler, /@sha256:[^#]+#fragment\/definition@sha256:/);
   assert.equal(substrate.validation.valid, true);
+});
+
+test("derives kinship relationships from explicit family links", async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "xananode-kinship-"));
+  try {
+    fs.writeFileSync(path.join(root, "substrate.json"), JSON.stringify({
+      id: "family.test",
+      name: "Family Test",
+      namespace: "family.test",
+      version: "0.1.0",
+      repository: { type: "git", url: "local", default_branch: "main" }
+    }, null, 2));
+    fs.writeFileSync(path.join(root, "nodes.json"), JSON.stringify({
+      nodes: [
+        { id: "family.test:person/grace", title: "Grace", type: "person", gender: "female" },
+        { id: "family.test:person/frank", title: "Frank", type: "person", gender: "male" },
+        { id: "family.test:person/bob", title: "Bob", type: "person", gender: "male" },
+        { id: "family.test:person/dana", title: "Dana", type: "person", gender: "female" },
+        { id: "family.test:person/charlie", title: "Charlie", type: "person", gender: "male" },
+        { id: "family.test:person/carol", title: "Carol", type: "person", gender: "female" },
+        { id: "family.test:person/ivy", title: "Ivy", type: "person", gender: "female" },
+        { id: "family.test:person/erin", title: "Erin", type: "person", gender: "female" },
+        { id: "family.test:person/emma", title: "Emma", type: "person", gender: "female" }
+      ]
+    }, null, 2));
+    fs.writeFileSync(path.join(root, "relationships.json"), JSON.stringify({
+      relationships: [
+        { source: "family.test:person/grace", target: "family.test:person/bob", type: "mother_of" },
+        { source: "family.test:person/frank", target: "family.test:person/bob", type: "father_of" },
+        { source: "family.test:person/grace", target: "family.test:person/dana", type: "mother_of" },
+        { source: "family.test:person/frank", target: "family.test:person/dana", type: "father_of" },
+        { source: "family.test:person/bob", target: "family.test:person/charlie", type: "father_of" },
+        { source: "family.test:person/carol", target: "family.test:person/charlie", type: "mother_of" },
+        { source: "family.test:person/dana", target: "family.test:person/ivy", type: "mother_of" },
+        { source: "family.test:person/bob", target: "family.test:person/emma", type: "father_of" },
+        { source: "family.test:person/erin", target: "family.test:person/emma", type: "mother_of" }
+      ]
+    }, null, 2));
+
+    const substrate = await buildSubstrate(root);
+    const relationships = substrate.relationships;
+    const hasRelationship = (source, type, target) => relationships.some((relationship) => (
+      relationship.source === source && relationship.type === type && relationship.target === target
+    ));
+
+    assert.equal(substrate.validation.valid, true);
+    assert.ok(hasRelationship("family.test:person/grace", "grandmother_of", "family.test:person/charlie"));
+    assert.ok(hasRelationship("family.test:person/frank", "grandfather_of", "family.test:person/charlie"));
+    assert.ok(hasRelationship("family.test:person/grace", "grandparent_of", "family.test:person/charlie"));
+    assert.ok(hasRelationship("family.test:person/bob", "brother_of", "family.test:person/dana"));
+    assert.ok(hasRelationship("family.test:person/dana", "sister_of", "family.test:person/bob"));
+    assert.ok(hasRelationship("family.test:person/charlie", "half_sibling_of", "family.test:person/emma"));
+    assert.ok(hasRelationship("family.test:person/dana", "aunt_of", "family.test:person/charlie"));
+    assert.ok(hasRelationship("family.test:person/charlie", "nephew_of", "family.test:person/dana"));
+    assert.ok(hasRelationship("family.test:person/charlie", "cousin_of", "family.test:person/ivy"));
+    assert.ok(!hasRelationship("family.test:person/dana", "aunt_of", "family.test:person/ivy"));
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test("derives step-kinship specifics from generic step relationships and gender", async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "xananode-step-kinship-"));
+  try {
+    fs.writeFileSync(path.join(root, "substrate.json"), JSON.stringify({
+      id: "step.family.test",
+      name: "Step Family Test",
+      namespace: "step.family.test",
+      version: "0.1.0",
+      repository: { type: "git", url: "local", default_branch: "main" }
+    }, null, 2));
+    fs.writeFileSync(path.join(root, "nodes.json"), JSON.stringify({
+      nodes: [
+        { id: "step.family.test:person/alice", title: "Alice", type: "person", gender: "female" },
+        { id: "step.family.test:person/ben", title: "Ben", type: "person", gender: "male" },
+        { id: "step.family.test:person/claire", title: "Claire", type: "person", gender: "female" },
+        { id: "step.family.test:person/dylan", title: "Dylan", type: "person", gender: "male" }
+      ]
+    }, null, 2));
+    fs.writeFileSync(path.join(root, "relationships.json"), JSON.stringify({
+      relationships: [
+        { source: "step.family.test:person/alice", target: "step.family.test:person/ben", type: "step_parent_of" },
+        { source: "step.family.test:person/claire", target: "step.family.test:person/dylan", type: "step_child_of" }
+      ]
+    }, null, 2));
+
+    const substrate = await buildSubstrate(root);
+    const relationships = substrate.relationships;
+    const hasRelationship = (source, type, target) => relationships.some((relationship) => (
+      relationship.source === source && relationship.type === type && relationship.target === target
+    ));
+
+    assert.equal(substrate.validation.valid, true);
+    assert.ok(hasRelationship("step.family.test:person/alice", "step_mother_of", "step.family.test:person/ben"));
+    assert.ok(hasRelationship("step.family.test:person/ben", "step_son_of", "step.family.test:person/alice"));
+    assert.ok(hasRelationship("step.family.test:person/claire", "step_daughter_of", "step.family.test:person/dylan"));
+    assert.ok(hasRelationship("step.family.test:person/dylan", "step_father_of", "step.family.test:person/claire"));
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
 });
 
 test("builds renderer-neutral graph projection styles from protocol registries", () => {
@@ -49,6 +149,202 @@ test("builds renderer-neutral graph projection styles from protocol registries",
   assert.equal(projection.edges[0].style.color, "#f59e0b");
   assert.equal(projection.edges[0].style.dash, "8 6");
   assert.equal(relationshipsFromProjectionNodes([{ ...nodes[0], relationships }],).length, 0);
+});
+
+test("fans parallel relationships into separate projection lanes", () => {
+  const registry = createProjectionRegistry({
+    nodeTypes: [
+      { type: "person", color: { bg: "#8bd3ff", fg: "#071827", outline: "#d8f1ff" } }
+    ],
+    relationshipTypes: [
+      { type: "mother_of", color: "#ef5da8", line_style: "solid" },
+      { type: "step_mother_of", color: "#ff8a65", line_style: "solid" }
+    ]
+  });
+  const nodes = [
+    { id: "fiona", title: "Fiona", type: "person" },
+    { id: "sam", title: "Sam Montgomery", type: "person" }
+  ];
+  const relationships = [
+    { source: "fiona", target: "sam", type: "mother_of" },
+    { source: "fiona", target: "sam", type: "step_mother_of" }
+  ];
+
+  const projection = buildGraphProjection(nodes, relationships, { current: nodes[0], registry });
+  assert.equal(projection.edges.length, 2);
+  assert.notEqual(projection.edges[0].parallelEdgeLane, projection.edges[1].parallelEdgeLane);
+});
+
+test("hop neighborhoods include neighbors of direct neighbors at depth two", () => {
+  const nodes = [
+    { id: "start", title: "Start", type: "trail" },
+    { id: "middle", title: "Middle", type: "project" },
+    { id: "far", title: "Far", type: "source" }
+  ];
+  const edges = [
+    { source: "start", target: "middle", type: "starts_with" },
+    { source: "middle", target: "far", type: "documents" }
+  ];
+
+  const neighborhood = buildHopNeighborhood(nodes, edges, {
+    focusId: "start",
+    maxDepth: 2,
+    exhaustive: true
+  });
+
+  assert.deepEqual(
+    neighborhood.nodes.map((node) => node.id).sort(),
+    ["far", "middle", "start"]
+  );
+});
+
+test("trail helpers follow chained continues_to edges from the lead node", () => {
+  const trail = { id: "trail", title: "Trail", type: "trail" };
+  const ids = getViewerTrailNodeIds(trail, {
+    allEdges: [
+      { source: "trail", target: "one", type: "starts_with" },
+      { source: "one", target: "two", type: "continues_to" },
+      { source: "two", target: "three", type: "continues_to" }
+    ]
+  });
+  assert.deepEqual(ids, ["one", "two", "three"]);
+});
+
+test("viewer search plans strip conversational lead-ins", () => {
+  const plan = buildSearchPlan("Who is Vannevar Bush and why does he matter?");
+  assert.equal(plan.raw, "Who is Vannevar Bush and why does he matter?");
+  assert.equal(plan.normalized, "vannevar bush matter");
+  assert.deepEqual(plan.tokens, ["vannevar", "bush", "matter"]);
+});
+
+test("viewer graph model applies shared subtype and relationship filters", () => {
+  const registry = createProjectionRegistry({
+    nodeTypes: [
+      { type: "trail", color: { bg: "#f59e0b", fg: "#111827", outline: "#fde68a" } },
+      { type: "concept", color: { bg: "#86efac", fg: "#052e16", outline: "#dcfce7" } },
+      { type: "media", color: { bg: "#fbcfe8", fg: "#500724", outline: "#fce7f3" } }
+    ],
+    relationshipTypes: [
+      { type: "starts_with", color: "#84cc16", line_style: "dashed" },
+      { type: "documents", color: "#38bdf8", line_style: "solid" }
+    ]
+  });
+  const nodes = [
+    { id: "start", title: "Start Here", type: "trail", subtype: "introductory" },
+    { id: "concept", title: "Memex", type: "concept", subtypes: ["historical"] },
+    { id: "image", title: "Sketch", type: "media", media_type: "image" },
+    { id: "video", title: "Film", type: "media", media_type: "video" }
+  ];
+  const edges = [
+    { source: "start", target: "concept", type: "starts_with" },
+    { source: "concept", target: "image", type: "documents" },
+    { source: "concept", target: "video", type: "documents" }
+  ];
+
+  const { visible, graph } = buildViewerGraphModel(nodes, edges, {
+    focusId: "start",
+    maxDepth: 3,
+    enabledTypes: new Set(["trail", "concept", "media"]),
+    enabledMediaTypes: new Set(["image"]),
+    enabledRelationshipTypes: new Set(["starts_with", "documents"]),
+    enabledSubtypes: new Set(["introductory", "historical"]),
+    registry
+  });
+
+  assert.deepEqual(visible.nodes.map((node) => node.id).sort(), ["concept", "image", "start"]);
+  assert.deepEqual(graph.edges.map((edge) => edge.type).sort(), ["documents", "starts_with"]);
+});
+
+test("viewer tour picker prefers nearby fresh nodes", () => {
+  const choice = pickNextViewerTourNode({
+    nodes: [
+      { id: "focus", distance: 0, importance: 5 },
+      { id: "fresh-near", distance: 1, importance: 3 },
+      { id: "recent-near", distance: 1, importance: 5 },
+      { id: "far", distance: 3, importance: 10 }
+    ],
+    focusId: "focus",
+    tourRecent: ["recent-near"],
+    tourVisited: ["far"],
+    tourIndex: 0
+  });
+
+  assert.equal(choice.nextId, "fresh-near");
+  assert.equal(choice.nextIndex, 0);
+});
+
+test("viewer timed dwell helper clamps and normalizes seconds", () => {
+  assert.equal(getViewerTimedDwellMs({ timedSeconds: 9 }), 9000);
+  assert.equal(getViewerTimedDwellMs({ timedSeconds: 1 }), 3000);
+  assert.equal(getViewerTimedDwellMs({ timedSeconds: 999 }), 120000);
+});
+
+test("viewer search state reports pending and live matches", () => {
+  const pending = buildViewerSearchState([{ id: "x:concept/memex", title: "Memex", type: "concept" }], "me");
+  assert.equal(pending.pending, true);
+  assert.match(pending.meta, /Keep typing/i);
+
+  const ready = buildViewerSearchState([{ id: "x:concept/memex", title: "Memex", type: "concept" }], "memex");
+  assert.equal(ready.ready, true);
+  assert.equal(ready.results.length, 1);
+  assert.match(ready.meta, /match/i);
+});
+
+test("viewer playback helpers keep tour visit state and advance trail playback", () => {
+  const trailNode = {
+    id: "x:trail/start-here",
+    type: "trail",
+    nodes: ["x:concept/one", "x:concept/two", "x:concept/three"]
+  };
+  const session = createViewerTourSession({
+    focusId: "x:trail/start-here",
+    trailNode
+  });
+  assert.deepEqual(session.tourVisited, ["x:trail/start-here"]);
+  assert.equal(session.activeTrail.nodes[0], "x:concept/one");
+
+  const visit = rememberViewerTourVisit("x:concept/one", {
+    tourVisited: session.tourVisited,
+    tourRecent: session.tourRecent,
+    visibleCount: 12
+  });
+  assert.equal(visit.tourRecent.at(-1), "x:concept/one");
+
+  const advance = advanceViewerPlaybackState({
+    tourActive: true,
+    activeTrail: session.activeTrail,
+    focusId: "x:trail/start-here",
+    tourRecent: visit.tourRecent,
+    tourVisited: visit.tourVisited,
+    tourIndex: 0,
+    nodes: []
+  });
+  assert.equal(advance.kind, "node");
+  assert.equal(advance.nextId, "x:concept/one");
+});
+
+test("viewer density helpers mark dense graphs and preserve useful labels", () => {
+  const graph = {
+    nodes: [
+      { id: "focus", selected: true, distance: 0, importance: 5 },
+      { id: "near-a", distance: 1, importance: 4 },
+      { id: "near-b", distance: 1, importance: 3 },
+      { id: "far", distance: 3, importance: 1 }
+    ],
+    edges: Array.from({ length: 80 }, (_, index) => ({
+      source: { id: "focus" },
+      target: { id: index % 2 === 0 ? "near-a" : "near-b" }
+    }))
+  };
+
+  const density = describeViewerGraphDensity(graph);
+  assert.equal(density.mode, "dense");
+  assert.ok(density.maxIncident >= 40);
+
+  const visibleLabels = selectViewerLabeledNodes(graph, { dense: true, maxDenseLabels: 2 });
+  assert.ok(visibleLabels.has("focus"));
+  assert.ok(visibleLabels.has("near-a") || visibleLabels.has("near-b"));
+  assert.equal(visibleLabels.has("far"), false);
 });
 
 test("bundles the current protocol schema inventory", () => {

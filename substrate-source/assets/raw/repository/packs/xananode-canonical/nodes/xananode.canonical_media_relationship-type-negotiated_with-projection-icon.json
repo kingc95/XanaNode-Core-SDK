@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-negotiated_with-projection-icon",
+  "title": "Negotiated with Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/negotiated_with.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/negotiated_with.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the negotiated_with relationship type.",
+  "relationships": [],
+  "content_id": "sha256:176808d1ee4f9d70240705e37113832649f1dc8207a3bc9246411d194923f24d",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/negotiated_with.svg",
+    "method": "archive",
+    "content_id": "sha256:176808d1ee4f9d70240705e37113832649f1dc8207a3bc9246411d194923f24d",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-announced-projection-icon",
+  "title": "Announced Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/announced.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/announced.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the announced relationship type.",
+  "relationships": [],
+  "content_id": "sha256:418cca1ac46dd37c6547892e5485ff7107a6f555bf1bb326e053953164cc397e",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/announced.svg",
+    "method": "archive",
+    "content_id": "sha256:418cca1ac46dd37c6547892e5485ff7107a6f555bf1bb326e053953164cc397e",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

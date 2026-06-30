@@ -1,0 +1,27 @@
+{
+  "id": "xananode.canonical:schema/property-year",
+  "title": "Year",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A publication year or best-known year for a source.",
+  "registry_type": "year",
+  "category": "time",
+  "aliases": [
+    "publication_year",
+    "release_year"
+  ],
+  "applies_to": [
+    "source",
+    "publication",
+    "media"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "1979"
+  ],
+  "relationships": []
+}

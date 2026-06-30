@@ -2,7 +2,7 @@
 
 Nodes are addressable knowledge objects.
 
-A node may represent a person, concept, claim, question, hypothesis, problem, knowledge gap, communication, response, source, observation, essay, media item, event, place, organization, project, technology, publication, community, relationship, revision, trail, schema, or fragment.
+A node may represent a person, organism, concept, claim, question, hypothesis, problem, knowledge gap, communication, response, source, observation, essay, media item, event, place, organization, project, technology, publication, community, relationship, revision, trail, schema, or fragment.
 
 Nodes should have stable IDs and human-readable summaries.
 
@@ -96,6 +96,48 @@ Use relationships to explain why a facet matters in context. For example, a quot
 Projection layers should show those secondary roles instead of hiding them. The primary `type` keeps authority over routing, validation, and default presentation, but a graph projection should visually mix the primary type color with any facet colors it recognizes. In other words, a quote that is primarily a `fragment` and also has `source` and `claim` facets should not look like only a fragment. Its visual mark should intertwingle the fragment, source, and claim colors by slices, bands, rings, or another accessible mixed-color treatment.
 
 If a projection cannot use color, it should preserve the distinction with labels, texture, stroke patterns, badges, or another cue. A renderer may simplify the treatment at tiny sizes, but it should not erase the fact that the node carries multiple roles while claiming full projection compliance.
+
+## Organisms And Taxa
+
+Non-human living things should not be forced into `item`, and a species record should not be treated as "just a concept" when the biological identity itself matters. Use `organism` for animals, plants, fungi, microbes, biological specimens, breeds, cultivars, species, genera, and similar taxonomic records.
+
+Keep `person` for human actors because personhood in XanaNode carries authoring, communication, kinship, participation, and social semantics beyond generic biology. If a human record also needs biological detail, add the relevant properties there instead of downgrading it into `organism`.
+
+Use subtypes such as:
+
+- `animal`
+- `plant`
+- `fungus`
+- `microbe`
+- `specimen`
+- `species`
+- `genus`
+- `family`
+- `breed`
+- `cultivar`
+- `extinct_species`
+- `fictional_species`
+
+Common organism properties include `scientific_name`, `common_name`, `taxon_rank`, `biological_sex`, `life_stage`, `habitat`, and `conservation_status`.
+
+Example:
+
+```json
+{
+  "id": "example.field:organism/american-crow",
+  "title": "American Crow",
+  "type": "organism",
+  "subtype": "species",
+  "scientific_name": "Corvus brachyrhynchos",
+  "common_name": "American Crow",
+  "taxon_rank": "species",
+  "habitat": "temperate urban woodland",
+  "conservation_status": "least_concern",
+  "importance": 3,
+  "summary": "A corvid species used here as an example of a non-human biological node.",
+  "relationships": []
+}
+```
 
 ## Media Assets
 

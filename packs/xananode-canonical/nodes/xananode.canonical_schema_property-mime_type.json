@@ -1,0 +1,25 @@
+{
+  "id": "xananode.canonical:schema/property-mime_type",
+  "title": "MIME type",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "The MIME type for a bundled media or source asset.",
+  "registry_type": "mime_type",
+  "category": "reference",
+  "aliases": [
+    "content_type"
+  ],
+  "applies_to": [
+    "media",
+    "source"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string"
+  },
+  "examples": [
+    "image/jpeg"
+  ],
+  "relationships": []
+}

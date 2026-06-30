@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source artifact, workflow, implementation, substrate, or mark is governed by the target policy, rule, specification, or legal instrument.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "governed_by",
   "registry_namespace": "xananode",
   "category": "governance",

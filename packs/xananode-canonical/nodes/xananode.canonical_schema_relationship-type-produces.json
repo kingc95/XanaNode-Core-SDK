@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The produces inverse relationship term derived from results_from.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "produces",
   "registry_namespace": "xananode",
   "category": "causation",

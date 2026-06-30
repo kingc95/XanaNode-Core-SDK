@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The mapped_from inverse relationship term derived from maps_to.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "mapped_from",
   "registry_namespace": "xananode",
   "category": "schema_mapping",

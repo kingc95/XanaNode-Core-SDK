@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-trademarked_by-projection-icon",
+  "title": "trademarked by Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/trademarked_by.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/trademarked_by.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the trademarked_by relationship type.",
+  "relationships": [],
+  "content_id": "sha256:ea1398b272190fe0417a6f6d7d5f034ecefb0daa68db347485a443abc8185e5f",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/trademarked_by.svg",
+    "method": "archive",
+    "content_id": "sha256:ea1398b272190fe0417a6f6d7d5f034ecefb0daa68db347485a443abc8185e5f",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -15,8 +15,7 @@
   "created_date": "2026-06-16T00:00:00Z",
   "source_name": "XanaNode Protocol",
   "source_url": "https://github.com/kingc95/XanaNode",
-  "license": "MIT",
-  "rights_status": "open-source",
+  "rights_status": "trademarked - see TRADEMARK.md for permissions and reuse restrictions",
   "relationships": [
     {
       "id": "example.minimal:rel/substrate-has-primary-media",

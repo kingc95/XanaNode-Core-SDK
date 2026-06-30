@@ -1,0 +1,13 @@
+{
+  "id": "xananode.canonical:schema/node-subtype-event-performance",
+  "title": "Event subtype: performance",
+  "type": "schema",
+  "subtype": "node_subtype_schema",
+  "importance": 4,
+  "summary": "performance is an allowed subtype of the event node type.",
+  "version": "0.3.0",
+  "registry_type": "performance",
+  "registry_namespace": "xananode",
+  "parent_node_type": "event",
+  "relationships": []
+}

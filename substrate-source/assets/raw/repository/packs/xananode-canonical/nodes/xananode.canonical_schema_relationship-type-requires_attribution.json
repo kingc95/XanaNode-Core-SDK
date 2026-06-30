@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source license, artifact, substrate, or policy requires attribution to the target person, organization, project, source, or community.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "requires_attribution",
   "registry_namespace": "xananode",
   "category": "governance",

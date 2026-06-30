@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/federation-example/substrate-b/relationships.json",
   "content_id": "sha256:2644bf38596caf93aedf0defef25783e67cb98c46461044420a3615f7eb89f59",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.999Z",
+    "captured_at": "2026-06-30T05:09:31.104Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-b/relationships.json",
     "method": "archive",
     "content_id": "sha256:2644bf38596caf93aedf0defef25783e67cb98c46461044420a3615f7eb89f59",

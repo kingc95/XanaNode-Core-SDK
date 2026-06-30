@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-resonates_with-projection-icon",
+  "title": "Resonates with Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/resonates_with.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/resonates_with.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the resonates_with relationship type.",
+  "relationships": [],
+  "content_id": "sha256:3641999f4d7cedbbbe14e9bd4247f7055e2e356925f38d7d69d5b2d0efc2a8f0",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/resonates_with.svg",
+    "method": "archive",
+    "content_id": "sha256:3641999f4d7cedbbbe14e9bd4247f7055e2e356925f38d7d69d5b2d0efc2a8f0",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 4,
   "summary": "The has_example inverse relationship term derived from example_of.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "has_example",
   "registry_namespace": "xananode",
   "category": "cognition",

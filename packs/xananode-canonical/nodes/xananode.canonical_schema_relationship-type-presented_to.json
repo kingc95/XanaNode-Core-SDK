@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source presented the target content, claim, source, or project to an audience.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "presented_to",
   "registry_namespace": "xananode",
   "category": "communication",

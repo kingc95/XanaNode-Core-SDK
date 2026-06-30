@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-supports-projection-icon",
+  "title": "Supports Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/supports.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/supports.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the supports relationship type.",
+  "relationships": [],
+  "content_id": "sha256:847372637200d7cb82b322001f653d965574073054937612a5a96e9ec794a49c",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/supports.svg",
+    "method": "archive",
+    "content_id": "sha256:847372637200d7cb82b322001f653d965574073054937612a5a96e9ec794a49c",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

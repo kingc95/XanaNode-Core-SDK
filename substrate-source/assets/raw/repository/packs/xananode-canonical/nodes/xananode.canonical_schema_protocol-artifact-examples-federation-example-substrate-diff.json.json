@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/federation-example/substrate-diff.json",
   "content_id": "sha256:b171629889cb8036138939eff5b98f5f1e147d0ae91adb26b028240874dcb78c",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.999Z",
+    "captured_at": "2026-06-30T05:09:31.104Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/federation-example/substrate-diff.json",
     "method": "archive",
     "content_id": "sha256:b171629889cb8036138939eff5b98f5f1e147d0ae91adb26b028240874dcb78c",

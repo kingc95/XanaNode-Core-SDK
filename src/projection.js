@@ -147,6 +147,8 @@ export function buildGraphProjection(nodes = [], relationships = [], options = {
     .filter(Boolean)
     .slice(0, maxEdges);
 
+  assignParallelEdgeLanes(edges);
+
   return { nodes: arranged, edges, hasVisibleEdges: edges.length > 0 };
 }
 
@@ -168,34 +170,18 @@ export function relationshipsFromProjectionNodes(nodes = []) {
 }
 
 export function projectionEdgePath(edge, options = {}) {
-  const dx = edge.target.x - edge.source.x;
-  const dy = edge.target.y - edge.source.y;
-  const distance = Math.max(1, Math.hypot(dx, dy));
-  const offset = Math.min(42, Math.max(18, distance * 0.08));
-  const normalX = (-dy / distance) * offset;
-  const normalY = (dx / distance) * offset;
-  const targetInset = Math.max(0, Number(options.targetInset || 0));
-  const sourceInset = Math.max(0, Number(options.sourceInset || 0));
-  const ux = dx / distance;
-  const uy = dy / distance;
-  const sourceX = edge.source.x + ux * sourceInset;
-  const sourceY = edge.source.y + uy * sourceInset;
-  const targetX = edge.target.x - ux * targetInset;
-  const targetY = edge.target.y - uy * targetInset;
-  const midX = (sourceX + targetX) / 2 + normalX;
-  const midY = (sourceY + targetY) / 2 + normalY;
-  return `M ${sourceX} ${sourceY} Q ${midX} ${midY} ${targetX} ${targetY}`;
+  const geometry = projectionEdgeGeometry(edge, options);
+  return `M ${geometry.sourceX} ${geometry.sourceY} Q ${geometry.controlX} ${geometry.controlY} ${geometry.targetX} ${geometry.targetY}`;
 }
 
 export function projectionEdgeArrowPoints(edge, size = 10, targetInset = 0) {
-  const dx = edge.target.x - edge.source.x;
-  const dy = edge.target.y - edge.source.y;
-  const distance = Math.max(1, Math.hypot(dx, dy));
-  const ux = dx / distance;
-  const uy = dy / distance;
-  const tipInset = Math.max(0, Number(targetInset || 0));
-  const tipX = edge.target.x - ux * tipInset;
-  const tipY = edge.target.y - uy * tipInset;
+  const geometry = projectionEdgeGeometry(edge, { targetInset });
+  const tangent = projectionQuadraticTangent(geometry, 0.96);
+  const tangentDistance = Math.max(1, Math.hypot(tangent.x, tangent.y));
+  const ux = tangent.x / tangentDistance;
+  const uy = tangent.y / tangentDistance;
+  const tipX = geometry.targetX;
+  const tipY = geometry.targetY;
   const backtrack = Math.max(14, size * 1.8);
   const baseX = tipX - ux * backtrack;
   const baseY = tipY - uy * backtrack;
@@ -206,6 +192,10 @@ export function projectionEdgeArrowPoints(edge, size = 10, targetInset = 0) {
     [baseX - perpX * size, baseY - perpY * size],
     [baseX + perpX * size, baseY + perpY * size]
   ];
+}
+
+export function projectionEdgeLabelPoint(edge, options = {}) {
+  return projectionQuadraticPoint(projectionEdgeGeometry(edge, options), 0.5);
 }
 
 export function projectionNodeHasMedia(node = {}) {
@@ -261,6 +251,7 @@ export function buildHopNeighborhood(nodes = [], edges = [], options = {}) {
   const nodeFilter = typeof options.nodeFilter === "function" ? options.nodeFilter : () => true;
   const edgeFilter = typeof options.edgeFilter === "function" ? options.edgeFilter : () => true;
   const edgeScore = typeof options.edgeScore === "function" ? options.edgeScore : () => 0;
+  const exhaustive = options.exhaustive !== false;
   const depthSettings = options.depthSettings || {
     1: { minWeight: 5, maxSecond: 0, maxThird: 0, maxFourth: 0 },
     2: { minWeight: 4, maxSecond: 8, maxThird: 0, maxFourth: 0 },
@@ -284,13 +275,10 @@ export function buildHopNeighborhood(nodes = [], edges = [], options = {}) {
   let frontier = new Set([focusId].filter(Boolean));
   for (let depth = 1; depth <= maxDepth; depth++) {
     const nextFrontier = new Set();
-    const budget = depth === 1 ? Infinity : Number(settings[`max${["", "First", "Second", "Third", "Fourth"][depth]}`] || 0);
-    let accepted = 0;
     const candidateEdges = depth === 1
       ? eligibleEdges.filter((edge) => edge.source === focusId || edge.target === focusId)
-      : eligibleEdges.filter((edge) => Number(edge.weight || 1) >= Number(settings.minWeight || 1));
+      : eligibleEdges;
     for (const edge of candidateEdges) {
-      if (depth > 1 && accepted >= budget) break;
       const sourceInFrontier = frontier.has(edge.source);
       const targetInFrontier = frontier.has(edge.target);
       if (!sourceInFrontier && !targetInFrontier) continue;
@@ -300,7 +288,6 @@ export function buildHopNeighborhood(nodes = [], edges = [], options = {}) {
       visibleIds.add(nextId);
       distances[nextId] = depth;
       nextFrontier.add(nextId);
-      accepted++;
     }
     frontier = nextFrontier;
     if (!frontier.size) break;
@@ -412,6 +399,8 @@ export function layoutReadableProjection(visible = {}, options = {}) {
     })
     .filter(Boolean)
     .sort((a, b) => Number(b.distance || 0) - Number(a.distance || 0));
+
+  assignParallelEdgeLanes(edges);
 
   seedProjectionNodes(nodes, edges, width, height, focusId, options);
   relaxProjectionForces(nodes, edges, width, height, options);
@@ -564,6 +553,35 @@ function enrichProjectionEdges(nodes = [], edges = []) {
   const seen = new Set(deduped.map((edge) => `${normalizeNodeRef(edge.source)}::${edge.type || "related_to"}::${normalizeNodeRef(edge.target)}`));
   const synthetic = synthesizeTrailProjectionEdges(nodes, seen);
   return [...deduped, ...synthetic];
+}
+
+function assignParallelEdgeLanes(edges = []) {
+  const groups = new Map();
+  for (const edge of edges) {
+    const sourceId = String(edge?.source?.id || edge?.source || "");
+    const targetId = String(edge?.target?.id || edge?.target || "");
+    const pairKey = [sourceId, targetId].sort().join("::");
+    if (!groups.has(pairKey)) groups.set(pairKey, []);
+    groups.get(pairKey).push(edge);
+  }
+
+  for (const group of groups.values()) {
+    group
+      .sort((a, b) => {
+        const sourceCompare = String(a.source?.id || a.source || "").localeCompare(String(b.source?.id || b.source || ""));
+        if (sourceCompare !== 0) return sourceCompare;
+        const targetCompare = String(a.target?.id || a.target || "").localeCompare(String(b.target?.id || b.target || ""));
+        if (targetCompare !== 0) return targetCompare;
+        const typeCompare = String(a.type || "").localeCompare(String(b.type || ""));
+        if (typeCompare !== 0) return typeCompare;
+        return String(a.key || "").localeCompare(String(b.key || ""));
+      })
+      .forEach((edge, index, all) => {
+        edge.parallelEdgeCount = all.length;
+        edge.parallelEdgeIndex = index;
+        edge.parallelEdgeLane = index - (all.length - 1) / 2;
+      });
+  }
 }
 
 function pruneFlattenedTrailEdges(nodes = [], edges = []) {
@@ -921,6 +939,51 @@ function projectionEdgeDepthStyle(distance) {
     4: { opacity: 0.11, arrowOpacity: 0.16, strokeWidth: 0.9, showLabel: false }
   };
   return styles[depth] || styles[4];
+}
+
+function projectionEdgeGeometry(edge, options = {}) {
+  const dx = Number(edge?.target?.x || 0) - Number(edge?.source?.x || 0);
+  const dy = Number(edge?.target?.y || 0) - Number(edge?.source?.y || 0);
+  const distance = Math.max(1, Math.hypot(dx, dy));
+  const targetInset = Math.max(0, Number(options.targetInset || 0));
+  const sourceInset = Math.max(0, Number(options.sourceInset || 0));
+  const ux = dx / distance;
+  const uy = dy / distance;
+  const sourceX = Number(edge?.source?.x || 0) + ux * sourceInset;
+  const sourceY = Number(edge?.source?.y || 0) + uy * sourceInset;
+  const targetX = Number(edge?.target?.x || 0) - ux * targetInset;
+  const targetY = Number(edge?.target?.y || 0) - uy * targetInset;
+  const lane = Number(edge?.parallelEdgeLane || 0);
+  const bundleSpacing = Number(options.bundleSpacing || 26);
+  const baseOffset = Math.min(42, Math.max(18, distance * 0.08));
+  const offset = baseOffset + Math.abs(lane) * bundleSpacing;
+  const signedOffset = lane === 0 ? baseOffset : offset * Math.sign(lane);
+  const normalX = (-dy / distance) * signedOffset;
+  const normalY = (dx / distance) * signedOffset;
+  return {
+    sourceX,
+    sourceY,
+    targetX,
+    targetY,
+    controlX: (sourceX + targetX) / 2 + normalX,
+    controlY: (sourceY + targetY) / 2 + normalY
+  };
+}
+
+function projectionQuadraticPoint(geometry, t = 0.5) {
+  const oneMinusT = 1 - t;
+  return {
+    x: oneMinusT * oneMinusT * geometry.sourceX + 2 * oneMinusT * t * geometry.controlX + t * t * geometry.targetX,
+    y: oneMinusT * oneMinusT * geometry.sourceY + 2 * oneMinusT * t * geometry.controlY + t * t * geometry.targetY
+  };
+}
+
+function projectionQuadraticTangent(geometry, t = 0.96) {
+  const oneMinusT = 1 - t;
+  return {
+    x: 2 * oneMinusT * (geometry.controlX - geometry.sourceX) + 2 * t * (geometry.targetX - geometry.controlX),
+    y: 2 * oneMinusT * (geometry.controlY - geometry.sourceY) + 2 * t * (geometry.targetY - geometry.controlY)
+  };
 }
 
 function clampNumber(value, min, max, fallback) {

@@ -16,7 +16,7 @@
   "asset_path": "assets/raw/protocol/examples/minimal-substrate/nodes/person-example-maintainer.json",
   "content_id": "sha256:a2ee929f0385650182710c527877012c60020bd5d5ec200bce9596c58b9ae974",
   "source_snapshot": {
-    "captured_at": "2026-06-27T16:35:32.999Z",
+    "captured_at": "2026-06-30T05:09:31.104Z",
     "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/examples/minimal-substrate/nodes/person-example-maintainer.json",
     "method": "archive",
     "content_id": "sha256:a2ee929f0385650182710c527877012c60020bd5d5ec200bce9596c58b9ae974",

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source event occurred at the target place.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "occurred_at",
   "registry_namespace": "xananode",
   "category": "location",

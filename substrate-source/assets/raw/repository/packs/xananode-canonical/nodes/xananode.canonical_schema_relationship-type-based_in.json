@@ -1,0 +1,20 @@
+{
+  "id": "xananode.canonical:schema/relationship-type-based_in",
+  "title": "Based in",
+  "type": "schema",
+  "subtype": "relationship_type_schema",
+  "importance": 5,
+  "summary": "The source person, project, or organization is principally based in the target place.",
+  "version": "0.5.1",
+  "registry_type": "based_in",
+  "registry_namespace": "xananode",
+  "category": "location",
+  "inverse": "base_of",
+  "color": "#84cc16",
+  "inverse_color": "#bef264",
+  "line_style": "dotted",
+  "inverse_line_style": "dashed",
+  "default_weight": 3,
+  "default_visibility": "secondary",
+  "relationships": []
+}

@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source anticipated the target without necessarily directly causing it.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "anticipated",
   "registry_namespace": "xananode",
   "category": "influence",

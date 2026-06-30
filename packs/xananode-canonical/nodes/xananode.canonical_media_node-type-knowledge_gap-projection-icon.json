@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/node-type-knowledge_gap-projection-icon",
+  "title": "Knowledge Gap Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/node-types/knowledge_gap.svg",
+  "asset_role": "node_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/knowledge_gap.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the knowledge_gap node type.",
+  "relationships": [],
+  "content_id": "sha256:6f6e3a7ab6fb6481c2c6687d3b6aa61e9ba4f596c80ac5b120fc8ea58d215401",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/node-types/knowledge_gap.svg",
+    "method": "archive",
+    "content_id": "sha256:6f6e3a7ab6fb6481c2c6687d3b6aa61e9ba4f596c80ac5b120fc8ea58d215401",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

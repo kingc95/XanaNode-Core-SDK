@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source commemorates, honors, or preserves the memory of the target.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "memorializes",
   "registry_namespace": "xananode",
   "category": "social",

@@ -1,0 +1,24 @@
+{
+  "id": "xananode.canonical:media/relationship-type-broadcast_to-projection-icon",
+  "title": "Broadcast to Relationship Projection Icon",
+  "type": "media",
+  "subtype": "projection_icon",
+  "media_type": "image",
+  "mime_type": "image/svg+xml",
+  "asset_path": "assets/projection/relationship-types/broadcast_to.svg",
+  "asset_role": "relationship_type_projection_icon",
+  "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/broadcast_to.svg",
+  "rights_status": "open-source",
+  "importance": 3,
+  "summary": "The canonical projection icon for the broadcast_to relationship type.",
+  "relationships": [],
+  "content_id": "sha256:a0aa78b76672255b1f9315094f8a2642c1255afb9aac966221404f17e0ed3a26",
+  "source_snapshot": {
+    "captured_at": "2026-06-30T05:09:31.104Z",
+    "source_url": "https://github.com/kingc95/XanaNode-Protocol/blob/main/media/projection/relationship-types/broadcast_to.svg",
+    "method": "archive",
+    "content_id": "sha256:a0aa78b76672255b1f9315094f8a2642c1255afb9aac966221404f17e0ed3a26",
+    "rights_status": "open-source",
+    "tool": "@xananode/core"
+  }
+}

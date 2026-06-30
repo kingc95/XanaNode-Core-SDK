@@ -1,0 +1,30 @@
+{
+  "id": "xananode.canonical:schema/property-gender",
+  "title": "Gender",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "A gender value when it matters to the record or to kinship inference.",
+  "registry_type": "gender",
+  "category": "identity",
+  "aliases": [
+    "sex_gender"
+  ],
+  "applies_to": [
+    "person"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "string",
+    "enum": [
+      "female",
+      "male",
+      "nonbinary",
+      "unknown"
+    ]
+  },
+  "examples": [
+    "female"
+  ],
+  "relationships": []
+}

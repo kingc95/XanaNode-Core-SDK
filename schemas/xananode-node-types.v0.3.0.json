@@ -18,7 +18,8 @@
         "artist",
         "founder",
         "scientist",
-        "programmer"
+        "programmer",
+        "fictional_character"
       ],
       "required_frontmatter": [
         "title",
@@ -36,10 +37,60 @@
         "projects",
         "events"
       ],
+      "editable_fields": [
+        {
+          "key": "gender",
+          "label": "Gender",
+          "value_kind": "enum",
+          "help": "Use this when it matters to the record or to kinship inference. Leave it blank when unknown, irrelevant, or not yours to assert.",
+          "options": [
+            { "value": "female", "label": "Female" },
+            { "value": "male", "label": "Male" },
+            { "value": "nonbinary", "label": "Nonbinary" },
+            { "value": "unknown", "label": "Unknown" }
+          ]
+        },
+        {
+          "key": "birth_date",
+          "label": "Birth date",
+          "value_kind": "date",
+          "help": "A human-readable or machine-readable birth date for this person."
+        },
+        {
+          "key": "death_date",
+          "label": "Death date",
+          "value_kind": "date",
+          "help": "A human-readable or machine-readable death date for this person."
+        },
+        {
+          "key": "nationality",
+          "label": "Nationality",
+          "value_kind": "string",
+          "help": "Useful when it helps disambiguate identity or historical context."
+        },
+        {
+          "key": "occupation",
+          "label": "Occupation",
+          "value_kind": "string",
+          "help": "A short role label such as writer, engineer, or teacher."
+        },
+        {
+          "key": "aliases",
+          "label": "Aliases",
+          "value_kind": "string_list",
+          "help": "Other names, spellings, or handles for this person."
+        }
+      ],
       "namespace": "xananode",
       "id": "xananode:person",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "person",
+        "icon_label": "P",
+        "asset_path": "assets/projection/node-types/person.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/person/{subtype}.svg"
+      }
     },
     {
       "type": "concept",
@@ -76,7 +127,13 @@
       "namespace": "xananode",
       "id": "xananode:concept",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "concept",
+        "icon_label": "C",
+        "asset_path": "assets/projection/node-types/concept.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/concept/{subtype}.svg"
+      }
     },
     {
       "type": "claim",
@@ -115,7 +172,13 @@
       "namespace": "xananode",
       "id": "xananode:claim",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "claim",
+        "icon_label": "C",
+        "asset_path": "assets/projection/node-types/claim.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/claim/{subtype}.svg"
+      }
     },
     {
       "type": "source",
@@ -168,10 +231,54 @@
         "license",
         "rights_status"
       ],
+      "editable_fields": [
+        {
+          "key": "author",
+          "label": "Author",
+          "value_kind": "string",
+          "help": "The credited human or organizational author of the source."
+        },
+        {
+          "key": "year",
+          "label": "Year",
+          "value_kind": "string",
+          "help": "The publication year or best-known year for this source."
+        },
+        {
+          "key": "source_url",
+          "label": "Source URL",
+          "value_kind": "url",
+          "help": "The primary online location for this source when one exists."
+        },
+        {
+          "key": "archive_url",
+          "label": "Archive URL",
+          "value_kind": "url",
+          "help": "A preserved or alternate online location for this source."
+        },
+        {
+          "key": "license",
+          "label": "License",
+          "value_kind": "string",
+          "help": "The license or reuse terms that apply to this source."
+        },
+        {
+          "key": "rights_status",
+          "label": "Rights status",
+          "value_kind": "string",
+          "help": "A short description of rights, restrictions, or ownership status."
+        }
+      ],
       "namespace": "xananode",
       "id": "xananode:source",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "source",
+        "icon_label": "S",
+        "asset_path": "assets/projection/node-types/source.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/source/{subtype}.svg"
+      }
     },
     {
       "type": "essay",
@@ -207,7 +314,13 @@
       "namespace": "xananode",
       "id": "xananode:essay",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "essay",
+        "icon_label": "E",
+        "asset_path": "assets/projection/node-types/essay.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/essay/{subtype}.svg"
+      }
     },
     {
       "type": "observation",
@@ -243,7 +356,13 @@
       "namespace": "xananode",
       "id": "xananode:observation",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "observation",
+        "icon_label": "O",
+        "asset_path": "assets/projection/node-types/observation.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/observation/{subtype}.svg"
+      }
     },
     {
       "type": "media",
@@ -296,10 +415,54 @@
         "license_url",
         "depicts"
       ],
+      "editable_fields": [
+        {
+          "key": "creator",
+          "label": "Creator",
+          "value_kind": "string",
+          "help": "The credited creator of the media item."
+        },
+        {
+          "key": "created_date",
+          "label": "Created date",
+          "value_kind": "date",
+          "help": "The creation or publication date for this media item."
+        },
+        {
+          "key": "source_url",
+          "label": "Source URL",
+          "value_kind": "url",
+          "help": "The source page or origin URL for this media item."
+        },
+        {
+          "key": "asset_path",
+          "label": "Asset path",
+          "value_kind": "string",
+          "help": "The local substrate asset path when this media is bundled."
+        },
+        {
+          "key": "mime_type",
+          "label": "MIME type",
+          "value_kind": "string",
+          "help": "The MIME type used by projections and downstream tools."
+        },
+        {
+          "key": "license",
+          "label": "License",
+          "value_kind": "string",
+          "help": "The license or reuse terms that apply to this media item."
+        }
+      ],
       "namespace": "xananode",
       "id": "xananode:media",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "media",
+        "icon_label": "M",
+        "asset_path": "assets/projection/node-types/media.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/media/{subtype}.svg"
+      }
     },
     {
       "type": "item",
@@ -344,7 +507,13 @@
       "namespace": "xananode",
       "id": "xananode:item",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "item",
+        "icon_label": "I",
+        "asset_path": "assets/projection/node-types/item.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/item/{subtype}.svg"
+      }
     },
     {
       "type": "event",
@@ -362,7 +531,9 @@
         "meeting",
         "release",
         "incident",
-        "historical_event"
+        "historical_event",
+        "performance",
+        "fictional_event"
       ],
       "required_frontmatter": [
         "title",
@@ -383,7 +554,13 @@
       "namespace": "xananode",
       "id": "xananode:event",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "event",
+        "icon_label": "E",
+        "asset_path": "assets/projection/node-types/event.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/event/{subtype}.svg"
+      }
     },
     {
       "type": "place",
@@ -401,7 +578,8 @@
         "institution_site",
         "online_space",
         "country",
-        "region"
+        "region",
+        "fictional_place"
       ],
       "required_frontmatter": [
         "title",
@@ -420,7 +598,13 @@
       "namespace": "xananode",
       "id": "xananode:place",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "place",
+        "icon_label": "P",
+        "asset_path": "assets/projection/node-types/place.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/place/{subtype}.svg"
+      }
     },
     {
       "type": "organization",
@@ -438,7 +622,8 @@
         "agency",
         "nonprofit",
         "standards_body",
-        "publisher"
+        "publisher",
+        "fictional_organization"
       ],
       "required_frontmatter": [
         "title",
@@ -457,7 +642,13 @@
       "namespace": "xananode",
       "id": "xananode:organization",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "organization",
+        "icon_label": "O",
+        "asset_path": "assets/projection/node-types/organization.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/organization/{subtype}.svg"
+      }
     },
     {
       "type": "project",
@@ -493,7 +684,13 @@
       "namespace": "xananode",
       "id": "xananode:project",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "project",
+        "icon_label": "P",
+        "asset_path": "assets/projection/node-types/project.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/project/{subtype}.svg"
+      }
     },
     {
       "type": "technology",
@@ -530,7 +727,13 @@
       "namespace": "xananode",
       "id": "xananode:technology",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "technology",
+        "icon_label": "T",
+        "asset_path": "assets/projection/node-types/technology.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/technology/{subtype}.svg"
+      }
     },
     {
       "type": "publication",
@@ -579,7 +782,13 @@
       "namespace": "xananode",
       "id": "xananode:publication",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "publication",
+        "icon_label": "P",
+        "asset_path": "assets/projection/node-types/publication.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/publication/{subtype}.svg"
+      }
     },
     {
       "type": "community",
@@ -615,7 +824,13 @@
       "namespace": "xananode",
       "id": "xananode:community",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "community",
+        "icon_label": "C",
+        "asset_path": "assets/projection/node-types/community.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/community/{subtype}.svg"
+      }
     },
     {
       "type": "relationship",
@@ -655,7 +870,13 @@
       "namespace": "xananode",
       "id": "xananode:relationship",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "relationship",
+        "icon_label": "R",
+        "asset_path": "assets/projection/node-types/relationship.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/relationship/{subtype}.svg"
+      }
     },
     {
       "type": "revision",
@@ -691,7 +912,13 @@
       "namespace": "xananode",
       "id": "xananode:revision",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "revision",
+        "icon_label": "R",
+        "asset_path": "assets/projection/node-types/revision.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/revision/{subtype}.svg"
+      }
     },
     {
       "type": "trail",
@@ -727,7 +954,13 @@
       "namespace": "xananode",
       "id": "xananode:trail",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "trail",
+        "icon_label": "T",
+        "asset_path": "assets/projection/node-types/trail.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/trail/{subtype}.svg"
+      }
     },
     {
       "type": "schema",
@@ -771,7 +1004,13 @@
       "namespace": "xananode",
       "id": "xananode:schema",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "schema",
+        "icon_label": "S",
+        "asset_path": "assets/projection/node-types/schema.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/schema/{subtype}.svg"
+      }
     },
     {
       "namespace": "xananode",
@@ -814,7 +1053,13 @@
         "line_range",
         "time_range",
         "rights_status"
-      ]
+      ],
+      "projection": {
+        "icon": "fragment",
+        "icon_label": "F",
+        "asset_path": "assets/projection/node-types/fragment.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/fragment/{subtype}.svg"
+      }
     },
     {
       "type": "question",
@@ -853,7 +1098,13 @@
       "namespace": "xananode",
       "id": "xananode:question",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "question",
+        "icon_label": "Q",
+        "asset_path": "assets/projection/node-types/question.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/question/{subtype}.svg"
+      }
     },
     {
       "type": "hypothesis",
@@ -892,7 +1143,13 @@
       "namespace": "xananode",
       "id": "xananode:hypothesis",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "hypothesis",
+        "icon_label": "H",
+        "asset_path": "assets/projection/node-types/hypothesis.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/hypothesis/{subtype}.svg"
+      }
     },
     {
       "type": "problem",
@@ -930,7 +1187,13 @@
       "namespace": "xananode",
       "id": "xananode:problem",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "problem",
+        "icon_label": "P",
+        "asset_path": "assets/projection/node-types/problem.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/problem/{subtype}.svg"
+      }
     },
     {
       "type": "knowledge_gap",
@@ -969,7 +1232,13 @@
       "namespace": "xananode",
       "id": "xananode:knowledge_gap",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "knowledge_gap",
+        "icon_label": "KG",
+        "asset_path": "assets/projection/node-types/knowledge_gap.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/knowledge_gap/{subtype}.svg"
+      }
     },
     {
       "type": "communication",
@@ -1016,7 +1285,13 @@
       "namespace": "xananode",
       "id": "xananode:communication",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "communication",
+        "icon_label": "C",
+        "asset_path": "assets/projection/node-types/communication.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/communication/{subtype}.svg"
+      }
     },
     {
       "type": "response",
@@ -1054,7 +1329,17 @@
       "namespace": "xananode",
       "id": "xananode:response",
       "core": true,
-      "extends": null
+      "extends": null,
+      "projection": {
+        "icon": "response",
+        "icon_label": "R",
+        "asset_path": "assets/projection/node-types/response.svg",
+        "subtype_asset_path_template": "assets/projection/node-subtypes/response/{subtype}.svg"
+      }
     }
-  ]
+  ],
+  "media_conventions": {
+    "node_type_asset_path_template": "assets/projection/node-types/{type}.svg",
+    "node_subtype_asset_path_template": "assets/projection/node-subtypes/{type}/{subtype}.svg"
+  }
 }

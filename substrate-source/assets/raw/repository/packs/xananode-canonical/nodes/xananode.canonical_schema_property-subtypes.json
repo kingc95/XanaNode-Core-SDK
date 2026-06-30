@@ -1,0 +1,55 @@
+{
+  "id": "xananode.canonical:schema/property-subtypes",
+  "title": "Subtypes",
+  "type": "schema",
+  "subtype": "property_registry_entry",
+  "importance": 4,
+  "summary": "Additional narrower classifications that stay attached to the same node without changing its primary type.",
+  "registry_type": "subtypes",
+  "category": "classification",
+  "aliases": [
+    "additional_subtypes"
+  ],
+  "applies_to": [
+    "person",
+    "concept",
+    "claim",
+    "question",
+    "hypothesis",
+    "problem",
+    "knowledge_gap",
+    "communication",
+    "response",
+    "source",
+    "observation",
+    "essay",
+    "media",
+    "event",
+    "place",
+    "organization",
+    "project",
+    "technology",
+    "publication",
+    "community",
+    "relationship",
+    "revision",
+    "trail",
+    "schema",
+    "fragment"
+  ],
+  "unit_system": "none",
+  "value_schema": {
+    "type": "array",
+    "items": {
+      "type": "string"
+    },
+    "uniqueItems": true
+  },
+  "examples": [
+    [
+      "writer",
+      "researcher"
+    ]
+  ],
+  "relationships": []
+}

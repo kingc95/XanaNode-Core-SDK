@@ -5,7 +5,7 @@
   "subtype": "relationship_type_schema",
   "importance": 5,
   "summary": "The source is evidence for the target claim or relationship.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "registry_type": "evidence_for",
   "registry_namespace": "xananode",
   "category": "evidence",
